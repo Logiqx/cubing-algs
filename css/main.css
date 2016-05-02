@@ -1,0 +1,129 @@
+/* Default fonts */
+
+h1
+{
+  font-family: "Arial", sans-serif;
+}
+
+h2
+{
+  font-family: "Arial", sans-serif;
+}
+
+h3
+{
+  font-family: "Arial", sans-serif;
+}
+
+th
+{
+  font-family: "Arial", sans-serif;
+  font-size: 0.9em;
+}
+
+td
+{
+  font-family: "Arial", sans-serif;
+  font-size: 0.9em;
+}
+
+p
+{
+  font-family: "Arial", sans-serif;
+  font-size: 0.9em;
+}
+
+abbr
+{
+	border-bottom: 1px dotted;
+}
+
+/* Grid view */
+
+th.name
+{
+  width: 180px;
+  text-align : left;
+}
+
+/* List view */
+
+th.alg
+{
+  width: 320px;
+  text-align : left;
+}
+
+th.prob
+{
+  width: 60px;
+  text-align : center;
+}
+
+td.prob
+{
+  width: 60px;
+  text-align : center;
+}
+
+/* Case view */
+
+td.alg
+{
+  width: 340px;
+  text-align : left;
+}
+
+td.var
+{
+  width: 320px;
+  text-align : left;
+  text-indent : 20px;
+}
+
+td.uses
+{
+  width: 60px;
+  text-align : center;
+}
+
+/* Image properties */
+
+img.ll64
+{
+	width: 64px;
+	height: 64px;
+}
+
+img.ll64p
+{
+	width: 64px;
+	height: 64px;
+	cursor: pointer;
+}
+
+img.ll96
+{
+	width: 96px;
+	height: 96px;
+}
+
+img.ll96p
+{
+	width: 96px;
+	height: 96px;
+	cursor: pointer;
+}
+
+img.ll128
+{
+  width: 128px;
+  height: 128px;
+}
+
+img.ll128p
+{
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+}

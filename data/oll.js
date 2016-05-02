@@ -1,0 +1,2173 @@
+var algSet = {
+  "header":
+  {
+    "id": "OLL",
+    "name": "Orientation of the Last Layer",
+    "wiki": "https://www.speedsolving.com/wiki/index.php/OLL",
+    "algdb": "http://algdb.net/Set/OLL/",
+    "uses":
+    [
+      {
+        "id": "2H",
+        "name": "Two-Handed"
+      },
+      {
+        "id": "OH",
+        "name": "One-Handed"
+      }
+    ]
+  },
+  "cases":
+  [
+    {
+      "id": "0",
+      "name": "Solved",
+      "wiki": "",
+      "algdb": "",
+      "image": "OLL-00.png",
+      "prob": "1/216",
+      "algs" :
+	  [
+	  ]
+    },
+    {
+      "id": "1",
+      "name": "No Edges - Runway",
+      "wiki": "OLL 1",
+      "algdb": "OLL 1",
+      "image": "OLL-01.png",
+      "prob": "1/108",
+      "algs" :
+      [
+        {
+          "alg": "R U2 R' (R' F R F') U2 (R' F R F')",
+          "desc": "Extract pair, [sledgehammer], [AUF], [sledgehammer]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U2' (R2' F R F') U2 (R' F R F')",
+              "desc": "Actual execution includes a cancellation",
+              "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "(r' U' R U' R' U2' r) U (r U2' R' U' R U' r')",
+          "desc": "[SuneOLL]: [RBWS], [AUF], [RFWAS]",
+		  "status": 1,
+          "uses": ["OH"]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "No Edges - Zamboni",
+      "wiki": "OLL 2",
+      "algdb": "OLL 2",
+      "image": "OLL-02.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "R' U2 (r U' r') U2 (r U r') U2 R",
+          "desc": "[Palindrome]. Two-handed execution",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "R' U2' (r U' r') U2' (r U r') U2' R",
+              "desc": "One-handed execution",
+              "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] (r U r') U2' (R U2' R') U2' (r U' r')",
+          "desc": "Decent for [OH] but also pretty good for [2H]",
+		  "status": -1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "F (R U R' U') F' f (R U R' U') f'",
+          "desc": "Combination of two simple OLLs",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "F (R U R' U') S (R U R' U') f'",
+              "desc": "Actual execution includes a cancellation",
+              "status": -1,
+			  "uses": ["2H"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "No Edges - Anti-Mouse",
+      "wiki": "OLL 3",
+      "algdb": "OLL 3",
+      "image": "OLL-03.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "M (R U R' U r U2' r') U M'",
+          "desc": "Includes hybrid of [RFS] and [RFWS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "r' (R2 U R' U r U2' r') U M'",
+              "desc": "Two-handed execution",
+		      "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "r' (R2 U R' U r U2' r') U r R'",
+              "desc": "One-handed execution",
+		      "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "f (R U R' U') f' U' F (R U R' U') F'",
+          "desc": "Combination of two simple OLLs",
+		  "status": -1,
+          "uses": ["2H"]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "No Edges - Mouse",
+      "wiki": "OLL 4",
+      "algdb": "OLL 4",
+      "image": "OLL-04.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "M' (R' U' R U' r' U2 r) U' M",
+          "desc": "Includes hybrid of [RBS] and [RBWS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "M' (R' U' R U' r' U2 r) U' r' R",
+              "desc": "Two-handed execution",
+		      "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "r (R2 U' R U' r' U2' r) U' r' R",
+              "desc": "One-handed execution",
+		      "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "f (R U R' U') f' U F (R U R' U') F'",
+          "desc": "Combination of two simple OLLs",
+		  "status": -1,
+          "uses": ["2H"]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Square Shape - RBWAS",
+      "wiki": "OLL 5",
+      "algdb": "OLL 5",
+      "image": "OLL-05.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y'] r' U2' R U R' U r",
+          "desc": "[RBWAS] - Extract 2x2x1, [AUF], re-insert 2x2x1",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Square Shape - RFWAS",
+      "wiki": "OLL 6",
+      "algdb": "OLL 6",
+      "image": "OLL-06.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y] r U2 R' U' R U' r'",
+          "desc": "[RFWAS] - Extract 2x2x1, [AUF], re-insert 2x2x1",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] r U2' R' U' R U' r'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Small Lightning Bolt - RFWS",
+      "wiki": "OLL 7",
+      "algdb": "OLL 7",
+      "image": "OLL-07.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "r U R' U R U2' r'",
+          "desc": "[RFWS] - Extract 2x2x1, [AUF], re-insert 2x2x1",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Small Lightning Bolt - RBWS",
+      "wiki": "OLL 8",
+      "algdb": "OLL 8",
+      "image": "OLL-08.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "r' U' R U' R' U2 r",
+          "desc": "[RBWS] - Extract 2x2x1, [AUF], re-insert 2x2x1",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "r' U' R U' R' U2' r",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Fish Shape - Anti-Kite",
+      "wiki": "OLL 9",
+      "algdb": "OLL 9",
+      "image": "OLL-09.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y2] (R U R' U') (R' F R F') F (R U R' U') F'",
+          "desc": "Combination of two simple OLLs - [sexy-sledge], [FRU]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y2] (R U R' U') (R' F R2 U R' U' F')",
+              "desc": "Actual execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] M (R U2 R' U' R U' R') U' M'",
+          "desc": "M-slice, [RFAS], [AUF], M-slice",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] r' (R2 U2' R' U' R U' R') U' r R'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Fish Shape - Kite",
+      "wiki": "OLL 10",
+      "algdb": "OLL 10",
+      "image": "OLL-10.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y2] R U R' U (R' F R F') R U2' R'",
+          "desc": "[Sledgehammer] in the middle of [RFS]",
+		  "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "[y'] M' (R' U2' R U R' U R) U M",
+          "desc": "M-slice, [RBAS], [AUF], M-slice",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] r (R2 U2' R U R' U R) U r' R",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Small Lightning Bolt",
+      "wiki": "OLL 11",
+      "algdb": "OLL 11",
+      "image": "OLL-11.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "M (R U R' U R U2' R') U M'",
+          "desc": "M-slice, [RFS], [AUF], M-slice",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "r' (R2 U R' U R U2' R') U M'",
+              "desc": "Two-handed execution",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "r' (R2 U R' U R U2' R') U r R'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Small Lightning Bolt",
+      "wiki": "OLL 12",
+      "algdb": "OLL 12",
+      "image": "OLL-12.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "M' (R' U' R U' R' U2 R) U' M",
+          "desc": "M-slice, [RBS], [AUF], M-slice",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "M' (R' U' R U' R' U2 R) U' r' R",
+              "desc": "Two-handed execution",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "r (R2 U' R U' R' U2' R) U' r' R",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Knight Move - Gun",
+      "wiki": "OLL 13",
+      "algdb": "OLL 13",
+      "image": "OLL-13.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(r U' r' U' r U r') y' R' U R",
+		"desc": "Extract [F2L] pair using wide turns, re-insert normally",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Knight Move - Anti-Gun",
+      "wiki": "OLL 14",
+      "algdb": "OLL 14",
+      "image": "OLL-14.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(r' U r U r' U' r) y R U' R'",
+          "desc": "Extract [F2L] pair using wide turns, re-insert normally",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Knight Move - Squeegee",
+      "wiki": "OLL 15",
+      "algdb": "OLL 15",
+      "image": "OLL-15.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y'] r' U' r (R' U' R U) r' U r",
+          "desc": "[Conjugate] of [sexy] from the back - [r' U' r: R' U' R U]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Knight Move - Anti-Squeegee",
+      "wiki": "OLL 16",
+      "algdb": "OLL 16",
+      "image": "OLL-16.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y] r U r' (R U R' U') r U' r'",
+          "desc": "[Conjugate] of [sexy] - [r U r': R U R' U']",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "No Edges - Slash",
+      "wiki": "OLL 17",
+      "algdb": "OLL 17",
+      "image": "OLL-17.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y2] (R U R' U') U2 (R' F R F') U2 (R' F R F')",
+          "desc": "[Sexy], [AUF], [sledgehammer], [AUF], [sledgehammer]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y2] (R U R' U) (R' F R F') U2 (R' F R F')",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "(r U2' R' U' R U' r') U2' (r U R' U R U2' r')",
+		  "status": 1,
+          "desc": "[SuneOLL]: [RFWAS], [AUF], [RBWS]",
+          "uses": ["OH"]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "No Edges - Crown",
+      "wiki": "OLL 18",
+      "algdb": "OLL 18",
+      "image": "OLL-18.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "R U2' R' (R' F R F') U2 M' (U R U' r')",
+          "desc": "Extract pair, [sledgehammer], [AUF], re-insert [F2L] pair",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U2' (R2' F R F') U2 M' (U R U' r')",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y'] (r U R' U R U2' r') (r' U' R U' R' U2 r)",
+          "desc": "[SuneOLL]: [RFWS], [RBWS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] r U R' U R U2' r2 U' R U' R' U2' r",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+		},
+		{
+		  "alg": "[y] (r' U' R U' R' U2 r) (r U R' U R U2' r')",
+		  "desc": "[SuneOLL]: [RBWS], [RFWS]",
+		  "status": 1,
+		  "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] r' U' R U' R' U2' r2 U R' U R U2' r'",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+		}
+      ]
+    },
+    {
+      "id": "19",
+      "name": "No Edges - Bunny / Mickey",
+      "wiki": "OLL 19",
+      "algdb": "OLL 19",
+      "image": "OLL-19.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y'] M U (R U R' U') M' (R' F R F')",
+          "desc": "M U, [sexy], M', [sledgehammer]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] r' R U (R U R' U') M' (R' F R F')",
+              "desc": "Actual execution avoids M",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y'] (r' U2' R U R' U r) (r U2 R' U' R U' r')",
+          "desc": "[SuneOLL]: [RBWAS], [RFWAS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] r' U2' R U R' U r2 U2' R' U' R U' r'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+		{
+		  "alg": "[y] (r U2 R' U' R U' r') (r' U2' R U R' U r)",
+		  "desc": "[SuneOLL]: [RFWAS], [RBWAS]",
+		  "status": 1,
+		  "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] r U2' R' U' R U' r2 U2' R U R' U r",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+		}
+      ]
+    },
+    {
+      "id": "20",
+      "name": "No Edges - X / Checkers",
+      "wiki": "OLL 20",
+      "algdb": "OLL 20",
+      "image": "OLL-20.png",
+      "prob": "1/216",
+      "algs" :
+      [
+        {
+          "alg": "M' (R U R' U') M2 (U R U' R') U' M'",
+          "desc": "M-slice, [sexy], M-slice, [reverse-sexy], [AUF], M-slice",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "(r U R' U') M2' (U R U' R') U' M'",
+              "desc": "Two-handed execution",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "(r U R' U') r2 R2 (U R U' R') U' r R'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "name": "H / Double Sune",
+      "wiki": "OLL 21",
+      "algdb": "OLL 21",
+      "image": "OLL-21.png",
+      "prob": "1/108",
+      "algs" :
+      [
+        {
+          "alg": "(R' U' R U' R' U2 R) (R' U' R U' R' U2 R)",
+          "desc": "[SuneOLL]/[2GLL]: Double [RBS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R' U' R (U' R' U R) U' R' U2 R",
+              "desc": "Two-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R' U' R (U' R' U R) U' R' U2' R",
+              "desc": "One-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
+          "desc": "[SuneOLL]/[2GLL]: Double [RFAS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] R U2 R' U' (R U R' U') R U' R'",
+              "desc": "Two-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[y] R U2' R' U' (R U R' U') R U' R'",
+              "desc": "One-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Pi / Bruno",
+      "wiki": "OLL 22",
+      "algdb": "OLL 22",
+      "image": "OLL-22.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(R U2' R') (R' U' R) (R U' R') (R' U2' R)",
+          "desc": "[Palindrome]. Essentially [RFAS] and [RBS] mixed together",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U2' R2' U' R2 U' R2' U2' R",
+              "desc": "Two-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R U2' R2 U' R2 U' R2 U2' R",
+              "desc": "One-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "23",
+      "name": "U / Headlights",
+      "wiki": "OLL 23",
+      "algdb": "OLL 23",
+      "image": "OLL-23.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y] R2 (D' R U2 R') (D R U2 R') R2'",
+          "desc": "A9 [commutator] / [conjugate] - [R2: [D', R U2 R']]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] R2 D' R U2 R' D R U2 R",
+              "desc": "Two-handed execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y'] R2 (D R' U2 R) (D' R' U2 R) R2'",
+          "desc": "A9 [commutator] / [conjugate] - [R2: [D, R' U2 R]]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] R2 D R' U2 R D' R' U2 R'",
+              "desc": "Two-handed execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] (R' U' R U' R' U2 R) (R U R' U R U2' R')",
+          "desc": "[SuneOLL]/[2GLL]: [RBS], [RFS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] R' U' R U' R' U2' R2 U R' U R U2' R'",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y'] (R U R' U R U2' R') (R' U' R U' R' U2 R)",
+          "desc": "[SuneOLL]/[2GLL]: [RFS], [RBS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] R U R' U R U2' R2 U' R U' R' U2' R",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "24",
+      "name": "T / Chameleon",
+      "wiki": "OLL 24",
+      "algdb": "OLL 24",
+      "image": "OLL-24.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(L F R' F') (L' F R F')",
+          "desc": "Basic [commutator] - [L, F R' F']",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "(r U R' U') (r' F R F')",
+              "desc": "Execution is wide [sexy], wide [sledgehammer]",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] (R U2 R' U' R U' R') (R' U2' R U R' U R)",
+          "desc": "[SuneOLL]/[2GLL]: [RFAS], [RBAS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] R U2' R' U' R U' R2 U2' R U R' U R",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y'] (R' U2' R U R' U R) (R U2 R' U' R U' R')",
+          "desc": "[SuneOLL]/[2GLL]: [RBAS], [RFAS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] R' U2' R U R' U R2 U2' R' U' R U' R'",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "name": "L / Bowtie",
+      "wiki": "OLL 25",
+      "algdb": "OLL 25",
+      "image": "OLL-25.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y] (F' L F R') (F' L' F R)",
+          "desc": "Basic [commutator] - [F' L F, R']",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] F' (r U R' U') r' F R",
+              "desc": "Execution makes use of wide turns",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
+          "desc": "[SuneOLL]/[2GLL]: Triple [RBS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y2] R U2 R' U' (R U R' U') (R U R' U') R U' R'",
+          "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y2] R U2' R' U' (R U R' U') (R U R' U') R U' R'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Anti-Sune",
+      "wiki": "OLL 26",
+      "algdb": "OLL 26",
+      "image": "OLL-26.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "R' U' R U' R' U2 R",
+          "desc": "[RBS] - Extract [F2L] pair, [AUF], re-insert [F2L] pair",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "R' U' R U' R' U2' R",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] R U2 R' U' R U' R'",
+          "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert [F2L] pair",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] R U2' R' U' R U' R'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "name": "Sune",
+      "wiki": "OLL 27",
+      "algdb": "OLL 27",
+      "image": "OLL-27.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "R U R' U R U2' R'",
+          "desc": "[RFS] - Extract [F2L] pair, [AUF], re-insert [F2L] pair",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "[y'] R' U2' R U R' U R",
+          "desc": "[RBAS] - Extract [F2L] pair, [AUF], re-insert [F2L] pair",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "name": "Stealth / Angel Fish",
+      "wiki": "OLL 28",
+      "algdb": "OLL 28",
+      "image": "OLL-28.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y'] M' (R U R' U') M (U R U' R')",
+          "desc": "M-slice, [sexy], M-slice, [reverse-sexy]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] (r U R' U') r' R (U R U' R')",
+              "desc": "Actual execution avoids M",
+			  "status": 1,
+			  "uses": ["2H", "OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y2] (M' U' M) U2 (M' U' M)",
+          "desc": "Moo!",
+		  "status": 1,
+          "uses": ["2H"]
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "name": "Awkward Shape",
+      "wiki": "OLL 29",
+      "algdb": "OLL 29",
+      "image": "OLL-29.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(R U R' U') (R U' R') (F' U' F) (R U R')",
+          "desc": "Playing with an F2L pair... track the corner!",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+		},
+        {
+          "alg": "[y'] B' U' (R' U2 R) U (R' U2 R) U B",
+          "desc": "[Palindrome] / [Conjugate] - [B' U' R' U2 R: U]",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] B' U' (R' U2' R) U (R' U2' R) U B",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y'] M U (R U R' U') (R' F R F') M'",
+          "desc": "Includes [sexy-sledge]",
+		  "status": -1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] r' R U (R U R' U') (R' F R F') M'",
+              "desc": "Two-handed execution",
+			  "status": -1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[y'] r' R U (R U R' U') (x R' U R U' x') r R'",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] (r U2 R' U' R U' r') (R' U2' R U R' U R)",
+          "desc": "[SuneOLL]: [RFWAS] + [RBAS]",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] (r U2' R' U' R U' r') (R' U2' R U R' U R)",
+			  "status": -1,
+              "desc": "One-handed execution",
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "name": "Awkward Shape",
+      "wiki": "OLL 30",
+      "algdb": "OLL 30",
+      "image": "OLL-30.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y] F U (R U2 R') U' (R U2 R') U' F'",
+          "desc": "[Palindrome] / [Conjugate] - [F U R U2' R': U']",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] F U (R U2' R') U' (R U2' R') U' F'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] M' U' (R' U' R U) (R B' R' B) M",
+          "desc": "Includes [sexy-sledge] from the back",
+		  "status": -1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] M' U' (R' U' R U) (R B' R' B) r' R",
+              "desc": "Two-handed execution",
+			  "status": -1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[y] r R' U' (R' U' R U) (x' R U' R' U x) r' R",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y'] (r' U2' R U R' U r) (R U2 R' U' R U' R')",
+          "desc": "Sune OLL: [RBWAS], [RFAS]",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] (r' U2' R U R' U r) (R U2' R' U' R U' R')",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "name": "P Shape - Little \"q\"",
+      "wiki": "OLL 31",
+      "algdb": "OLL 31",
+      "image": "OLL-31.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "R' U' F (U R U' R') F' R",
+          "desc": "Includes the [FUR] algorithm",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "name": "P Shape - Little \"d\"",
+      "wiki": "OLL 32",
+      "algdb": "OLL 32",
+      "image": "OLL-32.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "R U2 R' U' (F' U F) R U' R'",
+          "desc": "Basically [RFAS] with an embedded (F' U F')",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U2' R' U' (F' U F) R U' R'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "R U B' (U' R' U R) B R'",
+          "desc": "Includes the [BUR] algorithm",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U z f' (U' R' U R) z' f R'",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "33",
+      "name": "T Shape - Key",
+      "wiki": "OLL 33",
+      "algdb": "OLL 33",
+      "image": "OLL-33.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(R U R' U') (R' F R F')",
+          "desc": "Easy OLL ([sexy-sledge]) also used in the Y-Perm [PLL]",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "(R U R' U') (x R' U R U')",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "name": "C Shape - City (C and T)",
+      "wiki": "OLL 34",
+      "algdb": "OLL 34",
+      "image": "OLL-34.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y] (R U R' U') B' (R' F R F') B",
+          "desc": "[Sexy], B', [sledgehammer], B",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] (R U R' U') x D' (R' U R U') D x'",
+              "desc": "Actual execution makes use of a rotation",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] (R U R' U') y' (r' U' R U M')",
+          "desc": "[Sexy] then Roux-style insert to back",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] (R U R' U') y' (r' U' R U r R')",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+		{
+          "alg": "[y] R U R2 U' R' F R U R U' F'",
+          "desc": "Playing with 3 F2L pairs!",
+		  "status": 0,
+          "uses": []
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "name": "Fish Shape - Fish Salad",
+      "wiki": "OLL 35",
+      "algdb": "OLL 35",
+      "image": "OLL-35.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "R U2 R' (R' F R F') R U2 R'",
+          "desc": "Extract pair, [sledgehammer], re-insert [F2L] pair",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U2' (R2' F R F') R U2' R'",
+              "desc": "Two-handed execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R U2' (R2 F R F') R U2' R'",
+              "desc": "One-handed execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "name": "W Shape - Wario",
+      "wiki": "OLL 36",
+      "algdb": "OLL 36",
+      "image": "OLL-36.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(R' U' R U' R' U2 R) (R' U' R U) (R B' R' B)",
+          "desc": "Combination of two simple OLLs - [RBS], [sexy-sledge] from the back",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+              "alg": "(R' U' R U') (R' U R U) (l U' R' U x)",
+              "desc": "Two-handed execution includes cancellations and a rotation",
+              "status": 1,
+              "uses": ["2H"],
+			},
+			{
+			  "alg": "(R' U' R U') (R' U R U) (x' R U' R' U)",
+              "desc": "One-handed execution includes cancellations and a rotation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "name": "Fish Shape - Mounted Fish",
+      "wiki": "OLL 37",
+      "algdb": "OLL 37",
+      "image": "OLL-37.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "F R U' (R' U' R U) R' F'",
+          "desc": "Easy OLL also used in the Y-Perm [PLL]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "name": "W Shape - Mario",
+      "wiki": "OLL 38",
+      "algdb": "OLL 38",
+      "image": "OLL-38.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y'] (R U R' U R U2' R') (R U R' U') (R' F R F')",
+          "desc": "Combination of two simple OLLs - [RFS], [sexy-sledge]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] (R U R' U) (R U' R' U') (R' F R F')",
+              "desc": "Two-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[y'] (R U R' U) (R U' R' U') (x R' U R U')",
+              "desc": "One-handed execution includes cancellations and a rotation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "name": "Big Lightning Bolt",
+      "wiki": "OLL 39",
+      "algdb": "OLL 39",
+      "image": "OLL-39.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y] R U R' (F' U' F) U R U2 R'",
+          "desc": "Basically [RFS] with an embedded (F' U' F)",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] R U R' (F' U' F) U R U2' R'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y] R B' (R' U' R U) B U' R'",
+          "desc": "Includes the [BRU] algorithm",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y] R z f' (R' U' R U) z' f U' R'",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "name": "Big Lightning Bolt",
+      "wiki": "OLL 40",
+      "algdb": "OLL 40",
+      "image": "OLL-40.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y2] R' F (R U R' U') F' U R",
+          "desc": "Includes the [FRU] algorithm",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "name": "Awkward Shape",
+      "wiki": "OLL 41",
+      "algdb": "OLL 41",
+      "image": "OLL-41.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y] (R U R' U R U2' R') F (R U R' U') F'",
+          "desc": "Combination of two simple OLLs - [RFS], [FRU]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "42",
+      "name": "Awkward Shape",
+      "wiki": "OLL 42",
+      "algdb": "OLL 42",
+      "image": "OLL-42.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y'] (R' U' R U' R' U2 R) F (R U R' U') F'",
+          "desc": "Combination of two simple OLLs - [RBS], [FRU]",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y'] (R' U' R U' R' U2' R) F (R U R' U') F'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "name": "P Shape - Little \"b\"",
+      "wiki": "OLL 43",
+      "algdb": "OLL 43",
+      "image": "OLL-43.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "F' (U' L' U L) F",
+          "desc": "[Conjugate] of [reverse-sexy] - [F': U' L' U L]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "[y2] f' (L' U' L U) f",
+          "desc": "[Conjugate] of [sexy] - [f': L' U' L U]",
+		  "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "[y2] B' (U' R' U R) B",
+          "desc": "[Conjugate] of [reverse-sexy] from the back - [B': U' R' U R]",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y2] z f' (U' R' U R) z' f",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "44",
+      "name": "P Shape - Little \"p\"",
+      "wiki": "OLL 44",
+      "algdb": "OLL 44",
+      "image": "OLL-44.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y2] F (U R U' R') F'",
+          "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "f (R U R' U') f'",
+          "desc": "[Conjugate] of [sexy] - [f: R U R' U']",
+		  "status": 1,
+          "uses": ["2H"]
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "name": "T Shape - Suit Up",
+      "wiki": "OLL 45",
+      "algdb": "OLL 45",
+      "image": "OLL-45.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "F (R U R' U') F'",
+          "desc": "[Conjugate] of [sexy] - [F: R U R' U']",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "[y2] f (U R U' R') f'",
+          "desc": "[Conjugate] of [reverse-sexy] - [f: U R U' R']",
+		  "status": 1,
+          "uses": ["2H"]
+        }
+      ]
+    },
+    {
+      "id": "46",
+      "name": "C Shape - Seein' Headlights",
+      "wiki": "OLL 46",
+      "algdb": "OLL 46",
+      "image": "OLL-46.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y2] R' U' (R' F R F') U R",
+          "desc": "[Conjugate] of [sledgehammer] - [R' U': R' F R F']",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y2] R' U' (x R' U R U' x') U R",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+		}
+      ]
+    },
+    {
+      "id": "47",
+      "name": "L Shape - Anti-Breakneck",
+      "wiki": "OLL 47",
+      "algdb": "OLL 47",
+      "image": "OLL-47.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "F' (L' U' L U) (L' U' L U) F",
+          "desc": "[Conjugate] of double [sexy] - [F': [L' U' L U]*2]]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "[y2] f' (U' L' U L) (U' L' U L) f",
+          "desc": "[Conjugate] of double [reverse-sexy] - [f': [U' L' U L]*2]]",
+		  "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "B' (R' U' R U) (R' U' R U) B",
+          "desc": "[Conjugate] of double [sexy] from the back - [B': [R' U' R U]*2]]",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "z f' (R' U' R U) (R' U' R U) z' f",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+		}
+      ]
+	},
+    {
+      "id": "48",
+      "name": "L Shape - Breakneck",
+      "wiki": "OLL 48",
+      "algdb": "OLL 48",
+      "image": "OLL-48.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "F (R U R' U') (R U R' U') F'",
+          "desc": "[Conjugate] of double [sexy] - [F: [R U R' U']*2]]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "[y2] f (U R U' R') (U R U' R') f'",
+          "desc": "[Conjugate] of double [reverse-sexy] - [f: [U R U' R']*2]]",
+		  "status": 1,
+          "uses": ["2H"]
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "name": "L Shape - RB Squeezy",
+      "wiki": "OLL 49",
+      "algdb": "OLL 49",
+      "image": "OLL-49.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(r U' r') (r' U r) (r U r') (r' U' r)",
+          "desc": "[Palindrome] / [Commutator] extracts and re-inserts 2x2x1 blocks - [r U' r', r' U r]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "r U' r2' U r2 U r2' U' r",
+              "desc": "Two-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "r U' r2 U r2 U r2 U' r",
+              "desc": "One-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+		}
+      ]
+	},
+    {
+      "id": "50",
+      "name": "L Shape - RB Squeezy",
+      "wiki": "OLL 50",
+      "algdb": "OLL 50",
+      "image": "OLL-50.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(r' U r) (r U' r') (r' U' r) (r U r')",
+          "desc": "[Palindrome] / [Commutator] extracts and re-inserts 2x2x1 blocks - [r' U r, r U' r']",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "r' U r2 U' r2' U' r2 U r'",
+              "desc": "Two-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "r' U r2 U' r2 U' r2 U r'",
+              "desc": "One-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+		}
+      ]
+	},
+    {
+      "id": "51",
+      "name": "I Shape - Ant / Bottle Cap",
+      "wiki": "OLL 51",
+      "algdb": "OLL 51",
+      "image": "OLL-51.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y2] F (U R U' R') (U R U' R') F'",
+          "desc": "[Conjugate] of double [reverse-sexy] - [F: [U R U' R']*2]]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+		},
+		{
+		  "alg": "f (R U R' U') (R U R' U') f'",
+		  "desc": "[Conjugate] of double [sexy] - [f: [R U R' U']*2]]",
+		  "status": 1,
+		  "uses": ["2H"]
+		}
+      ]
+    },
+    {
+      "id": "52",
+      "name": "I Shape - Rice Cooker",
+      "wiki": "OLL 52",
+      "algdb": "OLL 52",
+      "image": "OLL-52.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "[y2] (R U R' U) (R U' B U' B' R')",
+          "desc": "Extract [F2L] pair, re-insert using alternative approach",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y2] (R U R' U) (R U' y R U' R' F')",
+              "desc": "Actual execution includes a rotation to avoid B moves",
+			  "status": 1,
+			  "uses": ["2H", "OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[y2] (R' U' R U') (R' U F' U F R)",
+          "desc": "Extract [F2L] pair, re-insert using alternative approach",
+		  "status": -1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "53",
+      "name": "L Shape - Frying Pan",
+      "wiki": "OLL 53",
+      "algdb": "OLL 53",
+      "image": "OLL-53.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "(r' U' R U' R' U2 r) (r' U' R U' R' U2 r)",
+          "desc": "[SuneOLL]: Double [RBWS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "r' U' R (U' R' U R) U' R' U2 r",
+              "desc": "Two-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "r' U' R (U' R' U R) U' R' U2' r",
+              "desc": "One-handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "54",
+      "name": "L Shape - Anti-Frying Pan",
+      "wiki": "OLL 54",
+      "algdb": "OLL 54",
+      "image": "OLL-54.png",
+      "prob": "1/54",
+      "algs" :
+      [
+        {
+          "alg": "r U R' (U R U' R') U R U2' r'",
+          "desc": "[SuneOLL]: [RFWDS]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "55",
+      "name": "I Shape - Highway",
+      "wiki": "OLL 55",
+      "algdb": "OLL 55",
+      "image": "OLL-55.png",
+      "prob": "1/108",
+      "algs" :
+      [
+        {
+          "alg": "[y] R' F R U R U' R2' F' R2 U' R' U R U R'",
+          "desc": "Fast [OLL] with a [PLL] feel - used by Collin Burns during 5.25 WR",
+		  "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "[y] (R U2' R' U' R U' R') U' (r' U' R U' R' U2' r)",
+          "desc": "[SuneOLL]: [RFAS], [AUF], [RBWS]",
+		  "status": 1,
+          "uses": ["OH"]
+        },
+        {
+          "alg": "[y] (R U2' R2' U' R) U' (R' U2' F R F')",
+          "desc": "I used this for [2H] before discovering the faster algorithm",
+		  "status": -1,
+          "uses": ["2H"]
+        }
+      ]
+    },
+    {
+      "id": "56",
+      "name": "I Shape - Street Lights",
+      "wiki": "OLL 56",
+      "algdb": "OLL 56",
+      "image": "OLL-56.png",
+      "prob": "1/108",
+      "algs" :
+      [
+        {
+          "alg": "r U r' (U R U' R') (U R U' R') r U' r'",
+          "desc": "[Conjugate] of double [reverse-sexy] - [r U r': [U R U' R']*2]]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "57",
+      "name": "H / I",
+      "wiki": "OLL 57",
+      "algdb": "OLL 57",
+      "image": "OLL-57.png",
+      "prob": "1/108",
+      "algs" :
+      [
+        {
+          "alg": "(R U R' U') M' (U R U' R') M",
+          "desc": "[Sexy], M-slice, [reverse-sexy], M-slice",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "(R U R' U') M' (U R U' r')",
+              "desc": "Two-handed execution",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "(R U R' U') r R' (U R U' r')",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+  ],
+  "views":
+  [
+    {
+      "id": "numeric",
+      "name": "Numeric",
+      "uses": ["2H", "OH"],
+      "groups":
+      [
+        {
+          "id": "Numerical",
+          "name": "",
+          "cases": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                    "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+                    "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+					"31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
+					"41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
+					"51", "52", "53", "54", "55", "56", "57"]
+        },
+      ]
+    },
+    {
+      "id": "shapes",
+      "name": "Shapes",
+      "uses": ["2H", "OH"],
+      "groups":
+      [
+        {
+          "id": "alledges",
+          "name": "All Edges Oriented",
+		  "desc": "These are the 7 \"dot\" cases",
+          "wiki": "#All_edges_flipped_correctly",
+          "cases": ["21", "22", "23", "24", "25", "26", "27"]
+        },
+        {
+          "id": "noedges",
+          "name": "No Edges Oriented",
+		  "desc": "These are the 7 OCLL cases",
+          "wiki": "#No_edges_flipped_correctly",
+          "cases": ["1", "2", "3", "4", "17", "18", "19"]
+        },
+        {
+          "id": "allcorners",
+          "name": "All Corners Oriented",
+		  "desc": "These are the 3 [EOLL] cases",
+          "wiki": "#All_Corners_Oriented",
+          "cases": ["28", "57", "20"]
+        },
+        {
+          "id": "pshapes",
+          "name": "\"P\" Shapes",
+		  "desc": "",
+          "wiki": "#.22P.22_shapes",
+          "cases": ["31", "32", "43", "44"]
+        },
+        {
+          "id": "wshapes",
+          "name": "\"W\" Shapes",
+		  "desc": "",
+          "wiki": "#.22W.22_shapes",
+          "cases": ["36", "38"]
+        },
+        {
+          "id": "lshapes",
+          "name": "\"L\" Shapes",
+		  "desc": "",
+          "wiki": "#.22L.22_shapes",
+          "cases": ["47", "48", "49", "50", "53", "54"]
+        },
+        {
+          "id": "cshapes",
+          "name": "\"C\" Shapes",
+		  "desc": "",
+          "wiki": "#.22C.22_shapes",
+          "cases": ["34", "46"]
+        },
+        {
+          "id": "tshapes",
+          "name": "\"T\" Shapes",
+		  "desc": "",
+          "wiki": "#.22T.22_shapes",
+          "cases": ["33", "45"]
+        },
+        {
+          "id": "ishapes",
+          "name": "\"I\" Shapes",
+		  "desc": "",
+          "wiki": "#.22I.22_shapes",
+          "cases": ["51", "52", "55", "56"]
+        },
+        {
+          "id": "squares",
+          "name": "Square Shapes",
+		  "desc": "",
+          "wiki": "#Square_shapes",
+          "cases": ["5", "6"]
+        },
+        {
+          "id": "bigbolts",
+          "name": "Big Lightning Bolt Shapes",
+		  "desc": "",
+          "wiki": "#Big_lightning_bolt_shapes",
+          "cases": ["39", "40"]
+        },
+        {
+          "id": "smallbolts",
+          "name": "Small Lightning Bolt Shapes",
+		  "desc": "",
+          "wiki": "#Small_lightning_bolt_shapes",
+          "cases": ["7", "8", "11", "12"]
+        },
+        {
+          "id": "fishes",
+          "name": "Fish Shapes",
+		  "desc": "",
+          "wiki": "#Fish_shapes",
+          "cases": ["9", "10", "35", "37"]
+        },
+        {
+          "id": "knightmoves",
+          "name": "Knight Move Shapes",
+		  "desc": "",
+          "wiki": "#Knight_move_shapes",
+          "cases": ["13", "14", "15", "16"]
+        },
+        {
+          "id": "awkwards",
+          "name": "Awkward Shapes",
+		  "desc": "",
+          "wiki": "#Awkward_shapes",
+          "cases": ["29", "30", "41", "42"]
+        },
+      ]
+    },
+    {
+      "id": "edges",
+      "name": "Edge Cases",
+      "uses": ["2H", "OH"],
+      "groups":
+      [
+        {
+          "id": "crosses",
+          "name": "Cross Cases",
+          "cases": ["21", "22", "23", "24", "25", "26", "27"]
+        },
+        {
+          "id": "dots",
+          "name": "Dot Cases",
+          "cases": ["1", "2", "3", "4", "17", "18", "19", "20"]
+        },
+        {
+          "id": "lines",
+          "name": "Line Cases",
+          "cases": ["13", "14", "15", "16", "33", "34", "39", "40",
+					"45", "46", "51", "52", "55", "56", "57"]
+        },
+        {
+          "id": "adjacents",
+          "name": "Adjacent Cases",
+          "cases": ["5", "6", "7", "8", "9", "10", "11", "12", "28", "29",
+					"30", "31", "32", "35", "36", "37", "38", "41", "42", "43",
+					"44", "47", "48", "49", "50", "53", "54"]
+        }
+      ]
+    },
+    {
+      "id": "corners",
+      "name": "Corner Cases",
+      "uses": ["2H", "OH"],
+      "groups":
+      [
+        {
+          "id": "oriented",
+          "name": "All Corners Oriented",
+          "cases": ["28", "57", "20"]
+        },
+        {
+          "id": "antisune",
+          "name": "Anti-Sune",
+          "cases": ["26", "6", "8", "12", "9", "16", "14", "4"]
+        },
+        {
+          "id": "sune",
+          "name": "Sune",
+          "cases": ["27", "5", "7", "11", "10", "15", "13", "3"]
+        },
+        {
+          "id": "bowtie",
+          "name": "L / Bowtie",
+          "cases": ["25", "37", "35", "38", "36", "40", "39", "17"]
+        },
+        {
+          "id": "headlights",
+          "name": "U / Headlights",
+          "cases": ["23", "44", "43", "41", "42", "45", "46", "18"]
+        },
+        {
+          "id": "chameleon",
+          "name": "T / Chameleon",
+          "cases": ["24", "31", "32", "29", "30", "33", "34", "19"]
+        },
+        {
+          "id": "bruno",
+          "name": "Pi / Bruno",
+          "cases": ["22", "48", "47", "50", "49", "51", "52", "2"]
+        },
+        {
+          "id": "doublesune",
+          "name": "H / Double Sune",
+          "cases": ["21", "53", "54", "56", "55", "1"]
+        },
+	  ]
+    },
+    {
+      "id": "grid",
+      "name": "Grid",
+      "headers": ["OCLL", "Adj", "Adj", "Adj", "Adj", "Line", "Line", "Dot"],
+      "rows":
+      [
+        {
+          "id": "eoll",
+          "name": "EOLL (Preserving CO)",
+          "cases": ["0", null, "28", null, null, "57", null, "20"]
+        },
+        {
+          "id": "antisune",
+          "name": "Anti-Sune",
+          "cases": ["26", "9", "12", "6", "8", "14", "16", "4"]
+        },
+        {
+          "id": "sune",
+          "name": "Sune",
+          "cases": ["27", "11", "10", "7", "5", "13", "15", "3"]
+        },
+        {
+          "id": "bowtie",
+          "name": "L / Bowtie",
+          "cases": ["25", "35", "38", "37", "36", "40", "39", "17"]
+        },
+        {
+          "id": "headlights",
+          "name": "U / Headlights",
+          "cases": ["23", "44", "43", "42", "41", "45", "46", "18"]
+        },
+        {
+          "id": "chameleon",
+          "name": "T / Chameleon",
+          "cases": ["24", "32", "31", "29", "30", "33", "34", "19"]
+        },
+        {
+          "id": "bruno",
+          "name": "Pi / Bruno",
+          "cases": ["22", "50", "49", "48", "47", "51", "52", "2"]
+        },
+        {
+          "id": "doublesune",
+          "name": "H / Double Sune",
+          "cases": ["21", "53", "54", null, null, "56", "55", "1"]
+        },
+      ]
+    },
+  ]
+}

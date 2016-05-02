@@ -1,0 +1,30 @@
+# -----------------------------------------------------------------------
+# Test using redbot.org
+# -----------------------------------------------------------------------
+
+# -----------------------------------------------------------------------
+# Stop search engines adding this page to their index - PRIVATE!
+# -----------------------------------------------------------------------
+Header set X-Robots-Tag none
+
+# -----------------------------------------------------------------------
+# Caching for 90 days - static images (unlikely to change)
+# -----------------------------------------------------------------------
+<FilesMatch "\.(jpg|png|gif)$">
+Header set Cache-Control "max-age=7776000, public"
+</FilesMatch>
+
+# -----------------------------------------------------------------------
+# Caching for 360 days - dynamic content (versioned)
+# -----------------------------------------------------------------------
+<FilesMatch "-min-.*\.(css|js)$">
+Header set Cache-Control "max-age=31104000, public"
+</FilesMatch>
+
+# -----------------------------------------------------------------------
+# Compressing output
+# -----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css
+    AddOutputFilterByType DEFLATE application/javascript
+</Ifmodule>
