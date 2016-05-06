@@ -122,25 +122,19 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[y] (F R' F' L) (F R F' L')",
-          "desc": "Basic [commutator] - [F R' F', L]",
+          "alg": "x' (R U' R' D) (R U R' D') x",
+          "desc": "First half of the standard E-Perm. Basic [commutator] - [R U' R', D]",
 		  "status": 1,
-          "uses": [],
+          "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "[y] (F R' F' r) (U R U' r')",
-              "desc": "Two-handed execution is wide [hedgeslammer], wide [inverse-sexy]",
+			  "alg": "x' (R U' R' D) (R U R' u') [z']",
+              "desc": "One-handed execution",
 			  "status": 1,
-			  "uses": ["2H"]
+			  "uses": ["OH"]
 			},
 		  ]
-        },
-        {
-          "alg": "[y] L' (R U R' U') L (U R U' R')",
-          "desc": "Basic [commutator] - [L', R U R' U']",
-		  "status": 1,
-          "uses": ["OH"]
         }
       ]
     },
@@ -163,18 +157,18 @@ var algSet = {
 		  [
 			{
 			  "alg": "[y2] F' (r U R' U') r' F R",
-              "desc": "Execution makes use of wide turns",
+              "desc": "Two-handed execution",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
+			{
+			  "alg": "[y2] F' (r U R' U') z U' R u",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
 		  ]
         },
-        {
-          "alg": "[y2] R (L' U' L U) R' (U' L' U L)",
-          "desc": "Basic [commutator] - [R, L' U' L U]",
-		  "status": 1,
-          "uses": ["OH"]
-        }
       ]
     },
     {
@@ -195,18 +189,18 @@ var algSet = {
 		  [
 			{
 			  "alg": "[y] r U2' (R2' F R F') R U2' r'",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Two-handed execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
+			{
+			  "alg": "[y] r U2' (R2 x U R U') R x U2' r'",
+              "desc": "One-handed execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
 		  ]
         },
-        {
-          "alg": "L' U2' R U' R' U2' L R U' R'",
-          "desc": "&quot;Pretty much the only good OH alg&quot; - Antoine Cantin",
-		  "status": 1,
-          "uses": ["OH"]
-        }
       ]
     },
     {
@@ -436,19 +430,10 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R' U r U2 R' (R' F R F') R U2 r' R",
-          "desc": "R' U, algorithm for Bowtie / L6, R",
+          "alg": "[y2] R' F R U R' U' R' F' R2 U' R' U2 R",
+          "desc": "Fast two-handed algorithm",
 		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R' U r U2' (R2' F R F') R U2' M",
-              "desc": "Actual execution includes cancellations",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-		  ]
+          "uses": ["2H"]
         },
         {
           "alg": "R' U R U2' R' L' U R U' L",
@@ -462,7 +447,6 @@ var algSet = {
       "id": "T3",
       "name": "Chameleon #3",
 	  "desc": "Inverse of Bowtie / L5. Reflection of Chameleon / T5.",
-	  "desc": "Inverse of Bowtie / L5. Reflection of Chameleon / T5.",
       "wiki": "",
       "algdb": "COLL T/F3",
       "image": "COLL-T-3.png",
@@ -470,26 +454,20 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[y] (R' F' L F) (R F' L' F)",
-          "desc": "Basic [commutator] - [R', F' L F]",
+          "alg": "[y2] x' (R U R' D) (R U' R' D') x",
+          "desc": "Second half of the standard E-Perm. Basic [commutator] - [R, U R' D]",
 		  "status": 1,
-          "uses": [],
+          "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "[y] R' F' r (U R U' r') F",
-              "desc": "Execution makes use of wide turns",
+			  "alg": "[y2] x' (R U R' D) (R U' R' u') [z']",
+              "desc": "One-handed execution",
 			  "status": 1,
-			  "uses": ["2H"]
+			  "uses": ["OH"]
 			}
 		  ]
         },
-        {
-          "alg": "[y] (L' U' L U) R (U' L' U L) R'",
-          "desc": "Basic [commutator] - [L' U' L U, R]",
-		  "status": 1,
-          "uses": ["OH"]
-        }
       ]
     },
     {
@@ -538,18 +516,18 @@ var algSet = {
 		  [
 			{
 			  "alg": "[y'] (r U R' U') (r' F R F')",
-              "desc": "Execution is wide [sexy], wide [sledgehammer]",
+              "desc": "Two-handed execution is wide [sexy], wide [sledgehammer]",
 			  "status": 1,
 			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[y'] (r U R' U') z (U' R u F') [z']",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
 			}
 		  ]
         },
-        {
-          "alg": "[y'] (R U R' U') L' (U R U' R') L",
-          "desc": "Basic [commutator] - [R U R' U', L']",
-		  "status": 1,
-          "uses": ["OH"]
-        }
       ]
     },
     {
@@ -927,7 +905,7 @@ var algSet = {
         {
           "id": "diagonal",
           "name": "Diagonal Swap",
-          "cases": ["L6", "U6", "T6", "P6", "H6"]
+          "cases": ["L6", "U6", "T6", "P6", "H4"]
         },
 	  ]
     },
