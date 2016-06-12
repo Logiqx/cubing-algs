@@ -104,7 +104,34 @@ var algSet = {
               "desc": "Execution makes use of wide turns",
 			  "status": 1,
 			  "uses": ["2H"]
-			}
+			},
+			{
+			  "alg": "[y2] F' (r U R' U') z U' R u",
+              "desc": "One-handed execution",
+			  "status": 0,
+			  "uses": ["OH"]
+			},
+		  ]
+        },
+        {
+          "alg": "x' (R U' R' D) (R U R' D') x",
+          "desc": "First half of the standard E-Perm. Basic [commutator] - [R U' R', D]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "(l U' R' D) (R U R' D') x",
+              "desc": "Two-handed execution",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "x' (R U' R' D) (R U R' u') [z']",
+              "desc": "One-handed execution",
+			  "status": 0,
+			  "uses": ["OH"]
+			},
 		  ]
         },
         {
@@ -231,9 +258,36 @@ var algSet = {
               "desc": "Execution is wide [sexy], wide [sledgehammer]",
 			  "status": 1,
 			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[y'] (r U R' U') z (U' R u F') [z']",
+              "desc": "One-handed execution",
+			  "status": 0,
+			  "uses": ["OH"]
 			}
 		  ]
         },
+        {
+          "alg": "[y2] x' (R U R' D) (R U' R' D') x",
+          "desc": "Second half of the standard E-Perm. Basic [commutator] - [R, U R' D]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[y2] (l U R' D) (R U' R' u') [z']",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[y2] x' (R U R' D) (R U' R' u') [z']",
+              "desc": "One-handed execution",
+			  "status": 0,
+			  "uses": ["OH"]
+			}
+		  ]
+		},
         {
           "alg": "(R U2 R' U' R U' R') (R' U2' R U R' U R)",
           "desc": "[SuneOLL]/[2GLL]: [RFAS], [RBAS]",
