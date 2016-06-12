@@ -125,9 +125,15 @@ var algSet = {
           "alg": "x' (R U' R' D) (R U R' D') x",
           "desc": "First half of the standard E-Perm. Basic [commutator] - [R U' R', D]",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": [],
 		  "vars" :
 		  [
+			{
+			  "alg": "(l U' R' D) (R U R' D') x",
+              "desc": "Two-handed execution",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
 			{
 			  "alg": "x' (R U' R' D) (R U R' u') [z']",
               "desc": "One-handed execution",
@@ -252,14 +258,14 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "R' (R2 U' R' U R U' x' U' z' U' R U' R' U' L U z x) R",
+          "alg": "R' (R2 U' R' U R U' x' U' z' U' R U' R' U' z U R x) R",
           "desc": "[Conjugate] - [R': Y-Perm]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "R U' R' U R U' x' U' z' U' R U' R' U' L U2",
+			  "alg": "R U' R' U R U' x' U' z' U' R U' R' U' z U R2 x",
               "desc": "Actual execution includes some cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -457,9 +463,15 @@ var algSet = {
           "alg": "[y2] x' (R U R' D) (R U' R' D') x",
           "desc": "Second half of the standard E-Perm. Basic [commutator] - [R, U R' D]",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": [],
 		  "vars" :
 		  [
+			{
+			  "alg": "[y2] (l U R' D) (R U' R' u') [z']",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
 			{
 			  "alg": "[y2] x' (R U R' D) (R U' R' u') [z']",
               "desc": "One-handed execution",
@@ -780,14 +792,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[y] F (R U' R' U R U2 R' U' R U R' U') F'",
+          "alg": "F (R U' R' U R U2 R' U' R U R' U') F'",
           "desc": "Two-handed execution",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "[y] F (R U' R' U R U2' R' U' R U R' U') F'",
+			  "alg": "F (R U' R' U R U2' R' U' R U R' U') F'",
               "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
