@@ -93,10 +93,25 @@ var algSet = {
           "uses": ["2H", "OH"]
         },
         {
+          "alg": "(R U2 R' U' R U' R') U' (R U2 R' U' R U' R')",
+          "desc": "[SuneOLL]: [RFWAS], [AUF], [RFWAS]",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "(R U2' R' U' R U' R') U' (R U2' R' U' R U' R')",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
           "alg": "F (R U R' U') F' f (R U R' U') f'",
           "desc": "Combination of two simple OLLs",
 		  "status": -1,
-          "uses": ["2H"],
+          "uses": [],
 		  "vars" :
 		  [
 			{
@@ -703,6 +718,12 @@ var algSet = {
 			}
 		  ]
         },
+        {
+          "alg": "[y] F (R U R' U') (R U R' U') (R U R' U') F'",
+          "desc": "F triple-[sexy] F'",
+		  "status": -1,
+          "uses": ["2H", "OH"]
+        },
       ]
     },
     {
@@ -735,6 +756,21 @@ var algSet = {
 			}
 		  ]
         },
+        {
+          "alg": "f (R U R' U') f' F (R U R' U') F'",
+          "desc": "Combination of two simple OLLs",
+		  "status": -1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "f (R U R' U') S' (R U R' U') F'",
+              "desc": "Actual execution includes a cancellation",
+              "status": -1,
+			  "uses": ["2H"]
+			}
+		  ]
+        }
       ]
     },
     {
@@ -1409,6 +1445,12 @@ var algSet = {
           "desc": "Easy OLL also used in the Y-Perm [PLL]",
 		  "status": 1,
           "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "(F R' F' R) (U R U' R')",
+          "desc": "Two simple triggers - [hedgeslammer] followed by inverse-[sexy]",
+		  "status": -1,
+          "uses": ["2H", "OH"]
         }
       ]
     },
@@ -1567,6 +1609,12 @@ var algSet = {
           "uses": ["2H"]
         },
         {
+          "alg": "[y'] R' (U' F' U F) R",
+          "desc": "[Conjugate] - [R': U' F U F]",
+		  "status": 0,
+          "uses": ["2H", "OH"]
+        },
+        {
           "alg": "[y2] B' (U' R' U R) B",
           "desc": "[Conjugate] of [reverse-sexy] from the back - [B': U' R' U R]",
 		  "status": -1,
@@ -1580,7 +1628,7 @@ var algSet = {
 			  "uses": ["OH"]
 			}
 		  ]
-        }
+        },
       ]
     },
     {
