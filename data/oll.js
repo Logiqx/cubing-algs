@@ -303,7 +303,7 @@ var algSet = {
 		  "vars" :
 		  [
 			{
-			  "alg": "[U2] (R U R' U') (R' F R2 U R' U' F')",
+			  "alg": "[U2] (R U R' U') R' F R2 U R' U' F'",
               "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["2H"]

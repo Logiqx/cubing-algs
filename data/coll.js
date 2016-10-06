@@ -670,11 +670,20 @@ var algSet = {
       "prob": "2/81",
       "algs" :
       [
-        {
-          "alg": "R U R' U' R' F R2 U R' U' R U R' U' F'",
-          "desc": "Fast two-handed algorithm",
+		{
+          "alg": "(R U R' U') (R' F R F') F (R U R' U') (R U R' U') F'",
+          "desc": "Combination of two simple OLLs - [sexy-sledge], F double-[sexy] F'",
 		  "status": 1,
-          "uses": ["2H"]
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "(R U R' U') R' F R2 U R' U' (R U R' U') F'",
+              "desc": "Actual execution includes cancellations. Very similar to OLL 9.",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
         },
         {
           "alg": "[U'] (R' U2' R U R' U R) (R U' L' U R' U' L)",
