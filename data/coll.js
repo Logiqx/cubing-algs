@@ -29,14 +29,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[U'] R U2 R' U' (R U R' U') (R U R' U') R U' R'",
+          "alg": "[U] R U2 R' U' (R U R' U') (R U R' U') R U' R'",
           "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U'] R U2' R' U' (R U R' U') (R U R' U') R U' R'",
+			  "alg": "[U] R U2' R' U' (R U R' U') (R U R' U') R U' R'",
 			  "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -56,20 +56,20 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R2 (R U2 R' D') (R U2 R' D) R2'",
+          "alg": "[U2] R2 (R U2 R' D') (R U2 R' D) R2'",
           "desc": "A9 [commutator] / [conjugate] - [R2: [R U2 R', D']]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "R' U2 R' D' R U2 R' D R2",
+			  "alg": "[U2] R' U2 R' D' R U2 R' D R2",
               "desc": "Actual execution includes a cancellation",
               "status": 1,
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "R' U2' R' D' R U2' R' D R2",
+			  "alg": "[U2] R' U2' R' D' R U2' R' D R2",
               "desc": "Actual execution includes a cancellation",
               "status": 1,
 			  "uses": ["OH"]
@@ -89,20 +89,20 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[U] R2 (R' U2 R D) (R' U2 R D') R2'",
+          "alg": "[U'] R2 (R' U2 R D) (R' U2 R D') R2'",
           "desc": "A9 [commutator] / [conjugate] - [R2: [R' U2 R, D]]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U] R U2 R D R' U2 R D' R2'",
+			  "alg": "[U'] R U2 R D R' U2 R D' R2'",
               "desc": "Actual execution includes a cancellation",
               "status": 1,
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "[U] R U2' R D R' U2' R D' R2",
+			  "alg": "[U'] R U2' R D R' U2' R D' R2",
               "desc": "Actual execution includes a cancellation",
               "status": 1,
 			  "uses": ["OH"]
@@ -122,20 +122,20 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "x' (R U' R' D) (R U R' D') x",
+          "alg": "[U2] x' (R U' R' D) (R U R' D') x",
           "desc": "First half of the standard E-Perm. Basic [commutator] - [R U' R', D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "(l U' R' D) (R U R' D') x",
+			  "alg": "[U2] (l U' R' D) (R U R' D') x",
               "desc": "Two-handed execution",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "x' (R U' R' D) (R U R' u') [z']",
+			  "alg": "[U2] x' (R U' R' D) (R U R' u') [z']",
               "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -155,20 +155,20 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[U2] (F' L F R') (F' L' F R)",
+          "alg": "(F' L F R') (F' L' F R)",
           "desc": "Basic [commutator] - [F' L F, R']",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U2] F' (r U R' U') r' F R",
+			  "alg": "F' (r U R' U') r' F R",
               "desc": "Two-handed execution",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "[U2] F' (r U R' U') z U' R u",
+			  "alg": "F' (r U R' U') z U' R u",
               "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -187,20 +187,20 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[U] r U2 R' (R' F R F') R U2 r'",
+          "alg": "[U'] r U2 R' (R' F R F') R U2 r'",
           "desc": "Modified [OLL] #35. Extract 2x2x1 block, [sledgehammer], re-insert block",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U] r U2' (R2' F R F') R U2' r'",
+			  "alg": "[U'] r U2' (R2' F R F') R U2' r'",
               "desc": "Two-handed execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "[U] r U2' (R2 x U R U') R x U2' r'",
+			  "alg": "[U'] r U2' (R2 x U R U') R x U2' r'",
               "desc": "One-handed execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -234,6 +234,27 @@ var algSet = {
 			},
 			{
 			  "alg": "R' U' R U' R' U2' R2 U R' U R U2' R'",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[U2] (R U R' U R U2' R') (R' U' R U' R' U2 R)",
+          "desc": "[SuneOLL]/[2GLL]: [RFS], [RBS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[U2] R U R' U R U2' R2' U' R U' R' U2 R",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[U2] R U R' U R U2' R2 U' R U' R' U2' R",
               "desc": "Actual execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -424,6 +445,27 @@ var algSet = {
 			}
 		  ]
         },
+        {
+          "alg": "[U2] (R' U2' R U R' U R) (R U2 R' U' R U' R')",
+          "desc": "[SuneOLL]/[2GLL]: [RBAS], [RFAS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[U2] R' U2' R U R' U R2 U2 R' U' R U' R'",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[U2] R' U2' R U R' U R2 U2' R' U' R U' R'",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
       ]
     },
     {
@@ -818,30 +860,30 @@ var algSet = {
       ]
     },
     {
-      "id": "H3",
-      "name": "Double Sune #3",
+      "id": "H5",
+      "name": "Double Sune #5",
       "desc": "Inverse of Bruno / P5.",
       "wiki": "",
       "algdb": "COLL H/H3",
-      "image": "COLL-H-3",
+      "image": "COLL-H-5",
       "prob": "2/81",
       "algs" :
       [
         {
-          "alg": "R' F' R U2 R U2 R' F U' R U' R'",
+          "alg": "[U2] R' F' R U2 R U2 R' F U' R U' R'",
           "desc": "Fast two-handed algorithm",
 		  "status": 1,
           "uses": ["2H"]
         },
         {
-          "alg": "(R' U' R U' R' U2 R) U (U' R' U L) (U' R U L')",
+          "alg": "[U2] (R' U' R U' R' U2 R) U (U' R' U L) (U' R U L')",
           "desc": "[RBS] followed by [Niklas]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "R' U' R U' R' U' L U' R U L'",
+			  "alg": "[U2] R' U' R U' R' U' L U' R U L'",
               "desc": "Actual execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -851,11 +893,11 @@ var algSet = {
       ]
     },
     {
-      "id": "H4",
-      "name": "Double Sune #4",
+      "id": "H6",
+      "name": "Double Sune #6",
       "wiki": "",
       "algdb": "COLL H/H4",
-      "image": "COLL-H-4",
+      "image": "COLL-H-6",
       "prob": "1/81",
       "algs" :
       [
@@ -899,7 +941,7 @@ var algSet = {
         {
           "id": "doublesune",
           "name": "H / Double Sune",
-          "cases": ["H1", "H2", "H3", "H4"]
+          "cases": ["H1", "H2", "H5", "H6"]
         },
 	  ]
     },
@@ -921,19 +963,19 @@ var algSet = {
 		            "U2", "U3", "U4", "U5",
 					"T2", "T3", "T4", "T5",
 					"P2", "P3", "P4", "P5",
-					"H2", "H3"]
+					"H2", "H5"]
         },
         {
           "id": "diagonal",
           "name": "Diagonal Swap",
-          "cases": ["L6", "U6", "T6", "P6", "H4"]
+          "cases": ["L6", "U6", "T6", "P6", "H6"]
         },
 	  ]
     },
     {
       "id": "grid",
       "name": "Grid",
-      "headers": ["No CP", "Adj", "Adj", "Adj", "Adj", "Diag"],
+      "headers": ["2-Gen", "Back", "Right", "Front", "Left", "Diag"],
       "rows":
       [
         {
@@ -959,7 +1001,7 @@ var algSet = {
         {
           "id": "doublesune",
           "name": "H / Double Sune",
-          "cases": ["H1", "H2", null, null, "H3", "H4"]
+          "cases": ["H1", "H2", null, null, "H5", "H6"]
         },
       ]
     },

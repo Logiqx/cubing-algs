@@ -790,7 +790,7 @@ var algSet = {
 		  "vars" :
 		  [
 			{
-			  "alg": "R2 D' R U2 R' D R U2 R",
+			  "alg": "R2' D' R U2 R' D R U2 R",
               "desc": "Two-handed execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
@@ -2195,32 +2195,32 @@ var algSet = {
         {
           "id": "antisune",
           "name": "Anti-Sune",
-          "cases": ["26", "6", "8", "12", "9", "16", "14", "4"]
+          "cases": ["26", "9", "12", "8", "6", "14", "16", "4"]
         },
         {
           "id": "sune",
           "name": "Sune",
-          "cases": ["27", "5", "7", "11", "10", "15", "13", "3"]
+          "cases": ["27", "11", "10", "5", "7", "13", "15", "3"]
         },
         {
           "id": "bowtie",
           "name": "L / Bowtie",
-          "cases": ["25", "37", "35", "38", "36", "40", "39", "17"]
+          "cases": ["25", "38", "37", "35", "36", "39", "40", "17"]
         },
         {
           "id": "headlights",
           "name": "U / Headlights",
-          "cases": ["23", "44", "43", "41", "42", "45", "46", "18"]
+          "cases": ["23", "43", "42", "44", "41", "46", "45", "18"]
         },
         {
           "id": "chameleon",
           "name": "T / Chameleon",
-          "cases": ["24", "31", "32", "29", "30", "33", "34", "19"]
+          "cases": ["24", "31", "29", "32", "30", "34", "33", "19"]
         },
         {
           "id": "bruno",
           "name": "Pi / Bruno",
-          "cases": ["22", "48", "47", "50", "49", "51", "52", "2"]
+          "cases": ["22", "50", "49", "47", "48", "51", "52", "2"]
         },
         {
           "id": "doublesune",
@@ -2232,7 +2232,7 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
-      "headers": ["OCLL", "Adj", "Adj", "Adj", "Adj", "Line", "Line", "Dot"],
+      "headers": ["OCLL", "LB", "LF", "RB", "RF", "FB", "LR", "4-Flip"],
       "rows":
       [
         {

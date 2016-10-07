@@ -1,5 +1,5 @@
 .s64-coll {
-    background-image: url(../img/s64-coll-01.png);
+    background-image: url(../img/s64-coll-02.png);
     background-repeat: no-repeat;
     display: block;
     width: 64px;
@@ -38,11 +38,11 @@
     background-position: -64px -64px;
 }
 
-.s64-coll-h-3 {
+.s64-coll-h-5 {
     background-position: -128px -64px;
 }
 
-.s64-coll-h-4 {
+.s64-coll-h-6 {
     background-position: -192px -64px;
 }
 
@@ -167,7 +167,7 @@
 }
 
 .s96-coll {
-    background-image: url(../img/s96-coll-01.png);
+    background-image: url(../img/s96-coll-02.png);
     background-repeat: no-repeat;
     display: block;
     width: 96px;
@@ -206,11 +206,11 @@
     background-position: -96px -96px;
 }
 
-.s96-coll-h-3 {
+.s96-coll-h-5 {
     background-position: -192px -96px;
 }
 
-.s96-coll-h-4 {
+.s96-coll-h-6 {
     background-position: -288px -96px;
 }
 
@@ -335,7 +335,7 @@
 }
 
 .s128-coll {
-    background-image: url(../img/s128-coll-01.png);
+    background-image: url(../img/s128-coll-02.png);
     background-repeat: no-repeat;
     display: block;
     width: 128px;
@@ -374,11 +374,11 @@
     background-position: -128px -128px;
 }
 
-.s128-coll-h-3 {
+.s128-coll-h-5 {
     background-position: -256px -128px;
 }
 
-.s128-coll-h-4 {
+.s128-coll-h-6 {
     background-position: -384px -128px;
 }
 
