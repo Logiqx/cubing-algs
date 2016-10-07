@@ -206,7 +206,7 @@ function renderCase(caseId, narrow)
 		document.title = algSet.header.id + " " + caseId;
 		
 		// Image
-		out += "<img class=\"ll" + imgSize + "\" src=\"img/" + algSet.header.id + "/" + imgSize + "/" + caseObj.image + "\" />";
+		out += "<p><i class=\"s" + imgSize + " s" + imgSize + "-" + caseObj.image.toLowerCase() + "\"></i></p>";
 
 		// Description
 		if (caseObj.desc)

@@ -87,43 +87,9 @@ td.uses
   text-align : center;
 }
 
-/* Image properties */
+/* Sprites */
 
-img.ll64
+.clicky
 {
-	width: 64px;
-	height: 64px;
-}
-
-img.ll64p
-{
-	width: 64px;
-	height: 64px;
-	cursor: pointer;
-}
-
-img.ll96
-{
-	width: 96px;
-	height: 96px;
-}
-
-img.ll96p
-{
-	width: 96px;
-	height: 96px;
-	cursor: pointer;
-}
-
-img.ll128
-{
-  width: 128px;
-  height: 128px;
-}
-
-img.ll128p
-{
-  width: 128px;
-  height: 128px;
   cursor: pointer;
 }
