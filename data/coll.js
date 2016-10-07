@@ -931,7 +931,7 @@ var algSet = {
 	  ]
     },
     {
-      "id": "Grid",
+      "id": "grid",
       "name": "Grid",
       "headers": ["No CP", "Adj", "Adj", "Adj", "Adj", "Diag"],
       "rows":
