@@ -2237,7 +2237,7 @@ var algSet = {
       [
         {
           "id": "eoll",
-          "name": "EOLL (Preserving CO)",
+          "name": "EOLL",
           "cases": ["0", "28", null, null, null, null, "57", "20"]
         },
         {
