@@ -24,7 +24,7 @@ var algSet = {
       "name": "Solved",
       "wiki": "",
       "algdb": "",
-      "image": "OLL-00.png",
+      "image": "OLL-00",
       "prob": "1/216",
       "algs" :
 	  [
@@ -35,7 +35,7 @@ var algSet = {
       "name": "No Edges - Runway",
       "wiki": "OLL 1",
       "algdb": "OLL 1",
-      "image": "OLL-01.png",
+      "image": "OLL-01",
       "prob": "1/108",
       "algs" :
       [
@@ -67,7 +67,7 @@ var algSet = {
       "name": "No Edges - Zamboni",
       "wiki": "OLL 2",
       "algdb": "OLL 2",
-      "image": "OLL-02.png",
+      "image": "OLL-02",
       "prob": "1/54",
       "algs" :
       [
@@ -129,7 +129,7 @@ var algSet = {
       "name": "No Edges - Anti-Mouse",
       "wiki": "OLL 3",
       "algdb": "OLL 3",
-      "image": "OLL-03.png",
+      "image": "OLL-03",
       "prob": "1/54",
       "algs" :
       [
@@ -167,7 +167,7 @@ var algSet = {
       "name": "No Edges - Mouse",
       "wiki": "OLL 4",
       "algdb": "OLL 4",
-      "image": "OLL-04.png",
+      "image": "OLL-04",
       "prob": "1/54",
       "algs" :
       [
@@ -205,7 +205,7 @@ var algSet = {
       "name": "Square Shape - RBWAS",
       "wiki": "OLL 5",
       "algdb": "OLL 5",
-      "image": "OLL-05.png",
+      "image": "OLL-05",
       "prob": "1/54",
       "algs" :
       [
@@ -222,7 +222,7 @@ var algSet = {
       "name": "Square Shape - RFWAS",
       "wiki": "OLL 6",
       "algdb": "OLL 6",
-      "image": "OLL-06.png",
+      "image": "OLL-06",
       "prob": "1/54",
       "algs" :
       [
@@ -248,7 +248,7 @@ var algSet = {
       "name": "Small Lightning Bolt - RFWS",
       "wiki": "OLL 7",
       "algdb": "OLL 7",
-      "image": "OLL-07.png",
+      "image": "OLL-07",
       "prob": "1/54",
       "algs" :
       [
@@ -265,7 +265,7 @@ var algSet = {
       "name": "Small Lightning Bolt - RBWS",
       "wiki": "OLL 8",
       "algdb": "OLL 8",
-      "image": "OLL-08.png",
+      "image": "OLL-08",
       "prob": "1/54",
       "algs" :
       [
@@ -291,7 +291,7 @@ var algSet = {
       "name": "Fish Shape - Anti-Kite",
       "wiki": "OLL 9",
       "algdb": "OLL 9",
-      "image": "OLL-09.png",
+      "image": "OLL-09",
       "prob": "1/54",
       "algs" :
       [
@@ -332,7 +332,7 @@ var algSet = {
       "name": "Fish Shape - Kite",
       "wiki": "OLL 10",
       "algdb": "OLL 10",
-      "image": "OLL-10.png",
+      "image": "OLL-10",
       "prob": "1/54",
       "algs" :
       [
@@ -364,7 +364,7 @@ var algSet = {
       "name": "Small Lightning Bolt",
       "wiki": "OLL 11",
       "algdb": "OLL 11",
-      "image": "OLL-11.png",
+      "image": "OLL-11",
       "prob": "1/54",
       "algs" :
       [
@@ -396,7 +396,7 @@ var algSet = {
       "name": "Small Lightning Bolt",
       "wiki": "OLL 12",
       "algdb": "OLL 12",
-      "image": "OLL-12.png",
+      "image": "OLL-12",
       "prob": "1/54",
       "algs" :
       [
@@ -428,7 +428,7 @@ var algSet = {
       "name": "Knight Move - Gun",
       "wiki": "OLL 13",
       "algdb": "OLL 13",
-      "image": "OLL-13.png",
+      "image": "OLL-13",
       "prob": "1/54",
       "algs" :
       [
@@ -445,7 +445,7 @@ var algSet = {
       "name": "Knight Move - Anti-Gun",
       "wiki": "OLL 14",
       "algdb": "OLL 14",
-      "image": "OLL-14.png",
+      "image": "OLL-14",
       "prob": "1/54",
       "algs" :
       [
@@ -462,7 +462,7 @@ var algSet = {
       "name": "Knight Move - Squeegee",
       "wiki": "OLL 15",
       "algdb": "OLL 15",
-      "image": "OLL-15.png",
+      "image": "OLL-15",
       "prob": "1/54",
       "algs" :
       [
@@ -479,7 +479,7 @@ var algSet = {
       "name": "Knight Move - Anti-Squeegee",
       "wiki": "OLL 16",
       "algdb": "OLL 16",
-      "image": "OLL-16.png",
+      "image": "OLL-16",
       "prob": "1/54",
       "algs" :
       [
@@ -496,7 +496,7 @@ var algSet = {
       "name": "No Edges - Slash",
       "wiki": "OLL 17",
       "algdb": "OLL 17",
-      "image": "OLL-17.png",
+      "image": "OLL-17",
       "prob": "1/54",
       "algs" :
       [
@@ -528,7 +528,7 @@ var algSet = {
       "name": "No Edges - Crown",
       "wiki": "OLL 18",
       "algdb": "OLL 18",
-      "image": "OLL-18.png",
+      "image": "OLL-18",
       "prob": "1/54",
       "algs" :
       [
@@ -584,7 +584,7 @@ var algSet = {
       "name": "No Edges - Bunny / Mickey",
       "wiki": "OLL 19",
       "algdb": "OLL 19",
-      "image": "OLL-19.png",
+      "image": "OLL-19",
       "prob": "1/54",
       "algs" :
       [
@@ -640,7 +640,7 @@ var algSet = {
       "name": "No Edges - X / Checkers",
       "wiki": "OLL 20",
       "algdb": "OLL 20",
-      "image": "OLL-20.png",
+      "image": "OLL-20",
       "prob": "1/216",
       "algs" :
       [
@@ -672,7 +672,7 @@ var algSet = {
       "name": "H / Double Sune",
       "wiki": "OLL 21",
       "algdb": "OLL 21",
-      "image": "OLL-21.png",
+      "image": "OLL-21",
       "prob": "1/108",
       "algs" :
       [
@@ -731,7 +731,7 @@ var algSet = {
       "name": "Pi / Bruno",
       "wiki": "OLL 22",
       "algdb": "OLL 22",
-      "image": "OLL-22.png",
+      "image": "OLL-22",
       "prob": "1/54",
       "algs" :
       [
@@ -778,7 +778,7 @@ var algSet = {
       "name": "U / Headlights",
       "wiki": "OLL 23",
       "algdb": "OLL 23",
-      "image": "OLL-23.png",
+      "image": "OLL-23",
       "prob": "1/54",
       "algs" :
       [
@@ -849,7 +849,7 @@ var algSet = {
       "name": "T / Chameleon",
       "wiki": "OLL 24",
       "algdb": "OLL 24",
-      "image": "OLL-24.png",
+      "image": "OLL-24",
       "prob": "1/54",
       "algs" :
       [
@@ -932,7 +932,7 @@ var algSet = {
       "name": "L / Bowtie",
       "wiki": "OLL 25",
       "algdb": "OLL 25",
-      "image": "OLL-25.png",
+      "image": "OLL-25",
       "prob": "1/54",
       "algs" :
       [
@@ -1015,7 +1015,7 @@ var algSet = {
       "name": "Anti-Sune",
       "wiki": "OLL 26",
       "algdb": "OLL 26",
-      "image": "OLL-26.png",
+      "image": "OLL-26",
       "prob": "1/54",
       "algs" :
       [
@@ -1056,7 +1056,7 @@ var algSet = {
       "name": "Sune",
       "wiki": "OLL 27",
       "algdb": "OLL 27",
-      "image": "OLL-27.png",
+      "image": "OLL-27",
       "prob": "1/54",
       "algs" :
       [
@@ -1079,7 +1079,7 @@ var algSet = {
       "name": "Stealth / Angel Fish",
       "wiki": "OLL 28",
       "algdb": "OLL 28",
-      "image": "OLL-28.png",
+      "image": "OLL-28",
       "prob": "1/54",
       "algs" :
       [
@@ -1111,7 +1111,7 @@ var algSet = {
       "name": "Awkward Shape",
       "wiki": "OLL 29",
       "algdb": "OLL 29",
-      "image": "OLL-29.png",
+      "image": "OLL-29",
       "prob": "1/54",
       "algs" :
       [
@@ -1179,7 +1179,7 @@ var algSet = {
       "name": "Awkward Shape",
       "wiki": "OLL 30",
       "algdb": "OLL 30",
-      "image": "OLL-30.png",
+      "image": "OLL-30",
       "prob": "1/54",
       "algs" :
       [
@@ -1241,7 +1241,7 @@ var algSet = {
       "name": "P Shape - Little \"q\"",
       "wiki": "OLL 31",
       "algdb": "OLL 31",
-      "image": "OLL-31.png",
+      "image": "OLL-31",
       "prob": "1/54",
       "algs" :
       [
@@ -1258,7 +1258,7 @@ var algSet = {
       "name": "P Shape - Little \"d\"",
       "wiki": "OLL 32",
       "algdb": "OLL 32",
-      "image": "OLL-32.png",
+      "image": "OLL-32",
       "prob": "1/54",
       "algs" :
       [
@@ -1299,7 +1299,7 @@ var algSet = {
       "name": "T Shape - Key",
       "wiki": "OLL 33",
       "algdb": "OLL 33",
-      "image": "OLL-33.png",
+      "image": "OLL-33",
       "prob": "1/54",
       "algs" :
       [
@@ -1325,7 +1325,7 @@ var algSet = {
       "name": "C Shape - City (C and T)",
       "wiki": "OLL 34",
       "algdb": "OLL 34",
-      "image": "OLL-34.png",
+      "image": "OLL-34",
       "prob": "1/54",
       "algs" :
       [
@@ -1372,7 +1372,7 @@ var algSet = {
       "name": "Fish Shape - Fish Salad",
       "wiki": "OLL 35",
       "algdb": "OLL 35",
-      "image": "OLL-35.png",
+      "image": "OLL-35",
       "prob": "1/54",
       "algs" :
       [
@@ -1404,7 +1404,7 @@ var algSet = {
       "name": "W Shape - Wario",
       "wiki": "OLL 36",
       "algdb": "OLL 36",
-      "image": "OLL-36.png",
+      "image": "OLL-36",
       "prob": "1/54",
       "algs" :
       [
@@ -1436,7 +1436,7 @@ var algSet = {
       "name": "Fish Shape - Mounted Fish",
       "wiki": "OLL 37",
       "algdb": "OLL 37",
-      "image": "OLL-37.png",
+      "image": "OLL-37",
       "prob": "1/54",
       "algs" :
       [
@@ -1459,7 +1459,7 @@ var algSet = {
       "name": "W Shape - Mario",
       "wiki": "OLL 38",
       "algdb": "OLL 38",
-      "image": "OLL-38.png",
+      "image": "OLL-38",
       "prob": "1/54",
       "algs" :
       [
@@ -1491,7 +1491,7 @@ var algSet = {
       "name": "Big Lightning Bolt",
       "wiki": "OLL 39",
       "algdb": "OLL 39",
-      "image": "OLL-39.png",
+      "image": "OLL-39",
       "prob": "1/54",
       "algs" :
       [
@@ -1532,7 +1532,7 @@ var algSet = {
       "name": "Big Lightning Bolt",
       "wiki": "OLL 40",
       "algdb": "OLL 40",
-      "image": "OLL-40.png",
+      "image": "OLL-40",
       "prob": "1/54",
       "algs" :
       [
@@ -1549,7 +1549,7 @@ var algSet = {
       "name": "Awkward Shape",
       "wiki": "OLL 41",
       "algdb": "OLL 41",
-      "image": "OLL-41.png",
+      "image": "OLL-41",
       "prob": "1/54",
       "algs" :
       [
@@ -1566,7 +1566,7 @@ var algSet = {
       "name": "Awkward Shape",
       "wiki": "OLL 42",
       "algdb": "OLL 42",
-      "image": "OLL-42.png",
+      "image": "OLL-42",
       "prob": "1/54",
       "algs" :
       [
@@ -1592,7 +1592,7 @@ var algSet = {
       "name": "P Shape - Little \"b\"",
       "wiki": "OLL 43",
       "algdb": "OLL 43",
-      "image": "OLL-43.png",
+      "image": "OLL-43",
       "prob": "1/54",
       "algs" :
       [
@@ -1636,7 +1636,7 @@ var algSet = {
       "name": "P Shape - Little \"p\"",
       "wiki": "OLL 44",
       "algdb": "OLL 44",
-      "image": "OLL-44.png",
+      "image": "OLL-44",
       "prob": "1/54",
       "algs" :
       [
@@ -1659,7 +1659,7 @@ var algSet = {
       "name": "T Shape - Suit Up",
       "wiki": "OLL 45",
       "algdb": "OLL 45",
-      "image": "OLL-45.png",
+      "image": "OLL-45",
       "prob": "1/54",
       "algs" :
       [
@@ -1682,7 +1682,7 @@ var algSet = {
       "name": "C Shape - Seein' Headlights",
       "wiki": "OLL 46",
       "algdb": "OLL 46",
-      "image": "OLL-46.png",
+      "image": "OLL-46",
       "prob": "1/54",
       "algs" :
       [
@@ -1708,7 +1708,7 @@ var algSet = {
       "name": "L Shape - Anti-Breakneck",
       "wiki": "OLL 47",
       "algdb": "OLL 47",
-      "image": "OLL-47.png",
+      "image": "OLL-47",
       "prob": "1/54",
       "algs" :
       [
@@ -1746,7 +1746,7 @@ var algSet = {
       "name": "L Shape - Breakneck",
       "wiki": "OLL 48",
       "algdb": "OLL 48",
-      "image": "OLL-48.png",
+      "image": "OLL-48",
       "prob": "1/54",
       "algs" :
       [
@@ -1769,7 +1769,7 @@ var algSet = {
       "name": "L Shape - RB Squeezy",
       "wiki": "OLL 49",
       "algdb": "OLL 49",
-      "image": "OLL-49.png",
+      "image": "OLL-49",
       "prob": "1/54",
       "algs" :
       [
@@ -1801,7 +1801,7 @@ var algSet = {
       "name": "L Shape - RB Squeezy",
       "wiki": "OLL 50",
       "algdb": "OLL 50",
-      "image": "OLL-50.png",
+      "image": "OLL-50",
       "prob": "1/54",
       "algs" :
       [
@@ -1833,7 +1833,7 @@ var algSet = {
       "name": "I Shape - Ant / Bottle Cap",
       "wiki": "OLL 51",
       "algdb": "OLL 51",
-      "image": "OLL-51.png",
+      "image": "OLL-51",
       "prob": "1/54",
       "algs" :
       [
@@ -1856,7 +1856,7 @@ var algSet = {
       "name": "I Shape - Rice Cooker",
       "wiki": "OLL 52",
       "algdb": "OLL 52",
-      "image": "OLL-52.png",
+      "image": "OLL-52",
       "prob": "1/54",
       "algs" :
       [
@@ -1888,7 +1888,7 @@ var algSet = {
       "name": "L Shape - Frying Pan",
       "wiki": "OLL 53",
       "algdb": "OLL 53",
-      "image": "OLL-53.png",
+      "image": "OLL-53",
       "prob": "1/54",
       "algs" :
       [
@@ -1920,7 +1920,7 @@ var algSet = {
       "name": "L Shape - Anti-Frying Pan",
       "wiki": "OLL 54",
       "algdb": "OLL 54",
-      "image": "OLL-54.png",
+      "image": "OLL-54",
       "prob": "1/54",
       "algs" :
       [
@@ -1937,7 +1937,7 @@ var algSet = {
       "name": "I Shape - Highway",
       "wiki": "OLL 55",
       "algdb": "OLL 55",
-      "image": "OLL-55.png",
+      "image": "OLL-55",
       "prob": "1/108",
       "algs" :
       [
@@ -1966,7 +1966,7 @@ var algSet = {
       "name": "I Shape - Street Lights",
       "wiki": "OLL 56",
       "algdb": "OLL 56",
-      "image": "OLL-56.png",
+      "image": "OLL-56",
       "prob": "1/108",
       "algs" :
       [
@@ -1983,7 +1983,7 @@ var algSet = {
       "name": "H / I",
       "wiki": "OLL 57",
       "algdb": "OLL 57",
-      "image": "OLL-57.png",
+      "image": "OLL-57",
       "prob": "1/108",
       "algs" :
       [

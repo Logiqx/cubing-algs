@@ -64,7 +64,7 @@ function renderGridDataRows(viewObj)
 				if (caseObj != null)
 				{
 					// Render the Id and Name
-					out += "<i class=\"clicky s" + imgSize + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+					out += "<i class=\"clicky s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 							"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/>";
 				}
 			}
@@ -238,7 +238,7 @@ function renderTableDataRows(viewObj, groupObj, narrow)
 				}
 
 				// Render the image
-				out += "<td><i class=\"clicky s" + imgSize + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+				out += "<td><i class=\"clicky s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></td>";
 
 				// Iterate through the uses
