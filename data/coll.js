@@ -157,13 +157,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] (l U' R' D) (R U R' D') x",
-              "desc": "Actual execution",
+              "desc": "Actual execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] x' (R U' R' D) (R U R' u') [z']",
-              "desc": "Actual execution",
+              "desc": "Actual execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -190,13 +190,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "F' (r U R' U') r' F R",
-              "desc": "Actual execution",
+              "desc": "Actual execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "F' (r U R' U') z U' R u",
-              "desc": "Actual execution",
+              "desc": "Actual execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -247,7 +247,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R' U' R U' R' U2' R) (R U R' U R U2' R')",
+          "alg": "(R' U' R U' R' U2 R) (R U R' U R U2' R')",
           "desc": "[SuneOLL]/[2GLL]: [RBS], [RFS]",
 		  "status": 1,
           "uses": [],
@@ -537,13 +537,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] (l U R' D) (R U' R' u') [z']",
-              "desc": "Actual execution",
+              "desc": "Actual execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] x' (R U R' D) (R U' R' u') [z']",
-              "desc": "Actual execution",
+              "desc": "Actual execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -603,7 +603,7 @@ var algSet = {
 			},
 			{
 			  "alg": "[U'] (r U R' U') z (U' R u F') [z']",
-              "desc": "Actual execution",
+              "desc": "Actual execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
