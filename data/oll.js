@@ -93,14 +93,14 @@ var algSet = {
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "(R U2 R' U' R U' R') U' (R U2 R' U' R U' R')",
+          "alg": "(r U2 R' U' R U' r') U' (r U2 R' U' R U' r')",
           "desc": "[SuneOLL]: [RFWAS], [AUF], [RFWAS]",
 		  "status": -1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "(R U2' R' U' R U' R') U' (R U2' R' U' R U' R')",
+			  "alg": "(r U2' R' U' R U' r') U' (r U2' R' U' R U' r')",
               "desc": "Actual execution",
 			  "status": -1,
 			  "uses": ["OH"]
