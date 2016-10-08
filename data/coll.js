@@ -983,7 +983,7 @@ var algSet = {
   [
     {
       "id": "orientation",
-      "name": "Corner Orientation",
+      "name": "Orientation",
       "uses": ["2H", "OH"],
       "groups":
       [
@@ -1016,7 +1016,7 @@ var algSet = {
     },
     {
       "id": "permutation",
-      "name": "Corner Permutation",
+      "name": "Permutation",
       "uses": ["2H", "OH"],
       "groups":
       [
@@ -1044,7 +1044,7 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
-      "headers": ["2-Gen", "Back", "Right", "Front", "Left", "Diag"],
+      "headers": ["2-Gen", "Swap-B", "Swap-R", "Swap-F", "Swap-L", "Diag"],
       "rows":
       [
         {

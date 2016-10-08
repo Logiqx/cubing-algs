@@ -2284,7 +2284,7 @@ var algSet = {
     },
     {
       "id": "edges",
-      "name": "Edge Cases",
+      "name": "Edges",
       "uses": ["2H", "OH"],
       "groups":
       [
@@ -2316,7 +2316,7 @@ var algSet = {
     },
     {
       "id": "corners",
-      "name": "Corner Cases",
+      "name": "Corners",
       "uses": ["2H", "OH"],
       "groups":
       [
@@ -2365,7 +2365,7 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
-      "headers": ["OCLL", "LB", "LF", "RB", "RF", "FB", "LR", "4-Flip"],
+      "headers": ["OCLL", "Flip-LB", "Flip-LF", "Flip-RB", "Flip-RF", "Flip-FB", "Flip-LR", "Flip-All"],
       "rows":
       [
         {
