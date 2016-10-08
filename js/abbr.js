@@ -53,10 +53,6 @@ var abbrs =
     "desc": "(F R' F' R)"
   },
   {
-    "name": "Inverse-sexy",
-    "desc": "U R U' R'"
-  },
-  {
     "name": "LL",
     "desc": "Last Layer"
   },
@@ -127,6 +123,10 @@ var abbrs =
   {
     "name": "RBWS",
     "desc": "Right Back Wide Sune"
+  },
+  {
+    "name": "Reverse-sexy",
+    "desc": "U R U' R'"
   },
   {
     "name": "RFAS",

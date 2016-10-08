@@ -29,18 +29,45 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[U] R U2 R' U' (R U R' U') (R U R' U') R U' R'",
-          "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
+          "alg": "(R' U' R U' R' U2 R) * 3",
+          "desc": "[SuneOLL]/[2GLL]: Triple [RBS]",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U] R U2' R' U' (R U R' U') (R U R' U') R U' R'",
-			  "desc": "One-handed execution",
+			  "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
+              "desc": "Actual execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "[U] (R U2 R' U' R U' R') * 3",
+          "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "[U] R U2 R' U' (R U R' U') (R U R' U') R U' R'",
+              "desc": "Actual execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
 			},
+			{
+			  "alg": "[U] R U2' R' U' (R U R' U') (R U R' U') R U' R'",
+              "desc": "Actual execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
 		  ]
         },
       ]
@@ -123,20 +150,20 @@ var algSet = {
       [
         {
           "alg": "[U2] x' (R U' R' D) (R U R' D') x",
-          "desc": "First half of the standard E-Perm. Basic [commutator] - [R U' R', D]",
+          "desc": "First half of the E-Perm. Basic [commutator] - [R U' R', D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
 			  "alg": "[U2] (l U' R' D) (R U R' D') x",
-              "desc": "Two-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] x' (R U' R' D) (R U R' u') [z']",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -163,13 +190,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "F' (r U R' U') r' F R",
-              "desc": "Two-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "F' (r U R' U') z U' R u",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -195,13 +222,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] r U2' (R2' F R F') R U2' r'",
-              "desc": "Two-handed execution includes a cancellation",
+              "desc": "Actual execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U'] r U2' (R2 x U R U') R x U2' r'",
-              "desc": "One-handed execution includes a cancellation",
+              "desc": "Actual execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -287,7 +314,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "R U' R' U R U' x' U' z' U' R U' R' U' z U R2 x",
-              "desc": "Actual execution includes some cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -374,13 +401,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R2' D' R U2 R' D R U2 R",
-              "desc": "Two-handed execution includes a cancellation",
+              "desc": "Actual execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R2 D' R U2' R' D R U2' R",
-              "desc": "Two-handed execution includes a cancellation",
+              "desc": "Actual execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -399,14 +426,14 @@ var algSet = {
       [
         {
           "alg": "R' U2 R F U' R' U' R U F'",
-          "desc": "Two-handed execution",
+          "desc": "Actual execution",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
 			  "alg": "R' U2' R F U' R' U' R U F'",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -478,7 +505,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[U2] R' F R U R' U' R' F' R2 U' R' U2 R",
+          "alg": "[U2] R' F (R U R' U') R' F' R2 U' R' U2 R",
           "desc": "Fast two-handed algorithm",
 		  "status": 1,
           "uses": ["2H"]
@@ -503,20 +530,20 @@ var algSet = {
       [
         {
           "alg": "[U2] x' (R U R' D) (R U' R' D') x",
-          "desc": "Second half of the standard E-Perm. Basic [commutator] - [R, U R' D]",
+          "desc": "Second half of the E-Perm. Basic [commutator] - [R, U R' D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
 			  "alg": "[U2] (l U R' D) (R U' R' u') [z']",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] x' (R U R' D) (R U' R' u') [z']",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -570,13 +597,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] (r U R' U') (r' F R F')",
-              "desc": "Two-handed execution is wide [sexy], wide [sledgehammer]",
+              "desc": "Actual execution is wide [sexy], wide [sledgehammer]",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U'] (r U R' U') z (U' R u F') [z']",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -602,7 +629,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] R U' R2 D' r U2' r' D R2 U R'",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -628,13 +655,34 @@ var algSet = {
 		  [
 			{
 			  "alg": "R U2' R2' U' R2 U' R2' U2' R",
-              "desc": "Two-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R U2' R2 U' R2 U' R2 U2' R",
-              "desc": "One-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "(R' U2 R) (R U R') (R' U R) (R U2 R')",
+          "desc": "[Palindrome]. Essentially [RBAS] and [RFS] mixed together",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R' U2 R2 U R2' U R2 U2 R'",
+              "desc": "Actual execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R' U2' R2 U R2 U R2 U2' R'",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -687,14 +735,14 @@ var algSet = {
       [
         {
           "alg": "[U] F (U R U' R' U R U2 R' U' R U R') F'",
-          "desc": "Two-handed execution",
+          "desc": "Actual execution",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
 			  "alg": "[U] F (U R U' R' U R U2' R' U' R U R') F'",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -714,14 +762,14 @@ var algSet = {
       [
 		{
           "alg": "(R U R' U') (R' F R F') F (R U R' U') (R U R' U') F'",
-          "desc": "Combination of two simple OLLs - [sexy-sledge], F double-[sexy] F'",
+          "desc": "Combination of two simple OLLs - [sexy-sledge], F double [sexy] F'",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
 			  "alg": "(R U R' U') R' F R2 U R' U' (R U R' U') F'",
-              "desc": "Actual execution includes cancellations. Very similar to OLL 9.",
+              "desc": "Actual execution includes cancellations. Very similar to OLL #9.",
 			  "status": 1,
 			  "uses": ["2H"]
 			}
@@ -810,6 +858,27 @@ var algSet = {
       "algs" :
       [
         {
+          "alg": "(R' U' R U' R' U2 R) (R' U' R U' R' U2 R)",
+          "desc": "[SuneOLL]/[2GLL]: Double [RBS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R' U' R (U' R' U R) U' R' U2 R",
+              "desc": "Actual execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R' U' R (U' R' U R) U' R' U2' R",
+              "desc": "Actual execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
           "alg": "[U] (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
           "desc": "[SuneOLL]/[2GLL]: Double [RFAS]",
 		  "status": 1,
@@ -818,13 +887,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] R U2 R' U' (R U R' U') R U' R'",
-              "desc": "Two-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U] R U2' R' U' (R U R' U') R U' R'",
-              "desc": "One-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -844,14 +913,14 @@ var algSet = {
       [
         {
           "alg": "F (R U' R' U R U2 R' U' R U R' U') F'",
-          "desc": "Two-handed execution",
+          "desc": "Actual execution",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
 			  "alg": "F (R U' R' U R U2' R' U' R U R' U') F'",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}

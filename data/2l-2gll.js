@@ -37,7 +37,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' R U' R' U2' R",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -52,7 +52,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] R U2' R' U' R U' R'",
-              "desc": "One-handed execution",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -101,7 +101,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] R U2' R' U' (R U R' U') (R U R' U') R U' R'",
-			  "desc": "One-handed execution",
+			  "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -116,7 +116,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
-			  "desc": "One-handed execution",
+			  "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -248,13 +248,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R U2' R2' U' R2 U' R2' U2' R",
-              "desc": "Two-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R U2' R2 U' R2 U' R2 U2' R",
-              "desc": "One-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -280,13 +280,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' R (U' R' U R) U' R' U2 R",
-              "desc": "Two-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R' U' R (U' R' U R) U' R' U2' R",
-              "desc": "One-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -301,13 +301,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] R U2 R' U' (R U R' U') R U' R'",
-              "desc": "Two-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U] R U2' R' U' (R U R' U') R U' R'",
-              "desc": "One-handed execution includes cancellations",
+              "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
