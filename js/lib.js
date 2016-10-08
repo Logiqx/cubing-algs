@@ -66,10 +66,11 @@ Summary
 
 //
 // Generic message to be displayed at top of every page
+// "<p>IMPORTANT: This page is still WIP and is meant to be PRIVATE. Please do not share the URL!</p>"
 //
 function important()
 {
-	return "<p>IMPORTANT: This page is still WIP and is meant to be PRIVATE. Please do not share the URL!</p>"
+	return "";
 }
 
 //
