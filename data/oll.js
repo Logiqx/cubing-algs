@@ -1696,34 +1696,28 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[U2] R' (U' F' U F) R",
-          "desc": "[Conjugate] - [R': U' F' U F]",
+		  "alg": "[U] f' (L' U' L U) f",
+		  "desc": "[Conjugate] - [f': L' U' L U]",
 		  "status": 1,
-          "uses": ["2H", "OH"],
+		  "uses": ["2H"],
 		  "vars" :
 		  [
 			{
+			  "alg": "[U] f' z (U' R' U R) z' f",
+              "desc": "Alternative execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
+			{
 			  "alg": "[U'] F' (U' L' U L) F",
 			  "desc": "Alternative execution",
-			  "status": -1,
-			  "uses": ["2H"]
+			  "status": 1,
+			  "uses": ["2H"],
 			},
 			{
 			  "alg": "[U'] F' z (R' U' R U) z' F",
 			  "desc": "Alternative execution",
-			  "status": -1,
-			  "uses": ["OH"]
-			},
-			{
-			  "alg": "[U] f' (L' U' L U) f",
-			  "desc": "Alternative execution",
-			  "status": -1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "[U] f' z (U' R' U R) z' f",
-              "desc": "Alternative execution",
-			  "status": -1,
+			  "status": 1,
 			  "uses": ["OH"]
 			},
 			{
@@ -1732,6 +1726,12 @@ var algSet = {
 			  "status": -1,
 			  "uses": ["2H"],
 			},
+			{
+			  "alg": "[U2] R' (U' F' U F) R",
+			  "desc": "Actual execution",
+			  "status": 0,
+			  "uses": ["2H", "OH"],
+			}
 		  ]
         },
       ]
