@@ -1,4 +1,5 @@
 java -jar yuicompressor-2.4.8.jar css/main.css -o css/common-min.css
+java -jar yuicompressor-2.4.8.jar css/2l-oll.css -o css/2l-oll-min.css
 java -jar yuicompressor-2.4.8.jar css/coll.css -o css/coll-min.css
 java -jar yuicompressor-2.4.8.jar css/oll.css -o css/oll-min.css
 
