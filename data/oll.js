@@ -815,6 +815,12 @@ var algSet = {
               "desc": "Actual execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R2 D' R U2' R' D R U2' R",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 0,
+			  "uses": ["OH"]
 			}
 		  ]
         },
@@ -830,6 +836,12 @@ var algSet = {
               "desc": "Actual execution includes a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
+			},
+			{
+			  "alg": "[U2] R2 D R' U2' R D' R' U2' R'",
+              "desc": "Actual execution includes a cancellation",
+              "status": 0,
+			  "uses": ["OH"]
 			}
 		  ]
         },
