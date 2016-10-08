@@ -1422,7 +1422,7 @@ var algSet = {
 		  "vars" :
 		  [
 			{
-			  "alg": "[U'] (R U R' U') (x R' U R U')",
+			  "alg": "[U'] (R U R' U') (x R' U R U' x')",
               "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -1533,7 +1533,7 @@ var algSet = {
               "uses": ["2H"],
 			},
 			{
-			  "alg": "[U'] (R' U' R U') (R' U R U) (x' R U' R' U)",
+			  "alg": "[U'] (R' U' R U') (R' U R U) (x' R U' R' U x)",
               "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -1588,7 +1588,7 @@ var algSet = {
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "[U2] (R U R' U) (R U' R' U') (x R' U R U')",
+			  "alg": "[U2] (R U R' U) (R U' R' U') (x R' U R U' x')",
               "desc": "Actual execution includes cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -1715,7 +1715,7 @@ var algSet = {
 		  "vars" :
 		  [
 			{
-			  "alg": "[U] f' z (U' R' U R) z' f",
+			  "alg": "[U] f' z (U' R' U R) f [z']",
               "desc": "Alternative execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -1727,7 +1727,7 @@ var algSet = {
 			  "uses": ["2H"],
 			},
 			{
-			  "alg": "[U'] F' z (R' U' R U) z' F",
+			  "alg": "[U'] F' z (R' U' R U) F [z']",
 			  "desc": "Alternative execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -1740,7 +1740,7 @@ var algSet = {
 			},
 			{
 			  "alg": "[U2] R' (U' F' U F) R",
-			  "desc": "Actual execution",
+			  "desc": "My execution",
 			  "status": 0,
 			  "uses": ["2H", "OH"],
 			}
@@ -1796,13 +1796,13 @@ var algSet = {
 			  "status": 1,
 			  "uses": ["2H", "OH"]
 			},
-			{
-			  "alg": "R' (F' U' F U) R",
-			  "desc": "Alternative execution",
-			  "status": 0,
-			  "uses": ["2H", "OH"]
-			},
 		  ]
+        },
+        {
+		  "alg": "R' (F' U' F U) R",
+		  "desc": "[Conjugate] - [R': F' U' F U]",
+		  "status": 0,
+		  "uses": ["2H", "OH"]
         },
       ]
     },
@@ -1849,7 +1849,7 @@ var algSet = {
 		  "vars" :
 		  [
 			{
-			  "alg": "[U2] F' z (U' R' U R) (U' R' U R) z' F",
+			  "alg": "[U2] F' z (U' R' U R) (U' R' U R) F [z']",
 			  "desc": "Alternative execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -1861,7 +1861,7 @@ var algSet = {
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "f' z (R' U' R U) (R' U' R U) z' f",
+			  "alg": "f' z (R' U' R U) (R' U' R U) f [z']",
 			  "desc": "Alternative execution",
 			  "status": 1,
 			  "uses": ["OH"]
