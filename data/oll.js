@@ -2053,12 +2053,21 @@ var algSet = {
       "prob": "1/54",
       "algs" :
       [
-        {
-          "alg": "r U R' (U R U' R') U R U2' r'",
+		{
+          "alg": "(r U R' U R U2' r') (r U R' U R U2' r')",
           "desc": "[SuneOLL]: Double [RFWS]",
 		  "status": 1,
-          "uses": ["2H", "OH"]
-        }
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "r U R' (U R U' R') U R U2' r'",
+              "desc": "Actual execution includes cancellations",
+			  "status": 1,
+			  "uses": ["OH", "2H"]
+			},
+		  ]
+		}
       ]
     },
     {
