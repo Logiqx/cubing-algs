@@ -5,22 +5,30 @@ Browser Support
 
 Latest browsers tested and working:
 
-1) IE 11 (2013-10-17) - Windows 8.1 (Laptop)
-2) Chrome 45 (2015-09-01) - Windows 8.1 (Laptop)
-3) Safari 7 (2013-06-10) - iOS 7 (iPad)
-4) Firefox 41.0.2 (2015-10-16) - Windows 7 (WAMP VM)
+1) Edge 38.14393 (2016-08-02) - Windows 10 (Laptop)
+2) IE 11 (2016-xx-xx) - Windows 10 (Laptop)
+3) Chrome 53 (2016-08-31) - Windows 10 (Laptop)
+4) Firefox 47.0.1 (2016-06-28) - Windows 7 (WAMP VM)
+5) Safari 9.1.3 (2016-09-01) - OS X El Capitan (Macbook Pro)
+6) Mobile Safari 9 (2016-08-25) - iOS 9.3.5 (iPad)
 
 Oldest browsers tested and working:
 
-1) IE 10 (2012-10-26) - Windows Server 2008 (Identify VM)
-2) Chrome 45 (2015-09-01) - Windows 8.1 (Laptop)
-3) Safari 7 (2013-06-10) - iOS 7 (iPad)
-4) Firefox 9.0.1 (2011-12-21) + 12.0 (2012-04-24) - Windows 7 (WAMP VM)
+1) Edge 20.10240 (2015-07-15) - Windows 10 (Laptop)
+2) IE 10 (2012-10-26) - Windows Server 2008 (MSVS VM)
+3) Chrome 45 (2015-09-01) - Windows 8.1 (Laptop)
+4) Firefox 9.0.1 (2011-12-21) - Windows 7 (WAMP VM)
+5) Safari 9.1.3 (2016-09-01) - OS X El Capitan (Macbook Pro)
+6) Mobile Safari 7 (2013-06-10) - iOS 7 (iPad)
 
-Other browsers:
+Other working browsers:
 
 1) Android 4.4.4 - Samsung Galaxy S3
-2) Edge 12 - Untested
+2) Samsung Browser 4.0.20 - Samsung Galaxy S7
+
+Non-working browsers:
+
+1) Firefox 3.6.28 - Windows XP
 
 
 Navigation
