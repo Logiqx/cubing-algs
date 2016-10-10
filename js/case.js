@@ -135,11 +135,19 @@ function renderCaseLinks(caseObj)
 
 	// Wiki anchor and label may be based on a group
 	var wikiAnchor = caseObj.wiki;
-	var wikiLabel = algSet.header.id + " " + caseObj.id;
+	var wikiLabel = algSet.header.id;
+	if (wikiAnchor != "")
+	{
+		wikiLabel += " " + caseObj.id;
+	}
 
 	// AlgDB anchor and label are unique to the case
 	var algdbPage = caseObj.algdb;
-	var algdbLabel = algSet.header.id + " " + caseObj.id;
+	var algdbLabel = algSet.header.id
+	if (algdbPage != "")
+	{
+		algdbLabel += " " + caseObj.id;
+	}
 	
 	// Iterate through the views
     for (var viewIdx = 0; wikiAnchor == "" && viewIdx < algSet.views.length; viewIdx++)
@@ -206,7 +214,10 @@ function renderCase(caseId, narrow)
 		var caseObj = algSet.cases[caseIds.indexOf(caseId)];
 
 		// Output case name as the title
-		out += "<h2>" + caseObj.name + "</h2>";
+		if (caseObj.name != caseId)
+		{
+			out += "<h2>" + caseObj.name + "</h2>";
+		}
 		
 		// Browser title
 		document.title = algSet.header.id + " " + caseId;
