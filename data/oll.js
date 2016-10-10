@@ -20,17 +20,6 @@ var algSet = {
   "cases":
   [
     {
-      "id": "0",
-      "name": "Solved",
-      "wiki": "",
-      "algdb": "",
-      "image": "OLL-00",
-      "prob": "1/216",
-      "algs" :
-	  [
-	  ]
-    },
-    {
       "id": "1",
       "name": "No Edges - Runway",
       "wiki": "",
@@ -2160,6 +2149,23 @@ var algSet = {
         }
       ]
     },
+    {
+      "id": "Skip",
+      "name": "Orientation of the Last Layer",
+      "wiki": "",
+      "algdb": "",
+      "image": "OLL",
+      "prob": "1/216",
+      "algs" :
+	  [
+        {
+          "alg": "Yay!",
+          "desc": "",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
+	  ]
+    },
   ],
   "views":
   [
@@ -2177,7 +2183,7 @@ var algSet = {
                     "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
 					"31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
 					"41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
-					"51", "52", "53", "54", "55", "56", "57"]
+					"51", "52", "53", "54", "55", "56", "57", "Skip"]
         },
       ]
     },
@@ -2292,6 +2298,11 @@ var algSet = {
           "wiki": "#Awkward_shapes",
           "cases": ["42", "41", "29", "30"]
         },
+        {
+          "id": "lucky",
+          "name": "Lucky",
+          "cases": ["Skip"]
+        },
       ]
     },
     {
@@ -2323,7 +2334,12 @@ var algSet = {
 					"38", "37", "35", "36", "43", "42", "44", "41",
 					"31", "29", "32", "30", "50", "49", "47", "48",
 					"53", "54",  "28"]
-        }
+        },
+        {
+          "id": "lucky",
+          "name": "Lucky",
+          "cases": ["Skip"]
+        },
       ]
     },
     {
@@ -2372,6 +2388,11 @@ var algSet = {
           "name": "H / Double Sune",
           "cases": ["21", "53", "54", "56", "55", "1"]
         },
+        {
+          "id": "lucky",
+          "name": "Lucky",
+          "cases": ["Skip"]
+        },
 	  ]
     },
     {
@@ -2383,7 +2404,7 @@ var algSet = {
         {
           "id": "eoll",
           "name": "EOLL",
-          "cases": ["0", "28", null, null, null, null, "57", "20"]
+          "cases": ["Skip", "28", null, null, null, null, "57", "20"]
         },
         {
           "id": "antisune",
