@@ -1,0 +1,275 @@
+.s64-pll {
+    background-image: url(../img/s64-pll-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+.s64-pll-aa {
+    background-position: -64px 0;
+}
+
+.s64-pll-ab {
+    background-position: -128px 0;
+}
+
+.s64-pll-e {
+    background-position: -192px 0;
+}
+
+.s64-pll-f {
+    background-position: 0 -64px;
+}
+
+.s64-pll-ga {
+    background-position: -64px -64px;
+}
+
+.s64-pll-gb {
+    background-position: -128px -64px;
+}
+
+.s64-pll-gc {
+    background-position: -192px -64px;
+}
+
+.s64-pll-gd {
+    background-position: 0 -128px;
+}
+
+.s64-pll-h {
+    background-position: -64px -128px;
+}
+
+.s64-pll-ja {
+    background-position: -128px -128px;
+}
+
+.s64-pll-jb {
+    background-position: -192px -128px;
+}
+
+.s64-pll-na {
+    background-position: 0 -192px;
+}
+
+.s64-pll-nb {
+    background-position: -64px -192px;
+}
+
+.s64-pll-ra {
+    background-position: -128px -192px;
+}
+
+.s64-pll-rb {
+    background-position: -192px -192px;
+}
+
+.s64-pll-t {
+    background-position: -256px 0;
+}
+
+.s64-pll-ua {
+    background-position: -256px -64px;
+}
+
+.s64-pll-ub {
+    background-position: -256px -128px;
+}
+
+.s64-pll-v {
+    background-position: -256px -192px;
+}
+
+.s64-pll-y {
+    background-position: 0 -256px;
+}
+
+.s64-pll-z {
+    background-position: -64px -256px;
+}
+
+.s96-pll {
+    background-image: url(../img/s96-pll-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 96px;
+    height: 96px;
+}
+
+.s96-pll-aa {
+    background-position: -96px 0;
+}
+
+.s96-pll-ab {
+    background-position: -192px 0;
+}
+
+.s96-pll-e {
+    background-position: -288px 0;
+}
+
+.s96-pll-f {
+    background-position: 0 -96px;
+}
+
+.s96-pll-ga {
+    background-position: -96px -96px;
+}
+
+.s96-pll-gb {
+    background-position: -192px -96px;
+}
+
+.s96-pll-gc {
+    background-position: -288px -96px;
+}
+
+.s96-pll-gd {
+    background-position: 0 -192px;
+}
+
+.s96-pll-h {
+    background-position: -96px -192px;
+}
+
+.s96-pll-ja {
+    background-position: -192px -192px;
+}
+
+.s96-pll-jb {
+    background-position: -288px -192px;
+}
+
+.s96-pll-na {
+    background-position: 0 -288px;
+}
+
+.s96-pll-nb {
+    background-position: -96px -288px;
+}
+
+.s96-pll-ra {
+    background-position: -192px -288px;
+}
+
+.s96-pll-rb {
+    background-position: -288px -288px;
+}
+
+.s96-pll-t {
+    background-position: -384px 0;
+}
+
+.s96-pll-ua {
+    background-position: -384px -96px;
+}
+
+.s96-pll-ub {
+    background-position: -384px -192px;
+}
+
+.s96-pll-v {
+    background-position: -384px -288px;
+}
+
+.s96-pll-y {
+    background-position: 0 -384px;
+}
+
+.s96-pll-z {
+    background-position: -96px -384px;
+}
+
+.s128-pll {
+    background-image: url(../img/s128-pll-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 128px;
+    height: 128px;
+}
+
+.s128-pll-aa {
+    background-position: -128px 0;
+}
+
+.s128-pll-ab {
+    background-position: -256px 0;
+}
+
+.s128-pll-e {
+    background-position: -384px 0;
+}
+
+.s128-pll-f {
+    background-position: 0 -128px;
+}
+
+.s128-pll-ga {
+    background-position: -128px -128px;
+}
+
+.s128-pll-gb {
+    background-position: -256px -128px;
+}
+
+.s128-pll-gc {
+    background-position: -384px -128px;
+}
+
+.s128-pll-gd {
+    background-position: 0 -256px;
+}
+
+.s128-pll-h {
+    background-position: -128px -256px;
+}
+
+.s128-pll-ja {
+    background-position: -256px -256px;
+}
+
+.s128-pll-jb {
+    background-position: -384px -256px;
+}
+
+.s128-pll-na {
+    background-position: 0 -384px;
+}
+
+.s128-pll-nb {
+    background-position: -128px -384px;
+}
+
+.s128-pll-ra {
+    background-position: -256px -384px;
+}
+
+.s128-pll-rb {
+    background-position: -384px -384px;
+}
+
+.s128-pll-t {
+    background-position: -512px 0;
+}
+
+.s128-pll-ua {
+    background-position: -512px -128px;
+}
+
+.s128-pll-ub {
+    background-position: -512px -256px;
+}
+
+.s128-pll-v {
+    background-position: -512px -384px;
+}
+
+.s128-pll-y {
+    background-position: 0 -512px;
+}
+
+.s128-pll-z {
+    background-position: -128px -512px;
+}
