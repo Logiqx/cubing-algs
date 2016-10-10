@@ -133,11 +133,16 @@ function renderCaseLinks(caseObj)
 	// Output links title
 	out += "<h3>Links</h3>";
 
-	// Wiki anchor is based on the shape
-	var wikiAnchor = "";
+	// Wiki anchor and label may be based on a group
+	var wikiAnchor = caseObj.wiki;
+	var wikiLabel = algSet.header.id + " " + caseObj.id;
+
+	// AlgDB anchor and label are unique to the case
+	var algdbPage = caseObj.algdb;
+	var algdbLabel = algSet.header.id + " " + caseObj.id;
 	
 	// Iterate through the views
-    for (var viewIdx = 0; viewIdx < algSet.views.length; viewIdx++)
+    for (var viewIdx = 0; wikiAnchor == "" && viewIdx < algSet.views.length; viewIdx++)
 	{
 		var viewObj = algSet.views[viewIdx];
 	
@@ -157,6 +162,7 @@ function renderCaseLinks(caseObj)
 						if (groupObj.cases.indexOf(caseObj.id) >= 0)
 						{
 							wikiAnchor = groupObj.wiki;
+							wikiLabel = groupObj.name;
 						}
 					}
 				}
@@ -165,10 +171,10 @@ function renderCaseLinks(caseObj)
 	}
 	
 	// Wiki
-	out += "<p>SpeedSolving Wiki: <a href=\"" + algSet.header.wiki + wikiAnchor + "\" target=\"_blank\">" + caseObj.wiki + "</a><p>";
+	out += "<p>SpeedSolving Wiki: <a href=\"" + algSet.header.wiki + wikiAnchor + "\" target=\"_blank\">" + wikiLabel + "</a><p>";
 
 	// AlgDb.Net
-	out += "<p>AlgDb.Net: <a href=\"" + algSet.header.algdb + caseObj.algdb + "\" target=\"_blank\">" + caseObj.algdb + "</a><p>";
+	out += "<p>AlgDb.Net: <a href=\"" + algSet.header.algdb + algdbPage + "\" target=\"_blank\">" + algdbLabel + "</a><p>";
 
 	return out;
 }
