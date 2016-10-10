@@ -92,7 +92,7 @@ function renderTableHeaderRow(viewObj, narrow)
 	out += "<tr>";
 	if (narrow == false)
 	{
-		out += "<th>#</th>";
+		out += "<th></th>";
 	}
 	out += "<th></th>";
 	
