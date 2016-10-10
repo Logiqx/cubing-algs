@@ -3,32 +3,37 @@
 Browser Support
 ===============
 
-Latest browsers tested and working:
+Latest browsers - tested and working:
 
-1) Edge 38.14393 (2016-08-02) - Windows 10 (Laptop)
-2) IE 11 (2016-xx-xx) - Windows 10 (Laptop)
-3) Chrome 53 (2016-08-31) - Windows 10 (Laptop)
-4) Firefox 47.0.1 (2016-06-28) - Windows 7 (WAMP VM)
-5) Safari 9.1.3 (2016-09-01) - OS X El Capitan (Macbook Pro)
-6) Mobile Safari 9 (2016-08-25) - iOS 9.3.5 (iPad)
+1) Edge 38.14393 (2016-08-02) - Windows 10
+2) IE 11 (2015-07-29) - Windows 10
+3) Chrome 53.0.2785 (2016-08-31) - Windows 10
+4) Firefox 47.0.1 (2016-06-28) - Windows 7
+5) Safari 9.1.3 (2016-09-01) - OS X El Capitan
+6) Opera 36 (2016-03-14) - browserling.com
 
-Oldest browsers tested and working:
+Old *working* browsers - tested using browserling.com:
 
-1) Edge 20.10240 (2015-07-15) - Windows 10 (Laptop)
-2) IE 10 (2012-10-26) - Windows Server 2008 (MSVS VM)
-3) Chrome 45 (2015-09-01) - Windows 8.1 (Laptop)
-4) Firefox 9.0.1 (2011-12-21) - Windows 7 (WAMP VM)
-5) Safari 9.1.3 (2016-09-01) - OS X El Capitan (Macbook Pro)
-6) Mobile Safari 7 (2013-06-10) - iOS 7 (iPad)
+1) IE 9 (2011-03-14)
+2) Chrome 4.0.249 (2010-01-25)
+3) Firefox 6.0 (2011-08-16)
+4) Safari 5.0.5 (2010-06-07)
+5) Opera 11 (2010-12-16)
 
-Other working browsers:
+Old *non-working* browsers - tested using browserling.com:
 
-1) Android 4.4.4 - Samsung Galaxy S3
-2) Samsung Browser 4.0.20 - Samsung Galaxy S7
+1) IE 8 (2010-06-07) - fails to render
+2) Chrome 3.0.195 (2009-10-12) - renders but interactions are ignored
+3) Firefox 5.0.1 (2011-07-11) - fails to render
+4) Safari 4.0 (2009-2010) - renders but interactions are ignored
+5) Opera 10.60 (2010-07-01) - fails to render
 
-Non-working browsers:
+Mobile browsers - tested and working:
 
-1) Firefox 3.6.28 - Windows XP
+1) Safari 9 (2016-08-25) - iOS 9.3.5 (iPad)
+2) Safari 7 (2013-06-10) - iOS 7 (iPad)
+3) Samsung Browser 4.0.20 - Samsung Galaxy S7
+4) Android 4.4.4 - Samsung Galaxy S3
 
 
 Navigation
