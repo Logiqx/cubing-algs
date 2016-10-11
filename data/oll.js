@@ -2196,14 +2196,14 @@ var algSet = {
         {
           "id": "alledges",
           "name": "All Edges Oriented",
-		  "desc": "These are the 7 \"dot\" cases",
+		  "desc": "These are the 7 [OCLL] cases, offering the chance to use [COLL]. Advanced [CFOP] users may try to force these cases using [VHLS].",
           "wiki": "#All_edges_flipped_correctly",
           "cases": ["26", "27", "25", "23", "24", "22", "21"]
         },
         {
           "id": "noedges",
           "name": "No Edges Oriented",
-		  "desc": "These are the 7 OCLL cases",
+		  "desc": "These are known as the \"dot\" cases. Competent [CFOP] users will often avoid them using partial edge control - e.g. [sledgehammer] insertion.",
           "wiki": "#No_edges_flipped_correctly",
           "cases": ["4", "3", "17", "18", "19", "2", "1"]
         },
@@ -2314,11 +2314,13 @@ var algSet = {
         {
           "id": "crosses",
           "name": "Cross Cases",
+		  "desc": "These are the 7 [OCLL] cases, offering the chance to use [COLL]. Advanced [CFOP] users may try to force these cases using [VHLS].",
           "cases": ["26", "27", "25", "23", "24", "22", "21"]
         },
         {
           "id": "dots",
           "name": "Dot Cases",
+		  "desc": "These are known as the \"dot\" cases. Competent [CFOP] users will often avoid them using partial edge control - e.g. [sledgehammer] insertion.",
           "cases": ["4", "3", "17", "18", "19", "2", "1", "20"]
         },
         {
@@ -2351,6 +2353,7 @@ var algSet = {
         {
           "id": "oriented",
           "name": "All Corners Oriented",
+		  "desc": "These are the 3 [EOLL] cases.",
           "cases": ["28", "57", "20"]
         },
         {

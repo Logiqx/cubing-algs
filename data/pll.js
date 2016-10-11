@@ -157,7 +157,8 @@ var algSet = {
     },
     {
       "id": "H",
-      "name": "H",
+      "name": "H / X",
+      "desc": "Best known as the H-Perm (i.e. swapping opposite edge pairs) this case is also known as the X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "#H_Permutation",
       "algdb": "H",
       "image": "PLL-H",
@@ -397,8 +398,8 @@ var algSet = {
   "views":
   [
     {
-      "id": "alphabetical",
-      "name": "Alphabetical",
+      "id": "letters",
+      "name": "Letters",
       "uses": ["2H", "OH"],
       "groups":
       [
@@ -475,20 +476,22 @@ var algSet = {
 	  ]
     },
     {
-      "id": "general",
-      "name": "General",
+      "id": "pieces",
+      "name": "Pieces",
       "uses": ["2H", "OH"],
       "groups":
       [
         {
           "id": "edges",
           "name": "Edges Only",
+		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP].",
           "wiki": "#Permutations_of_Edges_Only",
           "cases": ["Ua", "Ub", "Z", "H"]
         },
         {
           "id": "corners",
           "name": "Corners Only",
+		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [conjugate]s and [commutator]s.",
           "wiki": "#Permutations_of_Corners_Only",
           "cases": ["Aa", "Ab", "E"]
         },
@@ -514,6 +517,7 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Corner Swap",
+		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP].",
           "cases": ["Ua", "Ub", "Z", "H", "Skip"]
         },
         {
@@ -524,6 +528,7 @@ var algSet = {
         {
           "id": "diagonal",
           "name": "Diagonal Corner Swap",
+		  "desc": "Advanced [CFOP] users may try to avoid diagonal corner swaps using partial [OLLCP].",
           "cases": ["Y", "V", "E", "Na", "Nb"]
         },
 	  ]
@@ -537,17 +542,18 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Edge Swap",
+		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [conjugate]s and [commutator]s.",
           "cases": ["Aa", "Ab", "E", "H", "Skip"]
         },
         {
           "id": "adjacent",
           "name": "Adjacent Edge Swap",
-          "cases": ["Ua", "Ub", "Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "T", "F"]
+          "cases": ["Ua", "Ub", "Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "Y", "V"]
         },
         {
           "id": "opposite",
           "name": "Opposite Edge Swap",
-          "cases": ["Y", "V", "Z", "Na", "Nb"]
+          "cases": ["T", "F", "Z", "Na", "Nb"]
         },
 	  ]
     },
