@@ -1217,7 +1217,7 @@ var algSet = {
       [
         {
           "alg": "[U'] (R U R' U') (R U' R') (F' U' F) (R U R')",
-          "desc": "Playing with an F2L pair... track the corner!",
+          "desc": "Playing with an [F2L] pair... track the corner!",
 		  "status": 1,
           "uses": ["2H", "OH"]
 		},
@@ -1405,7 +1405,7 @@ var algSet = {
       [
         {
           "alg": "[U'] (R U R' U') (R' F R F')",
-          "desc": "Easy OLL ([sexy-sledge]) also used in the Y-Perm [PLL]",
+          "desc": "Easy OLL ([sexy-sledge]) also used in the Y-Perm",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
@@ -1461,7 +1461,7 @@ var algSet = {
         },
 		{
           "alg": "R U R2 U' R' F R U R U' F'",
-          "desc": "Playing with 3 F2L pairs!",
+          "desc": "Playing with 3 [F2L] pairs!",
 		  "status": 0,
           "uses": []
         }
@@ -1542,7 +1542,7 @@ var algSet = {
       [
         {
           "alg": "[U'] F R U' (R' U' R U) R' F'",
-          "desc": "Easy OLL also used in the Y-Perm [PLL]",
+          "desc": "Easy OLL also used in the Y-Perm",
 		  "status": 1,
           "uses": ["2H", "OH"]
         },
