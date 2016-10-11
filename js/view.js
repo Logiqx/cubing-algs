@@ -435,6 +435,12 @@ function renderView(viewId, narrow)
 						out += "<h3>" + groupObj.name + "</h3>";
 					}
 
+					// Output the group description
+					if (groupObj.desc)
+					{
+						out += "<p>" + replaceAbbr(groupObj.desc) + "</p>";
+					}
+
 					// Render the table
 					out += "<table>";
 					out += renderTableHeaderRow(viewObj, narrow);

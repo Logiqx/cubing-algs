@@ -21,8 +21,16 @@ var abbrs =
     "desc": "B' (U' R' U R) B"
   },
   {
+    "name": "CFOP",
+    "desc": "Cross, F2L, OLL, PLL"
+  },
+  {
     "name": "COLL",
-    "desc": "Corners of the Last Layer. Preserves edge orientation"
+    "desc": "Corners and Orientation of the Last Layer"
+  },
+  {
+    "name": "CPLL",
+    "desc": "Corner Permutation of the Last Layer"
   },
   {
     "name": "Commutator",
@@ -34,7 +42,11 @@ var abbrs =
   },
   {
     "name": "EOLL",
-    "desc": "Edge Orientation of Last Layer"
+    "desc": "Edge Orientation of the Last Layer"
+  },
+  {
+    "name": "EPLL",
+    "desc": "Edge Permutation of the Last Layer"
   },
   {
     "name": "F2L",
@@ -61,8 +73,16 @@ var abbrs =
     "desc": "One-handed"
   },
   {
+    "name": "OCLL",
+    "desc": "Orient Corners of the Last Layer"
+  },
+  {
     "name": "OLL",
     "desc": "Orientation of the Last Layer"
+  },
+  {
+    "name": "OLLCP",
+    "desc": "Orientation of the Last Layer and Corner Permutation"
   },
   {
     "name": "PLL",
@@ -164,4 +184,42 @@ var abbrs =
     "name": "SuneOLL",
     "desc": "Solving an OLL case using Sune variations"
   },
+  {
+    "name": "VHLS",
+    "desc": "Vandenbergh-Harris Last Slot"
+  },
 ]
+
+//
+// Replace abbreviations within a description
+//
+function replaceAbbr(desc)
+{
+	// Iterate through the cases
+	for (var abbrIdx = 0; abbrIdx < abbrs.length; abbrIdx++)
+	{
+		// Current case
+		var tokenUpper = "[" + abbrs[abbrIdx].name + "]";
+
+		// Handle abbreviation
+		while (desc.indexOf(tokenUpper) >= 0)
+		{
+			var abbr = "<abbr title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name + "</abbr>";
+
+			desc = desc.replace(tokenUpper, abbr);
+		}
+
+		// Current case
+		var tokenLower = "[" + abbrs[abbrIdx].name.toLowerCase() + "]";
+
+		// Handle abbreviation
+		while (desc.indexOf(tokenLower) >= 0)
+		{
+			var abbr = "<abbr title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name.toLowerCase() + "</abbr>";
+
+			desc = desc.replace(tokenLower, abbr);
+		}
+	}
+
+	return desc;
+}

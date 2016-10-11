@@ -27,36 +27,8 @@ function renderCaseAlg(algObj, style, narrow)
 		}
 		out += "</td>";
 
-		var desc = algObj.desc;
-		
-		// Iterate through the cases
-		for (var abbrIdx = 0; abbrIdx < abbrs.length; abbrIdx++)
-		{
-			// Current case
-			var tokenUpper = "[" + abbrs[abbrIdx].name + "]";
-			
-			// Handle abbreviation
-			while (desc.indexOf(tokenUpper) >= 0)
-			{
-				var abbr = "<abbr title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name + "</abbr>";
-				
-				desc = desc.replace(tokenUpper, abbr);
-			}
-
-			// Current case
-			var tokenLower = "[" + abbrs[abbrIdx].name.toLowerCase() + "]";
-			
-			// Handle abbreviation
-			while (desc.indexOf(tokenLower) >= 0)
-			{
-				var abbr = "<abbr title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name.toLowerCase() + "</abbr>";
-				
-				desc = desc.replace(tokenLower, abbr);
-			}
-		}
-
 		// Description
-		out += "<td class=\"desc\">" + desc + "</td>";
+		out += "<td class=\"desc\">" + replaceAbbr(algObj.desc) + "</td>";
 	}
 	
 	// Row - end
@@ -228,7 +200,7 @@ function renderCase(caseId, narrow)
 		// Description
 		if (caseObj.desc)
 		{
-			out += "<p>" + caseObj.desc + "</p>";
+			out += "<p>" + replaceAbbr(caseObj.desc) + "</p>";
 		}
 
 		// Probability
