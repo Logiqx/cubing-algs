@@ -2210,7 +2210,7 @@ var algSet = {
         {
           "id": "allcorners",
           "name": "All Corners Oriented",
-		  "desc": "These are the 3 [EOLL] cases",
+		  "desc": "These are the 3 [EOLL] cases. Most of these algorithms also preserve the corner permutation.",
           "wiki": "#All_Corners_Oriented",
           "cases": ["28", "57", "20"]
         },
@@ -2353,7 +2353,7 @@ var algSet = {
         {
           "id": "oriented",
           "name": "All Corners Oriented",
-		  "desc": "These are the 3 [EOLL] cases.",
+		  "desc": "These are the 3 [EOLL] cases. Most of these algorithms also preserve the corner permutation.",
           "cases": ["28", "57", "20"]
         },
         {
