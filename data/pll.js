@@ -353,7 +353,7 @@ var algSet = {
       [
         {
           "alg": "F R U' R' U' R U R' F' R U R' U' R' F R F'",
-          "desc": "YODO",
+          "desc": "TODO",
 		  "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -397,8 +397,8 @@ var algSet = {
   "views":
   [
     {
-      "id": "alphapetical",
-      "name": "Alphapetical",
+      "id": "alphabetical",
+      "name": "Alphabetical",
       "uses": ["2H", "OH"],
       "groups":
       [
@@ -475,8 +475,8 @@ var algSet = {
 	  ]
     },
     {
-      "id": "permutation",
-      "name": "Permutation",
+      "id": "general",
+      "name": "General",
       "uses": ["2H", "OH"],
       "groups":
       [
@@ -484,7 +484,7 @@ var algSet = {
           "id": "edges",
           "name": "Edges Only",
           "wiki": "#Permutations_of_Edges_Only",
-          "cases": ["H", "Ua", "Ub", "Z"]
+          "cases": ["Ua", "Ub", "Z", "H"]
         },
         {
           "id": "corners",
@@ -496,7 +496,7 @@ var algSet = {
           "id": "both",
           "name": "Edges + Corners",
           "wiki": "#Permutations_of_Edges_and_Corners",
-          "cases": ["F", "Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Na", "Nb", "Ra", "Rb", "T", "V", "Y"]
+          "cases": ["Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "T", "F", "Y", "V", "Na", "Nb"]
         },
         {
           "id": "lucky",
@@ -506,9 +506,55 @@ var algSet = {
 	  ]
     },
     {
+      "id": "corners",
+      "name": "Corners",
+      "uses": ["2H", "OH"],
+      "groups":
+      [
+        {
+          "id": "noswap",
+          "name": "No Corner Swap",
+          "cases": ["Ua", "Ub", "Z", "H", "Skip"]
+        },
+        {
+          "id": "adjacent",
+          "name": "Adjacent Corner Swap",
+          "cases": ["Aa", "Ab", "Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "T", "F"]
+        },
+        {
+          "id": "diagonal",
+          "name": "Diagonal Corner Swap",
+          "cases": ["Y", "V", "E", "Na", "Nb"]
+        },
+	  ]
+    },
+    {
+      "id": "edges",
+      "name": "Edges",
+      "uses": ["2H", "OH"],
+      "groups":
+      [
+        {
+          "id": "noswap",
+          "name": "No Edge Swap",
+          "cases": ["Aa", "Ab", "E", "H", "Skip"]
+        },
+        {
+          "id": "adjacent",
+          "name": "Adjacent Edge Swap",
+          "cases": ["Ua", "Ub", "Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "T", "F"]
+        },
+        {
+          "id": "opposite",
+          "name": "Opposite Edge Swap",
+          "cases": ["Y", "V", "Z", "Na", "Nb"]
+        },
+	  ]
+    },
+    {
       "id": "grid",
       "name": "Grid",
-      "headers": ["EPLL", "Adj", "Adj", "Adj", "Diag"],
+      "headers": ["EPLL", "Adjacent", "Adjacent", "Adjacent", "Diagonal"],
       "rows":
       [
         {
@@ -517,23 +563,23 @@ var algSet = {
           "cases": ["Skip", "Aa", null, "Ab", "E"]
         },
         {
-          "id": "*",
-          "name": "*",
+          "id": "various",
+          "name": "Various",
           "cases": ["Ua", "Ga", "T", "Gb", "Y"]
         },
         {
-          "id": "*",
-          "name": "*",
+          "id": "various",
+          "name": "Various",
           "cases": ["Ub", "Gc", null, "Gd", "V"]
         },
         {
-          "id": "*",
-          "name": "*",
+          "id": "various",
+          "name": "Various",
           "cases": ["Z", "Ja", "F", "Ra", "Na"]
         },
         {
-          "id": "*",
-          "name": "*",
+          "id": "various",
+          "name": "Various",
           "cases": ["H", "Jb", null, "Rb", "Nb"]
         },
       ]
