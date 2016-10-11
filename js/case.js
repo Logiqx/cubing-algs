@@ -110,7 +110,14 @@ function renderCaseLinks(caseObj)
 	var wikiLabel = algSet.header.id;
 	if (wikiAnchor != "")
 	{
-		wikiLabel += " " + caseObj.id;
+		if (caseObj.wiki.indexOf("#") >= 0)
+		{
+			wikiLabel = algSet.header.id;
+		}
+		else
+		{
+			wikiLabel = caseObj.wiki;
+		}
 	}
 
 	// AlgDB anchor and label are unique to the case
@@ -118,7 +125,7 @@ function renderCaseLinks(caseObj)
 	var algdbLabel = algSet.header.id
 	if (algdbPage != "")
 	{
-		algdbLabel += " " + caseObj.id;
+		algdbLabel = caseObj.algdb;
 	}
 	
 	// Iterate through the views
@@ -142,7 +149,14 @@ function renderCaseLinks(caseObj)
 						if (groupObj.cases.indexOf(caseObj.id) >= 0)
 						{
 							wikiAnchor = groupObj.wiki;
-							wikiLabel = groupObj.name;
+							if (groupObj.wiki.indexOf("#") >= 0)
+							{
+								wikiLabel = algSet.header.id;
+							}
+							else
+							{
+								wikiLabel = groupObj.wiki;
+							}
 						}
 					}
 				}
