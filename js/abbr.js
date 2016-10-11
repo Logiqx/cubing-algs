@@ -26,7 +26,7 @@ var abbrs =
   },
   {
     "name": "COLL",
-    "desc": "Corners and Orientation of the Last Layer"
+    "desc": "Corners of the Last Layer - Preserving Edge Orientation"
   },
   {
     "name": "CPLL",
