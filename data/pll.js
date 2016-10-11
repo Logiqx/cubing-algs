@@ -354,7 +354,7 @@ var algSet = {
         },
         {
           "alg": "R U2' R' U' R U2' L' U R' U' L",
-          "desc": "Playing with F2L pairs... track the FR + FL pairs",
+          "desc": "Playing with [F2L] pairs... track the FR + FL pairs",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -414,7 +414,7 @@ var algSet = {
       [
         {
           "alg": "R' U R U' R' F' U' F R U R' F R' F' R U' R",
-          "desc": "RUF algorithm",
+          "desc": "Playing with [F2L] pairs... track the BR pair",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -444,7 +444,7 @@ var algSet = {
         },
         {
           "alg": "R U' R' U' R U R D R' U' R D' R' U2' R'",
-          "desc": "RUD algorithm",
+          "desc": "Playing with [F2L] pairs... track the FR pair",
 		  "status": 1,
           "uses": ["OH"],
         },
@@ -462,14 +462,14 @@ var algSet = {
       [
         {
           "alg": "[U'] R' U2 R U2' R' F R U R' U' R' F' R2",
-          "desc": "RUF algorithm",
+          "desc": "Playing with [F2L] pairs... track the BR + FL pairs",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars":
 		  [
 			{
 			  "alg": "[U'] R' U2' R U2' R' F R U R' U' R' F' R2",
-			  "desc": "RUD algorithm",
+			  "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"],
 			},
