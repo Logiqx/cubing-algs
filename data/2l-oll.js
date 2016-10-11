@@ -673,11 +673,13 @@ var algSet = {
         {
           "id": "edges",
           "name": "Edge Orientation",
+          "desc": "These are the 3 [EOLL] cases. There is a 1/8 chance of skipping this step and going straight to [OCLL].",
           "cases": ["Adj", "Opp", "Dot", "EOLL"]
         },
         {
           "id": "corners",
           "name": "Corner Orientation",
+          "desc": "These are the 7 [OCLL] cases. There is a 1/27 chance of skipping this step and going straight to [PLL].",
           "cases": ["AS", "S", "L", "U", "T", "Pi", "H", "OCLL"]
         },
       ]
