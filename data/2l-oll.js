@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "2L-OLL",
     "name": "Two Look Orientation of the Last Layer",
-    "wiki": "https://www.speedsolving.com/wiki/index.php/OLL",
+    "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/OLL/",
     "uses":
     [
@@ -129,7 +129,7 @@ var algSet = {
     {
       "id": "AS",
       "name": "Anti-Sune",
-      "wiki": "OLL 26",
+      "wiki": "",
       "algdb": "OLL 26",
       "image": "OCLL-AS",
       "prob": "4/27",
@@ -170,7 +170,7 @@ var algSet = {
     {
       "id": "S",
       "name": "Sune",
-      "wiki": "OLL 27",
+      "wiki": "",
       "algdb": "OLL 27",
       "image": "OCLL-S",
       "prob": "4/27",
@@ -193,7 +193,7 @@ var algSet = {
     {
       "id": "L",
       "name": "L / Bowtie",
-      "wiki": "OLL 25",
+      "wiki": "",
       "algdb": "OLL 25",
       "image": "OCLL-L",
       "prob": "4/27",
@@ -330,7 +330,7 @@ var algSet = {
     {
       "id": "U",
       "name": "U / Headlights",
-      "wiki": "OLL 23",
+      "wiki": "",
       "algdb": "OLL 23",
       "image": "OCLL-U",
       "prob": "4/27",
@@ -425,7 +425,7 @@ var algSet = {
     {
       "id": "T",
       "name": "T / Chameleon",
-      "wiki": "OLL 24",
+      "wiki": "",
       "algdb": "OLL 24",
       "image": "OCLL-T",
       "prob": "4/27",
@@ -520,7 +520,7 @@ var algSet = {
     {
       "id": "Pi",
       "name": "Pi / Bruno",
-      "wiki": "OLL 22",
+      "wiki": "",
       "algdb": "OLL 22",
       "image": "OCLL-Pi",
       "prob": "4/27",
@@ -588,7 +588,7 @@ var algSet = {
     {
       "id": "H",
       "name": "H / Double Sune",
-      "wiki": "OLL 21",
+      "wiki": "",
       "algdb": "OLL 21",
       "image": "OCLL-H",
       "prob": "2/27",
@@ -673,12 +673,14 @@ var algSet = {
         {
           "id": "edges",
           "name": "Edge Orientation",
+          "wiki": "EOLL",
           "desc": "These are the 3 [EOLL] cases. There is a 1/8 chance of skipping this step and going straight to [OCLL].",
           "cases": ["Adj", "Opp", "Dot", "EOLL"]
         },
         {
           "id": "corners",
           "name": "Corner Orientation",
+          "wiki": "OCLL",
           "desc": "These are the 7 [OCLL] cases. There is a 1/27 chance of skipping this step and going straight to [PLL].",
           "cases": ["AS", "S", "L", "U", "T", "Pi", "H", "OCLL"]
         },
