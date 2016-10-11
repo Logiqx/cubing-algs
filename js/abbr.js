@@ -185,6 +185,10 @@ var abbrs =
     "desc": "Solving an OLL case using Sune variations"
   },
   {
+    "name": "TPS",
+    "desc": "Turns Per Second"
+  },
+  {
     "name": "VHLS",
     "desc": "Vandenbergh-Harris Last Slot"
   },
