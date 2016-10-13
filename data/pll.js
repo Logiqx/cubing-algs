@@ -308,7 +308,7 @@ var algSet = {
           "alg": "[U'] (R' U L' U2' R U' L) (L' R' U2 R L)",
           "desc": "Playing with [F2L] pairs... track BR + FL pairs (similar to Na)",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": [],
 		  "vars" :
 		  [
 			{
