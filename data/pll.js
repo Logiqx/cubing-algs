@@ -38,13 +38,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] l' U R' D2 R U' R' D2 R2 x'",
-              "desc": "Actual execution incorporates a rotation and cancellations",
+              "desc": "Actual execution incorporates cancellations and a rotation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U] x R' U R' D2 R U' R' D2 R2 x'",
-              "desc": "Actual execution incorporates a rotation and cancellations",
+              "desc": "Actual execution incorporates cancellations and a rotation",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -71,13 +71,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] l' R' D2 R U R' D2 R U' R x'",
-              "desc": "Actual execution incorporates a rotation and cancellations",
+              "desc": "Actual execution incorporates cancellations and a rotation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] x R2 D2 R U R' D2 R U' R x'",
-              "desc": "Actual execution incorporates a rotation and cancellations",
+              "desc": "Actual execution incorporates cancellations and a rotation",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -144,7 +144,7 @@ var algSet = {
         },
         {
           "alg": "L R2 U R U R2 U' R' U' R2 U' R U2' L' U R'",
-          "desc": "RUL algorithm",
+          "desc": "[RUL] algorithm",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -225,7 +225,7 @@ var algSet = {
       [
         {
           "alg": "[U2] R2' F2 R U2 R U2' R' F R U R' U' R' F R2",
-          "desc": "RUF algorithm. Requires decent [TPS] to be fast",
+          "desc": "[RUF] algorithm. Requires decent [TPS] to be fast",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -249,7 +249,7 @@ var algSet = {
       [
         {
           "alg": "[U] R2' F' R U R U' R' F' R U2' R' U2 R' F2 R2",
-          "desc": "RUF algorithm. Requires decent [TPS] to be fast",
+          "desc": "[RUF] algorithm. Requires decent [TPS] to be fast",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -273,7 +273,7 @@ var algSet = {
       [
         {
           "alg": "M2 U' (M2 U2 M2' U2') U M2'",
-          "desc": "[Conjugate] of a simple [commutator] -  [M2 U': M2 U2 M2' U2']",
+          "desc": "[MU] [commutator] / [conjugate] -  [M2 U': [M2, U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -288,7 +288,7 @@ var algSet = {
         },
         {
           "alg": "(R2 U2' R U2' R2) U2' (R2 U2' R U2' R2)",
-          "desc": "Note the Ortega / Varasano OLL algorithm (H case) in brackets",
+          "desc": "Note the Ortega / Varasano [OLL] algorithm (H case) in brackets",
 		  "status": 1,
           "uses": ["OH"],
         },
@@ -305,21 +305,36 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[U'] R' U L' U2 R U' R' U2 R L",
-          "desc": "Playing with [F2L] pairs... track the BR + FL pairs",
+          "alg": "[U'] (R' U L' U2' R U' L) (L' R' U2 R L)",
+          "desc": "Playing with [F2L] pairs... track BR + FL pairs (similar to Na)",
 		  "status": 1,
           "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "[U'] R' U L' U2 R U' R' U2 R L",
+              "desc": "Actual execution includes a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+		  ]
         },
         {
-          "alg": "R' U2' R U R' U2' L U' R U L'",
-          "desc": "Playing with [F2L] pairs... track the BR + BL pairs",
+          "alg": "(R' U2' R U R' U R) (R' U L U' R U L')",
+          "desc": "Combination of two simple [COLL] algorithms - [RBAS], [RBN]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
+			  "alg": "R' U2' R U R' U2' L U' R U L'",
+              "desc": "Actual execution includes cancellations",
+			  "status": 0,
+			  "uses": ["2H"]
+			},
+			{
 			  "alg": "R' U2' R U R' U2' z U R' D R U'",
-              "desc": "Actual execution includes a rotation",
+              "desc": "Actual execution includes cancellations and a rotation",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -353,15 +368,21 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "R U2' R' U' R U2' L' U R' U' L",
-          "desc": "Playing with [F2L] pairs... track the FR + FL pairs",
+          "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
+          "desc": "Combination of two simple [COLL] algorithms - [RFAS], [RFN]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
+			  "alg": "R U2 R' U' R U2 L' U R' U' L",
+              "desc": "Actual execution includes cancellations",
+			  "status": 0,
+			  "uses": ["2H"]
+			},
+			{
 			  "alg": "R U2' R' U' R U2' z U' R D' R' U",
-              "desc": "Actual execution includes a rotation",
+              "desc": "Actual execution includes cancellations and a rotation",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -396,7 +417,7 @@ var algSet = {
         },
         {
           "alg": "(R' U L' U2' R U' L) (R' U L' U2' R U' L)",
-          "desc": "Easy 7-move algorithm executed twice",
+          "desc": "Playing with [F2L] pairs... track BR + FL pairs",
 		  "status": 1,
           "uses": ["OH"],
         },
@@ -414,13 +435,13 @@ var algSet = {
       [
         {
           "alg": "R' U R U' R' F' U' F R U R' F R' F' R U' R",
-          "desc": "Playing with [F2L] pairs... track the BR pair",
+          "desc": "Playing with [F2L] pairs... track BR pair",
 		  "status": 1,
           "uses": ["2H"],
         },
         {
           "alg": "(R U' L U2' R' U L') (R U' L U2' R' U L')",
-          "desc": "Easy 7-move algorithm executed twice",
+          "desc": "Playing with [F2L] pairs... track FR + BL pairs",
 		  "status": 1,
           "uses": ["OH"],
         },
@@ -438,15 +459,30 @@ var algSet = {
       [
         {
           "alg": "R U R' F' R U2' R' U2 R' F R U R U2' R'",
-          "desc": "RUF algorithm",
+          "desc": "[RUF] algorithm. Decent for big cubes.",
 		  "status": 1,
           "uses": ["2H"],
         },
         {
-          "alg": "R U' R' U' R U R D R' U' R D' R' U2' R'",
-          "desc": "Playing with [F2L] pairs... track the FR pair",
+          "alg": "R U' R' U' R (U R D R' U' R D' R') U2' R'",
+          "desc": "Contains an 8-move [commutator] - [U, R D R']",
 		  "status": 1,
-          "uses": ["OH"],
+          "uses": [],
+		  "vars":
+		  [
+			{
+			  "alg": "R U' R' U' R U R D R' U' R D' R' U2 R'",
+			  "desc": "Two-handed execution",
+			  "status": 0,
+			  "uses": ["2H"],
+			},
+			{
+			  "alg": "R U' R' U' R U R D R' U' R D' R' U2' R'",
+			  "desc": "One-handed execution",
+			  "status": 0,
+			  "uses": ["OH"],
+			},
+		  ]
         },
       ]
     },
@@ -462,7 +498,7 @@ var algSet = {
       [
         {
           "alg": "[U'] R' U2 R U2' R' F R U R' U' R' F' R2",
-          "desc": "Playing with [F2L] pairs... track the BR + FL pairs",
+          "desc": "Playing with [F2L] pairs... track BR + FL pairs",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars":
@@ -471,6 +507,27 @@ var algSet = {
 			  "alg": "[U'] R' U2' R U2' R' F R U R' U' R' F' R2",
 			  "desc": "One-handed execution",
 			  "status": 1,
+			  "uses": ["OH"],
+			},
+		  ]
+        },
+        {
+          "alg": "[U'] R' U2 (R' D' R U' R' D R U) R U' R' U' R",
+          "desc": "Contains an 8-move [commutator] - [R' D R, U]",
+		  "status": 0,
+          "uses": [],
+		  "vars":
+		  [
+			{
+			  "alg": "[U'] R' U2 R' D' R U' R' D R U R U' R' U' R",
+			  "desc": "Two-handed execution",
+			  "status": 0,
+			  "uses": ["2H"],
+			},
+			{
+			  "alg": "[U'] R' U2' R' D' R U' R' D R U R U' R' U' R",
+			  "desc": "One-handed execution",
+			  "status": 0,
 			  "uses": ["OH"],
 			},
 		  ]
@@ -515,7 +572,7 @@ var algSet = {
       [
         {
           "alg": "[U] M2 U (M U2 M' U2') U' M2'",
-          "desc": "[Conjugate] of a simple [commutator] -  [M2 U: M U2 M' U2']",
+          "desc": "[MU] [commutator] / [conjugate] -  [M2 U: [M, U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -530,7 +587,7 @@ var algSet = {
         },
         {
           "alg": "[U'] M2 U (M' U2 M U2') U' M2'",
-          "desc": "[Conjugate] of a simple [commutator] -  [M2 U: M' U2 M U2']",
+          "desc": "[MU] [commutator] / [conjugate] -  [M2 U: [M', U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -545,7 +602,7 @@ var algSet = {
         },
         {
           "alg": "[U] R U' (R U R U R U' R' U' R' U') U R'",
-          "desc": "[Conjugate] of a [F2L] insertion - [R U': R U R U R U' R' U' R' U']",
+          "desc": "[Conjugate] of [F2L] insertion - [R U': R U R U R U' R' U' R' U']",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -560,7 +617,7 @@ var algSet = {
         },
         {
           "alg": "[U'] R' U (U' R' U' R' U' R U R U R) U' R",
-          "desc": "[Conjugate] of a [F2L] insertion - [R' U: U' R' U' R' U' R U R U R]",
+          "desc": "[Conjugate] of [F2L] insertion - [R' U: U' R' U' R' U' R U R U R]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -587,7 +644,7 @@ var algSet = {
       [
         {
           "alg": "[U] M2 U' (M U2 M' U2') U M2'",
-          "desc": "[Conjugate] of a simple [commutator] -  [M2 U': M U2 M' U2']",
+          "desc": "[MU] [commutator] / [conjugate] -  [M2 U': [M, U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -602,7 +659,7 @@ var algSet = {
         },
         {
           "alg": "[U'] M2 U' (M' U2 M U2') U M2'",
-          "desc": "[Conjugate] of a simple [commutator] -  [M2 U': M' U2 M U2']",
+          "desc": "[MU] [commutator] / [conjugate] -  [M2 U': [M', U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -617,7 +674,7 @@ var algSet = {
         },
         {
           "alg": "[U] R U' (U R U R U R' U' R' U' R') U R'",
-          "desc": "[Conjugate] of a [F2L] insertion - [R U': U R U R U R' U' R' U' R']",
+          "desc": "[Conjugate] of [F2L] insertion - [R U': U R U R U R' U' R' U' R']",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -638,7 +695,7 @@ var algSet = {
 		},
         {
           "alg": "[U'] R' U (R' U' R' U' R' U R U R U) U' R",
-          "desc": "[Conjugate] of a [F2L] insertion - [R' U: R' U' R' U' R' U R U R U]",
+          "desc": "[Conjugate] of [F2L] insertion - [R' U: R' U' R' U' R' U R U R U]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -740,7 +797,7 @@ var algSet = {
         },
         {
           "alg": "[U] R' U' R U' R U R U' R' U R U R2 U' R'",
-          "desc": "Playing with [F2L] pairs... track the BR + FR pairs",
+          "desc": "Playing with [F2L] pairs... track BR + FR pairs",
 		  "status": 1,
           "uses": ["OH"],
         },
@@ -875,7 +932,7 @@ var algSet = {
         {
           "id": "corners",
           "name": "Corners Only",
-		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [conjugate]s and [commutator]s.",
+		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [commutator]s and [conjugate]s.",
           "wiki": "#Permutations_of_Corners_Only",
           "cases": ["Aa", "Ab", "E"]
         },
@@ -912,7 +969,7 @@ var algSet = {
         {
           "id": "diagonal",
           "name": "Diagonal Corner Swap",
-		  "desc": "Advanced [CFOP] users may try to avoid diagonal corner swaps using partial [OLLCP].",
+		  "desc": "Advanced [CFOP] users may try to avoid theses cases using [COLL] or [OLLCP].",
           "cases": ["Y", "V", "E", "Na", "Nb"]
         },
 	  ]
@@ -926,7 +983,7 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Edge Swap",
-		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [conjugate]s and [commutator]s.",
+		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [commutator]s and [conjugate]s.",
           "cases": ["Aa", "Ab", "E", "H", "Skip"]
         },
         {

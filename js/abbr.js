@@ -93,6 +93,10 @@ var abbrs =
     "desc": "Left Back Anti-Sune"
   },
   {
+    "name": "LBN",
+    "desc": "Left Back Niklas"
+  },
+  {
     "name": "LBS",
     "desc": "Left Back Sune"
   },
@@ -109,6 +113,10 @@ var abbrs =
     "desc": "Left Front Anti-Sune"
   },
   {
+    "name": "LFN",
+    "desc": "Left Front Niklas"
+  },
+  {
     "name": "LFS",
     "desc": "Left Front Sune"
   },
@@ -121,6 +129,10 @@ var abbrs =
     "desc": "Left Front Wide Sune"
   },
   {
+    "name": "MU",
+    "desc": "Algorithm consisting of M and U moves"
+  },
+  {
     "name": "Niklas",
     "desc": "The 8-move commutator named by Lars Petrus"
   },
@@ -131,6 +143,10 @@ var abbrs =
   {
     "name": "RBAS",
     "desc": "Right Back Anti-Sune"
+  },
+  {
+    "name": "RBN",
+    "desc": "Right Back Niklas"
   },
   {
     "name": "RBS",
@@ -153,6 +169,10 @@ var abbrs =
     "desc": "Right Front Anti-Sune"
   },
   {
+    "name": "RFN",
+    "desc": "Right Front Niklas"
+  },
+  {
     "name": "RFS",
     "desc": "Right Front Sune"
   },
@@ -163,6 +183,18 @@ var abbrs =
   {
     "name": "RFWS",
     "desc": "Right Front Wide Sune"
+  },
+  {
+    "name": "RU",
+    "desc": "Algorithm consisting of R and U moves"
+  },
+  {
+    "name": "RUF",
+    "desc": "Algorithm consisting of R, U and F moves"
+  },
+  {
+    "name": "RUL",
+    "desc": "Algorithm consisting of R, U and L moves"
   },
   {
     "name": "Sexy",
