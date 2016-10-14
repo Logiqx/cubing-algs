@@ -1,7 +1,7 @@
 //
 // Render algorithm
 //
-function renderCaseAlg(algObj, style, narrow)
+function renderCaseAlg(algObj, style, viewportWidth)
 {
 	// Initialisation
     var out = "";
@@ -12,9 +12,9 @@ function renderCaseAlg(algObj, style, narrow)
 	// Algorithm
 	out += "<td class=\"" + style + "\">" + algObj.alg + "</td>";
 
-	if (narrow == false)
+	// Uses is hidden on narrow displays
+	if (viewportWidth >= PHONE_LANDSCAPE)
 	{
-		// Uses
 		out += "<td class=\"uses\">";
 		for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
 		{
@@ -26,8 +26,11 @@ function renderCaseAlg(algObj, style, narrow)
 			out += algObj.uses[useIdx];
 		}
 		out += "</td>";
+	}
 
-		// Description
+	// Description of algorithm is only shown on wide displays
+	if (viewportWidth >= TABLET_LANDSCAPE)
+	{
 		out += "<td class=\"desc\">" + replaceAbbr(algObj.desc) + "</td>";
 	}
 	
@@ -40,7 +43,7 @@ function renderCaseAlg(algObj, style, narrow)
 //
 // Render algorithms for a specific case
 //
-function renderCaseAlgs(caseObj, narrow)
+function renderCaseAlgs(caseObj, viewportWidth)
 {
 	// Initialisation
     var out = "";
@@ -70,7 +73,7 @@ function renderCaseAlgs(caseObj, narrow)
 		out += "<table>";
 
 		// Render the alg
-		out += renderCaseAlg(algObj, "alg", narrow);
+		out += renderCaseAlg(algObj, "alg", viewportWidth);
 		
 		// Do any variations of the algorithm exist?
 		if (algObj.hasOwnProperty("vars"))
@@ -82,7 +85,7 @@ function renderCaseAlgs(caseObj, narrow)
 				var varObj = algObj.vars[varIdx];
 				
 				// Render the variation
-				out += renderCaseAlg(varObj, "var", narrow);
+				out += renderCaseAlg(varObj, "var", viewportWidth);
 			}
 		}
 		
@@ -97,7 +100,7 @@ function renderCaseAlgs(caseObj, narrow)
 //
 // Render links for a specific case
 //
-function renderCaseLinks(caseObj)
+function renderCaseLinks(caseObj, viewportWidth)
 {
 	// Initialisation
     var out = "";
@@ -176,13 +179,13 @@ function renderCaseLinks(caseObj)
 //
 // Render the case
 //
-function renderCase(caseId, narrow)
+function renderCase(caseId, viewportWidth)
 {
 	// Initialisation
     var out = "";
 	
 	// Determine the image size
-	var imgSize = narrow == false ? "128" : "96";
+	var imgSize = viewportWidth >= PHONE_LANDSCAPE ? "128" : "96";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -190,8 +193,8 @@ function renderCase(caseId, narrow)
 	// Output the case name
 	out += "<h1>" + algSet.header.id + " " + caseId + "</h1>";
 	
-	// Output important message
-	out += important();
+	// Output header message
+	out += header();
 	
 	// Check if the case exists
 	if (caseIds.indexOf(caseId) >= 0)
@@ -221,16 +224,19 @@ function renderCase(caseId, narrow)
 		out += "<p>Probability = " + caseObj.prob + "</p>";
 
 		// Render the algs
-		out += renderCaseAlgs(caseObj, narrow);
+		out += renderCaseAlgs(caseObj, viewportWidth);
 
 		// Render the links
-		out += renderCaseLinks(caseObj);
+		out += renderCaseLinks(caseObj, viewportWidth);
 	}
 	else
 	{
 		out += "Missing case " + caseId; 
 	}
 
+	// Output footer message
+	out += footer();
+	
 	// Update the HTML document
     document.getElementById("view").innerHTML = out;
 }

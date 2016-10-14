@@ -1,7 +1,7 @@
 //
 // Render grid header row
 //
-function renderGridHeaderRow(viewObj)
+function renderGridHeaderRow(viewObj, viewportWidth)
 {
     var out = "";
 	
@@ -28,13 +28,13 @@ function renderGridHeaderRow(viewObj)
 //
 // Render grid data rows
 //
-function renderGridDataRows(viewObj)
+function renderGridDataRows(viewObj, viewportWidth)
 {
 	// Initialisation
     var out = "";
 	
-	// Determine the image size
-	var imgSize = "64";
+	// Determine the image sizes for the grid
+	var imgSize = viewportWidth >= TABLET_LANDSCAPE ? "96" : "64";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -63,9 +63,16 @@ function renderGridDataRows(viewObj)
 
 				if (caseObj != null)
 				{
+					// Tooltip is shown on mouse hover
+					var tooltip = algSet.header.id + " " + caseObj.id;
+					if (caseObj.name != caseObj.id)
+					{
+						tooltip += " - " + caseObj.name;
+					}
+					
 					// Render the Id and Name
-					out += "<i class=\"clicky s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
-							"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/>";
+					out += "<abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+							"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr>";
 				}
 			}
 			
@@ -83,16 +90,16 @@ function renderGridDataRows(viewObj)
 //
 // Render table header row
 //
-function renderTableHeaderRow(viewObj, narrow)
+function renderTableHeaderRow(viewObj, viewportWidth)
 {
     var out = "";
 	
 	// Render the table header
 	out += "<thead>";
 	out += "<tr>";
-	if (narrow == false)
+	if (viewportWidth >= PHONE_LANDSCAPE)
 	{
-		out += "<th></th>";
+		out += "<th class=\"id\"></th>";
 	}
 	out += "<th></th>";
 	
@@ -108,16 +115,16 @@ function renderTableHeaderRow(viewObj, narrow)
 				out += "<th class=\"alg\">" + refObj.name + "</th>";
 			}
 			
-			// Only display one use on narrow display
-			if (narrow == true)
+			// Only wide displays can display more than one "use" column (e.g. 2H + OH)
+			if (viewportWidth < TABLET_LANDSCAPE)
 			{
 				break;
 			}
 		}
 	}
 	
-	// Only display probability on a wide display
-	if (narrow == false)
+	// Only display probability on a medium display
+	if (viewportWidth >= PHONE_LANDSCAPE)
 	{
 		out += "<th class=\"prob\">P</th>";
 	}
@@ -204,13 +211,13 @@ function renderTableDataCell(caseObj, useId)
 //
 // Render table data rows
 //
-function renderTableDataRows(viewObj, groupObj, narrow)
+function renderTableDataRows(viewObj, groupObj, viewportWidth)
 {
 	// Initialisation
     var out = "";
 	
 	// Determine the image size
-	var imgSize = narrow == false ? "96" : "64";
+	var imgSize = viewportWidth >= PHONE_LANDSCAPE ? "96" : "64";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -231,15 +238,22 @@ function renderTableDataRows(viewObj, groupObj, narrow)
 				out += "<tr>";
 				
 				// Only display probability on a wide display
-				if (narrow == false)
+				if (viewportWidth >= PHONE_LANDSCAPE)
 				{
 					// Render the Id
 					out += "<td>" + caseObj.id + "</td>";
 				}
 
+				// Tooltip is shown on mouse hover
+				var tooltip = algSet.header.id + " " + caseObj.id;
+				if (caseObj.name != caseObj.id)
+				{
+					tooltip += " - " + caseObj.name;
+				}
+
 				// Render the image
-				out += "<td><i class=\"clicky s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
-						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></td>";
+				out += "<td><abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr></td>";
 
 				// Iterate through the uses
 				for (var useIdx in viewObj.uses)
@@ -249,15 +263,15 @@ function renderTableDataRows(viewObj, groupObj, narrow)
 					out += renderTableDataCell(caseObj, viewObj.uses[useIdx]);
 					out += "</td>";
 					
-					// Only display one use on narrow display
-					if (narrow == true)
+					// Only wide displays can display more than one "use" column (e.g. 2H + OH)
+					if (viewportWidth < TABLET_LANDSCAPE)
 					{
 						break;
 					}
 				}
 					
-				// Only display probability on a wide display
-				if (narrow == false)
+				// Only display probability on a medium display
+				if (viewportWidth >= PHONE_LANDSCAPE)
 				{
 					out += "<td class=\"prob\">" + caseObj.prob + "</td>";
 				}
@@ -275,7 +289,7 @@ function renderTableDataRows(viewObj, groupObj, narrow)
 //
 // Render options as drop-down lists
 //
-function renderViewOptions(viewId, narrow)
+function renderViewOptions(viewId, viewportWidth)
 {
     var out = "";
 
@@ -287,19 +301,15 @@ function renderViewOptions(viewId, narrow)
 	{
 		var viewObj = algSet.views[viewIdx];
 	
-		// Narrow displays do not support grid view!
-		if (viewObj.id != "grid" || narrow == false)
+		out += "<option value=\"" + viewObj.id + "\"";
+		
+		// Is this the selected view?
+		if (viewObj.id == viewId)
 		{
-			out += "<option value=\"" + viewObj.id + "\"";
-			
-			// Is this the selected view?
-			if (viewObj.id == viewId)
-			{
-				out += " selected";
-			}
-			
-			out += ">" + viewObj.name + "</option>";
+			out += " selected";
 		}
+		
+		out += ">" + viewObj.name + "</option>";
 	}
 	
 	// End of select element
@@ -311,7 +321,7 @@ function renderViewOptions(viewId, narrow)
 //
 // Render contents - links to sections
 //
-function renderViewLinks(viewObj)
+function renderViewLinks(viewObj, viewportWidth)
 {
     var out = "";
 	var length = 0;
@@ -351,40 +361,62 @@ function renderViewLinks(viewObj)
 //
 // Render the selected view
 //
-function renderView(viewId, narrow)
+function renderView(viewId, viewportWidth)
 {
 	// Initialisation
     var out = "";
 	
-	// Default to the the first view
-	if (viewId == "")
-	{
-		viewId = algSet.views[0].id;
+    // Search for the viewId
+	var found = false;
 
-		// Narrow displays do not support grid view!
-		if (viewId == "grid" && narrow == true)
+	// Iterate through the views
+	for (var viewIdx = 0; viewIdx < algSet.views.length; viewIdx++)
+	{
+		// Is this the desired view?
+		if (algSet.views[viewIdx].id == viewId)
 		{
-			viewId = algSet.views[1].id;
+			found = true;
+			break;
 		}
 	}
 	
-    // Was the view found?
-	var found = false;
-
+	// Default to the the first view if viewId was not found
+	if (found == false)
+	{
+		viewId = algSet.views[0].id;
+	}
+	
 	// Output the set title
 	out += "<h1>" + algSet.header.name + " (" + algSet.header.id + ")</h1>";
 	
-	// Output important message
-	out += important();
+	// Output header message
+	out += header();
 	
-	// Render the options
-	out += renderViewOptions(viewId, narrow);
+	// Output instructional messages
+	var instructions = "<p>";
+	if (viewId != "grid")
+	{
+		instructions += "This page lists the algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.</p><p>";
+	}
+	if (algSet.views.length > 1)
+	{
+		instructions += " Use the dropdown below to switch views.";
+	}
+	instructions += " Click on an image for details about the case; e.g. algorithms, comments, breakdowns.</p>";
+	out += instructions;
+
+	// Dropdowns aren't always required
+	if (algSet.views.length > 1)
+	{
+		// Render the options
+		out += renderViewOptions(viewId, viewportWidth);
+	}
 
 	// Iterate through the views
-    for (var viewIdx = 0; viewIdx < algSet.views.length; viewIdx++)
+	for (var viewIdx = 0; viewIdx < algSet.views.length; viewIdx++)
 	{
 		// Is this the desired view?
-	    if (algSet.views[viewIdx].id == viewId)
+		if (algSet.views[viewIdx].id == viewId)
 		{
 			var viewObj = algSet.views[viewIdx];
 		
@@ -400,7 +432,7 @@ function renderView(viewId, narrow)
 			
 			if (viewObj.hasOwnProperty("rows"))
 			{
-				if (narrow == true)
+				if (viewportWidth < PHONE_LANDSCAPE)
 				{
 					out += "<p>Sorry... Grid is too large for this display!</p>";
 				}
@@ -408,18 +440,15 @@ function renderView(viewId, narrow)
 				{
 					// Render the table
 					out += "<table>";
-					out += renderGridHeaderRow(viewObj);
-					out += renderGridDataRows(viewObj);
+					out += renderGridHeaderRow(viewObj, viewportWidth);
+					out += renderGridDataRows(viewObj, viewportWidth);
 					out += "</table>";
 				}
 			}
 			else if (viewObj.hasOwnProperty("groups"))
 			{
-				// Render the links, except on a mobile device
-				if (narrow == false)
-				{
-					out += renderViewLinks(viewObj);
-				}
+				// Render the view links (i.e. links to headers / anchors)
+				out += renderViewLinks(viewObj, viewportWidth);
 				
 				// Iterate through the groups
 				for (var groupIdx = 0; groupIdx < viewObj.groups.length; groupIdx++)
@@ -443,21 +472,19 @@ function renderView(viewId, narrow)
 
 					// Render the table
 					out += "<table>";
-					out += renderTableHeaderRow(viewObj, narrow);
-					out += renderTableDataRows(viewObj, groupObj, narrow);
+					out += renderTableHeaderRow(viewObj, viewportWidth);
+					out += renderTableDataRows(viewObj, groupObj, viewportWidth);
 					out += "</table>";
 				}
 			}
 			
 			found = true;
 		}
-    }
-	
-	if (found == false)
-	{
-		out += "Missing view " + viewId; 
 	}
-	 
+	
+	// Output footer message
+	out += footer();
+	
     document.getElementById("view").innerHTML = out;
 }
 

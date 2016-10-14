@@ -33,7 +33,7 @@ p
   font-size: 0.9em;
 }
 
-abbr
+abbr.dotted
 {
 	border-bottom: 1px dotted;
 }
@@ -48,21 +48,27 @@ th.name
 
 /* List view */
 
+th.id
+{
+  width: 40px;
+  text-align : left;
+}
+
 th.alg
 {
-  width: 320px;
+  width: 380px;
   text-align : left;
 }
 
 th.prob
 {
-  width: 60px;
+  width: 40px;
   text-align : center;
 }
 
 td.prob
 {
-  width: 60px;
+  width: 40px;
   text-align : center;
 }
 
@@ -70,13 +76,13 @@ td.prob
 
 td.alg
 {
-  width: 370px;
+  width: 380px;
   text-align : left;
 }
 
 td.var
 {
-  width: 370px;
+  width: 380px;
   text-align : left;
   text-indent : 20px;
 }
@@ -85,6 +91,7 @@ td.uses
 {
   width: 60px;
   text-align : center;
+  font-weight: bold;
 }
 
 /* Sprites */

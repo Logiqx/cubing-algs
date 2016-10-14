@@ -240,7 +240,7 @@ function replaceAbbr(desc)
 		// Handle abbreviation
 		while (desc.indexOf(tokenUpper) >= 0)
 		{
-			var abbr = "<abbr title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name + "</abbr>";
+			var abbr = "<abbr class=\"dotted\" title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name + "</abbr>";
 
 			desc = desc.replace(tokenUpper, abbr);
 		}
@@ -251,7 +251,7 @@ function replaceAbbr(desc)
 		// Handle abbreviation
 		while (desc.indexOf(tokenLower) >= 0)
 		{
-			var abbr = "<abbr title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name.toLowerCase() + "</abbr>";
+			var abbr = "<abbr class=\"dotted\" title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name.toLowerCase() + "</abbr>";
 
 			desc = desc.replace(tokenLower, abbr);
 		}

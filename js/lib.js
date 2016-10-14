@@ -79,24 +79,55 @@ Summary
 
 //
 // Generic message to be displayed at top of every page
-// "<p>IMPORTANT: This page is still WIP and is meant to be PRIVATE. Please do not share the URL!</p>"
+// e.g. "<p>IMPORTANT: This page is still WIP and is meant to be PRIVATE. Please do not share the URL!</p>"
 //
-function important()
+function header()
+{
+	var msg = "";
+	
+	if (getViewportWidth() < PHONE_LANDSCAPE)
+	{
+		msg = "<p><b>Note: Viewing on a mobile device may hide some details.</b></p>";
+	}
+	
+	return msg;
+}
+
+//
+// Generic message to be displayed at bottom of every page
+// e.g. "<p>DEBUG: clientWidth = " + document.documentElement.clientWidth + ", clientHeight = " + document.documentElement.clientHeight + "</p>"
+//
+function footer()
 {
 	return "";
 }
 
 //
-// Determine if viewport is narrow (e.g. mobile phone, portrait)
+// Viewport widths
 //
-// iPad: portrait = 768, landscape = 1024
-// Galaxy S3: portrait = 360 (narrow), landscape = 640
-// iPhone 4: portrait = 320 (narrow), landscape = 480
+// Tablets:
+// iPad, iPad 2 + 3, iPad Mini, iPad Air 		portrait = 768, landscape = 1024	aspect = 1:1.333
+// Samsung Galaxy Tab 3 8.0 T310				portrait = 602, landscape = 962		aspect = 1:1.598
+// Various										portrait = 600, landscape = 960		aspect = 1:1.600
 //
-function isDisplayNarrow()
+// Phones:
+// Samsung Galaxy S3 to  S7						portrait = 360, landscape = 640		aspect = 1:1.778
+// iPhone6 Plus 								portrait = 414, landscape = 736		aspect = 1:1.778
+// iPhone6 										portrait = 375, landscape = 667		aspect = 1:1.779
+// iPhone5 										portrait = 320, landscape = 568		aspect = 1:1.775
+// iPhone, iPhone 3G, iPhone 4 					portrait = 320, landscape = 480		aspect = 1:1.500
+//
+const TABLET_LANDSCAPE = 960;
+const TABLET_PORTRAIT = 600;
+const PHONE_LANDSCAPE = 480;
+const PHONE_PORTRAIT = 320;
+
+//
+// Determine client viewport width
+//
+function getViewportWidth()
 {
-	// Check client width... iPhone 4 in landscape mode is 480
-	return document.documentElement.clientWidth < 480 ? true : false;
+	return document.documentElement.clientWidth;
 }
 
 //
@@ -132,20 +163,20 @@ function getCaseIds()
 // Remember the last URL fragment so unnecessary re-rendering can be avoided
 //
 var lastFragment = "n/a";
-var lastNarrow = isDisplayNarrow();
+var lastViewportWidth = getViewportWidth();
 
 //
 // Process the URL fragment which starts with a hash
 //
 function processHash()
 {
-	// Is this a narrow display?
-    var narrow = isDisplayNarrow();
+	// Get the viewport width
+    var viewportWidth = getViewportWidth();
 
 	// Interpret the URL fragment (everything after the hash) as a parameter
 	var urlFragment = window.location.hash.substring(1);
 
-	if (urlFragment != lastFragment || narrow != lastNarrow)
+	if (urlFragment != lastFragment || viewportWidth != lastViewportWidth)
 	{
 		// First part is the parameter name 
 		var viewParts = urlFragment.split("_");
@@ -155,15 +186,15 @@ function processHash()
 		// Render the page
 		if (viewType == "case")
 		{
-			renderCase(viewId, narrow);
+			renderCase(viewId, viewportWidth);
 		}
 		else
 		{
-			renderView(viewType, narrow);
+			renderView(viewType, viewportWidth);
 		}
 		
 		lastFragment = urlFragment;
-		lastNarrow = narrow;
+		lastViewportWidth = viewportWidth;
 	}
 }
 
