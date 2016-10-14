@@ -21,7 +21,7 @@ var algSet = {
   [
     {
       "id": "Aa",
-      "name": "Aa",
+      "name": "A-Perm",
       "desc": "Inverse and reflection of Ab.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
@@ -54,7 +54,7 @@ var algSet = {
     },
     {
       "id": "Ab",
-      "name": "Ab",
+      "name": "A-Perm",
       "desc": "Inverse and reflection of Aa.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
@@ -87,7 +87,7 @@ var algSet = {
     },
     {
       "id": "E",
-      "name": "E",
+      "name": "E-Perm",
 	  "desc": "The algorithm below was popularised by Rowe Hessler. It utilises the [OCLL] algorithms for L / Bowtie and T / Chameleon",
       "wiki": "#E_Permutation",
       "algdb": "E",
@@ -120,7 +120,7 @@ var algSet = {
     },
     {
       "id": "F",
-      "name": "F",
+      "name": "F-Perm",
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F",
@@ -161,7 +161,7 @@ var algSet = {
     },
     {
       "id": "Ga",
-      "name": "Ga",
+      "name": "G-Perm",
       "desc": "Inverse of Gb. Reflection of Gc.",
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
@@ -188,7 +188,7 @@ var algSet = {
     },
     {
       "id": "Gb",
-      "name": "Gb",
+      "name": "G-Perm",
       "desc": "Inverse of Ga. Reflection of Gd.",
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
@@ -215,7 +215,7 @@ var algSet = {
     },
     {
       "id": "Gc",
-      "name": "Gc",
+      "name": "G-Perm",
       "desc": "Inverse of Gd. Reflection of Ga.",
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
@@ -239,7 +239,7 @@ var algSet = {
     },
     {
       "id": "Gd",
-      "name": "Gd",
+      "name": "G-Perm",
       "desc": "Inverse of Gc. Reflection of Gb.",
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
@@ -263,7 +263,7 @@ var algSet = {
     },
     {
       "id": "H",
-      "name": "H / X",
+      "name": "H-Perm / X-Perm",
       "desc": "Best known as the H-Perm (i.e. swapping opposite edge pairs) this case is also known as the X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "#H_Permutation",
       "algdb": "H",
@@ -296,7 +296,7 @@ var algSet = {
     },
     {
       "id": "Ja",
-      "name": "Ja",
+      "name": "J-Perm",
       "desc": "Reflection of Jb.",
       "wiki": "#J_Permutation_:_a",
       "algdb": "Ja",
@@ -344,7 +344,7 @@ var algSet = {
     },
     {
       "id": "Jb",
-      "name": "Jb",
+      "name": "J-Perm",
       "desc": "Reflection of Ja.",
       "wiki": "#J_Permutation_:_b",
       "algdb": "Jb",
@@ -392,7 +392,7 @@ var algSet = {
     },
     {
       "id": "Na",
-      "name": "Na",
+      "name": "N-Perm",
       "desc": "Reflection of Nb.",
       "wiki": "#N_Permutation_:_a",
       "algdb": "Na",
@@ -425,7 +425,7 @@ var algSet = {
     },
     {
       "id": "Nb",
-      "name": "Nb",
+      "name": "N-Perm",
       "desc": "Reflection of Na.",
       "wiki": "#N_Permutation_:_b",
       "algdb": "Nb",
@@ -449,7 +449,7 @@ var algSet = {
     },
     {
       "id": "Ra",
-      "name": "Ra",
+      "name": "R-Perm",
       "desc": "Reflection of Rb.",
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
@@ -479,7 +479,7 @@ var algSet = {
 			{
 			  "alg": "R U' R' U' R U R D R' U' R D' R' U2' R'",
 			  "desc": "One-handed execution",
-			  "status": 0,
+			  "status": 1,
 			  "uses": ["OH"],
 			},
 		  ]
@@ -488,7 +488,7 @@ var algSet = {
     },
     {
       "id": "Rb",
-      "name": "Rb",
+      "name": "R-Perm",
       "desc": "Reflection of Ra.",
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
@@ -536,7 +536,7 @@ var algSet = {
     },
     {
       "id": "T",
-      "name": "T",
+      "name": "T-Perm",
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T",
@@ -562,7 +562,7 @@ var algSet = {
     },
     {
       "id": "Ua",
-      "name": "Ua",
+      "name": "U-Perm",
       "desc": "Inverse and reflection of Ub.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
@@ -634,7 +634,7 @@ var algSet = {
     },
     {
       "id": "Ub",
-      "name": "Ub",
+      "name": "U-Perm",
       "desc": "Inverse and reflection of Ua.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
@@ -718,7 +718,7 @@ var algSet = {
     },
     {
       "id": "V",
-      "name": "V",
+      "name": "V-Perm",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V",
@@ -750,7 +750,7 @@ var algSet = {
     },
     {
       "id": "Y",
-      "name": "Y",
+      "name": "Y-Perm",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y",
@@ -773,7 +773,7 @@ var algSet = {
     },
     {
       "id": "Z",
-      "name": "Z",
+      "name": "Z-Perm",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z",
