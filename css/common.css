@@ -114,7 +114,9 @@ td.uses
 
 /* Sprites */
 
-.clicky
+.clicky:hover
 {
   cursor: pointer;
+  box-shadow: 0px 0px 30px 10px lightgrey;
+  transition: 0.25s;
 }
