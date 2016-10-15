@@ -167,19 +167,19 @@ function getCaseIds()
 function initAbbrTouch()
 {
 	abbrTouch(document.querySelector('#view'), function (target, title, touchX, touchY) {
-	  var tooltip = document.querySelector('#tooltip');
-	  tooltip.innerHTML = title;
-	  tooltip.style.left = (touchX - tooltip.clientWidth / 2) + 'px';
-	  tooltip.style.top = (touchY - 50) + 'px';
-	  var timestamp = (new Date()).getTime();
-	  tooltip.setAttribute('data-timestamp', timestamp);
-	  document.body.appendChild(tooltip);
+		var tooltip = document.querySelector('#tooltip');
+		tooltip.innerHTML = title;
+		tooltip.style.left = ((touchX - tooltip.clientWidth / 2) > window.pageXOffset ? (touchX - tooltip.clientWidth / 2) : window.pageXOffset) + 'px';
+		tooltip.style.top = ((touchY - 50) > window.pageYOffset ? (touchY - 50) : window.pageYOffset) + 'px';
+		var timestamp = (new Date()).getTime();
+		tooltip.setAttribute('data-timestamp', timestamp);
+		document.body.appendChild(tooltip);
 
-	  setTimeout(function () {
-		if (tooltip.getAttribute('data-timestamp') == timestamp) {
-		  tooltip.removeAttribute('data-timestamp');
-		}
-	  }, 3000);
+		setTimeout(function () {
+			if (tooltip.getAttribute('data-timestamp') == timestamp) {
+				tooltip.removeAttribute('data-timestamp');
+			}
+		}, 3000);
 	}, true);
 }
 
