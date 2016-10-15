@@ -99,7 +99,7 @@ function header()
 //
 function footer()
 {
-	return "";
+	return "<div id=\"tooltip\"></div>";
 }
 
 //
@@ -160,6 +160,30 @@ function getCaseIds()
 }
 
 //
+// Abbreviations on touchscreen devices use abbr-touch + touchtap-event
+// https://github.com/Tyriar/abbr-touch
+// https://github.com/Tyriar/touchtap-event
+//
+function initAbbrTouch()
+{
+	abbrTouch(document.querySelector('#view'), function (target, title, touchX, touchY) {
+	  var tooltip = document.querySelector('#tooltip');
+	  tooltip.innerHTML = title;
+	  tooltip.style.left = (touchX - tooltip.clientWidth / 2) + 'px';
+	  tooltip.style.top = (touchY - 50) + 'px';
+	  var timestamp = (new Date()).getTime();
+	  tooltip.setAttribute('data-timestamp', timestamp);
+	  document.body.appendChild(tooltip);
+
+	  setTimeout(function () {
+		if (tooltip.getAttribute('data-timestamp') == timestamp) {
+		  tooltip.removeAttribute('data-timestamp');
+		}
+	  }, 3000);
+	}, true);
+}
+
+//
 // Remember the last URL fragment so unnecessary re-rendering can be avoided
 //
 var lastFragment = "n/a";
@@ -193,8 +217,12 @@ function processHash()
 			renderView(viewType, viewportWidth);
 		}
 		
+		// Record rendering arguments
 		lastFragment = urlFragment;
 		lastViewportWidth = viewportWidth;
+
+		// Initialise abbreviations on touch screen devices
+		initAbbrTouch();
 	}
 }
 
