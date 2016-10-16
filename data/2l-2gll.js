@@ -30,7 +30,7 @@ var algSet = {
       [
         {
           "alg": "R' U' R U' R' U2 R",
-          "desc": "[RBS] - Extract [F2L] pair, [AUF], re-insert [F2L] pair",
+          "desc": "[RBS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
@@ -45,7 +45,7 @@ var algSet = {
         },
         {
           "alg": "[U] R U2 R' U' R U' R'",
-          "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert [F2L] pair",
+          "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
@@ -71,13 +71,13 @@ var algSet = {
       [
         {
           "alg": "R U R' U R U2' R'",
-          "desc": "[RFS] - Extract [F2L] pair, [AUF], re-insert [F2L] pair",
+          "desc": "[RFS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "[U'] R' U2' R U R' U R",
-          "desc": "[RBAS] - Extract [F2L] pair, [AUF], re-insert [F2L] pair",
+          "desc": "[RBAS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -142,13 +142,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' R U' R' U2 R2 U R' U R U2' R'",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R' U' R U' R' U2' R2 U R' U R U2' R'",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -163,13 +163,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] R U R' U R U2' R2 U' R U' R' U2 R",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] R U R' U R U2' R2 U' R U' R' U2' R",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -195,13 +195,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R U2' R' U' R U' R2 U2' R U R' U R",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -216,13 +216,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] R' U2' R U R' U R2 U2 R' U' R U' R'",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] R' U2' R U R' U R2 U2' R' U' R U' R'",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -248,13 +248,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R U2' R2' U' R2 U' R2' U2' R",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R U2' R2 U' R2 U' R2 U2' R",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -280,13 +280,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' R (U' R' U R) U' R' U2 R",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R' U' R (U' R' U R) U' R' U2' R",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -301,13 +301,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] R U2 R' U' (R U R' U') R U' R'",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U] R U2' R' U' (R U R' U') R U' R'",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}

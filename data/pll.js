@@ -38,13 +38,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] l' U R' D2 R U' R' D2 R2 x'",
-              "desc": "Actual execution incorporates cancellations and a rotation",
+              "desc": "2H execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U] x R' U R' D2 R U' R' D2 R2 x'",
-              "desc": "Actual execution incorporates cancellations and a rotation",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -71,13 +71,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] l' R' D2 R U R' D2 R U' R x'",
-              "desc": "Actual execution incorporates cancellations and a rotation",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] x R2 D2 R U R' D2 R U' R x'",
-              "desc": "Actual execution incorporates cancellations and a rotation",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -97,20 +97,20 @@ var algSet = {
       [
         {
           "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' D') x",
-          "desc": "Combination of two basic [commutator]s - [R U' R', D] + [R, U R' D]",
+          "desc": "[Commutator] combination - [R U' R', D] [R, U R' D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
 			  "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
-              "desc": "Actual execution incorporates a rotation",
+              "desc": "Actual execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u') [z']",
-              "desc": "Actual execution incorporates a rotation",
+              "desc": "Actual execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -136,7 +136,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
@@ -151,7 +151,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "L R2 U R U R2 U' R' U' R2 U' R U2' z U' R u'",
-              "desc": "Actual execution includes rotations",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -205,7 +205,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] F' U' F R2 u R' U R U' R u' R2",
-              "desc": "Actual execution avoids the rotation",
+              "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
@@ -280,7 +280,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "M2' U' M2' U2' M2' U' M2'",
-			  "desc": "Actual execution includes a cancellation",
+			  "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"],
 			},
@@ -288,7 +288,7 @@ var algSet = {
         },
         {
           "alg": "(R2 U2' R U2' R2) U2' (R2 U2' R U2' R2)",
-          "desc": "Note the Ortega / Varasano [OLL] algorithm (H case) in brackets",
+          "desc": "Note the Ortega / Varasano [OLL] algorithm (H case)",
 		  "status": 1,
           "uses": ["OH"],
         },
@@ -306,14 +306,14 @@ var algSet = {
       [
         {
           "alg": "[U'] (R' U L' U2' R U' L) (L' R' U2 R L)",
-          "desc": "Playing with [F2L] pairs... track BR + FL pairs (similar to Na)",
+          "desc": "Playing with [F2L] pairs - track BR + FL. Similar to Na-Perm",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
 			  "alg": "[U'] R' U L' U2 R U' R' U2 R L",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
@@ -321,20 +321,20 @@ var algSet = {
         },
         {
           "alg": "(R' U2' R U R' U R) (R' U L U' R U L')",
-          "desc": "Combination of two simple [COLL] algorithms - [RBAS], [RBN]",
+          "desc": "[COLL] combination - [RBAS], [RBN]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
 			  "alg": "R' U2' R U R' U2' L U' R U L'",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R' U2' R U R' U2' z U R' D R U'",
-              "desc": "Actual execution includes cancellations and a rotation",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -361,7 +361,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "R U R' F' R U R' U' R' F R2 U' R'",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
@@ -369,20 +369,20 @@ var algSet = {
         },
         {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
-          "desc": "Combination of two simple [COLL] algorithms - [RFAS], [RFN]",
+          "desc": "[COLL] combination - [RFAS], [RFN]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
 			  "alg": "R U2 R' U' R U2 L' U R' U' L",
-              "desc": "Actual execution includes cancellations",
+              "desc": "Actual execution applies cancellations",
 			  "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R U2' R' U' R U2' z U' R D' R' U",
-              "desc": "Actual execution includes cancellations and a rotation",
+              "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -409,7 +409,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "R U R' U (R U R' F' R U R' U' R' F R2 U' R') U2 R U' R'",
-              "desc": "Actual execution includes a cancellation",
+              "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
@@ -417,7 +417,7 @@ var algSet = {
         },
         {
           "alg": "(R' U L' U2' R U' L) (R' U L' U2' R U' L)",
-          "desc": "Playing with [F2L] pairs... track BR + FL pairs",
+          "desc": "Playing with [F2L] pairs - track BR + FL",
 		  "status": 1,
           "uses": ["OH"],
         },
@@ -435,13 +435,13 @@ var algSet = {
       [
         {
           "alg": "R' U R U' R' F' U' F R U R' F R' F' R U' R",
-          "desc": "Playing with [F2L] pairs... track BR pair",
+          "desc": "Playing with [F2L] pair - track BR corner",
 		  "status": 1,
           "uses": ["2H"],
         },
         {
           "alg": "(R U' L U2' R' U L') (R U' L U2' R' U L')",
-          "desc": "Playing with [F2L] pairs... track FR + BL pairs",
+          "desc": "Playing with [F2L] pairs - track FR + BL",
 		  "status": 1,
           "uses": ["OH"],
         },
@@ -498,7 +498,7 @@ var algSet = {
       [
         {
           "alg": "[U'] R' U2 R U2' R' F R U R' U' R' F' R2",
-          "desc": "Playing with [F2L] pairs... track BR + FL pairs",
+          "desc": "Playing with [F2L] pairs - track BR + FL",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars":
@@ -545,14 +545,14 @@ var algSet = {
       [
         {
           "alg": "(R U R' U' R' F R F') (F R U' R' U' R U R' F')",
-          "desc": "Combination of two simple [OLL]s - #33 + #37",
+          "desc": "[OLL] combination - [sexy-sledge], [mounted-fish]",
 		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "R U R' U' R' F R2 U' R' U' R U R' F'",
-			  "desc": "Actual execution includes cancellations",
+			  "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H", "OH"],
 			},
@@ -579,7 +579,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] M2' U M U2' M' U M2'",
-			  "desc": "Actual execution includes a cancellation",
+			  "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"],
 			},
@@ -594,7 +594,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] M2' U M' U2' M U M2'",
-			  "desc": "Actual execution includes a cancellation",
+			  "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"],
 			},
@@ -602,14 +602,14 @@ var algSet = {
         },
         {
           "alg": "[U] R U' (R U R U R U' R' U' R' U') U R'",
-          "desc": "[Conjugate] of [F2L] insertion - [R U': R U R U R U' R' U' R' U']",
+          "desc": "[Conjugate] of [F2L] algorithm - [R U': R U R U R U' R' U' R' U']",
 		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "[U] R U' R U R U R U' R' U' R2",
-			  "desc": "Actual execution includes cancellations",
+			  "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"],
 			},
@@ -617,14 +617,14 @@ var algSet = {
         },
         {
           "alg": "[U'] R' U (U' R' U' R' U' R U R U R) U' R",
-          "desc": "[Conjugate] of [F2L] insertion - [R' U: U' R' U' R' U' R U R U R]",
+          "desc": "[Conjugate] of [F2L] algorithm - [R' U: U' R' U' R' U' R U R U R]",
 		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "[U'] R2 U' R' U' R U R U R U' R",
-			  "desc": "Actual execution includes cancellations",
+			  "desc": "Actual execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"],
 			},
@@ -651,7 +651,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] M2' U' M U2' M' U' M2'",
-			  "desc": "Actual execution includes a cancellation",
+			  "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"],
 			},
@@ -666,7 +666,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] M2' U' M' U2' M U' M2'",
-			  "desc": "Actual execution includes a cancellation",
+			  "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"],
 			},
@@ -674,20 +674,20 @@ var algSet = {
         },
         {
           "alg": "[U] R U' (U R U R U R' U' R' U' R') U R'",
-          "desc": "[Conjugate] of [F2L] insertion - [R U': U R U R U R' U' R' U' R']",
+          "desc": "[Conjugate] of [F2L] algorithm - [R U': U R U R U R' U' R' U' R']",
 		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "[U] R2 U R U R' U' R' U' R' U R'",
-			  "desc": "Actual execution includes cancellations",
+			  "desc": "Actual execution applies cancellations",
 			  "status": 0,
 			  "uses": [],
 			},
 			{
 			  "alg": "[U'] z U2' R U R U' R' U' R' U' R U' [z']",
-			  "desc": "This execution is on the left and includes a rotation",
+			  "desc": "This execution is on the left",
 			  "status": 1,
 			  "uses": ["OH"],
 			},
@@ -695,20 +695,20 @@ var algSet = {
 		},
         {
           "alg": "[U'] R' U (R' U' R' U' R' U R U R U) U' R",
-          "desc": "[Conjugate] of [F2L] insertion - [R' U: R' U' R' U' R' U R U R U]",
+          "desc": "[Conjugate] of [F2L] algorithm - [R' U: R' U' R' U' R' U R U R U]",
 		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "[U'] R' U R' U' R' U' R' U R U R2",
-			  "desc": "Actual execution includes cancellations",
+			  "desc": "Actual execution applies cancellations",
 			  "status": 0,
 			  "uses": [],
 			},
 			{
 			  "alg": "[U] z U' R U' R' U' R' U' R U R U2' [z']",
-			  "desc": "This execution is on the left and includes a rotation",
+			  "desc": "This execution is on the left",
 			  "status": 1,
 			  "uses": ["OH"],
 			},
@@ -727,7 +727,7 @@ var algSet = {
       [
         {
           "alg": "R' U R' d' R' F' R2 U' R' U R' F R F",
-          "desc": "Two-handed V-Perm incorporates a hidden rotation",
+          "desc": "Two-handed V-Perm",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -740,7 +740,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U2' R U2' L U' R' U z U' R U R' z' R U L'",
-			  "desc": "Actual execution includes rotations",
+			  "desc": "Actual execution",
 			  "status": 1,
 			  "uses": ["OH"],
 			},
@@ -759,7 +759,7 @@ var algSet = {
       [
         {
           "alg": "(F R U' R' U' R U R' F') (R U R' U' R' F R F')",
-          "desc": "Combination of two simple [OLL]s - #37 + #33",
+          "desc": "[OLL] combination - [mounted-fish], [sexy-sledge]",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -782,14 +782,14 @@ var algSet = {
       [
         {
           "alg": "(M' U' M2' U' M2' U' M) (M2 U2' M2')",
-          "desc": "Intuitive - Solve UF + UB edges then solve M-slice",
+          "desc": "Intuitive - Solve UF + UB then solve remaining edges",
 		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "M' U' M2' U' M2' U' M' U2' M2'",
-			  "desc": "Actual execution includes a cancellation",
+			  "desc": "Actual execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"],
 			},
@@ -797,13 +797,13 @@ var algSet = {
         },
         {
           "alg": "[U] R' U' R U' R U R U' R' U R U R2 U' R'",
-          "desc": "Playing with [F2L] pairs... track BR + FR pairs",
+          "desc": "Playing with [F2L] pairs - track BR + FR",
 		  "status": 1,
           "uses": ["OH"],
         },
         {
           "alg": "[U] (M2 U' M2 U') (M' U2' M2 U2' M')",
-          "desc": "Intuitive - Solve UL + UR edges then solve M-slice",
+          "desc": "Intuitive - Solve UL + UR then solve remaining edges",
 		  "status": -1,
           "uses": [],
 		  "vars":

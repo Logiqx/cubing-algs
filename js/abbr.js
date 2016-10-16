@@ -13,14 +13,6 @@ var abbrs =
     "desc": "Adjust U Face"
   },
   {
-    "name": "BRU",
-    "desc": "B' (R' U' R U) B" 
-  },
-  {
-    "name": "BUR",
-    "desc": "B' (U' R' U R) B"
-  },
-  {
     "name": "CFOP",
     "desc": "Cross, F2L, OLL, PLL"
   },
@@ -41,6 +33,10 @@ var abbrs =
     "desc": "[A: B] = A B A'"
   },
   {
+    "name": "Double-Sexy",
+    "desc": "(R U R' U') (R U R' U')"
+  },
+  {
     "name": "EOLL",
     "desc": "Edge Orientation of the Last Layer"
   },
@@ -51,14 +47,6 @@ var abbrs =
   {
     "name": "F2L",
     "desc": "First Two Layers"
-  },
-  {
-    "name": "FRU",
-    "desc": "F (R U R' U') F'"
-  },
-  {
-    "name": "FUR",
-    "desc": "F (U R U' R') F'"
   },
   {
     "name": "Hedgeslammer",
@@ -90,43 +78,47 @@ var abbrs =
   },
   {
     "name": "LBAS",
-    "desc": "Left Back Anti-Sune"
+    "desc": "Left-Back Anti-Sune"
   },
   {
     "name": "LBN",
-    "desc": "Left Back Niklas"
+    "desc": "Left-Back Niklas"
   },
   {
     "name": "LBS",
-    "desc": "Left Back Sune"
+    "desc": "Left-Back Sune"
   },
   {
     "name": "LBWAS",
-    "desc": "Left Back Wide Anti-Sune"
+    "desc": "Left-Back Wide Anti-Sune"
   },
   {
     "name": "LBWS",
-    "desc": "Left Back Wide Sune"
+    "desc": "Left-Back Wide Sune"
   },
   {
     "name": "LFAS",
-    "desc": "Left Front Anti-Sune"
+    "desc": "Left-Front Anti-Sune"
   },
   {
     "name": "LFN",
-    "desc": "Left Front Niklas"
+    "desc": "Left-Front Niklas"
   },
   {
     "name": "LFS",
-    "desc": "Left Front Sune"
+    "desc": "Left-Front Sune"
   },
   {
     "name": "LFWAS",
-    "desc": "Left Front Wide Anti-Sune"
+    "desc": "Left-Front Wide Anti-Sune"
   },
   {
     "name": "LFWS",
-    "desc": "Left Front Wide Sune"
+    "desc": "Left-Front Wide Sune"
+  },
+  {
+    "name": "Mounted-Fish",
+    "desc": "OLL #37 - F R U' (R' U' R U) R' F'"
   },
   {
     "name": "MU",
@@ -142,23 +134,23 @@ var abbrs =
   },
   {
     "name": "RBAS",
-    "desc": "Right Back Anti-Sune"
+    "desc": "Right-Back Anti-Sune"
   },
   {
     "name": "RBN",
-    "desc": "Right Back Niklas"
+    "desc": "Right-Back Niklas"
   },
   {
     "name": "RBS",
-    "desc": "Right Back Sune"
+    "desc": "Right-Back Sune"
   },
   {
     "name": "RBWAS",
-    "desc": "Right Back Wide Anti-Sune"
+    "desc": "Right-Back Wide Anti-Sune"
   },
   {
     "name": "RBWS",
-    "desc": "Right Back Wide Sune"
+    "desc": "Right-Back Wide Sune"
   },
   {
     "name": "Reverse-sexy",
@@ -166,23 +158,23 @@ var abbrs =
   },
   {
     "name": "RFAS",
-    "desc": "Right Front Anti-Sune"
+    "desc": "Right-Front Anti-Sune"
   },
   {
     "name": "RFN",
-    "desc": "Right Front Niklas"
+    "desc": "Right-Front Niklas"
   },
   {
     "name": "RFS",
-    "desc": "Right Front Sune"
+    "desc": "Right-Front Sune"
   },
   {
     "name": "RFWAS",
-    "desc": "Right Front Wide Anti-Sune"
+    "desc": "Right-Front Wide Anti-Sune"
   },
   {
     "name": "RFWS",
-    "desc": "Right Front Wide Sune"
+    "desc": "Right-Front Wide Sune"
   },
   {
     "name": "RU",
@@ -202,7 +194,7 @@ var abbrs =
   },
   {
     "name": "Sexy-sledge",
-    "desc": "(R U R' U') (R' F R F')"
+    "desc": "OLL #33 - (R U R' U') (R' F R F')"
   },
   {
     "name": "Sledgehammer",
@@ -210,7 +202,7 @@ var abbrs =
   },
   {
     "name": "Sune",
-    "desc": "Extract F2L pair, AUF, re-insert F2L pair"
+    "desc": "Extract F2L pair, AUF, re-insert pair"
   },
   {
     "name": "SuneOLL",
@@ -219,6 +211,10 @@ var abbrs =
   {
     "name": "TPS",
     "desc": "Turns Per Second"
+  },
+  {
+    "name": "Triple-Sexy",
+    "desc": "(R U R' U') (R U R' U') (R U R' U')"
   },
   {
     "name": "VHLS",
