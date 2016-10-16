@@ -38,13 +38,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] l' U R' D2 R U' R' D2 R2 x'",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U] x R' U R' D2 R U' R' D2 R2 x'",
-              "desc": "One-handed execution applies cancellations",
+              "desc": "One-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -71,13 +71,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] l' R' D2 R U R' D2 R U' R x'",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] x R2 D2 R U R' D2 R U' R x'",
-              "desc": "One-handed execution applies cancellations",
+              "desc": "One-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
@@ -136,7 +136,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
@@ -739,13 +739,13 @@ var algSet = {
       [
         {
           "alg": "R' U R' d' R' F' R2 U' R' U R' F R F",
-          "desc": "Two-handed V-Perm",
+          "desc": "Two-handed algorithm",
 		  "status": 1,
           "uses": ["2H"],
         },
         {
           "alg": "R' U2' R U2' L U' R' U L' U L U' R U L'",
-          "desc": "One-handed V-Perm",
+          "desc": "One-handed algorithm",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -777,7 +777,7 @@ var algSet = {
         },
         {
           "alg": "R2 U' R' U R U' x' U' z' U' R U' R' U' z U R",
-          "desc": "One-handed Y-Perm",
+          "desc": "One-handed algorithm",
 		  "status": 1,
           "uses": ["OH"],
         },
