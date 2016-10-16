@@ -85,10 +85,10 @@ function renderCaseAlgs(caseObj, viewportWidth)
 		switch (algObj.status)
 		{
 			case 0:
-				out += "<p>I don't use this algorithm yet.</p>";
+				out += "<p class=\"inactive\">I don't use this algorithm yet.</p>";
 				break;
 			case -1:
-				out += "<p>I don't use this algorithm nowadays.</p>";
+				out += "<p class=\"inactive\">I don't use this algorithm nowadays.</p>";
 				break;
 		}
 

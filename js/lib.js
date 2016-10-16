@@ -87,7 +87,7 @@ function header()
 	
 	if (getViewportWidth() < PHONE_LANDSCAPE && getViewportWidth() < getViewportHeight())
 	{
-		msg = "<p class=\"alert\">Note: Mobile devices are best viewed in landscape mode</p>";
+		msg = "<p class=\"alert\">Note: This page is best viewed in landscape</p>";
 	}
 	
 	return msg;

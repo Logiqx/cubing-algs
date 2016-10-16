@@ -39,6 +39,11 @@ p.alert
   font-weight: bold;
 }
 
+p.inactive
+{
+  color: grey;
+}
+
 /* Abbreviations */
 abbr.dotted
 {
@@ -126,7 +131,7 @@ td.uses
 
 td.inactive
 {
-  color: dimgrey;
+  color: grey;
 }
 
 /* Sprites */
