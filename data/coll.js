@@ -150,7 +150,7 @@ var algSet = {
       [
         {
           "alg": "[U2] x' (R U' R' D) (R U R' D') x",
-          "desc": "First half of the E-Perm. Basic [commutator] - [R U' R', D]",
+          "desc": "First half of E-Perm. Basic [commutator] - [R U' R', D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -215,7 +215,7 @@ var algSet = {
       [
         {
           "alg": "[U'] r U2 R' (R' F R F') R U2 r'",
-          "desc": "Extract 2x2x1 block, [sledgehammer], re-insert block. Similar to [OLL] #35",
+          "desc": "Extract 2x2x1, [sledgehammer], re-insert. See [OLL] #35",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -367,7 +367,7 @@ var algSet = {
       [
         {
           "alg": "F (R U' R' U R U R') F' F (U R U' R') F'",
-          "desc": "Inverse of two [OLL] algorithms - (F [sexy] F, [mounted-fish])'",
+          "desc": "Inverse [OLL] combination - (F [sexy] F, [mounted-fish])'",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -530,7 +530,7 @@ var algSet = {
       [
         {
           "alg": "[U2] x' (R U R' D) (R U' R' D') x",
-          "desc": "Second half of the E-Perm. Basic [commutator] - [R, U R' D]",
+          "desc": "Second half of E-Perm. Basic [commutator] - [R, U R' D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -769,7 +769,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "(R U R' U') R' F R2 U R' U' (R U R' U') F'",
-              "desc": "Actual execution applies cancellations. Similar to [OLL] #9",
+              "desc": "Actual execution applies cancellations. See [OLL] #9",
 			  "status": 1,
 			  "uses": ["2H"]
 			}

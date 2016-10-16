@@ -88,7 +88,7 @@ var algSet = {
     {
       "id": "E",
       "name": "E-Perm",
-	  "desc": "The algorithm below was popularised by Rowe Hessler. It utilises the [OCLL] algorithms for L / Bowtie and T / Chameleon",
+	  "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] algorithms for L / Bowtie and T / Chameleon",
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E",
@@ -264,7 +264,7 @@ var algSet = {
     {
       "id": "H",
       "name": "H-Perm / X-Perm",
-      "desc": "Best known as the H-Perm (i.e. swapping opposite edge pairs) this case is also known as the X-Perm (i.e.  swapping diagonal corner pairs).",
+      "desc": "Best known as H-Perm (i.e. swapping opposite edge pairs) this case is also known as X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "#H_Permutation",
       "algdb": "H",
       "image": "PLL-H",
@@ -306,7 +306,7 @@ var algSet = {
       [
         {
           "alg": "[U'] (R' U L' U2' R U' L) (L' R' U2 R L)",
-          "desc": "Playing with [F2L] pairs - track BR + FL. Similar to Na-Perm",
+          "desc": "Playing with [F2L] pairs - track BR + FL. Similar to Na",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -602,7 +602,7 @@ var algSet = {
         },
         {
           "alg": "[U] R U' (R U R U R U' R' U' R' U') U R'",
-          "desc": "[Conjugate] of [F2L] algorithm - [R U': R U R U R U' R' U' R' U']",
+          "desc": "[Conjugate] of [F2L] insert - [R U': R U R U R U' R' U' R' U']",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -617,7 +617,7 @@ var algSet = {
         },
         {
           "alg": "[U'] R' U (U' R' U' R' U' R U R U R) U' R",
-          "desc": "[Conjugate] of [F2L] algorithm - [R' U: U' R' U' R' U' R U R U R]",
+          "desc": "[Conjugate] of [F2L] insert - [R' U: U' R' U' R' U' R U R U R]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -674,7 +674,7 @@ var algSet = {
         },
         {
           "alg": "[U] R U' (U R U R U R' U' R' U' R') U R'",
-          "desc": "[Conjugate] of [F2L] algorithm - [R U': U R U R U R' U' R' U' R']",
+          "desc": "[Conjugate] of [F2L] insert - [R U': U R U R U R' U' R' U' R']",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -695,7 +695,7 @@ var algSet = {
 		},
         {
           "alg": "[U'] R' U (R' U' R' U' R' U R U R U) U' R",
-          "desc": "[Conjugate] of [F2L] algorithm - [R' U: R' U' R' U' R' U R U R U]",
+          "desc": "[Conjugate] of [F2L] insert - [R' U: R' U' R' U' R' U R U R U]",
 		  "status": 1,
           "uses": [],
 		  "vars":

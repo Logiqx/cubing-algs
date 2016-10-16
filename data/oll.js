@@ -910,7 +910,7 @@ var algSet = {
         },
         {
           "alg": "[U2] x' (R U R' D) (R U' R' D') x",
-          "desc": "Second half of the E-Perm. Basic [commutator] - [R, U R' D]",
+          "desc": "Second half of E-Perm. Basic [commutator] - [R, U R' D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -1005,7 +1005,7 @@ var algSet = {
         },
         {
           "alg": "[U2] x' (R U' R' D) (R U R' D') x",
-          "desc": "First half of the E-Perm. Basic [commutator] - [R U' R', D]",
+          "desc": "First half of E-Perm. Basic [commutator] - [R U' R', D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -1902,7 +1902,7 @@ var algSet = {
       [
         {
           "alg": "(r U' r') (r' U r) (r U r') (r' U' r)",
-          "desc": "[Palindrome] / [Commutator] extracts and re-inserts 2x2x1 blocks - [r U' r', r' U r]",
+          "desc": "[Palindrome] / [Commutator] - [r U' r', r' U r]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -1934,7 +1934,7 @@ var algSet = {
       [
         {
           "alg": "(r' U r) (r U' r') (r' U' r) (r U r')",
-          "desc": "[Palindrome] / [Commutator] extracts and re-inserts 2x2x1 blocks - [r' U r, r U' r']",
+          "desc": "[Palindrome] / [Commutator] - [r' U r, r U' r']",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -2082,7 +2082,7 @@ var algSet = {
       [
         {
           "alg": "[U] R' F R U R U' R2' F' R2 U' R' U R U R'",
-          "desc": "Fast [OLL] with a [PLL] feel - used by Collin Burns during 5.25 WR",
+          "desc": "Fast [OLL] with a [PLL] feel - Collin Burns 5.25 WR",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -2094,7 +2094,7 @@ var algSet = {
         },
         {
           "alg": "[U] (R U2' R2' U' R) U' (R' U2' F R F')",
-          "desc": "I used this for [2H] before discovering the faster algorithm",
+          "desc": "I used this before finding the Collin Burns algorithm",
 		  "status": -1,
           "uses": ["2H"]
         }

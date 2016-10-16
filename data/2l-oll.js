@@ -222,7 +222,7 @@ var algSet = {
         },
         {
           "alg": "[U2] x' (R U' R' D) (R U R' D') x",
-          "desc": "First half of the E-Perm. Basic [commutator] - [R U' R', D]",
+          "desc": "First half of E-Perm. Basic [commutator] - [R U' R', D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -454,7 +454,7 @@ var algSet = {
         },
         {
           "alg": "[U2] x' (R U R' D) (R U' R' D') x",
-          "desc": "Second half of the E-Perm. Basic [commutator] - [R, U R' D]",
+          "desc": "Second half of E-Perm. Basic [commutator] - [R, U R' D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
