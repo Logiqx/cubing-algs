@@ -33,6 +33,12 @@ p
   font-size: 0.9em;
 }
 
+p.alert
+{
+  color: red;
+  font-weight: bold;
+}
+
 /* Abbreviations */
 abbr.dotted
 {
@@ -98,6 +104,12 @@ td.alg
   text-align : left;
 }
 
+td.multi
+{
+  width: 420px;
+  text-align : left;
+}
+
 td.var
 {
   width: 380px;
@@ -110,6 +122,11 @@ td.uses
   width: 60px;
   text-align : center;
   font-weight: bold;
+}
+
+td.inactive
+{
+  color: dimgrey;
 }
 
 /* Sprites */

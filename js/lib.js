@@ -85,9 +85,9 @@ function header()
 {
 	var msg = "";
 	
-	if (getViewportWidth() < PHONE_LANDSCAPE)
+	if (getViewportWidth() < PHONE_LANDSCAPE && getViewportWidth() < getViewportHeight())
 	{
-		msg = "<p><b>Note: Viewing on a mobile device may hide some details.</b></p>";
+		msg = "<p class=\"alert\">Note: Mobile devices are best viewed in landscape mode</p>";
 	}
 	
 	return msg;
@@ -95,7 +95,7 @@ function header()
 
 //
 // Generic message to be displayed at bottom of every page
-// e.g. "<p>DEBUG: clientWidth = " + document.documentElement.clientWidth + ", clientHeight = " + document.documentElement.clientHeight + "</p>"
+// e.g. "<p>DEBUG: clientWidth = " + getViewportWidth() + ", clientHeight = " + getViewportHeight() + "</p>"
 //
 function footer()
 {
@@ -123,11 +123,19 @@ const PHONE_LANDSCAPE = 480;
 const PHONE_PORTRAIT = 320;
 
 //
-// Determine client viewport width
+// Determine viewport width
 //
 function getViewportWidth()
 {
 	return document.documentElement.clientWidth;
+}
+
+//
+// Determine viewport height
+//
+function getViewportHeight()
+{
+	return document.documentElement.clientHeight;
 }
 
 //
