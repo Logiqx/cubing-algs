@@ -52,7 +52,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] r U2' R' U' R U' r'",
-              "desc": "Actual execution",
+              "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -101,7 +101,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "(r U2' R' U' R U' r') U' (r U2' R' U' R U' r')",
-              "desc": "Actual execution",
+              "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -144,7 +144,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' R U' R' U2' R",
-              "desc": "Actual execution",
+              "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -159,7 +159,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] R U2' R' U' R U' R'",
-              "desc": "Actual execution",
+              "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -208,13 +208,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "F' (r U R' U') r' F R",
-              "desc": "Actual execution incorporates wide turns",
+              "desc": "Two-handed execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "F' (r U R' U') z U' R u",
-              "desc": "Actual execution incorporates wide turns",
+              "desc": "One-handed execution incorporates wide turns",
 			  "status": 0,
 			  "uses": ["OH"]
 			},
@@ -229,13 +229,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] (l U' R' D) (R U R' D') x",
-              "desc": "Actual execution incorporates wide turns",
+              "desc": "Two-handed execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] x' (R U' R' D) (R U R' u') [z']",
-              "desc": "Actual execution incorporates wide turns",
+              "desc": "One-handed execution incorporates wide turns",
 			  "status": 0,
 			  "uses": ["OH"]
 			},
@@ -250,13 +250,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
-              "desc": "Actual execution applies cancellations",
+              "desc": "Two-handed execution applies cancellations",
 			  "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
-              "desc": "Actual execution applies cancellations",
+              "desc": "One-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -271,13 +271,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] R U2 R' U' (R U R' U') (R U R' U') R U' R'",
-              "desc": "Actual execution applies cancellations",
+              "desc": "Two-handed execution applies cancellations",
 			  "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U] R U2' R' U' (R U R' U') (R U R' U') R U' R'",
-              "desc": "Actual execution applies cancellations",
+              "desc": "One-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -292,13 +292,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] R' U2 R' D' R U2 R' D R2",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "Two-handed execution applies a cancellation",
               "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] R' U2' R' D' R U2' R' D R2",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "One-handed execution applies a cancellation",
               "status": 0,
 			  "uses": ["OH"]
 			}
@@ -313,13 +313,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] R U2 R D R' U2 R D' R2'",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "Two-handed execution applies a cancellation",
               "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U'] R U2' R D R' U2' R D' R2",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "One-handed execution applies a cancellation",
               "status": 0,
 			  "uses": ["OH"]
 			}
@@ -345,13 +345,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R2' D' R U2 R' D R U2 R",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R2 D' R U2' R' D R U2' R",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "One-handed execution applies a cancellation",
 			  "status": 0,
 			  "uses": ["OH"]
 			}
@@ -366,13 +366,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] R2 D R' U2 R D' R' U2 R'",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] R2 D R' U2' R D' R' U2' R'",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "One-handed execution applies a cancellation",
               "status": 0,
 			  "uses": ["OH"]
 			}
@@ -387,13 +387,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' R U' R' U2 R2 U R' U R U2' R'",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R' U' R U' R' U2' R2 U R' U R U2' R'",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "One-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -408,13 +408,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] R U R' U R U2' R2' U' R U' R' U2 R",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] R U R' U R U2' R2 U' R U' R' U2' R",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "One-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -440,13 +440,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] (r U R' U') (r' F R F')",
-              "desc": "Actual execution is wide [sexy], wide [sledgehammer]",
+              "desc": "Two-handed - wide [sexy], wide [sledgehammer]",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U'] (r U R' U') z (U' R u F') [z']",
-              "desc": "Actual execution incorporates wide turns",
+              "desc": "One-handed execution incorporates wide turns",
 			  "status": 0,
 			  "uses": ["OH"]
 			}
@@ -461,13 +461,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] (l U R' D) (R U' R' u') [z']",
-              "desc": "Actual execution incorporates wide turns",
+              "desc": "Two-handed execution incorporates wide turns",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] x' (R U R' D) (R U' R' u') [z']",
-              "desc": "Actual execution incorporates wide turns",
+              "desc": "One-handed execution incorporates wide turns",
 			  "status": 0,
 			  "uses": ["OH"]
 			}
@@ -482,13 +482,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R U2' R' U' R U' R2 U2' R U R' U R",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "One-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -503,13 +503,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U2] R' U2' R U R' U R2 U2 R' U' R U' R'",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U2] R' U2' R U R' U R2 U2' R' U' R U' R'",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "One-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -535,13 +535,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R U2' R2' U' R2 U' R2' U2' R",
-              "desc": "Actual execution applies cancellations",
+              "desc": "Two-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R U2' R2 U' R2 U' R2 U2' R",
-              "desc": "Actual execution applies cancellations",
+              "desc": "One-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -556,13 +556,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U2 R2 U R2' U R2 U2 R'",
-              "desc": "Actual execution applies cancellations",
+              "desc": "Two-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R' U2' R2 U R2 U R2 U2' R'",
-              "desc": "Actual execution applies cancellations",
+              "desc": "One-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -577,7 +577,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "f (R U R' U') S' (R U R' U') F'",
-              "desc": "Actual execution applies a cancellation",
+              "desc": "Two-handed execution applies a cancellation",
               "status": -1,
 			  "uses": ["2H"]
 			}
@@ -603,13 +603,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "R' U' R (U' R' U R) U' R' U2 R",
-              "desc": "Actual execution applies cancellations",
+              "desc": "Two-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "R' U' R (U' R' U R) U' R' U2' R",
-              "desc": "Actual execution applies cancellations",
+              "desc": "One-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -624,13 +624,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U] R U2 R' U' (R U R' U') R U' R'",
-              "desc": "Actual execution applies cancellations",
+              "desc": "Two-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "[U] R U2' R' U' (R U R' U') R U' R'",
-              "desc": "Actual execution applies cancellations",
+              "desc": "One-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
