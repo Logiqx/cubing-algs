@@ -1,7 +1,7 @@
 //
 // Render algorithm
 //
-function renderCaseAlg(algObj, style, viewportWidth)
+function renderCaseAlg(algObj, style, padding, viewportWidth)
 {
 	// Initialisation
     var out = "";
@@ -40,6 +40,11 @@ function renderCaseAlg(algObj, style, viewportWidth)
 		// Override the original "alg" style
 		style = style == "alg" ? "multi" : style;
 		
+		if (padding)
+		{
+			out += "<tr><td>&nbsp;</td></tr>";
+		}
+		
 		if (viewportWidth >= PHONE_LANDSCAPE)
 		{
 			out += "<tr>";
@@ -53,7 +58,6 @@ function renderCaseAlg(algObj, style, viewportWidth)
 		}
 		
 		out += "<tr><td class=\"" + style + inactive + "\"><em>" + replaceAbbr(algObj.desc) + "</em></td></tr>";
-		out += "<tr><td>&nbsp;</td></tr>";
 	}
 	
 	return out;
@@ -92,7 +96,7 @@ function renderCaseAlgs(caseObj, viewportWidth)
 		out += "<table>";
 
 		// Render the alg
-		out += renderCaseAlg(algObj, "alg", viewportWidth);
+		out += renderCaseAlg(algObj, "alg", false, viewportWidth);
 		
 		// Do any variations of the algorithm exist?
 		if (algObj.hasOwnProperty("vars"))
@@ -104,7 +108,7 @@ function renderCaseAlgs(caseObj, viewportWidth)
 				var varObj = algObj.vars[varIdx];
 				
 				// Render the variation
-				out += renderCaseAlg(varObj, "var", viewportWidth);
+				out += renderCaseAlg(varObj, "var", true, viewportWidth);
 			}
 		}
 		
