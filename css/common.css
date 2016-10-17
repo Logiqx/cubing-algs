@@ -85,7 +85,7 @@ th.id
 
 th.alg
 {
-  width: 380px;
+  width: 400px;
   text-align : left;
 }
 
@@ -105,19 +105,13 @@ td.prob
 
 td.alg
 {
-  width: 380px;
-  text-align : left;
-}
-
-td.multi
-{
-  width: 420px;
+  width: 400px;
   text-align : left;
 }
 
 td.var
 {
-  width: 380px;
+  width: 400px;
   text-align : left;
   text-indent : 20px;
 }

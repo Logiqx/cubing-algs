@@ -41,9 +41,6 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 	// Narrow displays
 	else
 	{
-		// Override the original "alg" style
-		style = style == "alg" ? "multi" : style;
-		
 		if (padding)
 		{
 			out += "<tr><td>&nbsp;</td></tr>";
