@@ -491,7 +491,7 @@ var algSet = {
       [
         {
           "alg": "[U] (R U R' U') U2 (R' F R F') U2 (R' F R F')",
-          "desc": "Triggers - [sexy], [AUF], [sledgehammer], [AUF], [sledgehammer]",
+          "desc": "[sexy], [AUF], [sledgehammer], [AUF], [sledgehammer]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -635,7 +635,7 @@ var algSet = {
       [
         {
           "alg": "M' (R U R' U') M2 (U R U' R') U' M'",
-          "desc": "Triggers - M-slice, [sexy], M-slice, [reverse-sexy], [AUF], M-slice",
+          "desc": "M-slice, [sexy], M-slice, [reverse-sexy], [AUF], M-slice",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -896,7 +896,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "[U'] (r U R' U') (r' F R F')",
-              "desc": "Two-handed - wide [sexy], wide [sledgehammer]",
+              "desc": "Two-handed - wide-[sexy], wide-[sledgehammer]",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
@@ -1184,6 +1184,12 @@ var algSet = {
       "algs" :
       [
         {
+          "alg": "[U] (M' U' M) U2' (M' U' M)",
+          "desc": "Moo!",
+		  "status": 1,
+          "uses": ["2H"]
+        },
+        {
           "alg": "[U2] M' (R U R' U') M (U R U' R')",
           "desc": "Triggers - M-slice, [sexy], M-slice, [reverse-sexy]",
 		  "status": 1,
@@ -1198,12 +1204,6 @@ var algSet = {
 			}
 		  ]
         },
-        {
-          "alg": "[U] (M' U' M) U2' (M' U' M)",
-          "desc": "Moo!",
-		  "status": 1,
-          "uses": ["2H"]
-        }
       ]
     },
     {
@@ -1463,7 +1463,7 @@ var algSet = {
           "alg": "R U R2 U' R' F R U R U' F'",
           "desc": "Playing with [F2L] pairs - track FR + BR + FL",
 		  "status": 0,
-          "uses": []
+          "uses": ["2H"]
         }
       ]
     },
