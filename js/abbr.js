@@ -90,11 +90,11 @@ var abbrs =
   },
   {
     "name": "LBWAS",
-    "desc": "Left-Back Wide Anti-Sune"
+    "desc": "Left-Back Wide-Anti-Sune"
   },
   {
     "name": "LBWS",
-    "desc": "Left-Back Wide Sune"
+    "desc": "Left-Back Wide-Sune"
   },
   {
     "name": "LFAS",
@@ -110,11 +110,11 @@ var abbrs =
   },
   {
     "name": "LFWAS",
-    "desc": "Left-Front Wide Anti-Sune"
+    "desc": "Left-Front Wide-Anti-Sune"
   },
   {
     "name": "LFWS",
-    "desc": "Left-Front Wide Sune"
+    "desc": "Left-Front Wide-Sune"
   },
   {
     "name": "Mounted-Fish",
@@ -146,11 +146,11 @@ var abbrs =
   },
   {
     "name": "RBWAS",
-    "desc": "Right-Back Wide Anti-Sune"
+    "desc": "Right-Back Wide-Anti-Sune"
   },
   {
     "name": "RBWS",
-    "desc": "Right-Back Wide Sune"
+    "desc": "Right-Back Wide-Sune"
   },
   {
     "name": "Reverse-sexy",
@@ -170,11 +170,11 @@ var abbrs =
   },
   {
     "name": "RFWAS",
-    "desc": "Right-Front Wide Anti-Sune"
+    "desc": "Right-Front Wide-Anti-Sune"
   },
   {
     "name": "RFWS",
-    "desc": "Right-Front Wide Sune"
+    "desc": "Right-Front Wide-Sune"
   },
   {
     "name": "RU",

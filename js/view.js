@@ -138,31 +138,31 @@ function renderTableHeaderRow(viewObj, viewportWidth)
 //
 // Render an algorithm
 //
-function renderViewAlg(algObj, useId)
+function renderViewAlg(algObj, viewportWidth)
 {
 	// Initialisation
     var out = "";
-	var status = 0;
 	
-	// Get the status
-	if (algObj.hasOwnProperty("status"))
+	// Output the algorithm
+	if (viewportWidth >=  TABLET_LANDSCAPE)
 	{
-		status = algObj.status;
+		out += algObj.alg + "<br/>";
 	}
-
-	// Status must be 1 to be shown in this view
-	if (status == 1)
+	else
 	{
-		// Iterate through the uses for the algorithm
+		out += algObj.alg + " <sup>";
+		
+		// Output the uses in superscript
 		for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
 		{
-			// Is this the desired use?
-			if (algObj.uses[useIdx] == useId)
+			if (useIdx > 0)
 			{
-				// Output the algorithm
-				out += algObj.alg + "<br/>";
+				out += ", ";
 			}
+			out += algObj.uses[useIdx];
 		}
+		
+		out += "</sup><br/>";
 	}
 	
 	return out;
@@ -171,30 +171,69 @@ function renderViewAlg(algObj, useId)
 //
 // Render algs for a table data cell
 //
-function renderTableDataCell(caseObj, useId)
+function renderTableDataCell(caseObj, useId, viewportWidth)
 {
     var out = "";
+	var uses = [];
+	var algCount = 0;
+	var maxCount = viewportWidth >= PHONE_LANDSCAPE ? 4 : 2;
 		
 	// Iterate through the algorithms
-	for (var algIdx = 0; algIdx < caseObj.algs.length; algIdx++)
+	for (var algIdx = 0; algIdx < caseObj.algs.length && algCount < maxCount; algIdx++)
 	{
 		// Get the actual algorithm object
 		var algObj = caseObj.algs[algIdx];
 	
-		// Render the alg
-		out += renderViewAlg(algObj, useId);
+		// Consider rendering the algorithm
+		if (algObj.status == 1)
+		{
+			// Algorithm needs to have at least one "use"
+			for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
+			{
+				// Algorithm needs to have the desired "use"
+				if (useId == null || algObj.uses[useIdx] == useId)
+				{
+					// viewportWidth < PHONE_LANDSCAPE can only show one alg for each "use"
+					if (viewportWidth >= PHONE_LANDSCAPE || uses.indexOf(algObj.uses[useIdx]) < 0)
+					{
+						out += renderViewAlg(algObj, viewportWidth);
+						uses = uses.concat(algObj.uses)
+						algCount++;
+						break;
+					}
+				}
+			}
+		}
 		
 		// Do any variations of the algorithm exist?
 		if (algObj.hasOwnProperty("vars"))
 		{
 			// Iterate through the variations of the algorithm
-			for (var varIdx = 0; varIdx < algObj.vars.length; varIdx++)
+			for (var varIdx = 0; varIdx < algObj.vars.length && algCount < maxCount; varIdx++)
 			{
 				// Get the actual variation object
 				var varObj = algObj.vars[varIdx];
 				
-				// Render the variation
-				out += renderViewAlg(varObj, useId);
+				// Consider rendering the algorithm
+				if (varObj.status == 1)
+				{
+					// Variation needs to have at least one "use"
+					for (var useIdx = 0; useIdx < varObj.uses.length; useIdx++)
+					{
+						// Variation needs to have the desired "use"
+						if (useId == null || varObj.uses[useIdx] == useId)
+						{
+							// viewportWidth < PHONE_LANDSCAPE can only show one alg for each "use"
+							if (viewportWidth >= PHONE_LANDSCAPE || uses.indexOf(varObj.uses[useIdx]) < 0)
+							{
+								out += renderViewAlg(varObj, viewportWidth);
+								uses = uses.concat(varObj.uses)
+								algCount++;
+								break;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -256,18 +295,22 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr></td>";
 
 				// Iterate through the uses
-				for (var useIdx in viewObj.uses)
+				if (viewportWidth >= TABLET_LANDSCAPE)
 				{
-					// Render the algs
-					out += "<td>";
-					out += renderTableDataCell(caseObj, viewObj.uses[useIdx]);
-					out += "</td>";
-					
-					// Only wide displays can display more than one "use" column (e.g. 2H + OH)
-					if (viewportWidth < TABLET_LANDSCAPE)
+					for (var useIdx in viewObj.uses)
 					{
-						break;
+						// Render the algs (specific use)
+						out += "<td>";
+						out += renderTableDataCell(caseObj, viewObj.uses[useIdx], viewportWidth);
+						out += "</td>";
 					}
+				}
+				else
+				{
+					// Render the algs (any use)
+					out += "<td>";
+					out += renderTableDataCell(caseObj, null, viewportWidth);
+					out += "</td>";
 				}
 					
 				// Only display probability on a medium display
@@ -434,7 +477,7 @@ function renderView(viewId, viewportWidth)
 			{
 				if (viewportWidth < PHONE_LANDSCAPE)
 				{
-					out += "<p>Sorry... Grid is too large for this display!</p>";
+					out += "<p class=\"alert\">Grid must be viewed in landscape (horizontal) orientation</p>";
 				}
 				else
 				{
