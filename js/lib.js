@@ -117,8 +117,8 @@ function footer()
 // iPhone5 										portrait = 320, landscape = 568		aspect = 1:1.775
 // iPhone, iPhone 3G, iPhone 4 					portrait = 320, landscape = 480		aspect = 1:1.500
 //
-const TABLET_LANDSCAPE = 960;
-const TABLET_PORTRAIT = 600;
+const TABLET_LANDSCAPE = 1024;
+const TABLET_PORTRAIT = 768;
 const PHONE_LANDSCAPE = 480;
 const PHONE_PORTRAIT = 320;
 
