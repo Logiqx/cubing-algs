@@ -34,7 +34,7 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 	{
 		out += "<tr>";
 		out += "<td class=\"" + style + inactive + "\">" + algObj.alg + uses + "</td>";
-		out += "<td class=\"" + style + inactive + "\">" + replaceAbbr(algObj.desc) + "</td>";
+		out += "<td class=\"desc" + inactive + "\">" + replaceAbbr(algObj.desc) + "</td>";
 		out += "</tr>";
 	}
 
