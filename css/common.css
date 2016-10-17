@@ -95,6 +95,18 @@ th.prob
   text-align : center;
 }
 
+td.id
+{
+  width: 40px;
+  text-align : left;
+}
+
+td.alg
+{
+  width: 400px;
+  text-align : left;
+}
+
 td.prob
 {
   width: 40px;
@@ -102,12 +114,6 @@ td.prob
 }
 
 /* Case view */
-
-td.alg
-{
-  width: 400px;
-  text-align : left;
-}
 
 td.var
 {

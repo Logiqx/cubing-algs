@@ -30,11 +30,11 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 	}
 	
 	// Wide displays
-	if (viewportWidth >= TABLET_LANDSCAPE)
+	if (viewportWidth >= TABLET_PORTRAIT)
 	{
 		out += "<tr>";
 		out += "<td class=\"" + style + inactive + "\">" + algObj.alg + uses + "</td>";
-		out += "<td class=\"desc" + inactive + "\">" + replaceAbbr(algObj.desc) + "</td>";
+		out += "<td class=\"" + style + inactive + "\">" + replaceAbbr(algObj.desc) + "</td>";
 		out += "</tr>";
 	}
 

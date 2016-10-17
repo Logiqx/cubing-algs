@@ -93,44 +93,33 @@ function renderGridDataRows(viewObj, viewportWidth)
 function renderTableHeaderRow(viewObj, viewportWidth)
 {
     var out = "";
-	
-	// Render the table header
-	out += "<thead>";
-	out += "<tr>";
-	if (viewportWidth >= PHONE_LANDSCAPE)
-	{
-		out += "<th class=\"id\"></th>";
-	}
-	out += "<th></th>";
-	
-	// Dynamic headers
-	for (var useIdx in viewObj.uses)
-	{
-		for (var refIdx = 0; refIdx < algSet.header.uses.length; refIdx++)
-		{
-			var refObj = algSet.header.uses[refIdx];
 
-			if (refObj.id == viewObj.uses[useIdx])
+	if (viewportWidth >= TABLET_LANDSCAPE)
+	{
+		// Render the table header
+		out += "<thead>";
+		out += "<tr>";
+		out += "<th class=\"id\"></th>";
+		out += "<th></th>";
+
+		// Dynamic headers
+		for (var useIdx in viewObj.uses)
+		{
+			for (var refIdx = 0; refIdx < algSet.header.uses.length; refIdx++)
 			{
-				out += "<th class=\"alg\">" + refObj.name + "</th>";
-			}
-			
-			// Only wide displays can display more than one "use" column (e.g. 2H + OH)
-			if (viewportWidth < TABLET_LANDSCAPE)
-			{
-				break;
+				var refObj = algSet.header.uses[refIdx];
+
+				if (refObj.id == viewObj.uses[useIdx])
+				{
+					out += "<th class=\"alg\">" + refObj.name + "</th>";
+				}
 			}
 		}
-	}
-	
-	// Only display probability on a medium display
-	if (viewportWidth >= PHONE_LANDSCAPE)
-	{
+
 		out += "<th class=\"prob\">P</th>";
+		out += "</tr>";
+		out += "</thead>";
 	}
-	
-	out += "</tr>";
-	out += "</thead>";
 
 	return out;
 }
@@ -280,7 +269,7 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 				if (viewportWidth >= PHONE_LANDSCAPE)
 				{
 					// Render the Id
-					out += "<td>" + caseObj.id + "</td>";
+					out += "<td class=\"id\">" + caseObj.id + "</td>";
 				}
 
 				// Tooltip is shown on mouse hover
@@ -300,7 +289,7 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 					for (var useIdx in viewObj.uses)
 					{
 						// Render the algs (specific use)
-						out += "<td>";
+						out += "<td class=\"alg\">";
 						out += renderTableDataCell(caseObj, viewObj.uses[useIdx], viewportWidth);
 						out += "</td>";
 					}
@@ -308,7 +297,7 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 				else
 				{
 					// Render the algs (any use)
-					out += "<td>";
+					out += "<td class=\"alg\">";
 					out += renderTableDataCell(caseObj, null, viewportWidth);
 					out += "</td>";
 				}
