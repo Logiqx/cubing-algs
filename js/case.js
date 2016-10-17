@@ -8,13 +8,18 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 	
 	// "Uses"
 	var uses = "";
-	for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
+	if (algObj.uses.length > 0)
 	{
-		if (useIdx > 0)
+		uses += " <sup>";
+		for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
 		{
-			uses += ", ";
+			if (useIdx > 0)
+			{
+				uses += ", ";
+			}
+			uses += algObj.uses[useIdx];
 		}
-		uses += algObj.uses[useIdx];
+		uses += "</sup>";
 	}
 
 	// "Inactive" algorithms are shown in grey
@@ -28,8 +33,7 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 	if (viewportWidth >= TABLET_LANDSCAPE)
 	{
 		out += "<tr>";
-		out += "<td class=\"" + style + inactive + "\">" + algObj.alg + "</td>";
-		out += "<td class=\"uses" + inactive + "\">" + uses + "</td>";
+		out += "<td class=\"" + style + inactive + "\">" + algObj.alg + uses + "</td>";
 		out += "<td class=\"desc" + inactive + "\">" + replaceAbbr(algObj.desc) + "</td>";
 		out += "</tr>";
 	}
@@ -45,18 +49,7 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 			out += "<tr><td>&nbsp;</td></tr>";
 		}
 		
-		if (viewportWidth >= PHONE_LANDSCAPE)
-		{
-			out += "<tr>";
-			out += "<td class=\"" + style + inactive + "\">" + algObj.alg + "</td>";
-			out += "<td class=\"uses" + inactive + "\">" + uses + "</td>";
-			out += "</tr>";
-		}
-		else
-		{
-			out += "<tr><td class=\"" + style + inactive + "\">" + algObj.alg + "</td></tr>";
-		}
-		
+		out += "<tr><td class=\"" + style + inactive + "\">" + algObj.alg + uses + "</td></tr>";
 		out += "<tr><td class=\"" + style + inactive + "\"><em>" + replaceAbbr(algObj.desc) + "</em></td></tr>";
 	}
 	

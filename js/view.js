@@ -477,7 +477,7 @@ function renderView(viewId, viewportWidth)
 			{
 				if (viewportWidth < PHONE_LANDSCAPE)
 				{
-					out += "<p class=\"alert\">Grid must be viewed in landscape (horizontal) orientation</p>";
+					out += "<p class=\"alert\">Rotate to view in landscape (horizontal) orientation</p>";
 				}
 				else
 				{
