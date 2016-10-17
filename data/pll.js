@@ -88,7 +88,7 @@ var algSet = {
     {
       "id": "E",
       "name": "E-Perm",
-	  "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] algorithms for L / Bowtie and T / Chameleon",
+	  "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] / [COLL] algorithms for L / Bowtie and T / Chameleon",
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E",
