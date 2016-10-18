@@ -33,8 +33,8 @@ function renderGridDataRows(viewObj, viewportWidth)
 	// Initialisation
     var out = "";
 	
-	// Determine the image sizes for the grid
-	var imgSize = viewportWidth >= TABLET_LANDSCAPE ? "96" : "64";
+	// Determine the image sizes for the grid - large icons are perfect on the iPad (landscape)
+	var imgSize = viewportWidth >= IPAD_LANDSCAPE ? "96" : "64";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -94,7 +94,7 @@ function renderTableHeaderRow(viewObj, viewportWidth)
 {
     var out = "";
 
-	if (viewportWidth >= TABLET_LANDSCAPE)
+	if (viewportWidth >= IPAD_LANDSCAPE)
 	{
 		// Render the table header
 		out += "<thead>";
@@ -133,7 +133,7 @@ function renderViewAlg(algObj, viewportWidth)
     var out = "";
 	
 	// Output the algorithm
-	if (viewportWidth >=  TABLET_LANDSCAPE)
+	if (viewportWidth >=  IPAD_LANDSCAPE)
 	{
 		out += algObj.alg + "<br/>";
 	}
@@ -165,7 +165,7 @@ function renderTableDataCell(caseObj, useId, viewportWidth)
     var out = "";
 	var uses = [];
 	var algCount = 0;
-	var maxCount = viewportWidth >= PHONE_LANDSCAPE ? 4 : 2;
+	var maxCount = viewportWidth >= IPHONE_LANDSCAPE ? 4 : 2;
 		
 	// Iterate through the algorithms
 	for (var algIdx = 0; algIdx < caseObj.algs.length && algCount < maxCount; algIdx++)
@@ -182,8 +182,8 @@ function renderTableDataCell(caseObj, useId, viewportWidth)
 				// Algorithm needs to have the desired "use"
 				if (useId == null || algObj.uses[useIdx] == useId)
 				{
-					// viewportWidth < PHONE_LANDSCAPE can only show one alg for each "use"
-					if (viewportWidth >= PHONE_LANDSCAPE || uses.indexOf(algObj.uses[useIdx]) < 0)
+					// viewportWidth < IPHONE_LANDSCAPE can only show one alg for each "use"
+					if (viewportWidth >= IPHONE_LANDSCAPE || uses.indexOf(algObj.uses[useIdx]) < 0)
 					{
 						out += renderViewAlg(algObj, viewportWidth);
 						uses = uses.concat(algObj.uses)
@@ -212,8 +212,8 @@ function renderTableDataCell(caseObj, useId, viewportWidth)
 						// Variation needs to have the desired "use"
 						if (useId == null || varObj.uses[useIdx] == useId)
 						{
-							// viewportWidth < PHONE_LANDSCAPE can only show one alg for each "use"
-							if (viewportWidth >= PHONE_LANDSCAPE || uses.indexOf(varObj.uses[useIdx]) < 0)
+							// viewportWidth < IPHONE_LANDSCAPE can only show one alg for each "use"
+							if (viewportWidth >= IPHONE_LANDSCAPE || uses.indexOf(varObj.uses[useIdx]) < 0)
 							{
 								out += renderViewAlg(varObj, viewportWidth);
 								uses = uses.concat(varObj.uses)
@@ -244,8 +244,8 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 	// Initialisation
     var out = "";
 	
-	// Determine the image size
-	var imgSize = viewportWidth >= PHONE_LANDSCAPE ? "96" : "64";
+	// Determine the image size - Phones should use small icons when in portrait mode
+	var imgSize = viewportWidth >= IPHONE_LANDSCAPE ? "96" : "64";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -265,8 +265,8 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 				// Render the table row
 				out += "<tr>";
 				
-				// Only display probability on a wide display
-				if (viewportWidth >= PHONE_LANDSCAPE)
+				// Do not display id on phones (portrait)
+				if (viewportWidth >= IPHONE_LANDSCAPE)
 				{
 					// Render the Id
 					out += "<td class=\"id\">" + caseObj.id + "</td>";
@@ -283,8 +283,8 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 				out += "<td><abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr></td>";
 
-				// Iterate through the uses
-				if (viewportWidth >= TABLET_LANDSCAPE)
+				// Iterate through the uses - 2 columns are perfect on the iPad (landscape)
+				if (viewportWidth >= IPAD_LANDSCAPE)
 				{
 					for (var useIdx in viewObj.uses)
 					{
@@ -302,8 +302,8 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 					out += "</td>";
 				}
 					
-				// Only display probability on a medium display
-				if (viewportWidth >= PHONE_LANDSCAPE)
+				// Do not display probability on phones (portrait)
+				if (viewportWidth >= IPHONE_LANDSCAPE)
 				{
 					out += "<td class=\"prob\">" + caseObj.prob + "</td>";
 				}
@@ -421,8 +421,8 @@ function renderView(viewId, viewportWidth)
 	// Output the set title
 	out += "<h1>" + algSet.header.name + " (" + algSet.header.id + ")</h1>";
 	
-	// Output header message
-	out += header();
+	// Output header message - mobiles are best viewed in landscape
+	out += header(IPHONE_LANDSCAPE);
 	
 	// Output instructional messages
 	var instructions = "<p>";
@@ -464,9 +464,17 @@ function renderView(viewId, viewportWidth)
 			
 			if (viewObj.hasOwnProperty("rows"))
 			{
-				if (viewportWidth < PHONE_LANDSCAPE)
+				// TODO - Estimate grid size; OLL has 8 columns, COLL has 6 columns, PLL has 5 columns
+				if (viewportWidth < GALAXY_S3_LANDSCAPE)
 				{
-					out += "<p class=\"alert\">Rotate to view in landscape (horizontal) orientation</p>";
+					if (getViewportHeight() >= GALAXY_S3_LANDSCAPE)
+					{
+						out += "<p class=\"alert\">Rotate to view in landscape (horizontal) orientation</p>";
+					}
+					else
+					{
+						out += "<p class=\"alert\">Sorry. Your display is too small for the grid view!</p>";
+					}
 				}
 				else
 				{

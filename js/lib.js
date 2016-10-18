@@ -81,11 +81,11 @@ Summary
 // Generic message to be displayed at top of every page
 // e.g. "<p>IMPORTANT: This page is still WIP and is meant to be PRIVATE. Please do not share the URL!</p>"
 //
-function header()
+function header(idealWidth)
 {
 	var msg = "";
 	
-	if (getViewportWidth() < PHONE_LANDSCAPE && getViewportWidth() < getViewportHeight())
+	if (getViewportWidth() < idealWidth && getViewportWidth() < getViewportHeight())
 	{
 		msg = "<p class=\"alert\">Best viewed in landscape (horizontal) orientation</p>";
 	}
@@ -117,10 +117,12 @@ function footer()
 // iPhone5 										portrait = 320, landscape = 568		aspect = 1:1.775
 // iPhone, iPhone 3G, iPhone 4 					portrait = 320, landscape = 480		aspect = 1:1.500
 //
-const TABLET_LANDSCAPE = 1024;
-const TABLET_PORTRAIT = 768;
-const PHONE_LANDSCAPE = 480;
-const PHONE_PORTRAIT = 320;
+const IPAD_LANDSCAPE = 1024;
+const IPAD_PORTRAIT = 768;
+const GALAXY_S3_LANDSCAPE = 640;
+const GALAXY_S3_PORTRAIT = 360;
+const IPHONE_LANDSCAPE = 480;
+const IPHONE_PORTRAIT = 320;
 
 //
 // Determine viewport width

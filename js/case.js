@@ -29,8 +29,9 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 		inactive = " inactive"
 	}
 	
-	// Wide displays
-	if (viewportWidth >= TABLET_PORTRAIT)
+	// Wide displays - near perfect on iPad (portrait)
+	// TODO - Two columns of 384 pixels wide?
+	if (viewportWidth >= IPAD_PORTRAIT)
 	{
 		out += "<tr>";
 		out += "<td class=\"" + style + inactive + "\">" + algObj.alg + uses + "</td>";
@@ -198,7 +199,7 @@ function renderCase(caseId, viewportWidth)
     var out = "";
 	
 	// Determine the image size
-	var imgSize = viewportWidth >= PHONE_LANDSCAPE ? "128" : "96";
+	var imgSize = viewportWidth >= IPHONE_LANDSCAPE ? "128" : "96";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -206,8 +207,8 @@ function renderCase(caseId, viewportWidth)
 	// Output the case name
 	out += "<h1>" + algSet.header.id + " " + caseId + "</h1>";
 	
-	// Output header message
-	out += header();
+	// Output header message - looks fine on Galaxy S3 (portrait)
+	out += header(GALAXY_S3_PORTRAIT);
 	
 	// Check if the case exists
 	if (caseIds.indexOf(caseId) >= 0)

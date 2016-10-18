@@ -79,7 +79,7 @@ th.name
 
 th.id
 {
-  width: 40px;
+  width: 30px;
   text-align : left;
 }
 
@@ -91,13 +91,13 @@ th.alg
 
 th.prob
 {
-  width: 40px;
+  width: 30px;
   text-align : center;
 }
 
 td.id
 {
-  width: 40px;
+  width: 30px;
   text-align : left;
 }
 
@@ -109,7 +109,7 @@ td.alg
 
 td.prob
 {
-  width: 40px;
+  width: 30px;
   text-align : center;
 }
 
