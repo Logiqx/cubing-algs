@@ -44,14 +44,14 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "[U] R U2 R' U' R U' R'",
+          "alg": "U R U2 R' U' R U' R'",
           "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U] R U2' R' U' R U' R'",
+			  "alg": "U R U2' R' U' R U' R'",
               "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -76,7 +76,7 @@ var algSet = {
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "[U'] R' U2' R U R' U R",
+          "alg": "U' R' U2' R U R' U R",
           "desc": "[RBAS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -93,14 +93,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "[U'] R U2 R' U' (R U R' U') (R U R' U') R U' R'",
+          "alg": "U' R U2 R' U' (R U R' U') (R U R' U') R U' R'",
           "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U'] R U2' R' U' (R U R' U') (R U R' U') R U' R'",
+			  "alg": "U' R U2' R' U' (R U R' U') (R U R' U') R U' R'",
 			  "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -108,14 +108,14 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "[U2] R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
+          "alg": "U2 R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
           "desc": "[SuneOLL]/[2GLL]: Triple [RBS]",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U2] R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
+			  "alg": "U2 R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
 			  "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -155,20 +155,20 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "[U2] (R U R' U R U2' R') (R' U' R U' R' U2 R)",
+          "alg": "U2 (R U R' U R U2' R') (R' U' R U' R' U2 R)",
           "desc": "[SuneOLL]/[2GLL]: [RFS], [RBS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U2] R U R' U R U2' R2 U' R U' R' U2 R",
+			  "alg": "U2 R U R' U R U2' R2 U' R U' R' U2 R",
               "desc": "Two-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "[U2] R U R' U R U2' R2 U' R U' R' U2' R",
+			  "alg": "U2 R U R' U R U2' R2 U' R U' R' U2' R",
               "desc": "One-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -208,20 +208,20 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "[U2] (R' U2' R U R' U R) (R U2 R' U' R U' R')",
+          "alg": "U2 (R' U2' R U R' U R) (R U2 R' U' R U' R')",
           "desc": "[SuneOLL]/[2GLL]: [RBAS], [RFAS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U2] R' U2' R U R' U R2 U2 R' U' R U' R'",
+			  "alg": "U2 R' U2' R U R' U R2 U2 R' U' R U' R'",
               "desc": "Two-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "[U2] R' U2' R U R' U R2 U2' R' U' R U' R'",
+			  "alg": "U2 R' U2' R U R' U R2 U2' R' U' R U' R'",
               "desc": "One-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -293,20 +293,20 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "[U] (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
+          "alg": "U (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
           "desc": "[SuneOLL]/[2GLL]: Double [RFAS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "[U] R U2 R' U' (R U R' U') R U' R'",
+			  "alg": "U R U2 R' U' (R U R' U') R U' R'",
               "desc": "Two-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "[U] R U2' R' U' (R U R' U') R U' R'",
+			  "alg": "U R U2' R' U' (R U R' U') R U' R'",
               "desc": "One-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
