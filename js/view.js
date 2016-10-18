@@ -88,43 +88,6 @@ function renderGridDataRows(viewObj, viewportWidth)
 }
 
 //
-// Render table header row
-//
-function renderTableHeaderRow(viewObj, viewportWidth)
-{
-    var out = "";
-
-	if (viewportWidth >= IPAD_LANDSCAPE)
-	{
-		// Render the table header
-		out += "<thead>";
-		out += "<tr>";
-		out += "<th class=\"id\"></th>";
-		out += "<th></th>";
-
-		// Dynamic headers
-		for (var useIdx in viewObj.uses)
-		{
-			for (var refIdx = 0; refIdx < algSet.header.uses.length; refIdx++)
-			{
-				var refObj = algSet.header.uses[refIdx];
-
-				if (refObj.id == viewObj.uses[useIdx])
-				{
-					out += "<th class=\"alg\">" + refObj.name + "</th>";
-				}
-			}
-		}
-
-		out += "<th class=\"prob\">P</th>";
-		out += "</tr>";
-		out += "</thead>";
-	}
-
-	return out;
-}
-
-//
 // Render an algorithm
 //
 function renderViewAlg(algObj, viewportWidth)
@@ -132,27 +95,19 @@ function renderViewAlg(algObj, viewportWidth)
 	// Initialisation
     var out = "";
 	
-	// Output the algorithm
-	if (viewportWidth >=  IPAD_LANDSCAPE)
+	out += algObj.alg + " <sup>";
+	
+	// Output the uses in superscript
+	for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
 	{
-		out += algObj.alg + "<br/>";
-	}
-	else
-	{
-		out += algObj.alg + " <sup>";
-		
-		// Output the uses in superscript
-		for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
+		if (useIdx > 0)
 		{
-			if (useIdx > 0)
-			{
-				out += ", ";
-			}
-			out += algObj.uses[useIdx];
+			out += ", ";
 		}
-		
-		out += "</sup><br/>";
+		out += algObj.uses[useIdx];
 	}
+	
+	out += "</sup><br/>";
 	
 	return out;
 }
@@ -512,7 +467,6 @@ function renderView(viewId, viewportWidth)
 
 					// Render the table
 					out += "<table>";
-					out += renderTableHeaderRow(viewObj, viewportWidth);
 					out += renderTableDataRows(viewObj, groupObj, viewportWidth);
 					out += "</table>";
 				}
