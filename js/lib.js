@@ -170,6 +170,44 @@ function getCaseIds()
 }
 
 //
+// getUses() returns a list of uses to be shown as superscript text
+//
+function getUses(algObj)
+{
+	var out = "";
+	
+	// Avoid stating the obvious such as "2H, OH"
+	if (algObj.uses.length < algSet.header.uses.length)
+	{
+		// Copy the "uses" array prior to removing "2H"
+		var uses = algObj.uses.slice();
+		
+		// Remove "2H" from the copied array
+		var index = uses.indexOf("2H");
+		if (index >= 0)
+		{
+			uses.splice(index, 1);
+		}
+		
+		// List the remaining "uses"
+		if (uses.length > 0)
+		{
+			// Output the uses in superscript
+			for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
+			{
+				if (useIdx > 0)
+				{
+					out += ", ";
+				}
+				out += algObj.uses[useIdx];
+			}
+		}
+	}
+	
+	return out;
+}
+
+//
 // Abbreviations on touchscreen devices use abbr-touch + touchtap-event
 // https://github.com/Tyriar/abbr-touch
 // https://github.com/Tyriar/touchtap-event

@@ -5,21 +5,12 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 {
 	// Initialisation
     var out = "";
+	var uses = getUses(algObj);
 	
-	// "Uses"
-	var uses = "";
-	if (algObj.uses.length > 0)
+	// Show "uses" as superscript
+	if (uses.length > 0)
 	{
-		uses += " <sup>";
-		for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
-		{
-			if (useIdx > 0)
-			{
-				uses += ", ";
-			}
-			uses += algObj.uses[useIdx];
-		}
-		uses += "</sup>";
+		uses = " <sup>" + uses + "</sup>";
 	}
 
 	// "Inactive" algorithms are shown in grey
