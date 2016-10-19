@@ -442,7 +442,10 @@ function renderView(viewId, viewportWidth)
 			else if (viewObj.hasOwnProperty("groups"))
 			{
 				// Render the view links (i.e. links to headers / anchors)
-				out += renderViewLinks(viewObj, viewportWidth);
+				if (viewportWidth >= IPAD_LANDSCAPE)
+				{
+					out += renderViewLinks(viewObj, viewportWidth);
+				}
 				
 				// Iterate through the groups
 				for (var groupIdx = 0; groupIdx < viewObj.groups.length; groupIdx++)
