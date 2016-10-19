@@ -2170,24 +2170,6 @@ var algSet = {
   "views":
   [
     {
-      "id": "numeric",
-      "name": "Numeric",
-      "uses": ["2H", "OH"],
-      "groups":
-      [
-        {
-          "id": "Numerical",
-          "name": "",
-          "cases": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
-                    "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
-                    "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
-					"31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
-					"41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
-					"51", "52", "53", "54", "55", "56", "57", "Skip"]
-        },
-      ]
-    },
-    {
       "id": "shapes",
       "name": "Shapes",
       "uses": ["2H", "OH"],
@@ -2306,45 +2288,6 @@ var algSet = {
       ]
     },
     {
-      "id": "edges",
-      "name": "Edges",
-      "uses": ["2H", "OH"],
-      "groups":
-      [
-        {
-          "id": "crosses",
-          "name": "Cross Cases",
-		  "desc": "These are the 7 [OCLL] cases, offering the chance to use [COLL]. Advanced [CFOP] users may try to force these cases using [VHLS].",
-          "cases": ["26", "27", "25", "23", "24", "22", "21"]
-        },
-        {
-          "id": "dots",
-          "name": "Dot Cases",
-		  "desc": "These are known as the \"dot\" cases. Competent [CFOP] users will often avoid them using partial edge control - e.g. [sledgehammer].",
-          "cases": ["4", "3", "17", "18", "19", "2", "1", "20"]
-        },
-        {
-          "id": "lines",
-          "name": "Line Cases",
-          "cases": ["14", "16", "13", "15", "39", "40", "46", "45",
-					"34", "33", "51", "52", "56", "55", "57"]
-        },
-        {
-          "id": "adjacents",
-          "name": "Adjacent Cases",
-          "cases": ["9", "12", "8", "6", "11", "10", "5", "7",
-					"38", "37", "35", "36", "43", "42", "44", "41",
-					"31", "29", "32", "30", "50", "49", "47", "48",
-					"53", "54",  "28"]
-        },
-        {
-          "id": "lucky",
-          "name": "Lucky",
-          "cases": ["Skip"]
-        },
-      ]
-    },
-    {
       "id": "corners",
       "name": "Corners",
       "uses": ["2H", "OH"],
@@ -2397,6 +2340,63 @@ var algSet = {
           "cases": ["Skip"]
         },
 	  ]
+    },
+    {
+      "id": "edges",
+      "name": "Edges",
+      "uses": ["2H", "OH"],
+      "groups":
+      [
+        {
+          "id": "crosses",
+          "name": "Cross Cases",
+		  "desc": "These are the 7 [OCLL] cases, offering the chance to use [COLL]. Advanced [CFOP] users may try to force these cases using [VHLS].",
+          "cases": ["26", "27", "25", "23", "24", "22", "21"]
+        },
+        {
+          "id": "dots",
+          "name": "Dot Cases",
+		  "desc": "These are known as the \"dot\" cases. Competent [CFOP] users will often avoid them using partial edge control - e.g. [sledgehammer].",
+          "cases": ["4", "3", "17", "18", "19", "2", "1", "20"]
+        },
+        {
+          "id": "lines",
+          "name": "Line Cases",
+          "cases": ["14", "16", "13", "15", "39", "40", "46", "45",
+					"34", "33", "51", "52", "56", "55", "57"]
+        },
+        {
+          "id": "adjacents",
+          "name": "Adjacent Cases",
+          "cases": ["9", "12", "8", "6", "11", "10", "5", "7",
+					"38", "37", "35", "36", "43", "42", "44", "41",
+					"31", "29", "32", "30", "50", "49", "47", "48",
+					"53", "54",  "28"]
+        },
+        {
+          "id": "lucky",
+          "name": "Lucky",
+          "cases": ["Skip"]
+        },
+      ]
+    },
+    {
+      "id": "numeric",
+      "name": "Numeric",
+      "uses": ["2H", "OH"],
+      "groups":
+      [
+        {
+          "id": "Numerical",
+          "name": "",
+          "cases": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                    "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+                    "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+					"31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
+					"41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
+					"51", "52", "53", "54", "55", "56", "57", "Skip"]
+        },
+      ]
     },
     {
       "id": "grid",
