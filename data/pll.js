@@ -937,7 +937,7 @@ var algSet = {
         {
           "id": "edges",
           "name": "Edges Only",
-		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP].",
+		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP]. All of these cases can be solved using [MU] or [RU] algorithms.",
           "wiki": "#Permutations_of_Edges_Only",
           "cases": ["Ua", "Ub", "Z", "H"]
         },
@@ -970,7 +970,7 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Corner Swap",
-		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP].",
+		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP]. All of these cases can be solved using [MU] or [RU] algorithms.",
           "cases": ["Ua", "Ub", "Z", "H", "Skip"]
         },
         {
