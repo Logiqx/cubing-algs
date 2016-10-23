@@ -1,5 +1,5 @@
 .s64-2l-pll {
-    background-image: url(../img/s64-2l-pll-01.png);
+    background-image: url(../img/2l-pll-s64-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 64px;
@@ -39,7 +39,7 @@
 }
 
 .s96-2l-pll {
-    background-image: url(../img/s96-2l-pll-01.png);
+    background-image: url(../img/2l-pll-s96-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 96px;
@@ -79,7 +79,7 @@
 }
 
 .s128-2l-pll {
-    background-image: url(../img/s128-2l-pll-01.png);
+    background-image: url(../img/2l-pll-s128-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 128px;

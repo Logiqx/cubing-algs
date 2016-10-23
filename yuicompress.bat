@@ -1,6 +1,7 @@
 java -jar yuicompressor-2.4.8.jar css/common.css -o css/common-min.css
 java -jar yuicompressor-2.4.8.jar css/2l-2gll.css -o css/2l-2gll-min.css
 java -jar yuicompressor-2.4.8.jar css/2l-oll.css -o css/2l-oll-min.css
+java -jar yuicompressor-2.4.8.jar css/2l-pll.css -o css/2l-pll-min.css
 java -jar yuicompressor-2.4.8.jar css/coll.css -o css/coll-min.css
 java -jar yuicompressor-2.4.8.jar css/oll.css -o css/oll-min.css
 java -jar yuicompressor-2.4.8.jar css/pll.css -o css/pll-min.css
@@ -16,6 +17,7 @@ COPY / b js\touchtap-event-min.js+js\abbr-touch-min.js+js\abbr-min.js+js\lib-min
 
 java -jar yuicompressor-2.4.8.jar data/2l-2gll.js -o data/2l-2gll-min.js
 java -jar yuicompressor-2.4.8.jar data/2l-oll.js -o data/2l-oll-min.js
+java -jar yuicompressor-2.4.8.jar data/2l-pll.js -o data/2l-pll-min.js
 java -jar yuicompressor-2.4.8.jar data/coll.js -o data/coll-min.js
 java -jar yuicompressor-2.4.8.jar data/oll.js -o data/oll-min.js
 java -jar yuicompressor-2.4.8.jar data/pll.js -o data/pll-min.js
