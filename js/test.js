@@ -257,7 +257,7 @@ function renderView()
 	out += "<h1>" + algSet.header.id + " (validation)</h1>";
 	
 	// Output important message
-	out += important();
+	out += header();
 	
 	// Validate the algs
 	out += validateAlgs();
