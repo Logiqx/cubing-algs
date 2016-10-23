@@ -1,0 +1,107 @@
+.s64-2l-llef {
+    background-image: url(../img/2l-llef-s64-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+.s64-eoll {
+    background-position: 0 0;
+}
+
+.s64-eoll-d {
+    background-position: -64px 0;
+}
+
+.s64-eoll-i {
+    background-position: 0 -64px;
+}
+
+.s64-eoll-l {
+    background-position: -64px -64px;
+}
+
+.s64-epll {
+    background-position: -128px 0;
+}
+
+.s64-epll-a {
+    background-position: -128px -64px;
+}
+
+.s64-epll-o {
+    background-position: 0 -128px;
+}
+
+.s96-2l-llef {
+    background-image: url(../img/2l-llef-s96-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 96px;
+    height: 96px;
+}
+
+.s96-eoll {
+    background-position: 0 0;
+}
+
+.s96-eoll-d {
+    background-position: -96px 0;
+}
+
+.s96-eoll-i {
+    background-position: 0 -96px;
+}
+
+.s96-eoll-l {
+    background-position: -96px -96px;
+}
+
+.s96-epll {
+    background-position: -192px 0;
+}
+
+.s96-epll-a {
+    background-position: -192px -96px;
+}
+
+.s96-epll-o {
+    background-position: 0 -192px;
+}
+
+.s128-2l-llef {
+    background-image: url(../img/2l-llef-s128-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 128px;
+    height: 128px;
+}
+
+.s128-eoll {
+    background-position: 0 0;
+}
+
+.s128-eoll-d {
+    background-position: -128px 0;
+}
+
+.s128-eoll-i {
+    background-position: 0 -128px;
+}
+
+.s128-eoll-l {
+    background-position: -128px -128px;
+}
+
+.s128-epll {
+    background-position: -256px 0;
+}
+
+.s128-epll-a {
+    background-position: -256px -128px;
+}
+
+.s128-epll-o {
+    background-position: 0 -256px;
+}
