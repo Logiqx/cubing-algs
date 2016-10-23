@@ -24,7 +24,7 @@ var algSet = {
       "name": "Clock",
       "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] #44.",
       "wiki": "",
-      "algdb": "",
+      "algdb": "OLL 44",
       "image": "EOLL-L",
       "prob": "4/8",
       "algs" :
@@ -66,7 +66,7 @@ var algSet = {
       "name": "Line",
       "desc": "This case is typically solved using the algorithm for [OLL] #45.",
       "wiki": "",
-      "algdb": "",
+      "algdb": "OLL 45",
       "image": "EOLL-I",
       "prob": "2/8",
       "algs" :
@@ -84,7 +84,7 @@ var algSet = {
       "name": "Dot",
       "desc": "This case is typically solved using the algorithm(s) for [OLL] #2.",
       "wiki": "",
-      "algdb": "",
+      "algdb": "OLL 2",
       "image": "EOLL-D",
       "prob": "1/8",
       "algs" :
@@ -125,7 +125,7 @@ var algSet = {
       "id": "EOLL",
       "name": "Edges Oriented",
       "wiki": "",
-      "algdb": "",
+      "algdb": ".",
       "image": "EOLL",
       "prob": "1/8",
       "algs" :
@@ -660,7 +660,7 @@ var algSet = {
       "id": "OCLL",
       "name": "Corners Oriented",
       "wiki": "",
-      "algdb": "",
+      "algdb": ".",
       "image": "OCLL",
       "prob": "1/27",
       "algs" :
