@@ -10,15 +10,15 @@
     background-position: 0 0;
 }
 
-.s64-eoll-a {
+.s64-eoll-d {
     background-position: -64px 0;
 }
 
-.s64-eoll-d {
+.s64-eoll-i {
     background-position: -128px 0;
 }
 
-.s64-eoll-o {
+.s64-eoll-l {
     background-position: 0 -64px;
 }
 
@@ -66,15 +66,15 @@
     background-position: 0 0;
 }
 
-.s96-eoll-a {
+.s96-eoll-d {
     background-position: -96px 0;
 }
 
-.s96-eoll-d {
+.s96-eoll-i {
     background-position: -192px 0;
 }
 
-.s96-eoll-o {
+.s96-eoll-l {
     background-position: 0 -96px;
 }
 
@@ -122,15 +122,15 @@
     background-position: 0 0;
 }
 
-.s128-eoll-a {
+.s128-eoll-d {
     background-position: -128px 0;
 }
 
-.s128-eoll-d {
+.s128-eoll-i {
     background-position: -256px 0;
 }
 
-.s128-eoll-o {
+.s128-eoll-l {
     background-position: 0 -128px;
 }
 

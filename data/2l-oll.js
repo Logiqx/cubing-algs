@@ -20,23 +20,24 @@ var algSet = {
   "cases":
   [
     {
-      "id": "Adj",
-      "name": "Adjacent",
+      "id": "Clock",
+      "name": "Clock",
+      "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] #44.",
       "wiki": "",
       "algdb": "",
-      "image": "EOLL-A",
+      "image": "EOLL-L",
       "prob": "4/8",
       "algs" :
       [
         {
-          "alg": "f (R U R' U') f'",
-          "desc": "[Conjugate] of [sexy] - [f: R U R' U']",
+          "alg": "F (U R U' R') F'",
+          "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "U2 F (U R U' R') F'",
+			  "alg": "U2 f (R U R' U') f'",
 			  "desc": "Executed from a different angle",
 			  "status": 1,
 			  "uses": ["2H"]
@@ -44,14 +45,14 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "U' r U2 R' U' R U' r'",
+          "alg": "U r U2 R' U' R U' r'",
           "desc": "[RFWAS] - Extract 2x2x1 block, [AUF], re-insert block",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "U' r U2' R' U' R U' r'",
+			  "alg": "U r U2' R' U' R U' r'",
               "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -61,16 +62,17 @@ var algSet = {
       ]
     },
     {
-      "id": "Opp",
-      "name": "Opposite",
+      "id": "Line",
+      "name": "Line",
+      "desc": "This case is typically solved using the algorithm for [OLL] #45.",
       "wiki": "",
       "algdb": "",
-      "image": "EOLL-O",
+      "image": "EOLL-I",
       "prob": "2/8",
       "algs" :
       [
         {
-          "alg": "U F (R U R' U') F'",
+          "alg": "F (R U R' U') F'",
           "desc": "[Conjugate] of [sexy] - [F: R U R' U']",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -80,6 +82,7 @@ var algSet = {
     {
       "id": "Dot",
       "name": "Dot",
+      "desc": "This case is typically solved using the algorithm(s) for [OLL] #2.",
       "wiki": "",
       "algdb": "",
       "image": "EOLL-D",
@@ -87,10 +90,19 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "f (R U R' U') f' U' F (R U R' U') F'",
-          "desc": "[EOLL] combination - f [sexy] f', [AUF], F [sexy] F'",
+          "alg": "F (R U R' U') F' f (R U R' U') f'",
+          "desc": "[OLL] combination - F [sexy] F', f [sexy] f'",
 		  "status": 1,
-          "uses": ["2H"]
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "F (R U R' U') S (R U R' U') f'",
+              "desc": "Two-handed execution applies a cancellation",
+              "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
         },
         {
           "alg": "(r U2 R' U' R U' r') U' (r U2 R' U' R U' r')",
@@ -675,7 +687,7 @@ var algSet = {
           "name": "Edge Orientation",
           "wiki": "EOLL",
           "desc": "These are the 3 [EOLL] cases. There is a 1/8 chance of skipping this step and going straight to [OCLL].",
-          "cases": ["Adj", "Opp", "Dot", "EOLL"]
+          "cases": ["Clock", "Line", "Dot", "EOLL"]
         },
         {
           "id": "corners",
