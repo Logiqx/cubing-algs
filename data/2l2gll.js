@@ -2,7 +2,7 @@ var algSet = {
   "header":
   {
     "id": "2L-2GLL",
-    "name": "2-Generator Last Layer",
+    "name": "2-Look 2-Generator Last Layer",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/",
     "uses":
@@ -548,7 +548,7 @@ var algSet = {
       ]
     },
     {
-      "id": "HX",
+      "id": "X",
       "name": "H-Perm / X-Perm",
       "desc": "Best known as H-Perm (i.e. swapping opposite edge pairs) this case is also known as X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "",
@@ -618,7 +618,7 @@ var algSet = {
           "name": "Edge Permutation",
 		  "desc": "This group of cases is known as [EPLL]. All of these cases can be solved using [MU] or [RU] algorithms.",
           "wiki": "EPLL",
-          "cases": ["Ua", "Ub", "Z", "HX", "EPLL"]
+          "cases": ["Ua", "Ub", "Z", "X", "EPLL"]
         },
       ]
     },

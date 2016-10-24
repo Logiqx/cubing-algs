@@ -2,7 +2,7 @@ var algSet = {
   "header":
   {
     "id": "2L-OLL",
-    "name": "Two Look Orientation of the Last Layer",
+    "name": "2-Look Orientation of the Last Layer",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/OLL/",
     "uses":
