@@ -22,7 +22,7 @@ var algSet = {
     {
       "id": "Adj",
       "name": "Adjacent Corner Swap",
-      "desc": "This case is typically solved using the [PLL] algorithms for T-Perm, J-Perm or A-Perm.",
+      "desc": "This case is typically solved using the [PLL] algorithms for T-Perm, Jb-Perm or Aa-Perm.",
       "wiki": "",
       "algdb": "Jb",
       "image": "CPLL-A",
@@ -31,7 +31,8 @@ var algSet = {
       [
         {
           "alg": "(R U R' U' R' F R F') (F R U' R' U' R U R' F')",
-          "desc": "T-Perm - [OLL] combination - [sexy-sledge], [mounted-fish]",
+          "name": "T-Perm",
+          "desc": "[OLL] combination - [sexy-sledge], [mounted-fish]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -46,7 +47,8 @@ var algSet = {
         },
         {
           "alg": "R U R' F' (R U R' U' R' F R2 U' R' U' R U R' F') F R U' R'",
-          "desc": "J-Perm - [Conjugate] of T-Perm - [R U R' F': T-Perm]",
+          "name": "Jb-Perm",
+          "desc": "[Conjugate] of T-Perm - [R U R' F': T-Perm]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -61,7 +63,8 @@ var algSet = {
         },
         {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
-          "desc": "J-Perm - [COLL] combination - [RFAS], [RFN]",
+          "name": "Jb-Perm",
+          "desc": "[COLL] combination - [RFAS], [RFN]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -82,7 +85,8 @@ var algSet = {
         },
         {
           "alg": "U R2 (R F R' B2) (R F' R' B2') R2'",
-          "desc": "A-Perm - A9 [commutator] / [conjugate] - [R2: [R F R', B2]]",
+          "name": "Aa-Perm",
+          "desc": "A9 [commutator] / [conjugate] - [R2: [R F R', B2]]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -115,19 +119,22 @@ var algSet = {
       [
         {
           "alg": "(F R U' R' U' R U R' F') (R U R' U' R' F R F')",
-          "desc": "Y-Perm - [OLL] combination - [mounted-fish], [sexy-sledge]",
+          "name": "Y-Perm",
+          "desc": "[OLL] combination - [mounted-fish], [sexy-sledge]",
 		  "status": 1,
           "uses": ["2H"],
         },
         {
           "alg": "R2 U' R' U R U' x' U' z' U' R U' R' U' z U R",
-          "desc": "Y-Perm - One-handed algorithm",
+          "name": "Y-Perm",
+          "desc": "One-handed algorithm",
 		  "status": 1,
           "uses": ["OH"],
         },
         {
           "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' D') x",
-          "desc": "E-Perm - [Commutator] combination - [R U' R', D] [R, U R' D]",
+          "name": "E-Perm",
+          "desc": "[Commutator] combination - [R U' R', D] [R, U R' D]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -167,7 +174,7 @@ var algSet = {
     },
     {
       "id": "Ua",
-      "name": "U-Perm",
+      "name": "Ua-Perm",
       "desc": "Inverse and reflection of Ub.",
       "wiki": "",
       "algdb": "Ua",
@@ -251,7 +258,7 @@ var algSet = {
     },
     {
       "id": "Ub",
-      "name": "U-Perm",
+      "name": "Ub-Perm",
       "desc": "Inverse and reflection of Ua.",
       "wiki": "",
       "algdb": "Ub",

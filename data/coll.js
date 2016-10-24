@@ -215,7 +215,7 @@ var algSet = {
       [
         {
           "alg": "U' r U2 R' (R' F R F') R U2 r'",
-          "desc": "Extract 2x2x1, [sledgehammer], re-insert. See [OLL] #35",
+          "desc": "Extract 2x2x1, [sledgehammer], re-insert. See [OLL] 35",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -769,7 +769,7 @@ var algSet = {
 		  [
 			{
 			  "alg": "(R U R' U') R' F R2 U R' U' (R U R' U') F'",
-              "desc": "Two handed execution is similar to [OLL] #9",
+              "desc": "Two handed execution is similar to [OLL] 9",
 			  "status": 1,
 			  "uses": ["2H"]
 			}

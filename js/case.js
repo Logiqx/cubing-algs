@@ -61,7 +61,14 @@ function renderCaseAlgs(caseObj, viewportWidth)
 		var algObj = caseObj.algs[algIdx];
 	
 		// Output case name as the title
-		out += "<h3>Alg " + option + "</h3>";
+		if (algObj.hasOwnProperty("name"))
+		{
+			out += "<h3>Alg " + option + " - " + algObj.name + "</h3>";
+		}
+		else
+		{
+			out += "<h3>Alg " + option + "</h3>";
+		}
 		
 		// Status
 		switch (algObj.status)
@@ -196,7 +203,7 @@ function renderCase(caseId, viewportWidth)
 	var caseIds = getCaseIds();
 	
 	// Output the case name
-	out += "<h1>" + algSet.header.id + " " + caseId + "</h1>";
+	out += "<h1>" + algSet.header.id + " - " + caseId + "</h1>";
 	
 	// Output header message - looks fine on Galaxy S3 (portrait)
 	out += header(GALAXY_S3_PORTRAIT);

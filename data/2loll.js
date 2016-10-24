@@ -22,7 +22,7 @@ var algSet = {
     {
       "id": "Clock",
       "name": "Clock",
-      "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] #44.",
+      "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] 44.",
       "wiki": "",
       "algdb": "OLL 44",
       "image": "EOLL-L",
@@ -31,6 +31,7 @@ var algSet = {
       [
         {
           "alg": "F (U R U' R') F'",
+          "name": "OLL 44",
           "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
 		  "status": 1,
           "uses": ["2H"],
@@ -46,6 +47,7 @@ var algSet = {
         },
         {
           "alg": "U r U2 R' U' R U' r'",
+          "name": "OLL 6",
           "desc": "[RFWAS] - Extract 2x2x1 block, [AUF], re-insert block",
 		  "status": 1,
           "uses": [],
@@ -64,7 +66,7 @@ var algSet = {
     {
       "id": "Line",
       "name": "Line",
-      "desc": "This case is typically solved using the algorithm for [OLL] #45.",
+      "desc": "This case is typically solved using the algorithm for [OLL] 45.",
       "wiki": "",
       "algdb": "OLL 45",
       "image": "EOLL-I",
@@ -73,6 +75,7 @@ var algSet = {
       [
         {
           "alg": "F (R U R' U') F'",
+          "name": "OLL 45",
           "desc": "[Conjugate] of [sexy] - [F: R U R' U']",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -82,7 +85,7 @@ var algSet = {
     {
       "id": "Dot",
       "name": "Dot",
-      "desc": "This case is typically solved using the algorithm(s) for [OLL] #2.",
+      "desc": "This case is typically solved using the algorithm(s) for [OLL] 2.",
       "wiki": "",
       "algdb": "OLL 2",
       "image": "EOLL-D",
@@ -91,6 +94,7 @@ var algSet = {
       [
         {
           "alg": "F (R U R' U') F' f (R U R' U') f'",
+          "name": "OLL 2",
           "desc": "[OLL] combination - F [sexy] F', f [sexy] f'",
 		  "status": 1,
           "uses": [],
@@ -106,6 +110,7 @@ var algSet = {
         },
         {
           "alg": "(r U2 R' U' R U' r') U' (r U2 R' U' R U' r')",
+          "name": "OLL 2",
           "desc": "[SuneOLL]: [RFWAS], [AUF], [RFWAS]",
 		  "status": 1,
           "uses": [],
