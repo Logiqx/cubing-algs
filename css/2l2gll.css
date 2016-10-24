@@ -1,5 +1,5 @@
-.s64-2l-2gll {
-    background-image: url(../img/2l-2gll-s64-01.png);
+.s64-2l2gll {
+    background-image: url(../img/2l2gll-s64-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 64px;
@@ -58,8 +58,8 @@
     background-position: 0 -192px;
 }
 
-.s96-2l-2gll {
-    background-image: url(../img/2l-2gll-s96-01.png);
+.s96-2l2gll {
+    background-image: url(../img/2l2gll-s96-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 96px;
@@ -118,8 +118,8 @@
     background-position: 0 -288px;
 }
 
-.s128-2l-2gll {
-    background-image: url(../img/2l-2gll-s128-01.png);
+.s128-2l2gll {
+    background-image: url(../img/2l2gll-s128-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 128px;

@@ -1,7 +1,7 @@
 var algSet = {
   "header":
   {
-    "id": "2L-2GLL",
+    "id": "2L2GLL",
     "name": "2-Look 2-Generator Last Layer",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/",

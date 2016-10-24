@@ -1,5 +1,5 @@
-.s64-2l-cll {
-    background-image: url(../img/2l-cll-s64-01.png);
+.s64-2lcll {
+    background-image: url(../img/2lcll-s64-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 64px;
@@ -50,8 +50,8 @@
     background-position: -192px -64px;
 }
 
-.s96-2l-cll {
-    background-image: url(../img/2l-cll-s96-01.png);
+.s96-2lcll {
+    background-image: url(../img/2lcll-s96-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 96px;
@@ -102,8 +102,8 @@
     background-position: -288px -96px;
 }
 
-.s128-2l-cll {
-    background-image: url(../img/2l-cll-s128-01.png);
+.s128-2lcll {
+    background-image: url(../img/2lcll-s128-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 128px;

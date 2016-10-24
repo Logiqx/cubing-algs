@@ -1,5 +1,5 @@
-.s64-2l-cpeoll {
-    background-image: url(../img/2l-cpeoll-s64-01.png);
+.s64-2lcpeoll {
+    background-image: url(../img/2lcpeoll-s64-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 64px;
@@ -34,8 +34,8 @@
     background-position: 0 -128px;
 }
 
-.s96-2l-cpeoll {
-    background-image: url(../img/2l-cpeoll-s96-01.png);
+.s96-2lcpeoll {
+    background-image: url(../img/2lcpeoll-s96-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 96px;
@@ -70,8 +70,8 @@
     background-position: 0 -192px;
 }
 
-.s128-2l-cpeoll {
-    background-image: url(../img/2l-cpeoll-s128-01.png);
+.s128-2lcpeoll {
+    background-image: url(../img/2lcpeoll-s128-01.png);
     background-repeat: no-repeat;
     display: block;
     width: 128px;

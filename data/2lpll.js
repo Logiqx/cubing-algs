@@ -1,7 +1,7 @@
 var algSet = {
   "header":
   {
-    "id": "2L-PLL",
+    "id": "2LPLL",
     "name": "2-Look Permutation of the Last Layer",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/PLL/",
