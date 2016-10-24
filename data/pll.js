@@ -21,7 +21,7 @@ var algSet = {
   [
     {
       "id": "Aa",
-      "name": "A-Perm",
+      "name": "Aa-Perm",
       "desc": "Inverse and reflection of Ab.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
@@ -54,7 +54,7 @@ var algSet = {
     },
     {
       "id": "Ab",
-      "name": "A-Perm",
+      "name": "Ab-Perm",
       "desc": "Inverse and reflection of Aa.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
@@ -161,7 +161,7 @@ var algSet = {
     },
     {
       "id": "Ga",
-      "name": "G-Perm",
+      "name": "Ga-Perm",
       "desc": "Inverse of Gb. Reflection of Gc.",
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
@@ -188,7 +188,7 @@ var algSet = {
     },
     {
       "id": "Gb",
-      "name": "G-Perm",
+      "name": "Gb-Perm",
       "desc": "Inverse of Ga. Reflection of Gd.",
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
@@ -215,7 +215,7 @@ var algSet = {
     },
     {
       "id": "Gc",
-      "name": "G-Perm",
+      "name": "Gc-Perm",
       "desc": "Inverse of Gd. Reflection of Ga.",
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
@@ -239,7 +239,7 @@ var algSet = {
     },
     {
       "id": "Gd",
-      "name": "G-Perm",
+      "name": "Gd-Perm",
       "desc": "Inverse of Gc. Reflection of Gb.",
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
@@ -296,7 +296,7 @@ var algSet = {
     },
     {
       "id": "Ja",
-      "name": "J-Perm",
+      "name": "Ja-Perm",
       "desc": "Reflection of Jb.",
       "wiki": "#J_Permutation_:_a",
       "algdb": "Ja",
@@ -344,7 +344,7 @@ var algSet = {
     },
     {
       "id": "Jb",
-      "name": "J-Perm",
+      "name": "Jb-Perm",
       "desc": "Reflection of Ja.",
       "wiki": "#J_Permutation_:_b",
       "algdb": "Jb",
@@ -392,7 +392,7 @@ var algSet = {
     },
     {
       "id": "Na",
-      "name": "N-Perm",
+      "name": "Na-Perm",
       "desc": "Reflection of Nb.",
       "wiki": "#N_Permutation_:_a",
       "algdb": "Na",
@@ -425,7 +425,7 @@ var algSet = {
     },
     {
       "id": "Nb",
-      "name": "N-Perm",
+      "name": "Nb-Perm",
       "desc": "Reflection of Na.",
       "wiki": "#N_Permutation_:_b",
       "algdb": "Nb",
@@ -449,7 +449,7 @@ var algSet = {
     },
     {
       "id": "Ra",
-      "name": "R-Perm",
+      "name": "Ra-Perm",
       "desc": "Reflection of Rb.",
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
@@ -488,7 +488,7 @@ var algSet = {
     },
     {
       "id": "Rb",
-      "name": "R-Perm",
+      "name": "Rb-Perm",
       "desc": "Reflection of Ra.",
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
@@ -562,7 +562,7 @@ var algSet = {
     },
     {
       "id": "Ua",
-      "name": "U-Perm",
+      "name": "Ua-Perm",
       "desc": "Inverse and reflection of Ub.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
@@ -646,7 +646,7 @@ var algSet = {
     },
     {
       "id": "Ub",
-      "name": "U-Perm",
+      "name": "Ub-Perm",
       "desc": "Inverse and reflection of Ua.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
