@@ -71,7 +71,8 @@ function renderGridDataRows(viewObj, viewportWidth)
 					}
 					
 					// Render the Id and Name
-					out += "<abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+					var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
+					out += "<abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 							"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr>";
 				}
 			}
@@ -234,7 +235,8 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 				}
 
 				// Render the image
-				out += "<td><abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+				var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
+				out += "<td><abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr></td>";
 
 				// Iterate through the uses - 2 columns are perfect on the iPad (landscape)
@@ -382,14 +384,35 @@ function renderView(viewId, viewportWidth)
 	var instructions = "<p>";
 	if (viewId != "grid")
 	{
-		instructions += "This page lists the algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.</p><p>";
+		if (algSet.header.hasOwnProperty("level"))
+		{
+			switch (algSet.header.level.toLowerCase())
+			{
+				case "beginner":
+					instructions += "This page lists the algorithms that I teach to beginners. The algorithms have all been chosen for their simplicity and ease of learning.</p><p>";
+					break;
+				case "improver":
+					instructions += "This page lists the algorithms that I teach to improvers. It includes all of the beginner algorithms and uses several [inverse] algorithms.</p><p>";
+					break;
+				case "intermediate":
+					instructions += "This page lists the algorithms that I teach to intermediates. They are good algorithms and have been chosen for their execution speed.</p><p>";
+					break;
+				default:
+					instructions += "This page lists the algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.</p><p>";
+					break;
+			}
+		}
+		else
+		{
+			instructions += "This page lists the algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.</p><p>";
+		}
 	}
 	if (algSet.views.length > 1)
 	{
 		instructions += " Use the dropdown below to switch views.";
 	}
 	instructions += " Click on an image for details about the case; e.g. algorithms, comments, breakdowns.</p>";
-	out += instructions;
+	out += replaceAbbr(instructions);
 
 	// Dropdowns aren't always required
 	if (algSet.views.length > 1)

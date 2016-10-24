@@ -9,6 +9,18 @@ var abbrs =
     "desc": "Two-handed"
   },
   {
+    "name": "2LLL",
+    "desc": "2-Look Last Layer"
+  },
+  {
+    "name": "4LLL",
+    "desc": "4-Look Last Layer"
+  },
+  {
+    "name": "6LLL",
+    "desc": "6-Look Last Layer"
+  },
+  {
     "name": "AUF",
     "desc": "Adjust U Face"
   },
@@ -51,6 +63,10 @@ var abbrs =
   {
     "name": "Hedgeslammer",
     "desc": "(F R' F' R)"
+  },
+  {
+    "name": "Inverse",
+    "desc": "Executing an algorithm in reverse"
   },
   {
     "name": "LL",

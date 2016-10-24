@@ -224,7 +224,8 @@ function renderCase(caseId, viewportWidth)
 		document.title = algSet.header.id + " " + caseId;
 		
 		// Image
-		out += "<p><i class=\"s" + imgSize + "-" + algSet.header.id.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() + "\"></i></p>";
+		var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
+		out += "<p><i class=\"s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() + "\"></i></p>";
 
 		// Description
 		if (caseObj.desc)
