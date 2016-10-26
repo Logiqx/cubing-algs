@@ -246,7 +246,7 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 					{
 						// Render the algs (specific use)
 						out += "<td class=\"alg\">";
-						out += renderTableDataCell(caseObj, algSet.header.uses[useIdx], viewportWidth);
+						out += renderTableDataCell(caseObj, algSet.header.uses[useIdx].id, viewportWidth);
 						out += "</td>";
 					}
 				}
