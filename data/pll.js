@@ -853,7 +853,6 @@ var algSet = {
     {
       "id": "letters",
       "name": "Letters",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {
@@ -931,7 +930,6 @@ var algSet = {
     {
       "id": "pieces",
       "name": "Pieces",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {
@@ -964,7 +962,6 @@ var algSet = {
     {
       "id": "corners",
       "name": "Corners",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {
@@ -989,7 +986,6 @@ var algSet = {
     {
       "id": "edges",
       "name": "Edges",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {

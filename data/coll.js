@@ -984,7 +984,6 @@ var algSet = {
     {
       "id": "orientation",
       "name": "Orientation",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {
@@ -1017,7 +1016,6 @@ var algSet = {
     {
       "id": "permutation",
       "name": "Permutation",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {

@@ -2172,7 +2172,6 @@ var algSet = {
     {
       "id": "shapes",
       "name": "Shapes",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {
@@ -2290,7 +2289,6 @@ var algSet = {
     {
       "id": "corners",
       "name": "Corners",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {
@@ -2344,7 +2342,6 @@ var algSet = {
     {
       "id": "edges",
       "name": "Edges",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {
@@ -2383,7 +2380,6 @@ var algSet = {
     {
       "id": "numeric",
       "name": "Numeric",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {

@@ -242,11 +242,11 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 				// Iterate through the uses - 2 columns are perfect on the iPad (landscape)
 				if (viewportWidth >= IPAD_LANDSCAPE)
 				{
-					for (var useIdx in viewObj.uses)
+					for (var useIdx in algSet.header.uses)
 					{
 						// Render the algs (specific use)
 						out += "<td class=\"alg\">";
-						out += renderTableDataCell(caseObj, viewObj.uses[useIdx], viewportWidth);
+						out += renderTableDataCell(caseObj, algSet.header.uses[useIdx], viewportWidth);
 						out += "</td>";
 					}
 				}

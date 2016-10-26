@@ -443,7 +443,6 @@ var algSet = {
     {
       "id": "steps",
       "name": "Steps",
-      "uses": ["2H", "OH"],
       "groups":
       [
         {
