@@ -184,7 +184,7 @@ var algSet = {
       [
         {
           "alg": "U M2 U (M U2 M' U2') U' M2'",
-          "desc": "[MU] [commutator] / [conjugate] -  [M2 U: [M, U2]]",
+          "desc": "[MU] [commutator] / [conjugate] - [M2 U: [M, U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -199,7 +199,7 @@ var algSet = {
         },
         {
           "alg": "U' M2 U (M' U2 M U2') U' M2'",
-          "desc": "[MU] [commutator] / [conjugate] -  [M2 U: [M', U2]]",
+          "desc": "[MU] [commutator] / [conjugate] - [M2 U: [M', U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -268,7 +268,7 @@ var algSet = {
       [
         {
           "alg": "U M2 U' (M U2 M' U2') U M2'",
-          "desc": "[MU] [commutator] / [conjugate] -  [M2 U': [M, U2]]",
+          "desc": "[MU] [commutator] / [conjugate] - [M2 U': [M, U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -283,7 +283,7 @@ var algSet = {
         },
         {
           "alg": "U' M2 U' (M' U2 M U2') U M2'",
-          "desc": "[MU] [commutator] / [conjugate] -  [M2 U': [M', U2]]",
+          "desc": "[MU] [commutator] / [conjugate] - [M2 U': [M', U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -399,7 +399,7 @@ var algSet = {
       [
         {
           "alg": "M2 U' (M2 U2 M2' U2') U M2'",
-          "desc": "[MU] [commutator] / [conjugate] -  [M2 U': [M2, U2]]",
+          "desc": "[MU] [commutator] / [conjugate] - [M2 U': [M2, U2]]",
 		  "status": 1,
           "uses": [],
 		  "vars":
