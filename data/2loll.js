@@ -139,7 +139,7 @@ var algSet = {
           "alg": "Yay!",
           "desc": "",
 		  "status": 1,
-          "uses": ["OH", "2H"]
+          "uses": ["2H", "OH"]
         },
       ]
     },
@@ -674,7 +674,7 @@ var algSet = {
           "alg": "Yay!",
           "desc": "",
 		  "status": 1,
-          "uses": ["OH", "2H"]
+          "uses": ["2H", "OH"]
         },
       ]
     },
