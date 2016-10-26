@@ -392,7 +392,7 @@ function renderView(viewId, viewportWidth)
 					instructions += "This page lists the algorithms that I teach to beginners. The algorithms have all been chosen for their simplicity and ease of learning.</p><p>";
 					break;
 				case "improver":
-					instructions += "This page lists the algorithms that I teach to improvers. It includes all of the beginner algorithms and uses several [inverse] algorithms.</p><p>";
+					instructions += "This page lists the algorithms that I teach to improvers. It includes all of the beginner algorithms and some [inverse] algorithms.</p><p>";
 					break;
 				case "intermediate":
 					instructions += "This page lists the algorithms that I teach to intermediates. They are good algorithms and have been chosen for their execution speed.</p><p>";
