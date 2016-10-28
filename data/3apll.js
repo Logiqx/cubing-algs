@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "3APLL",
     "name": "3-Algorithm Permutation of the Last Layer",
-    "level": "Beginner",
+    "level": "Improver",
     "css": "2LPLL",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/PLL/",
@@ -31,14 +31,14 @@ var algSet = {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
           "desc": "[COLL] combination - [RFAS], [RFN]",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": [],
 		  "vars" :
 		  [
 			{
 			  "alg": "(R U2 R' U' R) U2 (L' U R' U' L)",
               "desc": "Optimal execution applies cancellations",
 			  "status": 1,
-			  "uses": []
+			  "uses": ["2H"]
 			},
 		  ]
         },
@@ -58,14 +58,14 @@ var algSet = {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L) +<br/>U2 (R U2 R' U' R U' R') (R U' L' U R' U' L)",
           "desc": "[COLL] combination - [RFAS], [RFN], [AUF], [RFAS], [RFN]",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": [],
 		  "vars" :
 		  [
 			{
 			  "alg": "(R U2 R' U' R) U2 (L' U R' U' L) +<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U2 (R U2 R' U' R) U2 (L' U R' U' L)",
               "desc": "Optimal execution applies cancellations",
 			  "status": 1,
-			  "uses": []
+			  "uses": ["2H"]
 			},
 		  ]
         },
@@ -99,10 +99,19 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>U' (R U2 R U' R U' R') U (L' U2 L U L' U L)",
-          "desc": "[Sune] variations - [RFAS], [AUF], [LFAS] * 2",
+          "alg": "U R U' (R U R U R U' R' U' R' U') U R'",
+          "desc": "[Conjugate] of [F2L] insert - [R U': R U R U R U' R' U' R' U']",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": [],
+		  "vars":
+		  [
+			{
+			  "alg": "U R U' R U R U R U' R' U' R2",
+			  "desc": "Execution applies cancellations",
+			  "status": 1,
+			  "uses": ["2H"],
+			},
+		  ]
         },
       ]
     },
@@ -117,11 +126,20 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L)",
-          "desc": "[Sune] variations - [RFAS], [AUF], [LFAS]",
+          "alg": "U R U' (U R U R U R' U' R' U' R') U R'",
+          "desc": "[Conjugate] of [F2L] insert - [R U': U R U R U R' U' R' U' R']",
 		  "status": 1,
-          "uses": ["2H"],
-        },
+          "uses": [],
+		  "vars":
+		  [
+			{
+			  "alg": "U R2 U R U R' U' R' U' R' U R'",
+			  "desc": "Execution applies cancellations",
+			  "status": 1,
+			  "uses": ["2H"],
+			},
+		  ]
+		},
       ]
     },
     {
@@ -134,8 +152,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>(R U2 R U' R U' R') U (L' U2 L U L' U L)",
-          "desc": "[Sune] variations - [RFAS], [AUF], [LFAS] * 2",
+          "alg": "R U' R U R U R U' R' U' R2 +<br/>U' R U' R U R U R U' R' U' R2",
+          "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -152,8 +170,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>U2 (R U2 R U' R U' R') U (L' U2 L U L' U L)",
-          "desc": "[Sune] variations - [RFAS], [AUF], [LFAS] * 2",
+          "alg": "R U' R U R U R U' R' U' R2 +<br/>U R U' R U R U R U' R' U' R2",
+          "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -187,14 +205,14 @@ var algSet = {
         {
           "id": "corners",
           "name": "Corner Permutation",
-		  "desc": "The 2 [CPLL] cases are solved using 2 easy algorithms - [RFAS] (R U2 R' U' R U' R') and [RFN] (R U' L' U R' U' L).",
+		  "desc": "The 2 [CPLL] cases are solved using 1 algorithm made from 2 shorter algorithms, applying cancellations - [RFAS] (R U2 R' U' R U' R') + [RFN] (R U' L' U R' U' L).",
           "wiki": "2-Look_PLL",
           "cases": ["Adj", "Diag", "CPLL"]
         },
         {
           "id": "edges",
           "name": "Edge Permutation",
-		  "desc": "The 4 [EPLL] cases are solved using 2 easy algorithms - [RFAS] (R U2 R U' R U' R') and [LFAS] (L' U2 L U L' U L).",
+		  "desc": "The 4 [EPLL] cases are solved using 2 [RU] algorithms - Ua-Perm (R U' R U R U R U' R' U' R2) and Ub-Perm (R2 U R U R' U' R' U' R' U R').",
           "wiki": "2-Look_PLL",
           "cases": ["Ua", "Ub", "Z", "H", "EPLL"]
         },

@@ -100,7 +100,7 @@ var algSet = {
       [
         {
           "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>U' (R U2 R U' R U' R') U (L' U2 L U L' U L)",
-          "desc": "[Sune] variations - [RFAS], [AUF], [LFAS] * 2",
+          "desc": "[EPLL] combination - Ub-Perm, [AUF], Ub-Perm",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -118,7 +118,7 @@ var algSet = {
       [
         {
           "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L)",
-          "desc": "[Sune] variations - [RFAS], [AUF], [LFAS]",
+          "desc": "[Sune] combination - [RFAS], [AUF], [LFAS]",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -135,7 +135,7 @@ var algSet = {
       [
         {
           "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>(R U2 R U' R U' R') U (L' U2 L U L' U L)",
-          "desc": "[Sune] variations - [RFAS], [AUF], [LFAS] * 2",
+          "desc": "[EPLL] combination - Ub-Perm, Ub-Perm",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -153,7 +153,7 @@ var algSet = {
       [
         {
           "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>U2 (R U2 R U' R U' R') U (L' U2 L U L' U L)",
-          "desc": "[Sune] variations - [RFAS], [AUF], [LFAS] * 2",
+          "desc": "[EPLL] combination - Ub-Perm, [AUF], Ub-Perm",
 		  "status": 1,
           "uses": ["2H"],
         },
