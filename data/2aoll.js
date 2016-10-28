@@ -47,7 +47,7 @@ var algSet = {
       [
         {
           "alg": "F (U R U' R') F' F (U R U' R') F'",
-          "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R'] repeated",
+          "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R'] * 2",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
@@ -73,14 +73,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "F (U R U' R') F' U' F (U R U' R') F' F (U R U' R') F'",
-          "desc": "[EOLL] combination - F [reverse-sexy] F' repeated",
+          "alg": "F (U R U' R') F' U' +<br/>F (U R U' R') F' F (U R U' R') F'",
+          "desc": "[EOLL] combination - Clock, [AUF], Line",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "F (U R U' R') F' U' F (U R U' R') (U R U' R') F'",
+			  "alg": "F (U R U' R') F' U' +<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F (U R U' R') (U R U' R') F'",
               "desc": "Optimal execution applies cancellations",
 			  "status": 1,
 			  "uses": []
@@ -134,7 +134,7 @@ var algSet = {
       [
         {
           "alg": "U2 (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
-          "desc": "[SuneOLL]/[2GLL]: [RFAS], [AUF], [RFAS]",
+          "desc": "[OCLL] combination - Anti-Sune, [AUF], Anti-Sune",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -150,8 +150,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' (R U2 R' U' R U' R') +<br/>U2 (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
-          "desc": "[SuneOLL]/[2GLL]: [RFAS], [AUF], [RFAS], [AUF], [RFAS]",
+          "alg": "U' (R U2 R' U' R U' R') U2 +<br/>(R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
+          "desc": "[OCLL] combination - Anti-Sune, [AUF], Sune",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -167,8 +167,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U (R U2 R' U' R U' R') +<br/>U' (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
-          "desc": "[SuneOLL]/[2GLL]: [RFAS], [AUF], [RFAS], [AUF], [RFAS]",
+          "alg": "U (R U2 R' U' R U' R') U' +<br/>(R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
+          "desc": "[OCLL] combination - Anti-Sune, [AUF], Sune",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -184,8 +184,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R' U' R U' R') +<br/>U (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
-          "desc": "[SuneOLL]/[2GLL]: [RFAS], [AUF], [RFAS], [AUF], [RFAS]",
+          "alg": "(R U2 R' U' R U' R') U +<br/>(R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
+          "desc": "[OCLL] combination - Anti-Sune, [AUF], Sune",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -202,7 +202,7 @@ var algSet = {
       [
         {
           "alg": "(R U2 R' U' R U' R') U' (R U2 R' U' R U' R')",
-          "desc": "[SuneOLL]/[2GLL]: [RFAS], [AUF], [RFAS]",
+          "desc": "[OCLL] combination - Anti-Sune, [AUF], Anti-Sune",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -219,7 +219,7 @@ var algSet = {
       [
         {
           "alg": "U' (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
-          "desc": "[SuneOLL]/[2GLL]: Double [RFAS]",
+          "desc": "[OCLL] combination - Double Anti-Sune",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :

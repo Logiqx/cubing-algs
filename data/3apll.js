@@ -29,7 +29,7 @@ var algSet = {
       [
         {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
-          "desc": "[COLL] combination - [RFAS], [RFN]",
+          "desc": "Jb-Perm - [RFAS], [RFN]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -47,7 +47,7 @@ var algSet = {
     {
       "id": "Diag",
       "name": "Diagonal Corner Swap",
-      "desc": "This case is solved using Anti-[Sune] and [Niklas]. Cancellations result in a decent [PLL] algorithm for Jb-Perm.",
+      "desc": "This case is solved using the adjacent corner swap algorithm, executed twice.",
       "wiki": "",
       "algdb": "Y",
       "image": "CPLL-O",
@@ -55,14 +55,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L) +<br/>U2 (R U2 R' U' R U' R') (R U' L' U R' U' L)",
-          "desc": "[COLL] combination - [RFAS], [RFN], [AUF], [RFAS], [RFN]",
+          "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L) U2 +<br/>(R U2 R' U' R U' R') (R U' L' U R' U' L)",
+          "desc": "[PLL] combination - Jb-Perm, [AUF], Jb-Perm",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "(R U2 R' U' R) U2 (L' U R' U' L) +<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U2 (R U2 R' U' R) U2 (L' U R' U' L)",
+			  "alg": "(R U2 R' U' R) U2 (L' U R' U' L) U2 +<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R U2 R' U' R) U2 (L' U R' U' L)",
               "desc": "Optimal execution applies cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
@@ -152,7 +152,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R U' R U R U R U' R' U' R2 +<br/>U' R U' R U R U R U' R' U' R2",
+          "alg": "R U' R U R U R U' R' U' R2 U' +<br/>R U' R U R U R U' R' U' R2",
           "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
 		  "status": 1,
           "uses": ["2H"],
@@ -170,7 +170,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R U' R U R U R U' R' U' R2 +<br/>U R U' R U R U R U' R' U' R2",
+          "alg": "R U' R U R U R U' R' U' R2 U +<br/>R U' R U R U R U' R' U' R2",
           "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
 		  "status": 1,
           "uses": ["2H"],
@@ -205,7 +205,7 @@ var algSet = {
         {
           "id": "corners",
           "name": "Corner Permutation",
-		  "desc": "The 2 [CPLL] cases are solved using 1 algorithm made from 2 shorter algorithms, applying cancellations - [RFAS] (R U2 R' U' R U' R') + [RFN] (R U' L' U R' U' L).",
+		  "desc": "The 2 [CPLL] cases are solved using 1 [RUL] algorithm made from 2 shorter algorithms, applying cancellations - [RFAS] (R U2 R' U' R U' R') + [RFN] (R U' L' U R' U' L).",
           "wiki": "2-Look_PLL",
           "cases": ["Adj", "Diag", "CPLL"]
         },
