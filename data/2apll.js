@@ -20,7 +20,7 @@ var algSet = {
     {
       "id": "Adj",
       "name": "Adjacent Corner Swap",
-      "desc": "This case is solved using Anti-[Sune] and [Niklas]. Cancellations result in a decent [PLL] algorithm for Jb-Perm.",
+      "desc": "This case is solved using Anti-[Sune] and [Niklas], essentially a [PLL] algorithm for Jb-Perm.",
       "wiki": "",
       "algdb": "Jb",
       "image": "CPLL-A",
@@ -32,22 +32,13 @@ var algSet = {
           "desc": "Jb-Perm - [RFAS], [RFN]",
 		  "status": 1,
           "uses": ["2H"],
-		  "vars" :
-		  [
-			{
-			  "alg": "(R U2 R' U' R) U2 (L' U R' U' L)",
-              "desc": "Optimal execution applies cancellations",
-			  "status": 1,
-			  "uses": []
-			},
-		  ]
         },
       ]
     },
     {
       "id": "Diag",
       "name": "Diagonal Corner Swap",
-      "desc": "This case is solved using the adjacent corner swap algorithm, executed twice.",
+      "desc": "This case is solved using the Jb-Perm algorithm (adjacent corner swap), executed twice.",
       "wiki": "",
       "algdb": "Y",
       "image": "CPLL-O",
@@ -59,15 +50,6 @@ var algSet = {
           "desc": "[PLL] combination - Jb-Perm, [AUF], Jb-Perm",
 		  "status": 1,
           "uses": ["2H"],
-		  "vars" :
-		  [
-			{
-			  "alg": "(R U2 R' U' R) U2 (L' U R' U' L) U2 +<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R U2 R' U' R) U2 (L' U R' U' L)",
-              "desc": "Optimal execution applies cancellations",
-			  "status": 1,
-			  "uses": []
-			},
-		  ]
         },
       ]
     },
