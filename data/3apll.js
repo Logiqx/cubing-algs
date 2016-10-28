@@ -55,14 +55,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L) + U2 +<br/>(R U2 R' U' R U' R') (R U' L' U R' U' L)",
+          "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L) +<br/>U2 (R U2 R' U' R U' R') (R U' L' U R' U' L)",
           "desc": "[COLL] combination - [RFAS], [RFN], [AUF], [RFAS], [RFN]",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "(R U2 R' U' R) U2 (L' U R' U' L) + U2 +<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(R U2 R' U' R) U2 (L' U R' U' L)",
+			  "alg": "(R U2 R' U' R) U2 (L' U R' U' L) +<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U2 (R U2 R' U' R) U2 (L' U R' U' L)",
               "desc": "Optimal execution applies cancellations",
 			  "status": 1,
 			  "uses": []
@@ -99,7 +99,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') + U + (L' U2 L U L' U L) + U' +<br/>(R U2 R U' R U' R') + U + (L' U2 L U L' U L)",
+          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>U' (R U2 R U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[Sune] variations - [RFAS], [AUF], [LFAS] * 2",
 		  "status": 1,
           "uses": ["2H"],
@@ -117,7 +117,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') + U + (L' U2 L U L' U L)",
+          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[Sune] variations - [RFAS], [AUF], [LFAS]",
 		  "status": 1,
           "uses": ["2H"],
@@ -134,7 +134,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') + U + (L' U2 L U L' U L) +<br/>(R U2 R U' R U' R') + U + (L' U2 L U L' U L)",
+          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>(R U2 R U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[Sune] variations - [RFAS], [AUF], [LFAS] * 2",
 		  "status": 1,
           "uses": ["2H"],
@@ -152,7 +152,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') + U + (L' U2 L U L' U L) + U2+<br/>(R U2 R U' R U' R') + U + (L' U2 L U L' U L)",
+          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>U2 (R U2 R U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[Sune] variations - [RFAS], [AUF], [LFAS] * 2",
 		  "status": 1,
           "uses": ["2H"],
