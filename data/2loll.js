@@ -586,6 +586,21 @@ var algSet = {
 		  ]
         },
         {
+          "alg": "(R U2 R' U' R U' R') U' (R U2 R' U' R U' R')",
+          "desc": "[SuneOLL]/[2GLL]: Anti-Sune, [AUF], Anti-Sune",
+		  "status": -1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "(R U2' R' U' R U' R') U' (R U2' R' U' R U' R')",
+              "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
           "alg": "f (R U R' U') f' F (R U R' U') F'",
           "desc": "[EOLL] combination - f [sexy] f', F [sexy] F'",
 		  "status": -1,
