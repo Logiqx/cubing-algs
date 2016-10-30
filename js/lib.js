@@ -256,13 +256,27 @@ function processHash()
 		var viewId = viewParts[1];
 
 		// Render the page
-		if (viewType == "case")
+		try
 		{
-			renderCase(viewId, viewportWidth);
+			if (viewType == "case")
+			{
+				renderCase(viewId, viewportWidth);
+			}
+			else
+			{
+				renderView(viewType, viewportWidth);
+			}
 		}
-		else
+		catch (err)
 		{
-			renderView(viewType, viewportWidth);
+			var message = "";
+			
+			message += "<h2>Hmmm. You may be a victim of the following...</h2>";
+			message += "<h3>Javascript</h3><p>Is it enabled in your browser? Javascript is required for this page to work</p>";
+			message += "<h3>Browser</h3><p>You need at least IE 9, Chrome 4.0, Firefox 6.0, Safari 5.0 or Opera 11</p>";
+			message += "<h3>Error</h3><p>" + err.message + "</p>";
+			
+			document.getElementById("view").innerHTML = message;
 		}
 		
 		// Record rendering arguments
