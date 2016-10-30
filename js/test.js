@@ -9,8 +9,8 @@ function validateAlg(algObj)
 	// Is this a one handed algorithm?
 	if (algObj.uses.indexOf("OH") >= 0)
 	{
-		// Check that U2' is never U2
-		if (algObj.alg.indexOf("U2 ") >= 0)
+		// Check that U2' is never U2 but allow it for the initial AUF
+		if (algObj.alg.indexOf("U2 ") >= 1)
 		{
 			out += "<p>U2 instead of U2' for OH alg - " + algObj.alg + "</p>";
 		}
