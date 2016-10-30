@@ -436,7 +436,7 @@ function renderView(viewId, viewportWidth)
 				out += "<h2>" + viewObj.name + "</h2>";
 				
 				// Browser title
-				document.title = algSet.header.id + " - " + viewObj.name;
+				document.title = algSet.header.id;
 			}
 			
 			if (viewObj.hasOwnProperty("rows"))
