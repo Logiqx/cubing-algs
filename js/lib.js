@@ -294,11 +294,11 @@ function processHash()
 //
 function renderPage()
 {
-	// Event handler for hash change
-	window.addEventListener("hashchange", processHash);
+	// Event handler for hash change - function(e) approach is required by some older browsers
+	window.addEventListener("hashchange", function(e) {processHash();});
 
-	// Event handler for resize / screen rotation
-	window.addEventListener("resize", processHash);
+	// Event handler for resize / screen rotation - function(e) approach is required by some older browsers
+	window.addEventListener("resize", function(e) {processHash();});
 
 	// Event handler for browser controls (back/forward)
 	window.addEventListener("popstate", function(e)
@@ -353,5 +353,6 @@ function storeWindowOffset()
 
 //
 // Render the page when parsing is complete and all content is loaded (including images, script files, CSS files, etc)
+// Note:  The function(e) approach is to avoid an issue which occured on some old browsers
 //
-window.addEventListener("load", renderPage);
+window.addEventListener("load", function(e) {processHash();});
