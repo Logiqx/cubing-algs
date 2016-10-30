@@ -455,7 +455,7 @@ var algSet = {
         {
           "id": "edges",
           "name": "Edge Permutation",
-		  "desc": "This group of cases is known as [EPLL]. All of these cases can be solved using [MU] or [RU] algorithms.",
+		  "desc": "This group of cases is known as [EPLL]. All of these cases can be solved using [RU] or [MU] algorithms.",
           "wiki": "2-Look_PLL",
           "cases": ["Ua", "Ub", "Z", "H", "EPLL"]
         },
