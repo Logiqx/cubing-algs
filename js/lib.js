@@ -242,22 +242,22 @@ var lastViewportWidth = getViewportWidth();
 //
 function processHash()
 {
-	// Get the viewport width
-    var viewportWidth = getViewportWidth();
-
-	// Interpret the URL fragment (everything after the hash) as a parameter
-	var urlFragment = window.location.hash.substring(1);
-
-	if (urlFragment != lastFragment || viewportWidth != lastViewportWidth)
+	try
 	{
-		// First part is the parameter name 
-		var viewParts = urlFragment.split("_");
-		var viewType = viewParts[0];
-		var viewId = viewParts[1];
+		// Get the viewport width
+		var viewportWidth = getViewportWidth();
 
-		// Render the page
-		try
+		// Interpret the URL fragment (everything after the hash) as a parameter
+		var urlFragment = window.location.hash.substring(1);
+
+		if (urlFragment != lastFragment || viewportWidth != lastViewportWidth)
 		{
+			// First part is the parameter name 
+			var viewParts = urlFragment.split("_");
+			var viewType = viewParts[0];
+			var viewId = viewParts[1];
+
+			// Render the page
 			if (viewType == "case")
 			{
 				renderCase(viewId, viewportWidth);
@@ -266,25 +266,24 @@ function processHash()
 			{
 				renderView(viewType, viewportWidth);
 			}
-		}
-		catch (err)
-		{
-			var message = "";
-			
-			message += "<h2>Hmmm. You may be a victim of the following...</h2>";
-			message += "<h3>Javascript</h3><p>Is it enabled in your browser? Javascript is required for this page to work</p>";
-			message += "<h3>Browser</h3><p>You need at least IE 9, Chrome 4.0, Firefox 6.0, Safari 5.0 or Opera 11</p>";
-			message += "<h3>Error</h3><p>" + err.message + "</p>";
-			
-			document.getElementById("view").innerHTML = message;
-		}
 		
-		// Record rendering arguments
-		lastFragment = urlFragment;
-		lastViewportWidth = viewportWidth;
+			// Record rendering arguments
+			lastFragment = urlFragment;
+			lastViewportWidth = viewportWidth;
 
-		// Initialise abbreviations on touch screen devices
-		initAbbrTouch();
+			// Initialise abbreviations on touch screen devices
+			initAbbrTouch();
+		}
+	}
+	catch (err)
+	{
+		var message = "";
+		
+		message += "<h2>Hmmm. You may be a victim of the following...</h2>";
+		message += "<h3>Browser</h3><p>You need at least IE 9, Chrome 4.0, Firefox 6.0, Safari 5.0 or Opera 11</p>";
+		message += "<h3>Error in processHash()</h3><p>" + err.message + "</p>";
+		
+		document.getElementById("view").innerHTML = message;
 	}
 }
 
@@ -294,38 +293,51 @@ function processHash()
 //
 function renderPage()
 {
-	// Event handler for hash change - function(e) approach is required by some older browsers
-	window.addEventListener("hashchange", function(e) {processHash();});
-
-	// Event handler for resize / screen rotation - function(e) approach is required by some older browsers
-	window.addEventListener("resize", function(e) {processHash();});
-
-	// Event handler for browser controls (back/forward)
-	window.addEventListener("popstate", function(e)
+	try
 	{
-		if (e.state != null)
+		// Event handler for hash change
+		window.addEventListener("hashchange", processHash, false);
+
+		// Event handler for resize / screen rotation
+		window.addEventListener("resize", processHash, false);
+
+		// Event handler for browser controls (back/forward)
+		window.addEventListener("popstate", function(e)
 		{
-			// Internet Explorer doesn't show the hash portion of the URL when pressing back/forward
-			if (e.state.hash != "")
+			if (e.state != null)
 			{
-				window.location.hash = e.state.hash;
+				// Internet Explorer doesn't show the hash portion of the URL when pressing back/forward
+				if (e.state.hash != "")
+				{
+					window.location.hash = e.state.hash;
+				}
+				
+				// Process the hash
+				processHash();
+
+				// Scroll to the correct position but wait a second or Chrome will not do it!
+				setTimeout(function() {window.scrollTo(e.state.xOffset, e.state.yOffset);}, 1);
 			}
-			
-			// Process the hash
-			processHash();
+			else
+			{
+				// Process the hash
+				processHash();
+			}
+		}, false);
 
-			// Scroll to the correct position but wait a second or Chrome will not do it!
-			setTimeout(function() {window.scrollTo(e.state.xOffset, e.state.yOffset);}, 1);
-		}
-		else
-		{
-			// Process the hash
-			processHash();
-		}
-	});
-
-	// Process the hash
-	processHash();
+		// Process the hash
+		processHash();
+	}
+	catch (err)
+	{
+		var message = "";
+		
+		message += "<h2>Hmmm. You may be a victim of the following...</h2>";
+		message += "<h3>Browser</h3><p>You need at least IE 9, Chrome 4.0, Firefox 6.0, Safari 5.0 or Opera 11</p>";
+		message += "<h3>Error in renderPage()</h3><p>" + err.message + "</p>";
+		
+		document.getElementById("view").innerHTML = message;
+	}
 }
 
 //
@@ -345,7 +357,7 @@ function storeWindowOffset()
 		// Replace state in history
 		history.replaceState(obj, title, url);
 	}
-	catch (e)
+	catch (err)
 	{
 		// Nothing to do here!
 	}
@@ -353,6 +365,5 @@ function storeWindowOffset()
 
 //
 // Render the page when parsing is complete and all content is loaded (including images, script files, CSS files, etc)
-// Note:  The function(e) approach is to avoid an issue which occured on some old browsers
 //
-window.addEventListener("load", function(e) {processHash();});
+window.addEventListener("load", renderPage, false);

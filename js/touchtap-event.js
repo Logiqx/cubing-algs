@@ -89,10 +89,10 @@
   function init() {
     touchTapEvent = document.createEvent('CustomEvent');
     touchTapEvent.initEvent('touchtap', true, true);
-    document.addEventListener('touchstart', touchstart);
-    document.addEventListener('touchend', touchend);
-    document.addEventListener('touchcancel', touchend);
-    document.addEventListener('touchmove', touchmove);
+    document.addEventListener('touchstart', touchstart, false);
+    document.addEventListener('touchend', touchend, false);
+    document.addEventListener('touchcancel', touchend, false);
+    document.addEventListener('touchmove', touchmove, false);
   }
 
   init();

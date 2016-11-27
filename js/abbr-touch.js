@@ -44,7 +44,7 @@ var abbrTouch = (function () { // eslint-disable-line no-unused-vars
     for (var i = 0; i < elements.length; i++) {
 	  // MWG - This test ensures that tooltips are not shown when image links are tapped
 	  if (elements[i].children.length == 0) {
-        elements[i].addEventListener('touchtap', touchtapHandler);
+        elements[i].addEventListener('touchtap', touchtapHandler, false);
 	  }
     }
   }
