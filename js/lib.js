@@ -233,25 +233,73 @@ function initAbbrTouch()
 }
 
 //
-// addEventHandler
+// Generic method to add event handlers in modern browsers and old versions of IE
+// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 // http://www.javascripter.net/faq/addeventlistenerattachevent.htm
 // http://stackoverflow.com/questions/9769868/addeventlistener-not-working-in-ie8
 //
 function addEventHandler(target, eventType, handler)
 {
-	// TODO - Support for "hashchange" in IE 7 and other old browsers
-	// http://stackoverflow.com/questions/9339865/get-the-hashchange-event-to-work-in-all-browsers-including-ie7
+	// The attribute for the event
+	var eventAttribute = "on" + eventType;
 	
-	// IE 9 and newer
-	if (target.addEventListener)
+	// The "hashchange" event is not supported by some old browsers
+	if (eventType == "hashchange" && !(eventAttribute in target))
 	{
-		target.addEventListener(eventType, handler, false);
+		// Implement the fallback
+		hashChangeFallback(target, handler);
 	}
-	// IE 5 to 8 but supported up to IE 10
-	else if (target.attachEvent)
-	{
-		target.attachEvent("on" + eventType, handler);
-	}
+	else
+    {
+		// The addEventListener() method is supported by most browsers, including IE 9 and newer
+		if (target.addEventListener)
+		{
+			target.addEventListener(eventType, handler, false);
+		}
+		// The attachEvent() method is supported by IE 5 to IE 10
+		else if (target.attachEvent)
+		{
+			target.attachEvent(eventAttribute, handler);
+		}
+    }
+}
+
+//
+// Fallback for the "hashchange" event which is not implemented in legacy browsers
+// Required prior to Chrome 5.0, Firefox 3.6, IE 8.0, Opera 10.6, Safari 5.0
+// https://developer.mozilla.org/en-US/docs/Web/Events/hashchange
+// https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onhashchange
+// http://stackoverflow.com/questions/9339865/get-the-hashchange-event-to-work-in-all-browsers-including-ie7
+//
+function hashChangeFallback(target, handler)
+{
+	// Bind the handler
+	target.onhashchange = handler;
+	
+    (function(target) {
+        var location = target.location,
+            oldURL = location.href,
+            oldHash = location.hash;
+
+        // check the location hash on a 100ms interval
+        setInterval(function() {
+            var newURL = location.href,
+                newHash = location.hash;
+
+            // if the hash has changed and a handler has been bound...
+            if ( newHash != oldHash && typeof target.onhashchange === "function" ) {
+                // execute the handler
+                target.onhashchange({
+                    type: "hashchange",
+                    oldURL: oldURL,
+                    newURL: newURL
+                });
+
+                oldURL = newURL;
+                oldHash = newHash;
+            }
+        }, 100);
+    })(window);
 }
 
 //
