@@ -12,7 +12,7 @@ Latest browsers - tested and working:
 5) Safari 9.1.3 (2016-09-01) - OS X El Capitan
 6) Opera 36 (2016-03-14) - browserling.com
 
-Old *working* browsers - tested using browserling.com:
+TODO - Old *working* browsers - tested using browserling.com:
 
 1) IE 9 (2011-03-14)
 2) Chrome 4.0.249 (2010-01-25)
@@ -20,7 +20,7 @@ Old *working* browsers - tested using browserling.com:
 4) Safari 5.0.5 (2010-06-07)
 5) Opera 11 (2010-12-16)
 
-Old *non-working* browsers - tested using browserling.com:
+TODO - Old *non-working* browsers - tested using browserling.com:
 
 1) IE 8 (2010-06-07) - fails to render
 2) Chrome 3.0.195 (2009-10-12) - renders but interactions are ignored
@@ -214,6 +214,7 @@ function getUses(algObj)
 //
 function initAbbrTouch()
 {
+	// Initialise abbr-touch for the "view" division, providing a custom tap handler
 	abbrTouch(document.querySelector('#view'), function (target, title, touchX, touchY) {
 		var tooltip = document.querySelector('#tooltip');
 		tooltip.innerHTML = title;
@@ -229,6 +230,28 @@ function initAbbrTouch()
 			}
 		}, 3000);
 	}, true);
+}
+
+//
+// addEventHandler
+// http://www.javascripter.net/faq/addeventlistenerattachevent.htm
+// http://stackoverflow.com/questions/9769868/addeventlistener-not-working-in-ie8
+//
+function addEventHandler(target, eventType, handler)
+{
+	// TODO - Support for "hashchange" in IE 7 and other old browsers
+	// http://stackoverflow.com/questions/9339865/get-the-hashchange-event-to-work-in-all-browsers-including-ie7
+	
+	// IE 9 and newer
+	if (target.addEventListener)
+	{
+		target.addEventListener(eventType, handler, false);
+	}
+	// IE 5 to 8 but supported up to IE 10
+	else if (target.attachEvent)
+	{
+		target.attachEvent("on" + eventType, handler);
+	}
 }
 
 //
@@ -272,6 +295,7 @@ function processHash()
 			lastViewportWidth = viewportWidth;
 
 			// Initialise abbreviations on touch screen devices
+			// TODO - check if this causes issues in older browsers?
 			initAbbrTouch();
 		}
 	}
@@ -296,13 +320,13 @@ function renderPage()
 	try
 	{
 		// Event handler for hash change
-		window.addEventListener("hashchange", processHash, false);
+		addEventHandler(window, "hashchange", processHash);
 
 		// Event handler for resize / screen rotation
-		window.addEventListener("resize", processHash, false);
+		addEventHandler(window, "resize", processHash);
 
 		// Event handler for browser controls (back/forward)
-		window.addEventListener("popstate", function(e)
+		addEventHandler(window, "popstate", function(e)
 		{
 			if (e.state != null)
 			{
@@ -323,7 +347,7 @@ function renderPage()
 				// Process the hash
 				processHash();
 			}
-		}, false);
+		});
 
 		// Process the hash
 		processHash();
@@ -366,4 +390,4 @@ function storeWindowOffset()
 //
 // Render the page when parsing is complete and all content is loaded (including images, script files, CSS files, etc)
 //
-window.addEventListener("load", renderPage, false);
+addEventHandler(window, "load", renderPage);

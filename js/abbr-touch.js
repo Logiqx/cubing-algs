@@ -42,9 +42,12 @@ var abbrTouch = (function () { // eslint-disable-line no-unused-vars
     var elements = elementScope.querySelectorAll('abbr[title]');
     var touchtapHandler = generateTouchtapHandler(tapHandler);
     for (var i = 0; i < elements.length; i++) {
-	  // MWG - This test ensures that tooltips are not shown when image links are tapped
+	  // MWG - This test ensures that tooltips are not shown when images are tapped
 	  if (elements[i].children.length == 0) {
-        elements[i].addEventListener('touchtap', touchtapHandler, false);
+        // addEventListener() was introduced in IE 9
+        if (elements[i].addEventListener) {
+          elements[i].addEventListener('touchtap', touchtapHandler, false);
+        }
 	  }
     }
   }

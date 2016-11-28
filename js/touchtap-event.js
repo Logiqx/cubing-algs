@@ -87,12 +87,18 @@
    * Initialises the library.
    */
   function init() {
-    touchTapEvent = document.createEvent('CustomEvent');
-    touchTapEvent.initEvent('touchtap', true, true);
-    document.addEventListener('touchstart', touchstart, false);
-    document.addEventListener('touchend', touchend, false);
-    document.addEventListener('touchcancel', touchend, false);
-    document.addEventListener('touchmove', touchmove, false);
+    // createEvent() was introduced in IE 9
+    if (document.createEvent) {
+      touchTapEvent = document.createEvent('CustomEvent');
+      touchTapEvent.initEvent('touchtap', true, true);
+    }
+    // addEventListener() was introduced in IE 9
+    if (document.addEventListener) {
+      document.addEventListener('touchstart', touchstart, false);
+      document.addEventListener('touchend', touchend, false);
+      document.addEventListener('touchcancel', touchend, false);
+      document.addEventListener('touchmove', touchmove, false);
+    }
   }
 
   init();
