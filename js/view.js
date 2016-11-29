@@ -80,7 +80,7 @@ function renderGridDataRows(viewObj, viewportWidth)
 						// Render the Id and Name
 						var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
 						out += "<abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
-								"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr>";
+								"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "><br/></i></abbr>";
 					}
 				}
 				
@@ -256,7 +256,7 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 				// Render the image
 				var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
 				out += "<td><abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
-						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr></td>";
+						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "><br/></i></abbr></td>";
 
 				// Iterate through the uses - 2 columns are perfect on the iPad (landscape)
 				if (viewportWidth >= IPAD_LANDSCAPE)
