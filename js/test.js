@@ -44,49 +44,61 @@ function validateAlgs()
 		// Current case
 		var caseObj = algSet.cases[caseIdx];
 		
-		// Iterate through the algorithms
-		for (var algIdx = 0; algIdx < caseObj.algs.length; algIdx++)
+		// IE8 gets confused by a comma at the end of a list
+		if (caseObj != null)
 		{
-			// Get the actual algorithm object
-			var algObj = caseObj.algs[algIdx];
-			
-			// Active indicator
-			var active = 0;
-
-			// Validate the algorithm
-			out += validateAlg(algObj);
-			
-			// Do any variations of the algorithm exist?
-			if (algObj.hasOwnProperty("vars"))
+			// Iterate through the algorithms
+			for (var algIdx = 0; algIdx < caseObj.algs.length; algIdx++)
 			{
-				// Iterate through the variations of the algorithm
-				for (var varIdx = 0; varIdx < algObj.vars.length; varIdx++)
+				// Get the actual algorithm object
+				var algObj = caseObj.algs[algIdx];
+				
+				// IE8 gets confused by a comma at the end of a list
+				if (algObj != null)
 				{
-					// Get the actual variation object
-					var varObj = algObj.vars[varIdx];
-					
+					// Active indicator
+					var active = 0;
+
 					// Validate the algorithm
-					out += validateAlg(varObj);
+					out += validateAlg(algObj);
+					
+					// Do any variations of the algorithm exist?
+					if (algObj.hasOwnProperty("vars"))
+					{
+						// Iterate through the variations of the algorithm
+						for (var varIdx = 0; varIdx < algObj.vars.length; varIdx++)
+						{
+							// Get the actual variation object
+							var varObj = algObj.vars[varIdx];
+							
+							// IE8 gets confused by a comma at the end of a list
+							if (varObj != null)
+							{
+								// Validate the algorithm
+								out += validateAlg(varObj);
+								
+								// Is this alg being actively used?
+								if (varObj.status > 0 && varObj.uses.length > 0)
+								{
+									active = 1;
+								}
+							}
+						}
+					}
 					
 					// Is this alg being actively used?
-					if (varObj.status > 0 && varObj.uses.length > 0)
+					if (algObj.status > 0 && algObj.uses.length > 0)
 					{
 						active = 1;
 					}
+
+					// Increment active counter
+					activeAlgs += active;
+
+					// Increment total
+					totalAlgs++;
 				}
 			}
-			
-			// Is this alg being actively used?
-			if (algObj.status > 0 && algObj.uses.length > 0)
-			{
-				active = 1;
-			}
-
-			// Increment active counter
-			activeAlgs += active;
-
-			// Increment total
-			totalAlgs++;
 		}
 	}
 	
@@ -151,8 +163,12 @@ function validateCases()
 		// Current case
 		var caseObj = algSet.cases[caseIdx];
 		
-		// Add probability to the array
-		probs.push(caseObj.prob);
+		// IE8 gets confused by a comma at the end of a list
+		if (caseObj != null)
+		{
+			// Add probability to the array
+			probs.push(caseObj.prob);
+		}
 	}
 	
 	// Add probability to HTML output
@@ -182,53 +198,69 @@ function validateViews()
 		// Current view
 		var viewObj = algSet.views[viewIdx];
 		
-		// Output the view title
-		out += "<h3>" + viewObj.name + "</h3>";
-	
-		// Array for probabilities
-		var probs = [];
-		
-		// Do groups exist?
-		if (viewObj.hasOwnProperty("groups"))
+		// IE8 gets confused by a comma at the end of a list
+		if (viewObj != null)
 		{
-			// Iterate through the groups in the view
-			for (var groupIdx = 0; groupIdx < viewObj.groups.length; groupIdx++)
+			// Output the view title
+			out += "<h3>" + viewObj.name + "</h3>";
+		
+			// Array for probabilities
+			var probs = [];
+			
+			// Do groups exist?
+			if (viewObj.hasOwnProperty("groups"))
 			{
-				// Current group
-				var groupObj = viewObj.groups[groupIdx];
-
-				// Iterate through the cases in the group
-				for (var caseIdx = 0; caseIdx < groupObj.cases.length; caseIdx++)
+				// Iterate through the groups in the view
+				for (var groupIdx = 0; groupIdx < viewObj.groups.length; groupIdx++)
 				{
-					// Current case
-					var caseObj = algSet.cases[caseIds.indexOf(groupObj.cases[caseIdx])];
+					// Current group
+					var groupObj = viewObj.groups[groupIdx];
 
-					// Add probability to the array
-					probs.push(caseObj.prob);
+					// IE8 gets confused by a comma at the end of a list
+					if (groupObj != null)
+					{
+						// Iterate through the cases in the group
+						for (var caseIdx = 0; caseIdx < groupObj.cases.length; caseIdx++)
+						{
+							// Current case
+							var caseObj = algSet.cases[caseIds.indexOf(groupObj.cases[caseIdx])];
+
+							// IE8 gets confused by a comma at the end of a list
+							if (caseObj != null)
+							{
+								// Add probability to the array
+								probs.push(caseObj.prob);
+							}
+						}
+					}
 				}
 			}
-		}
-		
-		// Is this a matrix view - i.e. single table with multiple rows?
-		else if (viewObj.hasOwnProperty("rows"))
-		{
-			// Iterate through the rows in the view
-			for (var rowIdx = 0; rowIdx < viewObj.rows.length; rowIdx++)
+			
+			// Is this a matrix view - i.e. single table with multiple rows?
+			else if (viewObj.hasOwnProperty("rows"))
 			{
-				// Current row
-				var rowObj = viewObj.rows[rowIdx];
-
-				// Iterate through the cases in the row
-				for (var caseIdx = 0; caseIdx < rowObj.cases.length; caseIdx++)
+				// Iterate through the rows in the view
+				for (var rowIdx = 0; rowIdx < viewObj.rows.length; rowIdx++)
 				{
-					// Empty table cells are represented by NULL
-					if (rowObj.cases[caseIdx] != null)
-					{
-						// Current case
-						var caseObj = algSet.cases[caseIds.indexOf(rowObj.cases[caseIdx])];
+					// Current row
+					var rowObj = viewObj.rows[rowIdx];
 
-						// Add probability to the array
-						probs.push(caseObj.prob);
+					// IE8 gets confused by a comma at the end of a list
+					if (rowObj != null)
+					{
+						// Iterate through the cases in the row
+						for (var caseIdx = 0; caseIdx < rowObj.cases.length; caseIdx++)
+						{
+							// Empty table cells are represented by NULL
+							if (rowObj.cases[caseIdx] != null)
+							{
+								// Current case
+								var caseObj = algSet.cases[caseIds.indexOf(rowObj.cases[caseIdx])];
+
+								// Add probability to the array
+								probs.push(caseObj.prob);
+							}
+						}
 					}
 				}
 			}

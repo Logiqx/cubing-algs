@@ -1,41 +1,5 @@
 /*
 
-Browser Support
-===============
-
-Latest browsers - tested and working:
-
-1) Edge 38.14393 (2016-08-02) - Windows 10
-2) IE 11 (2015-07-29) - Windows 10
-3) Chrome 53.0.2785 (2016-08-31) - Windows 10
-4) Firefox 47.0.1 (2016-06-28) - Windows 7
-5) Safari 9.1.3 (2016-09-01) - OS X El Capitan
-6) Opera 36 (2016-03-14) - browserling.com
-
-TODO - Old *working* browsers - tested using browserling.com:
-
-1) IE 9 (2011-03-14)
-2) Chrome 4.0.249 (2010-01-25)
-3) Firefox 6.0 (2011-08-16)
-4) Safari 5.0.5 (2010-06-07)
-5) Opera 11 (2010-12-16)
-
-TODO - Old *non-working* browsers - tested using browserling.com:
-
-1) IE 8 (2010-06-07) - fails to render
-2) Chrome 3.0.195 (2009-10-12) - renders but interactions are ignored
-3) Firefox 5.0.1 (2011-07-11) - fails to render
-4) Safari 4.0 (2009-2010) - renders but interactions are ignored
-5) Opera 10.60 (2010-07-01) - fails to render
-
-Mobile browsers - tested and working:
-
-1) Safari 9 (2016-08-25) - iOS 9.3.5 (iPad)
-2) Safari 7 (2013-06-10) - iOS 7 (iPad)
-3) Samsung Browser 4.0.20 - Samsung Galaxy S7
-4) Android 4.4.4 - Samsung Galaxy S3
-
-
 Navigation
 ==========
 
@@ -68,7 +32,7 @@ Unfortunately there are a number of subtle complications which are described bel
 Summary
 =======
 
-1) Works fine on IE 11 (laptop), Chrome 45 (laptop) and Safari (iPad)
+1) Originally developed / tested on IE11 (laptop), Chrome 45 (laptop) and Safari (iPad)
 2) Works fine when running locally (file://) and remotely (http://)
 3) Hyperlinks / bookmarks link to the current page. Other clicks are handled by Javascript
 4) Chrome fires more "popstate" events than IE due to window.location.hash being updated
@@ -76,6 +40,20 @@ Summary
 
 */
 
+
+//
+// Generic debug message
+//
+function debugMessage(method, message)
+{
+	var out = "";
+	
+	out += "<h2>Houston, we have a problem</h2>";
+	out += "<h3>Browser</h3><p>You need at least IE8, Chrome 6.0, Firefox 3.5, Safari 4.0 or Opera 10</p>";
+	out += "<h3>Debug</h3><p>" + method + ": " + message + "</p>";
+
+	return out;
+}
 
 //
 // Generic message to be displayed at top of every page
@@ -117,12 +95,13 @@ function footer()
 // iPhone5 										portrait = 320, landscape = 568		aspect = 1:1.775
 // iPhone, iPhone 3G, iPhone 4 					portrait = 320, landscape = 480		aspect = 1:1.500
 //
-const IPAD_LANDSCAPE = 1024;
-const IPAD_PORTRAIT = 768;
-const GALAXY_S3_LANDSCAPE = 640;
-const GALAXY_S3_PORTRAIT = 360;
-const IPHONE_LANDSCAPE = 480;
-const IPHONE_PORTRAIT = 320;
+// N.B. "const" was not supported prior to IE11, hence the use of "var"
+var IPAD_LANDSCAPE = 1024;
+var IPAD_PORTRAIT = 768;
+var GALAXY_S3_LANDSCAPE = 640;
+var GALAXY_S3_PORTRAIT = 360;
+var IPHONE_LANDSCAPE = 480;
+var IPHONE_PORTRAIT = 320;
 
 //
 // Determine viewport width
@@ -160,8 +139,12 @@ function getCaseIds()
 			// Current case
 			var caseObj = algSet.cases[caseIdx];
 			
-			// Add case ID to the list
-			caseIds.push(caseObj.id);
+			// IE8 gets confused by a comma at the end of a list
+			if (caseObj != null)
+			{
+				// Add case ID to the list
+				caseIds.push(caseObj.id);
+			}
 		}
 	}
 	
@@ -195,11 +178,17 @@ function getUses(algObj)
 			// Output the uses in superscript
 			for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
 			{
-				if (useIdx > 0)
+				var useId = algObj.uses[useIdx];
+				
+				// IE8 gets confused by a comma at the end of a list
+				if (useId != null)
 				{
-					out += ", ";
+					if (useIdx > 0)
+					{
+						out += ", ";
+					}
+					out += useId;
 				}
-				out += algObj.uses[useIdx];
 			}
 		}
 	}
@@ -251,12 +240,12 @@ function addEventHandler(target, eventType, handler)
 	}
 	else
     {
-		// The addEventListener() method is supported by most browsers, including IE 9 and newer
+		// The addEventListener() method is supported by most browsers, including IE9 and newer
 		if (target.addEventListener)
 		{
 			target.addEventListener(eventType, handler, false);
 		}
-		// The attachEvent() method is supported by IE 5 to IE 10
+		// The attachEvent() method is supported by IE5 to IE10
 		else if (target.attachEvent)
 		{
 			target.attachEvent(eventAttribute, handler);
@@ -266,7 +255,7 @@ function addEventHandler(target, eventType, handler)
 
 //
 // Fallback for the "hashchange" event which is not implemented in legacy browsers
-// Required prior to Chrome 5.0, Firefox 3.6, IE 8.0, Opera 10.6, Safari 5.0
+// Required prior to Chrome 5.0, Firefox 3.6, IE8.0, Opera 10.6, Safari 5.0
 // https://developer.mozilla.org/en-US/docs/Web/Events/hashchange
 // https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onhashchange
 // http://stackoverflow.com/questions/9339865/get-the-hashchange-event-to-work-in-all-browsers-including-ie7
@@ -343,19 +332,97 @@ function processHash()
 			lastViewportWidth = viewportWidth;
 
 			// Initialise abbreviations on touch screen devices
-			// TODO - check if this causes issues in older browsers?
-			initAbbrTouch();
+			try
+			{
+				initAbbrTouch();
+			}
+			catch (err)
+			{
+				// Non-critical error can be ignored
+			}
 		}
 	}
 	catch (err)
 	{
-		var message = "";
-		
-		message += "<h2>Hmmm. You may be a victim of the following...</h2>";
-		message += "<h3>Browser</h3><p>You need at least IE 9, Chrome 4.0, Firefox 6.0, Safari 5.0 or Opera 11</p>";
-		message += "<h3>Error in processHash()</h3><p>" + err.message + "</p>";
+		var message = debugMessage("processHash", err.message);
 		
 		document.getElementById("view").innerHTML = message;
+	}
+}
+
+
+//
+// Polyfill the missing Array.indexOf() method in IE8 and earlier
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf#Compatibility
+//
+function polyfillIndexOf()
+{
+	// Production steps of ECMA-262, Edition 5, 15.4.4.14
+	// Reference: http://es5.github.io/#x15.4.4.14
+	if (!Array.prototype.indexOf)
+	{
+		Array.prototype.indexOf = function(searchElement, fromIndex)
+		{
+			var k;
+
+			// 1. Let o be the result of calling ToObject passing
+			//    the this value as the argument.
+			if (this == null)
+			{
+				throw new TypeError('"this" is null or not defined');
+			}
+
+			var o = Object(this);
+
+			// 2. Let lenValue be the result of calling the Get
+			//    internal method of o with the argument "length".
+			// 3. Let len be ToUint32(lenValue).
+			var len = o.length >>> 0;
+
+			// 4. If len is 0, return -1.
+			if (len === 0)
+			{
+				return -1;
+			}
+
+			// 5. If argument fromIndex was passed let n be
+			//    ToInteger(fromIndex); else let n be 0.
+			var n = fromIndex | 0;
+
+			// 6. If n >= len, return -1.
+			if (n >= len)
+			{
+				return -1;
+			}
+
+			// 7. If n >= 0, then Let k be n.
+			// 8. Else, n<0, Let k be len - abs(n).
+			//    If k is less than 0, then let k be 0.
+			k = Math.max(n >= 0 ? n : len - Math.abs(n), 0);
+
+			// 9. Repeat, while k < len
+			while (k < len)
+			{
+				// a. Let Pk be ToString(k).
+				//   This is implicit for LHS operands of the in operator
+				// b. Let kPresent be the result of calling the
+				//    HasProperty internal method of o with argument Pk.
+				//   This step can be combined with c
+				// c. If kPresent is true, then
+				//    i.  Let elementK be the result of calling the Get
+				//        internal method of o with the argument ToString(k).
+				//   ii.  Let same be the result of applying the
+				//        Strict Equality Comparison Algorithm to
+				//        searchElement and elementK.
+				//  iii.  If same is true, return k.
+				if (k in o && o[k] === searchElement)
+				{
+					return k;
+				}
+				k++;
+			}
+			return -1;
+		};
 	}
 }
 
@@ -367,6 +434,9 @@ function renderPage()
 {
 	try
 	{
+		// IE8 and earlier do not support Array.indexOf() so it needs to be "polyfilled"
+		polyfillIndexOf();
+		
 		// Event handler for hash change
 		addEventHandler(window, "hashchange", processHash);
 
@@ -402,11 +472,7 @@ function renderPage()
 	}
 	catch (err)
 	{
-		var message = "";
-		
-		message += "<h2>Hmmm. You may be a victim of the following...</h2>";
-		message += "<h3>Browser</h3><p>You need at least IE 9, Chrome 4.0, Firefox 6.0, Safari 5.0 or Opera 11</p>";
-		message += "<h3>Error in renderPage()</h3><p>" + err.message + "</p>";
+		var message = debugMessage("renderPage", err.message);
 		
 		document.getElementById("view").innerHTML = message;
 	}

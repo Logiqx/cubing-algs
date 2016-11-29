@@ -60,50 +60,58 @@ function renderCaseAlgs(caseObj, viewportWidth)
 		// Get the actual algorithm object
 		var algObj = caseObj.algs[algIdx];
 	
-		// Output case name as the title
-		if (algObj.hasOwnProperty("name"))
+		// IE8 gets confused by a comma at the end of a list
+		if (algObj != null)
 		{
-			out += "<h3>Alg " + option + " - " + algObj.name + "</h3>";
-		}
-		else
-		{
-			out += "<h3>Alg " + option + "</h3>";
-		}
-		
-		// Status
-		switch (algObj.status)
-		{
-			case 0:
-				out += "<p class=\"inactive\">I don't use this algorithm yet.</p>";
-				break;
-			case -1:
-				out += "<p class=\"inactive\">I don't use this algorithm nowadays.</p>";
-				break;
-		}
-
-		// Render the table
-		out += "<table>";
-
-		// Render the alg
-		out += renderCaseAlg(algObj, "alg", false, viewportWidth);
-		
-		// Do any variations of the algorithm exist?
-		if (algObj.hasOwnProperty("vars"))
-		{
-			// Iterate through the variations of the algorithm
-			for (var varIdx = 0; varIdx < algObj.vars.length; varIdx++)
+			// Output case name as the title
+			if (algObj.hasOwnProperty("name"))
 			{
-				// Get the actual variation object
-				var varObj = algObj.vars[varIdx];
-				
-				// Render the variation
-				out += renderCaseAlg(varObj, "var", true, viewportWidth);
+				out += "<h3>Alg " + option + " - " + algObj.name + "</h3>";
 			}
+			else
+			{
+				out += "<h3>Alg " + option + "</h3>";
+			}
+			
+			// Status
+			switch (algObj.status)
+			{
+				case 0:
+					out += "<p class=\"inactive\">I don't use this algorithm yet.</p>";
+					break;
+				case -1:
+					out += "<p class=\"inactive\">I don't use this algorithm nowadays.</p>";
+					break;
+			}
+
+			// Render the table
+			out += "<table>";
+
+			// Render the alg
+			out += renderCaseAlg(algObj, "alg", false, viewportWidth);
+			
+			// Do any variations of the algorithm exist?
+			if (algObj.hasOwnProperty("vars"))
+			{
+				// Iterate through the variations of the algorithm
+				for (var varIdx = 0; varIdx < algObj.vars.length; varIdx++)
+				{
+					// Get the actual variation object
+					var varObj = algObj.vars[varIdx];
+					
+					// IE8 gets confused by a comma at the end of a list
+					if (varObj != null)
+					{
+						// Render the variation
+						out += renderCaseAlg(varObj, "var", true, viewportWidth);
+					}
+				}
+			}
+			
+			out += "</table>";
+			
+			option++;
 		}
-		
-		out += "</table>";
-		
-		option++;
 	}
 
 	return out;
@@ -148,29 +156,33 @@ function renderCaseLinks(caseObj, viewportWidth)
 	{
 		var viewObj = algSet.views[viewIdx];
 	
-		if (viewObj.hasOwnProperty("groups"))
+		// IE8 gets confused by a comma at the end of a list
+		if (viewObj != null)
 		{
-			// Iterate through the groups
-			for (var groupIdx = 0; groupIdx < viewObj.groups.length; groupIdx++)
+			if (viewObj.hasOwnProperty("groups"))
 			{
-				var groupObj = viewObj.groups[groupIdx];
-
-				if (groupObj.hasOwnProperty("wiki"))
+				// Iterate through the groups
+				for (var groupIdx = 0; groupIdx < viewObj.groups.length; groupIdx++)
 				{
-					// Iterate through the cases in the group
-					for (var caseIdx = 0; caseIdx < groupObj.cases.length; caseIdx++)
+					var groupObj = viewObj.groups[groupIdx];
+
+					// IE8 gets confused by a comma at the end of a list
+					if (groupObj != null)
 					{
-						// If this case has been found we have found the  anchor for the Wiki page!
-						if (groupObj.cases.indexOf(caseObj.id) >= 0)
+						if (groupObj.hasOwnProperty("wiki"))
 						{
-							wikiAnchor = groupObj.wiki;
-							if (groupObj.wiki.indexOf("#") >= 0)
+							// If this case has been found we have found the anchor for the Wiki page!
+							if (groupObj.cases.indexOf(caseObj.id) >= 0)
 							{
-								wikiLabel = algSet.header.id;
-							}
-							else
-							{
-								wikiLabel = groupObj.wiki;
+								wikiAnchor = groupObj.wiki;
+								if (groupObj.wiki.indexOf("#") >= 0)
+								{
+									wikiLabel = algSet.header.id;
+								}
+								else
+								{
+									wikiLabel = groupObj.wiki;
+								}
 							}
 						}
 					}

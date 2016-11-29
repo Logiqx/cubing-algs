@@ -46,41 +46,49 @@ function renderGridDataRows(viewObj, viewportWidth)
 	{
 		var rowObj = viewObj.rows[rowIdx];
 
-		// Render the table row
-		out += "<tr>";
-				
-		out += "<th class=\"name\">" + rowObj.name + "</th>";
-			
-		// Iterate through the cases in the group
-		for (var caseIdx = 0; caseIdx < rowObj.cases.length; caseIdx++)
+		// IE8 gets confused by a comma at the end of a list
+		if (rowObj != null)
 		{
-			out += "<td>";
-			
-			if (rowObj.cases[caseIdx] != null)
-			{
-				// Get the actual case object
-				var caseObj = algSet.cases[caseIds.indexOf(rowObj.cases[caseIdx])];
-
-				if (caseObj != null)
-				{
-					// Tooltip is shown on mouse hover
-					var tooltip = algSet.header.id + " " + caseObj.id;
-					if (caseObj.name != caseObj.id)
-					{
-						tooltip += " - " + caseObj.name;
-					}
+			// Render the table row
+			out += "<tr>";
 					
-					// Render the Id and Name
-					var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
-					out += "<abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
-							"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr>";
-				}
-			}
-			
-			out += "</td>";
-		}
+			out += "<th class=\"name\">" + rowObj.name + "</th>";
+				
+			// Iterate through the cases in the group
+			for (var caseIdx = 0; caseIdx < rowObj.cases.length; caseIdx++)
+			{
+				out += "<td>";
+				
+				var caseId = rowObj.cases[caseIdx];
+		
+				// Empty table cells are represented by NULL
+				if (caseId != null)
+				{
+					// Get the actual case object
+					var caseObj = algSet.cases[caseIds.indexOf(caseId)];
 
-		out += "</tr>";
+					// Defence coding prevents crash when refering to non-existent cases
+					if (caseObj != null)
+					{
+						// Tooltip is shown on mouse hover
+						var tooltip = algSet.header.id + " " + caseObj.id;
+						if (caseObj.name != caseObj.id)
+						{
+							tooltip += " - " + caseObj.name;
+						}
+						
+						// Render the Id and Name
+						var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
+						out += "<abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+								"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "/></abbr>";
+					}
+				}
+				
+				out += "</td>";
+			}
+
+			out += "</tr>";
+		}
 	}
 	
 	out += "</tbody>";
@@ -128,52 +136,60 @@ function renderTableDataCell(caseObj, useId, viewportWidth)
 		// Get the actual algorithm object
 		var algObj = caseObj.algs[algIdx];
 	
-		// Consider rendering the algorithm
-		if (algObj.status == 1)
+		// IE8 gets confused by a comma at the end of a list
+		if (algObj != null)
 		{
-			// Algorithm needs to have at least one "use"
-			for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
+			// Consider rendering the algorithm
+			if (algObj.status == 1)
 			{
-				// Algorithm needs to have the desired "use"
-				if (useId == null || algObj.uses[useIdx] == useId)
+				// Algorithm needs to have at least one "use"
+				for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
 				{
-					// viewportWidth < IPHONE_LANDSCAPE can only show one alg for each "use"
-					if (viewportWidth >= IPHONE_LANDSCAPE || uses.indexOf(algObj.uses[useIdx]) < 0)
+					// Algorithm needs to have the desired "use"
+					if (useId == null || algObj.uses[useIdx] == useId)
 					{
-						out += renderViewAlg(algObj, viewportWidth);
-						uses = uses.concat(algObj.uses)
-						algCount++;
-						break;
+						// viewportWidth < IPHONE_LANDSCAPE can only show one alg for each "use"
+						if (viewportWidth >= IPHONE_LANDSCAPE || uses.indexOf(algObj.uses[useIdx]) < 0)
+						{
+							out += renderViewAlg(algObj, viewportWidth);
+							uses = uses.concat(algObj.uses)
+							algCount++;
+							break;
+						}
 					}
 				}
 			}
-		}
-		
-		// Do any variations of the algorithm exist?
-		if (algObj.hasOwnProperty("vars"))
-		{
-			// Iterate through the variations of the algorithm
-			for (var varIdx = 0; varIdx < algObj.vars.length && algCount < maxCount; varIdx++)
+			
+			// Do any variations of the algorithm exist?
+			if (algObj.hasOwnProperty("vars"))
 			{
-				// Get the actual variation object
-				var varObj = algObj.vars[varIdx];
-				
-				// Consider rendering the algorithm
-				if (varObj.status == 1)
+				// Iterate through the variations of the algorithm
+				for (var varIdx = 0; varIdx < algObj.vars.length && algCount < maxCount; varIdx++)
 				{
-					// Variation needs to have at least one "use"
-					for (var useIdx = 0; useIdx < varObj.uses.length; useIdx++)
+					// Get the actual variation object
+					var varObj = algObj.vars[varIdx];
+					
+					// IE8 gets confused by a comma at the end of a list
+					if (varObj != null)
 					{
-						// Variation needs to have the desired "use"
-						if (useId == null || varObj.uses[useIdx] == useId)
+						// Consider rendering the algorithm
+						if (varObj.status == 1)
 						{
-							// viewportWidth < IPHONE_LANDSCAPE can only show one alg for each "use"
-							if (viewportWidth >= IPHONE_LANDSCAPE || uses.indexOf(varObj.uses[useIdx]) < 0)
+							// Variation needs to have at least one "use"
+							for (var useIdx = 0; useIdx < varObj.uses.length; useIdx++)
 							{
-								out += renderViewAlg(varObj, viewportWidth);
-								uses = uses.concat(varObj.uses)
-								algCount++;
-								break;
+								// Variation needs to have the desired "use"
+								if (useId == null || varObj.uses[useIdx] == useId)
+								{
+									// viewportWidth < IPHONE_LANDSCAPE can only show one alg for each "use"
+									if (viewportWidth >= IPHONE_LANDSCAPE || uses.indexOf(varObj.uses[useIdx]) < 0)
+									{
+										out += renderViewAlg(varObj, viewportWidth);
+										uses = uses.concat(varObj.uses)
+										algCount++;
+										break;
+									}
+								}
 							}
 						}
 					}
@@ -210,10 +226,13 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 	// Iterate through the cases in the group
 	for (var caseIdx = 0; caseIdx < groupObj.cases.length; caseIdx++)
 	{
-		if (groupObj.cases[caseIdx] != null)
+		var caseId = groupObj.cases[caseIdx];
+		
+		// IE8 gets confused by a comma at the end of a list
+		if (caseId != null)
 		{
 			// Get the actual case object
-			var caseObj = algSet.cases[caseIds.indexOf(groupObj.cases[caseIdx])];
+			var caseObj = algSet.cases[caseIds.indexOf(caseId)];
 
 			if (caseObj != null)
 			{
@@ -285,19 +304,23 @@ function renderViewOptions(viewId, viewportWidth)
 	out += "<p>Select view: <select id=\"viewList\" onChange=\"switchView()\"></p>";
 
 	// Iterate through the views
-    for (var viewIdx = 0; viewIdx < algSet.views.length; viewIdx++)
+	for (var viewIdx = 0; viewIdx < algSet.views.length; viewIdx++)
 	{
 		var viewObj = algSet.views[viewIdx];
 	
-		out += "<option value=\"" + viewObj.id + "\"";
-		
-		// Is this the selected view?
-		if (viewObj.id == viewId)
+		// IE8 gets confused by a comma at the end of a list
+		if (viewObj != null)
 		{
-			out += " selected";
+			out += "<option value=\"" + viewObj.id + "\"";
+			
+			// Is this the selected view?
+			if (viewObj.id == viewId)
+			{
+				out += " selected";
+			}
+			
+			out += ">" + viewObj.name + "</option>";
 		}
-		
-		out += ">" + viewObj.name + "</option>";
 	}
 	
 	// End of select element
@@ -321,23 +344,27 @@ function renderViewLinks(viewObj, viewportWidth)
 	{
 		var groupObj = viewObj.groups[groupIdx];
 
-		if (groupIdx > 0 && length > 0)
+		// IE8 gets confused by a comma at the end of a list
+		if (groupObj != null)
 		{
-			out += ", ";
-		}
-		
-		// Output the group title
-		if (groupObj.name != "")
-		{
-			out += "<a href=\"#" + viewObj.id + "_" + groupObj.id + "\">" + groupObj.name + "</a>";
-		}
-		
-		length += groupObj.name.length;
-		
-		if (viewObj.groups.length > 8 && length > 110)
-		{
-			out += "</p><p>";
-			length = 0;
+			if (groupIdx > 0 && length > 0)
+			{
+				out += ", ";
+			}
+			
+			// Output the group title
+			if (groupObj.name != "")
+			{
+				out += "<a href=\"#" + viewObj.id + "_" + groupObj.id + "\">" + groupObj.name + "</a>";
+			}
+			
+			length += groupObj.name.length;
+			
+			if (viewObj.groups.length > 8 && length > 110)
+			{
+				out += "</p><p>";
+				length = 0;
+			}
 		}
 	}
 
@@ -360,14 +387,20 @@ function renderView(viewId, viewportWidth)
 	// Iterate through the views
 	for (var viewIdx = 0; viewIdx < algSet.views.length; viewIdx++)
 	{
-		// Is this the desired view?
-		if (algSet.views[viewIdx].id == viewId)
+		var viewObj = algSet.views[viewIdx];
+		
+		// IE8 gets confused by a comma at the end of a list
+		if (viewObj != null)
 		{
-			found = true;
-			break;
+			// Is this the desired view?
+			if (viewObj.id == viewId)
+			{
+				found = true;
+				break;
+			}
 		}
 	}
-	
+
 	// Default to the the first view if viewId was not found
 	if (found == false)
 	{
@@ -424,80 +457,88 @@ function renderView(viewId, viewportWidth)
 	// Iterate through the views
 	for (var viewIdx = 0; viewIdx < algSet.views.length; viewIdx++)
 	{
-		// Is this the desired view?
-		if (algSet.views[viewIdx].id == viewId)
-		{
-			var viewObj = algSet.views[viewIdx];
-		
-			// Output the view title
-			if (viewObj.name != "")
-			{
-				// View title
-				out += "<h2>" + viewObj.name + "</h2>";
-				
-				// Browser title
-				document.title = algSet.header.id;
-			}
+		var viewObj = algSet.views[viewIdx];
 			
-			if (viewObj.hasOwnProperty("rows"))
+		// IE8 gets confused by a comma at the end of a list
+		if (viewObj != null)
+		{
+			// Is this the desired view?
+			if (viewObj.id == viewId)
 			{
-				// TODO - Estimate grid size; OLL has 8 columns, COLL has 6 columns, PLL has 5 columns
-				if (viewportWidth < GALAXY_S3_LANDSCAPE)
+				// Output the view title
+				if (viewObj.name != "")
 				{
-					if (getViewportHeight() >= GALAXY_S3_LANDSCAPE)
+					// View title
+					out += "<h2>" + viewObj.name + "</h2>";
+					
+					// Browser title
+					document.title = algSet.header.id;
+				}
+				
+				if (viewObj.hasOwnProperty("rows"))
+				{
+					// TODO - Estimate grid size; OLL has 8 columns, COLL has 6 columns, PLL has 5 columns
+					if (viewportWidth < GALAXY_S3_LANDSCAPE)
 					{
-						out += "<p class=\"alert\">Rotate to view in landscape (horizontal) orientation</p>";
+						if (getViewportHeight() >= GALAXY_S3_LANDSCAPE)
+						{
+							out += "<p class=\"alert\">Rotate to view in landscape (horizontal) orientation</p>";
+						}
+						else
+						{
+							out += "<p class=\"alert\">Sorry. Your display is too small for the grid view!</p>";
+						}
 					}
 					else
 					{
-						out += "<p class=\"alert\">Sorry. Your display is too small for the grid view!</p>";
+						// Render the table
+						out += "<table>";
+						out += renderGridHeaderRow(viewObj, viewportWidth);
+						out += renderGridDataRows(viewObj, viewportWidth);
+						out += "</table>";
 					}
 				}
-				else
+				else if (viewObj.hasOwnProperty("groups"))
 				{
-					// Render the table
-					out += "<table>";
-					out += renderGridHeaderRow(viewObj, viewportWidth);
-					out += renderGridDataRows(viewObj, viewportWidth);
-					out += "</table>";
-				}
-			}
-			else if (viewObj.hasOwnProperty("groups"))
-			{
-				// Render the view links (i.e. links to headers / anchors)
-				if (viewportWidth >= IPAD_LANDSCAPE)
-				{
-					out += renderViewLinks(viewObj, viewportWidth);
+					// Render the view links (i.e. links to headers / anchors)
+					if (viewportWidth >= IPAD_LANDSCAPE)
+					{
+						out += renderViewLinks(viewObj, viewportWidth);
+					}
+					
+					// Iterate through the groups
+					for (var groupIdx = 0; groupIdx < viewObj.groups.length; groupIdx++)
+					{
+						var groupObj = viewObj.groups[groupIdx];
+				
+						// IE8 gets confused by a comma at the end of a list
+						if (groupObj != null)
+						{
+							// Create anchor for the group
+							out += "<a name=\"" + viewObj.id + "_" + groupObj.id + "\" />";
+					
+							// Output the group title
+							if (groupObj.name != "")
+							{
+								out += "<h3>" + groupObj.name + "</h3>";
+							}
+
+							// Output the group description
+							if (groupObj.desc)
+							{
+								out += "<p>" + replaceAbbr(groupObj.desc) + "</p>";
+							}
+
+							// Render the table
+							out += "<table>";
+							out += renderTableDataRows(viewObj, groupObj, viewportWidth);
+							out += "</table>";
+						}
+					}
 				}
 				
-				// Iterate through the groups
-				for (var groupIdx = 0; groupIdx < viewObj.groups.length; groupIdx++)
-				{
-					var groupObj = viewObj.groups[groupIdx];
-			
-					// Create anchor for the group
-					out += "<a name=\"" + viewObj.id + "_" + groupObj.id + "\" />";
-			
-					// Output the group title
-					if (groupObj.name != "")
-					{
-						out += "<h3>" + groupObj.name + "</h3>";
-					}
-
-					// Output the group description
-					if (groupObj.desc)
-					{
-						out += "<p>" + replaceAbbr(groupObj.desc) + "</p>";
-					}
-
-					// Render the table
-					out += "<table>";
-					out += renderTableDataRows(viewObj, groupObj, viewportWidth);
-					out += "</table>";
-				}
+				found = true;
 			}
-			
-			found = true;
 		}
 	}
 	

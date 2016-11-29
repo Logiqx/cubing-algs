@@ -246,26 +246,32 @@ function replaceAbbr(desc)
 	// Iterate through the cases
 	for (var abbrIdx = 0; abbrIdx < abbrs.length; abbrIdx++)
 	{
-		// Current case
-		var tokenUpper = "[" + abbrs[abbrIdx].name + "]";
+		var abbrObj = abbrs[abbrIdx];
 
-		// Handle abbreviation
-		while (desc.indexOf(tokenUpper) >= 0)
+		// IE8 gets confused by a comma at the end of a list
+		if (abbrObj != null)
 		{
-			var abbr = "<abbr class=\"dotted\" title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name + "</abbr>";
+			// Current case
+			var tokenUpper = "[" + abbrObj.name + "]";
 
-			desc = desc.replace(tokenUpper, abbr);
-		}
+			// Handle abbreviation
+			while (desc.indexOf(tokenUpper) >= 0)
+			{
+				var abbr = "<abbr class=\"dotted\" title=\"" + abbrObj.desc + "\">" + abbrObj.name + "</abbr>";
 
-		// Current case
-		var tokenLower = "[" + abbrs[abbrIdx].name.toLowerCase() + "]";
+				desc = desc.replace(tokenUpper, abbr);
+			}
 
-		// Handle abbreviation
-		while (desc.indexOf(tokenLower) >= 0)
-		{
-			var abbr = "<abbr class=\"dotted\" title=\"" + abbrs[abbrIdx].desc + "\">" + abbrs[abbrIdx].name.toLowerCase() + "</abbr>";
+			// Current case
+			var tokenLower = "[" + abbrObj.name.toLowerCase() + "]";
 
-			desc = desc.replace(tokenLower, abbr);
+			// Handle abbreviation
+			while (desc.indexOf(tokenLower) >= 0)
+			{
+				var abbr = "<abbr class=\"dotted\" title=\"" + abbrObj.desc + "\">" + abbrObj.name.toLowerCase() + "</abbr>";
+
+				desc = desc.replace(tokenLower, abbr);
+			}
 		}
 	}
 

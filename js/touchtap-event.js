@@ -87,12 +87,12 @@
    * Initialises the library.
    */
   function init() {
-    // createEvent() was introduced in IE 9
+    // createEvent() was introduced in IE9
     if (document.createEvent) {
       touchTapEvent = document.createEvent('CustomEvent');
       touchTapEvent.initEvent('touchtap', true, true);
     }
-    // addEventListener() was introduced in IE 9
+    // addEventListener() was introduced in IE9
     if (document.addEventListener) {
       document.addEventListener('touchstart', touchstart, false);
       document.addEventListener('touchend', touchend, false);
