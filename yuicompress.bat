@@ -13,7 +13,7 @@ java -jar yuicompressor-2.4.8.jar js/lib.js -o js/lib-min.js
 java -jar yuicompressor-2.4.8.jar js/view.js -o js/view-min.js
 java -jar yuicompressor-2.4.8.jar js/case.js -o js/case-min.js
 
-COPY / b js\touchtap-event-min.js+js\abbr-touch-min.js+js\abbr-min.js+js\lib-min.js+js\view-min.js+js\case-min.js js\common-min.js
+COPY /b js\touchtap-event-min.js+js\abbr-touch-min.js+js\abbr-min.js+js\lib-min.js+js\view-min.js+js\case-min.js js\common-min.js
 
 java -jar yuicompressor-2.4.8.jar data/2aoll.js -o data/2aoll-min.js
 java -jar yuicompressor-2.4.8.jar data/2apll.js -o data/2apll-min.js
