@@ -239,7 +239,7 @@ function addEventHandler(target, eventType, handler)
 		hashChangeFallback(target, handler);
 	}
 	else
-    {
+	{
 		// The addEventListener() method is supported by most browsers, including IE9 and newer
 		if (target.addEventListener)
 		{
@@ -250,7 +250,7 @@ function addEventHandler(target, eventType, handler)
 		{
 			target.attachEvent(eventAttribute, handler);
 		}
-    }
+	}
 }
 
 //
@@ -265,30 +265,30 @@ function hashChangeFallback(target, handler)
 	// Bind the handler
 	target.onhashchange = handler;
 	
-    (function(target) {
-        var location = target.location,
-            oldURL = location.href,
-            oldHash = location.hash;
+	(function(target) {
+		var location = target.location,
+			oldURL = location.href,
+			oldHash = location.hash;
 
-        // check the location hash on a 100ms interval
-        setInterval(function() {
-            var newURL = location.href,
-                newHash = location.hash;
+		// check the location hash on a 100ms interval
+		setInterval(function() {
+			var newURL = location.href,
+				newHash = location.hash;
 
-            // if the hash has changed and a handler has been bound...
-            if ( newHash != oldHash && typeof target.onhashchange === "function" ) {
-                // execute the handler
-                target.onhashchange({
-                    type: "hashchange",
-                    oldURL: oldURL,
-                    newURL: newURL
-                });
+			// if the hash has changed and a handler has been bound...
+			if ( newHash != oldHash && typeof target.onhashchange === "function" ) {
+				// execute the handler
+				target.onhashchange({
+					type: "hashchange",
+					oldURL: oldURL,
+					newURL: newURL
+				});
 
-                oldURL = newURL;
-                oldHash = newHash;
-            }
-        }, 100);
-    })(window);
+				oldURL = newURL;
+				oldHash = newHash;
+			}
+		}, 100);
+	})(window);
 }
 
 //

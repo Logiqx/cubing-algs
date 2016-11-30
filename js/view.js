@@ -3,7 +3,7 @@
 //
 function renderGridHeaderRow(viewObj, viewportWidth)
 {
-    var out = "";
+	var out = "";
 	
 	// Render the table header
 	out += "<thead>";
@@ -31,7 +31,7 @@ function renderGridHeaderRow(viewObj, viewportWidth)
 function renderGridDataRows(viewObj, viewportWidth)
 {
 	// Initialisation
-    var out = "";
+	var out = "";
 	
 	// Determine the image sizes for the grid - large icons are perfect on the iPad (landscape)
 	var imgSize = viewportWidth >= IPAD_LANDSCAPE ? "96" : "64";
@@ -102,7 +102,7 @@ function renderGridDataRows(viewObj, viewportWidth)
 function renderViewAlg(algObj, viewportWidth)
 {
 	// Initialisation
-    var out = "";
+	var out = "";
 	var uses = getUses(algObj);
 	
 	// Show "uses" as superscript
@@ -125,7 +125,7 @@ function renderViewAlg(algObj, viewportWidth)
 //
 function renderTableDataCell(caseObj, useId, viewportWidth)
 {
-    var out = "";
+	var out = "";
 	var uses = [];
 	var algCount = 0;
 	var maxCount = viewportWidth >= IPHONE_LANDSCAPE ? 4 : 2;
@@ -213,7 +213,7 @@ function renderTableDataCell(caseObj, useId, viewportWidth)
 function renderTableDataRows(viewObj, groupObj, viewportWidth)
 {
 	// Initialisation
-    var out = "";
+	var out = "";
 	
 	// Determine the image size - Phones should use small icons when in portrait mode
 	var imgSize = viewportWidth >= IPHONE_LANDSCAPE ? "96" : "64";
@@ -298,7 +298,7 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 //
 function renderViewOptions(viewId, viewportWidth)
 {
-    var out = "";
+	var out = "";
 
 	// Create select element for available views
 	out += "<p>Select view: <select id=\"viewList\" onChange=\"switchView()\"></p>";
@@ -334,7 +334,7 @@ function renderViewOptions(viewId, viewportWidth)
 //
 function renderViewLinks(viewObj, viewportWidth)
 {
-    var out = "";
+	var out = "";
 	var length = 0;
 
 	out += "<p>";
@@ -379,9 +379,9 @@ function renderViewLinks(viewObj, viewportWidth)
 function renderView(viewId, viewportWidth)
 {
 	// Initialisation
-    var out = "";
+	var out = "";
 	
-    // Search for the viewId
+	// Search for the viewId
 	var found = false;
 
 	// Iterate through the views
@@ -545,7 +545,7 @@ function renderView(viewId, viewportWidth)
 	// Output footer message
 	out += footer();
 	
-    document.getElementById("view").innerHTML = out;
+	document.getElementById("view").innerHTML = out;
 }
 
 //

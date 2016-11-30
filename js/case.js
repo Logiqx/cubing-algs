@@ -4,7 +4,7 @@
 function renderCaseAlg(algObj, style, padding, viewportWidth)
 {
 	// Initialisation
-    var out = "";
+	var out = "";
 	var uses = getUses(algObj);
 	
 	// Show "uses" as superscript
@@ -51,7 +51,7 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 function renderCaseAlgs(caseObj, viewportWidth)
 {
 	// Initialisation
-    var out = "";
+	var out = "";
 	var option = 1;
 	
 	// Iterate through the algorithms
@@ -123,7 +123,7 @@ function renderCaseAlgs(caseObj, viewportWidth)
 function renderCaseLinks(caseObj, viewportWidth)
 {
 	// Initialisation
-    var out = "";
+	var out = "";
 
 	// Output links title
 	out += "<h3>Links</h3>";
@@ -152,7 +152,7 @@ function renderCaseLinks(caseObj, viewportWidth)
 	}
 	
 	// Iterate through the views
-    for (var viewIdx = 0; wikiAnchor == "" && viewIdx < algSet.views.length; viewIdx++)
+	for (var viewIdx = 0; wikiAnchor == "" && viewIdx < algSet.views.length; viewIdx++)
 	{
 		var viewObj = algSet.views[viewIdx];
 	
@@ -206,7 +206,7 @@ function renderCaseLinks(caseObj, viewportWidth)
 function renderCase(caseId, viewportWidth)
 {
 	// Initialisation
-    var out = "";
+	var out = "";
 	
 	// Determine the image size
 	var imgSize = viewportWidth >= IPHONE_LANDSCAPE ? "128" : "96";
@@ -263,7 +263,7 @@ function renderCase(caseId, viewportWidth)
 	out += footer();
 	
 	// Update the HTML document
-    document.getElementById("view").innerHTML = out;
+	document.getElementById("view").innerHTML = out;
 }
 
 //
