@@ -1,7 +1,7 @@
 //
 // Render algorithm
 //
-function renderCaseAlg(algObj, style, padding, viewportWidth)
+function renderCaseAlg(algObj, style, padding, width)
 {
 	// Initialisation
 	var out = "";
@@ -22,7 +22,7 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 	
 	// Wide displays - near perfect on iPad (portrait)
 	// TODO - Two columns of 384 pixels wide?
-	if (viewportWidth >= IPAD_PORTRAIT)
+	if (width >= IPAD_PORTRAIT)
 	{
 		out += "<tr>";
 		out += "<td class=\"" + style + inactive + "\">" + algObj.alg + uses + "</td>";
@@ -48,7 +48,7 @@ function renderCaseAlg(algObj, style, padding, viewportWidth)
 //
 // Render algorithms for a specific case
 //
-function renderCaseAlgs(caseObj, viewportWidth)
+function renderCaseAlgs(caseObj, width)
 {
 	// Initialisation
 	var out = "";
@@ -88,7 +88,7 @@ function renderCaseAlgs(caseObj, viewportWidth)
 			out += "<table>";
 
 			// Render the alg
-			out += renderCaseAlg(algObj, "alg", false, viewportWidth);
+			out += renderCaseAlg(algObj, "alg", false, width);
 			
 			// Do any variations of the algorithm exist?
 			if (algObj.hasOwnProperty("vars"))
@@ -103,7 +103,7 @@ function renderCaseAlgs(caseObj, viewportWidth)
 					if (varObj != null)
 					{
 						// Render the variation
-						out += renderCaseAlg(varObj, "var", true, viewportWidth);
+						out += renderCaseAlg(varObj, "var", true, width);
 					}
 				}
 			}
@@ -120,7 +120,7 @@ function renderCaseAlgs(caseObj, viewportWidth)
 //
 // Render links for a specific case
 //
-function renderCaseLinks(caseObj, viewportWidth)
+function renderCaseLinks(caseObj, width)
 {
 	// Initialisation
 	var out = "";
@@ -203,13 +203,13 @@ function renderCaseLinks(caseObj, viewportWidth)
 //
 // Render the case
 //
-function renderCase(caseId, viewportWidth)
+function renderCase(caseId, width)
 {
 	// Initialisation
 	var out = "";
 	
 	// Determine the image size
-	var imgSize = viewportWidth >= IPHONE_LANDSCAPE ? "128" : "96";
+	var imgSize = width >= IPHONE_LANDSCAPE ? "128" : "96";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -249,10 +249,10 @@ function renderCase(caseId, viewportWidth)
 		out += "<p>Probability = " + caseObj.prob + "</p>";
 
 		// Render the algs
-		out += renderCaseAlgs(caseObj, viewportWidth);
+		out += renderCaseAlgs(caseObj, width);
 
 		// Render the links
-		out += renderCaseLinks(caseObj, viewportWidth);
+		out += renderCaseLinks(caseObj, width);
 	}
 	else
 	{
@@ -262,12 +262,13 @@ function renderCase(caseId, viewportWidth)
 	// Output footer message
 	out += footer();
 	
-	// Update the HTML document
+	// Update the HTML
 	document.getElementById("view").innerHTML = out;
 }
 
 //
 // Switch to a specific case
+// Invoked from <i class="clicky ..." onclick="switchCase('...')"><br/></i>
 //
 function switchCase(caseId)
 {
@@ -288,12 +289,13 @@ function switchCase(caseId)
 		// Push state to history
 		history.pushState(obj, title, url);
 	
-		// Render the view
-		processHash();
+		// Render the page - pushState() never causes a "popstate" or "hashchange" event
+		renderPage(hash);
 	}
 	catch (e)
 	{
-		// Update the URL, forcing a pop event in Chrome and thus the page to be rendered
+		// Update the browser history and render the page using a "hashchange" event
+		// Required prior to Chrome 5, Firefox 4 (unconfirmed), IE10, Opera 11, Safari 5.0
 		window.location.hash = hash;
 	}
 

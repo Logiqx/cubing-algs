@@ -1,7 +1,7 @@
 //
 // Render grid header row
 //
-function renderGridHeaderRow(viewObj, viewportWidth)
+function renderGridHeaderRow(viewObj, width)
 {
 	var out = "";
 	
@@ -28,13 +28,13 @@ function renderGridHeaderRow(viewObj, viewportWidth)
 //
 // Render grid data rows
 //
-function renderGridDataRows(viewObj, viewportWidth)
+function renderGridDataRows(viewObj, width)
 {
 	// Initialisation
 	var out = "";
 	
 	// Determine the image sizes for the grid - large icons are perfect on the iPad (landscape)
-	var imgSize = viewportWidth >= IPAD_LANDSCAPE ? "96" : "64";
+	var imgSize = width >= IPAD_LANDSCAPE ? "96" : "64";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -99,7 +99,7 @@ function renderGridDataRows(viewObj, viewportWidth)
 //
 // Render an algorithm
 //
-function renderViewAlg(algObj, viewportWidth)
+function renderViewAlg(algObj, width)
 {
 	// Initialisation
 	var out = "";
@@ -123,12 +123,12 @@ function renderViewAlg(algObj, viewportWidth)
 //
 // Render algs for a table data cell
 //
-function renderTableDataCell(caseObj, useId, viewportWidth)
+function renderTableDataCell(caseObj, useId, width)
 {
 	var out = "";
 	var uses = [];
 	var algCount = 0;
-	var maxCount = viewportWidth >= IPHONE_LANDSCAPE ? 4 : 2;
+	var maxCount = width >= IPHONE_LANDSCAPE ? 4 : 2;
 		
 	// Iterate through the algorithms
 	for (var algIdx = 0; algIdx < caseObj.algs.length && algCount < maxCount; algIdx++)
@@ -148,10 +148,10 @@ function renderTableDataCell(caseObj, useId, viewportWidth)
 					// Algorithm needs to have the desired "use"
 					if (useId == null || algObj.uses[useIdx] == useId)
 					{
-						// viewportWidth < IPHONE_LANDSCAPE can only show one alg for each "use"
-						if (viewportWidth >= IPHONE_LANDSCAPE || uses.indexOf(algObj.uses[useIdx]) < 0)
+						// width < IPHONE_LANDSCAPE can only show one alg for each "use"
+						if (width >= IPHONE_LANDSCAPE || uses.indexOf(algObj.uses[useIdx]) < 0)
 						{
-							out += renderViewAlg(algObj, viewportWidth);
+							out += renderViewAlg(algObj, width);
 							uses = uses.concat(algObj.uses)
 							algCount++;
 							break;
@@ -181,10 +181,10 @@ function renderTableDataCell(caseObj, useId, viewportWidth)
 								// Variation needs to have the desired "use"
 								if (useId == null || varObj.uses[useIdx] == useId)
 								{
-									// viewportWidth < IPHONE_LANDSCAPE can only show one alg for each "use"
-									if (viewportWidth >= IPHONE_LANDSCAPE || uses.indexOf(varObj.uses[useIdx]) < 0)
+									// width < IPHONE_LANDSCAPE can only show one alg for each "use"
+									if (width >= IPHONE_LANDSCAPE || uses.indexOf(varObj.uses[useIdx]) < 0)
 									{
-										out += renderViewAlg(varObj, viewportWidth);
+										out += renderViewAlg(varObj, width);
 										uses = uses.concat(varObj.uses)
 										algCount++;
 										break;
@@ -210,13 +210,13 @@ function renderTableDataCell(caseObj, useId, viewportWidth)
 //
 // Render table data rows
 //
-function renderTableDataRows(viewObj, groupObj, viewportWidth)
+function renderTableDataRows(viewObj, groupObj, width)
 {
 	// Initialisation
 	var out = "";
 	
 	// Determine the image size - Phones should use small icons when in portrait mode
-	var imgSize = viewportWidth >= IPHONE_LANDSCAPE ? "96" : "64";
+	var imgSize = width >= IPHONE_LANDSCAPE ? "96" : "64";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -240,7 +240,7 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 				out += "<tr>";
 				
 				// Do not display id on phones (portrait)
-				if (viewportWidth >= IPHONE_LANDSCAPE)
+				if (width >= IPHONE_LANDSCAPE)
 				{
 					// Render the Id
 					out += "<td class=\"id\">" + caseObj.id + "</td>";
@@ -259,13 +259,13 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "><br/></i></abbr></td>";
 
 				// Iterate through the uses - 2 columns are perfect on the iPad (landscape)
-				if (viewportWidth >= IPAD_LANDSCAPE)
+				if (width >= IPAD_LANDSCAPE)
 				{
 					for (var useIdx in algSet.header.uses)
 					{
 						// Render the algs (specific use)
 						out += "<td class=\"alg\">";
-						out += renderTableDataCell(caseObj, algSet.header.uses[useIdx].id, viewportWidth);
+						out += renderTableDataCell(caseObj, algSet.header.uses[useIdx].id, width);
 						out += "</td>";
 					}
 				}
@@ -273,12 +273,12 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 				{
 					// Render the algs (any use)
 					out += "<td class=\"alg\">";
-					out += renderTableDataCell(caseObj, null, viewportWidth);
+					out += renderTableDataCell(caseObj, null, width);
 					out += "</td>";
 				}
 					
 				// Do not display probability on phones (portrait)
-				if (viewportWidth >= IPHONE_LANDSCAPE)
+				if (width >= IPHONE_LANDSCAPE)
 				{
 					out += "<td class=\"prob\">" + caseObj.prob + "</td>";
 				}
@@ -296,7 +296,7 @@ function renderTableDataRows(viewObj, groupObj, viewportWidth)
 //
 // Render options as drop-down lists
 //
-function renderViewOptions(viewId, viewportWidth)
+function renderViewOptions(viewId, width)
 {
 	var out = "";
 
@@ -332,7 +332,7 @@ function renderViewOptions(viewId, viewportWidth)
 //
 // Render contents - links to sections
 //
-function renderViewLinks(viewObj, viewportWidth)
+function renderViewLinks(viewObj, width)
 {
 	var out = "";
 	var length = 0;
@@ -376,7 +376,7 @@ function renderViewLinks(viewObj, viewportWidth)
 //
 // Render the selected view
 //
-function renderView(viewId, viewportWidth)
+function renderView(viewId, width)
 {
 	// Initialisation
 	var out = "";
@@ -451,7 +451,7 @@ function renderView(viewId, viewportWidth)
 	if (algSet.views.length > 1)
 	{
 		// Render the options
-		out += renderViewOptions(viewId, viewportWidth);
+		out += renderViewOptions(viewId, width);
 	}
 
 	// Iterate through the views
@@ -478,7 +478,7 @@ function renderView(viewId, viewportWidth)
 				if (viewObj.hasOwnProperty("rows"))
 				{
 					// TODO - Estimate grid size; OLL has 8 columns, COLL has 6 columns, PLL has 5 columns
-					if (viewportWidth < GALAXY_S3_LANDSCAPE)
+					if (width < GALAXY_S3_LANDSCAPE)
 					{
 						if (getViewportHeight() >= GALAXY_S3_LANDSCAPE)
 						{
@@ -493,17 +493,17 @@ function renderView(viewId, viewportWidth)
 					{
 						// Render the table
 						out += "<table>";
-						out += renderGridHeaderRow(viewObj, viewportWidth);
-						out += renderGridDataRows(viewObj, viewportWidth);
+						out += renderGridHeaderRow(viewObj, width);
+						out += renderGridDataRows(viewObj, width);
 						out += "</table>";
 					}
 				}
 				else if (viewObj.hasOwnProperty("groups"))
 				{
 					// Render the view links (i.e. links to headers / anchors)
-					if (viewportWidth >= IPAD_LANDSCAPE)
+					if (width >= IPAD_LANDSCAPE)
 					{
-						out += renderViewLinks(viewObj, viewportWidth);
+						out += renderViewLinks(viewObj, width);
 					}
 					
 					// Iterate through the groups
@@ -531,7 +531,7 @@ function renderView(viewId, viewportWidth)
 
 							// Render the table
 							out += "<table>";
-							out += renderTableDataRows(viewObj, groupObj, viewportWidth);
+							out += renderTableDataRows(viewObj, groupObj, width);
 							out += "</table>";
 						}
 					}
@@ -545,11 +545,13 @@ function renderView(viewId, viewportWidth)
 	// Output footer message
 	out += footer();
 	
+	// Update the HTML
 	document.getElementById("view").innerHTML = out;
 }
 
 //
 // Switch to the selected view
+// Invoked from <select id="viewList" onChange="switchView()">
 //
 function switchView()
 {
@@ -557,6 +559,7 @@ function switchView()
 	storeWindowOffset();
 
 	// Determine the view from the dropdown box
+	// TODO - parameter for "listId"
 	var selectElement = document.getElementById("viewList");
 	var viewId = selectElement.options[selectElement.selectedIndex].value;
 
@@ -574,12 +577,13 @@ function switchView()
 		// Push state to history
 		history.pushState(obj, title, url);
 
-		// Render the view
-		processHash();		
+		// Render the page - pushState() never causes a "popstate" or "hashchange" event
+		renderPage(hash);		
 	}
 	catch (e)
 	{
-		// Update the URL, forcing a pop event in Chrome and thus the page to be rendered
+		// Update the browser history and render the page using a "hashchange" event
+		// Required prior to Chrome 5, Firefox 4 (unconfirmed), IE10, Opera 11, Safari 5.0
 		window.location.hash = hash;
 	}
 }

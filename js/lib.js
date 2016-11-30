@@ -28,6 +28,21 @@ Unfortunately there are a number of subtle complications which are described bel
    Solution: Rendering is initiated from a single method and will skip unnecessary rendering
    Note: Some browsers have more events than others but it doesn't matter with this fix!
 
+   
+Observations
+============
+
+The back/forward buttons have the following effect:
+
+Chrome 1 to 4 = "hashchange" only      Chrome 5 = BROKEN, Chrome 6 onwards = "popstate" then "hashchange"
+Firefox 3.5 + 3.0 + 3.6 = TBC / TODO   Firefox 4 + 5 = "popstate" only, Firefox 6 onwards = "popstate" then "hashchange" 
+IE8 + IE9 = "hashchange" only          IE10 = "popstate" then "hashchange", *IE11* = "hashchange" then "popstate"
+Opera 10 + 10.50 = "hashchange" only   Opera 11 = "popstate" then "hashchange"
+Safari 4 = "hashchange" only           Safari 5 = "popstate" then "hashchange" + unexpectedly calls "popstate" on load
+Edge = "popstate" then "hashchange"    N.B. window.alert() can't be used inside "popstate" handler
+
+Potential reference - https://github.com/browserstate/history.js/wiki/The-State-of-the-HTML5-History-API
+
 
 Summary
 =======
@@ -49,7 +64,7 @@ function debugMessage(method, message)
 	var out = "";
 	
 	out += "<h2>Houston, we have a problem</h2>";
-	out += "<h3>Browser</h3><p>You need at least IE8, Chrome 6.0, Firefox 3.5, Safari 4.0 or Opera 10</p>";
+	out += "<h3>Browser</h3><p>You need at least IE8, Chrome 6.0, Firefox 4.0, Safari 4.0 or Opera 10</p>";
 	out += "<h3>Debug</h3><p>" + method + ": " + message + "</p>";
 
 	return out;
@@ -203,22 +218,29 @@ function getUses(algObj)
 //
 function initAbbrTouch()
 {
-	// Initialise abbr-touch for the "view" division, providing a custom tap handler
-	abbrTouch(document.querySelector('#view'), function (target, title, touchX, touchY) {
-		var tooltip = document.querySelector('#tooltip');
-		tooltip.innerHTML = title;
-		tooltip.style.left = ((touchX - tooltip.clientWidth / 2) > window.pageXOffset ? (touchX - tooltip.clientWidth / 2) : window.pageXOffset) + 'px';
-		tooltip.style.top = ((touchY - 50) > window.pageYOffset ? (touchY - 50) : window.pageYOffset) + 'px';
-		var timestamp = (new Date()).getTime();
-		tooltip.setAttribute('data-timestamp', timestamp);
-		document.body.appendChild(tooltip);
+	try
+	{
+		// Initialise abbr-touch for the "view" division, providing a custom tap handler
+		abbrTouch(document.querySelector('#view'), function (target, title, touchX, touchY) {
+			var tooltip = document.querySelector('#tooltip');
+			tooltip.innerHTML = title;
+			tooltip.style.left = ((touchX - tooltip.clientWidth / 2) > window.pageXOffset ? (touchX - tooltip.clientWidth / 2) : window.pageXOffset) + 'px';
+			tooltip.style.top = ((touchY - 50) > window.pageYOffset ? (touchY - 50) : window.pageYOffset) + 'px';
+			var timestamp = (new Date()).getTime();
+			tooltip.setAttribute('data-timestamp', timestamp);
+			document.body.appendChild(tooltip);
 
-		setTimeout(function () {
-			if (tooltip.getAttribute('data-timestamp') == timestamp) {
-				tooltip.removeAttribute('data-timestamp');
-			}
-		}, 3000);
-	}, true);
+			setTimeout(function () {
+				if (tooltip.getAttribute('data-timestamp') == timestamp) {
+					tooltip.removeAttribute('data-timestamp');
+				}
+			}, 3000);
+		}, true);
+	}
+	catch (err)
+	{
+		// Non-critical error can be ignored
+	}
 }
 
 //
@@ -255,7 +277,7 @@ function addEventHandler(target, eventType, handler)
 
 //
 // Fallback for the "hashchange" event which is not implemented in legacy browsers
-// Required prior to Chrome 5.0, Firefox 3.6, IE8.0, Opera 10.6, Safari 5.0
+// Required prior to Chrome 5, Firefox 3.6, IE8, Opera 10.6, Safari 5.0
 // https://developer.mozilla.org/en-US/docs/Web/Events/hashchange
 // https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onhashchange
 // http://stackoverflow.com/questions/9339865/get-the-hashchange-event-to-work-in-all-browsers-including-ie7
@@ -265,20 +287,24 @@ function hashChangeFallback(target, handler)
 	// Bind the handler
 	target.onhashchange = handler;
 	
-	(function(target) {
+	(function(target)
+	{
 		var location = target.location,
 			oldURL = location.href,
 			oldHash = location.hash;
 
 		// check the location hash on a 100ms interval
-		setInterval(function() {
+		setInterval(function()
+		{
 			var newURL = location.href,
 				newHash = location.hash;
 
 			// if the hash has changed and a handler has been bound...
-			if ( newHash != oldHash && typeof target.onhashchange === "function" ) {
+			if (newHash != oldHash && typeof target.onhashchange === "function")
+			{
 				// execute the handler
-				target.onhashchange({
+				target.onhashchange(
+				{
 					type: "hashchange",
 					oldURL: oldURL,
 					newURL: newURL
@@ -294,62 +320,140 @@ function hashChangeFallback(target, handler)
 //
 // Remember the last URL fragment so unnecessary re-rendering can be avoided
 //
-var lastFragment = "n/a";
-var lastViewportWidth = getViewportWidth();
+var lastHash = "n/a";
+var lastWidth = getViewportWidth();
 
 //
 // Process the URL fragment which starts with a hash
 //
-function processHash()
+function renderPage(hash)
 {
 	try
 	{
+		// Interpret the location hash to determine the view
+		var viewParts = hash.substring(1).split("_");
+		var viewType = viewParts[0];
+		var viewId = viewParts[1];
+
 		// Get the viewport width
-		var viewportWidth = getViewportWidth();
+		var width = getViewportWidth();
 
-		// Interpret the URL fragment (everything after the hash) as a parameter
-		var urlFragment = window.location.hash.substring(1);
-
-		if (urlFragment != lastFragment || viewportWidth != lastViewportWidth)
+		// Render the page
+		if (viewType == "case")
 		{
-			// First part is the parameter name 
-			var viewParts = urlFragment.split("_");
-			var viewType = viewParts[0];
-			var viewId = viewParts[1];
-
-			// Render the page
-			if (viewType == "case")
-			{
-				renderCase(viewId, viewportWidth);
-			}
-			else
-			{
-				renderView(viewType, viewportWidth);
-			}
-		
-			// Record rendering arguments
-			lastFragment = urlFragment;
-			lastViewportWidth = viewportWidth;
-
-			// Initialise abbreviations on touch screen devices
-			try
-			{
-				initAbbrTouch();
-			}
-			catch (err)
-			{
-				// Non-critical error can be ignored
-			}
+			renderCase(viewId, width);
 		}
+		else
+		{
+			renderView(viewType, width);
+		}
+	
+		// Record rendering arguments
+		lastHash = hash;
+		lastWidth = width;
+
+		// Initialise abbreviations on touch screen devices
+		initAbbrTouch();
 	}
 	catch (err)
 	{
-		var message = debugMessage("processHash", err.message);
+		var message = debugMessage("renderPage", err.message);
 		
 		document.getElementById("view").innerHTML = message;
 	}
 }
 
+//
+// This runs when the has portion of the URL changes (i.e. "onhashchange" event handler)
+//
+function hashChangeHandler()
+{
+	try
+	{
+		// Get the hash information from the URL
+		var hash = window.location.hash;
+
+		// Check if the "popstate" event has rendered the page
+		if (hash != lastHash)
+		{
+			renderPage(hash);
+		}
+	}
+	catch (err)
+	{
+		var message = debugMessage("hashChangeHandler", err.message);
+		
+		document.getElementById("view").innerHTML = message;
+	}
+}
+
+//
+// This runs when the browser is resized (i.e. "onresize" event handler)
+//
+function resizeHandler()
+{
+	try
+	{
+		// Get the viewport width
+		var width = getViewportWidth();
+
+		// Decide if the page needs to be rendered
+		// TODO - intelligent handling of  width changes
+		if (width != lastWidth)
+		{
+			renderPage(lastHash);
+		}
+	}
+	catch (err)
+	{
+		var message = debugMessage("resizeHandler", err.message);
+		
+		document.getElementById("view").innerHTML = message;
+	}
+}
+
+//
+// This runs when the browser is resized (i.e. "onresize" event handler)
+//
+function popStateHandler(e)
+{
+	try
+	{
+		if (e.state != null)
+		{
+			// Hash is provided by the event state
+			var hash = e.state.hash;
+			
+			// Check if the "hashchange" event has rendered the page
+			if (hash != lastHash)
+			{
+				// Render the page
+				renderPage(hash);
+			}
+			
+			// Scroll to the correct position but wait a second or Chrome will not do it!
+			setTimeout(function() {window.scrollTo(e.state.xOffset, e.state.yOffset);}, 1);
+		}
+		else
+		{
+			// Hash is missing - Safari unexpectedly calls "popstate" on load
+			var hash = "";
+			
+			// Check if the "hashchange" event has rendered the page
+			if (hash != lastHash)
+			{
+				// Render the page
+				renderPage("");
+			}
+		}
+	}
+	catch (err)
+	{
+		var message = debugMessage("popStateHandler", err.message);
+		
+		document.getElementById("view").innerHTML = message;
+	}
+}
 
 //
 // Polyfill the missing Array.indexOf() method in IE8 and earlier
@@ -427,10 +531,9 @@ function polyfillIndexOf()
 }
 
 //
-// Render the page whether it be a view of multiple cases or a specific case
-// Additionally, restore the full URL and scroll to the appropriate x / y offsets
+// This runs when all of the page resources have loaded (i.e. "onload" event handler)
 //
-function renderPage()
+function loadHandler()
 {
 	try
 	{
@@ -438,41 +541,20 @@ function renderPage()
 		polyfillIndexOf();
 		
 		// Event handler for hash change
-		addEventHandler(window, "hashchange", processHash);
+		addEventHandler(window, "hashchange", hashChangeHandler);
 
 		// Event handler for resize / screen rotation
-		addEventHandler(window, "resize", processHash);
+		addEventHandler(window, "resize", resizeHandler);
 
 		// Event handler for browser controls (back/forward)
-		addEventHandler(window, "popstate", function(e)
-		{
-			if (e.state != null)
-			{
-				// Internet Explorer doesn't show the hash portion of the URL when pressing back/forward
-				if (e.state.hash != "")
-				{
-					window.location.hash = e.state.hash;
-				}
-				
-				// Process the hash
-				processHash();
+		addEventHandler(window, "popstate", popStateHandler);
 
-				// Scroll to the correct position but wait a second or Chrome will not do it!
-				setTimeout(function() {window.scrollTo(e.state.xOffset, e.state.yOffset);}, 1);
-			}
-			else
-			{
-				// Process the hash
-				processHash();
-			}
-		});
-
-		// Process the hash
-		processHash();
+		// Use the "hashchange" handler to render the page on load
+		hashChangeHandler();
 	}
 	catch (err)
 	{
-		var message = debugMessage("renderPage", err.message);
+		var message = debugMessage("loadHandler", err.message);
 		
 		document.getElementById("view").innerHTML = message;
 	}
@@ -502,6 +584,16 @@ function storeWindowOffset()
 }
 
 //
+// User exception
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw#Throw_an_object
+//
+function UserException(message)
+{
+	this.message = message;
+	this.name = "UserException";
+}
+
+//
 // Render the page when parsing is complete and all content is loaded (including images, script files, CSS files, etc)
 //
-addEventHandler(window, "load", renderPage);
+addEventHandler(window, "load", loadHandler);
