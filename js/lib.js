@@ -299,30 +299,59 @@ function renderPage(hash)
 {
 	try
 	{
-		// Interpret the location hash to determine the view
-		var viewParts = hash.substring(1).split("_");
-		var viewType = viewParts[0];
-		var viewId = viewParts[1];
+		// Boolean flag to indicate whether the page needs to be rendered
+		var renderRequired = false;
+		
+		// Interpret the old hash to determine the current view
+		var oldHashParts = lastHash.substring(1).split("_");
+		var oldViewId = oldHashParts[0] ? oldHashParts[0] : algSet.views[0].id;
+		var oldCaseId = oldHashParts[1];
 
+		// Interpret the location hash to determine the required view
+		var newHashParts = hash.substring(1).split("_");
+		var newViewId = newHashParts[0] ? newHashParts[0] : algSet.views[0].id;
+		var newCaseId = newHashParts[1];
+
+		// Has the view changed?
+		if (newViewId == "case" && newCaseId != oldCaseId)
+		{
+			renderRequired = true;
+		}
+		else if (newViewId != oldViewId)
+		{
+			renderRequired = true;
+		}
+		
 		// Get the viewport width
 		var width = getViewportWidth();
 
-		// Render the page
-		if (viewType == "case")
+		// Has the width changed?
+		if (width != lastWidth)
 		{
-			renderCase(viewId, width);
+			// TODO - intelligent handling of width changes
+			renderRequired = true;
 		}
-		else
-		{
-			renderView(viewType, width);
-		}
-	
-		// Record rendering arguments
-		lastHash = hash;
-		lastWidth = width;
 
-		// Initialise abbreviations on touch screen devices
-		initAbbrTouch();
+		// Is the render required?
+		if (renderRequired)
+		{
+			// Call the appropriate rendering function
+			if (newViewId == "case")
+			{
+				renderCase(newCaseId, width);
+			}
+			else
+			{
+				renderView(newViewId, width);
+			}
+
+			// Initialise abbreviations on touch screen devices
+			initAbbrTouch();
+
+			// Record rendering arguments
+			lastHash = hash;
+			lastWidth = width;
+		}
 	}
 	catch (err)
 	{
@@ -345,11 +374,8 @@ function hashChangeHandler()
 		// Get the hash information from the URL
 		var hash = window.location.hash;
 
-		// Check if the "popstate" event has rendered the page
-		if (hash != lastHash)
-		{
-			renderPage(hash);
-		}
+		// Render the page - if required
+		renderPage(hash);
 	}
 	catch (err)
 	{
@@ -367,15 +393,11 @@ function resizeHandler()
 {
 	try
 	{
-		// Get the viewport width
-		var width = getViewportWidth();
+		// Get the hash information from the global variable
+		var hash = lastHash;
 
-		// Decide if the page needs to be rendered
-		// TODO - intelligent handling of  width changes
-		if (width != lastWidth)
-		{
-			renderPage(lastHash);
-		}
+		// Render the page - if required
+		renderPage(hash);
 	}
 	catch (err)
 	{
@@ -398,12 +420,8 @@ function popStateHandler(e)
 			// Hash is provided by the event state
 			var hash = e.state.hash;
 			
-			// Check if the "hashchange" event has rendered the page
-			if (hash != lastHash)
-			{
-				// Render the page
-				renderPage(hash);
-			}
+			// Render the page - if required
+			renderPage(hash);
 			
 			// Scroll to the correct position but wait a second or Chrome will not do it!
 			setTimeout(function() {window.scrollTo(e.state.xOffset, e.state.yOffset);}, 1);
@@ -413,12 +431,8 @@ function popStateHandler(e)
 			// Hash is missing - Safari unexpectedly calls "popstate" on load
 			var hash = window.location.hash;
 			
-			// Check if the "hashchange" event has rendered the page
-			if (hash != lastHash)
-			{
-				// Render the page
-				renderPage("");
-			}
+			// Render the page - if required
+			renderPage(hash);
 		}
 	}
 	catch (err)
