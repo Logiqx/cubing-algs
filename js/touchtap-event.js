@@ -87,15 +87,14 @@
    * Initialises the library.
    */
   function init() {
-    try
-    {
-      // createEvent() was introduced in IE9
-      if (document.createEvent) {
-		touchTapEvent = document.createEvent('CustomEvent');
-		touchTapEvent.initEvent('touchtap', true, true);
-	  }
+    try {
+      // TODO - Polyfill the CustomEvent functionality in early browsers?
+      // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent#Polyfill
+      touchTapEvent = document.createEvent('CustomEvent');
+      touchTapEvent.initEvent('touchtap', true, true);
 
-	  // addEventListener() was introduced in IE9
+      // addEventListener() was introduced in IE9
+      // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Browser_compatibility
       if (document.addEventListener) {
         document.addEventListener('touchstart', touchstart, false);
         document.addEventListener('touchend', touchend, false);
@@ -103,9 +102,9 @@
         document.addEventListener('touchmove', touchmove, false);
       }
     }
-    catch (err)
-    {
-       // Non-critical error can be ignored
+    catch (err) {
+      // Ignore "NOT_SUPPORTED_ERR: DOM Exception 9" caused by the CustomEvent
+      // N.B. This can be fixed with polyfiller for the CustomEvent
     }
   }
 

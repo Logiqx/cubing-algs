@@ -266,39 +266,3 @@ function renderCase(caseId, width)
 	document.getElementById("view").innerHTML = out;
 }
 
-//
-// Switch to a specific case
-// Invoked from <i class="clicky ..." onclick="switchCase('...')"><br/></i>
-//
-function switchCase(caseId)
-{
-	// Store the current window offset
-	storeWindowOffset();
-
-	// Prepare the hash
-	var hash = "#case_" + caseId;
-
-	// Some browsers (e.g. Chrome) do not allow pushState() when viewing locally
-	try
-	{
-		// Prepare state
-		var obj = { "hash": hash, "xOffset": 0, "yOffset": 0 };
-		var title = algSet.header.id + " " + caseId;
-		var url = hash;
-		
-		// Push state to history
-		history.pushState(obj, title, url);
-	
-		// Render the page - pushState() never causes a "popstate" or "hashchange" event
-		renderPage(hash);
-	}
-	catch (e)
-	{
-		// Update the browser history and render the page using a "hashchange" event
-		// Required prior to Chrome 5, Firefox 4 (unconfirmed), IE10, Opera 11, Safari 5.0
-		window.location.hash = hash;
-	}
-
-	// Scroll to the top - no need to wait like we do in the "popstate" event
-	window.scrollTo(0, 0);
-}

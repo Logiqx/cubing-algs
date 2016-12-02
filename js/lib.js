@@ -1,57 +1,27 @@
 /*
 
-Navigation
-==========
-
-It is desirable for the pages to run locally (file://) and remotely (http://).
-
-The pushState() method forms the basis for navigation history within the browser.
-A "popstate" event handler handles the back/forward buttons and renders pages accordingly.
-Unfortunately there are a number of subtle complications which are described below!
-
-1) Problem: pushState() is not allowed in Chrome when used locally (file://)
-   Solution: Use try/catch and set window.location.hash in the "catch", provoking "popstate"
-   Note: Chrome works in two ways... remote = pushstate(), local = window.location.hash
-2) Problem: Browser back button causes the page to scroll to top and is somewhat irritating
-   Solution: Use replaceState() and a "popstate" event handler which re-applies the x/y offsets
-   Note: Need a small delay for Chrome otherwise the default scroll happens after the fix
-3) Problem: replaceState() is not allowed in Chrome when used locally (file://)
-   Solution: try/catch block which which treats the replaceState() exception as non-fatal
-   Note: The scrolling fix (described above) does not work on Chrome when viewing locally
-4) Problem: Browser back button does not display the full URL on IE, missing the # fragment
-   Solution: Fix by setting window.location.hash within the "popstate" event handler
-   Note: This causes an additional "popstate" event on Chrome and potential re-rendering
-5) Problem: Updates to the # fragment of the URL in the address bar has no effect in IE
-   Solution: Fix with <body onhashchange="handleHash();">
-   Note: This causes duplicate rendering in Chrome; "popstate" event and handleHash()
-6) Problem: Changes to the hash segment of the URL can cause re-rendering of the same page
-   Solution: Rendering is initiated from a single method and will skip unnecessary rendering
-   Note: Some browsers have more events than others but it doesn't matter with this fix!
-
-   
-Observations
-============
-
-The back/forward buttons have the following effect:
-
-Chrome 1 to 4 = "hashchange" only      Chrome 5 = BROKEN, Chrome 6 onwards = "popstate" then "hashchange"
-Firefox 3.5 + 3.0 + 3.6 = TBC / TODO   Firefox 4 + 5 = "popstate" only, Firefox 6 onwards = "popstate" then "hashchange" 
-IE8 + IE9 = "hashchange" only          IE10 = "popstate" then "hashchange", *IE11* = "hashchange" then "popstate"
-Opera 10 + 10.50 = "hashchange" only   Opera 11 = "popstate" then "hashchange"
-Safari 4 = "hashchange" only           Safari 5 = "popstate" then "hashchange" + unexpectedly calls "popstate" on load
-Edge = "popstate" then "hashchange"    N.B. window.alert() can't be used inside "popstate" handler
-
-Potential reference - https://github.com/browserstate/history.js/wiki/The-State-of-the-HTML5-History-API
-
-
 Summary
 =======
 
-1) Originally developed / tested on IE11 (laptop), Chrome 45 (laptop) and Safari (iPad)
-2) Works fine when running locally (file://) and remotely (http://)
-3) Hyperlinks / bookmarks link to the current page. Other clicks are handled by Javascript
-4) Chrome fires more "popstate" events than IE due to window.location.hash being updated
-5) Chrome works in two ways... remote = pushstate(), local = window.location.hash
+1) Originally developed / tested on Chrome 45 (laptop), IE11 (laptop) and Safari 7 (iPad)
+2) Requires at least Chrome 6, Firefox 4, IE8, Safari 4 or Opera 10
+3) Works fine when running locally (file://) and remotely (http://)
+4) Comments throughout the code describe how the different browsers are supported
+
+
+History
+=======
+
+The back/forward buttons fire "popstate" and / or "hashchange" events:
+
+Chrome 1 to 4 = "hashchange" only      Chrome 5 = back/forward unavailable, Chrome 6 onwards = "popstate" then "hashchange"
+Firefox 3.0 + 3.5 + 3.6 = TBC          Firefox 4 + 5 = "popstate" only, Firefox 6 onwards = "popstate" then "hashchange" 
+IE8 + IE9 = "hashchange" only          IE10 = "popstate" then "hashchange", *IE11* = "hashchange" then "popstate"
+Opera 10 + 10.50 = "hashchange" only   Opera 11 = "popstate" then "hashchange"
+Safari 4 = "hashchange" only           Safari 5 = "popstate" then "hashchange" + unexpectedly calls "popstate" on load
+Edge = "popstate" then "hashchange"    N.B. window.alert() is unreliable in Edge, especially inside "popstate" handler
+
+Useful reference - https://github.com/browserstate/history.js/wiki/The-State-of-the-HTML5-History-API
 
 */
 
@@ -64,7 +34,7 @@ function debugMessage(method, message)
 	var out = "";
 	
 	out += "<h2>Houston, we have a problem</h2>";
-	out += "<h3>Browser</h3><p>You need at least IE8, Chrome 6.0, Firefox 4.0, Safari 4.0 or Opera 10</p>";
+	out += "<h3>Browser</h3><p>You need at least Chrome 6, Firefox 4, IE8, Safari 4 or Opera 10</p>";
 	out += "<h3>Debug</h3><p>" + method + ": " + message + "</p>";
 
 	return out;
@@ -239,7 +209,8 @@ function initAbbrTouch()
 	}
 	catch (err)
 	{
-		// Non-critical error can be ignored
+		// Some old browsers do not support Document.querySelector() - e.g. prior to IE8
+		// https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector#Browser_Compatibility
 	}
 }
 
@@ -262,12 +233,12 @@ function addEventHandler(target, eventType, handler)
 	}
 	else
 	{
-		// The addEventListener() method is supported by most browsers, including IE9 and newer
+		// EventTarget.addEventListener() is supported by most browsers, including IE9 and newer
 		if (target.addEventListener)
 		{
 			target.addEventListener(eventType, handler, false);
 		}
-		// The attachEvent() method is supported by IE5 to IE10
+		// EventTarget.attachEvent() was a proprietary method supported by IE5 to IE10
 		else if (target.attachEvent)
 		{
 			target.attachEvent(eventAttribute, handler);
@@ -277,9 +248,7 @@ function addEventHandler(target, eventType, handler)
 
 //
 // Fallback for the "hashchange" event which is not implemented in legacy browsers
-// Required prior to Chrome 5, Firefox 3.6, IE8, Opera 10.6, Safari 5.0
-// https://developer.mozilla.org/en-US/docs/Web/Events/hashchange
-// https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onhashchange
+// Required prior to Chrome 4, Firefox 3.6, IE8, Safari 5, Opera 10.6
 // http://stackoverflow.com/questions/9339865/get-the-hashchange-event-to-work-in-all-browsers-including-ie7
 //
 function hashChangeFallback(target, handler)
@@ -357,6 +326,7 @@ function renderPage(hash)
 	}
 	catch (err)
 	{
+		// Unxpected error - display error message
 		var message = debugMessage("renderPage", err.message);
 		
 		document.getElementById("view").innerHTML = message;
@@ -365,6 +335,8 @@ function renderPage(hash)
 
 //
 // This runs when the has portion of the URL changes (i.e. "onhashchange" event handler)
+// https://developer.mozilla.org/en-US/docs/Web/Events/hashchange
+// https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onhashchange
 //
 function hashChangeHandler()
 {
@@ -381,6 +353,7 @@ function hashChangeHandler()
 	}
 	catch (err)
 	{
+		// Unxpected error - display error message
 		var message = debugMessage("hashChangeHandler", err.message);
 		
 		document.getElementById("view").innerHTML = message;
@@ -406,6 +379,7 @@ function resizeHandler()
 	}
 	catch (err)
 	{
+		// Unxpected error - display error message
 		var message = debugMessage("resizeHandler", err.message);
 		
 		document.getElementById("view").innerHTML = message;
@@ -437,7 +411,7 @@ function popStateHandler(e)
 		else
 		{
 			// Hash is missing - Safari unexpectedly calls "popstate" on load
-			var hash = "";
+			var hash = window.location.hash;
 			
 			// Check if the "hashchange" event has rendered the page
 			if (hash != lastHash)
@@ -449,6 +423,7 @@ function popStateHandler(e)
 	}
 	catch (err)
 	{
+		// Unxpected error - display error message
 		var message = debugMessage("popStateHandler", err.message);
 		
 		document.getElementById("view").innerHTML = message;
@@ -456,7 +431,7 @@ function popStateHandler(e)
 }
 
 //
-// Polyfill the missing Array.indexOf() method in IE8 and earlier
+// Array.indexOf() is not implemented prior to IE9
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf#Compatibility
 //
 function polyfillIndexOf()
@@ -537,7 +512,7 @@ function loadHandler()
 {
 	try
 	{
-		// IE8 and earlier do not support Array.indexOf() so it needs to be "polyfilled"
+		// Array.indexOf() is not implemented prior to IE9
 		polyfillIndexOf();
 		
 		// Event handler for hash change
@@ -554,6 +529,7 @@ function loadHandler()
 	}
 	catch (err)
 	{
+		// Unxpected error - display error message
 		var message = debugMessage("loadHandler", err.message);
 		
 		document.getElementById("view").innerHTML = message;
@@ -566,11 +542,10 @@ function loadHandler()
 //
 function storeWindowOffset()
 {
-	// Some browsers (e.g. Chrome) do not allow replaceState() when viewing locally
 	try
 	{
-		// Prepare state
-		var obj = { "hash": window.location.hash, "xOffset": window.pageXOffset, "yOffset": window.pageYOffset };
+		// Prepare state using lastHash instead of window.location.hash (slightly more reliable)
+		var obj = { "hash": lastHash, "xOffset": window.pageXOffset, "yOffset": window.pageYOffset };
 		var title = document.title;
 		var url = window.location.href;
 
@@ -579,18 +554,94 @@ function storeWindowOffset()
 	}
 	catch (err)
 	{
-		// Nothing to do here!
+		// Some browsers do not support history.replaceState()
+		// e.g. Prior to Chrome 5, Firefox 4 (unconfirmed), IE10, Safari 5, Opera 11
+		// https://developer.mozilla.org/en-US/docs/Web/API/History_API#Browser_compatibility
 	}
 }
 
 //
-// User exception
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw#Throw_an_object
+// Switch to a specific case
+// Invoked from <i class="clicky ..." onclick="switchCase('...')"><br /></i>
 //
-function UserException(message)
+function switchCase(caseId)
 {
-	this.message = message;
-	this.name = "UserException";
+	// Store the current window offset
+	storeWindowOffset();
+
+	// Prepare the hash
+	var hash = "#case_" + caseId;
+
+	// Some browsers (e.g. Chrome) do not allow pushState() when viewing locally
+	try
+	{
+		// Prepare state
+		var obj = { "hash": hash, "xOffset": 0, "yOffset": 0 };
+		var title = algSet.header.id + " " + caseId;
+		var url = hash;
+		
+		// Push state to history
+		history.pushState(obj, title, url);
+	
+		// Render the page - pushState() never causes a "popstate" or "hashchange" event
+		renderPage(hash);
+	}
+	catch (err)
+	{
+		// Some browsers do not support history.pushState()
+		// e.g. Prior to Chrome 5, Firefox 4 (unconfirmed), IE10, Safari 5, Opera 11
+		// https://developer.mozilla.org/en-US/docs/Web/API/History_API#Browser_compatibility
+		
+		// Update the browser history and render the page via a "hashchange" event
+		// https://developer.mozilla.org/en-US/docs/Web/API/Window/location
+		window.location.hash = hash;
+	}
+
+	// Scroll to the top - no need to wait like we do in the "popstate" event
+	window.scrollTo(0, 0);
+}
+
+//
+// Switch to the selected view
+// Invoked from <select id="viewList" onChange="switchView()">
+//
+function switchView()
+{
+	// Store the current window offset
+	storeWindowOffset();
+
+	// Determine the view from the dropdown box
+	// TODO - parameter for "listId"
+	var selectElement = document.getElementById("viewList");
+	var viewId = selectElement.options[selectElement.selectedIndex].value;
+
+	// Prepare the hash
+	var hash = "#" + viewId;
+
+	// Some browsers (e.g. Chrome) do not allow pushState() when viewing locally
+	try
+	{
+		// Prepare state
+		var obj = { "hash": hash, "xOffset": window.pageXOffset, "yOffset": window.pageYOffset };
+		var title = algSet.header.id + " - " + selectElement.options[selectElement.selectedIndex].text;
+		var url = hash;
+		
+		// Push state to history
+		history.pushState(obj, title, url);
+
+		// Render the page - pushState() never causes a "popstate" or "hashchange" event
+		renderPage(hash);		
+	}
+	catch (err)
+	{
+		// Some browsers do not support history.pushState()
+		// e.g. Prior to Chrome 5, Firefox 4 (unconfirmed), IE10, Safari 5, Opera 11
+		// https://developer.mozilla.org/en-US/docs/Web/API/History_API#Browser_compatibility
+		
+		// Update the browser history and render the page via a "hashchange" event
+		// https://developer.mozilla.org/en-US/docs/Web/API/Window/location
+		window.location.hash = hash;
+	}
 }
 
 //

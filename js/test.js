@@ -282,9 +282,6 @@ function renderView()
 	// Initialisation
     var out = "";
 	
-	// Browser title
-	document.getElementsByTagName("TITLE")[0].text = algSet.header.id + " (validation)";
-
 	// Output the main title
 	out += "<h1>" + algSet.header.id + " (validation)</h1>";
 	
