@@ -428,7 +428,7 @@ function popStateHandler(e)
 		}
 		else
 		{
-			// Hash is missing - Safari unexpectedly calls "popstate" on load
+			// Event state is missing - e.g. initial page load or bookmark link
 			var hash = window.location.hash;
 			
 			// Render the page - if required
@@ -558,7 +558,8 @@ function storeWindowOffset()
 {
 	try
 	{
-		// Prepare state using lastHash instead of window.location.hash (slightly more reliable)
+		// Prepare state using lastHash instead of window.location.hash
+		// This is more reliable on early browsers / devices such as the HTC Desire
 		var obj = { "hash": lastHash, "xOffset": window.pageXOffset, "yOffset": window.pageYOffset };
 		var title = document.title;
 		var url = window.location.href;

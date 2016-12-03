@@ -88,7 +88,7 @@
    */
   function init() {
     try {
-      // TODO - Polyfill the CustomEvent functionality in early browsers?
+      // TODO - Polyfill the CustomEvent functionality on early browsers / devices such as the HTC Desire
       // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent#Polyfill
       touchTapEvent = document.createEvent('CustomEvent');
       touchTapEvent.initEvent('touchtap', true, true);
