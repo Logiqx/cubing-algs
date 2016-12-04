@@ -43,15 +43,15 @@ var abbrTouch = (function () { // eslint-disable-line no-unused-vars
       var elements = elementScope.querySelectorAll('abbr[title]');
       var touchtapHandler = generateTouchtapHandler(tapHandler);
       for (var i = 0; i < elements.length; i++) {
-        // Do not implement touchtap events for DOM elements with children
+        // Do not implement touchtap events for DOM elements with children.
         // e.g. CSS sprites such as <abbr><i class="..." onclick="..."><br /></i></abbr>
         if (elements[i].children.length == 0) {
-          // EventTarget.addEventListener() is supported by most browsers, including IE9 and newer
+          // EventTarget.addEventListener() is supported by most browsers, including IE9 and newer.
           if (elements[i].addEventListener) {
             elements[i].addEventListener('touchtap', touchtapHandler, false);
           }
           else {
-            // EventTarget.addEventListener() is not implemented in this browser
+            // EventTarget.addEventListener() is not implemented in this browser.
             // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Browser_compatibility
             break;
           }
@@ -59,7 +59,7 @@ var abbrTouch = (function () { // eslint-disable-line no-unused-vars
       }
     }
     catch (err) {
-      // Some old browsers do not support Document.querySelectorAll() - e.g. prior to IE9
+      // Some old browsers do not support Document.querySelectorAll() - e.g. prior to IE9.
       // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll#Browser_compatibility
     }
   }
