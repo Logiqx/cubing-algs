@@ -88,23 +88,20 @@
    */
   function init() {
     try {
-      // TODO - Polyfill the CustomEvent functionality on early browsers / devices such as the HTC Desire
-      // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent#Polyfill
-      touchTapEvent = document.createEvent('CustomEvent');
+      // The basic events module is supported by most browsers, including IE9 and newer.
+      // https://developer.mozilla.org/en-US/docs/Web/API/Document/createEvent#Example
+      touchTapEvent = document.createEvent('Event');
       touchTapEvent.initEvent('touchtap', true, true);
 
-      // addEventListener() was introduced in IE9
+      // EventTarget.addEventListener() is supported by most browsers, including IE9 and newer.
       // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Browser_compatibility
-      if (document.addEventListener) {
-        document.addEventListener('touchstart', touchstart, false);
-        document.addEventListener('touchend', touchend, false);
-        document.addEventListener('touchcancel', touchend, false);
-        document.addEventListener('touchmove', touchmove, false);
-      }
+      document.addEventListener('touchstart', touchstart, false);
+      document.addEventListener('touchend', touchend, false);
+      document.addEventListener('touchcancel', touchend, false);
+      document.addEventListener('touchmove', touchmove, false);
     }
     catch (err) {
-      // Ignore "NOT_SUPPORTED_ERR: DOM Exception 9" caused by the CustomEvent
-      // N.B. This can be fixed with polyfiller for the CustomEvent
+      // Ignore "Object doesn't support this property or method" in IE8 and earlier.
     }
   }
 
