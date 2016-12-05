@@ -4,7 +4,7 @@ Summary
 =======
 
 1) Originally developed / tested on Chrome 45 (laptop), IE11 (laptop) and Safari 7 (iPad)
-2) Requires at least Chrome 6, Firefox 4, IE8, Safari 4 or Opera 10
+2) Requires at least Chrome 1, Firefox 4, IE8, Safari 4 or Opera 10
 3) Works fine when running locally (file://) and remotely (http://)
 4) Comments throughout the code describe how the different browsers are supported
 
@@ -14,7 +14,7 @@ History
 
 The back/forward buttons fire "popstate" and / or "hashchange" events:
 
-Chrome 1 to 4 = "hashchange" only      Chrome 5 = back/forward unavailable, Chrome 6 onwards = "popstate" then "hashchange"
+Chrome 1 to 5 = "hashchange" only      Chrome 6 onwards = "popstate" then "hashchange"
 Firefox 3.0 + 3.5 + 3.6 = TBC          Firefox 4 + 5 = "popstate" only, Firefox 6 onwards = "popstate" then "hashchange" 
 IE8 + IE9 = "hashchange" only          IE10 = "popstate" then "hashchange", *IE11* = "hashchange" then "popstate"
 Opera 10 + 10.50 = "hashchange" only   Opera 11 = "popstate" then "hashchange"
@@ -34,7 +34,7 @@ function debugMessage(method, message)
 	var out = "";
 	
 	out += "<h2>Houston, we have a problem</h2>";
-	out += "<h3>Browser</h3><p>You need at least Chrome 6, Firefox 4, IE8, Safari 4 or Opera 10</p>";
+	out += "<h3>Browser</h3><p>You need at least Chrome 1, Firefox 4, IE8, Safari 4 or Opera 10</p>";
 	out += "<h3>Debug</h3><p>" + method + ": " + message + "</p>";
 
 	return out;
@@ -587,9 +587,15 @@ function switchCase(caseId)
 	// Prepare the hash
 	var hash = "#case-" + caseId;
 
-	// Some browsers (e.g. Chrome) do not allow pushState() when viewing locally
+	// Some browsers do not support history.pushState()
 	try
 	{
+		// Chrome 5 does not handle history.pushState() correctly so force a "hashchange" event
+		if (navigator.userAgent.indexOf("Chrome/5.0") > -1)
+		{
+			throw "Chrome/5.0";
+		}
+		
 		// Prepare state
 		var obj = { "hash": hash, "xOffset": 0, "yOffset": 0 };
 		var title = algSet.header.id + " " + caseId;
@@ -633,9 +639,15 @@ function switchView()
 	// Prepare the hash
 	var hash = "#" + viewId;
 
-	// Some browsers (e.g. Chrome) do not allow pushState() when viewing locally
+	// Some browsers do not support history.pushState()
 	try
 	{
+		// Chrome 5 does not handle history.pushState() correctly so force a "hashchange" event
+		if (navigator.userAgent.indexOf("Chrome/5.0") > -1)
+		{
+			throw "Chrome/5.0";
+		}
+		
 		// Prepare state
 		var obj = { "hash": hash, "xOffset": window.pageXOffset, "yOffset": window.pageYOffset };
 		var title = algSet.header.id + " - " + selectElement.options[selectElement.selectedIndex].text;
