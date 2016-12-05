@@ -3,10 +3,11 @@
 Summary
 =======
 
-1) Originally developed / tested on Chrome 45 (laptop), IE11 (laptop) and Safari 7 (iPad)
-2) Requires at least Chrome 1, Firefox 4, IE8, Safari 4 or Opera 10
-3) Works fine when running locally (file://) and remotely (http://)
-4) Comments throughout the code describe how the different browsers are supported
+1) Works fine on laptops, tablets and mobile phones
+2) Works fine when running locally (file://) and remotely (http://)
+3) Comments throughout the code describe how different platforms / browsers are supported
+4) Originally developed + tested on Chrome 45 (laptop), IE11 (laptop) and Safari 7 (iPad)
+5) Requires at least Chrome 1, Firefox 4, IE8, Safari 4 or Opera 10
 
 
 History
