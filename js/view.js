@@ -34,7 +34,8 @@ function renderGridDataRows(viewObj, width)
 	var out = "";
 	
 	// Determine the image sizes for the grid - large icons are perfect on the iPad (landscape)
-	var imgSize = width >= IPAD_LANDSCAPE ? "96" : "64";
+	// Constant of 1000 allows 1024 pixel displays with a scroll bar (clientWidth ~1008 pixels)
+	var imgSize = width >= 1000 ? "96" : "64";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -259,7 +260,8 @@ function renderTableDataRows(viewObj, groupObj, width)
 						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "><br/></i></abbr></td>";
 
 				// Iterate through the uses - 2 columns are perfect on the iPad (landscape)
-				if (width >= IPAD_LANDSCAPE)
+				// Constant of 1000 allows 1024 pixel displays with a scroll bar (clientWidth ~1008 pixels)
+				if (width >= 1000)
 				{
 					for (var useIdx in algSet.header.uses)
 					{
@@ -501,7 +503,8 @@ function renderView(viewId, width)
 				else if (viewObj.hasOwnProperty("groups"))
 				{
 					// Render the view links (i.e. links to headers / anchors)
-					if (width >= IPAD_LANDSCAPE)
+					// Constant of 1000 allows 1024 pixel displays with a scroll bar (clientWidth ~1008 pixels)
+					if (width >= 1000)
 					{
 						out += renderViewLinks(viewObj, width);
 					}
