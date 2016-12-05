@@ -355,7 +355,7 @@ function renderViewLinks(viewObj, width)
 			// Output the group title
 			if (groupObj.name != "")
 			{
-				out += "<a href=\"#" + viewObj.id + "_" + groupObj.id + "\">" + groupObj.name + "</a>";
+				out += "<a href=\"#" + viewObj.id + "-" + groupObj.id + "\">" + groupObj.name + "</a>";
 			}
 			
 			length += groupObj.name.length;
@@ -515,7 +515,7 @@ function renderView(viewId, width)
 						if (groupObj != null)
 						{
 							// Create anchor for the group
-							out += "<a name=\"" + viewObj.id + "_" + groupObj.id + "\" />";
+							out += "<a id=\"" + viewObj.id + "-" + groupObj.id + "\" />";
 					
 							// Output the group title
 							if (groupObj.name != "")

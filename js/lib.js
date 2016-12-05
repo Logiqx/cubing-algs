@@ -303,12 +303,12 @@ function renderPage(hash)
 		var renderRequired = false;
 		
 		// Interpret the old hash to determine the current view
-		var oldHashParts = lastHash.substring(1).split("_");
+		var oldHashParts = lastHash.substring(1).split("-");
 		var oldViewId = oldHashParts[0] ? oldHashParts[0] : algSet.views[0].id;
 		var oldCaseId = oldHashParts[1];
 
 		// Interpret the location hash to determine the required view
-		var newHashParts = hash.substring(1).split("_");
+		var newHashParts = hash.substring(1).split("-");
 		var newViewId = newHashParts[0] ? newHashParts[0] : algSet.views[0].id;
 		var newCaseId = newHashParts[1];
 
@@ -585,7 +585,7 @@ function switchCase(caseId)
 	storeWindowOffset();
 
 	// Prepare the hash
-	var hash = "#case_" + caseId;
+	var hash = "#case-" + caseId;
 
 	// Some browsers (e.g. Chrome) do not allow pushState() when viewing locally
 	try
