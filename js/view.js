@@ -410,7 +410,7 @@ function renderView(viewId, width)
 	}
 	
 	// Output the set title
-	out += "<h1>" + algSet.header.name + " (" + algSet.header.id + ")</h1>";
+	out += "<h1><span class=\"menu-btn\">&#9776;</span> " + algSet.header.name + " (" + algSet.header.id + ")</h1>";
 	
 	// Output header message - mobiles are best viewed in landscape
 	out += header(IPHONE_LANDSCAPE);
@@ -549,5 +549,5 @@ function renderView(viewId, width)
 	out += footer();
 	
 	// Update the HTML
-	document.getElementById("view").innerHTML = out;
+	document.getElementById("container").innerHTML = out;
 }

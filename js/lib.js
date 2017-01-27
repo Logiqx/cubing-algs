@@ -191,8 +191,8 @@ function initAbbrTouch()
 {
 	try
 	{
-		// Initialise abbr-touch for the "view" division, providing a custom tap handler
-		abbrTouch(document.querySelector('#view'), function (target, title, touchX, touchY) {
+		// Initialise abbr-touch for the "container" division, providing a custom tap handler
+		abbrTouch(document.querySelector('#container'), function (target, title, touchX, touchY) {
 			var tooltip = document.querySelector('#tooltip');
 			tooltip.innerHTML = title;
 			tooltip.style.left = ((touchX - tooltip.clientWidth / 2) > window.pageXOffset ? (touchX - tooltip.clientWidth / 2) : window.pageXOffset) + 'px';
@@ -349,6 +349,16 @@ function renderPage(hash)
 			// Initialise abbreviations on touch screen devices
 			initAbbrTouch();
 
+			// Initialise pushy menu button
+			try
+			{
+				pushy();
+			}
+			catch (err)
+			{
+				// Ignore errors from pushy
+			}
+			
 			// Record rendering arguments
 			lastHash = hash;
 			lastWidth = width;
@@ -359,7 +369,7 @@ function renderPage(hash)
 		// Unxpected error - display error message
 		var message = debugMessage("renderPage", err.message);
 		
-		document.getElementById("view").innerHTML = message;
+		document.getElementById("container").innerHTML = message;
 	}
 }
 
@@ -383,7 +393,7 @@ function hashChangeHandler()
 		// Unxpected error - display error message
 		var message = debugMessage("hashChangeHandler", err.message);
 		
-		document.getElementById("view").innerHTML = message;
+		document.getElementById("container").innerHTML = message;
 	}
 }
 
@@ -405,7 +415,7 @@ function resizeHandler()
 		// Unxpected error - display error message
 		var message = debugMessage("resizeHandler", err.message);
 		
-		document.getElementById("view").innerHTML = message;
+		document.getElementById("container").innerHTML = message;
 	}
 }
 
@@ -441,7 +451,7 @@ function popStateHandler(e)
 		// Unxpected error - display error message
 		var message = debugMessage("popStateHandler", err.message);
 		
-		document.getElementById("view").innerHTML = message;
+		document.getElementById("container").innerHTML = message;
 	}
 }
 
@@ -547,7 +557,7 @@ function loadHandler()
 		// Unxpected error - display error message
 		var message = debugMessage("loadHandler", err.message);
 		
-		document.getElementById("view").innerHTML = message;
+		document.getElementById("container").innerHTML = message;
 	}
 }
 

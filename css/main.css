@@ -1,3 +1,35 @@
+/* Stuff added for the pushy menu */
+
+html, body {
+  /* disable webkit tap highlight */
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+  height: 100%;
+  /* enable momentum scrolling in iOS overflow elements */
+  /* TODO - figure out why it is necessary */
+  -webkit-overflow-scrolling: touch;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: relative;
+  padding: 0px 8px;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background: #000;
+  color: #FFF;
+  opacity: 0.5;
+}
+
 /* Default fonts */
 
 h1

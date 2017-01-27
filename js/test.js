@@ -298,5 +298,5 @@ function renderView()
 	out += validateViews();
 	
 	// Update the HTML document
-    document.getElementById("view").innerHTML = out;
+    document.getElementById("container").innerHTML = out;
 }
