@@ -44,6 +44,23 @@ menuItems =
 	},
 	{
 		"type": "submenu",
+		"desc": "Intermediate",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "2LOLL",
+				"href": "2loll.html"
+			},
+			{
+				"type": "link",
+				"desc": "2LPLL",
+				"href": "2lpll.html"
+			}
+		]
+	},
+	{
+		"type": "submenu",
 		"desc": "Advanced",
 		"items":
 		[
@@ -75,13 +92,13 @@ menuItems =
 		[
 			{
 				"type": "link",
-				"desc": "4AOLL",
-				"href": "4aoll.html"
+				"desc": "2LOLL",
+				"href": "2loll.html"
 			},
 			{
 				"type": "link",
-				"desc": "3APLL",
-				"href": "3apll.html"
+				"desc": "2LPLL",
+				"href": "2lpll.html"
 			}
 		]
 	},
