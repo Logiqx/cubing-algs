@@ -117,7 +117,7 @@ menuItems =
 ];
 
 // Self-invoking function to populate the off screen navigation menu
-(function ()
+var initMenu = (function ()
 {
 	function init()
 	{
@@ -170,5 +170,5 @@ menuItems =
 		}
 	}
 
-	init();
+	return init;
 })();

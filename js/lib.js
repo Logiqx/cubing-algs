@@ -548,6 +548,9 @@ function loadHandler()
 
 		// Event handler for browser controls (back/forward)
 		addEventHandler(window, "popstate", popStateHandler);
+	
+		// Render the menu from JSON
+		initMenu();
 
 		// Use the "hashchange" handler to render the page on load
 		hashChangeHandler();

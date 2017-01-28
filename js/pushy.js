@@ -103,7 +103,7 @@ try {
 		}
 
 		//checks if 3d transforms are supported removing the modernizr dependency
-		var cssTransforms3d = (function csstransforms3d(){
+		function cssTransforms3d(){
 			var el = document.createElement('p'),
 			supported = false,
 			transforms = {
@@ -127,73 +127,91 @@ try {
 			document.body.removeChild(el);
 
 			return (supported !== undefined && supported.length > 0 && supported !== "none");
-		})();
+		}
+			
+		function initPushy() {
+			pushy = $('.pushy'); //menu css class
+			body = $('body');
+			container = $('#container'); //container css class
+			push = $('.push'); //css class to add pushy capability
+			pushyLeft = 'pushy-left'; //css class for left menu position
+			pushyOpenLeft = 'pushy-open-left'; //css class when menu is open (left position)
+			pushyOpenRight = 'pushy-open-right'; //css class when menu is open (right position)
+			siteOverlay = $('.site-overlay'); //site overlay
+			menuBtn = $('.menu-btn, .pushy-link'); //css classes to toggle the menu
+			menuSpeed = 200; //jQuery fallback menu speed
+			menuWidth = pushy.width() + 'px'; //jQuery fallback menu width
+			submenuClass = '.pushy-submenu';
+			submenuOpenClass = 'pushy-submenu-open';
+			submenuClosedClass = 'pushy-submenu-closed';
+			submenu = $(submenuClass);
 
-		if(cssTransforms3d){
-			//make menu visible
-			pushy.css({'visibility': 'visible'});
+			if(cssTransforms3d()){
+				//make menu visible
+				pushy.css({'visibility': 'visible'});
 
-			//toggle submenu
-			toggleSubmenu();
+				//toggle submenu
+				toggleSubmenu();
 
-			//toggle menu
-			menuBtn.on('click', function(){
-				togglePushy();
-			});
-			//close menu when clicking site overlay
-			siteOverlay.on('click', function(){
-				togglePushy();
-			});
-		}else{
-			//add css class to body
-			body.addClass('no-csstransforms3d');
-
-			//hide menu by default
-			if( pushy.hasClass(pushyLeft) ){
-				pushy.css({left: "-" + menuWidth});
+				//toggle menu
+				menuBtn.on('click', function(){
+					togglePushy();
+				});
+				//close menu when clicking site overlay
+				siteOverlay.on('click', function(){
+					togglePushy();
+				});
 			}else{
-				pushy.css({right: "-" + menuWidth});
+				//add css class to body
+				body.addClass('no-csstransforms3d');
+
+				//hide menu by default
+				if( pushy.hasClass(pushyLeft) ){
+					pushy.css({left: "-" + menuWidth});
+				}else{
+					pushy.css({right: "-" + menuWidth});
+				}
+
+				//make menu visible
+				pushy.css({'visibility': 'visible'}); 
+				//fixes IE scrollbar issue
+				//TODO - apply fix for height - 100%
+				container.css({"overflow-x": "hidden"});
+
+				//keep track of menu state (open/close)
+				var opened = false;
+
+				//toggle submenu
+				toggleSubmenuFallback();
+
+				//toggle menu
+				menuBtn.on('click', function(){
+					if (opened) {
+						closePushyFallback();
+						opened = false;
+					} else {
+						openPushyFallback();
+						opened = true;
+					}
+				});
+
+				//close menu when clicking site overlay
+				siteOverlay.on('click', function(){
+					if (opened) {
+						closePushyFallback();
+						opened = false;
+					} else {
+						openPushyFallback();
+						opened = true;
+					}
+				});
 			}
-
-			//make menu visible
-			pushy.css({'visibility': 'visible'}); 
-			//fixes IE scrollbar issue
-			//TODO - apply fix for height - 100%
-			container.css({"overflow-x": "hidden"});
-
-			//keep track of menu state (open/close)
-			var opened = false;
-
-			//toggle submenu
-			toggleSubmenuFallback();
-
-			//toggle menu
-			menuBtn.on('click', function(){
-				if (opened) {
-					closePushyFallback();
-					opened = false;
-				} else {
-					openPushyFallback();
-					opened = true;
-				}
-			});
-
-			//close menu when clicking site overlay
-			siteOverlay.on('click', function(){
-				if (opened) {
-					closePushyFallback();
-					opened = false;
-				} else {
-					openPushyFallback();
-					opened = true;
-				}
-			});
 		}
 		
 		function initMenuBtn(){
+			menuBtn = $('.menu-btn, .pushy-link');
 			try {
-				menuBtn = $('.menu-btn, .pushy-link');
-				if(cssTransforms3d){
+				if(cssTransforms3d()){
 					//toggle menu
 					menuBtn.on('click', function(){
 						togglePushy();
@@ -216,7 +234,19 @@ try {
 			}
 		}
 		
-		return initMenuBtn;
+		var initCount = 0;
+		
+		function init() {
+			if (initCount == 0) {
+				initPushy();
+			}
+			else {
+				initMenuBtn();
+			}
+			initCount++;
+		}
+		
+		return init;
 	}(jQuery));
 }
 catch (err) {
