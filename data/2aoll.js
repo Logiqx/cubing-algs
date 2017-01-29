@@ -31,7 +31,7 @@ var algSet = {
           "alg": "F (U R U' R') F'",
           "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -119,7 +119,7 @@ var algSet = {
           "alg": "U (R U2 R' U' R U' R')",
           "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         }
       ]
     },
@@ -136,7 +136,7 @@ var algSet = {
           "alg": "U2 (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Anti-Sune",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -153,7 +153,7 @@ var algSet = {
           "alg": "U' (R U2 R' U' R U' R') U2 +<br/>(R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Sune",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -170,7 +170,7 @@ var algSet = {
           "alg": "U (R U2 R' U' R U' R') U' +<br/>(R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Sune",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -187,7 +187,7 @@ var algSet = {
           "alg": "(R U2 R' U' R U' R') U +<br/>(R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Sune",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -204,7 +204,7 @@ var algSet = {
           "alg": "(R U2 R' U' R U' R') U' (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Anti-Sune",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },

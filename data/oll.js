@@ -1534,7 +1534,7 @@ var algSet = {
               "alg": "U' (R' U' R U') (R' U R U) (l U' R' U x)",
               "desc": "Two-handed execution applies cancellations",
               "status": 1,
-              "uses": ["2H"],
+              "uses": ["2H"]
 			},
 			{
 			  "alg": "U' (R' U' R U') (R' U R U) (x' R U' R' U x)",
@@ -1728,7 +1728,7 @@ var algSet = {
 			  "alg": "U' F' (U' L' U L) F",
 			  "desc": "Executed from a different angle",
 			  "status": 1,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 			{
 			  "alg": "U' F' z (R' U' R U) F [z']",
@@ -1740,13 +1740,13 @@ var algSet = {
 			  "alg": "U B' (U' R' U R) B",
 			  "desc": "Executed from a different angle",
 			  "status": -1,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 			{
 			  "alg": "U2 R' (U' F' U F) R",
 			  "desc": "My execution",
 			  "status": 0,
-			  "uses": ["2H", "OH"],
+			  "uses": ["2H", "OH"]
 			}
 		  ]
         },

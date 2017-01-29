@@ -31,7 +31,7 @@ var algSet = {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
           "desc": "Jb-Perm - [RFAS], [RFN]",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -49,7 +49,7 @@ var algSet = {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L) U2 +<br/>(R U2 R' U' R U' R') (R U' L' U R' U' L)",
           "desc": "[PLL] combination - Jb-Perm, [AUF], Jb-Perm",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -84,7 +84,7 @@ var algSet = {
           "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) U' +<br/>(R U2 R U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[EPLL] combination - Ub-Perm, [AUF], Ub-Perm",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -102,7 +102,7 @@ var algSet = {
           "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[Sune] combination - [RFAS], [AUF], [LFAS]",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -119,7 +119,7 @@ var algSet = {
           "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) +<br/>(R U2 R U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[EPLL] combination - Ub-Perm, Ub-Perm",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -137,7 +137,7 @@ var algSet = {
           "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) U2 +<br/>(R U2 R U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[EPLL] combination - Ub-Perm, [AUF], Ub-Perm",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },

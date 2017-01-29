@@ -58,7 +58,7 @@ var algSet = {
           "alg": "R U2 R' U' R U2 L' U R' U' L U2 +<br/>R U2 R' U' R U2 L' U R' U' L",
           "desc": "[PLL] combination - Jb-Perm, [AUF], Jb-Perm",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -100,7 +100,7 @@ var algSet = {
 			  "alg": "U R U' R U R U R U' R' U' R2",
 			  "desc": "Execution applies cancellations",
 			  "status": 1,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 		  ]
         },
@@ -127,7 +127,7 @@ var algSet = {
 			  "alg": "U R2 U R U R' U' R' U' R' U R'",
 			  "desc": "Execution applies cancellations",
 			  "status": 1,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 		  ]
 		},
@@ -146,7 +146,7 @@ var algSet = {
           "alg": "R U' R U R U R U' R' U' R2 U' +<br/>R U' R U R U R U' R' U' R2",
           "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },
@@ -164,7 +164,7 @@ var algSet = {
           "alg": "R U' R U R U R U' R' U' R2 U +<br/>R U' R U R U R U' R' U' R2",
           "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
 		  "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H"]
         },
       ]
     },

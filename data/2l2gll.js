@@ -353,7 +353,7 @@ var algSet = {
 			  "alg": "U R U' R U R U R U' R' U' R2",
 			  "desc": "Execution applies cancellations",
 			  "status": 1,
-			  "uses": ["2H", "OH"],
+			  "uses": ["2H", "OH"]
 			},
 		  ]
         },
@@ -368,7 +368,7 @@ var algSet = {
 			  "alg": "U' R2 U' R' U' R U R U R U' R",
 			  "desc": "Execution applies cancellations",
 			  "status": 1,
-			  "uses": ["2H", "OH"],
+			  "uses": ["2H", "OH"]
 			},
 		  ]
         },
@@ -383,7 +383,7 @@ var algSet = {
 			  "alg": "U M2' U M U2' M' U M2'",
 			  "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 		  ]
         },
@@ -398,7 +398,7 @@ var algSet = {
 			  "alg": "U' M2' U M' U2' M U M2'",
 			  "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 		  ]
         },
@@ -425,13 +425,13 @@ var algSet = {
 			  "alg": "U R2 U R U R' U' R' U' R' U R'",
 			  "desc": "Two-handed execution applies cancellations",
 			  "status": 1,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 			{
 			  "alg": "U' z U2' R U R U' R' U' R' U' R U'",
 			  "desc": "One-handed execution is on the left",
 			  "status": 1,
-			  "uses": ["OH"],
+			  "uses": ["OH"]
 			},
 		  ]
 		},
@@ -446,13 +446,13 @@ var algSet = {
 			  "alg": "U' R' U R' U' R' U' R' U R U R2",
 			  "desc": "Two-handed execution applies cancellations",
 			  "status": 1,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 			{
 			  "alg": "U z U' R U' R' U' R' U' R U R U2'",
 			  "desc": "One-handed execution is on the left",
 			  "status": 1,
-			  "uses": ["OH"],
+			  "uses": ["OH"]
 			},
 		  ]
         },
@@ -467,7 +467,7 @@ var algSet = {
 			  "alg": "U M2' U' M U2' M' U' M2'",
 			  "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 		  ]
         },
@@ -482,7 +482,7 @@ var algSet = {
 			  "alg": "U' M2' U' M' U2' M U' M2'",
 			  "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 		  ]
         },
@@ -501,7 +501,7 @@ var algSet = {
           "alg": "U R' U' R U' R U R U' R' U R U R2 U' R'",
           "desc": "Playing with [F2L] pairs - track BR + FR",
 		  "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": ["2H", "OH"]
         },
         {
           "alg": "(M' U' M2' U' M2' U' M) (M2 U2' M2')",
@@ -514,7 +514,7 @@ var algSet = {
 			  "alg": "M' U' M2' U' M2' U' M' U2' M2'",
 			  "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 		  ]
         },
@@ -529,7 +529,7 @@ var algSet = {
 			  "alg": "U M2' U' M2' U' M' U2' M2' U2' M'",
 			  "desc": "Two-handed execution",
 			  "status": -1,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 		  ]
         },
@@ -549,7 +549,7 @@ var algSet = {
           "alg": "(R2 U2' R U2' R2) U2' (R2 U2' R U2' R2)",
           "desc": "Note the Ortega / Varasano [OLL] algorithm (H case)",
 		  "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": ["2H", "OH"]
         },
         {
           "alg": "M2 U' (M2 U2 M2' U2') U M2'",
@@ -562,7 +562,7 @@ var algSet = {
 			  "alg": "M2' U' M2' U2' M2' U' M2'",
 			  "desc": "Two-handed execution applies a cancellation",
 			  "status": 0,
-			  "uses": ["2H"],
+			  "uses": ["2H"]
 			},
 		  ]
         },
