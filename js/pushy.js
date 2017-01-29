@@ -129,6 +129,9 @@ try {
 			return (supported !== undefined && supported.length > 0 && supported !== "none");
 		}
 			
+		//keep track of menu state (open/close)
+		var opened = false;
+
 		function initPushy() {
 			pushy = $('.pushy'); //menu css class
 			body = $('body');
@@ -177,9 +180,6 @@ try {
 				//fixes IE scrollbar issue
 				//TODO - apply fix for height - 100%
 				container.css({"overflow-x": "hidden"});
-
-				//keep track of menu state (open/close)
-				var opened = false;
 
 				//toggle submenu
 				toggleSubmenuFallback();
