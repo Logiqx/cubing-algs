@@ -89,6 +89,10 @@ var abbrs =
     "desc": "Orientation of the Last Layer and Corner Permutation"
   },
   {
+    "name": "OLLCP-A",
+    "desc": "Orientation of the Last Layer and Corner Permutation"
+  },
+  {
     "name": "PLL",
     "desc": "Permutation of the Last Layer"
   },

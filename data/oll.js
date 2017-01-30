@@ -54,6 +54,7 @@ var algSet = {
     {
       "id": "2",
       "name": "No Edges - Zamboni",
+      "desc": "This case is named after the Zamboni Machine which is an ice resurfacer; check some images on Google. The algorithm(s) for this [OLL] case are good choices for the 4-flip during [EOLL].",
       "wiki": "",
       "algdb": "OLL 2",
       "image": "OLL-02",
@@ -62,7 +63,7 @@ var algSet = {
       [
         {
           "alg": "R' U2 (r U' r') U2 (r U r') U2 R",
-          "desc": "[Palindrome]",
+          "desc": "Fast algorithm popularised by Jayden McNeill",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
@@ -627,6 +628,7 @@ var algSet = {
     {
       "id": "20",
       "name": "No Edges - X / Checkers",
+      "desc": "Advanced solvers might use [OLLCP-A] algorithms for this case.",
       "wiki": "",
       "algdb": "OLL 20",
       "image": "OLL-20",
@@ -1192,6 +1194,7 @@ var algSet = {
     {
       "id": "28",
       "name": "Stealth / Angel Fish",
+      "desc": "Advanced solvers might use [OLLCP-A] algorithms for this case.",
       "wiki": "",
       "algdb": "OLL 28",
       "image": "OLL-28",
@@ -1238,7 +1241,7 @@ var algSet = {
 		},
         {
           "alg": "U2 B' U' (R' U2 R) U (R' U2 R) U B",
-          "desc": "[Palindrome] / [Conjugate] - [B' U' R' U2 R: U]",
+          "desc": "[Conjugate] - [B' U' R' U2 R: U]",
 		  "status": -1,
           "uses": ["2H"],
 		  "vars" :
@@ -1300,7 +1303,7 @@ var algSet = {
       [
         {
           "alg": "F U (R U2 R') U' (R U2 R') U' F'",
-          "desc": "[Palindrome] / [Conjugate] - [F U R U2' R': U']",
+          "desc": "[Conjugate] - [F U R U2' R': U']",
 		  "status": 1,
           "uses": ["2H"],
 		  "vars" :
@@ -1705,6 +1708,7 @@ var algSet = {
     {
       "id": "43",
       "name": "P Shape - Little \"b\"",
+      "desc": "This is one of the three [OLL] cases (43, 44, 45) with a 6 move solution.",
       "wiki": "",
       "algdb": "OLL 43",
       "image": "OLL-43",
@@ -1755,6 +1759,7 @@ var algSet = {
     {
       "id": "44",
       "name": "P Shape - Little \"p\"",
+      "desc": "This is one of the three [OLL] cases (43, 44, 45) with a 6 move solution. The algorithm(s) for this [OLL] case are good choices for the adjacent edge flip during [EOLL].",
       "wiki": "",
       "algdb": "OLL 44",
       "image": "OLL-44",
@@ -1781,6 +1786,7 @@ var algSet = {
     {
       "id": "45",
       "name": "T Shape - Suit Up",
+      "desc": "This is one of the three [OLL] cases (43, 44, 45) with a 6 move solution. The algorithm(s) for this [OLL] case are good choices for the opposite edge flip during [EOLL].",
       "wiki": "",
       "algdb": "OLL 45",
       "image": "OLL-45",
@@ -2135,6 +2141,7 @@ var algSet = {
     {
       "id": "57",
       "name": "H / I",
+      "desc": "Advanced solvers might use [OLLCP-A] algorithms for this case.",
       "wiki": "",
       "algdb": "OLL 57",
       "image": "OLL-57",
@@ -2206,7 +2213,7 @@ var algSet = {
         {
           "id": "allcorners",
           "name": "All Corners Oriented",
-		  "desc": "These are the 3 [EOLL] cases. Most of these algorithms also preserve the corner permutation.",
+		  "desc": "These are the 3 [EOLL] cases, offering the chance to use [OLLCP-A]. Most of the algorithms below also preserve the corner permutation.",
           "wiki": "#All_Corners_Oriented",
           "cases": ["28", "57", "20"]
         },
@@ -2309,7 +2316,7 @@ var algSet = {
         {
           "id": "oriented",
           "name": "All Corners Oriented",
-		  "desc": "These are the 3 [EOLL] cases. Most of these algorithms also preserve the corner permutation.",
+		  "desc": "These are the 3 [EOLL] cases, offering the chance to use [OLLCP-A]. Most of the algorithms below also preserve the corner permutation.",
           "cases": ["28", "57", "20"]
         },
         {

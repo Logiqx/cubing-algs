@@ -260,6 +260,27 @@ var algSet = {
 			}
 		  ]
         },
+        {
+          "alg": "(R' U2 R) (R U R') (R' U R) (R U2 R')",
+          "desc": "[Palindrome]. Essentially [RBAS] and [RFS] mixed together",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R' U2 R2 U R2' U R2 U2 R'",
+              "desc": "Two-handed execution applies cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R' U2' R2 U R2 U R2 U2' R'",
+              "desc": "One-handed execution applies cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
       ]
     },
     {

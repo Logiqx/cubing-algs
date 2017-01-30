@@ -22,7 +22,7 @@ var algSet = {
     {
       "id": "Aa",
       "name": "Aa-Perm",
-      "desc": "Inverse and reflection of Ab.",
+      "desc": "Inverse and reflection of Ab. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL].",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa",
@@ -50,12 +50,18 @@ var algSet = {
 			},
 		  ]
         },
+        {
+          "alg": "R U R' F' r U R' U' r' F R2 U' R'",
+          "desc": "Modified Jb-Perm incorporating some wide turns!",
+		  "status": 0,
+          "uses": ["2H"]
+        },
       ]
     },
     {
       "id": "Ab",
       "name": "Ab-Perm",
-      "desc": "Inverse and reflection of Aa.",
+      "desc": "Inverse and reflection of Aa. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL].",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab",
@@ -88,7 +94,7 @@ var algSet = {
     {
       "id": "E",
       "name": "E-Perm",
-	  "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] / [COLL] algorithms for L / Bowtie and T / Chameleon",
+	  "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] / [COLL] algorithms for L / Bowtie and T / Chameleon. The algorithm(s) for this [PLL] case are good choices for a diagonal corner swap during [CPLL].",
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E",
@@ -345,7 +351,7 @@ var algSet = {
     {
       "id": "Jb",
       "name": "Jb-Perm",
-      "desc": "Reflection of Ja.",
+      "desc": "Reflection of Ja. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL].",
       "wiki": "#J_Permutation_:_b",
       "algdb": "Jb",
       "image": "PLL-Jb",
@@ -416,8 +422,8 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "(R' U L' U2' R U' L) (R' U L' U2' R U' L)",
-          "desc": "Playing with [F2L] pairs - track BR + FL",
+          "alg": "(R U' L U2' R' U L') (R U' L U2' R' U L')",
+          "desc": "Playing with [F2L] pairs - track FR + BL",
 		  "status": 1,
           "uses": ["OH"]
         },
@@ -440,8 +446,8 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "(R U' L U2' R' U L') (R U' L U2' R' U L')",
-          "desc": "Playing with [F2L] pairs - track FR + BL",
+          "alg": "(R' U L' U2' R U' L) (R' U L' U2' R U' L)",
+          "desc": "Playing with [F2L] pairs - track BR + FL",
 		  "status": 1,
           "uses": ["OH"]
         },
@@ -692,8 +698,14 @@ var algSet = {
 		  "vars":
 		  [
 			{
-			  "alg": "U R2 U R U R' U' R' U' R' U R'",
+			  "alg": "U R2' U R U R' U' R' U' R' U R'",
 			  "desc": "Two-handed execution applies cancellations",
+			  "status": 0,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "U R2' U R U R' U' R3 U' R' U R'",
+			  "desc": "Two-handed execution incorporating an R3",
 			  "status": 0,
 			  "uses": ["2H"]
 			},
@@ -745,7 +757,7 @@ var algSet = {
         },
         {
           "alg": "R' U2' R U2' L U' R' U L' U L U' R U L'",
-          "desc": "One-handed algorithm",
+          "desc": "Playing with [F2L] pairs - track BR + BL",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -763,6 +775,7 @@ var algSet = {
     {
       "id": "Y",
       "name": "Y-Perm",
+      "desc": "The algorithm(s) for this [PLL] case are good choices for a diagonal corner swap during [CPLL].",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y",
