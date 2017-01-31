@@ -1716,28 +1716,34 @@ var algSet = {
       "algs" :
       [
         {
-		  "alg": "U f' (L' U' L U) f",
-		  "desc": "[Conjugate] - [f': L' U' L U]",
+		  "alg": "U2 R' (U' F' U F) R",
+		  "desc": "[Conjugate] - [R': U' F' U F]",
 		  "status": 1,
-		  "uses": ["2H"],
+		  "uses": ["2H", "OH"],
 		  "vars" :
 		  [
 			{
-			  "alg": "U f' z (U' R' U R) f [z']",
-              "desc": "Executed from a different angle",
-			  "status": 1,
-			  "uses": ["OH"]
-			},
-			{
 			  "alg": "U' F' (U' L' U L) F",
 			  "desc": "Executed from a different angle",
-			  "status": 1,
+			  "status": -1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "U' F' z (R' U' R U) F [z']",
+			  "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
+			},
+			{
+			  "alg": "U f' (L' U' L U) f",
 			  "desc": "Executed from a different angle",
-			  "status": 1,
+			  "status": -1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "U f' z (U' R' U R) f [z']",
+              "desc": "One-handed execution",
+			  "status": -1,
 			  "uses": ["OH"]
 			},
 			{
@@ -1747,10 +1753,10 @@ var algSet = {
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "U2 R' (U' F' U F) R",
-			  "desc": "My execution",
-			  "status": 0,
-			  "uses": ["2H", "OH"]
+			  "alg": "U' F' z (R' U' R U) F [z']",
+			  "desc": "One-handed execution",
+			  "status": -1,
+			  "uses": ["OH"]
 			}
 		  ]
         },
