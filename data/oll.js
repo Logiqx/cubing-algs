@@ -1773,14 +1773,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' f (R U R' U') f'",
-          "desc": "[Conjugate] of [sexy] - [f: R U R' U']",
+          "alg": "U F (U R U' R') F'",
+          "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
 		  "status": 1,
           "uses": ["2H", "OH"],
 		  "vars" :
 		  [
 			{
-			  "alg": "U F (U R U' R') F'",
+			  "alg": "U' f (R U R' U') f'",
 			  "desc": "Executed from a different angle",
 			  "status": 1,
 			  "uses": ["2H", "OH"]
@@ -1992,14 +1992,14 @@ var algSet = {
       "algs" :
       [
 		{
-		  "alg": "f (R U R' U') (R U R' U') f'",
-		  "desc": "[Conjugate] of double [sexy] - [f: [R U R' U']*2]]",
+		  "alg": "U2 F (U R U' R') (U R U' R') F'",
+		  "desc": "[Conjugate] of double [reverse-sexy] - [F: [U R U' R']*2]]",
 		  "status": 1,
 		  "uses": ["2H", "OH"],
 		  "vars" :
 		  [
 			{
-			  "alg": "U2 F (U R U' R') (U R U' R') F'",
+			  "alg": "f (R U R' U') (R U R' U') f'",
 			  "desc": "Executed from a different angle",
 			  "status": 1,
 			  "uses": ["2H", "OH"]
