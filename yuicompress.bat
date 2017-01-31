@@ -2,6 +2,7 @@ java -jar yuicompressor-2.4.8.jar css/normalize.css -o css/normalize-min.css
 java -jar yuicompressor-2.4.8.jar css/pushy.css -o css/pushy-min.css
 java -jar yuicompressor-2.4.8.jar css/main.css -o css/main-min.css
 java -jar yuicompressor-2.4.8.jar css/2l2gll.css -o css/2l2gll-min.css
+java -jar yuicompressor-2.4.8.jar css/2lcpeoll.css -o css/2lcpeoll-min.css
 java -jar yuicompressor-2.4.8.jar css/2loll.css -o css/2loll-min.css
 java -jar yuicompressor-2.4.8.jar css/2lpll.css -o css/2lpll-min.css
 java -jar yuicompressor-2.4.8.jar css/coll.css -o css/coll-min.css
@@ -25,6 +26,7 @@ java -jar yuicompressor-2.4.8.jar data/2aoll.js -o data/2aoll-min.js
 java -jar yuicompressor-2.4.8.jar data/2apll.js -o data/2apll-min.js
 java -jar yuicompressor-2.4.8.jar data/2l2gll.js -o data/2l2gll-min.js
 java -jar yuicompressor-2.4.8.jar data/2loll.js -o data/2loll-min.js
+java -jar yuicompressor-2.4.8.jar data/2lcpeoll.js -o data/2lcpeoll-min.js
 java -jar yuicompressor-2.4.8.jar data/2lpll.js -o data/2lpll-min.js
 java -jar yuicompressor-2.4.8.jar data/3apll.js -o data/3apll-min.js
 java -jar yuicompressor-2.4.8.jar data/4aoll.js -o data/4aoll-min.js
