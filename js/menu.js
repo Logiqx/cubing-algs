@@ -87,7 +87,7 @@ menuItems =
 	},
 	{
 		"type": "submenu",
-		"desc": "OLL + PLL",
+		"desc": "EO CO CP EP",
 		"items":
 		[
 			{
@@ -104,7 +104,7 @@ menuItems =
 	},
 	{
 		"type": "submenu",
-		"desc": "CPEOLL + 2GLL",
+		"desc": "EO CP CO EP",
 		"items":
 		[
 			{
