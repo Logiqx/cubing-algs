@@ -86,6 +86,7 @@ var algSet = {
     {
       "id": "L",
       "name": "L / Bowtie",
+      "desc": "This case can be solved using the algorithms for [OLL] 37.",
       "wiki": "",
       "algdb": "OLL 25",
       "image": "OCLL-L",
@@ -93,136 +94,23 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(F' L F R') (F' L' F R)",
-          "desc": "Basic [commutator] - [F' L F, R']",
+          "alg": "U' F R U' (R' U' R U) R' F'",
+          "desc": "Playing with [F2L] pair - track FL",
 		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "F' (r U R' U') r' F R",
-              "desc": "Two-handed execution incorporates wide turns",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "F' (r U R' U') z U' R u",
-              "desc": "One-handed execution incorporates wide turns",
-			  "status": 0,
-			  "uses": ["OH"]
-			},
-		  ]
+          "uses": ["2H", "OH"]
         },
         {
-          "alg": "U2 x' (R U' R' D) (R U R' D') x",
-          "desc": "First half of E-Perm. Basic [commutator] - [R U' R', D]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 (l U' R' D) (R U R' D') x",
-              "desc": "Two-handed execution incorporates wide turns",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 x' (R U' R' D) (R U R' u') [z']",
-              "desc": "One-handed execution incorporates wide turns",
-			  "status": 0,
-			  "uses": ["OH"]
-			},
-		  ]
-        },
-        {
-          "alg": "(R' U' R U' R' U2 R) * 3",
-          "desc": "[SuneOLL]/[2GLL]: Triple [RBS]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
-              "desc": "Two-handed execution applies cancellations",
-			  "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
-              "desc": "One-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
-        },
-        {
-          "alg": "U (R U2 R' U' R U' R') * 3",
-          "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U R U2 R' U' (R U R' U') (R U R' U') R U' R'",
-              "desc": "Two-handed execution applies cancellations",
-			  "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U R U2' R' U' (R U R' U') (R U R' U') R U' R'",
-              "desc": "One-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
-        },
-        {
-          "alg": "U2 R2 (R U2 R' D') (R U2 R' D) R2'",
-          "desc": "A9 [commutator] / [conjugate] - [R2: [R U2 R', D']]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 R' U2 R' D' R U2 R' D R2",
-              "desc": "Two-handed execution applies a cancellation",
-              "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 R' U2' R' D' R U2' R' D R2",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
-        },
-        {
-          "alg": "U' R2 (R' U2 R D) (R' U2 R D') R2'",
-          "desc": "A9 [commutator] / [conjugate] - [R2: [R' U2 R, D]]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U' R U2 R D R' U2 R D' R2'",
-              "desc": "Two-handed execution applies a cancellation",
-              "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U' R U2' R D R' U2' R D' R2",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
+          "alg": "U' (F R' F' R) (U R U' R')",
+          "desc": "Triggers - [hedgeslammer], [reverse-sexy]",
+		  "status": -1,
+          "uses": ["2H", "OH"]
         }
       ]
     },
     {
       "id": "U",
       "name": "U / Headlights",
+      "desc": "This case can be solved using the algorithms for [OLL] 44 + 45.",
       "wiki": "",
       "algdb": "OLL 23",
       "image": "OCLL-U",
@@ -230,94 +118,23 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R2 (D' R U2 R') (D R U2 R') R2'",
-          "desc": "A9 [commutator] / [conjugate] - [R2: [D', R U2 R']]",
+          "alg": "U F (U R U' R') F'",
+          "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
 		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R2' D' R U2 R' D R U2 R",
-              "desc": "Two-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "R2 D' R U2' R' D R U2' R",
-              "desc": "One-handed execution applies a cancellation",
-			  "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
+          "uses": ["2H", "OH"]
         },
         {
-          "alg": "U2 R2 (D R' U2 R) (D' R' U2 R) R2'",
-          "desc": "A9 [commutator] / [conjugate] - [R2: [D, R' U2 R]]",
+          "alg": "U' F (R U R' U') F'",
+          "desc": "[Conjugate] of [sexy] - [F: R U R' U']",
 		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 R2 D R' U2 R D' R' U2 R'",
-              "desc": "Two-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 R2 D R' U2' R D' R' U2' R'",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
-        },
-        {
-          "alg": "(R' U' R U' R' U2 R) (R U R' U R U2' R')",
-          "desc": "[SuneOLL]/[2GLL]: [RBS], [RFS]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R' U' R U' R' U2 R2 U R' U R U2' R'",
-              "desc": "Two-handed execution applies a cancellation",
-			  "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "R' U' R U' R' U2' R2 U R' U R U2' R'",
-              "desc": "One-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
-        },
-        {
-          "alg": "U2 (R U R' U R U2' R') (R' U' R U' R' U2 R)",
-          "desc": "[SuneOLL]/[2GLL]: [RFS], [RBS]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 R U R' U R U2' R2' U' R U' R' U2 R",
-              "desc": "Two-handed execution applies a cancellation",
-			  "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 R U R' U R U2' R2 U' R U' R' U2' R",
-              "desc": "One-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
+          "uses": ["2H", "OH"]
         },
       ]
     },
     {
       "id": "T",
       "name": "T / Chameleon",
+      "desc": "This case can be solved using the algorithms for [OLL] 33.",
       "wiki": "",
       "algdb": "OLL 24",
       "image": "OCLL-T",
@@ -325,84 +142,15 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' (L F R' F') (L' F R F')",
-          "desc": "Basic [commutator] - [L, F R' F']",
+          "alg": "U' (R U R' U') (R' F R F')",
+          "desc": "Trigger combination known as \"[sexy-sledge]\"",
 		  "status": 1,
-          "uses": [],
+          "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "U' (r U R' U') (r' F R F')",
-              "desc": "Two-handed - wide [sexy], wide [sledgehammer]",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U' (r U R' U') z (U' R u F') [z']",
-              "desc": "One-handed execution incorporates wide turns",
-			  "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
-        },
-        {
-          "alg": "U2 x' (R U R' D) (R U' R' D') x",
-          "desc": "Second half of E-Perm. Basic [commutator] - [R, U R' D]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 (l U R' D) (R U' R' u') [z']",
-              "desc": "Two-handed execution incorporates wide turns",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 x' (R U R' D) (R U' R' u') [z']",
-              "desc": "One-handed execution incorporates wide turns",
-			  "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
-		},
-        {
-          "alg": "(R U2 R' U' R U' R') (R' U2' R U R' U R)",
-          "desc": "[SuneOLL]/[2GLL]: [RFAS], [RBAS]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
-              "desc": "Two-handed execution applies a cancellation",
-			  "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "R U2' R' U' R U' R2 U2' R U R' U R",
-              "desc": "One-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
-        },
-        {
-          "alg": "U2 (R' U2' R U R' U R) (R U2 R' U' R U' R')",
-          "desc": "[SuneOLL]/[2GLL]: [RBAS], [RFAS]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 R' U2' R U R' U R2 U2 R' U' R U' R'",
-              "desc": "Two-handed execution applies a cancellation",
-			  "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 R' U2' R U R' U R2 U2' R' U' R U' R'",
-              "desc": "One-handed execution applies a cancellation",
+			  "alg": "U' (R U R' U') (x R' U R U' x')",
+              "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
@@ -413,6 +161,7 @@ var algSet = {
     {
       "id": "Pi",
       "name": "Pi / Bruno",
+      "desc": "This case can be solved using the algorithms for [OLL] 48 + 51.",
       "wiki": "",
       "algdb": "OLL 22",
       "image": "OCLL-Pi",
@@ -420,77 +169,17 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2' R') (R' U' R) (R U' R') (R' U2' R)",
-          "desc": "[Palindrome]. Essentially [RFAS] and [RBS] mixed together",
+          "alg": "F (R U R' U') (R U R' U') F'",
+          "desc": "[Conjugate] of double [sexy] - [F: [R U R' U']*2]]",
 		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R U2' R2' U' R2 U' R2' U2' R",
-              "desc": "Two-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "R U2' R2 U' R2 U' R2 U2' R",
-              "desc": "One-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
+          "uses": ["2H", "OH"]
         },
-        {
-          "alg": "(R' U2 R) (R U R') (R' U R) (R U2 R')",
-          "desc": "[Palindrome]. Essentially [RBAS] and [RFS] mixed together",
+		{
+		  "alg": "U2 F (U R U' R') (U R U' R') F'",
+		  "desc": "[Conjugate] of double [reverse-sexy] - [F: [U R U' R']*2]]",
 		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R' U2 R2 U R2' U R2 U2 R'",
-              "desc": "Two-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "R' U2' R2 U R2 U R2 U2' R'",
-              "desc": "One-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
-        },
-        {
-          "alg": "(R U2 R' U' R U' R') U' (R U2 R' U' R U' R')",
-          "desc": "[SuneOLL]/[2GLL]: Anti-Sune, [AUF], Anti-Sune",
-		  "status": -1,
-          "uses": ["2H"],
-		  "vars" :
-		  [
-			{
-			  "alg": "(R U2' R' U' R U' R') U' (R U2' R' U' R U' R')",
-              "desc": "One-handed execution",
-			  "status": -1,
-			  "uses": ["OH"]
-			}
-		  ]
-        },
-        {
-          "alg": "f (R U R' U') f' F (R U R' U') F'",
-          "desc": "[EOLL] combination - f [sexy] f', F [sexy] F'",
-		  "status": -1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "f (R U R' U') S' (R U R' U') F'",
-              "desc": "Two-handed execution applies a cancellation",
-              "status": -1,
-			  "uses": ["2H"]
-			}
-		  ]
-        }
+		  "uses": ["2H", "OH"]
+		},
       ]
     },
     {
