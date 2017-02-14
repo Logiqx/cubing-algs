@@ -550,7 +550,14 @@ function loadHandler()
 		addEventHandler(window, "popstate", popStateHandler);
 	
 		// Render the menu from JSON
-		initMenu();
+		try
+		{
+			initMenu();
+		}
+		catch (err)
+		{
+			// Ignore error
+		}
 
 		// Use the "hashchange" handler to render the page on load
 		hashChangeHandler();
