@@ -83,6 +83,22 @@ menuItems =
 	},
 	{
 		"type": "h2",
+		"desc": "Roux"
+	},
+	{
+		"type": "submenu",
+		"desc": "Intermediate",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "2LCLL",
+				"href": "2lcll.html"
+			},
+		]
+	},
+	{
+		"type": "h2",
 		"desc": "4LLL"
 	},
 	{
@@ -116,6 +132,23 @@ menuItems =
 				"type": "link",
 				"desc": "2L2GLL",
 				"href": "2l2gll.html"
+			}
+		]
+	},
+	{
+		"type": "submenu",
+		"desc": "CO CP EO EP",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "2LCLL",
+				"href": "2lcll.html"
+			},
+			{
+				"type": "link",
+				"desc": "2LELL",
+				"href": "2lell.html"
 			}
 		]
 	}
