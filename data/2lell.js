@@ -22,39 +22,61 @@ var algSet = {
     {
       "id": "Clock",
       "name": "Clock",
-      "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] 44.",
+      "desc": "This case is typically solved using the algorithm(s) for [OLL] 28.",
       "wiki": "",
-      "algdb": "OLL 44",
+      "algdb": "OLL 28",
       "image": "EOLL-28",
       "prob": "4/8",
       "algs" :
       [
         {
-          "alg": "F (U R U' R') F'",
-          "name": "OLL 44",
-          "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
+          "alg": "U' (M' U' M) U2' (M' U' M)",
+          "desc": "Moo!",
 		  "status": 1,
-          "uses": ["2H"],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 f (R U R' U') f'",
-			  "desc": "Executed from a different angle",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-		  ]
+          "uses": ["2H"]
         },
         {
-          "alg": "U r U2 R' U' R U' r'",
-          "name": "OLL 6",
-          "desc": "[RFWAS] - Extract 2x2x1 block, [AUF], re-insert block",
+          "alg": "M' (R U R' U') M (U R U' R')",
+          "desc": "Triggers - M-slice, [sexy], M-slice, [reverse-sexy]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "U r U2' R' U' R U' r'",
+			  "alg": "(r U R' U') r' R (U R U' R')",
+              "desc": "One-handed execution avoids the M move",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "Line",
+      "name": "Line",
+      "desc": "This case is typically solved using the algorithm for [OLL] 57.",
+      "wiki": "",
+      "algdb": "OLL 57",
+      "image": "EOLL-57",
+      "prob": "2/8",
+      "algs" :
+      [
+        {
+          "alg": "(R U R' U') M' (U R U' R') M",
+          "desc": "Triggers - [sexy], M-slice, [reverse-sexy], M-slice",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "(R U R' U') M' (U R U' r')",
+              "desc": "Two-handed execution",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "(R U R' U') r R' (U R U' r')",
               "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
@@ -64,66 +86,36 @@ var algSet = {
       ]
     },
     {
-      "id": "Line",
-      "name": "Line",
-      "desc": "This case is typically solved using the algorithm for [OLL] 45.",
-      "wiki": "",
-      "algdb": "OLL 45",
-      "image": "EOLL-57",
-      "prob": "2/8",
-      "algs" :
-      [
-        {
-          "alg": "F (R U R' U') F'",
-          "name": "OLL 45",
-          "desc": "[Conjugate] of [sexy] - [F: R U R' U']",
-		  "status": 1,
-          "uses": ["2H", "OH"]
-        },
-      ]
-    },
-    {
       "id": "Dot",
       "name": "Dot",
-      "desc": "This case is typically solved using the algorithm(s) for [OLL] 2.",
+      "desc": "This case is typically solved using the algorithm for [OLL] 20.",
       "wiki": "",
-      "algdb": "OLL 2",
+      "algdb": "OLL 20",
       "image": "EOLL-20",
       "prob": "1/8",
       "algs" :
       [
         {
-          "alg": "F (R U R' U') F' f (R U R' U') f'",
-          "name": "OLL 2",
-          "desc": "[OLL] combination - F [sexy] F', f [sexy] f'",
+          "alg": "M' (R U R' U') M2 (U R U' R') U' M'",
+          "desc": "M-slice, [sexy], M-slice, [reverse-sexy], [AUF], M-slice",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "F (R U R' U') S (R U R' U') f'",
-              "desc": "Two-handed execution applies a cancellation",
-              "status": 1,
+			  "alg": "(r U R' U') M2' (U R U' R') U' M'",
+              "desc": "Two-handed execution",
+			  "status": 1,
 			  "uses": ["2H"]
-			}
-		  ]
-        },
-        {
-          "alg": "(r U2 R' U' R U' r') U' (r U2 R' U' R U' r')",
-          "name": "OLL 2",
-          "desc": "[SuneOLL]: [RFWAS], [AUF], [RFWAS]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
+			},
 			{
-			  "alg": "(r U2' R' U' R U' r') U' (r U2' R' U' R U' r')",
+			  "alg": "(r U R' U') r2 R2 (U R U' R') U' r R'",
               "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
 		  ]
-        },
+        }
       ]
     },
     {
