@@ -83,6 +83,27 @@ menuItems =
 	},
 	{
 		"type": "h2",
+		"desc": "CFCE"
+	},
+	{
+		"type": "submenu",
+		"desc": "Intermediate",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "2LCLL",
+				"href": "2lcll.html"
+			},
+			{
+				"type": "link",
+				"desc": "2LELL",
+				"href": "2lell.html"
+			},
+		]
+	},
+	{
+		"type": "h2",
 		"desc": "Roux"
 	},
 	{
