@@ -4,7 +4,7 @@ var algSet = {
     "id": "2LELL",
     "name": "2-Look Edges of the Last Layer",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/Set/OLL/",
+    "algdb": "http://algdb.net/Set/",
     "uses":
     [
       {
@@ -20,11 +20,11 @@ var algSet = {
   "cases":
   [
     {
-      "id": "Clock",
-      "name": "Clock",
+      "id": "28",
+      "name": "Stealth / Angel Fish",
       "desc": "This case is typically solved using the algorithm(s) for [OLL] 28.",
       "wiki": "",
-      "algdb": "OLL 28",
+      "algdb": "OLL/OLL 28",
       "image": "EOLL-28",
       "prob": "4/8",
       "algs" :
@@ -53,11 +53,11 @@ var algSet = {
       ]
     },
     {
-      "id": "Line",
-      "name": "Line",
+      "id": "57",
+      "name": "H / I",
       "desc": "This case is typically solved using the algorithm for [OLL] 57.",
       "wiki": "",
-      "algdb": "OLL 57",
+      "algdb": "OLL/OLL 57",
       "image": "EOLL-57",
       "prob": "2/8",
       "algs" :
@@ -86,11 +86,11 @@ var algSet = {
       ]
     },
     {
-      "id": "Dot",
-      "name": "Dot",
+      "id": "20",
+      "name": "No Edges - X / Checkers",
       "desc": "This case is typically solved using the algorithm for [OLL] 20.",
       "wiki": "",
-      "algdb": "OLL 20",
+      "algdb": "OLL/OLL 20",
       "image": "EOLL-20",
       "prob": "1/8",
       "algs" :
@@ -140,7 +140,7 @@ var algSet = {
       "name": "Ua-Perm",
       "desc": "Inverse and reflection of Ub.",
       "wiki": "",
-      "algdb": "Ua",
+      "algdb": "PLL/Ua",
       "image": "EPLL-Ua",
       "prob": "1/3",
       "algs" :
@@ -224,7 +224,7 @@ var algSet = {
       "name": "Ub-Perm",
       "desc": "Inverse and reflection of Ua.",
       "wiki": "",
-      "algdb": "Ub",
+      "algdb": "PLL/Ub",
       "image": "EPLL-Ub",
       "prob": "1/3",
       "algs" :
@@ -307,7 +307,7 @@ var algSet = {
       "id": "Z",
       "name": "Z-Perm",
       "wiki": "",
-      "algdb": "Z",
+      "algdb": "PLL/Z",
       "image": "EPLL-Z",
       "prob": "1/6",
       "algs" :
@@ -355,7 +355,7 @@ var algSet = {
       "name": "H-Perm / X-Perm",
       "desc": "Best known as H-Perm (i.e. swapping opposite edge pairs) this case is also known as X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "",
-      "algdb": "H",
+      "algdb": "PLL/H",
       "image": "EPLL-H",
       "prob": "1/12",
       "algs" :
@@ -413,7 +413,7 @@ var algSet = {
           "name": "Edge Orientation",
           "wiki": "EOLL",
           "desc": "These are the 3 [EOLL] cases. All of these cases can be solved using [OLL] algorithms which do not affect the corners.",
-          "cases": ["Clock", "Line", "Dot", "EOLL"]
+          "cases": ["28", "57", "20", "EOLL"]
         },
         {
           "id": "permutation",

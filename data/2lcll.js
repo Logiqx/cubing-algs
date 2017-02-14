@@ -4,7 +4,7 @@ var algSet = {
     "id": "2LCLL",
     "name": "2-Look Corners of the Last Layer",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/Set/CLL/",
+    "algdb": "http://algdb.net/Set/",
     "uses":
     [
       {
@@ -23,7 +23,7 @@ var algSet = {
       "id": "AS",
       "name": "Anti-Sune",
       "wiki": "",
-      "algdb": "OLL 26",
+      "algdb": "OLL/OLL 26",
       "image": "OCLL-AS",
       "prob": "4/27",
       "algs" :
@@ -64,7 +64,7 @@ var algSet = {
       "id": "S",
       "name": "Sune",
       "wiki": "",
-      "algdb": "OLL 27",
+      "algdb": "OLL/OLL 27",
       "image": "OCLL-S",
       "prob": "4/27",
       "algs" :
@@ -88,7 +88,7 @@ var algSet = {
       "name": "L / Bowtie",
       "desc": "This case can be solved using the algorithms for [OLL] 37.",
       "wiki": "",
-      "algdb": "OLL 25",
+      "algdb": "OLL/OLL 25",
       "image": "OCLL-L",
       "prob": "4/27",
       "algs" :
@@ -112,7 +112,7 @@ var algSet = {
       "name": "U / Headlights",
       "desc": "This case can be solved using the algorithms for [OLL] 44 + 45.",
       "wiki": "",
-      "algdb": "OLL 23",
+      "algdb": "OLL/OLL 23",
       "image": "OCLL-U",
       "prob": "4/27",
       "algs" :
@@ -136,7 +136,7 @@ var algSet = {
       "name": "T / Chameleon",
       "desc": "This case can be solved using the algorithms for [OLL] 33.",
       "wiki": "",
-      "algdb": "OLL 24",
+      "algdb": "OLL/OLL 24",
       "image": "OCLL-T",
       "prob": "4/27",
       "algs" :
@@ -163,7 +163,7 @@ var algSet = {
       "name": "Pi / Bruno",
       "desc": "This case can be solved using the algorithms for [OLL] 48 + 51.",
       "wiki": "",
-      "algdb": "OLL 22",
+      "algdb": "OLL/OLL 22",
       "image": "OCLL-Pi",
       "prob": "4/27",
       "algs" :
@@ -186,7 +186,7 @@ var algSet = {
       "id": "H",
       "name": "H / Double Sune",
       "wiki": "",
-      "algdb": "OLL 21",
+      "algdb": "OLL/OLL 21",
       "image": "OCLL-H",
       "prob": "2/27",
       "algs" :
@@ -263,7 +263,7 @@ var algSet = {
       "name": "Adjacent Corner Swap",
       "desc": "This case is typically solved using the [PLL] algorithms for Aa-Perm, Jb-Perm or T-Perm",
       "wiki": "",
-      "algdb": "Jb",
+      "algdb": "PLL/Jb",
       "image": "CPLL-A",
       "prob": "2/3",
       "algs" :
@@ -351,7 +351,7 @@ var algSet = {
       "name": "Diagonal Corner Swap",
       "desc": "This case is typically solved using the [PLL] algorithms for E-Perm or Y-Perm.",
       "wiki": "",
-      "algdb": "Y",
+      "algdb": "PLL/Y",
       "image": "CPLL-O",
       "prob": "1/6",
       "algs" :
