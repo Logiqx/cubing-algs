@@ -55,7 +55,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R U2 R' U' R U2 L' U R' U' L U2 +<br/>R U2 R' U' R U2 L' U R' U' L",
+          "alg": "R U2 R' U' R U2 L' U R' U' L ...<br/>U2 R U2 R' U' R U2 L' U R' U' L",
           "desc": "[PLL] combination - Jb-Perm, [AUF], Jb-Perm",
 		  "status": 1,
           "uses": ["2H"]
@@ -143,7 +143,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R U' R U R U R U' R' U' R2 U' +<br/>R U' R U R U R U' R' U' R2",
+          "alg": "R U' R U R U R U' R' U' R2 ...<br/>U' R U' R U R U R U' R' U' R2",
           "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
 		  "status": 1,
           "uses": ["2H"]
@@ -161,7 +161,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R U' R U R U R U' R' U' R2 U +<br/>R U' R U R U R U' R' U' R2",
+          "alg": "R U' R U R U R U' R' U' R2 ...<br/>U R U' R U R U R U' R' U' R2",
           "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
 		  "status": 1,
           "uses": ["2H"]
