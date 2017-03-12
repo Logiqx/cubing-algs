@@ -125,7 +125,7 @@ var algSet = {
       [
         {
           "alg": "M (R U R' U r U2' r') U M'",
-          "desc": "Includes hybrid of [RFS] and [RFWS]",
+          "desc": "Similar to OLL 11 except this uses a hybrid of [RFS] and [RFWS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -163,7 +163,7 @@ var algSet = {
       [
         {
           "alg": "M' (R' U' R U' r' U2 r) U' M",
-          "desc": "Includes hybrid of [RBS] and [RBWS]",
+          "desc": "Similar to OLL 12 except this uses a hybrid of [RBS] and [RBWS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
