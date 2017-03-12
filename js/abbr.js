@@ -21,6 +21,10 @@ var abbrs =
     "desc": "6-Look Last Layer"
   },
   {
+    "name": "Anti-Sune",
+    "desc": "Extract F2L pair, AUF, re-insert pair"
+  },
+  {
     "name": "AUF",
     "desc": "Adjust U Face"
   },
@@ -79,6 +83,10 @@ var abbrs =
   {
     "name": "OCLL",
     "desc": "Orient Corners of the Last Layer"
+  },
+  {
+    "name": "OCLL-EPP",
+    "desc": "Orient Corners of the Last Layer - Edges Permutation Preserved"
   },
   {
     "name": "OLL",
