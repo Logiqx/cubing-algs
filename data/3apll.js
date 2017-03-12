@@ -24,7 +24,7 @@ var algSet = {
       "wiki": "",
       "algdb": "Jb",
       "image": "CPLL-A",
-      "prob": "2/3",
+      "prob": "4/6",
       "algs" :
       [
         {
@@ -86,7 +86,7 @@ var algSet = {
       "wiki": "",
       "algdb": "Ua",
       "image": "EPLL-Ua",
-      "prob": "1/3",
+      "prob": "4/12",
       "algs" :
       [
         {
@@ -113,7 +113,7 @@ var algSet = {
       "wiki": "",
       "algdb": "Ub",
       "image": "EPLL-Ub",
-      "prob": "1/3",
+      "prob": "4/12",
       "algs" :
       [
         {
@@ -139,7 +139,7 @@ var algSet = {
       "wiki": "",
       "algdb": "Z",
       "image": "EPLL-Z",
-      "prob": "1/6",
+      "prob": "2/12",
       "algs" :
       [
         {

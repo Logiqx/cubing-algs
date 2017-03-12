@@ -265,7 +265,7 @@ var algSet = {
       "wiki": "",
       "algdb": "PLL/Jb",
       "image": "CPLL-A",
-      "prob": "2/3",
+      "prob": "4/6",
       "algs" :
       [
         {

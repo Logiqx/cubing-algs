@@ -360,7 +360,7 @@ var algSet = {
       "wiki": "",
       "algdb": "PLL/Ua",
       "image": "EPLL-Ua",
-      "prob": "1/3",
+      "prob": "4/12",
       "algs" :
       [
         {
@@ -432,7 +432,7 @@ var algSet = {
       "wiki": "",
       "algdb": "PLL/Ub",
       "image": "EPLL-Ub",
-      "prob": "1/3",
+      "prob": "4/12",
       "algs" :
       [
         {
@@ -515,7 +515,7 @@ var algSet = {
       "wiki": "",
       "algdb": "PLL/Z",
       "image": "EPLL-Z",
-      "prob": "1/6",
+      "prob": "2/12",
       "algs" :
       [
         {
