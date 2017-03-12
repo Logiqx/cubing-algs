@@ -246,7 +246,7 @@ var algSet = {
     {
       "id": "Gd",
       "name": "Gd-Perm",
-      "desc": "Inverse of Gc. Reflection of Gb.",
+      "desc": "Inverse of Gc. Reflection of Gb.<br/><br/>Check out the similarity between the Gd-Perm algorithm R2' F' (R U R U') (R' F' R U2' R' U2 R' F) F R2 and the Ra-Perm algorithm R U (R' F' R U2' R' U2 R' F) (R U R U') U' R'.",
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd",
@@ -456,7 +456,7 @@ var algSet = {
     {
       "id": "Ra",
       "name": "Ra-Perm",
-      "desc": "Reflection of Rb.",
+      "desc": "Reflection of Rb.<br/><br/>Check out the similarity between the Ra-Perm algorithm R U (R' F' R U2' R' U2 R' F) (R U R U') U' R' and the Gd-Perm algorithm R2' F' (R U R U') (R' F' R U2' R' U2 R' F) F R2.",
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra",
@@ -543,6 +543,7 @@ var algSet = {
     {
       "id": "T",
       "name": "T-Perm",
+      "desc": "Check out the similarity between the T-Perm algorithm (R U R' U' R' F R F') (F R U' R' U' R U R' F') and the Y-Perm algorithm (F R U' R' U' R U R' F') (R U R' U' R' F R F').",
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T",
@@ -751,7 +752,7 @@ var algSet = {
       [
         {
           "alg": "R' U R' d' R' F' R2 U' R' U R' F R F",
-          "desc": "Two-handed algorithm",
+          "desc": "Two-handed algorithm includes a hidden rotation",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -775,7 +776,7 @@ var algSet = {
     {
       "id": "Y",
       "name": "Y-Perm",
-      "desc": "The algorithm(s) for this [PLL] case are good choices for a diagonal corner swap during [CPLL].",
+      "desc": "The algorithm(s) for this [PLL] case are good choices for a diagonal corner swap during [CPLL].<br/><br/>Check out the similarity between the Y-Perm algorithm (F R U' R' U' R U R' F') (R U R' U' R' F R F') and the T-Perm algorithm (R U R' U' R' F R F') (F R U' R' U' R U R' F').",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y",
