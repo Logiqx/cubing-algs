@@ -81,7 +81,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) ...<br/>U' (R U2 R U' R U' R') U (L' U2 L U L' U L)",
+          "alg": "(R U2 R' U' R U' R') U (L' U2 L U L' U L) ...<br/>U' (R U2 R' U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[EPLL] combination - Ub-Perm, [AUF], Ub-Perm",
 		  "status": 1,
           "uses": ["2H"]
@@ -99,7 +99,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L)",
+          "alg": "(R U2 R' U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[Sune] combination - [RFAS], [AUF], [LFAS]",
 		  "status": 1,
           "uses": ["2H"]
@@ -116,7 +116,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) ...<br/>(R U2 R U' R U' R') U (L' U2 L U L' U L)",
+          "alg": "(R U2 R' U' R U' R') U (L' U2 L U L' U L) ...<br/>(R U2 R' U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[EPLL] combination - Ub-Perm, Ub-Perm",
 		  "status": 1,
           "uses": ["2H"]
@@ -134,7 +134,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R U' R U' R') U (L' U2 L U L' U L) ...<br/>U2 (R U2 R U' R U' R') U (L' U2 L U L' U L)",
+          "alg": "(R U2 R' U' R U' R') U (L' U2 L U L' U L) ...<br/>U2 (R U2 R' U' R U' R') U (L' U2 L U L' U L)",
           "desc": "[EPLL] combination - Ub-Perm, [AUF], Ub-Perm",
 		  "status": 1,
           "uses": ["2H"]
@@ -176,7 +176,7 @@ var algSet = {
         {
           "id": "edges",
           "name": "Edge Permutation",
-		  "desc": "The 4 [EPLL] cases are solved using 1 [RUL] algorithm made from 2 shorter algorithms - [RFAS] (R U2 R U' R U' R') + [LFAS] (L' U2 L U L' U L).",
+		  "desc": "The 4 [EPLL] cases are solved using 1 [RUL] algorithm made from 2 shorter algorithms - [RFAS] (R U2 R' U' R U' R') + [LFAS] (L' U2 L U L' U L).",
           "wiki": "2-Look_PLL",
           "cases": ["Ua", "Ub", "Z", "H", "EPLL"]
         },
