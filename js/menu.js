@@ -124,6 +124,23 @@ menuItems =
 	},
 	{
 		"type": "submenu",
+		"desc": "CO CP EO EP",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "2LCLL",
+				"href": "2lcll.html"
+			},
+			{
+				"type": "link",
+				"desc": "2LELL",
+				"href": "2lell.html"
+			}
+		]
+	},
+	{
+		"type": "submenu",
 		"desc": "EO CO CP EP",
 		"items":
 		[
@@ -158,18 +175,18 @@ menuItems =
 	},
 	{
 		"type": "submenu",
-		"desc": "CO CP EO EP",
+		"desc": "EO EP CO CP",
 		"items":
 		[
 			{
 				"type": "link",
-				"desc": "2LCLL",
-				"href": "2lcll.html"
+				"desc": "2LLLEF",
+				"href": "2lllef.html"
 			},
 			{
 				"type": "link",
-				"desc": "2LELL",
-				"href": "2lell.html"
+				"desc": "2LL4C",
+				"href": "2ll4c.html"
 			}
 		]
 	}

@@ -1,8 +1,8 @@
 var algSet = {
   "header":
   {
-    "id": "2LCPEOLL",
-    "name": "2-Look Corner Permutation and Edge Orientation of the Last Layer",
+    "id": "2LLLEF",
+    "name": "2-Look Last Layer Edges First",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/",
     "uses":
@@ -145,78 +145,97 @@ var algSet = {
     },
     {
       "id": "Adj",
-      "name": "Adjacent Corner Swap",
-      "desc": "This case can be solved with the [Niklas] algorithm.",
+      "name": "Adjacent Edge Swap",
+      "desc": "This fastest way to solve this case is using [Anti-Sune] or [Sune] algorithms.",
       "wiki": "",
       "algdb": ".",
-      "image": "CPLL-A",
+      "image": "EPLL-A",
       "prob": "4/6",
       "algs" :
       [
         {
-          "alg": "(L' U R U') (L U R' U')",
-          "name": "Niklas",
-          "desc": "Basic commutator - [L', U R U']",
+          "alg": "R U2 R' U' R U' R'",
+          "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
-          "uses": [],
+          "uses": ["2H"],
 		  "vars" :
 		  [
 			{
-			  "alg": "L' U R U' L U R'",
-              "desc": "Two-handed execution",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "z (U' R D R' U R D') [z']",
+			  "alg": "R U2' R' U' R U' R'",
               "desc": "One-handed execution",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
-          ]
-        }
+		  ]
+        },
+        {
+          "alg": "U R U R' U R U2' R'",
+          "desc": "[RFS] - Extract [F2L] pair, [AUF], re-insert pair",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
       ]
     },
     {
-      "id": "Diag",
-      "name": "Diagonal Corner Swap",
-      "desc": "This case can be solved with the [Niklas] algorithm, executed twice.",
+      "id": "Opp",
+      "name": "Opposite Edge Swap",
+      "desc": "This case can be solved using [Anti-Sune] or [Sune] algorithms. It can also be solved using a [PLL] algorithm such as T-Perm (2H) or Z-Perm (OH).",
       "wiki": "",
       "algdb": ".",
-      "image": "CPLL-O",
+      "image": "EPLL-O",
       "prob": "1/6",
       "algs" :
       [
         {
-          "alg": "(L' U R U') (L U R' U') U (L' U R U') (L U R' U')",
-          "name": "Niklas",
-          "desc": "Basic commutator executed twice - [L', U R U']",
+          "alg": "(R U2 R' U' R U' R') (R' U2' R U R' U R)",
+          "desc": "[SuneOLL]/[2GLL]: [RFAS], [RBAS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
 		  [
 			{
-			  "alg": "(L' U R U' L U R') (L' U R U' L U R')",
-              "desc": "Two-handed execution includes a cancellation",
+			  "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
+              "desc": "Two-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": " z (U' R D R' U R D') (U' R D R' U R D') [z']",
-              "desc": "One-handed execution includes a cancellation",
+			  "alg": "R U2' R' U' R U' R2 U2' R U R' U R",
+              "desc": "One-handed execution applies a cancellation",
 			  "status": 1,
 			  "uses": ["OH"]
 			}
-          ]
-        }
+		  ]
+        },
+        {
+          "alg": "(R U R' U R U2' R') (R' U' R U' R' U2 R)",
+          "desc": "[SuneOLL]/[2GLL]: [RFS], [RBS]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U R' U R U2' R2' U' R U' R' U2 R",
+              "desc": "Two-handed execution applies a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R U R' U R U2' R2 U' R U' R' U2' R",
+              "desc": "One-handed execution applies a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
       ]
     },
     {
-      "id": "CPLL",
-      "name": "Corners Permuted",
+      "id": "EPLL",
+      "name": "Edges Permuted",
       "wiki": "",
       "algdb": ".",
-      "image": "CPLL",
+      "image": "EPLL",
       "prob": "1/6",
       "algs" :
       [
@@ -237,19 +256,18 @@ var algSet = {
       "groups":
       [
         {
-          "id": "edges",
+          "id": "orientation",
           "name": "Edge Orientation",
           "wiki": "EOLL",
-          "algdb": "Set/OLL",
-          "desc": "These are the 3 [EOLL] cases. There is a 1/8 chance of skipping this step and going straight to [CPLL].",
+          "desc": "These are the 3 [EOLL] cases. There is a 1/8 chance of skipping this step and going straight to permutation.",
           "cases": ["Clock", "Line", "Dot", "EOLL"]
         },
         {
-          "id": "corners",
-          "name": "Corner Permutation",
-          "wiki": ".",
-          "desc": "These are the 2 [CPLL] cases. There is a 1/6 chance of skipping this step and going straight to [2GLL].",
-          "cases": ["Adj", "Diag", "CPLL"]
+          "id": "permutation",
+          "name": "Edge Permutation",
+		  "desc": "This group of cases is known as [EPLL]. They can be solved using [Anti-Sune] or [Sune] algorithms.",
+          "wiki": "LLEF",
+          "cases": ["Adj", "Opp", "EPLL"]
         },
       ]
     },
