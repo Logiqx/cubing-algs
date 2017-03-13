@@ -179,7 +179,7 @@ var algSet = {
     {
       "id": "Opp",
       "name": "Opposite Edge Swap",
-      "desc": "This case can be solved using [Anti-Sune] or [Sune] algorithms. It can also be solved using a [PLL] algorithm such as T-Perm (2H) or Z-Perm (OH).",
+      "desc": "This case can be solved using [Anti-Sune] or [Sune] combinations. It can also be solved using a [PLL] algorithm such as T-Perm (2H) or Z-Perm (OH).",
       "wiki": "",
       "algdb": ".",
       "image": "EPLL-O",
@@ -188,7 +188,7 @@ var algSet = {
       [
         {
           "alg": "(R U2 R' U' R U' R') (R' U2' R U R' U R)",
-          "desc": "[SuneOLL]/[2GLL]: [RFAS], [RBAS]",
+          "desc": "[Anti-Sune] combination: [RFAS], [RBAS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -209,7 +209,7 @@ var algSet = {
         },
         {
           "alg": "(R U R' U R U2' R') (R' U' R U' R' U2 R)",
-          "desc": "[SuneOLL]/[2GLL]: [RFS], [RBS]",
+          "desc": "[Sune] combination: [RFS], [RBS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
