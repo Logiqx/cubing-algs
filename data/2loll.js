@@ -705,14 +705,14 @@ var algSet = {
           "id": "edges",
           "name": "Edge Orientation",
           "wiki": "EOLL",
-          "desc": "These are the 3 [EOLL] cases. They are solved using the fastest [OLL] algorithms with the desired effect. There is a 1/8 chance of skipping this step and going straight to [OCLL].",
+          "desc": "The [EOLL] cases are solved using the fastest [OLL] algorithms having the desired effect. There is a 1/8 chance of skipping this step and going straight to [OCLL].",
           "cases": ["Clock", "Line", "Dot", "EOLL"]
         },
         {
           "id": "corners",
           "name": "Corner Orientation",
           "wiki": "OCLL",
-          "desc": "These are the 7 [OCLL] cases. They are solved using the standard [OLL] algorithms. There is a 1/27 chance of skipping this step and going straight to [PLL].",
+          "desc": "The [OCLL] cases are solved using the standard [OLL] algorithms. There is a 1/27 chance of skipping this step and going straight to [PLL].",
           "cases": ["AS", "S", "L", "U", "T", "Pi", "H", "OCLL"]
         },
       ]

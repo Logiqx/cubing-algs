@@ -448,14 +448,14 @@ var algSet = {
         {
           "id": "corners",
           "name": "Corner Permutation",
-		  "desc": "This group of cases is known as [CPLL]. They are solved using the fastest [PLL] algorithms with the desired effect.",
+		  "desc": "The [CPLL] cases are solved using the fastest [PLL] algorithms having the desired effect. There is a 1/6 chance of skipping this step and going straight to [EPLL].",
           "wiki": "2-Look_PLL",
           "cases": ["Adj", "Diag", "CPLL"]
         },
         {
           "id": "edges",
           "name": "Edge Permutation",
-		  "desc": "This group of cases is known as [EPLL]. All of these cases are solved using standard [PLL] algorithms - [RU] or [MU] moves.",
+		  "desc": "The [EPLL] cases are solved using the standard [PLL] algorithms - typically [RU] or [MU] moves. There is a 1/12 chance of skipping this step at the end of a solve.",
           "wiki": "2-Look_PLL",
           "cases": ["Ua", "Ub", "Z", "H", "EPLL"]
         },

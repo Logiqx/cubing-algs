@@ -130,7 +130,7 @@ var algSet = {
     {
       "id": "L",
       "name": "L / Bowtie",
-      "desc": "This case has lots of options as it can be solved using most of the standard [OCLL] algorithms.",
+      "desc": "This case has lots of options as it can be solved using the standard [OCLL] algorithms.",
       "wiki": "",
       "algdb": ".",
       "image": "OCLL-L",
@@ -687,14 +687,14 @@ var algSet = {
         {
           "id": "orientation",
           "name": "Corner Orientation",
-		  "desc": "These are the 7 [OCLL-EPP] cases. Most of theses cases are solved using a [commutator].",
+		  "desc": "The [OCLL-EPP] cases are typically solved using a [commutator] - e.g. [Niklas] algorithm. There is a 1/27 chance of skipping this step and going straight to [CPLL].",
           "wiki": "Corner_Orientation#OCLL-EPP",
           "cases": ["AS", "S", "L", "U", "T", "Pi", "H", "OCLL"]
         },
         {
           "id": "permutation",
           "name": "Corner Permutation",
-		  "desc": "This group of cases is known as [CPLL]. All of these cases are solved using standard [PLL] algorithms.",
+		  "desc": "The [CPLL] cases are solved using the standard [PLL] algorithms. There is a 1/12 chance of skipping this step at the end of a solve.",
           "wiki": "CPLL",
           "cases": ["Aa", "Ab", "E", "X", "CPLL"]
         },

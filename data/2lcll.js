@@ -444,13 +444,13 @@ var algSet = {
           "id": "orientation",
           "name": "Corner Orientation",
           "wiki": "OCLL",
-          "desc": "These are the 7 [OCLL] cases. They are solved using the fastest [OLL] algorithms with the desired effect. There is a 1/27 chance of skipping this step and going straight to [CPLL].",
+          "desc": "The [OCLL] cases are solved using the fastest [OLL] algorithms having the desired effect. There is a 1/27 chance of skipping this step and going straight to [CPLL].",
           "cases": ["AS", "S", "L", "U", "T", "Pi", "H", "OCLL"]
         },
         {
           "id": "permutation",
           "name": "Corner Permutation",
-		  "desc": "These are the 2 [CPLL] cases and both are solved using the fastest [PLL] algorithms with the desired effect. There is a 1/6 chance of skipping this step and going straight to [ELL].",
+		  "desc": "The [CPLL] cases are solved using the fastest [PLL] algorithms having the desired effect. There is a 1/6 chance of skipping this step and going straight to [ELL].",
           "wiki": "2-Look_PLL",
           "cases": ["Adj", "Diag", "CPLL"]
         },

@@ -412,13 +412,13 @@ var algSet = {
           "id": "orientation",
           "name": "Edge Orientation",
           "wiki": "EOLL",
-          "desc": "These are the 3 [EOLL] cases. All of these cases can be solved using [OLL] algorithms which do not affect the corners.",
+          "desc": "The [EOLL] cases are solved using the standard [OLL] algorithms which by good fortune preserve the corners. There is a 1/8 chance of skipping this step and going straight to [EPLL].",
           "cases": ["28", "57", "20", "EOLL"]
         },
         {
           "id": "permutation",
           "name": "Edge Permutation",
-		  "desc": "This group of cases is known as [EPLL]. All of these cases are solved using standard [PLL] algorithms - [RU] or [MU] moves.",
+		  "desc": "The [EPLL] cases are solved using the standard [PLL] algorithms - typically [RU] or [MU] moves. There is a 1/12 chance of skipping this step at the end of a solve.",
           "wiki": "2-Look_PLL",
           "cases": ["Ua", "Ub", "Z", "H", "EPLL"]
         },

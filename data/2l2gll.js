@@ -617,14 +617,14 @@ var algSet = {
         {
           "id": "corners",
           "name": "Corner Orientation",
-		  "desc": "These are the 7 [COLL] cases where corner swaps are not required. All of these cases can be solved using [RU] algorithms.",
+		  "desc": "The [OCLL] cases are the [COLL] cases where the corners are correctly permuted and they can be solved using [RU] algorithms (AKA \"2-Gen\"). There is a 1/27 chance of skipping this step and going straight to [EPLL].",
           "wiki": "COLL",
           "cases": ["AS", "S", "L", "U", "T", "Pi", "H", "OCLL"]
         },
         {
           "id": "edges",
           "name": "Edge Permutation",
-		  "desc": "This group of cases is known as [EPLL]. All of these cases are solved using standard [PLL] algorithms - [RU] or [MU] moves. The [RU] algorithms are most in the spirit of [2GLL].",
+		  "desc": "The [EPLL] cases are solved using the standard [PLL] algorithms - choosing [RU] algorithms (AKA \"2-Gen\") to retain the spirit of [2GLL]. There is a 1/12 chance of skipping this step at the end of a solve.",
           "wiki": "EPLL",
           "cases": ["Ua", "Ub", "Z", "X", "EPLL"]
         },

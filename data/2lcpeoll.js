@@ -246,14 +246,14 @@ var algSet = {
           "name": "Edge Orientation",
           "wiki": "EOLL",
           "algdb": "Set/OLL",
-          "desc": "These are the 3 [EOLL] cases. They are solved using the fastest [OLL] algorithms with the desired effect. There is a 1/8 chance of skipping this step and going straight to [CPLL].",
+          "desc": "The [EOLL] cases are solved using the fastest [OLL] algorithms having the desired effect. There is a 1/8 chance of skipping this step and going straight to [CPLL].",
           "cases": ["Clock", "Line", "Dot", "EOLL"]
         },
         {
           "id": "corners",
           "name": "Corner Permutation",
           "wiki": "CPEOLL",
-          "desc": "These are the 2 [CPLL] cases and both can be solved using the [Niklas] algorithm. There is a 1/6 chance of skipping this step and going straight to [2GLL].",
+          "desc": "The [CPLL] cases can be solved using the [Niklas] algorithm. There is a 1/6 chance of skipping this step and going straight to [2GLL].",
           "cases": ["Adj", "Diag", "CPLL"]
         },
       ]
