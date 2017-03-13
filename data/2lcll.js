@@ -86,9 +86,9 @@ var algSet = {
     {
       "id": "L",
       "name": "L / Bowtie",
-      "desc": "This case can be solved using the algorithms for [OLL] 37.",
+      "desc": "This case can be solved using the algorithms for [OLL] 37 + 25.",
       "wiki": "",
-      "algdb": "OLL/OLL 25",
+      "algdb": "OLL/OLL 37",
       "image": "OCLL-L",
       "prob": "4/27",
       "algs" :
@@ -98,6 +98,27 @@ var algSet = {
           "desc": "Playing with [F2L] pair - track FL",
 		  "status": 1,
           "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "(F' L F R') (F' L' F R)",
+          "desc": "Basic [commutator] - [F' L F, R']",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "F' (r U R' U') r' F R",
+              "desc": "Two-handed execution incorporates wide turns",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "F' (r U R' U') z U' R u",
+              "desc": "One-handed execution incorporates wide turns",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
+		  ]
         },
         {
           "alg": "U' (F R' F' R) (U R U' R')",
@@ -112,7 +133,7 @@ var algSet = {
       "name": "U / Headlights",
       "desc": "This case can be solved using the algorithms for [OLL] 44 + 45.",
       "wiki": "",
-      "algdb": "OLL/OLL 23",
+      "algdb": "OLL/OLL 44",
       "image": "OCLL-U",
       "prob": "4/27",
       "algs" :
@@ -136,7 +157,7 @@ var algSet = {
       "name": "T / Chameleon",
       "desc": "This case can be solved using the algorithms for [OLL] 33.",
       "wiki": "",
-      "algdb": "OLL/OLL 24",
+      "algdb": "OLL/OLL 33",
       "image": "OCLL-T",
       "prob": "4/27",
       "algs" :
@@ -163,7 +184,7 @@ var algSet = {
       "name": "Pi / Bruno",
       "desc": "This case can be solved using the algorithms for [OLL] 48 + 51.",
       "wiki": "",
-      "algdb": "OLL/OLL 22",
+      "algdb": "OLL/OLL 48",
       "image": "OCLL-Pi",
       "prob": "4/27",
       "algs" :
