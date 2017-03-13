@@ -180,7 +180,7 @@ var algSet = {
     {
       "id": "Diag",
       "name": "Diagonal Corner Swap",
-      "desc": "This case can be solved with the [Niklas] algorithm, executed twice.",
+      "desc": "This case can be solved using a [Niklas] combination.",
       "wiki": "",
       "algdb": ".",
       "image": "CPLL-O",
@@ -189,8 +189,7 @@ var algSet = {
       [
         {
           "alg": "(L' U R U') (L U R' U') U (L' U R U') (L U R' U')",
-          "name": "Niklas",
-          "desc": "Basic commutator executed twice - [L', U R U']",
+          "desc": "[Niklas] combination - [LFN], U, [LFN]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -247,7 +246,7 @@ var algSet = {
         {
           "id": "corners",
           "name": "Corner Permutation",
-          "wiki": ".",
+          "wiki": "CPEOLL",
           "desc": "These are the 2 [CPLL] cases. All of these cases can be solved using the [Niklas] algorithm. There is a 1/6 chance of skipping this step and going straight to [2GLL].",
           "cases": ["Adj", "Diag", "CPLL"]
         },

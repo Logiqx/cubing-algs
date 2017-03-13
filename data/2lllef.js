@@ -146,7 +146,7 @@ var algSet = {
     {
       "id": "Adj",
       "name": "Adjacent Edge Swap",
-      "desc": "This fastest way to solve this case is using [Anti-Sune] or [Sune] algorithms.",
+      "desc": "This fastest way to solve this case is using the [Anti-Sune] or [Sune] algorithms.",
       "wiki": "",
       "algdb": ".",
       "image": "EPLL-A",
@@ -155,6 +155,7 @@ var algSet = {
       [
         {
           "alg": "R U2 R' U' R U' R'",
+          "name": "Anti-Sune",
           "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
           "uses": ["2H"],
@@ -170,6 +171,7 @@ var algSet = {
         },
         {
           "alg": "U R U R' U R U2' R'",
+          "name": "Sune",
           "desc": "[RFS] - Extract [F2L] pair, [AUF], re-insert pair",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -179,7 +181,7 @@ var algSet = {
     {
       "id": "Opp",
       "name": "Opposite Edge Swap",
-      "desc": "This case can be solved using [Anti-Sune] or [Sune] combinations. It can also be solved using a [PLL] algorithm such as T-Perm (2H) or Z-Perm (OH).",
+      "desc": "This case can be solved using an [Anti-Sune] or [Sune] combination. It can also be solved using a [PLL] algorithm such as T-Perm (2H) or Z-Perm (OH).",
       "wiki": "",
       "algdb": ".",
       "image": "EPLL-O",
@@ -188,7 +190,7 @@ var algSet = {
       [
         {
           "alg": "(R U2 R' U' R U' R') (R' U2' R U R' U R)",
-          "desc": "[Anti-Sune] combination: [RFAS], [RBAS]",
+          "desc": "[Anti-Sune] combination - [RFAS], [RBAS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -209,7 +211,7 @@ var algSet = {
         },
         {
           "alg": "(R U R' U R U2' R') (R' U' R U' R' U2 R)",
-          "desc": "[Sune] combination: [RFS], [RBS]",
+          "desc": "[Sune] combination - [RFS], [RBS]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
