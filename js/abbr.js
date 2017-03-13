@@ -37,6 +37,14 @@ var abbrs =
     "desc": "Corners of the Last Layer - Preserving Edge Orientation"
   },
   {
+    "name": "CLL",
+    "desc": "Corners of the Last Layer"
+  },
+  {
+    "name": "CPEOLL",
+    "desc": "Corner Permutation and Edge Orientation of the Last Layer"
+  },
+  {
     "name": "CPLL",
     "desc": "Corner Permutation of the Last Layer"
   },
@@ -51,6 +59,10 @@ var abbrs =
   {
     "name": "Double-Sexy",
     "desc": "(R U R' U') (R U R' U')"
+  },
+  {
+    "name": "ELL",
+    "desc": "Edges of the Last Layer"
   },
   {
     "name": "EOLL",
@@ -73,8 +85,16 @@ var abbrs =
     "desc": "Executing an algorithm in reverse"
   },
   {
+    "name": "L4C",
+    "desc": "Last Four Corners"
+  },
+  {
     "name": "LL",
     "desc": "Last Layer"
+  },
+  {
+    "name": "LLEF",
+    "desc": "Last Layer Edges First"
   },
   {
     "name": "OH",

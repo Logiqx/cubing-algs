@@ -259,13 +259,13 @@ var algSet = {
           "id": "orientation",
           "name": "Edge Orientation",
           "wiki": "EOLL",
-          "desc": "These are the 3 [EOLL] cases. There is a 1/8 chance of skipping this step and going straight to permutation.",
+          "desc": "These are the 3 [EOLL] cases. They are solved using the fastest [OLL] algorithms with the desired effect. There is a 1/8 chance of skipping this step and going straight to [EPLL].",
           "cases": ["Clock", "Line", "Dot", "EOLL"]
         },
         {
           "id": "permutation",
           "name": "Edge Permutation",
-		  "desc": "This group of cases is known as [EPLL]. They can be solved using [Anti-Sune] or [Sune] algorithms.",
+		  "desc": "These are the 2 [EPLL] cases. All of these cases can be solved using the [Anti-Sune] or [Sune] algorithms. There is a 1/6 chance of skipping this step and going straight to [L4C].",
           "wiki": "LLEF",
           "cases": ["Adj", "Opp", "EPLL"]
         },
