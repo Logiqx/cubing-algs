@@ -180,13 +180,19 @@ var algSet = {
     {
       "id": "Diag",
       "name": "Diagonal Corner Swap",
-      "desc": "This case can be solved using a [Niklas] combination.",
+      "desc": "Although shorter algorithms exist this case can easily be solved using F triple-[sexy] F' or a [Niklas] combination.",
       "wiki": "",
       "algdb": ".",
       "image": "CPLL-O",
       "prob": "1/6",
       "algs" :
       [
+        {
+          "alg": "F (R U R' U') (R U R' U') (R U R' U') F'",
+          "desc": "[Conjugate] of triple [sexy]: [F: [R U R' U']*3]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
         {
           "alg": "(L' U R U') (L U R' U') U (L' U R U') (L U R' U')",
           "desc": "[Niklas] combination - [LFN], U, [LFN]",
@@ -247,7 +253,7 @@ var algSet = {
           "id": "corners",
           "name": "Corner Permutation",
           "wiki": "CPEOLL",
-          "desc": "These are the 2 [CPLL] cases. All of these cases can be solved using the [Niklas] algorithm. There is a 1/6 chance of skipping this step and going straight to [2GLL].",
+          "desc": "These are the 2 [CPLL] cases and both can be solved using the [Niklas] algorithm. There is a 1/6 chance of skipping this step and going straight to [2GLL].",
           "cases": ["Adj", "Diag", "CPLL"]
         },
       ]

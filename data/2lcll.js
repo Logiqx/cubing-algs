@@ -450,7 +450,7 @@ var algSet = {
         {
           "id": "permutation",
           "name": "Corner Permutation",
-		  "desc": "These are the 2 [CPLL] cases. They are solved using the fastest [PLL] algorithms with the desired effect. There is a 1/6 chance of skipping this step and going straight to [ELL].",
+		  "desc": "These are the 2 [CPLL] cases and both are solved using the fastest [PLL] algorithms with the desired effect. There is a 1/6 chance of skipping this step and going straight to [ELL].",
           "wiki": "2-Look_PLL",
           "cases": ["Adj", "Diag", "CPLL"]
         },

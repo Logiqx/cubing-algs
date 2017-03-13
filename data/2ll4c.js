@@ -694,7 +694,7 @@ var algSet = {
         {
           "id": "permutation",
           "name": "Corner Permutation",
-		  "desc": "This group of cases is known as [CPLL]. All of these cases can be solved using standard [PLL] algorithms.",
+		  "desc": "This group of cases is known as [CPLL]. All of these cases are solved using standard [PLL] algorithms.",
           "wiki": "CPLL",
           "cases": ["Aa", "Ab", "E", "X", "CPLL"]
         },

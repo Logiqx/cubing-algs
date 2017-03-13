@@ -267,7 +267,7 @@ var algSet = {
         {
           "id": "permutation",
           "name": "Edge Permutation",
-		  "desc": "These are the 2 [EPLL] cases. All of these cases can be solved using the [Anti-Sune] or [Sune] algorithms. There is a 1/6 chance of skipping this step and going straight to [L4C].",
+		  "desc": "These are the 2 [EPLL] cases and both can be solved using the [Anti-Sune] + [Sune] algorithms. There is a 1/6 chance of skipping this step and going straight to [L4C].",
           "wiki": "LLEF",
           "cases": ["Adj", "Opp", "EPLL"]
         },
