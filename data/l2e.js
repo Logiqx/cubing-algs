@@ -25,7 +25,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H"]
@@ -153,14 +153,14 @@ var algSet = {
         {
           "alg": "M (U' R' U R') (F R F' R) M'",
           "desc": "Intuitive hack - M flip M'",
-		  "status": 1,
+		  "status": 0,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "M (U' R' U R') (F R F') M'",
 			  "desc": "Final R can be dropped",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			}
 		  ]
@@ -309,14 +309,14 @@ var algSet = {
         {
           "alg": "B2 3Lw2 (U' R' U R') (F R F' R) 3Lw2 B2",
           "desc": "Intuitive solution",
-		  "status": 1,
+		  "status": 0,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "B2 3Lw2 (U' R' U R') (F R F') 3Lw2",
 			  "desc": "Final R and B2 can be dropped",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			}
 		  ]
@@ -339,14 +339,14 @@ var algSet = {
         {
           "alg": "U2 B2 Rw2 (U' R' U R') (F R F' R) Rw2 B2",
           "desc": "Intuitive solution",
-		  "status": 1,
+		  "status": 0,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "U2 B2 Rw2 (U' R' U R') (F R F') Rw2",
 			  "desc": "Final R and B2 can be dropped",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			}
 		  ]
@@ -381,14 +381,14 @@ var algSet = {
         {
           "alg": "B2 Lw2 (U' R' U R') (F R F' R) Lw2 B2",
           "desc": "Intuitive solution",
-		  "status": 1,
+		  "status": 0,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "B2 Lw2 (U' R' U R') (F R F') Lw2",
 			  "desc": "Final R and B2 can be dropped",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			}
 		  ]
@@ -411,14 +411,14 @@ var algSet = {
         {
           "alg": "U2 B2 3Rw2 (U' R' U R') (F R F' R) 3Rw2 B2",
           "desc": "Intuitive solution",
-		  "status": 1,
+		  "status": 0,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "U2 B2 3Rw2 (U' R' U R') (F R F') 3Rw2",
 			  "desc": "Final R and B2 can be dropped",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			}
 		  ]
@@ -543,14 +543,14 @@ var algSet = {
         {
           "alg": "3Lw (U' R' U R') (F R F' R) 3Lw'",
           "desc": "Intuitive solution",
-		  "status": 1,
+		  "status": 0,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "3Lw (U' R' U R') (F R F') 3Lw'",
 			  "desc": "Final R can be dropped",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			}
 		  ]
@@ -573,14 +573,14 @@ var algSet = {
         {
           "alg": "U2 Lw (U' R' U R') (F R F' R) Lw'",
           "desc": "Intuitive solution",
-		  "status": 1,
+		  "status": 0,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "U2 Lw (U' R' U R') (F R F') Lw'",
 			  "desc": "Final R can be dropped",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			}
 		  ]
@@ -615,14 +615,14 @@ var algSet = {
         {
           "alg": "3Rw' (U' R' U R') (F R F' R) 3Rw",
           "desc": "Intuitive solution",
-		  "status": 1,
+		  "status": 0,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "3Rw' (U' R' U R') (F R F') 3Rw",
 			  "desc": "Final R can be dropped",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			}
 		  ]
@@ -645,14 +645,14 @@ var algSet = {
         {
           "alg": "U2 Rw' (U' R' U R') (F R F' R) Rw",
           "desc": "Intuitive solution",
-		  "status": 1,
+		  "status": 0,
           "uses": [],
 		  "vars":
 		  [
 			{
 			  "alg": "U2 Rw' (U' R' U R') (F R F') Rw",
 			  "desc": "Final R can be dropped",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			}
 		  ]
