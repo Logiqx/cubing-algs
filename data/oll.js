@@ -1129,7 +1129,7 @@ var algSet = {
     },
     {
       "id": "26",
-      "name": "Anti-Sune",
+      "name": "AS / Anti-Sune",
       "wiki": "",
       "algdb": "OLL 26",
       "image": "OLL-26",
@@ -1170,7 +1170,7 @@ var algSet = {
     },
     {
       "id": "27",
-      "name": "Sune",
+      "name": "S / Sune",
       "wiki": "",
       "algdb": "OLL 27",
       "image": "OLL-27",
@@ -2179,7 +2179,7 @@ var algSet = {
     },
     {
       "id": "Skip",
-      "name": "Orientation of the Last Layer",
+      "name": "Solved",
       "wiki": "",
       "algdb": "",
       "image": "OLL",
@@ -2187,7 +2187,7 @@ var algSet = {
       "algs" :
 	  [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -2327,12 +2327,12 @@ var algSet = {
         },
         {
           "id": "antisune",
-          "name": "Anti-Sune",
+          "name": "AS / Anti-Sune",
           "cases": ["26", "9", "12", "8", "6", "14", "16", "4"]
         },
         {
           "id": "sune",
-          "name": "Sune",
+          "name": "S / Sune",
           "cases": ["27", "11", "10", "5", "7", "13", "15", "3"]
         },
         {
@@ -2435,12 +2435,12 @@ var algSet = {
         },
         {
           "id": "antisune",
-          "name": "Anti-Sune",
+          "name": "AS / Anti-Sune",
           "cases": ["26", "9", "12", "8", "6", "14", "16", "4"]
         },
         {
           "id": "sune",
-          "name": "Sune",
+          "name": "S / Sune",
           "cases": ["27", "11", "10", "5", "7", "13", "15", "3"]
         },
         {

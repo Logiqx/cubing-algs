@@ -846,7 +846,7 @@ var algSet = {
     },
     {
       "id": "Skip",
-      "name": "Permutation of the Last Layer",
+      "name": "Solved",
       "wiki": "",
       "algdb": "",
       "image": "PLL",
@@ -854,7 +854,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]

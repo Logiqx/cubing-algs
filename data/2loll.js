@@ -21,7 +21,7 @@ var algSet = {
   [
     {
       "id": "Clock",
-      "name": "Clock",
+      "name": "Adjacent Edge Flip",
       "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] 44.",
       "wiki": "",
       "algdb": "OLL 44",
@@ -65,7 +65,7 @@ var algSet = {
     },
     {
       "id": "Line",
-      "name": "Line",
+      "name": "Opposite Edge Flip",
       "desc": "This case is typically solved using the algorithm for [OLL] 45.",
       "wiki": "",
       "algdb": "OLL 45",
@@ -84,7 +84,7 @@ var algSet = {
     },
     {
       "id": "Dot",
-      "name": "Dot",
+      "name": "Four Edge Flip",
       "desc": "This case is typically solved using the algorithm(s) for [OLL] 2.",
       "wiki": "",
       "algdb": "OLL 2",
@@ -128,7 +128,7 @@ var algSet = {
     },
     {
       "id": "EOLL",
-      "name": "Edges Oriented",
+      "name": "Solved",
       "wiki": "",
       "algdb": ".",
       "image": "EOLL",
@@ -136,7 +136,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -145,7 +145,7 @@ var algSet = {
     },
     {
       "id": "AS",
-      "name": "Anti-Sune",
+      "name": "AS / Anti-Sune",
       "wiki": "",
       "algdb": "OLL 26",
       "image": "OCLL-AS",
@@ -186,7 +186,7 @@ var algSet = {
     },
     {
       "id": "S",
-      "name": "Sune",
+      "name": "S / Sune",
       "wiki": "",
       "algdb": "OLL 27",
       "image": "OCLL-S",
@@ -678,7 +678,7 @@ var algSet = {
     },
     {
       "id": "OCLL",
-      "name": "Corners Oriented",
+      "name": "Solved",
       "wiki": "",
       "algdb": ".",
       "image": "OCLL",
@@ -686,7 +686,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]

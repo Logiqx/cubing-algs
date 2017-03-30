@@ -120,7 +120,7 @@ var algSet = {
     },
     {
       "id": "EOLL",
-      "name": "Edges Oriented",
+      "name": "Solved",
       "wiki": "",
       "algdb": ".",
       "image": "EOLL",
@@ -128,7 +128,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -385,7 +385,7 @@ var algSet = {
     },
     {
       "id": "EPLL",
-      "name": "Edges Permuted",
+      "name": "Solved",
       "wiki": "",
       "algdb": "PLL",
       "image": "EPLL",
@@ -393,7 +393,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]

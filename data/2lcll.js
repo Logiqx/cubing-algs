@@ -21,7 +21,7 @@ var algSet = {
   [
     {
       "id": "AS",
-      "name": "Anti-Sune",
+      "name": "AS / Anti-Sune",
       "wiki": "",
       "algdb": "OLL/OLL 26",
       "image": "OCLL-AS",
@@ -62,7 +62,7 @@ var algSet = {
     },
     {
       "id": "S",
-      "name": "Sune",
+      "name": "S / Sune",
       "wiki": "",
       "algdb": "OLL/OLL 27",
       "image": "OCLL-S",
@@ -264,7 +264,7 @@ var algSet = {
     },
     {
       "id": "OCLL",
-      "name": "Corners Oriented",
+      "name": "Solved",
       "wiki": "",
       "algdb": ".",
       "image": "OCLL",
@@ -272,7 +272,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -417,7 +417,7 @@ var algSet = {
     },
     {
       "id": "CPLL",
-      "name": "Corners Permuted",
+      "name": "Solved",
       "wiki": "",
       "algdb": ".",
       "image": "CPLL",
@@ -425,7 +425,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]

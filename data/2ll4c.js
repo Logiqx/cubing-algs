@@ -21,7 +21,7 @@ var algSet = {
   [
     {
       "id": "AS",
-      "name": "Anti-Sune",
+      "name": "AS / Anti-Sune",
       "desc": "This case can be solved with the [Niklas] algorithm.",
       "wiki": "",
       "algdb": ".",
@@ -75,7 +75,7 @@ var algSet = {
     },
     {
       "id": "S",
-      "name": "Sune",
+      "name": "S / Sune",
       "desc": "This case can be solved with the [Niklas] algorithm.",
       "wiki": "",
       "algdb": ".",
@@ -512,7 +512,7 @@ var algSet = {
     },
     {
       "id": "OCLL",
-      "name": "Corners Oriented",
+      "name": "Solved",
       "wiki": "",
       "algdb": ".",
       "image": "OCLL",
@@ -520,7 +520,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -661,7 +661,7 @@ var algSet = {
     },
     {
       "id": "CPLL",
-      "name": "Corners Permuted",
+      "name": "Solved",
       "wiki": "",
       "algdb": ".",
       "image": "CPLL",
@@ -669,7 +669,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]

@@ -21,7 +21,7 @@ var algSet = {
   [
     {
       "id": "Clock",
-      "name": "Clock",
+      "name": "Adjacent Edge Flip",
       "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] 44.",
       "wiki": "",
       "algdb": "Set/OLL/OLL 44",
@@ -65,7 +65,7 @@ var algSet = {
     },
     {
       "id": "Line",
-      "name": "Line",
+      "name": "Opposite Edge Flip",
       "desc": "This case is typically solved using the algorithm for [OLL] 45.",
       "wiki": "",
       "algdb": "Set/OLL/OLL 45",
@@ -84,7 +84,7 @@ var algSet = {
     },
     {
       "id": "Dot",
-      "name": "Dot",
+      "name": "Four Edge Flip",
       "desc": "This case is typically solved using the algorithm(s) for [OLL] 2.",
       "wiki": "",
       "algdb": "Set/OLL/OLL 2",
@@ -128,7 +128,7 @@ var algSet = {
     },
     {
       "id": "EOLL",
-      "name": "Edges Oriented",
+      "name": "Solved",
       "wiki": "",
       "algdb": ".",
       "image": "EOLL",
@@ -136,7 +136,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]
@@ -218,7 +218,7 @@ var algSet = {
     },
     {
       "id": "CPLL",
-      "name": "Corners Permuted",
+      "name": "Solved",
       "wiki": "",
       "algdb": ".",
       "image": "CPLL",
@@ -226,7 +226,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Yay!",
+          "alg": "-",
           "desc": "",
 		  "status": 1,
           "uses": ["2H", "OH"]
