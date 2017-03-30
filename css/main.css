@@ -3,7 +3,8 @@
 html, body {
   /* disable webkit tap highlight */
   -webkit-tap-highlight-color: transparent;
-  overflow-x: hidden;
+  /* overflow-x breaks storeWindowOffset() because window.pageYOffset always returns 0 */
+  /* overflow-x: hidden; */
   height: 100%;
   /* enable momentum scrolling in iOS overflow elements */
   /* TODO - figure out why it is necessary */
