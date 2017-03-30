@@ -126,12 +126,14 @@ th.prob
 {
   width: 30px;
   text-align : center;
+  font-weight: bold;
 }
 
 td.id
 {
   width: 30px;
   text-align : left;
+  font-weight: bold;
 }
 
 td.alg

@@ -131,6 +131,24 @@ function renderTableDataCell(caseObj, useId, width)
 	var algCount = 0;
 	var maxCount = width >= IPHONE_LANDSCAPE ? 4 : 2;
 		
+	// Show the title
+	out += "<b>";
+	if (width < IPHONE_LANDSCAPE && !caseObj.name.includes(caseObj.id))
+	{
+		out += caseObj.id + " - ";
+	}
+	out += caseObj.name;
+	if (useId != null && algSet.header.uses.length > 1)
+	{
+		out += " (" + useId + ")";
+	}
+	out += "</b>";
+	if (width < IPHONE_LANDSCAPE)
+	{
+		out += " - " + caseObj.prob;
+	}
+	out += "<br/>";
+	
 	// Iterate through the algorithms
 	for (var algIdx = 0; algIdx < caseObj.algs.length && algCount < maxCount; algIdx++)
 	{
