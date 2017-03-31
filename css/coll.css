@@ -1,503 +1,539 @@
 .s64-coll {
-    background-image: url(../img/coll-s64-05.png);
+    background-image: url(../img/coll-s64-06.png);
     background-repeat: no-repeat;
     display: block;
     width: 64px;
     height: 64px;
 }
 
-.s64-coll-as-1 {
+.s64-coll-a-1 {
     background-position: 0 0;
 }
 
-.s64-coll-as-2 {
+.s64-coll-a-3 {
     background-position: -64px 0;
 }
 
-.s64-coll-as-3 {
+.s64-coll-a-6 {
     background-position: -128px 0;
 }
 
-.s64-coll-as-4 {
+.s64-coll-b-1 {
     background-position: -192px 0;
 }
 
-.s64-coll-as-5 {
+.s64-coll-b-2 {
     background-position: -256px 0;
 }
 
-.s64-coll-as-6 {
+.s64-coll-b-3 {
     background-position: -320px 0;
 }
 
-.s64-coll-h-1 {
+.s64-coll-b-4 {
     background-position: 0 -64px;
 }
 
-.s64-coll-h-2 {
+.s64-coll-b-5 {
     background-position: -64px -64px;
 }
 
-.s64-coll-h-5 {
+.s64-coll-b-6 {
     background-position: -128px -64px;
 }
 
-.s64-coll-h-6 {
+.s64-coll-c-1 {
     background-position: -192px -64px;
 }
 
-.s64-coll-l-1 {
+.s64-coll-c-2 {
     background-position: -256px -64px;
 }
 
-.s64-coll-l-2 {
+.s64-coll-c-3 {
     background-position: -320px -64px;
 }
 
-.s64-coll-l-3 {
+.s64-coll-c-4 {
     background-position: 0 -128px;
 }
 
-.s64-coll-l-4 {
+.s64-coll-c-5 {
     background-position: -64px -128px;
 }
 
-.s64-coll-l-5 {
+.s64-coll-c-6 {
     background-position: -128px -128px;
 }
 
-.s64-coll-l-6 {
+.s64-coll-d-1 {
     background-position: -192px -128px;
 }
 
-.s64-coll-pi-1 {
+.s64-coll-d-2 {
     background-position: -256px -128px;
 }
 
-.s64-coll-pi-2 {
+.s64-coll-d-3 {
     background-position: -320px -128px;
 }
 
-.s64-coll-pi-3 {
+.s64-coll-d-4 {
     background-position: 0 -192px;
 }
 
-.s64-coll-pi-4 {
+.s64-coll-d-5 {
     background-position: -64px -192px;
 }
 
-.s64-coll-pi-5 {
+.s64-coll-d-6 {
     background-position: -128px -192px;
 }
 
-.s64-coll-pi-6 {
+.s64-coll-e-1 {
     background-position: -192px -192px;
 }
 
-.s64-coll-s-1 {
+.s64-coll-e-2 {
     background-position: -256px -192px;
 }
 
-.s64-coll-s-2 {
+.s64-coll-e-3 {
     background-position: -320px -192px;
 }
 
-.s64-coll-s-3 {
+.s64-coll-e-4 {
     background-position: 0 -256px;
 }
 
-.s64-coll-s-4 {
+.s64-coll-e-5 {
     background-position: -64px -256px;
 }
 
-.s64-coll-s-5 {
+.s64-coll-e-6 {
     background-position: -128px -256px;
 }
 
-.s64-coll-s-6 {
+.s64-coll-f-1 {
     background-position: -192px -256px;
 }
 
-.s64-coll-t-1 {
+.s64-coll-f-2 {
     background-position: -256px -256px;
 }
 
-.s64-coll-t-2 {
+.s64-coll-f-3 {
     background-position: -320px -256px;
 }
 
-.s64-coll-t-3 {
+.s64-coll-f-4 {
     background-position: 0 -320px;
 }
 
-.s64-coll-t-4 {
+.s64-coll-f-5 {
     background-position: -64px -320px;
 }
 
-.s64-coll-t-5 {
+.s64-coll-f-6 {
     background-position: -128px -320px;
 }
 
-.s64-coll-t-6 {
+.s64-coll-g-1 {
     background-position: -192px -320px;
 }
 
-.s64-coll-u-1 {
+.s64-coll-g-2 {
     background-position: -256px -320px;
 }
 
-.s64-coll-u-2 {
+.s64-coll-g-3 {
     background-position: -320px -320px;
 }
 
-.s64-coll-u-3 {
+.s64-coll-g-4 {
     background-position: -384px 0;
 }
 
-.s64-coll-u-4 {
+.s64-coll-g-5 {
     background-position: -384px -64px;
 }
 
-.s64-coll-u-5 {
+.s64-coll-g-6 {
     background-position: -384px -128px;
 }
 
-.s64-coll-u-6 {
+.s64-coll-h-1 {
     background-position: -384px -192px;
 }
 
+.s64-coll-h-2 {
+    background-position: -384px -256px;
+}
+
+.s64-coll-h-5 {
+    background-position: -384px -320px;
+}
+
+.s64-coll-h-6 {
+    background-position: 0 -384px;
+}
+
 .s96-coll {
-    background-image: url(../img/coll-s96-05.png);
+    background-image: url(../img/coll-s96-06.png);
     background-repeat: no-repeat;
     display: block;
     width: 96px;
     height: 96px;
 }
 
-.s96-coll-as-1 {
+.s96-coll-a-1 {
     background-position: 0 0;
 }
 
-.s96-coll-as-2 {
+.s96-coll-a-3 {
     background-position: -96px 0;
 }
 
-.s96-coll-as-3 {
+.s96-coll-a-6 {
     background-position: -192px 0;
 }
 
-.s96-coll-as-4 {
+.s96-coll-b-1 {
     background-position: -288px 0;
 }
 
-.s96-coll-as-5 {
+.s96-coll-b-2 {
     background-position: -384px 0;
 }
 
-.s96-coll-as-6 {
+.s96-coll-b-3 {
     background-position: -480px 0;
 }
 
-.s96-coll-h-1 {
+.s96-coll-b-4 {
     background-position: 0 -96px;
 }
 
-.s96-coll-h-2 {
+.s96-coll-b-5 {
     background-position: -96px -96px;
 }
 
-.s96-coll-h-5 {
+.s96-coll-b-6 {
     background-position: -192px -96px;
 }
 
-.s96-coll-h-6 {
+.s96-coll-c-1 {
     background-position: -288px -96px;
 }
 
-.s96-coll-l-1 {
+.s96-coll-c-2 {
     background-position: -384px -96px;
 }
 
-.s96-coll-l-2 {
+.s96-coll-c-3 {
     background-position: -480px -96px;
 }
 
-.s96-coll-l-3 {
+.s96-coll-c-4 {
     background-position: 0 -192px;
 }
 
-.s96-coll-l-4 {
+.s96-coll-c-5 {
     background-position: -96px -192px;
 }
 
-.s96-coll-l-5 {
+.s96-coll-c-6 {
     background-position: -192px -192px;
 }
 
-.s96-coll-l-6 {
+.s96-coll-d-1 {
     background-position: -288px -192px;
 }
 
-.s96-coll-pi-1 {
+.s96-coll-d-2 {
     background-position: -384px -192px;
 }
 
-.s96-coll-pi-2 {
+.s96-coll-d-3 {
     background-position: -480px -192px;
 }
 
-.s96-coll-pi-3 {
+.s96-coll-d-4 {
     background-position: 0 -288px;
 }
 
-.s96-coll-pi-4 {
+.s96-coll-d-5 {
     background-position: -96px -288px;
 }
 
-.s96-coll-pi-5 {
+.s96-coll-d-6 {
     background-position: -192px -288px;
 }
 
-.s96-coll-pi-6 {
+.s96-coll-e-1 {
     background-position: -288px -288px;
 }
 
-.s96-coll-s-1 {
+.s96-coll-e-2 {
     background-position: -384px -288px;
 }
 
-.s96-coll-s-2 {
+.s96-coll-e-3 {
     background-position: -480px -288px;
 }
 
-.s96-coll-s-3 {
+.s96-coll-e-4 {
     background-position: 0 -384px;
 }
 
-.s96-coll-s-4 {
+.s96-coll-e-5 {
     background-position: -96px -384px;
 }
 
-.s96-coll-s-5 {
+.s96-coll-e-6 {
     background-position: -192px -384px;
 }
 
-.s96-coll-s-6 {
+.s96-coll-f-1 {
     background-position: -288px -384px;
 }
 
-.s96-coll-t-1 {
+.s96-coll-f-2 {
     background-position: -384px -384px;
 }
 
-.s96-coll-t-2 {
+.s96-coll-f-3 {
     background-position: -480px -384px;
 }
 
-.s96-coll-t-3 {
+.s96-coll-f-4 {
     background-position: 0 -480px;
 }
 
-.s96-coll-t-4 {
+.s96-coll-f-5 {
     background-position: -96px -480px;
 }
 
-.s96-coll-t-5 {
+.s96-coll-f-6 {
     background-position: -192px -480px;
 }
 
-.s96-coll-t-6 {
+.s96-coll-g-1 {
     background-position: -288px -480px;
 }
 
-.s96-coll-u-1 {
+.s96-coll-g-2 {
     background-position: -384px -480px;
 }
 
-.s96-coll-u-2 {
+.s96-coll-g-3 {
     background-position: -480px -480px;
 }
 
-.s96-coll-u-3 {
+.s96-coll-g-4 {
     background-position: -576px 0;
 }
 
-.s96-coll-u-4 {
+.s96-coll-g-5 {
     background-position: -576px -96px;
 }
 
-.s96-coll-u-5 {
+.s96-coll-g-6 {
     background-position: -576px -192px;
 }
 
-.s96-coll-u-6 {
+.s96-coll-h-1 {
     background-position: -576px -288px;
 }
 
+.s96-coll-h-2 {
+    background-position: -576px -384px;
+}
+
+.s96-coll-h-5 {
+    background-position: -576px -480px;
+}
+
+.s96-coll-h-6 {
+    background-position: 0 -576px;
+}
+
 .s128-coll {
-    background-image: url(../img/coll-s128-05.png);
+    background-image: url(../img/coll-s128-06.png);
     background-repeat: no-repeat;
     display: block;
     width: 128px;
     height: 128px;
 }
 
-.s128-coll-as-1 {
+.s128-coll-a-1 {
     background-position: 0 0;
 }
 
-.s128-coll-as-2 {
+.s128-coll-a-3 {
     background-position: -128px 0;
 }
 
-.s128-coll-as-3 {
+.s128-coll-a-6 {
     background-position: -256px 0;
 }
 
-.s128-coll-as-4 {
+.s128-coll-b-1 {
     background-position: -384px 0;
 }
 
-.s128-coll-as-5 {
+.s128-coll-b-2 {
     background-position: -512px 0;
 }
 
-.s128-coll-as-6 {
+.s128-coll-b-3 {
     background-position: -640px 0;
 }
 
-.s128-coll-h-1 {
+.s128-coll-b-4 {
     background-position: 0 -128px;
 }
 
-.s128-coll-h-2 {
+.s128-coll-b-5 {
     background-position: -128px -128px;
 }
 
-.s128-coll-h-5 {
+.s128-coll-b-6 {
     background-position: -256px -128px;
 }
 
-.s128-coll-h-6 {
+.s128-coll-c-1 {
     background-position: -384px -128px;
 }
 
-.s128-coll-l-1 {
+.s128-coll-c-2 {
     background-position: -512px -128px;
 }
 
-.s128-coll-l-2 {
+.s128-coll-c-3 {
     background-position: -640px -128px;
 }
 
-.s128-coll-l-3 {
+.s128-coll-c-4 {
     background-position: 0 -256px;
 }
 
-.s128-coll-l-4 {
+.s128-coll-c-5 {
     background-position: -128px -256px;
 }
 
-.s128-coll-l-5 {
+.s128-coll-c-6 {
     background-position: -256px -256px;
 }
 
-.s128-coll-l-6 {
+.s128-coll-d-1 {
     background-position: -384px -256px;
 }
 
-.s128-coll-pi-1 {
+.s128-coll-d-2 {
     background-position: -512px -256px;
 }
 
-.s128-coll-pi-2 {
+.s128-coll-d-3 {
     background-position: -640px -256px;
 }
 
-.s128-coll-pi-3 {
+.s128-coll-d-4 {
     background-position: 0 -384px;
 }
 
-.s128-coll-pi-4 {
+.s128-coll-d-5 {
     background-position: -128px -384px;
 }
 
-.s128-coll-pi-5 {
+.s128-coll-d-6 {
     background-position: -256px -384px;
 }
 
-.s128-coll-pi-6 {
+.s128-coll-e-1 {
     background-position: -384px -384px;
 }
 
-.s128-coll-s-1 {
+.s128-coll-e-2 {
     background-position: -512px -384px;
 }
 
-.s128-coll-s-2 {
+.s128-coll-e-3 {
     background-position: -640px -384px;
 }
 
-.s128-coll-s-3 {
+.s128-coll-e-4 {
     background-position: 0 -512px;
 }
 
-.s128-coll-s-4 {
+.s128-coll-e-5 {
     background-position: -128px -512px;
 }
 
-.s128-coll-s-5 {
+.s128-coll-e-6 {
     background-position: -256px -512px;
 }
 
-.s128-coll-s-6 {
+.s128-coll-f-1 {
     background-position: -384px -512px;
 }
 
-.s128-coll-t-1 {
+.s128-coll-f-2 {
     background-position: -512px -512px;
 }
 
-.s128-coll-t-2 {
+.s128-coll-f-3 {
     background-position: -640px -512px;
 }
 
-.s128-coll-t-3 {
+.s128-coll-f-4 {
     background-position: 0 -640px;
 }
 
-.s128-coll-t-4 {
+.s128-coll-f-5 {
     background-position: -128px -640px;
 }
 
-.s128-coll-t-5 {
+.s128-coll-f-6 {
     background-position: -256px -640px;
 }
 
-.s128-coll-t-6 {
+.s128-coll-g-1 {
     background-position: -384px -640px;
 }
 
-.s128-coll-u-1 {
+.s128-coll-g-2 {
     background-position: -512px -640px;
 }
 
-.s128-coll-u-2 {
+.s128-coll-g-3 {
     background-position: -640px -640px;
 }
 
-.s128-coll-u-3 {
+.s128-coll-g-4 {
     background-position: -768px 0;
 }
 
-.s128-coll-u-4 {
+.s128-coll-g-5 {
     background-position: -768px -128px;
 }
 
-.s128-coll-u-5 {
+.s128-coll-g-6 {
     background-position: -768px -256px;
 }
 
-.s128-coll-u-6 {
+.s128-coll-h-1 {
     background-position: -768px -384px;
+}
+
+.s128-coll-h-2 {
+    background-position: -768px -512px;
+}
+
+.s128-coll-h-5 {
+    background-position: -768px -640px;
+}
+
+.s128-coll-h-6 {
+    background-position: 0 -768px;
 }

@@ -20,11 +20,11 @@ var algSet = {
   "cases":
   [
     {
-      "id": "L1",
-      "name": "Bowtie #1",
+      "id": "D1",
+      "name": "L / Bowtie #1",
       "wiki": "",
       "algdb": "COLL L/D1",
-      "image": "COLL-L-1",
+      "image": "COLL-D-1",
       "prob": "2/81",
       "algs" :
       [
@@ -73,12 +73,12 @@ var algSet = {
       ]
     },
     {
-      "id": "L2",
-      "name": "Bowtie #2",
-      "desc": "Inverse of Headlights / U5. Reflection of Bowtie / L3.",
+      "id": "D2",
+      "name": "L / Bowtie #2",
+      "desc": "Inverse of Headlights / E5. Reflection of Bowtie / D3.",
       "wiki": "",
       "algdb": "COLL L/D2",
-      "image": "COLL-L-2",
+      "image": "COLL-D-2",
       "prob": "2/81",
       "algs" :
       [
@@ -106,12 +106,12 @@ var algSet = {
       ]
     },
     {
-      "id": "L3",
-      "name": "Bowtie #3",
-      "desc": "Inverse of Headlights / U3. Reflection of Bowtie / L2.",
+      "id": "D3",
+      "name": "L / Bowtie #3",
+      "desc": "Inverse of Headlights / E3. Reflection of Bowtie / D2.",
       "wiki": "",
       "algdb": "COLL L/D3",
-      "image": "COLL-L-3",
+      "image": "COLL-D-3",
       "prob": "2/81",
       "algs" :
       [
@@ -139,12 +139,12 @@ var algSet = {
       ]
     },
     {
-      "id": "L4",
-      "name": "Bowtie #4",
-	  "desc": "Inverse of Chameleon / T5. Reflection of Bowtie / L5.",
+      "id": "D4",
+      "name": "L / Bowtie #4",
+	  "desc": "Inverse of Chameleon / F5. Reflection of Bowtie / D5.",
       "wiki": "",
       "algdb": "COLL L/D4",
-      "image": "COLL-L-4",
+      "image": "COLL-D-4",
       "prob": "2/81",
       "algs" :
       [
@@ -172,12 +172,12 @@ var algSet = {
       ]
     },
     {
-      "id": "L5",
-      "name": "Bowtie #5",
-	  "desc": "Inverse of Chameleon / T3. Reflection of Bowtie / L4.",
+      "id": "D5",
+      "name": "L / Bowtie #5",
+	  "desc": "Inverse of Chameleon / F3. Reflection of Bowtie / D4.",
       "wiki": "",
       "algdb": "COLL L/D5",
-      "image": "COLL-L-5",
+      "image": "COLL-D-5",
       "prob": "2/81",
       "algs" :
       [
@@ -205,11 +205,11 @@ var algSet = {
       ]
     },
     {
-      "id": "L6",
-      "name": "Bowtie #6",
+      "id": "D6",
+      "name": "L / Bowtie #6",
       "wiki": "",
       "algdb": "COLL L/D6",
-      "image": "COLL-L-6",
+      "image": "COLL-D-6",
       "prob": "2/81",
       "algs" :
       [
@@ -237,12 +237,12 @@ var algSet = {
       ]
     },
     {
-      "id": "U1",
-      "name": "Headlights #1",
-      "desc": "Inverse of Chameleon / T1.",
+      "id": "E1",
+      "name": "U / Headlights #1",
+      "desc": "Inverse of Chameleon / F1.",
       "wiki": "",
       "algdb": "COLL U/E1",
-      "image": "COLL-U-1",
+      "image": "COLL-E-1",
       "prob": "2/81",
       "algs" :
       [
@@ -291,11 +291,11 @@ var algSet = {
       ]
     },
     {
-      "id": "U2",
-      "name": "Headlights #2",
+      "id": "E2",
+      "name": "U / Headlights #2",
       "wiki": "",
       "algdb": "COLL U/E2",
-      "image": "COLL-U-2",
+      "image": "COLL-E-2",
       "prob": "2/81",
       "algs" :
       [
@@ -323,12 +323,12 @@ var algSet = {
       ]
     },
     {
-      "id": "U3",
-      "name": "Headlights #3",
-      "desc": "Inverse of Bowtie / L3. Reflection of Headlights / U5.",
+      "id": "E3",
+      "name": "U / Headlights #3",
+      "desc": "Inverse of Bowtie / D3. Reflection of Headlights / E5.",
       "wiki": "",
       "algdb": "COLL U/E3",
-      "image": "COLL-U-3",
+      "image": "COLL-E-3",
       "prob": "2/81",
       "algs" :
       [
@@ -356,12 +356,12 @@ var algSet = {
       ]
     },
     {
-      "id": "U4",
-      "name": "Headlights #4",
-      "desc": "Inverse of Chameleon / T4.",
+      "id": "E4",
+      "name": "U / Headlights #4",
+      "desc": "Inverse of Chameleon / F4.",
       "wiki": "",
       "algdb": "COLL U/E4",
-      "image": "COLL-U-4",
+      "image": "COLL-E-4",
       "prob": "2/81",
       "algs" :
       [
@@ -383,12 +383,12 @@ var algSet = {
       ]
     },
     {
-      "id": "U5",
-      "name": "Headlights #5",
-      "desc": "Inverse of Bowtie / L2. Reflection of Headlights / U3.",
+      "id": "E5",
+      "name": "U / Headlights #5",
+      "desc": "Inverse of Bowtie / D2. Reflection of Headlights / E3.",
       "wiki": "",
       "algdb": "COLL U/E5",
-      "image": "COLL-U-5",
+      "image": "COLL-E-5",
       "prob": "2/81",
       "algs" :
       [
@@ -416,11 +416,11 @@ var algSet = {
       ]
     },
     {
-      "id": "U6",
-      "name": "Headlights #6",
+      "id": "E6",
+      "name": "U / Headlights #6",
       "wiki": "",
       "algdb": "COLL U/E6",
-      "image": "COLL-U-6",
+      "image": "COLL-E-6",
       "prob": "2/81",
       "algs" :
       [
@@ -442,12 +442,12 @@ var algSet = {
       ]
     },
     {
-      "id": "T1",
-      "name": "Chameleon #1",
-      "desc": "Inverse of Headlights / U1.",
+      "id": "F1",
+      "name": "T / Chameleon #1",
+      "desc": "Inverse of Headlights / E1.",
       "wiki": "",
       "algdb": "COLL T/F1",
-      "image": "COLL-T-1",
+      "image": "COLL-F-1",
       "prob": "2/81",
       "algs" :
       [
@@ -496,11 +496,11 @@ var algSet = {
       ]
     },
     {
-      "id": "T2",
-      "name": "Chameleon #2",
+      "id": "F2",
+      "name": "T / Chameleon #2",
       "wiki": "",
       "algdb": "COLL T/F2",
-      "image": "COLL-T-2",
+      "image": "COLL-F-2",
       "prob": "2/81",
       "algs" :
       [
@@ -519,12 +519,12 @@ var algSet = {
       ]
     },
     {
-      "id": "T3",
-      "name": "Chameleon #3",
-	  "desc": "Inverse of Bowtie / L5. Reflection of Chameleon / T5.",
+      "id": "F3",
+      "name": "T / Chameleon #3",
+	  "desc": "Inverse of Bowtie / D5. Reflection of Chameleon / F5.",
       "wiki": "",
       "algdb": "COLL T/F3",
-      "image": "COLL-T-3",
+      "image": "COLL-F-3",
       "prob": "2/81",
       "algs" :
       [
@@ -552,12 +552,12 @@ var algSet = {
       ]
     },
     {
-      "id": "T4",
-      "name": "Chameleon #4",
-	  "desc": "Inverse of Headlights / U4.",
+      "id": "F4",
+      "name": "T / Chameleon #4",
+	  "desc": "Inverse of Headlights / E4.",
       "wiki": "",
       "algdb": "COLL T/F4",
-      "image": "COLL-T-4",
+      "image": "COLL-F-4",
       "prob": "2/81",
       "algs" :
       [
@@ -579,12 +579,12 @@ var algSet = {
       ]
     },
     {
-      "id": "T5",
-      "name": "Chameleon #5",
-	  "desc": "Inverse of Bowtie / L4. Reflection of Chameleon / T3.",
+      "id": "F5",
+      "name": "T / Chameleon #5",
+	  "desc": "Inverse of Bowtie / D4. Reflection of Chameleon / F3.",
       "wiki": "",
       "algdb": "COLL T/F5",
-      "image": "COLL-T-5",
+      "image": "COLL-F-5",
       "prob": "2/81",
       "algs" :
       [
@@ -612,11 +612,11 @@ var algSet = {
       ]
     },
     {
-      "id": "T6",
-      "name": "Chameleon #6",
+      "id": "F6",
+      "name": "T / Chameleon #6",
       "wiki": "",
       "algdb": "COLL T/F6",
-      "image": "COLL-T-6",
+      "image": "COLL-F-6",
       "prob": "2/81",
       "algs" :
       [
@@ -638,11 +638,11 @@ var algSet = {
       ]
     },
     {
-      "id": "P1",
-      "name": "Bruno #1",
+      "id": "G1",
+      "name": "Pi / Bruno #1",
       "wiki": "",
       "algdb": "COLL PI/G1",
-      "image": "COLL-Pi-1",
+      "image": "COLL-G-1",
       "prob": "2/81",
       "algs" :
       [
@@ -691,12 +691,12 @@ var algSet = {
       ]
     },
     {
-      "id": "P2",
-      "name": "Bruno #2",
-      "desc": "Inverse and reflection of Bruno / P4.",
+      "id": "G2",
+      "name": "Pi / Bruno #2",
+      "desc": "Inverse and reflection of Bruno / G4.",
       "wiki": "",
       "algdb": "COLL PI/G2",
-      "image": "COLL-Pi-2",
+      "image": "COLL-G-2",
       "prob": "2/81",
       "algs" :
       [
@@ -724,12 +724,12 @@ var algSet = {
       ]
     },
     {
-      "id": "P3",
-      "name": "Bruno #3",
+      "id": "G3",
+      "name": "Pi / Bruno #3",
       "desc": "Inverse of Double Sune / H2.",
       "wiki": "",
       "algdb": "COLL PI/G3",
-      "image": "COLL-Pi-3",
+      "image": "COLL-G-3",
       "prob": "2/81",
       "algs" :
       [
@@ -751,12 +751,12 @@ var algSet = {
       ]
     },
     {
-      "id": "P4",
-      "name": "Bruno #4",
-      "desc": "Inverse and reflection of Bruno / P2.",
+      "id": "G4",
+      "name": "Pi / Bruno #4",
+      "desc": "Inverse and reflection of Bruno / G2.",
       "wiki": "",
       "algdb": "COLL PI/G4",
-      "image": "COLL-Pi-4",
+      "image": "COLL-G-4",
       "prob": "2/81",
       "algs" :
       [
@@ -793,12 +793,12 @@ var algSet = {
       ]
     },
     {
-      "id": "P5",
-      "name": "Bruno #5",
+      "id": "G5",
+      "name": "Pi / Bruno #5",
       "desc": "Inverse of Double Sune / H3.",
       "wiki": "",
       "algdb": "COLL PI/G5",
-      "image": "COLL-Pi-5",
+      "image": "COLL-G-5",
       "prob": "2/81",
       "algs" :
       [
@@ -826,11 +826,11 @@ var algSet = {
       ]
     },
     {
-      "id": "P6",
-      "name": "Bruno #6",
+      "id": "G6",
+      "name": "Pi / Bruno #6",
       "wiki": "",
       "algdb": "COLL PI/G6",
-      "image": "COLL-Pi-6",
+      "image": "COLL-G-6",
       "prob": "2/81",
       "algs" :
       [
@@ -850,7 +850,7 @@ var algSet = {
     },
     {
       "id": "H1",
-      "name": "Double Sune #1",
+      "name": "H / Double Sune #1",
       "wiki": "",
       "algdb": "COLL H/H1",
       "image": "COLL-H-1",
@@ -903,8 +903,8 @@ var algSet = {
     },
     {
       "id": "H2",
-      "name": "Double Sune #2",
-      "desc": "Inverse of Bruno / P3.",
+      "name": "H / Double Sune #2",
+      "desc": "Inverse of Bruno / G3.",
       "wiki": "",
       "algdb": "COLL H/H2",
       "image": "COLL-H-2",
@@ -930,8 +930,8 @@ var algSet = {
     },
     {
       "id": "H5",
-      "name": "Double Sune #5",
-      "desc": "Inverse of Bruno / P5.",
+      "name": "H / Double Sune #5",
+      "desc": "Inverse of Bruno / G5.",
       "wiki": "",
       "algdb": "COLL H/H3",
       "image": "COLL-H-5",
@@ -963,7 +963,7 @@ var algSet = {
     },
     {
       "id": "H6",
-      "name": "Double Sune #6",
+      "name": "H / Double Sune #6",
       "wiki": "",
       "algdb": "COLL H/H4",
       "image": "COLL-H-6",
@@ -989,22 +989,22 @@ var algSet = {
         {
           "id": "bowtie",
           "name": "L / Bowtie",
-          "cases": ["L1", "L2", "L3", "L4", "L5", "L6"]
+          "cases": ["D1", "D2", "D3", "D4", "D5", "D6"]
         },
         {
           "id": "headlights",
           "name": "U / Headlights",
-          "cases": ["U1", "U2", "U3", "U4", "U5", "U6"]
+          "cases": ["E1", "E2", "E3", "E4", "E5", "E6"]
         },
         {
           "id": "chameleon",
           "name": "T / Chameleon",
-          "cases": ["T1", "T2", "T3", "T4", "T5", "T6"]
+          "cases": ["F1", "F2", "F3", "F4", "F5", "F6"]
         },
         {
           "id": "bruno",
           "name": "Pi / Bruno",
-          "cases": ["P1", "P2", "P3", "P4", "P5", "P6"]
+          "cases": ["G1", "G2", "G3", "G4", "G5", "G6"]
         },
         {
           "id": "doublesune",
@@ -1021,21 +1021,21 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Swap",
-          "cases": ["L1", "U1", "T1", "P1", "H1"]
+          "cases": ["D1", "E1", "F1", "G1", "H1"]
         },
         {
           "id": "adjacent",
           "name": "Adjacent Swap",
-          "cases": ["L2", "L3", "L4", "L5",
-		            "U2", "U3", "U4", "U5",
-					"T2", "T3", "T4", "T5",
-					"P2", "P3", "P4", "P5",
+          "cases": ["D2", "D3", "D4", "D5",
+		            "E2", "E3", "E4", "E5",
+					"F2", "F3", "F4", "F5",
+					"G2", "G3", "G4", "G5",
 					"H2", "H5"]
         },
         {
           "id": "diagonal",
           "name": "Diagonal Swap",
-          "cases": ["L6", "U6", "T6", "P6", "H6"]
+          "cases": ["D6", "E6", "F6", "G6", "H6"]
         },
 	  ]
     },
@@ -1048,22 +1048,22 @@ var algSet = {
         {
           "id": "bowtie",
           "name": "L / Bowtie",
-          "cases": ["L1", "L2", "L3", "L4", "L5", "L6"]
+          "cases": ["D1", "D2", "D3", "D4", "D5", "D6"]
         },
         {
           "id": "headlights",
           "name": "U / Headlights",
-          "cases": ["U1", "U2", "U3", "U4", "U5", "U6"]
+          "cases": ["E1", "E2", "E3", "E4", "E5", "E6"]
         },
         {
           "id": "chameleon",
           "name": "T / Chameleon",
-          "cases": ["T1", "T2", "T3", "T4", "T5", "T6"]
+          "cases": ["F1", "F2", "F3", "F4", "F5", "F6"]
         },
         {
           "id": "bruno",
           "name": "Pi / Bruno",
-          "cases": ["P1", "P2", "P3", "P4", "P5", "P6"]
+          "cases": ["G1", "G2", "G3", "G4", "G5", "G6"]
         },
         {
           "id": "doublesune",
