@@ -110,51 +110,24 @@ th.name
 
 /* List view */
 
-th.id
-{
-  width: 30px;
-  text-align : left;
-}
-
-th.alg
-{
-  width: 400px;
-  text-align : left;
-}
-
-th.prob
-{
-  width: 30px;
-  text-align : center;
-  font-weight: bold;
-}
-
-td.id
-{
-  width: 30px;
-  text-align : left;
-  font-weight: bold;
-}
-
 td.alg
 {
-  width: 400px;
+  width: 440px;
   text-align : left;
-}
-
-td.prob
-{
-  width: 30px;
-  text-align : center;
 }
 
 /* Case view */
 
 td.var
 {
-  width: 400px;
   text-align : left;
   text-indent : 20px;
+}
+
+td.desc
+{
+  width: 440px;
+  text-align : left;
 }
 
 td.inactive

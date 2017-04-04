@@ -133,7 +133,7 @@ function renderTableDataCell(caseObj, useId, width)
 		
 	// Show the title
 	out += "<b>";
-	if (width < IPHONE_LANDSCAPE && !caseObj.name.includes(caseObj.id))
+	if (!caseObj.name.includes(caseObj.id))
 	{
 		out += caseObj.id + " - ";
 	}
@@ -143,10 +143,7 @@ function renderTableDataCell(caseObj, useId, width)
 		out += " (" + useId + ")";
 	}
 	out += "</b>";
-	if (width < IPHONE_LANDSCAPE)
-	{
-		out += " - " + caseObj.prob;
-	}
+	out += " - " + caseObj.prob;
 	out += "<br/>";
 	
 	// Iterate through the algorithms
@@ -258,13 +255,6 @@ function renderTableDataRows(viewObj, groupObj, width)
 				// Render the table row
 				out += "<tr>";
 				
-				// Do not display id on phones (portrait)
-				if (width >= IPHONE_LANDSCAPE)
-				{
-					// Render the Id
-					out += "<td class=\"id\">" + caseObj.id + "</td>";
-				}
-
 				// Tooltip is shown on mouse hover
 				var tooltip = algSet.header.id + " " + caseObj.id;
 				if (caseObj.name != caseObj.id)
@@ -297,12 +287,6 @@ function renderTableDataRows(viewObj, groupObj, width)
 					out += "</td>";
 				}
 					
-				// Do not display probability on phones (portrait)
-				if (width >= IPHONE_LANDSCAPE)
-				{
-					out += "<td class=\"prob\">" + caseObj.prob + "</td>";
-				}
-				
 				out += "</tr>";
 			}
 		}

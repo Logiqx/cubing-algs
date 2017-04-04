@@ -20,9 +20,8 @@ function renderCaseAlg(algObj, style, padding, width)
 		inactive = " inactive"
 	}
 	
-	// Wide displays - near perfect on iPad (portrait)
-	// TODO - Two columns of 384 pixels wide?
-	if (width >= IPAD_PORTRAIT)
+	// Wide displays - e.g. iPad (landscape)
+	if (width >= IPAD_LANDSCAPE)
 	{
 		out += "<tr>";
 		out += "<td class=\"" + style + inactive + "\">" + algObj.alg + uses + "</td>";
