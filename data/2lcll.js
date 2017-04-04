@@ -342,7 +342,7 @@ var algSet = {
 			  "uses": ["2H"]
 			},
 			{
-			  "alg": "R U2' R' U' R U2' z U' R D' R' U",
+			  "alg": "R U2' R' U' R U2' L' U R' U' L",
               "desc": "One-handed execution applies cancellations",
 			  "status": 1,
 			  "uses": ["OH"]

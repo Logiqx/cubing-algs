@@ -202,15 +202,9 @@ var algSet = {
 		  [
 			{
 			  "alg": "(L' U R U' L U R') (L' U R U' L U R')",
-              "desc": "Two-handed execution includes a cancellation",
+              "desc": "Actual execution includes a cancellation",
 			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": " z (U' R D R' U R D') (U' R D R' U R D') [z']",
-              "desc": "One-handed execution includes a cancellation",
-			  "status": 1,
-			  "uses": ["OH"]
+			  "uses": ["2H", "OH"]
 			}
           ]
         }
