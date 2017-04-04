@@ -117,6 +117,27 @@ var algSet = {
 			{
 			  "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u')",
               "desc": "One-handed execution incorporates wide turns",
+			  "status": 0,
+			  "uses": ["OH"]
+			},
+		  ]
+        },
+        {
+          "alg": "U R (R U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R') R'",
+          "desc": "Long algorithm but decent for [OH] and big cubes",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2')",
+              "desc": "Two-handed execution incorporates cancellations",
+			  "status": 0,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2)",
+              "desc": "One-handed execution incorporates cancellations",
 			  "status": 1,
 			  "uses": ["OH"]
 			},
