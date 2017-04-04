@@ -1577,6 +1577,7 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Swap",
+		  "desc": "The \"no swap\" cases can be solved using the easiest / fastest [RU] algorithms from [2GLL].",
           "cases": ["A1", "B1", "C1", "D1", "E1", "F1", "G1", "H1"]
         },
         {
