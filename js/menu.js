@@ -37,8 +37,8 @@ menuItems =
 			},
 			{
 				"type": "link",
-				"desc": "3APLL",
-				"href": "3apll.html"
+				"desc": "4APLL",
+				"href": "4apll.html"
 			}
 		]
 	},
@@ -187,6 +187,22 @@ menuItems =
 				"type": "link",
 				"desc": "2LL4C",
 				"href": "2ll4c.html"
+			}
+		]
+	},
+	{
+		"type": "h1",
+		"desc": "Big Cubes"
+	},
+	{
+		"type": "submenu",
+		"desc": "5x5x5",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "L2E",
+				"href": "l2e.html"
 			}
 		]
 	}
