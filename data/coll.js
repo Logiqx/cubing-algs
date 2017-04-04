@@ -1231,7 +1231,7 @@ var algSet = {
 		  "vars" :
 		  [
 			{
-			  "alg": "U F (U R U' R') U R U' R2' F' R (U R U' R')",
+			  "alg": "U F (U R U' R') (U R U' R2') F' R (U R U' R')",
               "desc": "Two handed execution includes cancellations",
 			  "status": 1,
 			  "uses": ["2H"]
