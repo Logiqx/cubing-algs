@@ -165,13 +165,7 @@ var algSet = {
 			  "alg": "L' U R U' L U R'",
               "desc": "Two-handed execution",
 			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "z (U' R D R' U R D') [z']",
-              "desc": "One-handed execution",
-			  "status": 1,
-			  "uses": ["OH"]
+			  "uses": ["2H", "OH"]
 			}
           ]
         }
@@ -188,12 +182,6 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "F (R U R' U') (R U R' U') (R U R' U') F'",
-          "desc": "[Conjugate] of triple [sexy]: [F: [R U R' U']*3]",
-		  "status": 1,
-          "uses": ["2H", "OH"]
-        },
-        {
           "alg": "(L' U R U') (L U R' U') U (L' U R U') (L U R' U')",
           "desc": "[Niklas] combination - [LFN], U, [LFN]",
 		  "status": 1,
@@ -207,7 +195,13 @@ var algSet = {
 			  "uses": ["2H", "OH"]
 			}
           ]
-        }
+        },
+        {
+          "alg": "F (R U R' U') (R U R' U') (R U R' U') F'",
+          "desc": "[Conjugate] of triple [sexy]: [F: [R U R' U']*3]",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
       ]
     },
     {

@@ -623,7 +623,7 @@ var algSet = {
 			{
 			  "alg": "U' M2' U M' U2' M U M2'",
 			  "desc": "Two-handed execution applies a cancellation",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			},
 		  ]
@@ -665,7 +665,7 @@ var algSet = {
 			{
 			  "alg": "U' R2 U' R' U' R U R U R U' R",
 			  "desc": "One-handed execution applies cancellations",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["OH"]
 			},
 		  ]
@@ -707,7 +707,7 @@ var algSet = {
 			{
 			  "alg": "U' M2' U' M' U2' M U' M2'",
 			  "desc": "Two-handed execution applies a cancellation",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["2H"]
 			},
 		  ]
@@ -734,7 +734,7 @@ var algSet = {
 			{
 			  "alg": "U' z U2' R U R U' R' U' R' U' R U'",
 			  "desc": "One-handed execution is on the left",
-			  "status": 1,
+			  "status": 0,
 			  "uses": ["OH"]
 			},
 		  ]
@@ -843,12 +843,6 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "U R' U' R U' R U R U' R' U R U R2 U' R'",
-          "desc": "Playing with [F2L] pairs - track BR + FR",
-		  "status": 1,
-          "uses": ["OH"]
-        },
-        {
           "alg": "U (M2 U' M2 U') (M' U2' M2 U2' M')",
           "desc": "Intuitive - Solve UL + UR then solve remaining edges",
 		  "status": -1,
@@ -862,6 +856,12 @@ var algSet = {
 			  "uses": ["2H"]
 			},
 		  ]
+        },
+        {
+          "alg": "U R' U' R U' R U R U' R' U R U R2 U' R'",
+          "desc": "Playing with [F2L] pairs - track BR + FR",
+		  "status": 1,
+          "uses": ["OH"]
         },
       ]
     },
