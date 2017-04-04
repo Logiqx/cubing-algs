@@ -22,48 +22,26 @@ var algSet = {
     {
       "id": "Adj",
       "name": "Adjacent Corner Swap",
-      "desc": "This case is typically solved using the [PLL] algorithms for Aa-Perm, Jb-Perm or T-Perm",
+      "desc": "This case is typically solved using the [PLL] algorithms for T-Perm ([RUF]), Jb-Perm ([RUL]) or Aa-Perm ([RUD]).",
       "wiki": "",
-      "algdb": "Jb",
+      "algdb": "T",
       "image": "CPLL-A",
       "prob": "4/6",
       "algs" :
       [
         {
-          "alg": "U x R2 (R U R' D2) (R U' R' D2) R2' x'",
-          "name": "Aa-Perm",
-          "desc": "A9 [commutator] / [conjugate] - [x R2: [R U R', D2]]",
+          "alg": "(R U R' U' R' F R F') (F R U' R' U' R U R' F')",
+          "name": "T-Perm",
+          "desc": "[OLL] combination - [sexy-sledge], [mounted-fish]",
 		  "status": 1,
           "uses": [],
-		  "vars" :
+		  "vars":
 		  [
 			{
-			  "alg": "U l' U R' D2 R U' R' D2 R2 x'",
-              "desc": "Two-handed execution applies a cancellation",
+			  "alg": "R U R' U' R' F R2 U' R' U' R U R' F'",
+			  "desc": "Execution applies cancellations",
 			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U x R' U R' D2 R U' R' D2 R2 x'",
-              "desc": "One-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["OH"]
-			},
-		  ]
-        },
-        {
-          "alg": "R U R' F' (R U R' U' R' F R2 U' R' U' R U R' F') F R U' R'",
-          "name": "Jb-Perm",
-          "desc": "[Conjugate] of T-Perm - [R U R' F': T-Perm]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R U R' F' R U R' U' R' F R2 U' R'",
-              "desc": "Two-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["2H"]
+			  "uses": ["2H", "OH"]
 			},
 		  ]
         },
@@ -78,7 +56,7 @@ var algSet = {
 			{
 			  "alg": "R U2 R' U' R U2 L' U R' U' L",
               "desc": "Two-handed execution applies cancellations",
-			  "status": 0,
+			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
@@ -90,18 +68,24 @@ var algSet = {
 		  ]
         },
         {
-          "alg": "(R U R' U' R' F R F') (F R U' R' U' R U R' F')",
-          "name": "T-Perm",
-          "desc": "[OLL] combination - [sexy-sledge], [mounted-fish]",
+          "alg": "U x R2 (R U R' D2) (R U' R' D2) R2' x'",
+          "name": "Aa-Perm",
+          "desc": "A9 [commutator] / [conjugate] - [x R2: [R U R', D2]]",
 		  "status": 1,
           "uses": [],
-		  "vars":
+		  "vars" :
 		  [
 			{
-			  "alg": "R U R' U' R' F R2 U' R' U' R U R' F'",
-			  "desc": "Execution applies cancellations",
-			  "status": 1,
-			  "uses": []
+			  "alg": "U l' U R' D2 R U' R' D2 R2 x'",
+              "desc": "Two-handed execution applies a cancellation",
+			  "status": 0,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "U x R' U R' D2 R U' R' D2 R2 x'",
+              "desc": "One-handed execution applies a cancellation",
+			  "status": 0,
+			  "uses": ["OH"]
 			},
 		  ]
         },
@@ -110,35 +94,13 @@ var algSet = {
     {
       "id": "Diag",
       "name": "Diagonal Corner Swap",
-      "desc": "This case is typically solved using the [PLL] algorithms for E-Perm or Y-Perm.",
+      "desc": "This case is typically solved using the [PLL] algorithms for Y-Perm ([RUF]), Na-Perm ([RUL]) or E-Perm ([RUD]).",
       "wiki": "",
       "algdb": "Y",
       "image": "CPLL-O",
       "prob": "1/6",
       "algs" :
       [
-        {
-          "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' D') x",
-          "name": "E-Perm",
-          "desc": "[Commutator] combination - [R U' R', D] [R, U R' D]",
-		  "status": 1,
-          "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
-              "desc": "Two-handed execution incorporates wide turns",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u')",
-              "desc": "One-handed execution incorporates wide turns",
-			  "status": 1,
-			  "uses": ["OH"]
-			},
-		  ]
-        },
         {
           "alg": "(F R U' R' U' R U R' F') (R U R' U' R' F R F')",
           "name": "Y-Perm",
@@ -149,9 +111,57 @@ var algSet = {
         {
           "alg": "R2 U' R' U R U' x' U' z' U' R U' R' U' z U R",
           "name": "Y-Perm",
-          "desc": "One-handed algorithm",
+          "desc": "One-handed algorithm is fast despite the rotations",
 		  "status": 1,
           "uses": ["OH"]
+        },
+		{
+          "alg": "(R U' L U2 R' U L') (R U' L U2 R' U L')",
+          "name": "Na-Perm",
+          "desc": "Playing with [F2L] pairs - track FR + BL",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "(R U' L U2' R' U L') (R U' L U2' R' U L')",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
+		  ]
+        },
+        {
+          "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' D') x",
+          "name": "E-Perm",
+          "desc": "[Commutator] combination - [R U' R', D] [R, U R' D]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
+              "desc": "Two-handed execution starts with a wide turn",
+			  "status": 0,
+			  "uses": ["2H"]
+			},
+		  ]
+        },
+        {
+          "alg": "R (R U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R') R'",
+          "name": "E-Perm",
+          "desc": "Long algorithm but decent for [OH] and big cubes",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "(R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2)",
+              "desc": "One-handed execution incorporates cancellations",
+			  "status": 0,
+			  "uses": ["OH"]
+			},
+		  ]
         },
       ]
     },

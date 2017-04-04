@@ -110,13 +110,13 @@ var algSet = {
 		  [
 			{
 			  "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
-              "desc": "Two-handed execution incorporates wide turns",
+              "desc": "Two-handed execution starts with a wide turn",
 			  "status": 1,
 			  "uses": ["2H"]
 			},
 			{
 			  "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u')",
-              "desc": "One-handed execution incorporates wide turns",
+              "desc": "One-handed execution ends with a wide turn",
 			  "status": 0,
 			  "uses": ["OH"]
 			},
@@ -812,7 +812,7 @@ var algSet = {
         },
         {
           "alg": "R2 U' R' U R U' x' U' z' U' R U' R' U' z U R",
-          "desc": "One-handed algorithm",
+          "desc": "One-handed algorithm is fast despite the rotations",
 		  "status": 1,
           "uses": ["OH"]
         },
