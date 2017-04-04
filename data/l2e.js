@@ -118,8 +118,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Rw2 B2 Rw' U2 Rw' U2 x' U2 Rw' U2 Rw U2 Rw' U2 Rw2",
-          "desc": "Parity algorithm - append U2 x U2 for completeness",
+          "alg": "Rw2 B2 Rw' U2 Rw' U2 x' U2 Rw' U2 Rw U2 Rw' U2 Rw2 [U2 x U2]",
+          "desc": "Parity algorithm",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -208,8 +208,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "F2 Rw D2 Rw' F2 U2 F2 Lw B2 Lw'",
-          "desc": "Parity algorithm - append F2 for completeness",
+          "alg": "F2 Rw D2 Rw' F2 U2 F2 Lw B2 Lw' [F2]",
+          "desc": "Parity algorithm",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -436,13 +436,13 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Rw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Rw2 U2 F2 Rw",
+          "alg": "Rw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Rw2 U2 F2 Rw [F2]",
           "desc": "Parity algorithm - right hand dominant",
 		  "status": 1,
           "uses": ["2H"]
         },
         {
-          "alg": "Rw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Rw2 U2 F2 Rw",
+          "alg": "Rw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Rw2 U2 F2 Rw [F2]",
           "desc": "Parity algorithm - left hand dominant",
 		  "status": -1,
           "uses": ["2H"]
@@ -460,13 +460,13 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Lw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Lw2 U2 F2 Lw'",
+          "alg": "Lw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Lw2 U2 F2 Lw' [F2]",
           "desc": "Parity algorithm - right hand dominant",
 		  "status": 1,
           "uses": ["2H"]
         },
         {
-          "alg": "Lw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Lw2 U2 F2 Lw'",
+          "alg": "Lw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Lw2 U2 F2 Lw' [F2]",
           "desc": "Parity algorithm - left hand dominant",
 		  "status": -1,
           "uses": ["2H"]
