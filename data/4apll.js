@@ -55,7 +55,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U' L U2' R' U L') (R U' L U2' R' U L')",
+          "alg": "(R U' L U2 R' U L') (R U' L U2 R' U L')",
           "desc": "Playing with [F2L] pairs - track FR + BL",
 		  "status": 1,
           "uses": ["2H"]
