@@ -278,7 +278,7 @@ var algSet = {
     },
     {
       "id": "9",
-      "name": "Fish Shape - Anti-Kite",
+      "name": "Fish Shape - Kite",
       "wiki": "",
       "algdb": "OLL 9",
       "image": "OLL-09",
@@ -319,7 +319,7 @@ var algSet = {
     },
     {
       "id": "10",
-      "name": "Fish Shape - Kite",
+      "name": "Fish Shape - Anti-Kite",
       "wiki": "",
       "algdb": "OLL 10",
       "image": "OLL-10",
@@ -1952,7 +1952,7 @@ var algSet = {
 	},
     {
       "id": "50",
-      "name": "L Shape - RB Squeezy",
+      "name": "L Shape - RF Squeezy",
       "wiki": "",
       "algdb": "OLL 50",
       "image": "OLL-50",
