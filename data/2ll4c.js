@@ -508,8 +508,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U R2 (R F R' B2) (R F' R' B2') R2'",
-          "desc": "A9 [commutator] / [conjugate] - [R2: [R F R', B2]]",
+          "alg": "U x R2 (R U R' D2) (R U' R' D2) R2' x'",
+          "desc": "A9 [commutator] / [conjugate] - [x R2: [R U R', D2]]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -541,8 +541,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U2 R2 (B2 R F R') (B2' R F' R') R2",
-          "desc": "A9 [commutator] / [conjugate] - [R2: [B2, R F R']]",
+          "alg": "U2 x R2 (D2 R U R') (D2 R U' R') R2 x'",
+          "desc": "A9 [commutator] / [conjugate] - [x R2: [D2, R U R']]",
 		  "status": 1,
           "uses": [],
 		  "vars" :

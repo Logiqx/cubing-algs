@@ -30,9 +30,9 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U R2 (R F R' B2) (R F' R' B2') R2'",
+          "alg": "U x R2 (R U R' D2) (R U' R' D2) R2' x'",
           "name": "Aa-Perm",
-          "desc": "A9 [commutator] / [conjugate] - [R2: [R F R', B2]]",
+          "desc": "A9 [commutator] / [conjugate] - [x R2: [R U R', D2]]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
