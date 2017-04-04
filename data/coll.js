@@ -1316,7 +1316,7 @@ var algSet = {
 		  "vars" :
 		  [
 			{
-			  "alg": "(R U R' U') R' F R2 U R' U' (R U R' U') F'",
+			  "alg": "(R U R' U') R' F (R2 U R' U') (R U R' U') F'",
               "desc": "Two handed execution is similar to [OLL] 9",
 			  "status": 1,
 			  "uses": ["2H"]
