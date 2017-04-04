@@ -1,8 +1,8 @@
 var algSet = {
   "header":
   {
-    "id": "3APLL",
-    "name": "3-Algorithm Permutation of the Last Layer",
+    "id": "4APLL",
+    "name": "4-Algorithm Permutation of the Last Layer",
     "level": "Improver",
     "css": "2LPLL",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
@@ -47,16 +47,16 @@ var algSet = {
     {
       "id": "Diag",
       "name": "Diagonal Corner Swap",
-      "desc": "This case is solved using the Jb-Perm algorithm (adjacent corner swap), executed twice.",
+      "desc": "This case is solved using an easy Na-Perm algorithm. Notice how the same 7-move [RUL] algorithm is executed twice, swapping the same [F2L] pairs each time.",
       "wiki": "",
-      "algdb": "Y",
+      "algdb": "Na",
       "image": "CPLL-O",
       "prob": "1/6",
       "algs" :
       [
         {
-          "alg": "R U2 R' U' R U2 L' U R' U' L ...<br/>U2 R U2 R' U' R U2 L' U R' U' L",
-          "desc": "[PLL] combination - Jb-Perm, [AUF], Jb-Perm",
+          "alg": "(R U' L U2' R' U L') (R U' L U2' R' U L')",
+          "desc": "Playing with [F2L] pairs - track FR + BL",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -196,7 +196,7 @@ var algSet = {
         {
           "id": "corners",
           "name": "Corner Permutation",
-		  "desc": "The 2 [CPLL] cases are solved using 1 [RUL] algorithm - Rb-Perm (R U2 R' U' R U2 L' U R' U' L).",
+		  "desc": "The 2 [CPLL] cases are solved using 2 [RUL] algorithms - Rb-Perm (R U2 R' U' R U2 L' U R' U' L) and Na-Perm (R U' L U2' R' U L') (R U' L U2' R' U L')",
           "wiki": "2-Look_PLL",
           "cases": ["Adj", "Diag", "CPLL"]
         },

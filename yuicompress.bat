@@ -37,8 +37,8 @@ java -jar yuicompressor-2.4.8.jar data/2lell.js -o data/2lell-min.js
 java -jar yuicompressor-2.4.8.jar data/2ll4c.js -o data/2ll4c-min.js
 java -jar yuicompressor-2.4.8.jar data/2lllef.js -o data/2lllef-min.js
 java -jar yuicompressor-2.4.8.jar data/2lpll.js -o data/2lpll-min.js
-java -jar yuicompressor-2.4.8.jar data/3apll.js -o data/3apll-min.js
 java -jar yuicompressor-2.4.8.jar data/4aoll.js -o data/4aoll-min.js
+java -jar yuicompressor-2.4.8.jar data/4apll.js -o data/4apll-min.js
 java -jar yuicompressor-2.4.8.jar data/coll.js -o data/coll-min.js
 java -jar yuicompressor-2.4.8.jar data/l2e.js -o data/l2e-min.js
 java -jar yuicompressor-2.4.8.jar data/oll.js -o data/oll-min.js
