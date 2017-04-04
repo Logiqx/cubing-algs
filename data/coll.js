@@ -20,6 +20,529 @@ var algSet = {
   "cases":
   [
     {
+      "id": "A1",
+      "name": "O / Oriented #1",
+      "desc": "This is the solved case.",
+      "wiki": "",
+      "algdb": ".",
+      "image": "COLL-A-1",
+      "prob": "1/162",
+      "algs" :
+      [
+        {
+          "alg": "-",
+          "desc": "",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "O / Oriented #3",
+      "desc": "This case is typically solved using the [PLL] algorithms for Aa-Perm, Jb-Perm or T-Perm",
+      "wiki": "",
+      "algdb": ".",
+      "image": "COLL-A-3",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "U R2 (R F R' B2) (R F' R' B2') R2'",
+          "name": "Aa-Perm",
+          "desc": "A9 [commutator] / [conjugate] - [R2: [R F R', B2]]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "U l' U R' D2 R U' R' D2 R2 x'",
+              "desc": "Two-handed execution applies a cancellation",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "U x R' U R' D2 R U' R' D2 R2 x'",
+              "desc": "One-handed execution applies a cancellation",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
+		  ]
+        },
+        {
+          "alg": "R U R' F' (R U R' U' R' F R2 U' R' U' R U R' F') F R U' R'",
+          "name": "Jb-Perm",
+          "desc": "[Conjugate] of T-Perm - [R U R' F': T-Perm]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U R' F' R U R' U' R' F R2 U' R'",
+              "desc": "Two-handed execution applies cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+		  ]
+        },
+        {
+          "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
+          "name": "Jb-Perm",
+          "desc": "[COLL] combination - [RFAS], [RFN]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U2 R' U' R U2 L' U R' U' L",
+              "desc": "Two-handed execution applies cancellations",
+			  "status": 0,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R U2' R' U' R U2' L' U R' U' L",
+              "desc": "One-handed execution applies cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
+		  ]
+        },
+        {
+          "alg": "(R U R' U' R' F R F') (F R U' R' U' R U R' F')",
+          "name": "T-Perm",
+          "desc": "[OLL] combination - [sexy-sledge], [mounted-fish]",
+		  "status": 1,
+          "uses": [],
+		  "vars":
+		  [
+			{
+			  "alg": "R U R' U' R' F R2 U' R' U' R U R' F'",
+			  "desc": "Execution applies cancellations",
+			  "status": 1,
+			  "uses": []
+			},
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "A6",
+      "name": "O / Oriented #6",
+      "desc": "This case is typically solved using the [PLL] algorithms for E-Perm or Y-Perm.",
+      "wiki": "",
+      "algdb": ".",
+      "image": "COLL-A-6",
+      "prob": "1/162",
+      "algs" :
+      [
+        {
+          "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' D') x",
+          "name": "E-Perm",
+          "desc": "[Commutator] combination - [R U' R', D] [R, U R' D]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
+              "desc": "Two-handed execution incorporates wide turns",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u')",
+              "desc": "One-handed execution incorporates wide turns",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
+		  ]
+        },
+        {
+          "alg": "(F R U' R' U' R U R' F') (R U R' U' R' F R F')",
+          "name": "Y-Perm",
+          "desc": "[OLL] combination - [mounted-fish], [sexy-sledge]",
+		  "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "R2 U' R' U R U' x' U' z' U' R U' R' U' z U R",
+          "name": "Y-Perm",
+          "desc": "One-handed algorithm",
+		  "status": 1,
+          "uses": ["OH"]
+        },
+      ]
+    },
+    {
+      "id": "B1",
+      "name": "AS / Anti-Sune #1",
+      "desc": "Inverse of Sune / C1. Reflection of Sune / C1.",
+      "wiki": "",
+      "algdb": "COLL AS/B1",
+      "image": "COLL-B-1",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "U R U2 R' U' R U' R'",
+          "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert pair",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "U R U2' R' U' R U' R'",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+        {
+          "alg": "R' U' R U' R' U2 R",
+          "desc": "[RBS] - Extract [F2L] pair, [AUF], re-insert pair",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "R' U' R U' R' U2' R",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "AS / Anti-Sune #2",
+      "desc": "Inverse of Sune / C4. Reflection of Sune / C4.",
+      "wiki": "",
+      "algdb": "COLL AS/B2",
+      "image": "COLL-B-2",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "U2 R2 (D R' U R) (D' R' U R') (U' R U' R')",
+          "desc": "Playing with [F2L] pair - track FR",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+		}
+      ]
+    },
+    {
+      "id": "B3",
+      "name": "AS / Anti-Sune #3",
+      "desc": "Inverse of Sune / C2. Reflection of Sune / C3.",
+      "wiki": "",
+      "algdb": "COLL AS/B3",
+      "image": "COLL-B-3",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "U2 R (L' U' L U) R' (U2 L' U2 L)",
+          "desc": "Playing with [F2L] pairs - track FR + FL",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "U2 R (L' U' L U) R' (U2' L' U2' L)",
+              "desc": "One-handed execution",
+              "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "name": "AS / Anti-Sune #4",
+	  "desc": "Inverse of Sune / C3. Reflection of Sune / C2.",
+      "wiki": "",
+      "algdb": "COLL AS/B4",
+      "image": "COLL-B-4",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "U2 (R U2 R' U2) L' (U R U' R') L",
+          "desc": "Playing with [F2L] pairs - track FR + FL",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "U2 (R U2' R' U2') L' (U R U' R') L",
+              "desc": "One-handed execution",
+              "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "B5",
+      "name": "AS / Anti-Sune #5",
+	  "desc": "Inverse of Sune / C5. Reflection of Sune / C5.",
+      "wiki": "",
+      "algdb": "COLL AS/B5",
+      "image": "COLL-B-5",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "U2 (L' U R U') (L U R' U')",
+          "desc": "[LFN] - [L', U R U']",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "U2 L' U R U' L U R'",
+              "desc": "Actual execution",
+			  "status": 1,
+			  "uses": ["2H", "OH"]
+			}
+          ]
+        },
+        {
+          "alg": "(R' U L U') (R U L' U')",
+          "desc": "[RBN] - [R', U L U']",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R' U L U' R U L'",
+              "desc": "Actual execution",
+			  "status": 1,
+			  "uses": ["2H", "OH"]
+			}
+          ]
+        },
+      ]
+    },
+    {
+      "id": "B6",
+      "name": "AS / Anti-Sune #6",
+	  "desc": "Inverse of Sune / C6. Reflection of Sune / C6.",
+      "wiki": "",
+      "algdb": "COLL AS/B6",
+      "image": "COLL-B-6",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "U2 R' U' R U' (L U' R' U L' U' R) R' U' R",
+          "desc": "Playing with [F2L] pairs, includes [LFN] - track BR + BL",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "U2 R' U' R U' L U' R' U L' U2 R",
+              "desc": "Two-handed execution applies cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "U2 R' U' R U' L U' R' U L' U2' R",
+              "desc": "One-handed execution applies cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "C1",
+      "name": "S / Sune #1",
+      "desc": "Inverse of Anti-Sune / B1. Reflection of Anti-Sune / B1.",
+      "wiki": "",
+      "algdb": "COLL S/C1",
+      "image": "COLL-C-1",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "R U R' U R U2' R'",
+          "desc": "[RFS] - Extract [F2L] pair, [AUF], re-insert pair",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "U' R' U2' R U R' U R",
+          "desc": "[RBAS] - Extract [F2L] pair, [AUF], re-insert pair",
+		  "status": 1,
+          "uses": ["2H", "OH"]
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "S / Sune #2",
+      "desc": "Inverse of Anti-Sune / B3. Reflection of Anti-Sune / B4.",
+      "wiki": "",
+      "algdb": "COLL S/C2",
+      "image": "COLL-C-2",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "(L' U2 L U2) R (U' L' U L) R'",
+          "desc": "Playing with [F2L] pairs - track FL + FR",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "(L' U2' L U2') R (U' L' U L) R'",
+              "desc": "One-handed execution",
+              "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "S / Sune #3",
+      "desc": "Inverse of Anti-Sune / B4. Reflection of Anti-Sune / B3.",
+      "wiki": "",
+      "algdb": "COLL S/C3",
+      "image": "COLL-C-3",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "L' (R U R' U') L (U2 R U2 R')",
+          "desc": "Playing with [F2L] pairs - track FL + FR",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "L' (R U R' U') L (U2' R U2' R')",
+              "desc": "One-handed execution",
+              "status": 1,
+			  "uses": ["OH"]
+			}
+		  ]
+        },
+      ]
+    },
+    {
+      "id": "C4",
+      "name": "S / Sune #4",
+	  "desc": "Inverse of Anti-Sune / B2. Reflection of Anti-Sune / B2.",
+      "wiki": "",
+      "algdb": "COLL S/C4",
+      "image": "COLL-C-4",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "U' (R U R' U) (R U' R D) (R' U' R D') R2'",
+          "desc": "Playing with [F2L] pair - track FR",
+		  "status": 1,
+          "uses": ["2H"],
+		  "vars" :
+		  [
+			{
+			  "alg": "U' (R U R' U) (R U' R D) (R' U' R D') R2",
+              "desc": "One-handed execution",
+			  "status": 1,
+			  "uses": ["OH"]
+			}
+          ]
+		}
+      ]
+    },
+    {
+      "id": "C5",
+      "name": "S / Sune #5",
+	  "desc": "Inverse of Anti-Sune / B5. Reflection of Anti-Sune / B5.",
+      "wiki": "",
+      "algdb": "COLL S/C5",
+      "image": "COLL-C-5",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "(R U' L' U) (R' U' L U)",
+          "desc": "[RFN] - [R, U' L' U]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R U' L' U R' U' L",
+              "desc": "Actual execution",
+			  "status": 1,
+			  "uses": ["2H", "OH"]
+			}
+          ]
+        },
+        {
+          "alg": "U2 (L U' R' U) (L' U' R U)",
+          "desc": "[LBN] - [L, U' R' U]",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "U2 L U' R' U L' U' R",
+              "desc": "Actual execution",
+			  "status": 1,
+			  "uses": ["2H", "OH"]
+			}
+          ]
+        },
+      ]
+    },
+    {
+      "id": "C6",
+      "name": "S / Sune #6",
+	  "desc": "Inverse of Anti-Sune / B6. Reflection of Anti-Sune / B6.",
+      "wiki": "",
+      "algdb": "COLL S/C6",
+      "image": "COLL-C-6",
+      "prob": "2/81",
+      "algs" :
+      [
+        {
+          "alg": "R' U R (R' U L U' R U L') U R' U R",
+          "desc": "Playing with [F2L] pairs, includes [RBN] - track BR + BL",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "R' U2 L U' R U L' U R' U R",
+              "desc": "Two-handed execution applies cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			},
+			{
+			  "alg": "R' U2' L U' R U L' U R' U R",
+              "desc": "One-handed execution applies cancellations",
+			  "status": 1,
+			  "uses": ["OH"]
+			},
+		  ]
+        },
+      ]
+    },
+    {
       "id": "D1",
       "name": "L / Bowtie #1",
       "wiki": "",
@@ -700,11 +1223,20 @@ var algSet = {
       "prob": "2/81",
       "algs" :
       [
-        {
-          "alg": "R' F2 R U2 R U2 R' F2 U' R U' R'",
-          "desc": "Fast two-handed algorithm",
+		{
+          "alg": "U F (U R U' R') (U R U' R') F' (F R' F' R) (U R U' R')",
+          "desc": "[OLL] combination - inverse of [sexy-sledge], F [double-sexy] F'",
 		  "status": 1,
-          "uses": ["2H"]
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "U F (U R U' R') U R U' R2' F' R (U R U' R')",
+              "desc": "Two handed execution includes cancellations",
+			  "status": 1,
+			  "uses": ["2H"]
+			}
+		  ]
         },
         {
           "alg": "U (R U2' R' U' R U' R') (R' U L U' R U L')",
@@ -720,7 +1252,13 @@ var algSet = {
 			  "uses": ["OH"]
 			}
 		  ]
-        }
+        },
+        {
+          "alg": "R' F2 R U2 R U2 R' F2 U' R U' R'",
+          "desc": "Fast two-handed algorithm",
+		  "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -987,6 +1525,24 @@ var algSet = {
       "groups":
       [
         {
+          "id": "oriented",
+          "name": "O / Oriented",
+		  "desc": "I use a standard [PLL] algorithm when I encounter these [COLL] cases, instead of using [COLL] + [EPLL].",
+          "cases": ["A1", null, "A3", null, null, "A6"]
+        },
+        {
+          "id": "antisune",
+          "name": "AS / Anti-Sune",
+		  "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
+          "cases": ["B1", "B2", "B3", "B4", "B5", "B6"]
+        },
+        {
+          "id": "sune",
+          "name": "S / Sune",
+		  "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
+          "cases": ["C1", "C2", "C3", "C4", "C5", "C6"]
+        },
+        {
           "id": "bowtie",
           "name": "L / Bowtie",
           "cases": ["D1", "D2", "D3", "D4", "D5", "D6"]
@@ -1021,12 +1577,15 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Swap",
-          "cases": ["D1", "E1", "F1", "G1", "H1"]
+          "cases": ["A1", "B1", "C1", "D1", "E1", "F1", "G1", "H1"]
         },
         {
           "id": "adjacent",
           "name": "Adjacent Swap",
-          "cases": ["D2", "D3", "D4", "D5",
+          "cases": ["A3",
+					"B2", "B3", "B4", "B5",
+					"C2", "C3", "C4", "C5",
+					"D2", "D3", "D4", "D5",
 		            "E2", "E3", "E4", "E5",
 					"F2", "F3", "F4", "F5",
 					"G2", "G3", "G4", "G5",
@@ -1035,7 +1594,7 @@ var algSet = {
         {
           "id": "diagonal",
           "name": "Diagonal Swap",
-          "cases": ["D6", "E6", "F6", "G6", "H6"]
+          "cases": ["A6", "B6", "C6", "D6", "E6", "F6", "G6", "H6"]
         },
 	  ]
     },
@@ -1045,6 +1604,24 @@ var algSet = {
       "headers": ["2-Gen", "Swap-B", "Swap-R", "Swap-F", "Swap-L", "Diag"],
       "rows":
       [
+        {
+          "id": "oriented",
+          "name": "O / Oriented",
+		  "desc": "I use a standard [PLL] algorithm when I encounter these [COLL] cases, instead of using [COLL] + [EPLL].",
+          "cases": ["A1", null, "A3", null, null, "A6"]
+        },
+        {
+          "id": "antisune",
+          "name": "AS / Anti-Sune",
+		  "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
+          "cases": ["B1", "B2", "B3", "B4", "B5", "B6"]
+        },
+        {
+          "id": "sune",
+          "name": "S / Sune",
+		  "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
+          "cases": ["C1", "C2", "C3", "C4", "C5", "C6"]
+        },
         {
           "id": "bowtie",
           "name": "L / Bowtie",
