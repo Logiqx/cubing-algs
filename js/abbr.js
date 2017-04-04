@@ -229,6 +229,10 @@ var abbrs =
     "desc": "Algorithm consisting of R and U moves"
   },
   {
+    "name": "RUD",
+    "desc": "Algorithm consisting of R, U and D moves"
+  },
+  {
     "name": "RUF",
     "desc": "Algorithm consisting of R, U and F moves"
   },
