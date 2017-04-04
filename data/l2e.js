@@ -59,8 +59,8 @@ var algSet = {
         },
         {
           "alg": "Rw' (U' R U R') (F R' F' R) Rw ...<br/>Lw (U' R U R') (F R' F' R) Lw'",
-          "desc": "Intuitive solution",
-		  "status": -1,
+          "desc": "Intuitive solution flips UF + RF",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -74,8 +74,8 @@ var algSet = {
         },
         {
           "alg": "Rw' (U' R' U R') (F R F' R) Rw ...<br/>Lw (U' R' U R') (F R F' R) Lw'",
-          "desc": "Intuitive solution",
-		  "status": -1,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -137,7 +137,7 @@ var algSet = {
       [
         {
           "alg": "M (U' R U R') (F R' F' R) M'",
-          "desc": "Intuitive hack - M flip M'",
+          "desc": "Intuitive hack flips UF + RF",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -152,8 +152,8 @@ var algSet = {
         },
         {
           "alg": "M (U' R' U R') (F R F' R) M'",
-          "desc": "Intuitive hack - M flip M'",
-		  "status": 0,
+          "desc": "Intuitive hack flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -167,8 +167,8 @@ var algSet = {
         },
         {
           "alg": "Rw' (U' R U R') (F R' F' R) Rw ...<br/>3Rw' (U' R U R') (F R' F' R) 3Rw",
-          "desc": "Intuitive solution",
-		  "status": -1,
+          "desc": "Intuitive solution flips UF + RF",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -182,8 +182,8 @@ var algSet = {
         },
         {
           "alg": "Rw' (U' R' U R') (F R F' R) Rw ...<br/>3Rw' (U' R' U R') (F R F' R) 3Rw",
-          "desc": "Intuitive solution",
-		  "status": -1,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -215,8 +215,8 @@ var algSet = {
         },
         {
           "alg": "Rw' (U' R U R') (F R' F' R) Rw ...<br/>3Lw' (U' R U R') (F R' F' R) 3Lw",
-          "desc": "Intuitive solution",
-		  "status": -1,
+          "desc": "Intuitive solution flips UF + RF",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -230,8 +230,8 @@ var algSet = {
         },
         {
           "alg": "Rw' (U' R' U R') (F R F' R) Rw ...<br/>3Lw' (U' R' U R') (F R F' R) 3Lw",
-          "desc": "Intuitive solution",
-		  "status": -1,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -293,7 +293,7 @@ var algSet = {
       [
         {
           "alg": "B2 3Lw2 (U' R U R') (F R' F' R) 3Lw2 B2",
-          "desc": "Intuitive solution",
+          "desc": "Intuitive solution flips UF + RF",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -308,8 +308,8 @@ var algSet = {
         },
         {
           "alg": "B2 3Lw2 (U' R' U R') (F R F' R) 3Lw2 B2",
-          "desc": "Intuitive solution",
-		  "status": 0,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -323,7 +323,7 @@ var algSet = {
         },
         {
           "alg": "U2 B2 Rw2 (U' R U R') (F R' F' R) Rw2 B2",
-          "desc": "Intuitive solution",
+          "desc": "Intuitive solution flips UF + RF",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -338,8 +338,8 @@ var algSet = {
         },
         {
           "alg": "U2 B2 Rw2 (U' R' U R') (F R F' R) Rw2 B2",
-          "desc": "Intuitive solution",
-		  "status": 0,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -365,7 +365,7 @@ var algSet = {
       [
         {
           "alg": "B2 Lw2 (U' R U R') (F R' F' R) Lw2 B2",
-          "desc": "Intuitive solution",
+          "desc": "Intuitive solution flips UF + RF",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -380,8 +380,8 @@ var algSet = {
         },
         {
           "alg": "B2 Lw2 (U' R' U R') (F R F' R) Lw2 B2",
-          "desc": "Intuitive solution",
-		  "status": 0,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -395,7 +395,7 @@ var algSet = {
         },
         {
           "alg": "U2 B2 3Rw2 (U' R U R') (F R' F' R) 3Rw2 B2",
-          "desc": "Intuitive solution",
+          "desc": "Intuitive solution flips UF + RF",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -410,8 +410,8 @@ var algSet = {
         },
         {
           "alg": "U2 B2 3Rw2 (U' R' U R') (F R F' R) 3Rw2 B2",
-          "desc": "Intuitive solution",
-		  "status": 0,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -527,7 +527,7 @@ var algSet = {
       [
         {
           "alg": "3Lw (U' R U R') (F R' F' R) 3Lw'",
-          "desc": "Intuitive solution",
+          "desc": "Intuitive solution flips UF + RF",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -542,8 +542,8 @@ var algSet = {
         },
         {
           "alg": "3Lw (U' R' U R') (F R F' R) 3Lw'",
-          "desc": "Intuitive solution",
-		  "status": 0,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -557,7 +557,7 @@ var algSet = {
         },
         {
           "alg": "U2 Lw (U' R U R') (F R' F' R) Lw'",
-          "desc": "Intuitive solution",
+          "desc": "Intuitive solution flips UF + RF",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -572,8 +572,8 @@ var algSet = {
         },
         {
           "alg": "U2 Lw (U' R' U R') (F R F' R) Lw'",
-          "desc": "Intuitive solution",
-		  "status": 0,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -599,7 +599,7 @@ var algSet = {
       [
         {
           "alg": "3Rw' (U' R U R') (F R' F' R) 3Rw",
-          "desc": "Intuitive solution",
+          "desc": "Intuitive solution flips UF + RF",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -614,8 +614,8 @@ var algSet = {
         },
         {
           "alg": "3Rw' (U' R' U R') (F R F' R) 3Rw",
-          "desc": "Intuitive solution",
-		  "status": 0,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
@@ -629,7 +629,7 @@ var algSet = {
         },
         {
           "alg": "U2 Rw' (U' R U R') (F R' F' R) Rw",
-          "desc": "Intuitive solution",
+          "desc": "Intuitive solution flips UF + RF",
 		  "status": 1,
           "uses": [],
 		  "vars":
@@ -644,8 +644,8 @@ var algSet = {
         },
         {
           "alg": "U2 Rw' (U' R' U R') (F R F' R) Rw",
-          "desc": "Intuitive solution",
-		  "status": 0,
+          "desc": "Intuitive solution flips UF + RB",
+		  "status": 1,
           "uses": [],
 		  "vars":
 		  [
