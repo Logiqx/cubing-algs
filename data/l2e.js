@@ -671,21 +671,21 @@ var algSet = {
           "id": "A",
           "name": "Group A - \"No Wing Swap\"",
           "wiki": "L2E",
-          "desc": "These cases may help your understanding of OLL and PLL parity on a 4x4x4. The wing pieces are correctly solved but the midge pieces are invisible / internal on a 4x4.<br/>Cycles via OLL parity: A1 &#8660; A3 &#8660; A5, A2 &#8660; A4 &#8660; A6. Cycles via PLL parity: A1 &#8660; A2, A3 &#8660; A4, A5 &#8660; A6.",
+          "desc": "These cases may help your understanding of OLL and PLL parity on a 4x4x4. The wing pieces are correctly solved but the midge pieces are invisible / internal on a 4x4.<br/><br/>Cycles via OLL parity: A1 &#8660; A3 &#8660; A5, A2 &#8660; A4 &#8660; A6. Cycles via PLL parity: A1 &#8660; A2, A3 &#8660; A4, A5 &#8660; A6.",
           "cases": ["A1", "A2", "A3", "A4", "A5", "A6"]
         },
         {
           "id": "B",
           "name": "Group B - \"Diagonal Wing Swap\"",
           "wiki": "L2E",
-          "desc": "The parity cases in this group (B1, B2, B5, B6) look like they need a diagonal wing swap to turn them into A1 (solved) or A5 (wing flips).<br/>Cycles via OLL parity: B1 &#8660; B3 &#8660; B5, B2 &#8660; B4 &#8660; B6. Cycles via PLL parity: B1 &#8660; B2, B3 &#8660; B4, B5 &#8660; B6.",
+          "desc": "The parity cases in this group (B1, B2, B5, B6) look like they need a diagonal wing swap to turn them into A1 (solved) or A5 (wing flips).<br/><br/>Cycles via OLL parity: B1 &#8660; B3 &#8660; B5, B2 &#8660; B4 &#8660; B6. Cycles via PLL parity: B1 &#8660; B2, B3 &#8660; B4, B5 &#8660; B6.",
           "cases": ["B1", "B2", "B3", "B4", "B5", "B6"]
         },
         {
           "id": "C",
           "name": "Group C - \"Adjacent Wing Swap\"",
           "wiki": "L2E",
-          "desc": "The parity cases in this group (C1, C2) look like they need an adjacent wing swap to turn them into A1 (solved) or A5 (wing flips).<br/>Cycles via OLL parity: C1 &#8660; C3 &#8660; C2 &#8660; C4 &#8660; C1. Cycles via PLL parity: C1 &#8660; C2, C3 &#8660; C4.",
+          "desc": "The parity cases in this group (C1, C2) look like they need an adjacent wing swap to turn them into A1 (solved) or A5 (wing flips).<br/><br/>Cycles via OLL parity: C1 &#8660; C3 &#8660; C2 &#8660; C4 &#8660; C1. Cycles via PLL parity: C1 &#8660; C2, C3 &#8660; C4.",
           "cases": ["C1", "C2", "C3", "C4"]
         },
       ]
@@ -699,14 +699,14 @@ var algSet = {
           "id": "even",
           "name": "Even Parity",
           "wiki": "L2E",
-          "desc": "This group of cases can be solved intuitively using the \"slice-flip-slice\" approach.<br/>Cycles via PLL parity: A1 &#8660; A2, A5 &#8660; A6, B3 &#8660; B4, C3 &#8660; C4.",
+          "desc": "This group of cases can be solved intuitively using the \"slice-flip-slice\" approach.<br/><br/>Cycles via PLL parity: A1 &#8660; A2, A5 &#8660; A6, B3 &#8660; B4, C3 &#8660; C4.",
           "cases": ["A1", "A2", "A5", "A6", "B3", "B4", "C3", "C4"]
         },
         {
           "id": "odd",
           "name": "Odd Parity",
           "wiki": "L2E",
-          "desc": "This group of cases all contain the equivalent of OLL parity on a 4x4x4.<br/>Cycles via PLL parity: A3 &#8660; A4, B1 &#8660; B2, B5 &#8660; B6, C1 &#8660; C2.",
+          "desc": "This group of cases all contain the equivalent of OLL parity on a 4x4x4.<br/><br/>Cycles via PLL parity: A3 &#8660; A4, B1 &#8660; B2, B5 &#8660; B6, C1 &#8660; C2.",
           "cases": ["A3", "A4", "B1", "B2", "B5", "B6", "C1", "C2"]
         },
       ]
