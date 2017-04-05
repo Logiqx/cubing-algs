@@ -247,44 +247,56 @@ var algSet = {
     },
     {
       "id": "B1",
-      "name": "Backslash Chequers",
-      "desc": "Mirror of B2.",
+      "name": "Slash Pairs (A.K.A. Nb)",
+      "desc": "Mirror of B2. This case is sometimes omitted from L2E cheat sheets (e.g. Big Cubes, Andy Klise, Sir Waffle).",
       "wiki": "",
-      "algdb": ".",
-      "image": "L2E-B1",
+      "algdb": "",
+      "image": "L2E-B5",
       "prob": "1/24",
       "algs" :
       [
         {
-          "alg": "Rw U2 Rw2 U2 Rw' U2 Rw U2 Rw' U2 Rw2 U2 Rw",
-          "desc": "Parity algorithm",
+          "alg": "Rw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Rw2 U2 F2 Rw [F2]",
+          "desc": "Parity algorithm - right hand dominant",
 		  "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "Rw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Rw2 U2 F2 Rw [F2]",
+          "desc": "Parity algorithm - left hand dominant",
+		  "status": -1,
           "uses": ["2H"]
         },
       ]
     },
     {
       "id": "B2",
-      "name": "Slash Chequers",
-      "desc": "Mirror of B1.",
+      "name": "Backslash Pairs (A.K.A. Na)",
+      "desc": "Mirror of B1. This case is sometimes omitted from L2E cheat sheets (e.g. Big Cubes, Andy Klise, Sir Waffle).",
       "wiki": "",
       "algdb": "",
-      "image": "L2E-B2",
+      "image": "L2E-B6",
       "prob": "1/24",
       "algs" :
       [
         {
-          "alg": "Rw' U2 Rw2 U2 Rw U2 Rw' U2 Rw U2 Rw2 U2 Rw'",
-          "desc": "Parity algorithm",
+          "alg": "Lw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Lw2 U2 F2 Lw' [F2]",
+          "desc": "Parity algorithm - right hand dominant",
 		  "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "Lw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Lw2 U2 F2 Lw' [F2]",
+          "desc": "Parity algorithm - left hand dominant",
+		  "status": -1,
           "uses": ["2H"]
         },
       ]
     },
     {
       "id": "B3",
-      "name": "Simple Case",
-      "desc": "Mirror of B4. This case is often omitted from L2E cheat sheets (e.g. Big Cubes, Andy Klise, Sir Waffle, Meep, Sarah Strong).",
+      "name": "Quite Simple Case",
+      "desc": "Mirror of B4. This case is often omitted from L2E cheat sheets (e.g. Big Cubes, Andy Klise, Sir Waffle, Meep, Sarah Strong). It is solved using the \"flip-slice-flip-slice\" approach.",
       "wiki": "",
       "algdb": "",
       "image": "L2E-B3",
@@ -355,8 +367,8 @@ var algSet = {
     },
     {
       "id": "B4",
-      "name": "Simple Case",
-      "desc": "Mirror of B3. This case is often omitted from L2E cheat sheets (e.g. Big Cubes, Andy Klise, Sir Waffle, Meep, Sarah Strong).",
+      "name": "Quite Simple Case",
+      "desc": "Mirror of B3. This case is often omitted from L2E cheat sheets (e.g. Big Cubes, Andy Klise, Sir Waffle, Meep, Sarah Strong). It is solved using the \"flip-slice-flip-slice\" approach.",
       "wiki": "",
       "algdb": ".",
       "image": "L2E-B4",
@@ -427,48 +439,36 @@ var algSet = {
     },
     {
       "id": "B5",
-      "name": "Slash Pairs (A.K.A. Nb)",
-      "desc": "Mirror of B6. This case is sometimes omitted from L2E cheat sheets (e.g. Big Cubes, Andy Klise, Sir Waffle).",
+      "name": "Backslash Chequers",
+      "desc": "Mirror of B6.",
       "wiki": "",
-      "algdb": "",
-      "image": "L2E-B5",
+      "algdb": ".",
+      "image": "L2E-B1",
       "prob": "1/24",
       "algs" :
       [
         {
-          "alg": "Rw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Rw2 U2 F2 Rw [F2]",
-          "desc": "Parity algorithm - right hand dominant",
+          "alg": "Rw U2 Rw2 U2 Rw' U2 Rw U2 Rw' U2 Rw2 U2 Rw",
+          "desc": "Parity algorithm",
 		  "status": 1,
-          "uses": ["2H"]
-        },
-        {
-          "alg": "Rw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Rw2 U2 F2 Rw [F2]",
-          "desc": "Parity algorithm - left hand dominant",
-		  "status": -1,
           "uses": ["2H"]
         },
       ]
     },
     {
       "id": "B6",
-      "name": "Backslash Pairs (A.K.A. Na)",
-      "desc": "Mirror of B5. This case is sometimes omitted from L2E cheat sheets (e.g. Big Cubes, Andy Klise, Sir Waffle).",
+      "name": "Slash Chequers",
+      "desc": "Mirror of B5.",
       "wiki": "",
       "algdb": "",
-      "image": "L2E-B6",
+      "image": "L2E-B2",
       "prob": "1/24",
       "algs" :
       [
         {
-          "alg": "Lw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Lw2 U2 F2 Lw' [F2]",
-          "desc": "Parity algorithm - right hand dominant",
+          "alg": "Rw' U2 Rw2 U2 Rw U2 Rw' U2 Rw U2 Rw2 U2 Rw'",
+          "desc": "Parity algorithm",
 		  "status": 1,
-          "uses": ["2H"]
-        },
-        {
-          "alg": "Lw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Lw2 U2 F2 Lw' [F2]",
-          "desc": "Parity algorithm - left hand dominant",
-		  "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -518,7 +518,7 @@ var algSet = {
     {
       "id": "C3",
       "name": "Simple Case",
-      "desc": "Mirror of C4.",
+      "desc": "Mirror of C4. It is solved using the \"slice-flip-slice\" approach.",
       "wiki": "",
       "algdb": "",
       "image": "L2E-C3",
@@ -590,7 +590,7 @@ var algSet = {
     {
       "id": "C4",
       "name": "Simple Case",
-      "desc": "Mirror of C3.",
+      "desc": "Mirror of C3. It is solved using the \"slice-flip-slice\" approach.",
       "wiki": "",
       "algdb": ".",
       "image": "L2E-C4",
@@ -669,23 +669,23 @@ var algSet = {
       [
         {
           "id": "A",
-          "name": "Group A",
+          "name": "Group A - \"No Wing Swap\"",
           "wiki": "L2E",
-          "desc": "These cases may help your understanding of OLL and PLL parity on a 4x4. The wing pieces are correctly solved but the midge pieces are invisible / internal on a 4x4. PLL Parity: A1 &#8660; A2, A3 &#8660; A4, A5 &#8660; A6. OLL Parity: A1 &#8660; A3 &#8660; A5, A2 &#8660; A4 &#8660; A6",
+          "desc": "These cases may help your understanding of OLL and PLL parity on a 4x4x4. The wing pieces are correctly solved but the midge pieces are invisible / internal on a 4x4.<br/>Cycles via OLL parity: A1 &#8660; A3 &#8660; A5, A2 &#8660; A4 &#8660; A6. Cycles via PLL parity: A1 &#8660; A2, A3 &#8660; A4, A5 &#8660; A6.",
           "cases": ["A1", "A2", "A3", "A4", "A5", "A6"]
         },
         {
           "id": "B",
-          "name": "Group B",
+          "name": "Group B - \"Diagonal Wing Swap\"",
           "wiki": "L2E",
-          "desc": "PLL Parity: B1 &#8660; B2, B3 &#8660; B4, B5 &#8660; B6. OLL Parity: B1 &#8660; B3 &#8660; B5, B2 &#8660; B4 &#8660; B6",
+          "desc": "The parity cases in this group (B1, B2, B5, B6) look like they need a diagonal wing swap to turn them into A1 (solved) or A5 (wing flips).<br/>Cycles via OLL parity: B1 &#8660; B3 &#8660; B5, B2 &#8660; B4 &#8660; B6. Cycles via PLL parity: B1 &#8660; B2, B3 &#8660; B4, B5 &#8660; B6.",
           "cases": ["B1", "B2", "B3", "B4", "B5", "B6"]
         },
         {
           "id": "C",
-          "name": "Group C",
+          "name": "Group C - \"Adjacent Wing Swap\"",
           "wiki": "L2E",
-          "desc": "PLL Parity: C1 &#8660; C2, C3 &#8660; C4. OLL Parity: C1 &#8660; C3 &#8660; C2, C2 &#8660; C4 &#8660; C1",
+          "desc": "The parity cases in this group (C1, C2) look like they need an adjacent wing swap to turn them into A1 (solved) or A5 (wing flips).<br/>Cycles via OLL parity: C1 &#8660; C3 &#8660; C2 &#8660; C4 &#8660; C1. Cycles via PLL parity: C1 &#8660; C2, C3 &#8660; C4.",
           "cases": ["C1", "C2", "C3", "C4"]
         },
       ]
@@ -699,14 +699,14 @@ var algSet = {
           "id": "even",
           "name": "Even Parity",
           "wiki": "L2E",
-          "desc": "This group of cases can be solved intuitively using the \"slice-flip-slice\" technique. PLL Parity: A1 &#8660; A2, A5 &#8660; A6, B3 &#8660; B4, C3 &#8660; C4.",
+          "desc": "This group of cases can be solved intuitively using the \"slice-flip-slice\" approach.<br/>Cycles via PLL parity: A1 &#8660; A2, A5 &#8660; A6, B3 &#8660; B4, C3 &#8660; C4.",
           "cases": ["A1", "A2", "A5", "A6", "B3", "B4", "C3", "C4"]
         },
         {
           "id": "odd",
           "name": "Odd Parity",
           "wiki": "L2E",
-          "desc": "This group of cases all contain the equivalent of OLL parity on a 4x4. PLL Parity: A3 &#8660; A4, B1 &#8660; B2, B5 &#8660; B6, C1 &#8660; C2.",
+          "desc": "This group of cases all contain the equivalent of OLL parity on a 4x4x4.<br/>Cycles via PLL parity: A3 &#8660; A4, B1 &#8660; B2, B5 &#8660; B6, C1 &#8660; C2.",
           "cases": ["A3", "A4", "B1", "B2", "B5", "B6", "C1", "C2"]
         },
       ]
