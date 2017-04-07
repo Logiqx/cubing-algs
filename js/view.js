@@ -33,9 +33,10 @@ function renderGridDataRows(viewObj, width)
 	// Initialisation
 	var out = "";
 	
-	// Determine the image sizes for the grid - large icons are perfect on the iPad (landscape)
-	// Constant of 1000 allows 1024 pixel displays with a scroll bar (clientWidth ~1008 pixels)
-	var imgSize = width >= 1000 ? "96" : "64";
+	// Determine the image sizes for the grid
+	// Large icons are perfect for 8 columns (e.g. OLL) on the iPad (landscape) or 6 columns (e.g. COLL) on the iPad (portrait)
+	var numCols = viewObj.rows[0].cases.length - 1;
+	var imgSize = (numCols <= 8 && width >= IPAD_LANDSCAPE) || (numCols <= 6 && width >= IPAD_PORTRAIT) ? "96" : "64";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
