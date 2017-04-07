@@ -22,7 +22,7 @@ var algSet = {
     {
       "id": "Aa",
       "name": "Aa-Perm",
-      "desc": "Inverse and reflection of Ab. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL].",
+      "desc": "Inverse and reflection of Ab. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL]. It is a clockwise 3-cycle of corners.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa",
@@ -61,7 +61,7 @@ var algSet = {
     {
       "id": "Ab",
       "name": "Ab-Perm",
-      "desc": "Inverse and reflection of Aa. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL].",
+      "desc": "Inverse and reflection of Aa. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL]. It is a counter-clockwise 3-cycle of corners.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab",
@@ -324,7 +324,7 @@ var algSet = {
     {
       "id": "Ja",
       "name": "Ja-Perm",
-      "desc": "Reflection of Jb.",
+      "desc": "Reflection of Jb. This case is also known as the L-Perm.",
       "wiki": "#J_Permutation_:_a",
       "algdb": "Ja",
       "image": "PLL-Ja",
@@ -591,7 +591,7 @@ var algSet = {
     {
       "id": "Ua",
       "name": "Ua-Perm",
-      "desc": "Inverse and reflection of Ub.",
+      "desc": "Inverse and reflection of Ub. It is a counter-clockwise 3-cycle of edges.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua",
@@ -675,7 +675,7 @@ var algSet = {
     {
       "id": "Ub",
       "name": "Ub-Perm",
-      "desc": "Inverse and reflection of Ua.",
+      "desc": "Inverse and reflection of Ua. It is a clockwise 3-cycle of edges.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub",
@@ -863,6 +863,12 @@ var algSet = {
 		  "status": 1,
           "uses": ["OH"]
         },
+        {
+          "alg": "R U R' U R' U' R' U R U' R' U' R2 U R",
+          "desc": "Playing with [F2L] pairs - track FR + BR",
+		  "status": 0,
+          "uses": ["OH"]
+        },
       ]
     },
     {
@@ -1044,33 +1050,38 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
-      "headers": ["EPLL", "Adjacent", "Adjacent", "Adjacent", "Diagonal"],
+      "headers": ["Corners<br/>Solved<br/>(EPLL)", "Adjacent<br/>Corner<br/>Swap", "Adjacent<br/>Corner<br/>Swap", "Adjacent<br/>Corner<br/>Swap", "Adjacent<br/>Corner<br/>Swap", "Diagonal<br/>Corner<br/>Swap"],
       "rows":
       [
         {
           "id": "cpll",
-          "name": "CPLL",
-          "cases": ["Skip", "Aa", null, "Ab", "E"]
+          "name": "Edges<br/>Solved<br/>(CPLL)",
+          "cases": ["Skip", null, null, null, null, null]
         },
         {
-          "id": "various",
-          "name": "Various",
-          "cases": ["Ua", "Ga", "T", "Gb", "Y"]
+          "id": "cpll",
+          "name": "Edges<br/>Solved<br/>(CPLL)",
+          "cases": ["H", null, "Aa", "Ab", null, "E"]
         },
         {
-          "id": "various",
-          "name": "Various",
-          "cases": ["Ub", "Gc", null, "Gd", "V"]
+          "id": "aes",
+          "name": "Adjacent<br/>Edge<br/>Swap",
+          "cases": ["Ua", "Ja", "Jb", "Ra", "Rb", "Y"]
         },
         {
-          "id": "various",
-          "name": "Various",
-          "cases": ["Z", "Ja", "F", "Ra", "Na"]
+          "id": "aes",
+          "name": "Adjacent<br/>Edge<br/>Swap",
+          "cases": ["Ub", "Ga", "Gb", "Gc", "Gd", "V"]
         },
         {
-          "id": "various",
-          "name": "Various",
-          "cases": ["H", "Jb", null, "Rb", "Nb"]
+          "id": "oes",
+          "name": "Opposite<br/>Edge<br/>Swap",
+          "cases": ["Z", null, "T", "F", null, "Na"]
+        },
+        {
+          "id": "oes",
+          "name": "Opposite<br/>Edge<br/>Swap",
+          "cases": [null, null, null, null, null, "Nb"]
         },
       ]
     },
