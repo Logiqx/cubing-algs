@@ -482,10 +482,11 @@ function renderView(viewId, width)
 				
 				if (viewObj.hasOwnProperty("rows"))
 				{
-					// TODO - Estimate grid size; OLL has 8 columns, COLL has 6 columns, PLL has 5 columns
+					// Check the display width to see if it supports grid view
 					if (width < GALAXY_S3_LANDSCAPE)
 					{
-						if (getViewportHeight() >= GALAXY_S3_LANDSCAPE)
+						// Allow 128 pixels for the browser's navigation bar
+						if (getViewportHeight() >= GALAXY_S3_LANDSCAPE - 128)
 						{
 							out += "<p class=\"alert\">Rotate to view in landscape (horizontal) orientation</p>";
 						}
