@@ -80,7 +80,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Ga or Ra",
-          "desc": "Aa / Ga = 4 colours, Ga = 3 colours",
+          "desc": "Aa / Ga = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -169,7 +169,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Y or V",
-          "desc": "Learn the features of Y and V",
+          "desc": "Learn the features of E, Y and V",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -187,7 +187,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Y or V",
-          "desc": "Learn the features of Y and V",
+          "desc": "Learn the features of E, Y and V",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -328,7 +328,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Aa or Ra",
-          "desc": "Aa / Ga = 4 colours, Ra = 3 colours",
+          "desc": "Ga / Aa = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -417,7 +417,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Ab or Rb",
-          "desc": "Ab / Gc = 4 colours, Rb = 3 colours",
+          "desc": "Gc / Ab = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -781,7 +781,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Ga or F",
-          "desc": "Ga / Ra = 4 colours, F = 3 colours",
+          "desc": "Ra / Ga = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -835,7 +835,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Gc or F",
-          "desc": "Gc / Rb = 4 colours, F = 3 colours",
+          "desc": "Rb / Gc = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1078,7 +1078,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Ua or Z",
-          "desc": "Ua / Ub = 3 colours, Z = 4 colours",
+          "desc": "Ub / Ua = 3 colours, Z = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1096,7 +1096,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for E or Y",
-          "desc": "Learn the features of Y and V",
+          "desc": "Learn the features of E, Y and V",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1199,7 +1199,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for E or V",
-          "desc": "Learn the features of Y and V",
+          "desc": "Learn the features of E, Y and V",
 		  "status": 1,
           "uses": ["2H"]
         },
