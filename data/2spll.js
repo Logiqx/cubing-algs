@@ -21,12 +21,13 @@ var algSet = {
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-1",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ga",
+          "desc": "Aa = 3 colours, Ga = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -42,8 +43,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -55,12 +56,13 @@ var algSet = {
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-3",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gd",
+          "desc": "Aa = 4 colours, Gd = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -72,12 +74,13 @@ var algSet = {
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-4",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ga or Ra",
+          "desc": "Aa / Ga = 4 colours, Ga = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -89,12 +92,13 @@ var algSet = {
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gc or Rb",
+          "desc": "Ab / Gc = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -106,12 +110,13 @@ var algSet = {
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gb",
+          "desc": "Ab = 4 colours, Gb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -127,8 +132,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -140,12 +145,13 @@ var algSet = {
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-4",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gc",
+          "desc": "Ab = 3 colours, Gc = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -157,12 +163,13 @@ var algSet = {
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Y or V",
+          "desc": "Learn the features of Y and V",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -174,12 +181,13 @@ var algSet = {
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-2",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Y or V",
+          "desc": "Learn the features of Y and V",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -195,8 +203,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -208,12 +216,13 @@ var algSet = {
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-2",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gc or Rb",
+          "desc": "F = 3 colours, Gc / Rb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -225,12 +234,13 @@ var algSet = {
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-3",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ga or Ra",
+          "desc": "F = 3 colours, Ga / Ra = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -246,8 +256,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -259,12 +269,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-1",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Aa",
+          "desc": "Ga = 4 colours, Aa = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -280,8 +291,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -293,12 +304,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-3",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ra or F",
+          "desc": "Ga / Ra = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -310,12 +322,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-4",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Aa or Ra",
+          "desc": "Aa / Ga = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -327,12 +340,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-1",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gd",
+          "desc": "Gb = 4 colours, Gd = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -344,12 +358,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ab",
+          "desc": "Gb = 3 colours. Ab = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -365,8 +380,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -378,12 +393,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-4",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gd",
+          "desc": "Gb = 3 colours, Gd = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -395,12 +411,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ab or Rb",
+          "desc": "Ab / Gc = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -412,12 +429,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-2",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Rb or F",
+          "desc": "Gc / Rb = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -433,8 +451,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -446,12 +464,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-4",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ab",
+          "desc": "Gc = 4 colours, Ab = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -463,12 +482,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-1",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gb",
+          "desc": "Gd = 3 colours, Gb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -484,8 +504,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -497,12 +517,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-3",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Aa",
+          "desc": "Gd = 3 colours, Aa = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -514,12 +535,13 @@ var algSet = {
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-4",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gb",
+          "desc": "Gd = 4 colours, Gb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -535,8 +557,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -552,8 +574,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -569,8 +591,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -586,8 +608,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -603,8 +625,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -620,8 +642,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -637,8 +659,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -654,8 +676,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -671,8 +693,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -688,8 +710,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -705,8 +727,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -722,8 +744,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -735,12 +757,13 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for T",
+          "desc": "Ra = 3 colours, T = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -752,12 +775,13 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-3",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ga or F",
+          "desc": "Ga / Ra = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -769,12 +793,13 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-4",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Aa or Ga",
+          "desc": "Ra = 3 colours, Aa / Ga = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -786,12 +811,13 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ab or Gc",
+          "desc": "Rb = 3 colours, Ab / Gc = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -803,12 +829,13 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-2",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Gc or F",
+          "desc": "Gc / Rb = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -820,12 +847,13 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-3",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for T",
+          "desc": "Rb = 3 colours, T = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -841,8 +869,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -858,8 +886,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -871,12 +899,13 @@ var algSet = {
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ra",
+          "desc": "T = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -888,12 +917,13 @@ var algSet = {
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-3",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Rb",
+          "desc": "T = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -909,8 +939,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -926,8 +956,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -939,12 +969,13 @@ var algSet = {
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-2",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ub or Z",
+          "desc": "Ua / Ub = 3 colours, Z = 4 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -960,8 +991,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -977,8 +1008,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -994,8 +1025,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1011,8 +1042,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1028,8 +1059,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1041,12 +1072,13 @@ var algSet = {
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-4",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ua or Z",
+          "desc": "Ua / Ub = 3 colours, Z = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1058,12 +1090,13 @@ var algSet = {
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for E or Y",
+          "desc": "Learn the features of Y and V",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1079,8 +1112,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1096,8 +1129,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1113,8 +1146,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1130,8 +1163,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1147,8 +1180,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1160,12 +1193,13 @@ var algSet = {
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-3",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for E or V",
+          "desc": "Learn the features of Y and V",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1181,8 +1215,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1194,12 +1228,13 @@ var algSet = {
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Do not mistake for Ua or Ub",
+          "desc": "Z = 4 colours, Ua / Ub = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1215,8 +1250,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1232,8 +1267,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },

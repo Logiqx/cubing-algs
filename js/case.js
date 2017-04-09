@@ -236,7 +236,8 @@ function renderCase(caseId, width)
 		
 		// Image
 		var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
-		out += "<p><i class=\"s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() + "\"></i></p>";
+		var style = caseObj.style != null ? caseObj.style : "";
+		out += "<p><i class=\"" + style + " s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() + "\"></i></p>";
 
 		// Description
 		if (caseObj.desc)

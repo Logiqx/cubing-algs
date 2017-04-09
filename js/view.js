@@ -81,7 +81,8 @@ function renderGridDataRows(viewObj, width)
 						
 						// Render the Id and Name
 						var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
-						out += "<abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+						var style = caseObj.style != null ? caseObj.style : "";
+						out += "<abbr title=\"" + tooltip + "\"><i class=\"clicky " + style + " s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 								"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "><br/></i></abbr>";
 					}
 				}
@@ -265,7 +266,8 @@ function renderTableDataRows(viewObj, groupObj, width)
 
 				// Render the image
 				var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
-				out += "<td><abbr title=\"" + tooltip + "\"><i class=\"clicky s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+				var style = caseObj.style != null ? caseObj.style : "";
+				out += "<td><abbr title=\"" + tooltip + "\"><i class=\"clicky " + style + " s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "><br/></i></abbr></td>";
 
 				// Iterate through the uses - 2 columns are perfect on the iPad (landscape)
