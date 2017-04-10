@@ -21,7 +21,7 @@ var algSet = {
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-1",
-	  "style": "bg1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
@@ -145,7 +145,7 @@ var algSet = {
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-4",
-	  "style": "bg1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
@@ -269,7 +269,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-1",
-	  "style": "bg1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
@@ -322,7 +322,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-4",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -411,7 +411,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-1",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -464,7 +464,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-4",
-	  "style": "bg1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
@@ -757,7 +757,7 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-2",
-	  "style": "bg1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
@@ -775,7 +775,7 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-3",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -829,7 +829,7 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-2",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -847,7 +847,7 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-3",
-	  "style": "bg1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
@@ -899,7 +899,7 @@ var algSet = {
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-2",
-	  "style": "bg1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
@@ -917,7 +917,7 @@ var algSet = {
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-3",
-	  "style": "bg1",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
@@ -1246,6 +1246,7 @@ var algSet = {
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-2",
+	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
@@ -1450,62 +1451,62 @@ var algSet = {
       [
         {
           "id": "cpll",
-          "name": "Edges<br/>Solved<br/>(CPLL) - A",
+          "name": "Edges<br/>Solved (CPLL)<br/>Solved / Aa / E",
           "cases": ["Skip", "Aa.1", "Aa.2", "Aa.3", "Aa.4", "E.1"]
         },
         {
           "id": "cpll",
-          "name": "Edges<br/>Solved<br/>(CPLL) - A.H",
+          "name": "Edges<br/>Solved (CPLL)<br/>H / Ab / E",
           "cases": ["H.1", "Ab.1", "Ab.2", "Ab.3", "Ab.4", "E.2"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge<br/>Swap - B",
+          "name": "Adjacent<br/>Edge Swap<br/>Ua / Ja / Y",
           "cases": ["Ua.1", "Ja.1", "Ja.2", "Ja.3", "Ja.4", "Y.1"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge<br/>Swap - B.H",
+          "name": "Adjacent<br/>Edge Swap<br/>Ub / Ga / V",
           "cases": ["Ub.1", "Ga.1", "Ga.2", "Ga.3", "Ga.4", "V.1"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge<br/>Swap - C",
+          "name": "Adjacent<br/>Edge Swap<br/>Ua / Jb / Y",
           "cases": ["Ua.2", "Jb.1", "Jb.2", "Jb.3", "Jb.4", "Y.2"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge<br/>Swap - C.H",
+          "name": "Adjacent<br/>Edge Swap<br/>Ub / Gc / V",
           "cases": ["Ub.2", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "V.2"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge<br/>Swap - D",
+          "name": "Adjacent<br/>Edge Swap<br/>Ua / Ra / Y",
           "cases": ["Ua.3", "Ra.1", "Ra.2", "Ra.3", "Ra.4", "Y.3"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge<br/>Swap - D.H",
+          "name": "Adjacent<br/>Edge Swap<br/>Ub / Gd / V",
           "cases": ["Ub.3", "Gd.1", "Gd.2", "Gd.3", "Gd.4", "V.3"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge<br/>Swap - E",
+          "name": "Adjacent<br/>Edge Swap<br/>Ua / Rb / Y",
           "cases": ["Ua.4", "Rb.1", "Rb.2", "Rb.3", "Rb.4", "Y.4"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge<br/>Swap - E.H",
+          "name": "Adjacent<br/>Edge Swap<br/>Ub / Gb / V",
           "cases": ["Ub.4", "Gb.1", "Gb.2", "Gb.3", "Gb.4", "V.4"]
         },
         {
           "id": "oes",
-          "name": "Opposite<br/>Edge<br/>Swap - F",
+          "name": "Opposite<br/>Edge Swap<br/>Z / T / Na",
           "cases": ["Z.1", "T.1", "T.2", "T.3", "T.4", "Na.1"]
         },
         {
           "id": "oes",
-          "name": "Opposite<br/>Edge<br/>Swap - F.H",
+          "name": "Opposite<br/>Edge Swap<br/>Z / F / Nb",
           "cases": ["Z.2", "F.1", "F.2", "F.3", "F.4", "Nb.1"]
         },
       ]
