@@ -1451,63 +1451,63 @@ var algSet = {
       [
         {
           "id": "cpll",
-          "name": "Edges<br/>Solved (CPLL)<br/>Solved / Aa / E",
-          "cases": ["Skip", "Aa.1", "Aa.2", "Aa.3", "Aa.4", "E.1"]
+          "name": "Edges<br/>Solved (CPLL)<br/>- / Aa / Ab / E",
+          "cases": ["Skip", "Aa.1", "Aa.2", "Ab.3", "Ab.4", "E.1"]
         },
         {
           "id": "cpll",
-          "name": "Edges<br/>Solved (CPLL)<br/>H / Ab / E",
-          "cases": ["H.1", "Ab.1", "Ab.2", "Ab.3", "Ab.4", "E.2"]
+          "name": "Edges<br/>Solved (CPLL)<br/>H / Ab / Aa / E",
+          "cases": ["H.1", "Ab.1", "Ab.2", "Aa.3", "Aa.4", "E.2"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge Swap<br/>Ua / Ja / Y",
-          "cases": ["Ua.1", "Ja.1", "Ja.2", "Ja.3", "Ja.4", "Y.1"]
+          "name": "Adjacent<br/>Edge Swap<br/>Ua / Ja / Jb / Y",
+          "cases": ["Ua.1", "Ja.1", "Ja.2", "Jb.3", "Jb.4", "Y.1"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge Swap<br/>Ub / Ga / V",
-          "cases": ["Ub.1", "Ga.1", "Ga.2", "Ga.3", "Ga.4", "V.1"]
+          "name": "Adjacent<br/>Edge Swap<br/>Ub / Ga / Gc / V",
+          "cases": ["Ub.1", "Ga.1", "Ga.2", "Gc.3", "Gc.4", "V.1"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge Swap<br/>Ua / Jb / Y",
-          "cases": ["Ua.2", "Jb.1", "Jb.2", "Jb.3", "Jb.4", "Y.2"]
+          "name": "Adjacent<br/>Edge Swap<br/>Ua / Rb / Ra / Y",
+          "cases": ["Ua.3", "Rb.1", "Rb.2", "Ra.3", "Ra.4", "Y.3"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge Swap<br/>Ub / Gc / V",
-          "cases": ["Ub.2", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "V.2"]
+          "name": "Adjacent<br/>Edge Swap<br/>Ub / Gb / Gd / V",
+          "cases": ["Ub.3", "Gb.1", "Gb.2", "Gd.3", "Gd.4", "V.3"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge Swap<br/>Ua / Ra / Y",
-          "cases": ["Ua.3", "Ra.1", "Ra.2", "Ra.3", "Ra.4", "Y.3"]
+          "name": "Adjacent<br/>Edge Swap<br/>Ua / Jb / Ja / Y",
+          "cases": ["Ua.4", "Jb.1", "Jb.2", "Ja.3", "Ja.4", "Y.2"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge Swap<br/>Ub / Gd / V",
-          "cases": ["Ub.3", "Gd.1", "Gd.2", "Gd.3", "Gd.4", "V.3"]
+          "name": "Adjacent<br/>Edge Swap<br/>Ub / Gc / Ga / V",
+          "cases": ["Ub.4", "Gc.1", "Gc.2", "Ga.3", "Ga.4", "V.2"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge Swap<br/>Ua / Rb / Y",
-          "cases": ["Ua.4", "Rb.1", "Rb.2", "Rb.3", "Rb.4", "Y.4"]
+          "name": "Adjacent<br/>Edge Swap<br/>Ua / Ra / Rb / Y",
+          "cases": ["Ua.2", "Ra.1", "Ra.2", "Rb.3", "Rb.4", "Y.4"]
         },
         {
           "id": "aes",
-          "name": "Adjacent<br/>Edge Swap<br/>Ub / Gb / V",
-          "cases": ["Ub.4", "Gb.1", "Gb.2", "Gb.3", "Gb.4", "V.4"]
+          "name": "Adjacent<br/>Edge Swap<br/>Ub / Gd / Gb / V",
+          "cases": ["Ub.2", "Gd.1", "Gd.2", "Gb.3", "Gb.4", "V.4"]
         },
         {
           "id": "oes",
-          "name": "Opposite<br/>Edge Swap<br/>Z / T / Na",
-          "cases": ["Z.1", "T.1", "T.2", "T.3", "T.4", "Na.1"]
+          "name": "Opposite<br/>Edge Swap<br/>Z / F / Na",
+          "cases": ["Z.1", "F.1", "F.2", "F.3", "F.4", "Na.1"]
         },
         {
           "id": "oes",
-          "name": "Opposite<br/>Edge Swap<br/>Z / F / Nb",
-          "cases": ["Z.2", "F.1", "F.2", "F.3", "F.4", "Nb.1"]
+          "name": "Opposite<br/>Edge Swap<br/>Z / T / Nb",
+          "cases": ["Z.2", "T.1", "T.2", "T.3", "T.4", "Nb.1"]
         },
       ]
     },
