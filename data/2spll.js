@@ -61,7 +61,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gd",
+          "alg": "Do not mistake for Gd or V",
           "desc": "Aa = 4 colours, Gd = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -115,7 +115,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gb",
+          "alg": "Do not mistake for Gb or V",
           "desc": "Ab = 4 colours, Gb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -292,7 +292,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -364,7 +364,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ab",
+          "alg": "Do not mistake for Ab or V",
           "desc": "Gb = 3 colours. Ab = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -382,7 +382,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Do not mistake for Y",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -454,7 +454,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -508,7 +508,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Do not mistake for Y",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -526,7 +526,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Aa",
+          "alg": "Do not mistake for Aa or V",
           "desc": "Gd = 3 colours, Aa = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -961,7 +961,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"],
@@ -997,7 +997,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"],
@@ -1032,7 +1032,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1067,7 +1067,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1121,7 +1121,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Do not mistake for Ab or Gb",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1156,7 +1156,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Do not mistake for Aa or Gd",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1191,7 +1191,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Do not mistake for Gb",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1227,7 +1227,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Do not mistake for Gd",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1263,8 +1263,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "alg": "Do not mistake for Ua or Ub",
+          "desc": "Z = 2 colours, Ua / Ub = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
