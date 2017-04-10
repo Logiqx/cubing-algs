@@ -287,6 +287,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -376,6 +377,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-3",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -447,6 +449,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-3",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -500,6 +503,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -952,6 +956,7 @@ var algSet = {
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-1",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -987,6 +992,7 @@ var algSet = {
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-3",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1021,6 +1027,7 @@ var algSet = {
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-1",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1055,6 +1062,7 @@ var algSet = {
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-3",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1108,6 +1116,7 @@ var algSet = {
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1142,6 +1151,7 @@ var algSet = {
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-4",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1176,6 +1186,7 @@ var algSet = {
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1211,6 +1222,7 @@ var algSet = {
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-4",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
