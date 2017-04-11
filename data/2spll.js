@@ -61,7 +61,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gd or V",
+          "alg": "Do not mistake for Gd",
           "desc": "Aa = 4 colours, Gd = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -115,7 +115,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gb or V",
+          "alg": "Do not mistake for Gb",
           "desc": "Ab = 4 colours, Gb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -287,7 +287,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -364,7 +363,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ab or V",
+          "alg": "Do not mistake for Ab",
           "desc": "Gb = 3 colours. Ab = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -377,12 +376,11 @@ var algSet = {
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Y",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -449,7 +447,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -503,12 +500,11 @@ var algSet = {
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Y",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -526,7 +522,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Aa or V",
+          "alg": "Do not mistake for Aa",
           "desc": "Gd = 3 colours, Aa = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -956,7 +952,6 @@ var algSet = {
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -992,7 +987,6 @@ var algSet = {
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1027,7 +1021,6 @@ var algSet = {
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1062,7 +1055,6 @@ var algSet = {
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1116,12 +1108,11 @@ var algSet = {
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ab or Gb",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1151,12 +1142,11 @@ var algSet = {
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-4",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Aa or Gd",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1186,12 +1176,11 @@ var algSet = {
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gb",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1222,12 +1211,11 @@ var algSet = {
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-4",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gd",
+          "alg": "Relatively easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
