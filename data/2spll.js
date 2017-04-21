@@ -550,6 +550,7 @@ var algSet = {
     {
       "id": "H.1",
       "name": "H-Perm / X-Perm",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides.<br/><br/>Easily recognisable as H-Perm because both sets of headlights contain the opposite edge colour.",
       "wiki": "#H_Permutation",
       "algdb": "H",
       "image": "PLL-H-1",
@@ -558,7 +559,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Easy to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -949,6 +950,7 @@ var algSet = {
     {
       "id": "Ua.1",
       "name": "Ua-Perm",
+      "desc": "Clearly a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights contain an adjacent edge colour.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-1",
@@ -966,16 +968,16 @@ var algSet = {
     {
       "id": "Ua.2",
       "name": "Ua-Perm",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the edge on the left matches the headlights on the right.<br/></br>You might find the checker pattern on the left is useful during recognition.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-2",
-	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ub or Z",
-          "desc": "Ua / Ub = 3 colours, Z = 2 or 4 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -984,6 +986,7 @@ var algSet = {
     {
       "id": "Ua.3",
       "name": "Ua-Perm",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights on the right contain the opposite edge colour.<br/><br/>You might find the checker pattern on the left is useful during recognition.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-3",
@@ -1001,6 +1004,7 @@ var algSet = {
     {
       "id": "Ua.4",
       "name": "Ua-Perm",
+      "desc": "Clearly a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ua-Perm (CCW) because the headlights contain the opposite edge colour.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-4",
@@ -1018,6 +1022,7 @@ var algSet = {
     {
       "id": "Ub.1",
       "name": "Ub-Perm",
+      "desc": "Clearly a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights contain an adjacent edge colour.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-1",
@@ -1035,6 +1040,7 @@ var algSet = {
     {
       "id": "Ub.2",
       "name": "Ub-Perm",
+      "desc": "Clearly a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ub-Perm (CW) because the headlights contain the opposite edge colour.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-2",
@@ -1052,6 +1058,7 @@ var algSet = {
     {
       "id": "Ub.3",
       "name": "Ub-Perm",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>You might find the checker pattern on the right is useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-3",
@@ -1069,16 +1076,16 @@ var algSet = {
     {
       "id": "Ub.4",
       "name": "Ub-Perm",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the edge on the right matches the headlights on the left.<br/></br>You might find the checker pattern on the right is useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-4",
-	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ua or Z",
-          "desc": "Ub / Ua = 3 colours, Z = 2 or 4 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1225,16 +1232,16 @@ var algSet = {
     {
       "id": "Z.1",
       "name": "Z-Perm",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides.<br/><br/>Recognisable as Z-Perm because both sets of headlights contain an adjacent edge colour.<br/><br/>Exactly 4 colours, unlike U-Perm which has 3 colours.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-1",
-	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ua or Ub",
-          "desc": "Z = 4 colours, Ua / Ub = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1243,16 +1250,16 @@ var algSet = {
     {
       "id": "Z.2",
       "name": "Z-Perm",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides.<br/><br/>Easily recognisable as Z-Perm because of the distinctive checker pattern.<br/><br/>Exactly 2 colours, unlike U-Perm which has 3 colours.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-2",
-	  "style": "bg2",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ua or Ub",
-          "desc": "Z = 2 colours, Ua / Ub = 3 colours",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1261,6 +1268,7 @@ var algSet = {
     {
       "id": "Skip",
       "name": "Solved",
+      "desc": "This is clearly the solved case.",
       "wiki": "",
       "algdb": "",
       "image": "PLL-1",
@@ -1269,7 +1277,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Easy to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
