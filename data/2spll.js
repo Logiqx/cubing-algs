@@ -160,6 +160,7 @@ var algSet = {
     {
       "id": "E.1",
       "name": "E-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-left, resulting in a 3-sticker checker pattern.<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-1",
@@ -178,6 +179,7 @@ var algSet = {
     {
       "id": "E.2",
       "name": "E-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-right, resulting in a 3-sticker checker pattern.<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-2",
@@ -550,7 +552,7 @@ var algSet = {
     {
       "id": "H.1",
       "name": "H-Perm / X-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides.<br/><br/>Easily recognisable as H-Perm because both sets of headlights contain the opposite edge colour.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides.<br/><br/>Easily recognisable as H-Perm because both sets of headlights contain the opposite edge colour.<br/><br/>H-perm looks the same from all four possible angles.",
       "wiki": "#H_Permutation",
       "algdb": "H",
       "image": "PLL-H-1",
@@ -704,6 +706,7 @@ var algSet = {
     {
       "id": "Na.1",
       "name": "Na-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Na-Perm because of the \"corner + edge\" pairs on the right and opposite corner colours.<br/><br/>Na-perm looks the same from all four possible angles.",
       "wiki": "#N_Permutation_:_a",
       "algdb": "Na",
       "image": "PLL-Na-1",
@@ -712,7 +715,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Easy to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -721,6 +724,7 @@ var algSet = {
     {
       "id": "Nb.1",
       "name": "Nb-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Nb-Perm because of the \"corner + edge\" pairs on the left and opposite corner colours.<br/><br/>Nb-perm looks the same from all four possible angles.",
       "wiki": "#N_Permutation_:_b",
       "algdb": "Nb",
       "image": "PLL-Nb-1",
@@ -729,7 +733,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Easy to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1094,6 +1098,7 @@ var algSet = {
     {
       "id": "V.1",
       "name": "V-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"malformed\" 2x2 block at the front, resulting in a 4-sticker checker pattern.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-1",
@@ -1112,6 +1117,7 @@ var algSet = {
     {
       "id": "V.2",
       "name": "V-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"corner + edge\" pair at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-2",
@@ -1129,6 +1135,7 @@ var algSet = {
     {
       "id": "V.3",
       "name": "V-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as V-Perm because of the 2x2 block at the front, bookended by opposite corner colours.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-3",
@@ -1146,6 +1153,7 @@ var algSet = {
     {
       "id": "V.4",
       "name": "V-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"corner + edge\" pair at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-4",
@@ -1163,6 +1171,7 @@ var algSet = {
     {
       "id": "Y.1",
       "name": "Y-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Y-Perm because the outside pairs are a unique feature.<br/><br/>The corner at the front makes this case very distinctive due to the opposite colours.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-1",
@@ -1180,6 +1189,7 @@ var algSet = {
     {
       "id": "Y.2",
       "name": "Y-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as Y-Perm because of the \"corner + edge\" pair at the front-left.<br/><br/>The back-left corner makes this case slightly more distinctive due to the opposite colour.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-2",
@@ -1197,6 +1207,7 @@ var algSet = {
     {
       "id": "Y.3",
       "name": "Y-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>This is the only diagonal corner swap without a visible pre-joined pair, 2x2 block, malformed pair or malformed 2x2 block.<br/><br/>You might find the \"outer\" checker pattern is useful during recognition.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-3",
@@ -1215,6 +1226,7 @@ var algSet = {
     {
       "id": "Y.4",
       "name": "Y-Perm",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as Y-Perm because of the \"corner + edge\" pair at the front-right.<br/><br/>The back-right corner makes this case slightly more distinctive due to the opposite colour.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-4",
@@ -1232,7 +1244,7 @@ var algSet = {
     {
       "id": "Z.1",
       "name": "Z-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 4 colours, unlike U-Perms which have 3 colours.<br/><br/>Recognisable as Z-Perm because both sets of headlights contain an adjacent edge colour.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 4 colours, unlike U-Perms which have 3 colours.<br/><br/>Recognisable as Z-Perm because both sets of headlights contain an adjacent edge colour.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-1",
@@ -1250,7 +1262,7 @@ var algSet = {
     {
       "id": "Z.2",
       "name": "Z-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>Easily recognisable as Z-Perm because of the distinctive checker pattern.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>Easily recognisable as Z-Perm because of the distinctive checker pattern.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-2",
@@ -1268,7 +1280,7 @@ var algSet = {
     {
       "id": "Skip",
       "name": "Solved",
-      "desc": "This is clearly the solved case.",
+      "desc": "This is clearly the solved case.<br/><br/>The solved case looks the same from all four possible angles.",
       "wiki": "",
       "algdb": "",
       "image": "PLL-1",
@@ -1454,12 +1466,12 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
-      "headers": ["Corners<br/>Solved<br/>(EPLL)", "Adjacent<br/>Corner<br/>Swap (B)", "Adjacent<br/>Corner<br/>Swap (R)", "Adjacent<br/>Corner<br/>Swap (F)", "Adjacent<br/>Corner<br/>Swap (L)", "Diagonal<br/>Corner<br/>Swap"],
+      "headers": ["Corners<br/>Solved<br/>(EPLL)", "Adjacent<br/>Corner<br/>Swap (BR)", "Adjacent<br/>Corner<br/>Swap (FR)", "Adjacent<br/>Corner<br/>Swap (FL)", "Adjacent<br/>Corner<br/>Swap (BL)", "Diagonal<br/>Corner<br/>Swap"],
       "rows":
       [
         {
           "id": "cpll",
-          "name": "Edges<br/>Solved (CPLL)<br/>- / Aa / Ab / E",
+          "name": "Edges<br/>Solved (CPLL)<br/>Skip / Aa / Ab / E",
           "cases": ["Skip", "Aa.1", "Aa.2", "Ab.3", "Ab.4", "E.1"]
         },
         {
