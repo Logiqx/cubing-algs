@@ -160,7 +160,7 @@ var algSet = {
     {
       "id": "E.1",
       "name": "E-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-left, resulting in a 3-sticker checker pattern.<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-left, resulting in a kind of 3-sticker checker pattern.<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-1",
@@ -179,7 +179,7 @@ var algSet = {
     {
       "id": "E.2",
       "name": "E-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-right, resulting in a 3-sticker checker pattern.<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-right, resulting in a kind of 3-sticker checker pattern.<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-2",
@@ -972,7 +972,7 @@ var algSet = {
     {
       "id": "Ua.2",
       "name": "Ua-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the edge on the left matches the headlights on the right.<br/></br>You might find the checker pattern on the left is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the edge on the left matches the headlights on the right.<br/></br>You might find the 4-sticker checker pattern on the left is useful during recognition.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-2",
@@ -990,7 +990,7 @@ var algSet = {
     {
       "id": "Ua.3",
       "name": "Ua-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights on the right contain the opposite edge colour.<br/><br/>You might find the checker pattern on the left is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights on the right contain the opposite edge colour.<br/><br/>You might find the 4-sticker checker pattern on the left is useful during recognition.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-3",
@@ -1062,7 +1062,7 @@ var algSet = {
     {
       "id": "Ub.3",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>You might find the checker pattern on the right is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>You might find the 4-sticker checker pattern on the right is useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-3",
@@ -1080,7 +1080,7 @@ var algSet = {
     {
       "id": "Ub.4",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the edge on the right matches the headlights on the left.<br/></br>You might find the checker pattern on the right is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the edge on the right matches the headlights on the left.<br/></br>You might find the 4-sticker checker pattern on the right is useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-4",
@@ -1207,7 +1207,7 @@ var algSet = {
     {
       "id": "Y.3",
       "name": "Y-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>This is the only diagonal corner swap without a visible pre-joined pair, 2x2 block, malformed pair or malformed 2x2 block.<br/><br/>You might find the \"outer\" checker pattern is useful during recognition.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>This is the only angle for a diagonal corner swap without a pair, 2x2 block, malformed pair or malformed 2x2 block.<br/><br/>Most people find the \"outer\" checker pattern is useful during recognition.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-3",
@@ -1262,7 +1262,7 @@ var algSet = {
     {
       "id": "Z.2",
       "name": "Z-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>Easily recognisable as Z-Perm because of the distinctive checker pattern.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>Easily recognisable as Z-Perm because of the distinctive 6-sticker checker pattern.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-2",
