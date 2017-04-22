@@ -1207,7 +1207,7 @@ var algSet = {
     {
       "id": "Y.3",
       "name": "Y-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>This is the only angle for a diagonal corner swap without a pair, 2x2 block, malformed pair or malformed 2x2 block.<br/><br/>Most people find the \"outer\" checker pattern is useful during recognition.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>This is the only angle for a diagonal corner swap without a visible pair, 2x2 block, \"malformed\" pair or \"malformed\" 2x2 block.<br/><br/>Most people find the \"outer\" checker pattern is useful during recognition.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-3",
