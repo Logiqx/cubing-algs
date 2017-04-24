@@ -1307,13 +1307,13 @@ var algSet = {
           "id": "sym-pairs",
           "name": "Symmetrical Pairs",
           "desc": "Symmetrical pairs and 2x2 blocks are amongst the easiest cases to recognise, either Y-Perm, V-Perm or A-Perm.<br/><br/>The Y-Perm is very distinctive and corners clearly distinguish the V-Perm from A-Perms.",
-          "cases": ["Skip", "Y.1", "V.3", "Aa.2", "Ab.3"]
+          "cases": ["Skip", "Y.1", "Aa.2", "V.3", "Ab.3"]
         },
         {
           "id": "asy-pairs",
           "name": "Asymmetrical Pairs",
           "desc": "Asymmetrical pairs are amongst the easiest cases to recognise, either N-Perm or J-Perm.<br/><br/>The corners clearly distinguish the N-Perms and J-Perms.",
-          "cases": ["Na.1", "Jb.3", "Ja.3", "Nb.1", "Ja.2", "Jb.2"]
+          "cases": ["Jb.2", "Na.1", "Jb.3", "Ja.3", "Nb.1", "Ja.2"]
         },
         {
           "id": "bar+pair",
