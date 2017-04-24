@@ -1361,7 +1361,7 @@ var algSet = {
           "id": "in+any",
           "name": "Inside Pair + Any Corner",
           "desc": "Inside pairs are amongst the easiest cases to recognise, either Y-Perm or G-Perm.<br/><br/>The corners distinguish the Y-Perm and G-Perms.",
-          "cases": ["Y.2", "Gb.3", "Gc.3", "Y.4", "Gd.2", "Ga.2"]
+          "cases": ["Ga.2", "Y.2", "Gb.3", "Gc.3", "Y.4", "Gd.2"]
         },
         {
           "id": "out+opp",
