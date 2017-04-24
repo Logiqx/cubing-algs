@@ -21,7 +21,7 @@ var algSet = {
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-1",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -74,7 +74,7 @@ var algSet = {
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-4",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -92,7 +92,7 @@ var algSet = {
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-1",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -145,7 +145,7 @@ var algSet = {
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-4",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -164,7 +164,7 @@ var algSet = {
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-1",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -183,7 +183,7 @@ var algSet = {
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-2",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -218,7 +218,7 @@ var algSet = {
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-2",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -236,7 +236,7 @@ var algSet = {
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-3",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -271,7 +271,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-1",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -306,7 +306,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-3",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -431,7 +431,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-2",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -466,7 +466,7 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-4",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -762,7 +762,7 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-2",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -798,7 +798,7 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-4",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -816,7 +816,7 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-1",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -852,7 +852,7 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-3",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -904,7 +904,7 @@ var algSet = {
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-2",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -922,7 +922,7 @@ var algSet = {
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-3",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1102,7 +1102,7 @@ var algSet = {
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-1",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1211,7 +1211,7 @@ var algSet = {
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-3",
-	  "style": "bg2",
+	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1298,6 +1298,97 @@ var algSet = {
   ],
   "views":
   [
+    {
+      "id": "features",
+      "name": "Features",
+      "groups":
+      [
+        {
+          "id": "block",
+          "name": "2x2 Block",
+          "desc": "TODO",
+          "cases": ["Skip", "V.3", "Aa.2", "Ab.3"]
+        },
+        {
+          "id": "pairs",
+          "name": "Two Pairs",
+          "desc": "TODO",
+          "cases": ["Y.1", "Na.1", "Nb.1", "Ja.3", "Jb.3", "Ja.2", "Jb.2"]
+        },
+        {
+          "id": "bar+pair",
+          "name": "Bar + Pair", 
+          "desc": "TODO",
+          "cases": ["Ja.1", "Jb.4", "Jb.1", "Ja.4"]
+        },
+        {
+          "id": "bar",
+          "name": "Bar (Miscellaneous)",
+          "desc": "TODO",
+          "cases": ["Ua.4", "Ub.2", "F.4", "F.1", "Ub.1", "Ua.1"]
+        },
+        {
+          "id": "headlights",
+          "name": "Double Headlights",
+          "desc": "TODO",
+          "cases": ["H.1", "Z.2", "Z.1", "Ua.3", "Ub.3", "Ua.2", "Ub.4"]
+        },
+        {
+          "id": "head+pair,easy",
+          "name": "Headlights + Pair (Easier)",
+          "desc": "TODO",
+          "cases": ["T.1", "T.4", "Ra.1", "Rb.4"]
+        },
+        {
+          "id": "head+pair,hard",
+          "name": "Headlights + Pair (Harder)",
+          "desc": "TODO",
+          "cases": ["Aa.1", "Ab.4", "Ga.1", "Gc.4"]
+        },
+        {
+          "id": "head+opp",
+          "name": "Headlights with Opposite Edge",
+          "desc": "TODO",
+          "cases": ["Gb.1", "Gd.4", "Gd.1", "Gb.4"]
+        },
+        {
+          "id": "head+adj",
+          "name": "Headlights with Adjacent Edge",
+          "desc": "TODO",
+          "cases": ["Ra.4", "Rb.1", "Aa.4", "Ab.1", "Ga.4", "Gc.1"]
+        },
+        {
+          "id": "pair+opp,easy",
+          "name": "Pair with Opposite Corner (Easier)",
+          "desc": "TODO",
+          "cases": ["Gb.3", "Gd.2", "Y.4", "Y.2", "V.2", "V.4"]
+        },
+        {
+          "id": "pair+opp,hard",
+          "name": "Pair with Opposite Corner (Harder)",
+          "desc": "TODO",
+          "cases": ["Gd.3", "Gb.2", "Aa.3", "Ab.2"]
+        },
+        {
+          "id": "pair+adj",
+          "name": "Pair with Adjacent Corner",
+          "desc": "TODO",
+          "cases": ["Ga.2", "Gc.3", "Ra.2", "Rb.3", "T.2", "T.3"]
+        },
+        {
+          "id": "subtle+book",
+          "name": "Subtle Cases - Bookends",
+          "desc": "TODO",
+          "cases": ["F.3", "F.2", "Ga.3", "Gc.2", "Ra.3", "Rb.2"]
+        },
+        {
+          "id": "subtle+diag",
+          "name": "Subtle Cases - Diagonal Corner Swap",
+          "desc": "TODO",
+          "cases": ["V.1", "E.1", "E.2", "Y.3"]
+        }
+    ]
+    },
     {
       "id": "letters",
       "name": "Letters",
