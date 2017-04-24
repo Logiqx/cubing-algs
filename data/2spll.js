@@ -962,7 +962,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"],
@@ -1034,7 +1034,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Easy",
           "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1304,88 +1304,88 @@ var algSet = {
       "groups":
       [
         {
-          "id": "block",
-          "name": "Single 2x2 Block",
-          "desc": "2x2 blocks are amongst the easiest cases to recognise.<br/><br/>The 2x2 block and the corners clearly distinguish the V-Perm from A-Perms.",
-          "cases": ["Skip", "V.3", "Aa.2", "Ab.3"]
+          "id": "symmetrical",
+          "name": "Symmetrical Pairs",
+          "desc": "Symmetrical pairs are amongst the easiest cases to recognise.<br/><br/>The corners clearly distinguish the V-Perm from A-Perms.",
+          "cases": ["Skip", "Y.1", "V.3", "Aa.2", "Ab.3"]
         },
         {
-          "id": "pairs",
-          "name": "Two Pairs",
-          "desc": "Two pairs (2x1 blocks) are amongst the easiest cases to recognise.<br/><br/>The 2x1 blocks and the corners clearly distinguish the Y-Perm from N-Perms and J-Perms.",
-          "cases": ["Y.1", "Na.1", "Nb.1", "Ja.3", "Jb.3", "Ja.2", "Jb.2"]
+          "id": "asymmetrical",
+          "name": "Asymmetrical Pairs",
+          "desc": "Asymmetrical pairs (2x1 blocks) are amongst the easiest cases to recognise.<br/><br/>The corners clearly distinguish the N-Perms from J-Perms.",
+          "cases": ["Na.1", "Jb.3", "Jb.2", "Nb.1", "Ja.2", "Ja.3"]
         },
         {
           "id": "bar+pair",
           "name": "Bar + Pair", 
-          "desc": "A bar (3x1 block) and a pair (2x1 block) are amongst the easiest cases to recognise.<br/><br/>The 2x1 blocks and the corners clearly distinguish the J-Perms.",
-          "cases": ["Ja.1", "Jb.4", "Jb.1", "Ja.4"]
+          "desc": "A bar (3x1 block) and a pair (2x1 block) are amongst the easiest cases to recognise.<br/><br/>The corners clearly distinguish the J-Perms.",
+          "cases": ["Ja.1", "Jb.1", "Ja.4", "Jb.4"]
         },
         {
           "id": "bar-pair",
           "name": "Bar - Pair",
           "desc": "A bar and optional headlights are amongst the easiest cases to recognise.<br/><br/>The edges connected to a corner of the opposite colour clearly distinguish the U-Perms from F-Perm.",
-          "cases": ["Ua.4", "Ub.2", "F.4", "F.1", "Ub.1", "Ua.1"]
+          "cases": ["Ub.1", "Ua.4", "F.4", "Ua.1", "Ub.2", "F.1"]
         },
         {
           "id": "headlights",
           "name": "Double Headlights",
           "desc": "Double headlights are amongst the easiest cases to recognise.<br/><br/>The edges clearly distinguish the H-Perm from Z-Perm and U-Perms.",
-          "cases": ["H.1", "Z.2", "Z.1", "Ua.3", "Ub.3", "Ua.2", "Ub.4"]
+          "cases": ["H.1", "Ub.3", "Ub.4", "Z.2", "Ua.3", "Ua.2", "Z.1"]
         },
         {
           "id": "head+conn",
           "name": "Headlights + Connected Pair",
           "desc": "Headlights and a connected pair are amongst the easiest cases to recognise.<br/><br/>The edge between headlights (opposite or adjacent colour) clearly distinguishes the T-Perm from R-Perms.",
-          "cases": ["T.1", "T.4", "Ra.1", "Rb.4"]
+          "cases": ["T.1", "Ra.1", "T.4", "Rb.4"]
         },
         {
           "id": "head+disc",
           "name": "Headlights + Disconnected Pair",
-          "desc": "Headlights and a disconnected pair can be one of the trickier cases to recognise.<br/><br/>The presence of a checker pattern (4 stickers) distinguishes the A-Perms from G-Perms.",
-          "cases": ["Aa.1", "Ab.4", "Ga.1", "Gc.4"]
+          "desc": "Headlights and a disconnected pair are amongst the trickier cases to recognise.<br/><br/>The presence of a checker pattern (4 stickers) distinguishes the A-Perms from G-Perms.",
+          "cases": ["Aa.1", "Ga.1", "Ab.4", "Gc.4"]
         },
         {
           "id": "head+opp",
           "name": "Headlights with Opposite Edge",
-          "desc": "Headlights containing an opposite edge can be one of the trickier cases to recognise.<br/><br/>The edge adjacent to the headlights distinguishes the G-Perms.",
-          "cases": ["Gd.1", "Gb.4", "Gb.1", "Gd.4"]
+          "desc": "Headlights containing an opposite edge are amongst the trickier cases to recognise.<br/><br/>The edge adjacent to the headlights distinguishes the G-Perms.",
+          "cases": ["Gd.1", "Gb.1", "Gb.4", "Gd.4"]
         },
         {
           "id": "head+adj",
           "name": "Headlights with Adjacent Edge",
-          "desc": "Headlights containing an adjacent edge can be one of the trickier cases to recognise.<br/><br/>The checker patterns (3 to 5 stickers) distinguish the A-Perms from G-Perms and R-Perms.",
-          "cases": ["Ra.4", "Rb.1", "Aa.4", "Ab.1", "Ga.4", "Gc.1"]
+          "desc": "Headlights containing an adjacent edge are amongst the trickier cases to recognise.<br/><br/>The checker patterns (3 to 5 stickers) distinguish the A-Perms from G-Perms and R-Perms.",
+          "cases": ["Aa.4", "Ra.4", "Ga.4", "Ab.1", "Rb.1", "Gc.1"]
         },
         {
-          "id": "pair+opp,easy",
-          "name": "Pair with Opposite Corner (Easier)",
-          "desc": "A pair with an opposite corner attached can be one of the easier cases to recognise.<br/><br/>The presence of bookends distinguishes the G-Perms from Y-Perm and V-Perms.",
-          "cases": ["Gb.3", "Gd.2", "Y.4", "Y.2", "V.2", "V.4"]
+          "id": "inside",
+          "name": "Inside Pair",
+          "desc": "Inside pairs are amongst the easier cases to recognise.<br/><br/>The corners distinguish the Y-Perm from G-Perms.",
+          "cases": ["Gb.3", "Y.2", "Ga.2", "Gd.2", "Y.4", "Gc.3"]
         },
         {
-          "id": "pair+opp,tricky",
-          "name": "Pair with Opposite Corner (Tricker)",
-          "desc": "A pair with an opposite corner attached can be one of the trickier cases to recognise.<br/><br/>The edge adjacent to the pair distinguishes the A-Perms from G-Perms.",
-          "cases": ["Gd.3", "Gb.2", "Aa.3", "Ab.2"]
+          "id": "outside+opp",
+          "name": "Outside Pair + Opposite Corner",
+          "desc": "Outside pairs are amongst the trickier cases to recognise.<br/><br/>The corners distinguish the V-Perm whilst edges distinguish the G-Perms and A-Perms.",
+          "cases": ["V.4", "Gd.3", "Aa.3", "V.2", "Gb.2", "Ab.2"]
         },
         {
-          "id": "pair+adj",
-          "name": "Pair with Adjacent Corner",
-          "desc": "A pair with an adjacent corner attached can be one of the trickier cases to recognise.<br/><br/>The edge adjacent to the pair distinguishes the A-Perms from G-Perms.",
-          "cases": ["Ga.2", "Gc.3", "Ra.2", "Rb.3", "T.2", "T.3"]
+          "id": "outside+adj",
+          "name": "Outside Pair + Adjacent Corner",
+          "desc": "Outside pairs are amongst the trickier cases to recognise.<br/><br/>The edge adjacent to the pair distinguishes the R-Perms from T-Perm.",
+          "cases": ["Ra.2", "T.2", "Rb.3", "T.3"]
         },
         {
           "id": "misc+book",
           "name": "Miscellaneous Cases (Bookends)",
-          "desc": "The miscellaneous cases wth bookends can be some of the trickier cases to recognise.<br/><br/>The checker patterns (3 or 4 stickers) distinguish the F-Perm from G-Perms and R-Perms.",
-          "cases": ["F.3", "F.2", "Ga.3", "Gc.2", "Ra.3", "Rb.2"]
+          "desc": "The miscellaneous cases wth bookends are amongst the trickier cases to recognise.<br/><br/>The checker patterns (3 or 4 stickers) distinguish the F-Perm from G-Perms and R-Perms.",
+          "cases": ["Ga.3", "F.3", "Ra.3", "Gc.2", "F.2", "Rb.2"]
         },
         {
           "id": "misc+diag",
           "name": "Miscellaneous Cases (Diagonal Corner Swap)",
-          "desc": "The miscellaneous cases with a diagonal corner swap can be some of the trickier cases to recognise.<br/><br/>The presence of a checker pattern (3 or 4 stickers) distinguishes the V-Perm from E-Perm and Y-Perm.",
-          "cases": ["V.1", "E.1", "E.2", "Y.3"]
+          "desc": "The miscellaneous cases with a diagonal corner swap are amongst the trickier cases to recognise.<br/><br/>The presence of a checker pattern (3 or 4 stickers) distinguishes the V-Perm from E-Perm and Y-Perm.",
+          "cases": ["E.1", "V.1", "E.2", "Y.3"]
         }
     ]
     },
