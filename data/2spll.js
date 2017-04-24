@@ -1312,7 +1312,7 @@ var algSet = {
         {
           "id": "asy-pairs",
           "name": "Asymmetrical Pairs",
-          "desc": "Asymmetrical pairs are amongst the easiest cases to recognise, either N-Perm or J-Perm.<br/><br/>The corners clearly distinguish the N-Perms from J-Perms.",
+          "desc": "Asymmetrical pairs are amongst the easiest cases to recognise, either N-Perm or J-Perm.<br/><br/>The corners clearly distinguish the N-Perms and J-Perms.",
           "cases": ["Na.1", "Jb.3", "Ja.3", "Nb.1", "Ja.2", "Jb.2"]
         },
         {
@@ -1324,7 +1324,7 @@ var algSet = {
         {
           "id": "bar-pair",
           "name": "Bar without Pair",
-          "desc": "Bars without pairs are amongst the easiest cases to recognise, either U-Perm or F-Perm.<br/><br/>The lone edge clearly distinguishes the U-Perms from F-Perm.",
+          "desc": "Bars without pairs are amongst the easiest cases to recognise, either U-Perm or F-Perm.<br/><br/>The lone edge clearly distinguishes the U-Perms and F-Perm.",
           "cases": ["Ub.1", "Ua.4", "F.4", "Ua.1", "Ub.2", "F.1"]
         },
         {
@@ -1360,7 +1360,7 @@ var algSet = {
         {
           "id": "in+any",
           "name": "Inside Pair + Any Corner",
-          "desc": "Inside pairs are amongst the easiest cases to recognise, either Y-Perm or G-Perm.<br/><br/>The corners distinguish the Y-Perm whilst the adjacent edge distinguishes the G-Perms.",
+          "desc": "Inside pairs are amongst the easiest cases to recognise, either Y-Perm or G-Perm.<br/><br/>The corners distinguish the Y-Perm and G-Perms.",
           "cases": ["Y.2", "Gb.3", "Gc.3", "Y.4", "Gd.2", "Ga.2"]
         },
         {
