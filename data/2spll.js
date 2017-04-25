@@ -21,7 +21,6 @@ var algSet = {
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -56,7 +55,6 @@ var algSet = {
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -74,7 +72,6 @@ var algSet = {
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-4",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -92,7 +89,6 @@ var algSet = {
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -110,7 +106,6 @@ var algSet = {
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -145,7 +140,6 @@ var algSet = {
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-4",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -164,7 +158,6 @@ var algSet = {
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -183,7 +176,6 @@ var algSet = {
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -218,7 +210,6 @@ var algSet = {
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -236,7 +227,6 @@ var algSet = {
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -271,7 +261,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -306,7 +295,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -324,7 +312,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-4",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -342,7 +329,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -360,7 +346,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -395,7 +380,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-4",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -413,7 +397,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -431,7 +414,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -466,7 +448,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-4",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -484,7 +465,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -519,7 +499,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -537,7 +516,6 @@ var algSet = {
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-4",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -762,7 +740,6 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -780,7 +757,6 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -798,7 +774,6 @@ var algSet = {
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-4",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -816,7 +791,6 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -834,7 +808,6 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -852,7 +825,6 @@ var algSet = {
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -904,7 +876,6 @@ var algSet = {
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-2",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -922,7 +893,6 @@ var algSet = {
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1102,7 +1072,6 @@ var algSet = {
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-1",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
@@ -1211,7 +1180,6 @@ var algSet = {
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-3",
-	  "style": "bg1",
       "prob": "1/72",
       "algs" :
       [
