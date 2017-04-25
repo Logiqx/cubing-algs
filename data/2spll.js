@@ -350,8 +350,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ab",
-          "desc": "Gb = 3 colours. Ab = 4 colours",
+          "alg": "Do not mistake for Ab or V",
+          "desc": "Gb = 3 colours. Ab / V = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -503,8 +503,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Aa",
-          "desc": "Gd = 3 colours, Aa = 4 colours",
+          "alg": "Do not mistake for Aa or V",
+          "desc": "Gd = 3 colours, Aa / V = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1094,8 +1094,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "alg": "Do not mistake for Gb",
+          "desc": "V = 4 colours, Gb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1130,8 +1130,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "alg": "Do not mistake for Gd",
+          "desc": "V = 4 colours, Gd = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
