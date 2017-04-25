@@ -1274,97 +1274,97 @@ var algSet = {
         {
           "id": "solved",
           "name": "Solved",
-          "desc": "Solved is the easiest case to recognise. [AUF] to complete the solve!",
+          "desc": "The solved state is the easiest case to recognise. [AUF] to complete the solve!",
           "cases": ["Skip"]
         },
         {
           "id": "bar+lights",
-          "name": "Bar with Lights", 
-          "desc": "Bars with headlights are amongst the easiest cases to recognise, definitely U-Perm.<br/><br/>The lone edge clearly distinguishes the U-Perms.",
+          "name": "3-Bar with Headlights", 
+          "desc": "A 3-bar with headlights can only be a U-Perm.<br/><br/>The lone edge is considered when distinguishing between cases.",
           "cases": ["Ub.2", "Ua.1", "Ub.1", "Ua.4"]
         },
         {
           "id": "bar-lights",
-          "name": "Bar without Lights",
-          "desc": "Bars without headlights are amongst the easiest cases to recognise, either J-Perm or F-Perm.<br/><br/>The edges clearly distinguish the J-Perms.",
+          "name": "3-Bar without Headlights",
+          "desc": "A 3-bar without headlights can only be a J-Perm or F-Perm.<br/><br/>The side adjacent to the bar is considered when distinguishing between cases.",
           "cases": ["Ja.1", "Jb.1", "F.1", "Ja.4", "Jb.4", "F.4"]
         },
         {
           "id": "double+opp",
-          "name": "Double Lights with Opposite Edge",
-          "desc": "Double headlights with at least one opposite edge indicate an [EPLL] and are amongst the easiest cases to recognise, either H-Perm or U-Perm.<br/><br/>The H-Perm is very distinctive whilst edges distinguish the U-Perms.",
+          "name": "Double Lights (Opposite Edge)",
+          "desc": "Double headlights with at least one opposite edge can only be a U-Perm or H-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.",
           "cases": ["Ub.3", "H.1", "Ua.3"]
         },
         {
           "id": "double-opp",
-          "name": "Double Lights without Opposite Edge",
-          "desc": "Double headlights without an opposite edge indicate an [EPLL] and are amongst the easiest cases to recognise, either U-Perm or Z-Perm.<br/><br/>The Z-Perm is fairly distinctive whilst edges distinguish the U-Perms.",
+          "name": "Double Lights (Adjacent Edges)",
+          "desc": "Double headlights without an opposite edge can only be a U-Perm or Z-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The Z-Perm is most distinctive.",
           "cases": ["Z.2", "Ua.2", "Z.1", "Ub.4"]
         },
         {
           "id": "lights+inpair",
-          "name": "Lights + Inside Pair",
-          "desc": "Headlights and an inside / connected pair are amongst the easiest cases to recognise, either R-Perm or T-Perm.<br/><br/>The edge between headlights (opposite or adjacent) clearly distinguishes the T-Perm from R-Perms.",
+          "name": "Headlights + 2-Bar (Inside)",
+          "desc": "Headlights plus an inside / connected 2-bar can only be an R-Perm or T-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.",
           "cases": ["T.1", "Ra.1", "T.4", "Rb.4"]
         },
         {
           "id": "lights+outpair",
-          "name": "Lights + Outside Pair",
-          "desc": "Headlights and an outside / disconnected pair are amongst the trickier cases to recognise, either A-Perm or G-Perm.<br/><br/>The presence of a checker pattern (4 stickers) distinguishes the A-Perms from G-Perms.",
+          "name": "Headlights + 2-Bar (Outside)",
+          "desc": "Headlights plus an outside / disconnected 2-bar can only be an A-Perm or G-Perm.<br/><br/>The presence of a checker pattern is considered when distinguishing between cases.",
           "cases": ["Aa.1", "Ga.1", "Ab.4", "Gc.4"]
         },
         {
           "id": "lights+opp",
-          "name": "Lights with Opposite Edge",
-          "desc": "Headlights containing an opposite edge are amongst the easiest cases to recognise, definitely G-Perm.<br/><br/>The edge adjacent to the headlights distinguishes the G-Perms.",
+          "name": "Headlights (Opposite Edge)",
+          "desc": "Headlights containing an opposite edge can only be a G-Perm.<br/><br/>The edge adjacent to the headlights is considered when distinguishing between cases.",
           "cases": ["Gb.1", "Gd.1", "Gb.4", "Gd.4"]
         },
         {
           "id": "lights+adj",
-          "name": "Lights with Adjacent Edge",
-          "desc": "Headlights containing an adjacent edge are amongst the trickier cases to recognise, either A-Perm, G-Perm or R-Perm.<br/><br/>The edges / checker patterns distinguish the R-Perms from A-Perms and G-Perms.",
+          "name": "Headlights (Adjacent Edge)",
+          "desc": "Headlights containing an adjacent edge can only be an A-Perm, R-Perm or G-Perm.<br/><br/>The presence of a checker pattern is considered when distinguishing between cases.",
           "cases": ["Ab.1", "Rb.1", "Gc.1", "Aa.4", "Ra.4", "Ga.4"]
         },
         {
           "id": "sym_pairs",
-          "name": "Symmetrical Pairs",
-          "desc": "Symmetrical pairs and 2x2 blocks are amongst the easiest cases to recognise, either A-Perm, V-Perm or Y-Perm.<br/><br/>The Y-Perm is very distinctive and corners clearly distinguish the V-Perm from A-Perms.",
-          "cases": ["Aa.2", "V.3", "Ab.3", "Y.1"]
+          "name": "Double 2-Bar (Symmetrical)",
+          "desc": "Symmetrical 2-bars and 2x2 blocks can only be an A-Perm, V-Perm or Y-Perm.<br/><br/>The outer corners are considered when distinguishing between cases. The Y-Perm and V-Perm are most distinctive.",
+          "cases": ["Y.1", "Ab.3", "V.3", "Aa.2"]
         },
         {
           "id": "asy_pairs",
-          "name": "Asymmetrical Pairs",
-          "desc": "Asymmetrical pairs are amongst the easiest cases to recognise, either J-Perm or N-Perm.<br/><br/>The corners clearly distinguish the N-Perms and J-Perms.",
+          "name": "Double 2-Bar (Asymmetrical)",
+          "desc": "Asymmetrical 2-bars can only be a J-Perm or N-Perm.<br/><br/>The relationships of the corner stickers are considered when distinguishing between cases.",
           "cases": ["Ja.3", "Nb.1", "Ja.2", "Jb.2", "Na.1", "Jb.3"]
         },
         {
           "id": "outpair+opp",
-          "name": "Outside Pair with Opposite Corner",
-          "desc": "Outside pairs connected to an opposite corner are amongst the easiest cases to recognise, either A-Perm, G-Perm or V-Perm.<br/><br/>The corners distinguish the V-Perm whilst the adjacent edge distinguishes the A-Perms and G-Perms.",
+          "name": "Outside 2-Bar (Opposite Corner)",
+          "desc": "Outside 2-bars connected to an opposite corner can only be an A-Perm, G-Perm or V-Perm.<br/><br/>The side adjacent to the pair is considered when distinguishing between cases.",
           "cases": ["V.4", "Gd.3", "Aa.3", "V.2", "Gb.2", "Ab.2"]
         },
         {
           "id": "outpair+adj",
-          "name": "Outside Pair with Adjacent Corner",
-          "desc": "Outside pairs connected to an adjacent corner are amongst the trickier cases to recognise, either R-Perm or T-Perm.<br/><br/>The adjacent edge distinguishes the R-Perms from T-Perm.",
+          "name": "Outside 2-Bar (Adjacent Corner)",
+          "desc": "Outside 2-bars connected to an adjacent corner can only be an R-Perm or T-Perm.<br/><br/>The edge adjacent to the pair is considered when distinguishing between cases.",
           "cases": ["Ra.2", "T.2", "Rb.3", "T.3"]
         },
         {
           "id": "inpair",
-          "name": "Inside Pair",
-          "desc": "Inside pairs are amongst the easiest cases to recognise, either G-Perm or Y-Perm.<br/><br/>The corners distinguish the Y-Perm and G-Perms.",
+          "name": "Inside 2-Bar",
+          "desc": "Inside 2-bars can only be a G-Perm or Y-Perm.<br/><br/>The relationships of the corner stickers are considered when distinguishing between cases.",
           "cases": ["Gb.3", "Y.2", "Ga.2", "Gd.2", "Y.4", "Gc.3"]
         },
         {
           "id": "misc+ends",
           "name": "Miscellaneous with Bookends",
-          "desc": "The miscellaneous cases with matching bookends are amongst the trickier cases to recognise, either F-Perm, G-Perm or R-Perm.<br/><br/>The checker pattern in the F-Perm (malformed 2x2) distinguishes it from the G-Perms and R-Perms (malformed pairs).",
+          "desc": "The miscellaneous cases with matching bookends can only be an F-Perm, R-Perm or G-Perm.<br/><br/>The checker pattern in the F-Perm (malformed 2x2) distinguishes it from the R-Perms and G-Perms (malformed pairs).",
           "cases": ["Ra.3", "F.3", "Ga.3", "Rb.2", "F.2", "Gc.2"]
         },
         {
           "id": "misc-ends",
           "name": "Miscellaneous without Bookends",
-          "desc": "The miscellaneous cases with non-matching bookends are diagonal corner swaps and amongst the trickier cases to recognise, either E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm (lone corner).",
+          "desc": "The miscellaneous cases with non-matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm (lone corner).",
           "cases": ["E.1", "V.1", "E.2", "Y.3"]
         }
     ]
