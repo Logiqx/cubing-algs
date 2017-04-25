@@ -991,7 +991,7 @@ var algSet = {
           "id": "both",
           "name": "Edges + Corners",
           "wiki": "#Permutations_of_Edges_and_Corners",
-          "cases": ["Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "T", "F", "Y", "V", "Na", "Nb"]
+          "cases": ["F", "Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "T", "V", "Y", "Na", "Nb"]
         },
         {
           "id": "lucky",
@@ -1014,13 +1014,13 @@ var algSet = {
         {
           "id": "adjacent",
           "name": "Adjacent Corner Swap",
-          "cases": ["Aa", "Ab", "Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "T", "F"]
+          "cases": ["Aa", "Ab", "F", "Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "T"]
         },
         {
           "id": "diagonal",
           "name": "Diagonal Corner Swap",
 		  "desc": "Advanced [CFOP] users may try to avoid theses cases using [COLL] or [OLLCP].",
-          "cases": ["Y", "V", "E", "Na", "Nb"]
+          "cases": ["V", "Y", "E", "Na", "Nb"]
         },
 	  ]
     },
@@ -1038,12 +1038,12 @@ var algSet = {
         {
           "id": "adjacent",
           "name": "Adjacent Edge Swap",
-          "cases": ["Ua", "Ub", "Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "Y", "V"]
+          "cases": ["Ga", "Gb", "Gc", "Gd", "Ja", "Jb", "Ra", "Rb", "Ua", "Ub", "V", "Y"]
         },
         {
           "id": "opposite",
           "name": "Opposite Edge Swap",
-          "cases": ["T", "F", "Z", "Na", "Nb"]
+          "cases": ["F", "T", "Z", "Na", "Nb"]
         },
 	  ]
     },

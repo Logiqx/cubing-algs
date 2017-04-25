@@ -1457,10 +1457,10 @@ var algSet = {
           "id": "both",
           "name": "Edges + Corners",
           "wiki": "#Permutations_of_Edges_and_Corners",
-          "cases": ["Ga.1", "Ga.2", "Ga.3", "Ga.4", "Gb.1", "Gb.2", "Gb.3", "Gb.4", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "Gd.1", "Gd.2", "Gd.3", "Gd.4",
+          "cases": ["F.1", "F.2", "F.3", "F.4",
+          "Ga.1", "Ga.2", "Ga.3", "Ga.4","Gb.1", "Gb.2", "Gb.3", "Gb.4", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "Gd.1", "Gd.2", "Gd.3", "Gd.4",
 					"Ja.1", "Ja.2", "Ja.3", "Ja.4", "Jb.1", "Jb.2", "Jb.3", "Jb.4", "Ra.1", "Ra.2", "Ra.3", "Ra.4", "Rb.1", "Rb.2", "Rb.3", "Rb.4",
-					"T.1", "T.2", "T.3", "T.4", "F.1", "F.2", "F.3", "F.4", "Y.1", "Y.2", "Y.3", "Y.4", "V.1", "V.2", "V.3", "V.4",
-					"Na.1", "Nb.1"]
+					"T.1", "T.2", "T.3", "T.4", "V.1", "V.2", "V.3", "V.4", "Y.1", "Y.2", "Y.3", "Y.4", "Na.1", "Nb.1"]
         },
         {
           "id": "lucky",
@@ -1483,16 +1483,16 @@ var algSet = {
         {
           "id": "adjacent",
           "name": "Adjacent Corner Swap",
-          "cases": ["Aa.1", "Aa.2", "Aa.3", "Aa.4", "Ab.1", "Ab.2", "Ab.3", "Ab.4",
+          "cases": ["Aa.1", "Aa.2", "Aa.3", "Aa.4", "Ab.1", "Ab.2", "Ab.3", "Ab.4", "F.1", "F.2", "F.3", "F.4",
 					"Ga.1", "Ga.2", "Ga.3", "Ga.4", "Gb.1", "Gb.2", "Gb.3", "Gb.4", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "Gd.1", "Gd.2", "Gd.3", "Gd.4",
 					"Ja.1", "Ja.2", "Ja.3", "Ja.4", "Jb.1", "Jb.2", "Jb.3", "Jb.4", "Ra.1", "Ra.2", "Ra.3", "Ra.4", "Rb.1", "Rb.2", "Rb.3", "Rb.4",
-					"T.1", "T.2", "T.3", "T.4", "F.1", "F.2", "F.3", "F.4"]
+					"T.1", "T.2", "T.3", "T.4"]
         },
         {
           "id": "diagonal",
           "name": "Diagonal Corner Swap",
 		  "desc": "Advanced [CFOP] users may try to avoid theses cases using [COLL] or [OLLCP].",
-          "cases": ["Y.1", "Y.2", "Y.3", "Y.4", "V.1", "V.2", "V.3", "V.4", "E.1", "E.2", "Na.1", "Nb.1"]
+          "cases": ["V.1", "V.2", "V.3", "V.4", "Y.1", "Y.2", "Y.3", "Y.4", "E.1", "E.2", "Na.1", "Nb.1"]
         },
 	  ]
     },
@@ -1510,15 +1510,14 @@ var algSet = {
         {
           "id": "adjacent",
           "name": "Adjacent Edge Swap",
-          "cases": ["Ua.1", "Ua.2", "Ua.3", "Ua.4", "Ub.1", "Ub.2", "Ub.3", "Ub.4",
-					"Ga.1", "Ga.2", "Ga.3", "Ga.4", "Gb.1", "Gb.2", "Gb.3", "Gb.4", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "Gd.1", "Gd.2", "Gd.3", "Gd.4",
+          "cases": ["Ga.1", "Ga.2", "Ga.3", "Ga.4", "Gb.1", "Gb.2", "Gb.3", "Gb.4", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "Gd.1", "Gd.2", "Gd.3", "Gd.4",
 					"Ja.1", "Ja.2", "Ja.3", "Ja.4", "Jb.1", "Jb.2", "Jb.3", "Jb.4", "Ra.1", "Ra.2", "Ra.3", "Ra.4", "Rb.1", "Rb.2", "Rb.3", "Rb.4",
-					"Y.1", "Y.2", "Y.3", "Y.4", "V.1", "V.2", "V.3", "V.4"]
+					"Ua.1", "Ua.2", "Ua.3", "Ua.4", "Ub.1", "Ub.2", "Ub.3", "Ub.4", "V.1", "V.2", "V.3", "V.4", "Y.1", "Y.2", "Y.3", "Y.4"]
         },
         {
           "id": "opposite",
           "name": "Opposite Edge Swap",
-          "cases": ["T.1", "T.2", "T.3", "T.4", "F.1", "F.2", "F.3", "F.4", "Z.1", "Z.2", "Na.1", "Nb.1"]
+          "cases": ["F.1", "F.2", "F.3", "F.4", "T.1", "T.2", "T.3", "T.4", "Z.1", "Z.2", "Na.1", "Nb.1"]
         },
 	  ]
     },
