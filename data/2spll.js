@@ -950,8 +950,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ub or Z",
-          "desc": "Ua / Ub = 3 colours, Z = 4 colours",
+          "alg": "Do not mistake for Z",
+          "desc": "Ua = 3 colours, Z = 2 or 4 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -1058,8 +1058,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ua or Z",
-          "desc": "Ua / Ub = 3 colours, Z = 4 colours",
+          "alg": "Do not mistake for Z",
+          "desc": "Ub = 3 colours, Z = 2 or 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1076,8 +1076,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for E or Y",
-          "desc": "Learn the features of E, Y and V",
+          "alg": "Do not mistake for E",
+          "desc": "Learn the features of E and V",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1184,8 +1184,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for E or V",
-          "desc": "Learn the features of E, Y and V",
+          "alg": "Do not mistake for E",
+          "desc": "Learn the features of E and Y",
 		  "status": 1,
           "uses": ["2H"]
         },
