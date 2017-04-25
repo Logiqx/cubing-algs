@@ -76,8 +76,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ga or Ra",
-          "desc": "Aa / Ga = 4 colours, Ra = 3 colours",
+          "alg": "Do not mistake for Ra",
+          "desc": "Aa = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -93,8 +93,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gc or Rb",
-          "desc": "Ab / Gc = 4 colours, Rb = 3 colours",
+          "alg": "Do not mistake for Rb",
+          "desc": "Ab = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -299,8 +299,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ra or F",
-          "desc": "Ga / Ra = 4 colours, F = 3 colours",
+          "alg": "Do not mistake for F",
+          "desc": "Ga = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -316,8 +316,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Aa or Ra",
-          "desc": "Ga / Aa = 4 colours, Ra = 3 colours",
+          "alg": "Do not mistake for Ra",
+          "desc": "Ga = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -401,8 +401,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ab or Rb",
-          "desc": "Gc / Ab = 4 colours, Rb = 3 colours",
+          "alg": "Do not mistake for Rb",
+          "desc": "Gc = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -418,8 +418,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Rb or F",
-          "desc": "Gc / Rb = 4 colours, F = 3 colours",
+          "alg": "Do not mistake for F",
+          "desc": "Gc = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -761,8 +761,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ga or F",
-          "desc": "Ra / Ga = 4 colours, F = 3 colours",
+          "alg": "Do not mistake for F",
+          "desc": "Ra = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -812,8 +812,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gc or F",
-          "desc": "Rb / Gc = 4 colours, F = 3 colours",
+          "alg": "Do not mistake for F",
+          "desc": "Rb = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
