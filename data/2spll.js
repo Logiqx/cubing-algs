@@ -1274,14 +1274,14 @@ var algSet = {
         {
           "id": "sym-pairs",
           "name": "Symmetrical Pairs",
-          "desc": "Symmetrical pairs and 2x2 blocks are amongst the easiest cases to recognise, either Y-Perm, V-Perm or A-Perm.<br/><br/>The Y-Perm is very distinctive and corners clearly distinguish the V-Perm from A-Perms.",
-          "cases": ["Skip", "Y.1", "Aa.2", "V.3", "Ab.3"]
+          "desc": "Symmetrical pairs and 2x2 blocks are amongst the easiest cases to recognise, either A-Perm, V-Perm or Y-Perm.<br/><br/>The Y-Perm is very distinctive and corners clearly distinguish the V-Perm from A-Perms.",
+          "cases": ["Skip", "Aa.2", "V.3", "Ab.3", "Y.1"]
         },
         {
           "id": "asy-pairs",
           "name": "Asymmetrical Pairs",
-          "desc": "Asymmetrical pairs are amongst the easiest cases to recognise, either N-Perm or J-Perm.<br/><br/>The corners clearly distinguish the N-Perms and J-Perms.",
-          "cases": ["Jb.2", "Na.1", "Jb.3", "Ja.3", "Nb.1", "Ja.2"]
+          "desc": "Asymmetrical pairs are amongst the easiest cases to recognise, either J-Perm or N-Perm.<br/><br/>The corners clearly distinguish the N-Perms and J-Perms.",
+          "cases": ["Ja.3", "Nb.1", "Ja.2", "Jb.2", "Na.1", "Jb.3"]
         },
         {
           "id": "bar+pair",
@@ -1292,19 +1292,19 @@ var algSet = {
         {
           "id": "bar-pair",
           "name": "Bar without Pair",
-          "desc": "Bars without pairs are amongst the easiest cases to recognise, either U-Perm or F-Perm.<br/><br/>The lone edge clearly distinguishes the U-Perms and F-Perm.",
-          "cases": ["Ub.1", "Ua.4", "F.4", "Ua.1", "Ub.2", "F.1"]
+          "desc": "Bars without pairs are amongst the easiest cases to recognise, either F-Perm or U-Perm.<br/><br/>The lone edge clearly distinguishes the U-Perms and F-Perm.",
+          "cases": ["Ua.1", "Ub.2", "F.1", "Ub.1", "Ua.4", "F.4"]
         },
         {
           "id": "lights",
           "name": "Double Headlights",
-          "desc": "Double headlights indicate an [EPLL] and are amongst the easiest cases to recognise, either H-Perm, Z-Perm or U-Perm.<br/><br/>The H-Perm and Z-Perm are very distinctive whilst edges distinguish the U-Perms.",
+          "desc": "Double headlights indicate an [EPLL] and are amongst the easiest cases to recognise, either H-Perm, U-Perm or Z-Perm.<br/><br/>The H-Perm and Z-Perm are very distinctive whilst edges distinguish the U-Perms.",
           "cases": ["H.1", "Ub.3", "Ub.4", "Z.2", "Ua.3", "Ua.2", "Z.1"]
         },
         {
           "id": "lights+in",
           "name": "Headlights + Inside Pair",
-          "desc": "Headlights with an inside / connected pair are amongst the easiest cases to recognise, either T-Perm or R-Perm.<br/><br/>The edge between headlights (opposite or adjacent) clearly distinguishes the T-Perm from R-Perms.",
+          "desc": "Headlights with an inside / connected pair are amongst the easiest cases to recognise, either R-Perm or T-Perm.<br/><br/>The edge between headlights (opposite or adjacent) clearly distinguishes the T-Perm from R-Perms.",
           "cases": ["T.1", "Ra.1", "T.4", "Rb.4"]
         },
         {
@@ -1317,24 +1317,24 @@ var algSet = {
           "id": "lights+opp",
           "name": "Headlights + Opposite Edge",
           "desc": "Headlights containing an opposite edge are amongst the trickier cases to recognise, definitely G-Perm.<br/><br/>The edge adjacent to the headlights distinguishes the G-Perms.",
-          "cases": ["Gd.1", "Gb.1", "Gb.4", "Gd.4"]
+          "cases": ["Gb.1", "Gd.1", "Gb.4", "Gd.4"]
         },
         {
           "id": "lights+adj",
           "name": "Headlights + Adjacent Edge",
-          "desc": "Headlights containing an adjacent edge are amongst the trickier cases to recognise, either R-Perm, A-Perm or G-Perm.<br/><br/>The edges / checker patterns distinguish the R-Perms from A-Perms and G-Perms.",
-          "cases": ["Aa.4", "Ra.4", "Ga.4", "Ab.1", "Rb.1", "Gc.1"]
+          "desc": "Headlights containing an adjacent edge are amongst the trickier cases to recognise, either A-Perm, G-Perm or R-Perm.<br/><br/>The edges / checker patterns distinguish the R-Perms from A-Perms and G-Perms.",
+          "cases": ["Ab.1", "Rb.1", "Gc.1", "Aa.4", "Ra.4", "Ga.4"]
         },
         {
           "id": "in+any",
           "name": "Inside Pair + Any Corner",
-          "desc": "Inside pairs are amongst the easiest cases to recognise, either Y-Perm or G-Perm.<br/><br/>The corners distinguish the Y-Perm and G-Perms.",
-          "cases": ["Ga.2", "Y.2", "Gb.3", "Gc.3", "Y.4", "Gd.2"]
+          "desc": "Inside pairs are amongst the easiest cases to recognise, either G-Perm or Y-Perm.<br/><br/>The corners distinguish the Y-Perm and G-Perms.",
+          "cases": ["Gb.3", "Y.2", "Ga.2", "Gd.2", "Y.4", "Gc.3"]
         },
         {
           "id": "out+opp",
           "name": "Outside Pair + Opposite Corner",
-          "desc": "Outside pairs are amongst the trickier cases to recognise, either V-Perm, G-Perm or A-Perm.<br/><br/>The corners distinguish the V-Perm whilst the adjacent edge distinguishes the G-Perms and A-Perms.",
+          "desc": "Outside pairs are amongst the trickier cases to recognise, either A-Perm, G-Perm or V-Perm.<br/><br/>The corners distinguish the V-Perm whilst the adjacent edge distinguishes the A-Perms and G-Perms.",
           "cases": ["V.4", "Gd.3", "Aa.3", "V.2", "Gb.2", "Ab.2"]
         },
         {
@@ -1347,12 +1347,12 @@ var algSet = {
           "id": "misc+ends",
           "name": "Miscellaneous with Bookends",
           "desc": "The miscellaneous cases with matching bookends are amongst the trickier cases to recognise, either F-Perm, G-Perm or R-Perm.<br/><br/>The checker pattern in the F-Perm (malformed 2x2) distinguishes it from the G-Perms and R-Perms (malformed pairs).",
-          "cases": ["Ga.3", "F.3", "Ra.3", "Gc.2", "F.2", "Rb.2"]
+          "cases": ["Ra.3", "F.3", "Ga.3", "Rb.2", "F.2", "Gc.2"]
         },
         {
           "id": "misc-ends",
           "name": "Miscellaneous without Bookends",
-          "desc": "The miscellaneous cases with non-matching bookends are diagonal corner swaps and amongst the trickier cases to recognise, either V-Perm, E-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm (lone corner).",
+          "desc": "The miscellaneous cases with non-matching bookends are diagonal corner swaps and amongst the trickier cases to recognise, either E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm (lone corner).",
           "cases": ["E.1", "V.1", "E.2", "Y.3"]
         }
     ]
