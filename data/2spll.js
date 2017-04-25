@@ -1339,13 +1339,13 @@ var algSet = {
         },
         {
           "id": "outpair+opp",
-          "name": "Outside Pair and Opposite Corner",
+          "name": "Outside Pair with Opposite Corner",
           "desc": "Outside pairs connected to an opposite corner are amongst the easiest cases to recognise, either A-Perm, G-Perm or V-Perm.<br/><br/>The corners distinguish the V-Perm whilst the adjacent edge distinguishes the A-Perms and G-Perms.",
           "cases": ["V.4", "Gd.3", "Aa.3", "V.2", "Gb.2", "Ab.2"]
         },
         {
           "id": "outpair+adj",
-          "name": "Outside Pair and Adjacent Corner",
+          "name": "Outside Pair with Adjacent Corner",
           "desc": "Outside pairs connected to an adjacent corner are amongst the trickier cases to recognise, either R-Perm or T-Perm.<br/><br/>The adjacent edge distinguishes the R-Perms from T-Perm.",
           "cases": ["Ra.2", "T.2", "Rb.3", "T.3"]
         },
