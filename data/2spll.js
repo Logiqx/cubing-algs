@@ -1292,19 +1292,19 @@ var algSet = {
         {
           "id": "double+opp",
           "name": "Double Lights (Opposite Edge)",
-          "desc": "Double headlights with at least one opposite edge can only be a U-Perm or H-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.",
+          "desc": "Double headlights with at least one opposite edge can only be a H-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.",
           "cases": ["Ub.3", "H.1", "Ua.3"]
         },
         {
           "id": "double-opp",
           "name": "Double Lights (Adjacent Edges)",
-          "desc": "Double headlights without an opposite edge can only be a U-Perm or Z-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The Z-Perm is most distinctive.",
+          "desc": "Double headlights without an opposite edge can only be a Z-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The Z-Perm is most distinctive.",
           "cases": ["Z.2", "Ua.2", "Z.1", "Ub.4"]
         },
         {
           "id": "lights+inpair",
           "name": "Headlights + 2-Bar (Inside)",
-          "desc": "Headlights plus an inside / connected 2-bar can only be an R-Perm or T-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.",
+          "desc": "Headlights plus an inside / connected 2-bar can only be an T-Perm or R-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.",
           "cases": ["T.1", "Ra.1", "T.4", "Rb.4"]
         },
         {
@@ -1322,13 +1322,13 @@ var algSet = {
         {
           "id": "lights+adj",
           "name": "Headlights (Adjacent Edge)",
-          "desc": "Headlights containing an adjacent edge can only be an A-Perm, R-Perm or G-Perm.<br/><br/>The presence of a checker pattern is considered when distinguishing between cases.",
-          "cases": ["Ab.1", "Rb.1", "Gc.1", "Aa.4", "Ra.4", "Ga.4"]
+          "desc": "Headlights containing an adjacent edge can only be an R-Perm, G-Perm or A-Perm.<br/><br/>The presence of a checker pattern is considered when distinguishing between cases.",
+          "cases": ["Gc.1", "Rb.1", "Ab.1", "Ga.4", "Ra.4", "Aa.4"]
         },
         {
           "id": "sym_pairs",
           "name": "Double 2-Bar (Symmetrical)",
-          "desc": "Symmetrical 2-bars and 2x2 blocks can only be an A-Perm, V-Perm or Y-Perm.<br/><br/>The outer corners are considered when distinguishing between cases. The Y-Perm and V-Perm are most distinctive.",
+          "desc": "Symmetrical 2-bars and 2x2 blocks can only be an Y-Perm, A-Perm or V-Perm.<br/><br/>The outer corners are considered when distinguishing between cases. The Y-Perm and V-Perm are most distinctive.",
           "cases": ["Y.1", "Ab.3", "V.3", "Aa.2"]
         },
         {
@@ -1340,7 +1340,7 @@ var algSet = {
         {
           "id": "outpair+opp",
           "name": "Outside 2-Bar (Opposite Corner)",
-          "desc": "Outside 2-bars connected to an opposite corner can only be an A-Perm, G-Perm or V-Perm.<br/><br/>The side adjacent to the bar / pair is considered when distinguishing between cases.",
+          "desc": "Outside 2-bars connected to an opposite corner can only be an V-Perm, G-Perm or A-Perm.<br/><br/>The side adjacent to the bar / pair is considered when distinguishing between cases.",
           "cases": ["V.4", "Gd.3", "Aa.3", "V.2", "Gb.2", "Ab.2"]
         },
         {
