@@ -1280,13 +1280,13 @@ var algSet = {
         {
           "id": "bar+lights",
           "name": "3-Bar with Headlights", 
-          "desc": "A 3-bar with headlights can only be a U-Perm.<br/><br/>The lone edge is considered when distinguishing between cases.",
+          "desc": "A 3-bar accompanied by headlights can only be a U-Perm.<br/><br/>The lone edge is considered when distinguishing between cases.",
           "cases": ["Ub.2", "Ua.1", "Ub.1", "Ua.4"]
         },
         {
           "id": "bar-lights",
           "name": "3-Bar without Headlights",
-          "desc": "A 3-bar without headlights can only be a J-Perm or F-Perm.<br/><br/>The edge adjacent to the bar is considered when distinguishing between cases.",
+          "desc": "A 3-bar not accompanied by headlights can only be a J-Perm or F-Perm.<br/><br/>The edge adjacent to the bar is considered when distinguishing between cases.",
           "cases": ["Ja.1", "Jb.1", "F.1", "Ja.4", "Jb.4", "F.4"]
         },
         {
@@ -1304,13 +1304,13 @@ var algSet = {
         {
           "id": "lights+inpair",
           "name": "Headlights + 2-Bar (Inside)",
-          "desc": "Headlights plus an inside / connected 2-bar can only be an T-Perm or R-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.",
+          "desc": "Headlights accompanied by an inside 2-bar can only be an T-Perm or R-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.",
           "cases": ["T.1", "Ra.1", "T.4", "Rb.4"]
         },
         {
           "id": "lights+outpair",
           "name": "Headlights + 2-Bar (Outside)",
-          "desc": "Headlights plus an outside / disconnected 2-bar can only be an A-Perm or G-Perm.<br/><br/>The presence of a checker pattern is considered when distinguishing between cases.",
+          "desc": "Headlights accompanied by an outside 2-bar can only be an A-Perm or G-Perm.<br/><br/>The presence of a checker pattern is considered when distinguishing between cases.",
           "cases": ["Aa.1", "Ga.1", "Ab.4", "Gc.4"]
         },
         {
@@ -1328,7 +1328,7 @@ var algSet = {
         {
           "id": "sym_pairs",
           "name": "Double 2-Bar (Symmetrical)",
-          "desc": "Symmetrical 2-bars and 2x2 blocks can only be an Y-Perm, A-Perm or V-Perm.<br/><br/>The outer corners are considered when distinguishing between cases. The Y-Perm and V-Perm are most distinctive.",
+          "desc": "Symmetrical 2-bars and 2x2 blocks can only be a Y-Perm, A-Perm or V-Perm.<br/><br/>The outer corners are considered when distinguishing between cases. The Y-Perm and V-Perm are most distinctive.",
           "cases": ["Y.1", "Ab.3", "V.3", "Aa.2"]
         },
         {
@@ -1364,7 +1364,7 @@ var algSet = {
         {
           "id": "misc-ends",
           "name": "Miscellaneous without Bookends",
-          "desc": "The miscellaneous cases with non-matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm (lone corner).",
+          "desc": "The miscellaneous cases without matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm (lone corner).",
           "cases": ["E.1", "V.1", "E.2", "Y.3"]
         }
     ]
