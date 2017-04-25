@@ -1286,7 +1286,7 @@ var algSet = {
         {
           "id": "bar-lights",
           "name": "3-Bar without Headlights",
-          "desc": "A 3-bar without headlights can only be a J-Perm or F-Perm.<br/><br/>The side adjacent to the bar is considered when distinguishing between cases.",
+          "desc": "A 3-bar without headlights can only be a J-Perm or F-Perm.<br/><br/>The edge adjacent to the bar is considered when distinguishing between cases.",
           "cases": ["Ja.1", "Jb.1", "F.1", "Ja.4", "Jb.4", "F.4"]
         },
         {
@@ -1340,13 +1340,13 @@ var algSet = {
         {
           "id": "outpair+opp",
           "name": "Outside 2-Bar (Opposite Corner)",
-          "desc": "Outside 2-bars connected to an opposite corner can only be an A-Perm, G-Perm or V-Perm.<br/><br/>The side adjacent to the pair is considered when distinguishing between cases.",
+          "desc": "Outside 2-bars connected to an opposite corner can only be an A-Perm, G-Perm or V-Perm.<br/><br/>The side adjacent to the bar / pair is considered when distinguishing between cases.",
           "cases": ["V.4", "Gd.3", "Aa.3", "V.2", "Gb.2", "Ab.2"]
         },
         {
           "id": "outpair+adj",
           "name": "Outside 2-Bar (Adjacent Corner)",
-          "desc": "Outside 2-bars connected to an adjacent corner can only be an R-Perm or T-Perm.<br/><br/>The edge adjacent to the pair is considered when distinguishing between cases.",
+          "desc": "Outside 2-bars connected to an adjacent corner can only be an R-Perm or T-Perm.<br/><br/>The edge adjacent to the bar / pair is considered when distinguishing between cases.",
           "cases": ["Ra.2", "T.2", "Rb.3", "T.3"]
         },
         {
