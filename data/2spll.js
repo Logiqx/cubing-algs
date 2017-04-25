@@ -59,8 +59,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gd",
-          "desc": "Aa = 4 colours, Gd = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -110,8 +110,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gb",
-          "desc": "Ab = 4 colours, Gb = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -214,8 +214,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gc or Rb",
-          "desc": "F = 3 colours, Gc / Rb = 4 colours",
+          "alg": "Do not mistake for Gc",
+          "desc": "F = 3 colours, Gc = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -231,8 +231,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ga or Ra",
-          "desc": "F = 3 colours, Ga / Ra = 4 colours",
+          "alg": "Do not mistake for Ga",
+          "desc": "F = 3 colours, Ga = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -316,8 +316,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ra",
-          "desc": "Ga = 4 colours, Ra = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -333,8 +333,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gd",
-          "desc": "Gb = 4 colours, Gd = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -350,8 +350,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ab or V",
-          "desc": "Gb = 3 colours. Ab / V = 4 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -384,8 +384,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gd",
-          "desc": "Gb = 3 colours, Gd = 4 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -401,8 +401,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Rb",
-          "desc": "Gc = 4 colours, Rb = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -469,8 +469,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gb",
-          "desc": "Gd = 3 colours, Gb = 4 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -503,8 +503,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Aa or V",
-          "desc": "Gd = 3 colours, Aa / V = 4 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -520,8 +520,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gb",
-          "desc": "Gd = 4 colours, Gb = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -761,8 +761,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for F",
-          "desc": "Ra = 4 colours, F = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -778,8 +778,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Aa or Ga",
-          "desc": "Ra = 3 colours, Aa / Ga = 4 colours",
+          "alg": "Do not mistake for Aa",
+          "desc": "Ra = 3 colours, Aa = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -795,8 +795,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ab or Gc",
-          "desc": "Rb = 3 colours, Ab / Gc = 4 colours",
+          "alg": "Do not mistake for Ab",
+          "desc": "Rb = 3 colours, Ab = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -812,8 +812,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for F",
-          "desc": "Rb = 4 colours, F = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -950,8 +950,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "alg": "Do not mistake for Ub or Z",
+          "desc": "Ua / Ub = 3 colours, Z = 4 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -1058,8 +1058,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "alg": "Do not mistake for Ua or Z",
+          "desc": "Ua / Ub = 3 colours, Z = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1094,8 +1094,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gb",
-          "desc": "V = 4 colours, Gb = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1130,8 +1130,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gd",
-          "desc": "V = 4 colours, Gd = 3 colours",
+          "alg": "Relatively easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1220,8 +1220,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "alg": "Do not mistake for Ua or Ub",
+          "desc": "Z = 4 colours, Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1238,8 +1238,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "alg": "Do not mistake for Ua or Ub",
+          "desc": "Z = 2 colours, Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1316,7 +1316,7 @@ var algSet = {
         {
           "id": "lights+opp",
           "name": "Headlights + Opposite Edge",
-          "desc": "Headlights containing an opposite edge are amongst the trickier cases to recognise, definitely G-Perm.<br/><br/>The edge adjacent to the headlights distinguishes the G-Perms.",
+          "desc": "Headlights containing an opposite edge are amongst the easiest cases to recognise, definitely G-Perm.<br/><br/>The edge adjacent to the headlights distinguishes the G-Perms.",
           "cases": ["Gb.1", "Gd.1", "Gb.4", "Gd.4"]
         },
         {
@@ -1334,7 +1334,7 @@ var algSet = {
         {
           "id": "out+opp",
           "name": "Outside Pair + Opposite Corner",
-          "desc": "Outside pairs are amongst the trickier cases to recognise, either A-Perm, G-Perm or V-Perm.<br/><br/>The corners distinguish the V-Perm whilst the adjacent edge distinguishes the A-Perms and G-Perms.",
+          "desc": "Outside pairs are amongst the easiest cases to recognise, either A-Perm, G-Perm or V-Perm.<br/><br/>The corners distinguish the V-Perm whilst the adjacent edge distinguishes the A-Perms and G-Perms.",
           "cases": ["V.4", "Gd.3", "Aa.3", "V.2", "Gb.2", "Ab.2"]
         },
         {
