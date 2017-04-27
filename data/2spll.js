@@ -2,7 +2,7 @@ var algSet = {
   "header":
   {
     "id": "PLL",
-    "name": "2-Sided Recognition - Permutation of Last Layer",
+    "name": "2-Sided PLL Recognition",
     "wiki": "https://www.speedsolving.com/wiki/index.php/PLL",
     "algdb": "http://algdb.net/Set/PLL/",
     "uses":
@@ -1292,7 +1292,7 @@ var algSet = {
         {
           "id": "double+opp",
           "name": "Double Lights (Opposite Edge)",
-          "desc": "Double headlights with at least one opposite edge can only be a H-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.",
+          "desc": "Double headlights with at least one opposite edge can only be an H-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.",
           "cases": ["Ub.3", "H.1", "Ua.3"]
         },
         {
@@ -1304,7 +1304,7 @@ var algSet = {
         {
           "id": "lights+inpair",
           "name": "Headlights + 2-Bar (Inside)",
-          "desc": "Headlights accompanied by an inside 2-bar can only be an T-Perm or R-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.",
+          "desc": "Headlights accompanied by an inside 2-bar can only be a T-Perm or R-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.",
           "cases": ["T.1", "Ra.1", "T.4", "Rb.4"]
         },
         {
@@ -1340,7 +1340,7 @@ var algSet = {
         {
           "id": "outpair+opp",
           "name": "Outside 2-Bar (Opposite Corner)",
-          "desc": "Outside 2-bars connected to an opposite corner can only be an V-Perm, G-Perm or A-Perm.<br/><br/>The side adjacent to the bar / pair is considered when distinguishing between cases.",
+          "desc": "Outside 2-bars connected to an opposite corner can only be a V-Perm, G-Perm or A-Perm.<br/><br/>The side adjacent to the bar / pair is considered when distinguishing between cases.",
           "cases": ["V.4", "Gd.3", "Aa.3", "V.2", "Gb.2", "Ab.2"]
         },
         {
@@ -1364,7 +1364,7 @@ var algSet = {
         {
           "id": "misc-ends",
           "name": "Miscellaneous without Bookends",
-          "desc": "The miscellaneous cases without matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm (lone corner).",
+          "desc": "The miscellaneous cases without matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm.",
           "cases": ["E.1", "V.1", "E.2", "Y.3"]
         }
     ]
