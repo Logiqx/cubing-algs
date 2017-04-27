@@ -440,7 +440,12 @@ function renderView(viewId, width)
 	}
 	
 	// Output the set title
-	out += "<h1><span class=\"menu-btn\">&#9776;</span> " + algSet.header.name + " (" + algSet.header.id + ")</h1>";
+	var h1 = algSet.header.name;
+	if (algSet.header.name.indexOf(algSet.header.id) < 0)
+	{
+		h1 += " (" + algSet.header.id + ")";
+	}
+	out += "<h1><span class=\"menu-btn\">&#9776;</span> " + h1 + "</h1>";
 	
 	// Output header message - mobiles are best viewed in landscape
 	out += header(IPHONE_LANDSCAPE);
