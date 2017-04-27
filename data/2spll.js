@@ -1247,7 +1247,7 @@ var algSet = {
     },
     {
       "id": "Skip",
-      "name": "Solved",
+      "name": "PLL Skip",
       "desc": "This is clearly the solved case.<br/><br/>The solved case looks the same from all four possible angles.",
       "wiki": "",
       "algdb": "",

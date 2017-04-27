@@ -873,7 +873,7 @@ var algSet = {
     },
     {
       "id": "Skip",
-      "name": "Solved",
+      "name": "PLL Skip",
       "wiki": "",
       "algdb": "",
       "image": "PLL",

@@ -1,4 +1,47 @@
 //
+// Simple function to determine the display name for the case
+//
+function getDisplayName(caseObj)
+{
+	var id = caseObj.id;
+	var dotIdx = id.indexOf(".");
+	var dispName = "";
+
+	// Ignore the part of id after the first dot, if present
+	if (dotIdx >= 0)
+	{
+		id = id.substr(0, dotIdx);
+	}
+	// No need to prefix with the id if it appears in the description
+	if (!caseObj.name.includes(id))
+	{
+		dispName += id + " - ";
+	}
+	// Case description
+	dispName += caseObj.name;
+
+	return dispName;
+}
+
+//
+// Simple function to determine the tooltip for the case (shown on mouse hover)
+//
+function getTooltip(caseObj)
+{
+	var tooltip = "";
+
+	// Simple assumption determines the need to prefix with algSet.header.id
+	if (caseObj.algdb.indexOf(algSet.header.id) >= 0)
+	{
+		tooltip = algSet.header.id + " ";
+	}
+	// Use the standard display name
+	tooltip += getDisplayName(caseObj);
+
+	return tooltip;
+}
+
+//
 // Render grid header row
 //
 function renderGridHeaderRow(viewObj, width)
@@ -72,17 +115,10 @@ function renderGridDataRows(viewObj, width)
 					// Defence coding prevents crash when refering to non-existent cases
 					if (caseObj != null)
 					{
-						// Tooltip is shown on mouse hover
-						var tooltip = algSet.header.id + " " + caseObj.id;
-						if (caseObj.name != caseObj.id)
-						{
-							tooltip += " - " + caseObj.name;
-						}
-						
 						// Render the Id and Name
 						var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
 						var style = caseObj.style != null ? caseObj.style : "";
-						out += "<abbr title=\"" + tooltip + "\"><i class=\"clicky " + style + " s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+						out += "<abbr title=\"" + getTooltip(caseObj) + "\"><i class=\"clicky " + style + " s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 								"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "><br/></i></abbr>";
 					}
 				}
@@ -135,11 +171,7 @@ function renderTableDataCell(caseObj, useId, width)
 		
 	// Show the title
 	out += "<b>";
-	if (!caseObj.name.includes(caseObj.id))
-	{
-		out += caseObj.id + " - ";
-	}
-	out += caseObj.name;
+	out += getDisplayName(caseObj);
 	if (useId != null && algSet.header.uses.length > 1)
 	{
 		out += " (" + useId + ")";
@@ -257,17 +289,10 @@ function renderTableDataRows(viewObj, groupObj, width)
 				// Render the table row
 				out += "<tr>";
 				
-				// Tooltip is shown on mouse hover
-				var tooltip = algSet.header.id + " " + caseObj.id;
-				if (caseObj.name != caseObj.id)
-				{
-					tooltip += " - " + caseObj.name;
-				}
-
 				// Render the image
 				var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
 				var style = caseObj.style != null ? caseObj.style : "";
-				out += "<td><abbr title=\"" + tooltip + "\"><i class=\"clicky " + style + " s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
+				out += "<td><abbr title=\"" + getTooltip(caseObj) + "\"><i class=\"clicky " + style + " s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "><br/></i></abbr></td>";
 
 				// Iterate through the uses - 2 columns are perfect on the iPad (landscape)

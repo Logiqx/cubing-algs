@@ -2179,7 +2179,7 @@ var algSet = {
     },
     {
       "id": "Skip",
-      "name": "Solved",
+      "name": "OLL Skip",
       "wiki": "",
       "algdb": "",
       "image": "OLL",
