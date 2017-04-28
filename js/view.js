@@ -447,50 +447,6 @@ function renderView(viewId, width)
 	}
 	out += "<h1><span class=\"menu-btn\">&#9776;</span> " + h1 + "</h1>";
 	
-	// Output header message - mobiles are best viewed in landscape
-	out += header(IPHONE_LANDSCAPE);
-	
-	// Output instructional messages
-	var instructions = "<p>";
-	if (viewId != "grid")
-	{
-		if (algSet.header.hasOwnProperty("level"))
-		{
-			switch (algSet.header.level.toLowerCase())
-			{
-				case "beginner":
-					instructions += "This page lists the algorithms that I teach to beginners. The algorithms have all been chosen for their simplicity and ease of learning.</p><p>";
-					break;
-				case "improver":
-					instructions += "This page lists the algorithms that I teach to improvers. It includes all of the beginner algorithms and some [inverse] algorithms.</p><p>";
-					break;
-				case "intermediate":
-					instructions += "This page lists the algorithms that I teach to intermediates. They are good algorithms and have been chosen for their execution speed.</p><p>";
-					break;
-				default:
-					instructions += "This page lists the algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.</p><p>";
-					break;
-			}
-		}
-		else
-		{
-			instructions += "This page lists the algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.</p><p>";
-		}
-	}
-	if (algSet.views.length > 1)
-	{
-		instructions += " Use the dropdown below to switch views.";
-	}
-	instructions += " Click on an image for details about the case; e.g. algorithms, comments, breakdowns.</p>";
-	out += replaceAbbr(instructions);
-
-	// Dropdowns aren't always required
-	if (algSet.views.length > 1)
-	{
-		// Render the options
-		out += renderViewOptions(viewId, width);
-	}
-
 	// Iterate through the views
 	for (var viewIdx = 0; viewIdx < algSet.views.length; viewIdx++)
 	{
@@ -507,27 +463,59 @@ function renderView(viewId, width)
 				{
 					// View title
 					out += "<h2>" + viewObj.name + "</h2>";
-					
+
 					// Browser title
 					document.title = algSet.header.id;
+				}
+				
+				// Quickly check to see whether a phone needs to be rotated
+				if (viewObj.hasOwnProperty("rows") && width < GALAXY_S3_LANDSCAPE)
+				{
+					// Allow 128 pixels for the browser's navigation bar
+					if (getViewportHeight() >= GALAXY_S3_LANDSCAPE - 128)
+					{
+						out += "<p class=\"alert\">Rotate to landscape (horizontal) for the grid view.</p>";
+					}
+					else
+					{
+						out += "<p class=\"alert\">Sorry. Your display is too small for the grid view!</p>";
+					}
+				}
+				else
+				{
+					// Mobiles are best viewed in landscape
+					out += header(IPHONE_LANDSCAPE);
+
+					// General description
+					if (algSet.header.hasOwnProperty("desc"))
+					{
+						out += "<p>" + replaceAbbr(algSet.header.desc) + "</p>";
+					}
+
+					// View description
+					if (viewObj.hasOwnProperty("desc"))
+					{
+						out += "<p>" + replaceAbbr(viewObj.desc) + "</p>";
+					}
+
+					// Instructional message
+					out += "<p>" + " Click on an <b>image</b> or <b>name</b> for details about the case; e.g. algorithms, comments, breakdowns.</p>";
+				}
+
+				// Dropdowns aren't always required
+				if (algSet.views.length > 1)
+				{
+					// Instructional message
+					out += "<p>" + " Use the <b>dropdown</b> to switch between views." + "</p>";
+					
+					// The dropdown itself
+					out += renderViewOptions(viewId, width);
 				}
 				
 				if (viewObj.hasOwnProperty("rows"))
 				{
 					// Check the display width to see if it supports grid view
-					if (width < GALAXY_S3_LANDSCAPE)
-					{
-						// Allow 128 pixels for the browser's navigation bar
-						if (getViewportHeight() >= GALAXY_S3_LANDSCAPE - 128)
-						{
-							out += "<p class=\"alert\">Rotate to view in landscape (horizontal) orientation</p>";
-						}
-						else
-						{
-							out += "<p class=\"alert\">Sorry. Your display is too small for the grid view!</p>";
-						}
-					}
-					else
+					if (width >= GALAXY_S3_LANDSCAPE)
 					{
 						// Render the table
 						out += "<table>";
