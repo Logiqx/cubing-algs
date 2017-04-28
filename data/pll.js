@@ -52,9 +52,9 @@ var algSet = {
         },
         {
           "alg": "R U R' F' r U R' U' r' F R2 U' R'",
-          "desc": "Modified Jb-Perm incorporating some wide turns!",
-		  "status": 0,
-          "uses": ["2H"]
+          "desc": "Modified Jb-Perm potentially good for big cubes",
+		  "status": 1,
+          "uses": []
         },
       ]
     },
@@ -124,7 +124,7 @@ var algSet = {
         },
         {
           "alg": "U R (R U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R') R'",
-          "desc": "Long algorithm but decent for [OH] and big cubes",
+          "desc": "Long algorithm but decent for [OH]",
 		  "status": 1,
           "uses": [],
 		  "vars" :
@@ -139,6 +139,21 @@ var algSet = {
 			  "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2)",
               "desc": "One-handed execution incorporates cancellations",
 			  "status": 1,
+			  "uses": ["OH"]
+			},
+		  ]
+        },
+        {
+          "alg": "z U2 R2' F (R U R' U') (R U R' U') (R U R' U') F' R2 U2'",
+          "desc": "Long algorithm but decent for big cubes",
+		  "status": 1,
+          "uses": [],
+		  "vars" :
+		  [
+			{
+			  "alg": "z U2' R2 F (R U R' U') (R U R' U') (R U R' U') F' R2 U2'",
+              "desc": "One-handed execution",
+			  "status": 0,
 			  "uses": ["OH"]
 			},
 		  ]
