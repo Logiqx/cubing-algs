@@ -530,6 +530,7 @@ function renderView(viewId, width)
 					// Constant of 1000 allows 1024 pixel displays with a scroll bar (clientWidth ~1008 pixels)
 					if (width >= 1000)
 					{
+						out += "<h2>Sections</h2>";
 						out += renderViewLinks(viewObj, width);
 					}
 					
