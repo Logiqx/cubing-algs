@@ -598,7 +598,7 @@ function storeWindowOffset()
 
 //
 // Switch to a specific case
-// Invoked from <i class="clicky ..." onclick="switchCase('...')"><br /></i>
+// Invoked from <i class="clicky ..." onclick="switchCase('...')"><br/></i>
 //
 function switchCase(caseId)
 {

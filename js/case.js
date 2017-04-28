@@ -191,10 +191,10 @@ function renderCaseLinks(caseObj, width)
 	}
 	
 	// Wiki
-	out += "<p>SpeedSolving Wiki: <a href=\"" + algSet.header.wiki + wikiAnchor + "\" target=\"_blank\">" + wikiLabel + "</a><p>";
+	out += "<p>SpeedSolving Wiki: <a class=\"clicky\" href=\"" + algSet.header.wiki + wikiAnchor + "\" target=\"_blank\">" + wikiLabel + "</a><p>";
 
 	// AlgDb.Net
-	out += "<p>AlgDb.Net: <a href=\"" + algSet.header.algdb + algdbPage + "\" target=\"_blank\">" + algdbLabel + "</a><p>";
+	out += "<p>AlgDb.Net: <a class=\"clicky\" href=\"" + algSet.header.algdb + algdbPage + "\" target=\"_blank\">" + algdbLabel + "</a><p>";
 
 	return out;
 }

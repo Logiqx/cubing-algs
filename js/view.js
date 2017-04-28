@@ -170,13 +170,12 @@ function renderTableDataCell(caseObj, useId, width)
 	var maxCount = width >= IPHONE_LANDSCAPE ? 4 : 2;
 		
 	// Show the title
-	out += "<b>";
-	out += "<span class=\"clicky\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + ">" + getDisplayName(caseObj) + "</span>";
+	out += "<span class=\"clicky\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + ">" + getDisplayName(caseObj);
 	if (useId != null && algSet.header.uses.length > 1)
 	{
 		out += " (" + useId + ")";
 	}
-	out += "</b>";
+	out += "</span>";
 	out += " - " + caseObj.prob;
 	out += "<br/>";
 	
@@ -381,13 +380,13 @@ function renderViewLinks(viewObj, width)
 		{
 			if (groupIdx > 0 && length > 0)
 			{
-				out += ", ";
+				out += " | ";
 			}
 			
 			// Output the group title
 			if (groupObj.name != "")
 			{
-				out += "<a href=\"#" + viewObj.id + "-" + groupObj.id + "\">" + groupObj.name + "</a>";
+				out += "<a class=\"clicky\" href=\"#" + viewObj.id + "-" + groupObj.id + "\">" + groupObj.name + "</a>";
 			}
 			
 			length += groupObj.name.length;
@@ -499,14 +498,14 @@ function renderView(viewId, width)
 					}
 
 					// Instructional message
-					out += "<p>" + " Click on an <b>image</b> or <b>name</b> for details about the case; e.g. algorithms, comments, breakdowns.</p>";
+					out += "<p>" + " Click on an <strong>image</strong> or <strong>name</strong> for details about the case; e.g. algorithms, comments, breakdowns.</p>";
 				}
 
 				// Dropdowns aren't always required
 				if (algSet.views.length > 1)
 				{
 					// Instructional message
-					out += "<p>" + " Use the <b>dropdown</b> to switch between views." + "</p>";
+					out += "<p>" + " Use the <strong>dropdown</strong> to switch between views." + "</p>";
 					
 					// The dropdown itself
 					out += renderViewOptions(viewId, width);
@@ -530,7 +529,7 @@ function renderView(viewId, width)
 					// Constant of 1000 allows 1024 pixel displays with a scroll bar (clientWidth ~1008 pixels)
 					if (width >= 1000)
 					{
-						out += "<h2>Sections</h2>";
+						out += "<h2>Shortcuts</h2>";
 						out += renderViewLinks(viewObj, width);
 					}
 					
