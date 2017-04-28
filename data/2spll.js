@@ -1281,7 +1281,7 @@ var algSet = {
           "id": "bar+lights",
           "name": "3-Bar with Headlights", 
           "desc": "The 3-bar accompanied by headlights can only be a U-Perm.<br/><br/>The lone edge is considered when distinguishing between cases.",
-          "cases": ["Ub.2", "Ua.1", "Ub.1", "Ua.4"]
+          "cases": ["Ub.1", "Ua.1", "Ub.4", "Ua.4"]
         },
         {
           "id": "bar-lights",
@@ -1293,13 +1293,13 @@ var algSet = {
           "id": "double+opp",
           "name": "Double Lights (Opposite Edge)",
           "desc": "Double headlights with at least one opposite edge can only be an H-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.",
-          "cases": ["Ub.3", "H.1", "Ua.3"]
+          "cases": ["Ub.2", "H.1", "Ua.3"]
         },
         {
           "id": "double-opp",
           "name": "Double Lights (Adjacent Edges)",
           "desc": "Double headlights without an opposite edge can only be a Z-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The Z-Perm is most distinctive.",
-          "cases": ["Z.2", "Ua.2", "Z.1", "Ub.4"]
+          "cases": ["Z.1", "Ua.2", "Z.2", "Ub.3"]
         },
         {
           "id": "lights+inpair",
@@ -1329,7 +1329,7 @@ var algSet = {
           "id": "sym_pairs",
           "name": "Double 2-Bar (Symmetrical)",
           "desc": "Symmetrical 2-bars and 2x2 blocks can only be a Y-Perm, A-Perm or V-Perm.<br/><br/>The outer corners are considered when distinguishing between cases. The Y-Perm and V-Perm are most distinctive.",
-          "cases": ["Y.1", "Ab.3", "V.3", "Aa.2"]
+          "cases": ["Y.1", "Ab.3", "V.1", "Aa.2"]
         },
         {
           "id": "asy_pairs",
@@ -1341,7 +1341,7 @@ var algSet = {
           "id": "outpair+opp",
           "name": "Outside 2-Bar (Opposite Corner)",
           "desc": "Outside 2-bars connected to an opposite corner can only be a V-Perm, G-Perm or A-Perm.<br/><br/>The side adjacent to the bar / pair is considered when distinguishing between cases.",
-          "cases": ["V.4", "Gd.3", "Aa.3", "V.2", "Gb.2", "Ab.2"]
+          "cases": ["V.3", "Gd.3", "Aa.3", "V.4", "Gb.2", "Ab.2"]
         },
         {
           "id": "outpair+adj",
@@ -1365,7 +1365,7 @@ var algSet = {
           "id": "misc-ends",
           "name": "Miscellaneous without Bookends",
           "desc": "The miscellaneous cases without matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm.",
-          "cases": ["E.1", "V.1", "E.2", "Y.3"]
+          "cases": ["E.1", "V.3", "E.2", "Y.3"]
         }
     ]
     },
@@ -1557,7 +1557,7 @@ var algSet = {
         {
           "id": "aes",
           "name": "Adjacent<br/>Edge Swap<br/>Ub / Ga / Gc / V",
-          "cases": ["Ub.1", "Ga.1", "Ga.2", "Gc.3", "Gc.4", "V.1"]
+          "cases": ["Ub.4", "Ga.1", "Ga.2", "Gc.3", "Gc.4", "V.3"]
         },
         {
           "id": "aes",
@@ -1567,7 +1567,7 @@ var algSet = {
         {
           "id": "aes",
           "name": "Adjacent<br/>Edge Swap<br/>Ub / Gb / Gd / V",
-          "cases": ["Ub.3", "Gb.1", "Gb.2", "Gd.3", "Gd.4", "V.3"]
+          "cases": ["Ub.2", "Gb.1", "Gb.2", "Gd.3", "Gd.4", "V.1"]
         },
         {
           "id": "aes",
@@ -1577,7 +1577,7 @@ var algSet = {
         {
           "id": "aes",
           "name": "Adjacent<br/>Edge Swap<br/>Ub / Gc / Ga / V",
-          "cases": ["Ub.4", "Gc.1", "Gc.2", "Ga.3", "Ga.4", "V.2"]
+          "cases": ["Ub.3", "Gc.1", "Gc.2", "Ga.3", "Ga.4", "V.4"]
         },
         {
           "id": "aes",
@@ -1587,7 +1587,7 @@ var algSet = {
         {
           "id": "aes",
           "name": "Adjacent<br/>Edge Swap<br/>Ub / Gd / Gb / V",
-          "cases": ["Ub.2", "Gd.1", "Gd.2", "Gb.3", "Gb.4", "V.4"]
+          "cases": ["Ub.1", "Gd.1", "Gd.2", "Gb.3", "Gb.4", "V.2"]
         },
         {
           "id": "oes",
