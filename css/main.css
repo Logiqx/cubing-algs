@@ -80,7 +80,6 @@ p.inactive
 /* Abbreviations */
 abbr.dotted
 {
-  border-bottom: 1px dotted;
   cursor: help;
 }
 
