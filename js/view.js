@@ -171,7 +171,7 @@ function renderTableDataCell(caseObj, useId, width)
 		
 	// Show the title
 	out += "<b>";
-	out += getDisplayName(caseObj);
+	out += "<span class=\"clicky\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + ">" + getDisplayName(caseObj) + "</span>";
 	if (useId != null && algSet.header.uses.length > 1)
 	{
 		out += " (" + useId + ")";
