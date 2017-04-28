@@ -3,6 +3,7 @@ var algSet = {
   {
     "id": "2LL4C",
     "name": "2-Look Last Four Corners",
+    "desc": "This page lists [L4C] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/",
     "uses":

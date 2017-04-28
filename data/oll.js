@@ -3,6 +3,7 @@ var algSet = {
   {
     "id": "OLL",
     "name": "Orientation of the Last Layer",
+    "desc": "This page lists the [OLL] algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/OLL",
     "algdb": "http://algdb.net/Set/OLL/",
     "uses":

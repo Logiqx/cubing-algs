@@ -3,6 +3,7 @@ var algSet = {
   {
     "id": "2LELL",
     "name": "2-Look Edges of the Last Layer",
+    "desc": "This page lists [ELL] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/",
     "uses":

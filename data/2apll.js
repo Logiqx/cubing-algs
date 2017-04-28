@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "2APLL",
     "name": "2-Algorithm Permutation of the Last Layer",
-    "level": "Beginner",
+    "desc": "This page lists the [PLL] algorithms that I teach to beginners. The algorithms have all been chosen for their simplicity and ease of learning.",
     "css": "2LPLL",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/PLL/",

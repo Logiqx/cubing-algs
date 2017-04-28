@@ -3,6 +3,7 @@ var algSet = {
   {
     "id": "2LPLL",
     "name": "2-Look Permutation of the Last Layer",
+    "desc": "This page lists [PLL] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/PLL/",
     "uses":

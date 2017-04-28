@@ -3,6 +3,7 @@ var algSet = {
   {
     "id": "PLL",
     "name": "Permutation of the Last Layer",
+    "desc": "This page lists the [PLL] algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/PLL",
     "algdb": "http://algdb.net/Set/PLL/",
     "uses":

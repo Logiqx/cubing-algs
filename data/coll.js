@@ -3,6 +3,7 @@ var algSet = {
   {
     "id": "COLL",
     "name": "Corners of the Last Layer",
+    "desc": "This page lists the [COLL] algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.<br/><br/>I do not use [COLL] algorithms for the [Sune] and [Anti-Sune] cases but I have included them for the sake of completeness.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/COLL",
     "algdb": "http://algdb.net/Set/",
     "uses":

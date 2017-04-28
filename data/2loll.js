@@ -3,6 +3,7 @@ var algSet = {
   {
     "id": "2LOLL",
     "name": "2-Look Orientation of the Last Layer",
+    "desc": "This page lists [OLL] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/OLL/",
     "uses":

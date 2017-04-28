@@ -3,6 +3,7 @@ var algSet = {
   {
     "id": "PLL",
     "name": "2-Sided PLL Recognition",
+    "desc": "This page shows the 72 patterns / features which can appear during PLL recognition.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/PLL",
     "algdb": "http://algdb.net/Set/PLL/",
     "uses":
@@ -1454,14 +1455,14 @@ var algSet = {
         {
           "id": "edges",
           "name": "Edges Only",
-		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP]. All of these cases can be solved using [RU] or [MU] algorithms.",
+		  "desc": "This group of cases is known as [EPLL].",
           "wiki": "#Permutations_of_Edges_Only",
           "cases": ["Ua.1", "Ua.2", "Ua.3", "Ua.4", "Ub.1", "Ub.2", "Ub.3", "Ub.4", "Z.1", "Z.2", "H.1"]
         },
         {
           "id": "corners",
           "name": "Corners Only",
-		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [commutator]s and [conjugate]s.",
+		  "desc": "This group of cases is known as [CPLL].",
           "wiki": "#Permutations_of_Corners_Only",
           "cases": ["Aa.1", "Aa.2", "Aa.3", "Aa.4", "Ab.1", "Ab.2", "Ab.3", "Ab.4", "E.1", "E.2"]
         },
@@ -1489,7 +1490,7 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Corner Swap",
-		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP]. All of these cases can be solved using [RU] or [MU] algorithms.",
+		  "desc": "This group of cases is known as [EPLL].",
           "cases": ["Ua.1", "Ua.2", "Ua.3", "Ua.4", "Ub.1", "Ub.2", "Ub.3", "Ub.4", "Z.1", "Z.2", "H.1", "Skip"]
         },
         {
@@ -1503,7 +1504,6 @@ var algSet = {
         {
           "id": "diagonal",
           "name": "Diagonal Corner Swap",
-		  "desc": "Advanced [CFOP] users may try to avoid theses cases using [COLL] or [OLLCP].",
           "cases": ["V.1", "V.2", "V.3", "V.4", "Y.1", "Y.2", "Y.3", "Y.4", "E.1", "E.2", "Na.1", "Nb.1"]
         },
 	  ]
@@ -1516,7 +1516,7 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Edge Swap",
-		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [commutator]s and [conjugate]s.",
+		  "desc": "This group of cases is known as [CPLL].",
           "cases": ["Aa.1", "Aa.2", "Aa.3", "Aa.4", "Ab.1", "Ab.2", "Ab.3", "Ab.4", "E.1", "E.2", "H.1", "Skip"]
         },
         {

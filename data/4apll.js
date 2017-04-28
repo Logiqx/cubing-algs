@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "4APLL",
     "name": "4-Algorithm Permutation of the Last Layer",
-    "level": "Improver",
+    "desc": "This page lists the [PLL] algorithms that I teach to improvers. The 4 algorithms below are harder to learn than [Anti-Sune] and [Niklas] but they save a lot of moves.",
     "css": "2LPLL",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/PLL/",

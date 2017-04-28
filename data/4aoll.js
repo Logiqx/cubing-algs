@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "4AOLL",
     "name": "4-Algorithm Orientation of the Last Layer",
-    "level": "Improver",
+    "desc": "This page lists the [OLL] algorithms that I teach to improvers. It includes the 2 beginner algorithms and the 2 corresponding [inverse] algorithms.",
     "css": "2LOLL",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/Set/OLL/",
