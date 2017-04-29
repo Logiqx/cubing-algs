@@ -3,17 +3,17 @@
 # -----------------------------------------------------------------------
 
 # -----------------------------------------------------------------------
-# Caching for 360 days - static images (versioned)
+# Caching for 365 days - static images (versioned)
 # -----------------------------------------------------------------------
 <FilesMatch "\.(jpg|png|gif|svg)$">
-Header set Cache-Control "max-age=31104000, public"
+Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
 # -----------------------------------------------------------------------
-# Caching for 360 days - dynamic content (versioned)
+# Caching for 365 days - dynamic content (versioned)
 # -----------------------------------------------------------------------
 <FilesMatch "-min-.*\.(css|js)$">
-Header set Cache-Control "max-age=31104000, public"
+Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
 # -----------------------------------------------------------------------
