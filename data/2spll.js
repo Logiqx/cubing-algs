@@ -1336,19 +1336,19 @@ var algSet = {
           "id": "asy_pairs",
           "name": "Double 2-Bar (Asymmetrical)",
           "desc": "Asymmetrical 2-bars can only be a J-Perm or N-Perm.<br/><br/>The relationships of the corner stickers are considered when distinguishing between cases.",
-          "cases": ["Ja.3", "Nb.1", "Ja.2", "Jb.2", "Na.1", "Jb.3"]
+          "cases": ["Ja.3", "Nb.1", "Ja.2", "Jb.3", "Na.1", "Jb.2"]
         },
         {
           "id": "outpair+opp",
           "name": "Outside 2-Bar (Opposite Corner)",
           "desc": "Outside 2-bars connected to an opposite corner can only be a V-Perm, G-Perm or A-Perm.<br/><br/>The side adjacent to the bar / pair is considered when distinguishing between cases.",
-          "cases": ["V.3", "Gd.3", "Aa.3", "V.4", "Gb.2", "Ab.2"]
+          "cases": ["V.2", "Gd.3", "Aa.3", "V.4", "Gb.2", "Ab.2"]
         },
         {
           "id": "outpair+adj",
           "name": "Outside 2-Bar (Adjacent Corner)",
           "desc": "Outside 2-bars connected to an adjacent corner can only be an R-Perm or T-Perm.<br/><br/>The edge adjacent to the bar / pair is considered when distinguishing between cases.",
-          "cases": ["Ra.2", "T.2", "Rb.3", "T.3"]
+          "cases": ["Rb.3", "T.3", "Ra.2", "T.2"]
         },
         {
           "id": "inpair",
