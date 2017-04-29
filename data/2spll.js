@@ -997,7 +997,7 @@ var algSet = {
     {
       "id": "Ub.1",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] and definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights contain an adjacent edge colour.",
+      "desc": "Clearly an [EPLL] and definitely a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ub-Perm (CW) because the headlights contain the opposite edge colour.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-1",
@@ -1015,7 +1015,7 @@ var algSet = {
     {
       "id": "Ub.2",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] and definitely a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ub-Perm (CW) because the headlights contain the opposite edge colour.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>You might find the 4-sticker checker pattern on the right is useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-2",
@@ -1033,28 +1033,10 @@ var algSet = {
     {
       "id": "Ub.3",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>You might find the 4-sticker checker pattern on the right is useful during recognition.",
-      "wiki": "#U_Permutation_:_b",
-      "algdb": "Ub",
-      "image": "PLL-Ub-3",
-      "prob": "1/72",
-      "algs" :
-      [
-        {
-          "alg": "Easy",
-          "desc": "Easy angle to recognise",
-		  "status": 1,
-          "uses": ["2H"]
-        },
-      ]
-    },
-    {
-      "id": "Ub.4",
-      "name": "Ub-Perm",
       "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the edge on the right matches the headlights on the left.<br/></br>You might find the 4-sticker checker pattern on the right is useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
-      "image": "PLL-Ub-4",
+      "image": "PLL-Ub-3",
       "prob": "1/72",
       "algs" :
       [
@@ -1067,9 +1049,27 @@ var algSet = {
       ]
     },
     {
+      "id": "Ub.4",
+      "name": "Ub-Perm",
+      "desc": "Clearly an [EPLL] and definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights contain an adjacent edge colour.",
+      "wiki": "#U_Permutation_:_b",
+      "algdb": "Ub",
+      "image": "PLL-Ub-4",
+      "prob": "1/72",
+      "algs" :
+      [
+        {
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
+		  "status": 1,
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
       "id": "V.1",
       "name": "V-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"malformed\" 2x2 block at the front, resulting in a 4-sticker checker pattern.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as V-Perm because of the 2x2 block at the front, bookended by opposite corner colours.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-1",
@@ -1077,8 +1077,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for E",
-          "desc": "Learn the features of E and V",
+          "alg": "Easy",
+          "desc": "Easy angle to recognise",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1087,7 +1087,7 @@ var algSet = {
     {
       "id": "V.2",
       "name": "V-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"corner + edge\" pair at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"corner + edge\" pair at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-2",
@@ -1105,7 +1105,7 @@ var algSet = {
     {
       "id": "V.3",
       "name": "V-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as V-Perm because of the 2x2 block at the front, bookended by opposite corner colours.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"malformed\" 2x2 block at the front, resulting in a 4-sticker checker pattern.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-3",
@@ -1113,8 +1113,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "alg": "Do not mistake for E",
+          "desc": "Learn the features of E and V",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1123,7 +1123,7 @@ var algSet = {
     {
       "id": "V.4",
       "name": "V-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"corner + edge\" pair at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"corner + edge\" pair at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-4",
@@ -1213,7 +1213,7 @@ var algSet = {
     {
       "id": "Z.1",
       "name": "Z-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 4 colours, unlike U-Perms which have 3 colours.<br/><br/>Recognisable as Z-Perm because both sets of headlights contain an adjacent edge colour.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>Easily recognisable as Z-Perm because of the distinctive 6-sticker checker pattern.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-1",
@@ -1222,7 +1222,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Ua or Ub",
-          "desc": "Z = 4 colours, Ua / Ub = 3 colours",
+          "desc": "Z = 2 colours, Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1231,7 +1231,7 @@ var algSet = {
     {
       "id": "Z.2",
       "name": "Z-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>Easily recognisable as Z-Perm because of the distinctive 6-sticker checker pattern.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 4 colours, unlike U-Perms which have 3 colours.<br/><br/>Recognisable as Z-Perm because both sets of headlights contain an adjacent edge colour.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-2",
@@ -1240,7 +1240,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Ua or Ub",
-          "desc": "Z = 2 colours, Ua / Ub = 3 colours",
+          "desc": "Z = 4 colours, Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
