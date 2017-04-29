@@ -498,7 +498,10 @@ function renderView(viewId, width)
 					}
 
 					// Instructional message
-					out += "<p>" + " Click on an <strong>image</strong> or <strong>name</strong> for details about the case; e.g. algorithms, comments, breakdowns.</p>";
+					if (algSet.cases.length > 0)
+					{
+						out += "<p>" + " Click on an <strong>image</strong> or <strong>name</strong> for details about the case; e.g. algorithms, comments, breakdowns.</p>";
+					}
 				}
 
 				// Dropdowns aren't always required

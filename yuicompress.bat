@@ -46,4 +46,6 @@ java -jar yuicompressor-2.4.8.jar data/l2e.js -o data/l2e-min.js
 java -jar yuicompressor-2.4.8.jar data/oll.js -o data/oll-min.js
 java -jar yuicompressor-2.4.8.jar data/pll.js -o data/pll-min.js
 
+java -jar yuicompressor-2.4.8.jar data/index.js -o data/index-min.js
+
 PAUSE
