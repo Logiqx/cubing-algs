@@ -19,7 +19,7 @@ var algSet = {
     {
       "id": "Aa.1",
       "name": "Aa-Perm",
-      "desc": "Clearly an A-Perm because of the checker pattern and the outer 2-bar.<br/><br/>Easily recognisable as Aa-Perm because the outer 2-bar is on the right.",
+      "desc": "Clearly an A-Perm because of the checker pattern (4 stickers) and the outer 2-bar.<br/><br/>Easily recognisable as Aa-Perm because the outer 2-bar is on the right.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-1",
@@ -139,7 +139,7 @@ var algSet = {
     {
       "id": "Ab.4",
       "name": "Ab-Perm",
-      "desc": "Clearly an A-Perm because of the checker pattern and the outer 2-bar.<br/><br/>Easily recognisable as Ab-Perm because the outer 2-bar is on the left.",
+      "desc": "Clearly an A-Perm because of the checker pattern (4 stickers) and the outer 2-bar.<br/><br/>Easily recognisable as Ab-Perm because the outer 2-bar is on the left.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-4",
@@ -157,7 +157,7 @@ var algSet = {
     {
       "id": "E.1",
       "name": "E-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-left, resulting in a kind of 3-sticker checker pattern.<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-left, resulting in a partial checker pattern (3 stickers).<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-1",
@@ -175,7 +175,7 @@ var algSet = {
     {
       "id": "E.2",
       "name": "E-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-right, resulting in a kind of 3-sticker checker pattern.<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-right, resulting in a partial checker pattern (3 stickers).<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
       "wiki": "#E_Permutation",
       "algdb": "E",
       "image": "PLL-E-2",
@@ -263,7 +263,7 @@ var algSet = {
     {
       "id": "Ga.1",
       "name": "Ga-Perm",
-      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite colour of a checker pattern.<br/><br/>Easily recognisable as Ga-Perm because the outer 2-bar is on the right.",
+      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite colour of a checker pattern (4 stickers).<br/><br/>Easily recognisable as Ga-Perm because the outer 2-bar is on the right.",
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-1",
@@ -453,7 +453,7 @@ var algSet = {
     {
       "id": "Gc.4",
       "name": "Gc-Perm",
-      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite colour of a checker pattern.<br/><br/>Easily recognisable as Gc-Perm because the outer 2-bar is on the left.",
+      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite colour of a checker pattern (4 stickers).<br/><br/>Easily recognisable as Gc-Perm because the outer 2-bar is on the left.",
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-4",
@@ -735,7 +735,7 @@ var algSet = {
     {
       "id": "Ra.1",
       "name": "Ra-Perm",
-      "desc": "Clearly an R-Perm because the headlights contain an adjacent edge colour.<br/><br/>Easily recognisable as Ra-Perm because the inner 2-bar is on the right.",
+      "desc": "Clearly an R-Perm because the headlights contain an adjacent edge colour.<br/><br/>Easily recognisable as Ra-Perm because the headlights are on the left and inner 2-bar on the right.",
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-1",
@@ -855,7 +855,7 @@ var algSet = {
     {
       "id": "Rb.4",
       "name": "Rb-Perm",
-      "desc": "Clearly an R-Perm because the headlights contain an adjacent edge colour.<br/><br/>Easily recognisable as Rb-Perm because the inner 2-bar is on the left.",
+      "desc": "Clearly an R-Perm because the headlights contain an adjacent edge colour.<br/><br/>Easily recognisable as Rb-Perm because the headlights are on the right and inner 2-bar on the left.",
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-4",
@@ -961,7 +961,7 @@ var algSet = {
     {
       "id": "Ua.2",
       "name": "Ua-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the edge on the left matches the headlights on the right.<br/></br>You might find the 4-sticker checker pattern on the left is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the edge on the left matches the headlights on the right.<br/></br>You might find the checker pattern (4 stickers) on the left is useful during recognition.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-2",
@@ -979,7 +979,7 @@ var algSet = {
     {
       "id": "Ua.3",
       "name": "Ua-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights on the right contain the opposite edge colour.<br/><br/>Another way to recognise as Ua-Perm (CCW) is because the edge on the left matches the headlights on the right.<br/><br/>You might find the 4-sticker checker pattern on the left useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights on the right contain the opposite edge colour.<br/><br/>Another way to recognise as Ua-Perm (CCW) is because the edge on the left matches the headlights on the right.<br/><br/>You might find the checker pattern (4 stickers) on the left useful during recognition.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-3",
@@ -1033,7 +1033,7 @@ var algSet = {
     {
       "id": "Ub.2",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>Another way to recognise as Ub-Perm (CW) is because the edge on the right matches the headlights on the left.<br/><br/>You might find the 4-sticker checker pattern on the right useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>Another way to recognise as Ub-Perm (CW) is because the edge on the right matches the headlights on the left.<br/><br/>You might find the checker pattern (4 stickers) on the right useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-2",
@@ -1051,7 +1051,7 @@ var algSet = {
     {
       "id": "Ub.3",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the edge on the right matches the headlights on the left.<br/></br>You might find the 4-sticker checker pattern on the right is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the edge on the right matches the headlights on the left.<br/></br>You might find the checker pattern (4 stickers) on the right is useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-3",
@@ -1123,7 +1123,7 @@ var algSet = {
     {
       "id": "V.3",
       "name": "V-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"malformed\" 2x2 block at the front, resulting in a 4-sticker checker pattern.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"malformed\" 2x2 block at the front, resulting in a checker pattern (4 stickers).",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-3",
@@ -1195,7 +1195,7 @@ var algSet = {
     {
       "id": "Y.3",
       "name": "Y-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>This is the only angle for a diagonal corner swap without a visible pair, 2x2 block, \"malformed\" pair or \"malformed\" 2x2 block.<br/><br/>Most people find the \"outer\" checker pattern is useful during recognition.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>This is the only angle for a diagonal corner swap without a visible pair, 2x2 block, \"malformed\" pair or \"malformed\" 2x2 block.<br/><br/>Most people find the \"outer\" checker pattern (4 stickers) is useful during recognition.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-3",
@@ -1231,7 +1231,7 @@ var algSet = {
     {
       "id": "Z.1",
       "name": "Z-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>The edge on the left matches the headlights on the right and the edge on the right matches the headlights on the left.<br/><br/>Easily recognisable as Z-Perm because of the distinctive 6-sticker checker pattern.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>The edge on the left matches the headlights on the right and the edge on the right matches the headlights on the left.<br/><br/>Easily recognisable as Z-Perm because of the distinctive checker pattern (6 stickers).<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-1",
@@ -1329,7 +1329,7 @@ var algSet = {
         {
           "id": "lights+outpair",
           "name": "Headlights + 2-Bar (Outside)",
-          "desc": "Headlights accompanied by an outside 2-bar can only be an A-Perm or G-Perm.<br/><br/>The presence of a checker pattern is considered when distinguishing between cases.",
+          "desc": "Headlights accompanied by an outside 2-bar can only be an A-Perm or G-Perm.<br/><br/>The presence of a checker pattern (4 stickers) is considered when distinguishing between cases.",
           "cases": ["Aa.1", "Ga.1", "Ab.4", "Gc.4"]
         },
         {
@@ -1341,7 +1341,7 @@ var algSet = {
         {
           "id": "lights+adj",
           "name": "Headlights (Adjacent Edge)",
-          "desc": "Headlights containing an adjacent edge can only be an R-Perm, G-Perm or A-Perm.<br/><br/>The presence of a checker pattern is considered when distinguishing between cases.",
+          "desc": "Headlights containing an adjacent edge can only be an R-Perm, G-Perm or A-Perm.<br/><br/>The presence of a checker pattern (4 or 5 stickers) is considered when distinguishing between cases.",
           "cases": ["Gc.1", "Rb.1", "Ab.1", "Ga.4", "Ra.4", "Aa.4"]
         },
         {
