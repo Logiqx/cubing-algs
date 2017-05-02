@@ -615,7 +615,7 @@ var algSet = {
     {
       "id": "Ja.4",
       "name": "Ja-Perm",
-      "desc": "Clearly a J-Perm because of the 3-bar and the outside 2-bar, separated by an adjacent corner sticker.<br/><br/>Easily recognisable as Ja-Perm because the pair is on the left, disconnected from the 3-bar on the right.",
+      "desc": "Clearly a J-Perm because of the 3-bar and the outside 2-bar, separated by an adjacent corner sticker.<br/><br/>Easily recognisable as Ja-Perm because the outside 2-bar is on the left, disconnected from the 3-bar on the right.",
       "wiki": "#J_Permutation_:_a",
       "algdb": "Ja",
       "image": "PLL-Ja-4",
@@ -633,7 +633,7 @@ var algSet = {
     {
       "id": "Jb.1",
       "name": "Jb-Perm",
-      "desc": "Clearly a J-Perm because of the 3-bar and the outside 2-bar, separated by an adjacent corner sticker.<br/><br/>Easily recognisable as Jb-Perm because the pair is on the right, disconnected from the 3-bar on the left.",
+      "desc": "Clearly a J-Perm because of the 3-bar and the outside 2-bar, separated by an adjacent corner sticker.<br/><br/>Easily recognisable as Jb-Perm because the outside 2-bar is on the right, disconnected from the 3-bar on the left.",
       "wiki": "#J_Permutation_:_b",
       "algdb": "Jb",
       "image": "PLL-Jb-1",
@@ -1165,7 +1165,7 @@ var algSet = {
     {
       "id": "Y.1",
       "name": "Y-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Y-Perm because the outside pairs are a unique feature.<br/><br/>The corner at the front makes this case very distinctive due to the opposite colours.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Y-Perm because the outside 2-bars are a unique feature.<br/><br/>The corner at the front makes this case very distinctive due to the opposite colours.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-1",
