@@ -1300,13 +1300,13 @@ var algSet = {
           "id": "bar+lights",
           "name": "3-Bar with Headlights", 
           "desc": "The 3-bar accompanied by headlights can only be a U-Perm.<br/><br/>The lone edge is considered when distinguishing between cases.",
-          "cases": ["Ub.1", "Ua.1", "Ub.4", "Ua.4"]
+          "cases": ["Ub.1", "Ua.1", "Ua.4", "Ub.4"]
         },
         {
           "id": "bar-lights",
           "name": "3-Bar without Headlights",
           "desc": "The 3-bar not accompanied by headlights can only be a J-Perm or F-Perm.<br/><br/>The edge adjacent to the bar is considered when distinguishing between cases.",
-          "cases": ["Ja.1", "Jb.1", "F.1", "Ja.4", "Jb.4", "F.4"]
+          "cases": ["Ja.1", "Jb.1", "F.1", "Jb.4", "Ja.4", "F.4"]
         },
         {
           "id": "double+opp",
@@ -1336,7 +1336,7 @@ var algSet = {
           "id": "lights+opp",
           "name": "Headlights (Opposite Edge)",
           "desc": "Headlights containing an opposite edge can only be a G-Perm.<br/><br/>The edge adjacent to the headlights is considered when distinguishing between cases.",
-          "cases": ["Gb.1", "Gd.1", "Gb.4", "Gd.4"]
+          "cases": ["Gb.1", "Gd.1", "Gd.4", "Gb.4"]
         },
         {
           "id": "lights+adj",
