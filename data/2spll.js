@@ -19,6 +19,7 @@ var algSet = {
     {
       "id": "Aa.1",
       "name": "Aa-Perm",
+      "desc": "Clearly an A-Perm because of the checker pattern and the outer 2-bar.<br/><br/>Easily recognisable as Aa-Perm because the outer 2-bar is on the right.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-1",
@@ -138,6 +139,7 @@ var algSet = {
     {
       "id": "Ab.4",
       "name": "Ab-Perm",
+      "desc": "Clearly an A-Perm because of the checker pattern and the outer 2-bar.<br/><br/>Easily recognisable as Ab-Perm because the outer 2-bar is on the left.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-4",
@@ -191,6 +193,7 @@ var algSet = {
     {
       "id": "F.1",
       "name": "F-Perm",
+      "desc": "Clearly an F-Perm because of the lone 3-bar.<br/><br/>It is also worth knowing that the edge on the side is the opposite colour of the front corner.",
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-1",
@@ -242,6 +245,7 @@ var algSet = {
     {
       "id": "F.4",
       "name": "F-Perm",
+      "desc": "Clearly an F-Perm because of the lone 3-bar.<br/><br/>It is also worth knowing that the edge on the side is the opposite colour of the front corner.",
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-4",
@@ -259,6 +263,7 @@ var algSet = {
     {
       "id": "Ga.1",
       "name": "Ga-Perm",
+      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite colour of a checker pattern.<br/><br/>Easily recognisable as Ga-Perm because the outer 2-bar is on the right.",
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-1",
@@ -327,6 +332,7 @@ var algSet = {
     {
       "id": "Gb.1",
       "name": "Gb-Perm",
+      "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gb-Perm because the edge on the side is the opposite colour of the front corner.",
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-1",
@@ -335,7 +341,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Gb = 4 colours, Gd = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -378,6 +384,7 @@ var algSet = {
     {
       "id": "Gb.4",
       "name": "Gb-Perm",
+      "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gb-Perm because the edge on the side matches the headlights.<br/><br/>The the edge adjacent to the headlights is also the opposite of the back corner.",
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-4",
@@ -386,7 +393,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Gb = 3 colours, Gd = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -446,6 +453,7 @@ var algSet = {
     {
       "id": "Gc.4",
       "name": "Gc-Perm",
+      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite colour of a checker pattern.<br/><br/>Easily recognisable as Gc-Perm because the outer 2-bar is on the left.",
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-4",
@@ -463,6 +471,7 @@ var algSet = {
     {
       "id": "Gd.1",
       "name": "Gd-Perm",
+      "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gd-Perm because the edge on the side matches the headlights.<br/><br/>The the edge adjacent to the headlights is also the opposite of the back corner.",
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-1",
@@ -471,7 +480,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Gd = 3 colours, Gb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -514,6 +523,7 @@ var algSet = {
     {
       "id": "Gd.4",
       "name": "Gd-Perm",
+      "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gd-Perm because the edge on the side is the opposite colour of the front corner.",
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-4",
@@ -522,7 +532,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Gd = 4 colours, Gb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -549,6 +559,7 @@ var algSet = {
     {
       "id": "Ja.1",
       "name": "Ja-Perm",
+      "desc": "Clearly a J-Perm because of the 3-bar and 2-bar which look like a 3x2 block.<br/><br/>Easily recognisable as Ja-Perm because the pair is on the inside, connected to the 3-bar.",
       "wiki": "#J_Permutation_:_a",
       "algdb": "Ja",
       "image": "PLL-Ja-1",
@@ -600,6 +611,7 @@ var algSet = {
     {
       "id": "Ja.4",
       "name": "Ja-Perm",
+      "desc": "Clearly a J-Perm because of the 3-bar and 2-bar separated by an adjacent corner sticker.<br/><br/>Easily recognisable as Ja-Perm because the pair is on the outside, disconnected from the 3-bar.",
       "wiki": "#J_Permutation_:_a",
       "algdb": "Ja",
       "image": "PLL-Ja-4",
@@ -617,6 +629,7 @@ var algSet = {
     {
       "id": "Jb.1",
       "name": "Jb-Perm",
+      "desc": "Clearly a J-Perm because of the 3-bar and 2-bar separated by an adjacent corner sticker.<br/><br/>Easily recognisable as Jb-Perm because the pair is on the outside, disconnected from the 3-bar.",
       "wiki": "#J_Permutation_:_b",
       "algdb": "Jb",
       "image": "PLL-Jb-1",
@@ -668,6 +681,7 @@ var algSet = {
     {
       "id": "Jb.4",
       "name": "Jb-Perm",
+      "desc": "Clearly a J-Perm because of the 3-bar and 2-bar which look like a 3x2 block.<br/><br/>Easily recognisable as Jb-Perm because the pair is on the inside, connected to the 3-bar.",
       "wiki": "#J_Permutation_:_b",
       "algdb": "Jb",
       "image": "PLL-Jb-4",
@@ -721,6 +735,7 @@ var algSet = {
     {
       "id": "Ra.1",
       "name": "Ra-Perm",
+      "desc": "Clearly an R-Perm because the headlights contain an adjacent edge colour.<br/><br/>Easily recognisable as Ra-Perm because the inner 2-bar is on the right.",
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-1",
@@ -840,6 +855,7 @@ var algSet = {
     {
       "id": "Rb.4",
       "name": "Rb-Perm",
+      "desc": "Clearly an R-Perm because the headlights contain an adjacent edge colour.<br/><br/>Easily recognisable as Rb-Perm because the inner 2-bar is on the left.",
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-4",
@@ -857,6 +873,7 @@ var algSet = {
     {
       "id": "T.1",
       "name": "T-Perm",
+      "desc": "Clearly a T-Perm because the headlights contain the opposite edge colour.",
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-1",
@@ -908,6 +925,7 @@ var algSet = {
     {
       "id": "T.4",
       "name": "T-Perm",
+      "desc": "Clearly a T-Perm because the headlights contain the opposite edge colour.",
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-4",
@@ -961,7 +979,7 @@ var algSet = {
     {
       "id": "Ua.3",
       "name": "Ua-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights on the right contain the opposite edge colour.<br/><br/>You might find the 4-sticker checker pattern on the left is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights on the right contain the opposite edge colour.<br/><br/>Another way to recognise as Ua-Perm (CCW) is because the edge on the left matches the headlights on the right.<br/><br/>You might find the 4-sticker checker pattern on the left useful during recognition.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-3",
@@ -1015,7 +1033,7 @@ var algSet = {
     {
       "id": "Ub.2",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>You might find the 4-sticker checker pattern on the right is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>Another way to recognise as Ub-Perm (CW) is because the edge on the right matches the headlights on the left.<br/><br/>You might find the 4-sticker checker pattern on the right useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-2",
@@ -1213,7 +1231,7 @@ var algSet = {
     {
       "id": "Z.1",
       "name": "Z-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>Easily recognisable as Z-Perm because of the distinctive 6-sticker checker pattern.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>The edge on the left matches the headlights on the right and the edge on the right matches the headlights on the left.<br/><br/>Easily recognisable as Z-Perm because of the distinctive 6-sticker checker pattern.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-1",
@@ -1231,7 +1249,7 @@ var algSet = {
     {
       "id": "Z.2",
       "name": "Z-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 4 colours, unlike U-Perms which have 3 colours.<br/><br/>Recognisable as Z-Perm because both sets of headlights contain an adjacent edge colour.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 4 colours, unlike U-Perms which have 3 colours.<br/><br/>The edge on the left is the opposite of the headlights on the right. The edge on the right is the opposite of the headlights on the left.<br/><br/>Recognisable as Z-Perm because both sets of headlights contain an adjacent edge colour.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
       "algdb": "Z",
       "image": "PLL-Z-2",
