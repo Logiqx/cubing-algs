@@ -45,7 +45,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Aa = 3 colours, V = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -62,7 +62,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Aa = 4 colours, Gd = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -115,7 +115,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ab = 4 colours, Gb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -132,7 +132,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ab = 3 colours, V = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -204,7 +204,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "F = 4 colours, Ja / Jb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -221,7 +221,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Gc",
-          "desc": "F = 3 colours, Gc = 4 colours",
+          "desc": "F = 3 colours, Gc / Rb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -238,7 +238,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Ga",
-          "desc": "F = 3 colours, Ga = 4 colours",
+          "desc": "F = 3 colours, Ga / Ra = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -256,7 +256,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "F = 4 colours, Ja / Jb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -291,7 +291,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Y / Ga = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -326,7 +326,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ga = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -361,7 +361,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Gb = 3 colours, Ab / V = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -378,7 +378,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Y / Gb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -414,7 +414,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Gc = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -448,7 +448,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Y / Gc = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -501,7 +501,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Y / Gd = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -518,7 +518,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Gd = 3 colours, Aa / V = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -554,7 +554,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy to recognise",
+          "desc": "H = 4 colours, Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -572,7 +572,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ja / Jb = 3 colours, F = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -589,7 +589,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ja = 3 colours, Nb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -606,7 +606,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ja = 3 colours, Nb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -624,7 +624,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ja / Jb = 3 colours, F = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -642,7 +642,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ja / Jb = 3 colours, F = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -659,7 +659,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Jb = 3 colours, Na = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -676,7 +676,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Jb = 3 colours, Na = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -694,7 +694,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ja / Jb = 3 colours, F = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -712,7 +712,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy to recognise",
+          "desc": "Na = 4 colours, Jb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -730,7 +730,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy to recognise",
+          "desc": "Nb = 4 colours, Ja = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -748,7 +748,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ra = 4 colours, T = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -782,7 +782,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ra = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -800,7 +800,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Aa",
-          "desc": "Ra = 3 colours, Aa = 4 colours",
+          "desc": "Ra = 3 colours, Aa / Ga = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -818,7 +818,7 @@ var algSet = {
       [
         {
           "alg": "Do not mistake for Ab",
-          "desc": "Rb = 3 colours, Ab = 4 colours",
+          "desc": "Rb = 3 colours, Ab / Gc = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -835,7 +835,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Rb = 4 colours, F = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -870,7 +870,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Rb = 4 colours, T = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -888,7 +888,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "T = 3 colours, Ra = 4 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -940,7 +940,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "T = 3 colours, Rb = 4 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -958,7 +958,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -994,7 +994,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ua = 3 colours, H = 4 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -1012,7 +1012,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"],
         },
@@ -1030,7 +1030,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1048,7 +1048,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ub = 3 colours, H = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1084,7 +1084,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1102,7 +1102,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "V = 4 colours, Aa / Ab = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1120,7 +1120,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "V = 4 colours, Gd = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1156,7 +1156,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "V = 4 colours, Gb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1174,7 +1174,7 @@ var algSet = {
       [
         {
           "alg": "Easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Y = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1192,7 +1192,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Y / Ga / Gb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
@@ -1228,7 +1228,7 @@ var algSet = {
       [
         {
           "alg": "Relatively easy",
-          "desc": "Easy angle to recognise",
+          "desc": "Y / Gc / Gd = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
         },
