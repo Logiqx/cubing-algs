@@ -71,6 +71,7 @@ var algSet = {
     {
       "id": "Aa.4",
       "name": "Aa-Perm",
+      "desc": "Clearly an A-Perm because the sticker between the headlights is the opposite of a checker pattern (5 stickers).<br/><br/>Easily recognisable as Aa-Perm because the \"almost\" checker pattern is on the right.<br/><br/>The edge on the left is also the opposite of the rear corner.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-4",
@@ -88,6 +89,7 @@ var algSet = {
     {
       "id": "Ab.1",
       "name": "Ab-Perm",
+      "desc": "Clearly an A-Perm because the sticker between the headlights is the opposite of a checker pattern (5 stickers).<br/><br/>Easily recognisable as Ab-Perm because the \"almost\" checker pattern is on the left.<br/><br/>The edge on the right is also the opposite of the rear corner.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-1",
@@ -193,7 +195,7 @@ var algSet = {
     {
       "id": "F.1",
       "name": "F-Perm",
-      "desc": "Clearly an F-Perm because of the lonesome 3-bar.<br/><br/>It is also worth knowing that the edge on the side is the opposite of the front corner.",
+      "desc": "Clearly an F-Perm because of the lonesome 3-bar.<br/><br/>It is also worth knowing that the edge on the right is the opposite of the front corner.",
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-1",
@@ -245,7 +247,7 @@ var algSet = {
     {
       "id": "F.4",
       "name": "F-Perm",
-      "desc": "Clearly an F-Perm because of the lonesome 3-bar.<br/><br/>It is also worth knowing that the edge on the side is the opposite of the front corner.",
+      "desc": "Clearly an F-Perm because of the lonesome 3-bar.<br/><br/>It is also worth knowing that the edge on the left is the opposite of the front corner.",
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-4",
@@ -263,7 +265,7 @@ var algSet = {
     {
       "id": "Ga.1",
       "name": "Ga-Perm",
-      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite colour of a checker pattern (4 stickers).<br/><br/>Easily recognisable as Ga-Perm because the headlights are on the left and the outside 2-bar on the right.",
+      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite of a checker pattern (4 stickers).<br/><br/>Easily recognisable as Ga-Perm because the \"almost\" checker pattern is on the left and the outside 2-bar on the right.",
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-1",
@@ -315,6 +317,7 @@ var algSet = {
     {
       "id": "Ga.4",
       "name": "Ga-Perm",
+      "desc": "Clearly a G-Perm because of the checker pattern (4 stickers) and the absence of an outside 2-bar.<br/><br/>Easily recognisable as Ga-Perm because the checker pattern is on the right.<br/><br/>The edge on the left is also the opposite of the front corner.",
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-4",
@@ -384,7 +387,7 @@ var algSet = {
     {
       "id": "Gb.4",
       "name": "Gb-Perm",
-      "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gb-Perm because the edge on the side matches the headlights.<br/><br/>The edge on the side is also the opposite of the back corner.",
+      "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gb-Perm because the edge on the left matches the headlights.<br/><br/>The edge on the left is also the opposite of the back corner.",
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-4",
@@ -402,6 +405,7 @@ var algSet = {
     {
       "id": "Gc.1",
       "name": "Gc-Perm",
+      "desc": "Clearly a G-Perm because of the checker pattern (4 stickers) and the absence of an outside 2-bar.<br/><br/>Easily recognisable as Gc-Perm because the checker pattern is on the left.<br/><br/>The edge on the right is also the opposite of the front corner.",
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-1",
@@ -453,7 +457,7 @@ var algSet = {
     {
       "id": "Gc.4",
       "name": "Gc-Perm",
-      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite colour of a checker pattern (4 stickers).<br/><br/>Easily recognisable as Gc-Perm because the headlights are on the right and the ouside 2-bar on the left.",
+      "desc": "Clearly a G-Perm because the sticker between the headlights is the opposite of a checker pattern (4 stickers).<br/><br/>Easily recognisable as Gc-Perm because the \"almost\" checker pattern is on the right and the outside 2-bar on the left.",
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-4",
@@ -471,7 +475,7 @@ var algSet = {
     {
       "id": "Gd.1",
       "name": "Gd-Perm",
-      "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gd-Perm because the edge on the side matches the headlights.<br/><br/>The edge on the side is also the opposite of the back corner.",
+      "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gd-Perm because the edge on the right matches the headlights.<br/><br/>The edge on the right is also the opposite of the back corner.",
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-1",
@@ -787,6 +791,7 @@ var algSet = {
     {
       "id": "Ra.4",
       "name": "Ra-Perm",
+      "desc": "Clearly an R-Perm because of the long checker pattern (5 stickers).<br/><br/>Easily recognisable as Ra-Perm because the checker pattern is on the right.<br/><br/>The edge on the left is also the opposite of the rear corner.",
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-4",
@@ -804,6 +809,7 @@ var algSet = {
     {
       "id": "Rb.1",
       "name": "Rb-Perm",
+      "desc": "Clearly an R-Perm because of the long checker pattern (5 stickers).<br/><br/>Easily recognisable as Rb-Perm because the checker pattern is on the left.<br/><br/>The edge on the right is also the opposite of the rear corner.",
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-1",
