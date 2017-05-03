@@ -27,7 +27,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ga",
+          "alg": "Checker pattern on left (4-stickers)",
           "desc": "Aa = 3 colours, Ga = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -79,7 +79,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ra",
+          "alg": "Almost checker pattern on right (5-stickers)",
           "desc": "Aa = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -97,7 +97,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Rb",
+          "alg": "Almost checker pattern on left (5-stickers)",
           "desc": "Ab = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -149,7 +149,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gc",
+          "alg": "Checker pattern on right (4-stickers)",
           "desc": "Ab = 3 colours, Gc = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -203,7 +203,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Right edge is the opposite of front corner",
           "desc": "F = 4 colours, Ja / Jb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -255,7 +255,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Left edge is the opposite of front corner",
           "desc": "F = 4 colours, Ja / Jb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -273,7 +273,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Aa",
+          "alg": "Almost checker pattern on left (4-stickers)",
           "desc": "Ga = 4 colours, Aa = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -325,7 +325,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Checker pattern on right (4-stickers)",
           "desc": "Ga = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -343,7 +343,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Right edge is the opposite of front corner",
           "desc": "Gb = 4 colours, Gd = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -395,7 +395,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Left edge matches right headlights",
           "desc": "Gb = 3 colours, Gd = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -413,7 +413,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Checker pattern on left (4-stickers)",
           "desc": "Gc = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -465,7 +465,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ab",
+          "alg": "Almost checker pattern on right (4-stickers)",
           "desc": "Gc = 4 colours, Ab = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -483,7 +483,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Right edge matches left headlights",
           "desc": "Gd = 3 colours, Gb = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -535,7 +535,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Left edge is the opposite of front corner",
           "desc": "Gd = 4 colours, Gb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -553,7 +553,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Both headlights contain the opposite edge",
           "desc": "H = 4 colours, Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -571,7 +571,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Inside 2-bar on the right",
           "desc": "Ja / Jb = 3 colours, F = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -623,7 +623,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Outside 2-bar on the left",
           "desc": "Ja / Jb = 3 colours, F = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -641,7 +641,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Outside 2-bar on the right",
           "desc": "Ja / Jb = 3 colours, F = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -693,7 +693,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Inside 2-bar on the left",
           "desc": "Ja / Jb = 3 colours, F = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -747,7 +747,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Headlights contain an adjacent edge",
           "desc": "Ra = 4 colours, T = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -799,7 +799,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Aa",
+          "alg": "Checker pattern on right (5-stickers)",
           "desc": "Ra = 3 colours, Aa / Ga = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -817,7 +817,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ab",
+          "alg": "Checker pattern on left (5-stickers)",
           "desc": "Rb = 3 colours, Ab / Gc = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -869,7 +869,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Headlights contain an adjacent edge",
           "desc": "Rb = 4 colours, T = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -887,7 +887,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Headlights contain the opposite edge",
           "desc": "T = 3 colours, Ra = 4 colours",
 		  "status": 1,
           "uses": ["2H"],
@@ -939,7 +939,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Headlights contain the opposite edge",
           "desc": "T = 3 colours, Rb = 4 colours",
 		  "status": 1,
           "uses": ["2H"],
@@ -949,7 +949,7 @@ var algSet = {
     {
       "id": "Ua.1",
       "name": "Ua-Perm",
-      "desc": "Clearly an [EPLL] and definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights contain an adjacent edge colour.",
+      "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights contain an adjacent edge colour.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-1",
@@ -957,7 +957,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Headlights contain an adjacent edge",
           "desc": "Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"],
@@ -975,7 +975,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Z",
+          "alg": "Left edge matches right headlights",
           "desc": "Ua = 3 colours, Z = 2 or 4 colours",
 		  "status": 1,
           "uses": ["2H"],
@@ -993,7 +993,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Right headlights contain the opposite edge",
           "desc": "Ua = 3 colours, H = 4 colours",
 		  "status": 1,
           "uses": ["2H"],
@@ -1003,7 +1003,7 @@ var algSet = {
     {
       "id": "Ua.4",
       "name": "Ua-Perm",
-      "desc": "Clearly an [EPLL] and definitely a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ua-Perm (CCW) because the headlights contain the opposite edge colour.",
+      "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ua-Perm (CCW) because the headlights contain the opposite edge colour.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-4",
@@ -1011,7 +1011,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Headlights contain the opposite edge",
           "desc": "Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"],
@@ -1021,7 +1021,7 @@ var algSet = {
     {
       "id": "Ub.1",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] and definitely a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ub-Perm (CW) because the headlights contain the opposite edge colour.",
+      "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ub-Perm (CW) because the headlights contain the opposite edge colour.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-1",
@@ -1029,7 +1029,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Headlights contain the opposite edge",
           "desc": "Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -1047,7 +1047,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Left headlights contain the opposite edge",
           "desc": "Ub = 3 colours, H = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -1065,7 +1065,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Z",
+          "alg": "Right edge matches left headlights",
           "desc": "Ub = 3 colours, Z = 2 or 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -1075,7 +1075,7 @@ var algSet = {
     {
       "id": "Ub.4",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] and definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights contain an adjacent edge colour.",
+      "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights contain an adjacent edge colour.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-4",
@@ -1083,7 +1083,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Headlights contain an adjacent edge",
           "desc": "Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -1245,7 +1245,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ua or Ub",
+          "alg": "Distinctive checker pattern (6-stickers)",
           "desc": "Z = 2 colours, Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -1263,7 +1263,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ua or Ub",
+          "alg": "Both headlights contain an adjacent edge",
           "desc": "Z = 4 colours, Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -1281,7 +1281,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Solved",
           "desc": "Easy to recognise",
 		  "status": 1,
           "uses": ["2H"]
@@ -1305,49 +1305,49 @@ var algSet = {
         {
           "id": "bar+lights",
           "name": "3-Bar with Headlights", 
-          "desc": "The 3-bar accompanied by headlights can only be a U-Perm.<br/><br/>The lone edge is considered when distinguishing between cases.",
+          "desc": "The 3-bar with headlights can only be a U-Perm.<br/><br/>The lone edge is considered when distinguishing between cases.<br/><br/>U-Perm = 3 colours.",
           "cases": ["Ub.1", "Ua.1", "Ua.4", "Ub.4"]
         },
         {
           "id": "bar-lights",
           "name": "3-Bar without Headlights",
-          "desc": "The 3-bar not accompanied by headlights can only be a J-Perm or F-Perm.<br/><br/>The edge adjacent to the bar is considered when distinguishing between cases.",
+          "desc": "The 3-bar without headlights can only be a J-Perm or F-Perm.<br/><br/>The presence and location of a 2-bar is considered when distinguishing between cases.<br/><br/>J-Perm = 3 colours, F-Perm = 4 colours.",
           "cases": ["Ja.1", "Jb.1", "F.1", "Jb.4", "Ja.4", "F.4"]
         },
         {
           "id": "double+opp",
           "name": "Double Lights (Opposite Edge)",
-          "desc": "Double headlights with at least one opposite edge can only be an H-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.",
+          "desc": "Double headlights with at least one opposite edge can only be an H-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.<br/><br/>U-Perm = 3 colours, H-Perm = 4 colours.",
           "cases": ["Ub.2", "H.1", "Ua.3"]
         },
         {
           "id": "double-opp",
           "name": "Double Lights (Adjacent Edges)",
-          "desc": "Double headlights without an opposite edge can only be a Z-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The Z-Perm is most distinctive.",
+          "desc": "Double headlights without an opposite edge can only be a Z-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The Z-Perm is most distinctive.<br/><br/>U-Perm = 3 colours, Z-Perm = 2 or 4 colours.",
           "cases": ["Z.1", "Ua.2", "Z.2", "Ub.3"]
         },
         {
           "id": "lights+inpair",
           "name": "Headlights + 2-Bar (Inside)",
-          "desc": "Headlights accompanied by an inside 2-bar can only be a T-Perm or R-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.",
+          "desc": "Headlights accompanied by an inside 2-bar can only be a T-Perm or R-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.<br/><br/>T-Perm = 3 colours, R-Perm = 4 colours.",
           "cases": ["T.1", "Ra.1", "T.4", "Rb.4"]
         },
         {
           "id": "lights+outpair",
           "name": "Headlights + 2-Bar (Outside)",
-          "desc": "Headlights accompanied by an outside 2-bar can only be an A-Perm or G-Perm.<br/><br/>The presence of a checker pattern (4 stickers) is considered when distinguishing between cases.",
+          "desc": "Headlights accompanied by an outside 2-bar can only be an A-Perm or G-Perm.<br/><br/>The presence of a checker pattern (4 stickers) is considered when distinguishing between cases.<br/><br/>A-Perm = 3 colours, G-Perm = 4 colours.",
           "cases": ["Aa.1", "Ga.1", "Ab.4", "Gc.4"]
         },
         {
           "id": "lights+opp",
           "name": "Headlights (Opposite Edge)",
-          "desc": "Headlights containing an opposite edge can only be a G-Perm.<br/><br/>The edge adjacent to the headlights is considered when distinguishing between cases.",
+          "desc": "Headlights containing an opposite edge can only be a G-Perm.<br/><br/>The edge adjacent to the headlights is considered when distinguishing between cases.<br/><br/>G-Perm = 3 or 4 colours.",
           "cases": ["Gb.1", "Gd.1", "Gd.4", "Gb.4"]
         },
         {
           "id": "lights+adj",
           "name": "Headlights (Adjacent Edge)",
-          "desc": "Headlights containing an adjacent edge can only be an R-Perm, G-Perm or A-Perm.<br/><br/>The presence of a checker pattern (4 or 5 stickers) is considered when distinguishing between cases.",
+          "desc": "Headlights containing an adjacent edge can only be an R-Perm, G-Perm or A-Perm.<br/><br/>The presence of a checker pattern (4 or 5 stickers) is considered when distinguishing between cases.<br/><br/>R-Perm = 3 colours, A-Perm / G-Perm = 4 colours.",
           "cases": ["Gc.1", "Rb.1", "Ab.1", "Ga.4", "Ra.4", "Aa.4"]
         },
         {
