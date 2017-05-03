@@ -27,7 +27,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Checker pattern on left (4-stickers)",
+          "alg": "Checker pattern on left (4 stickers)",
           "desc": "Aa = 3 colours, Ga = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -79,7 +79,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Almost checker pattern on right (5-stickers)",
+          "alg": "Almost checker pattern on right (5 stickers)",
           "desc": "Aa = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -97,7 +97,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Almost checker pattern on left (5-stickers)",
+          "alg": "Almost checker pattern on left (5 stickers)",
           "desc": "Ab = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -149,7 +149,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Checker pattern on right (4-stickers)",
+          "alg": "Checker pattern on right (4 stickers)",
           "desc": "Ab = 3 colours, Gc = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -273,7 +273,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Almost checker pattern on left (4-stickers)",
+          "alg": "Almost checker pattern on left (4 stickers)",
           "desc": "Ga = 4 colours, Aa = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -325,7 +325,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Checker pattern on right (4-stickers)",
+          "alg": "Checker pattern on right (4 stickers)",
           "desc": "Ga = 4 colours, Ra = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -413,7 +413,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Checker pattern on left (4-stickers)",
+          "alg": "Checker pattern on left (4 stickers)",
           "desc": "Gc = 4 colours, Rb = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -465,7 +465,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Almost checker pattern on right (4-stickers)",
+          "alg": "Almost checker pattern on right (4 stickers)",
           "desc": "Gc = 4 colours, Ab = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -799,7 +799,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Checker pattern on right (5-stickers)",
+          "alg": "Checker pattern on right (5 stickers)",
           "desc": "Ra = 3 colours, Aa / Ga = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -817,7 +817,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Checker pattern on left (5-stickers)",
+          "alg": "Checker pattern on left (5 stickers)",
           "desc": "Rb = 3 colours, Ab / Gc = 4 colours",
 		  "status": 1,
           "uses": ["2H"]
@@ -1245,7 +1245,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Distinctive checker pattern (6-stickers)",
+          "alg": "Distinctive checker pattern (6 stickers)",
           "desc": "Z = 2 colours, Ua / Ub = 3 colours",
 		  "status": 1,
           "uses": ["2H"]
