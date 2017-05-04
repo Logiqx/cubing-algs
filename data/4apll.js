@@ -30,17 +30,17 @@ var algSet = {
         {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
           "desc": "Jb-Perm - [RFAS], [RFN]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R U2 R' U' R U2 L' U R' U' L",
+          "vars" :
+          [
+            {
+              "alg": "R U2 R' U' R U2 L' U R' U' L",
               "desc": "Optimal execution applies cancellations",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-		  ]
+              "status": 1,
+              "uses": ["2H"]
+            },
+          ]
         },
       ]
     },
@@ -57,7 +57,7 @@ var algSet = {
         {
           "alg": "(R U' L U2 R' U L') (R U' L U2 R' U L')",
           "desc": "Playing with [F2L] pairs - track FR + BL",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -74,7 +74,7 @@ var algSet = {
         {
           "alg": "-",
           "desc": "",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H", "OH"]
         },
       ]
@@ -92,17 +92,17 @@ var algSet = {
         {
           "alg": "U R U' (R U R U R U' R' U' R' U') U R'",
           "desc": "[Conjugate] of [F2L] insert - [R U': R U R U R U' R' U' R' U']",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U R U' R U R U R U' R' U' R2",
-			  "desc": "Execution applies cancellations",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-		  ]
+          "vars":
+          [
+            {
+              "alg": "U R U' R U R U R U' R' U' R2",
+              "desc": "Execution applies cancellations",
+              "status": 1,
+              "uses": ["2H"]
+            },
+          ]
         },
       ]
     },
@@ -119,18 +119,18 @@ var algSet = {
         {
           "alg": "U R U' (U R U R U R' U' R' U' R') U R'",
           "desc": "[Conjugate] of [F2L] insert - [R U': U R U R U R' U' R' U' R']",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U R2 U R U R' U' R' U' R' U R'",
-			  "desc": "Execution applies cancellations",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-		  ]
-		},
+          "vars":
+          [
+            {
+              "alg": "U R2 U R U R' U' R' U' R' U R'",
+              "desc": "Execution applies cancellations",
+              "status": 1,
+              "uses": ["2H"]
+            },
+          ]
+        },
       ]
     },
     {
@@ -145,7 +145,7 @@ var algSet = {
         {
           "alg": "R U' R U R U R U' R' U' R2 ...<br/>U' R U' R U R U R U' R' U' R2",
           "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -163,7 +163,7 @@ var algSet = {
         {
           "alg": "R U' R U R U R U' R' U' R2 ...<br/>U R U' R U R U R U' R' U' R2",
           "desc": "[EPLL] combination - Ua-Perm, [AUF], Ua-Perm",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -180,7 +180,7 @@ var algSet = {
         {
           "alg": "-",
           "desc": "",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H", "OH"]
         },
       ]
@@ -196,14 +196,14 @@ var algSet = {
         {
           "id": "corners",
           "name": "Corner Permutation",
-		  "desc": "The 2 [CPLL] cases are solved using 2 [RUL] algorithms - Rb-Perm (R U2 R' U' R U2 L' U R' U' L) and Na-Perm (R U' L U2' R' U L') (R U' L U2' R' U L')",
+          "desc": "The 2 [CPLL] cases are solved using 2 [RUL] algorithms - Rb-Perm (R U2 R' U' R U2 L' U R' U' L) and Na-Perm (R U' L U2' R' U L') (R U' L U2' R' U L')",
           "wiki": "2-Look_PLL",
           "cases": ["Adj", "Diag", "CPLL"]
         },
         {
           "id": "edges",
           "name": "Edge Permutation",
-		  "desc": "The 4 [EPLL] cases are solved using 2 [RU] algorithms - Ua-Perm (R U' R U R U R U' R' U' R2) and Ub-Perm (R2 U R U R' U' R' U' R' U R').",
+          "desc": "The 4 [EPLL] cases are solved using 2 [RU] algorithms - Ua-Perm (R U' R U R U R U' R' U' R2) and Ub-Perm (R2 U R U R' U' R' U' R' U R').",
           "wiki": "2-Look_PLL",
           "cases": ["Ua", "Ub", "Z", "H", "EPLL"]
         },

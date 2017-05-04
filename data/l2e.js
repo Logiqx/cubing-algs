@@ -27,7 +27,7 @@ var algSet = {
         {
           "alg": "-",
           "desc": "",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -45,47 +45,47 @@ var algSet = {
         {
           "alg": "Rw2 F2 U2 r2 U2 F2 Rw2",
           "desc": "Pure PLL parity algorithm",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "Rw2 F2 U2 Rw2 U2 F2 Rw2",
-			  "desc": "Speed variation works for L2E",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "Rw2 F2 U2 Rw2 U2 F2 Rw2",
+              "desc": "Speed variation works for L2E",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "Rw' (U' R U R') (F R' F' R) Rw ...<br/>Lw (U' R U R') (F R' F' R) Lw'",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "Rw' (U' R U R') (F R' F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lw (U' R U R') (F R' F') Lw'",
-			  "desc": "Some R moves can be dropped",
-			  "status": -1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "Rw' (U' R U R') (F R' F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lw (U' R U R') (F R' F') Lw'",
+              "desc": "Some R moves can be dropped",
+              "status": -1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "Rw' (U' R' U R') (F R F' R) Rw ...<br/>Lw (U' R' U R') (F R F' R) Lw'",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "Rw' (U' R' U R') (F R F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lw (U' R' U R') (F R F') Lw'",
-			  "desc": "Some R moves can be dropped",
-			  "status": -1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "Rw' (U' R' U R') (F R F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lw (U' R' U R') (F R F') Lw'",
+              "desc": "Some R moves can be dropped",
+              "status": -1,
+              "uses": ["2H"]
+            }
+          ]
         },
       ]
     },
@@ -102,7 +102,7 @@ var algSet = {
         {
           "alg": "Rw U2 x Rw U2 Rw U2 3Rw’ U2 Lw U2 Rw’ U2 Rw U2 Rw’ U2 Rw’",
           "desc": "Lucas Parity",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -120,7 +120,7 @@ var algSet = {
         {
           "alg": "Rw2 B2 Rw' U2 Rw' U2 x' U2 Rw' U2 Rw U2 Rw' U2 Rw2 [U2 x U2]",
           "desc": "Parity algorithm",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -138,62 +138,62 @@ var algSet = {
         {
           "alg": "M (U' R U R') (F R' F' R) M'",
           "desc": "Intuitive hack flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "M (U' R U R') (F R' F') M'",
-			  "desc": "Final R can be dropped",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "M (U' R U R') (F R' F') M'",
+              "desc": "Final R can be dropped",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "M (U' R' U R') (F R F' R) M'",
           "desc": "Intuitive hack flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "M (U' R' U R') (F R F') M'",
-			  "desc": "Final R can be dropped",
-			  "status": 0,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "M (U' R' U R') (F R F') M'",
+              "desc": "Final R can be dropped",
+              "status": 0,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "Rw' (U' R U R') (F R' F' R) Rw ...<br/>3Rw' (U' R U R') (F R' F' R) 3Rw",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "Rw' (U' R U R') (F R' F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3Rw' (U' R U R') (F R' F') 3Rw",
-			  "desc": "Some R moves can be dropped",
-			  "status": -1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "Rw' (U' R U R') (F R' F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3Rw' (U' R U R') (F R' F') 3Rw",
+              "desc": "Some R moves can be dropped",
+              "status": -1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "Rw' (U' R' U R') (F R F' R) Rw ...<br/>3Rw' (U' R' U R') (F R F' R) 3Rw",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "Rw' (U' R' U R') (F R F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3Rw' (U' R' U R') (F R F') 3Rw",
-			  "desc": "Some R moves can be dropped",
-			  "status": -1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "Rw' (U' R' U R') (F R F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3Rw' (U' R' U R') (F R F') 3Rw",
+              "desc": "Some R moves can be dropped",
+              "status": -1,
+              "uses": ["2H"]
+            }
+          ]
         },
       ]
     },
@@ -210,38 +210,38 @@ var algSet = {
         {
           "alg": "F2 Rw D2 Rw' F2 U2 F2 Lw B2 Lw' [F2]",
           "desc": "Parity algorithm",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
         {
           "alg": "Rw' (U' R U R') (F R' F' R) Rw ...<br/>3Lw' (U' R U R') (F R' F' R) 3Lw",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "Rw' (U' R U R') (F R' F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3Lw' (U' R U R') (F R' F') 3Lw",
-			  "desc": "Some R moves can be dropped",
-			  "status": -1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "Rw' (U' R U R') (F R' F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3Lw' (U' R U R') (F R' F') 3Lw",
+              "desc": "Some R moves can be dropped",
+              "status": -1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "Rw' (U' R' U R') (F R F' R) Rw ...<br/>3Lw' (U' R' U R') (F R F' R) 3Lw",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "Rw' (U' R' U R') (F R F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3Lw' (U' R' U R') (F R F') 3Lw",
-			  "desc": "Some R moves can be dropped",
-			  "status": -1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "Rw' (U' R' U R') (F R F') Rw ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3Lw' (U' R' U R') (F R F') 3Lw",
+              "desc": "Some R moves can be dropped",
+              "status": -1,
+              "uses": ["2H"]
+            }
+          ]
         },
       ]
     },
@@ -258,13 +258,13 @@ var algSet = {
         {
           "alg": "Rw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Rw2 U2 F2 Rw [F2]",
           "desc": "Parity algorithm - right hand dominant",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
         {
           "alg": "Rw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Rw2 U2 F2 Rw [F2]",
           "desc": "Parity algorithm - left hand dominant",
-		  "status": -1,
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -282,13 +282,13 @@ var algSet = {
         {
           "alg": "Lw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Lw2 U2 F2 Lw' [F2]",
           "desc": "Parity algorithm - right hand dominant",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
         {
           "alg": "Lw2 F2 U2 Lw' U2 Lw2 F2 Lw' U2 Lw2 U2 F2 Lw' [F2]",
           "desc": "Parity algorithm - left hand dominant",
-		  "status": -1,
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -306,62 +306,62 @@ var algSet = {
         {
           "alg": "B2 3Lw2 (U' R U R') (F R' F' R) 3Lw2 B2",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "B2 3Lw2 (U' R U R') (F R' F') 3Lw2",
-			  "desc": "Final R and B2 can be dropped",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "B2 3Lw2 (U' R U R') (F R' F') 3Lw2",
+              "desc": "Final R and B2 can be dropped",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "B2 3Lw2 (U' R' U R') (F R F' R) 3Lw2 B2",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "B2 3Lw2 (U' R' U R') (F R F') 3Lw2",
-			  "desc": "Final R and B2 can be dropped",
-			  "status": 0,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "B2 3Lw2 (U' R' U R') (F R F') 3Lw2",
+              "desc": "Final R and B2 can be dropped",
+              "status": 0,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "U2 B2 Rw2 (U' R U R') (F R' F' R) Rw2 B2",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U2 B2 Rw2 (U' R U R') (F R' F') Rw2",
-			  "desc": "Final R and B2 can be dropped",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "U2 B2 Rw2 (U' R U R') (F R' F') Rw2",
+              "desc": "Final R and B2 can be dropped",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "U2 B2 Rw2 (U' R' U R') (F R F' R) Rw2 B2",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U2 B2 Rw2 (U' R' U R') (F R F') Rw2",
-			  "desc": "Final R and B2 can be dropped",
-			  "status": 0,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "U2 B2 Rw2 (U' R' U R') (F R F') Rw2",
+              "desc": "Final R and B2 can be dropped",
+              "status": 0,
+              "uses": ["2H"]
+            }
+          ]
         },
       ]
     },
@@ -378,62 +378,62 @@ var algSet = {
         {
           "alg": "B2 Lw2 (U' R U R') (F R' F' R) Lw2 B2",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "B2 Lw2 (U' R U R') (F R' F') Lw2",
-			  "desc": "Final R and B2 can be dropped",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "B2 Lw2 (U' R U R') (F R' F') Lw2",
+              "desc": "Final R and B2 can be dropped",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "B2 Lw2 (U' R' U R') (F R F' R) Lw2 B2",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "B2 Lw2 (U' R' U R') (F R F') Lw2",
-			  "desc": "Final R and B2 can be dropped",
-			  "status": 0,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "B2 Lw2 (U' R' U R') (F R F') Lw2",
+              "desc": "Final R and B2 can be dropped",
+              "status": 0,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "U2 B2 3Rw2 (U' R U R') (F R' F' R) 3Rw2 B2",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U2 B2 3Rw2 (U' R U R') (F R' F') 3Rw2",
-			  "desc": "Final R and B2 can be dropped",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "U2 B2 3Rw2 (U' R U R') (F R' F') 3Rw2",
+              "desc": "Final R and B2 can be dropped",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "U2 B2 3Rw2 (U' R' U R') (F R F' R) 3Rw2 B2",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U2 B2 3Rw2 (U' R' U R') (F R F') 3Rw2",
-			  "desc": "Final R and B2 can be dropped",
-			  "status": 0,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "U2 B2 3Rw2 (U' R' U R') (F R F') 3Rw2",
+              "desc": "Final R and B2 can be dropped",
+              "status": 0,
+              "uses": ["2H"]
+            }
+          ]
         },
       ]
     },
@@ -450,7 +450,7 @@ var algSet = {
         {
           "alg": "Rw U2 Rw2 U2 Rw' U2 Rw U2 Rw' U2 Rw2 U2 Rw",
           "desc": "Parity algorithm",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -468,7 +468,7 @@ var algSet = {
         {
           "alg": "Rw' U2 Rw2 U2 Rw U2 Rw' U2 Rw U2 Rw2 U2 Rw'",
           "desc": "Parity algorithm",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -486,13 +486,13 @@ var algSet = {
         {
           "alg": "Rw U2 Rw U2 F2 Rw F2 Lw’ U2 Lw U2 Rw2",
           "desc": "Parity algorithm - right hand dominant",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
         {
           "alg": "Lw' U2 Lw' U2 F2 Lw' F2 Rw U2 Rw' U2 Lw2",
           "desc": "Parity algorithm - left hand dominant",
-		  "status": -1,
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -510,7 +510,7 @@ var algSet = {
         {
           "alg": "Rw' U2 Rw' U2 B2 Rw' B2 Rw' F2 Lw2 F2 Rw U2 Rw2",
           "desc": "Parity algorithm",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -528,62 +528,62 @@ var algSet = {
         {
           "alg": "3Lw (U' R U R') (F R' F' R) 3Lw'",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "3Lw (U' R U R') (F R' F') 3Lw'",
-			  "desc": "Final R can be dropped",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "3Lw (U' R U R') (F R' F') 3Lw'",
+              "desc": "Final R can be dropped",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "3Lw (U' R' U R') (F R F' R) 3Lw'",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "3Lw (U' R' U R') (F R F') 3Lw'",
-			  "desc": "Final R can be dropped",
-			  "status": 0,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "3Lw (U' R' U R') (F R F') 3Lw'",
+              "desc": "Final R can be dropped",
+              "status": 0,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "U2 Lw (U' R U R') (F R' F' R) Lw'",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U2 Lw (U' R U R') (F R' F') Lw'",
-			  "desc": "Final R can be dropped",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "U2 Lw (U' R U R') (F R' F') Lw'",
+              "desc": "Final R can be dropped",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "U2 Lw (U' R' U R') (F R F' R) Lw'",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U2 Lw (U' R' U R') (F R F') Lw'",
-			  "desc": "Final R can be dropped",
-			  "status": 0,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "U2 Lw (U' R' U R') (F R F') Lw'",
+              "desc": "Final R can be dropped",
+              "status": 0,
+              "uses": ["2H"]
+            }
+          ]
         },
       ]
     },
@@ -600,62 +600,62 @@ var algSet = {
         {
           "alg": "3Rw' (U' R U R') (F R' F' R) 3Rw",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "3Rw' (U' R U R') (F R' F') 3Rw",
-			  "desc": "Final R can be dropped",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "3Rw' (U' R U R') (F R' F') 3Rw",
+              "desc": "Final R can be dropped",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "3Rw' (U' R' U R') (F R F' R) 3Rw",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "3Rw' (U' R' U R') (F R F') 3Rw",
-			  "desc": "Final R can be dropped",
-			  "status": 0,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "3Rw' (U' R' U R') (F R F') 3Rw",
+              "desc": "Final R can be dropped",
+              "status": 0,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "U2 Rw' (U' R U R') (F R' F' R) Rw",
           "desc": "Intuitive solution flips UF + RF",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U2 Rw' (U' R U R') (F R' F') Rw",
-			  "desc": "Final R can be dropped",
-			  "status": 1,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "U2 Rw' (U' R U R') (F R' F') Rw",
+              "desc": "Final R can be dropped",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
         },
         {
           "alg": "U2 Rw' (U' R' U R') (F R F' R) Rw",
           "desc": "Intuitive solution flips UF + RB",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "U2 Rw' (U' R' U R') (F R F') Rw",
-			  "desc": "Final R can be dropped",
-			  "status": 0,
-			  "uses": ["2H"]
-			}
-		  ]
+          "vars":
+          [
+            {
+              "alg": "U2 Rw' (U' R' U R') (F R F') Rw",
+              "desc": "Final R can be dropped",
+              "status": 0,
+              "uses": ["2H"]
+            }
+          ]
         },
       ]
     },

@@ -30,7 +30,7 @@ var algSet = {
         {
           "alg": "F (U R U' R') F'",
           "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -48,17 +48,17 @@ var algSet = {
         {
           "alg": "F (U R U' R') F' F (U R U' R') F'",
           "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R'] * 2",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"],
-		  "vars" :
-		  [
-			{
-			  "alg": "F (U R U' R') (U R U' R') F'",
+          "vars" :
+          [
+            {
+              "alg": "F (U R U' R') (U R U' R') F'",
               "desc": "Optimal execution applies cancellations",
-			  "status": 1,
-			  "uses": []
-			},
-		  ]
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -75,17 +75,17 @@ var algSet = {
         {
           "alg": "F (U R U' R') F' ...<br/>U' F (U R U' R') F' F (U R U' R') F'",
           "desc": "[EOLL] combination - Clock, [AUF], Line",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"],
-		  "vars" :
-		  [
-			{
-			  "alg": "F (U R U' R') F' ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U' F (U R U' R') (U R U' R') F'",
+          "vars" :
+          [
+            {
+              "alg": "F (U R U' R') F' ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U' F (U R U' R') (U R U' R') F'",
               "desc": "Optimal execution applies cancellations",
-			  "status": 1,
-			  "uses": []
-			},
-		  ]
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -101,7 +101,7 @@ var algSet = {
         {
           "alg": "-",
           "desc": "",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -118,7 +118,7 @@ var algSet = {
         {
           "alg": "U (R U2 R' U' R U' R')",
           "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert pair",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         }
       ]
@@ -135,7 +135,7 @@ var algSet = {
         {
           "alg": "U2 (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Anti-Sune",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -152,7 +152,7 @@ var algSet = {
         {
           "alg": "U' (R U2 R' U' R U' R') ...<br/>(R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Sune",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -169,7 +169,7 @@ var algSet = {
         {
           "alg": "U (R U2 R' U' R U' R') ...<br/>U (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Sune",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -186,7 +186,7 @@ var algSet = {
         {
           "alg": "(R U2 R' U' R U' R') ...<br/>U' (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Sune",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -203,7 +203,7 @@ var algSet = {
         {
           "alg": "(R U2 R' U' R U' R') U' (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Anti-Sune, [AUF], Anti-Sune",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]
@@ -220,17 +220,17 @@ var algSet = {
         {
           "alg": "U' (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Double Anti-Sune",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"],
-		  "vars" :
-		  [
-			{
-			  "alg": "U' R U2 R' U' (R U R' U') R U' R'",
+          "vars" :
+          [
+            {
+              "alg": "U' R U2 R' U' (R U R' U') R U' R'",
               "desc": "Optimal execution applies cancellations",
-			  "status": 1,
-			  "uses": []
-			},
-		  ]
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -246,7 +246,7 @@ var algSet = {
         {
           "alg": "-",
           "desc": "",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H"]
         },
       ]

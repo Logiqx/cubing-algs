@@ -33,31 +33,31 @@ var algSet = {
         {
           "alg": "U2 (L' U R U') (L U R' U')",
           "desc": "[LFN] - [L', U R U']",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 L' U R U' L U R'",
+          "vars" :
+          [
+            {
+              "alg": "U2 L' U R U' L U R'",
               "desc": "Actual execution",
-			  "status": 1,
-			  "uses": ["2H", "OH"]
-			}
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
           ]
         },
         {
           "alg": "(R' U L U') (R U L' U')",
           "desc": "[RBN] - [R', U L U']",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R' U L U' R U L'",
+          "vars" :
+          [
+            {
+              "alg": "R' U L U' R U L'",
               "desc": "Actual execution",
-			  "status": 1,
-			  "uses": ["2H", "OH"]
-			}
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
           ]
         },
       ]
@@ -75,31 +75,31 @@ var algSet = {
         {
           "alg": "(R U' L' U) (R' U' L U)",
           "desc": "[RFN] - [R, U' L' U]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R U' L' U R' U' L",
+          "vars" :
+          [
+            {
+              "alg": "R U' L' U R' U' L",
               "desc": "Actual execution",
-			  "status": 1,
-			  "uses": ["2H", "OH"]
-			}
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
           ]
         },
         {
           "alg": "U2 (L U' R' U) (L' U' R U)",
           "desc": "[LFN] - [L, U' R' U]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 L U' R' U L' U' R",
+          "vars" :
+          [
+            {
+              "alg": "U2 L U' R' U L' U' R",
               "desc": "Actual execution",
-			  "status": 1,
-			  "uses": ["2H", "OH"]
-			}
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
           ]
         }
       ]
@@ -117,128 +117,128 @@ var algSet = {
         {
           "alg": "(F' L F R') (F' L' F R)",
           "desc": "Basic [commutator] - [F' L F, R']",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "F' (r U R' U') r' F R",
+          "vars" :
+          [
+            {
+              "alg": "F' (r U R' U') r' F R",
               "desc": "Two-handed execution incorporates wide turns",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "F' (r U R' U') z U' R u",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "F' (r U R' U') z U' R u",
               "desc": "One-handed execution incorporates wide turns",
-			  "status": 0,
-			  "uses": ["OH"]
-			},
-		  ]
+              "status": 0,
+              "uses": ["OH"]
+            },
+          ]
         },
         {
           "alg": "U2 x' (R U' R' D) (R U R' D') x",
           "desc": "First half of E-Perm. Basic [commutator] - [R U' R', D]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 (l U' R' D) (R U R' D') x",
+          "vars" :
+          [
+            {
+              "alg": "U2 (l U' R' D) (R U R' D') x",
               "desc": "Two-handed execution incorporates wide turns",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 x' (R U' R' D) (R U R' u') [z']",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U2 x' (R U' R' D) (R U R' u') [z']",
               "desc": "One-handed execution incorporates wide turns",
-			  "status": 0,
-			  "uses": ["OH"]
-			},
-		  ]
+              "status": 0,
+              "uses": ["OH"]
+            },
+          ]
         },
         {
           "alg": "U (R U2 R' U' R U' R') * 3",
           "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U R U2 R' U' (R U R' U') (R U R' U') R U' R'",
+          "vars" :
+          [
+            {
+              "alg": "U R U2 R' U' (R U R' U') (R U R' U') R U' R'",
               "desc": "Two-handed execution applies cancellations",
-			  "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U R U2' R' U' (R U R' U') (R U R' U') R U' R'",
+              "status": 0,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U R U2' R' U' (R U R' U') (R U R' U') R U' R'",
               "desc": "One-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
+              "status": 1,
+              "uses": ["OH"]
+            }
+          ]
         },
         {
           "alg": "(R' U' R U' R' U2 R) * 3",
           "desc": "[SuneOLL]/[2GLL]: Triple [RBS]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
+          "vars" :
+          [
+            {
+              "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
               "desc": "Two-handed execution applies cancellations",
-			  "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
+              "status": 0,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
               "desc": "One-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
+              "status": 1,
+              "uses": ["OH"]
+            }
+          ]
         },
         {
           "alg": "U2 R2 (R U2 R' D') (R U2 R' D) R2'",
           "desc": "A9 [commutator] / [conjugate] - [R2: [R U2 R', D']]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 R' U2 R' D' R U2 R' D R2",
+          "vars" :
+          [
+            {
+              "alg": "U2 R' U2 R' D' R U2 R' D R2",
               "desc": "Two-handed execution applies a cancellation",
               "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 R' U2' R' D' R U2' R' D R2",
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U2 R' U2' R' D' R U2' R' D R2",
               "desc": "One-handed execution applies a cancellation",
               "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
+              "uses": ["OH"]
+            }
+          ]
         },
         {
           "alg": "U' R2 (R' U2 R D) (R' U2 R D') R2'",
           "desc": "A9 [commutator] / [conjugate] - [R2: [R' U2 R, D]]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U' R U2 R D R' U2 R D' R2'",
+          "vars" :
+          [
+            {
+              "alg": "U' R U2 R D R' U2 R D' R2'",
               "desc": "Two-handed execution applies a cancellation",
               "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U' R U2' R D R' U2' R D' R2",
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U' R U2' R D R' U2' R D' R2",
               "desc": "One-handed execution applies a cancellation",
               "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
+              "uses": ["OH"]
+            }
+          ]
         }
       ]
     },
@@ -255,74 +255,74 @@ var algSet = {
         {
           "alg": "U2 R2 (D R' U2 R) (D' R' U2 R) R2'",
           "desc": "A9 [commutator] / [conjugate] - [R2: [D, R' U2 R]]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 R2 D R' U2 R D' R' U2 R'",
+          "vars" :
+          [
+            {
+              "alg": "U2 R2 D R' U2 R D' R' U2 R'",
               "desc": "Two-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 R2 D R' U2' R D' R' U2' R'",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U2 R2 D R' U2' R D' R' U2' R'",
               "desc": "One-handed execution applies a cancellation",
               "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
+              "uses": ["OH"]
+            }
+          ]
         },
         {
           "alg": "R2 (D' R U2 R') (D R U2 R') R2'",
           "desc": "A9 [commutator] / [conjugate] - [R2: [D', R U2 R']]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "R2' D' R U2 R' D R U2 R",
+          "vars" :
+          [
+            {
+              "alg": "R2' D' R U2 R' D R U2 R",
               "desc": "Two-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "R2 D' R U2' R' D R U2' R",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "R2 D' R U2' R' D R U2' R",
               "desc": "One-handed execution applies a cancellation",
-			  "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
+              "status": 0,
+              "uses": ["OH"]
+            }
+          ]
         },
         {
           "alg": "U (R U2 R' U' R U' R') U2 (R' U2' R U R' U R)",
           "desc": "[Anti-Sune] combination - [RFAS], U2, [RBAS]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U (R U2' R' U' R U' R') U2' (R' U2' R U R' U R)",
+          "vars" :
+          [
+            {
+              "alg": "U (R U2' R' U' R U' R') U2' (R' U2' R U R' U R)",
               "desc": "One-handed execution",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
+              "status": 1,
+              "uses": ["OH"]
+            }
+          ]
         },
         {
           "alg": "U (R' U2' R U R' U R) U2 (R U2 R' U' R U' R')",
           "desc": "[Anti-Sune] combination - [RBAS], U2, [RFAS]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U (R' U2' R U R' U R) U2' (R U2' R' U' R U' R')",
+          "vars" :
+          [
+            {
+              "alg": "U (R' U2' R U R' U R) U2' (R U2' R' U' R U' R')",
               "desc": "One-handed execution",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
+              "status": 1,
+              "uses": ["OH"]
+            }
+          ]
         },
       ]
     },
@@ -339,74 +339,74 @@ var algSet = {
         {
           "alg": "U' (L F R' F') (L' F R F')",
           "desc": "Basic [commutator] - [L, F R' F']",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U' (r U R' U') (r' F R F')",
+          "vars" :
+          [
+            {
+              "alg": "U' (r U R' U') (r' F R F')",
               "desc": "Two-handed - wide [sexy], wide [sledgehammer]",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U' (r U R' U') z (U' R u F') [z']",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U' (r U R' U') z (U' R u F') [z']",
               "desc": "One-handed execution incorporates wide turns",
-			  "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
+              "status": 0,
+              "uses": ["OH"]
+            }
+          ]
         },
         {
           "alg": "U2 x' (R U R' D) (R U' R' D') x",
           "desc": "Second half of E-Perm. Basic [commutator] - [R, U R' D]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 (l U R' D) (R U' R' u') [z']",
+          "vars" :
+          [
+            {
+              "alg": "U2 (l U R' D) (R U' R' u') [z']",
               "desc": "Two-handed execution incorporates wide turns",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 x' (R U R' D) (R U' R' u') [z']",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U2 x' (R U R' D) (R U' R' u') [z']",
               "desc": "One-handed execution incorporates wide turns",
-			  "status": 0,
-			  "uses": ["OH"]
-			}
-		  ]
-		},
+              "status": 0,
+              "uses": ["OH"]
+            }
+          ]
+        },
         {
           "alg": "U' (R U R' U R U2' R') U2 (R' U' R U' R' U2 R)",
           "desc": "[Sune] combination - [RFS], U2, [RBS]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U' (R U R' U R U2' R') U2' (R' U' R U' R' U2' R)",
+          "vars" :
+          [
+            {
+              "alg": "U' (R U R' U R U2' R') U2' (R' U' R U' R' U2' R)",
               "desc": "One-handed execution",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
+              "status": 1,
+              "uses": ["OH"]
+            }
+          ]
         },
         {
           "alg": "U' (R' U' R U' R' U2 R) U2 (R U R' U R U2' R')",
           "desc": "[Sune] combination - [RBS], U2, [RFS]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U' (R' U' R U' R' U2' R) U2' (R U R' U R U2' R')",
+          "vars" :
+          [
+            {
+              "alg": "U' (R' U' R U' R' U2' R) U2' (R U R' U R U2' R')",
               "desc": "One-handed execution",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
-		  ]
+              "status": 1,
+              "uses": ["OH"]
+            }
+          ]
         },
       ]
     },
@@ -423,37 +423,37 @@ var algSet = {
         {
           "alg": "U (R U' L' U) (R' U' L U) U' (L U' R' U) (L' U' R U)",
           "desc": "[Niklas] combination - [RFN], U', [LBN]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U R U' L' U R' U' L2 U' R' U L' U' R",
+          "vars" :
+          [
+            {
+              "alg": "U R U' L' U R' U' L2 U' R' U L' U' R",
               "desc": "Two-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U R U' L' U R' U' L2' U' R' U L' U' R",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U R U' L' U R' U' L2' U' R' U L' U' R",
               "desc": "One-handed execution applies cancellations",
-			  "status": 1,
-			  "uses": ["OH"]
-			}
+              "status": 1,
+              "uses": ["OH"]
+            }
           ]
         },
         {
           "alg": "U' (R' U L U') (R U L' U') U (L' U R U') (L U R' U')",
           "desc": "[Niklas] combination - [RBN], U', [LFN]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U' R' U L U' R U L2' U R U' L U R'",
+          "vars" :
+          [
+            {
+              "alg": "U' R' U L U' R U L2' U R U' L U R'",
               "desc": "Actual execution applies cancellations",
-			  "status": 1,
-			  "uses": ["2H", "OH"]
-			}
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
           ]
         },
       ]
@@ -470,13 +470,13 @@ var algSet = {
         {
           "alg": "U F (R U R' U') (R U R' U') (R U R' U') F'",
           "desc": "[Conjugate] of triple [sexy]: [F: [R U R' U']*3]",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "U F (U R U' R') (U R U' R') (U R U' R') F'",
           "desc": "[Conjugate] of triple [reverse-sexy]: [F: [U R U' R']*3]",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H", "OH"]
         },
       ]
@@ -493,7 +493,7 @@ var algSet = {
         {
           "alg": "-",
           "desc": "",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H", "OH"]
         },
       ]
@@ -511,23 +511,23 @@ var algSet = {
         {
           "alg": "U x R2 (R U R' D2) (R U' R' D2) R2' x'",
           "desc": "A9 [commutator] / [conjugate] - [x R2: [R U R', D2]]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U l' U R' D2 R U' R' D2 R2 x'",
+          "vars" :
+          [
+            {
+              "alg": "U l' U R' D2 R U' R' D2 R2 x'",
               "desc": "Two-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U x R' U R' D2 R U' R' D2 R2 x'",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U x R' U R' D2 R U' R' D2 R2 x'",
               "desc": "One-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["OH"]
-			},
-		  ]
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
@@ -544,30 +544,30 @@ var algSet = {
         {
           "alg": "U2 x R2 (D2 R U R') (D2 R U' R') R2 x'",
           "desc": "A9 [commutator] / [conjugate] - [x R2: [D2, R U R']]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U2 l' R' D2 R U R' D2 R U' R x'",
+          "vars" :
+          [
+            {
+              "alg": "U2 l' R' D2 R U R' D2 R U' R x'",
               "desc": "Two-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U2 x R2 D2 R U R' D2 R U' R x'",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U2 x R2 D2 R U R' D2 R U' R x'",
               "desc": "One-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["OH"]
-			},
-		  ]
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "E",
       "name": "E-Perm",
-	  "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] / [COLL] algorithms for L / Bowtie and T / Chameleon.",
+      "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] / [COLL] algorithms for L / Bowtie and T / Chameleon.",
       "wiki": "",
       "algdb": "Set/PLL/E",
       "image": "CPLL-E",
@@ -577,44 +577,44 @@ var algSet = {
         {
           "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' D') x",
           "desc": "[Commutator] combination - [R U' R', D] [R, U R' D]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
+          "vars" :
+          [
+            {
+              "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
               "desc": "Two-handed execution starts with a wide turn",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u')",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u')",
               "desc": "One-handed execution ends with a wide turn",
-			  "status": 0,
-			  "uses": ["OH"]
-			},
-		  ]
+              "status": 0,
+              "uses": ["OH"]
+            },
+          ]
         },
         {
           "alg": "U R (R U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R') R'",
           "desc": "Long algorithm but decent for [OH] and big cubes",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars" :
-		  [
-			{
-			  "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2')",
+          "vars" :
+          [
+            {
+              "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2')",
               "desc": "Two-handed execution incorporates cancellations",
-			  "status": 0,
-			  "uses": ["2H"]
-			},
-			{
-			  "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2)",
+              "status": 0,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2)",
               "desc": "One-handed execution incorporates cancellations",
-			  "status": 1,
-			  "uses": ["OH"]
-			},
-		  ]
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
@@ -631,22 +631,22 @@ var algSet = {
         {
           "alg": "M2 U' (M2 U2 M2' U2') U M2'",
           "desc": "[MU] [commutator] / [conjugate] - [M2 U': [M2, U2]]",
-		  "status": 1,
+          "status": 1,
           "uses": [],
-		  "vars":
-		  [
-			{
-			  "alg": "M2' U' M2' U2' M2' U' M2'",
-			  "desc": "Two-handed execution applies a cancellation",
-			  "status": 1,
-			  "uses": ["2H"]
-			},
-		  ]
+          "vars":
+          [
+            {
+              "alg": "M2' U' M2' U2' M2' U' M2'",
+              "desc": "Two-handed execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H"]
+            },
+          ]
         },
         {
           "alg": "(R2 U2' R U2' R2) U2' (R2 U2' R U2' R2)",
           "desc": "Note the Ortega / Varasano [OLL] algorithm (H case)",
-		  "status": 1,
+          "status": 1,
           "uses": ["OH"]
         },
       ]
@@ -663,7 +663,7 @@ var algSet = {
         {
           "alg": "-",
           "desc": "",
-		  "status": 1,
+          "status": 1,
           "uses": ["2H", "OH"]
         },
       ]
@@ -679,14 +679,14 @@ var algSet = {
         {
           "id": "orientation",
           "name": "Corner Orientation",
-		  "desc": "The [OCLL-EPP] cases are typically solved using a [commutator] - e.g. [Niklas] algorithm. There is a 1/27 chance of skipping this step and going straight to [CPLL].",
+          "desc": "The [OCLL-EPP] cases are typically solved using a [commutator] - e.g. [Niklas] algorithm. There is a 1/27 chance of skipping this step and going straight to [CPLL].",
           "wiki": "Corner_Orientation#OCLL-EPP",
           "cases": ["AS", "S", "L", "U", "T", "Pi", "H", "OCLL"]
         },
         {
           "id": "permutation",
           "name": "Corner Permutation",
-		  "desc": "The [CPLL] cases are solved using the standard [PLL] algorithms. There is a 1/12 chance of skipping this step at the end of a solve.",
+          "desc": "The [CPLL] cases are solved using the standard [PLL] algorithms. There is a 1/12 chance of skipping this step at the end of a solve.",
           "wiki": "CPLL",
           "cases": ["Aa", "Ab", "E", "X", "CPLL"]
         },
