@@ -1294,6 +1294,7 @@ var algSet = {
     {
       "id": "features",
       "name": "Features",
+      "desc": "The \"features\" view groups cases based on the primary features such as headlights, 3-bars, 2-bars and bookends.<br/></br/><strong>Note:</strong> The groupings are similar to those in the 2-sided recognition guide by mark49152 on speedsolving.com.",
       "groups":
       [
         {
@@ -1305,49 +1306,49 @@ var algSet = {
         {
           "id": "bar+lights",
           "name": "3-Bar with Headlights", 
-          "desc": "The 3-bar with headlights can only be a U-Perm.<br/><br/>The lone edge is considered when distinguishing between cases.<br/><br/>U-Perm = 3 colours.",
+          "desc": "The 3-bar with headlights can only be a U-Perm.<br/><br/>The lone edge is considered when distinguishing between cases.<br/><br/>U-Perms = 3 colours.",
           "cases": ["Ub.1", "Ua.1", "Ua.4", "Ub.4"]
         },
         {
           "id": "bar-lights",
           "name": "3-Bar without Headlights",
-          "desc": "The 3-bar without headlights can only be a J-Perm or F-Perm.<br/><br/>The presence and location of a 2-bar is considered when distinguishing between cases.<br/><br/>J-Perm = 3 colours, F-Perm = 4 colours.",
+          "desc": "The 3-bar without headlights can only be a J-Perm or F-Perm.<br/><br/>The presence and location of a 2-bar is considered when distinguishing between cases.<br/><br/>J-Perms = 3 colours, F-Perm = 4 colours.",
           "cases": ["Ja.1", "Jb.1", "F.1", "Jb.4", "Ja.4", "F.4"]
         },
         {
           "id": "double+opp",
           "name": "Double Lights (Opposite Edge)",
-          "desc": "Double headlights with at least one opposite edge can only be an H-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.<br/><br/>U-Perm = 3 colours, H-Perm = 4 colours.",
+          "desc": "Double headlights with at least one opposite edge can only be an H-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The H-Perm is most distinctive.<br/><br/>U-Perms = 3 colours, H-Perm = 4 colours.",
           "cases": ["Ub.2", "H.1", "Ua.3"]
         },
         {
           "id": "double-opp",
           "name": "Double Lights (Adjacent Edges)",
-          "desc": "Double headlights without an opposite edge can only be a Z-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The Z-Perm is most distinctive.<br/><br/>U-Perm = 3 colours, Z-Perm = 2 or 4 colours.",
+          "desc": "Double headlights without an opposite edge can only be a Z-Perm or U-Perm.<br/><br/>The two edges are considered when distinguishing between cases. The Z-Perm is most distinctive.<br/><br/>U-Perms = 3 colours, Z-Perm = 2 or 4 colours.",
           "cases": ["Z.1", "Ua.2", "Z.2", "Ub.3"]
         },
         {
           "id": "lights+inpair",
           "name": "Headlights + 2-Bar (Inside)",
-          "desc": "Headlights accompanied by an inside 2-bar can only be a T-Perm or R-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.<br/><br/>T-Perm = 3 colours, R-Perm = 4 colours.",
+          "desc": "Headlights accompanied by an inside 2-bar can only be a T-Perm or R-Perm.<br/><br/>The edge between the headlights is considered when distinguishing between cases.<br/><br/>T-Perm = 3 colours, R-Perms = 4 colours.",
           "cases": ["T.1", "Ra.1", "T.4", "Rb.4"]
         },
         {
           "id": "lights+outpair",
           "name": "Headlights + 2-Bar (Outside)",
-          "desc": "Headlights accompanied by an outside 2-bar can only be an A-Perm or G-Perm.<br/><br/>The presence of a checker pattern (4 stickers) is considered when distinguishing between cases.<br/><br/>A-Perm = 3 colours, G-Perm = 4 colours.",
+          "desc": "Headlights accompanied by an outside 2-bar can only be an A-Perm or G-Perm.<br/><br/>The presence of a checker pattern (4 stickers) is considered when distinguishing between cases.<br/><br/>A-Perms = 3 colours, G-Perms = 4 colours.",
           "cases": ["Aa.1", "Ga.1", "Ab.4", "Gc.4"]
         },
         {
           "id": "lights+opp",
           "name": "Headlights (Opposite Edge)",
-          "desc": "Headlights containing an opposite edge can only be a G-Perm.<br/><br/>The edge adjacent to the headlights is considered when distinguishing between cases.<br/><br/>G-Perm = 3 or 4 colours.",
+          "desc": "Headlights containing an opposite edge can only be a G-Perm.<br/><br/>The edge adjacent to the headlights is considered when distinguishing between cases.<br/><br/>G-Perms = 3 or 4 colours.",
           "cases": ["Gb.1", "Gd.1", "Gd.4", "Gb.4"]
         },
         {
           "id": "lights+adj",
           "name": "Headlights (Adjacent Edge)",
-          "desc": "Headlights containing an adjacent edge can only be an R-Perm, G-Perm or A-Perm.<br/><br/>The presence of a checker pattern (4 or 5 stickers) is considered when distinguishing between cases.<br/><br/>R-Perm = 3 colours, A-Perm / G-Perm = 4 colours.",
+          "desc": "Headlights containing an adjacent edge can only be an R-Perm, G-Perm or A-Perm.<br/><br/>The presence of a checker pattern (4 or 5 stickers) is considered when distinguishing between cases.<br/><br/>R-Perms = 3 colours, A-Perms / G-Perms = 4 colours.",
           "cases": ["Gc.1", "Rb.1", "Ab.1", "Ga.4", "Ra.4", "Aa.4"]
         },
         {
@@ -1397,6 +1398,7 @@ var algSet = {
     {
       "id": "letters",
       "name": "Letters",
+      "desc": "The \"letters\" view simply lists all of the cases according to their name.",
       "groups":
       [
         {
@@ -1474,25 +1476,27 @@ var algSet = {
     {
       "id": "pieces",
       "name": "Pieces",
+      "desc": "The \"pieces\" view groups cases based on the type of pieces that they permute; i.e. edges and / or corners.",
       "groups":
       [
         {
           "id": "edges",
           "name": "Edges Only",
-		  "desc": "This group of cases is known as [EPLL].",
+          "desc": "This group of cases is known as [EPLL]. It includes the U-Perms, Z-Perm and H-Perm.<br/><br/>U-Perms = 3 colours, Z-Perm = 2 or 4 colours, H-Perm = 4 colours.",
           "wiki": "#Permutations_of_Edges_Only",
           "cases": ["Ua.1", "Ua.2", "Ua.3", "Ua.4", "Ub.1", "Ub.2", "Ub.3", "Ub.4", "Z.1", "Z.2", "H.1"]
         },
         {
           "id": "corners",
           "name": "Corners Only",
-		  "desc": "This group of cases is known as [CPLL].",
+          "desc": "This group of cases is known as [CPLL]. It includes the A-Perms, E-Perm and X-Perm (see above).",
           "wiki": "#Permutations_of_Corners_Only",
           "cases": ["Aa.1", "Aa.2", "Aa.3", "Aa.4", "Ab.1", "Ab.2", "Ab.3", "Ab.4", "E.1", "E.2"]
         },
         {
           "id": "both",
           "name": "Edges + Corners",
+          "desc": "This group of cases includes the F-Perm, G-Perms, J-Perms, R-Perms, T-Perm, V-Perm, Y-Perm and N-Perms.",
           "wiki": "#Permutations_of_Edges_and_Corners",
           "cases": ["F.1", "F.2", "F.3", "F.4",
           "Ga.1", "Ga.2", "Ga.3", "Ga.4","Gb.1", "Gb.2", "Gb.3", "Gb.4", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "Gd.1", "Gd.2", "Gd.3", "Gd.4",
@@ -1509,17 +1513,19 @@ var algSet = {
     {
       "id": "corners",
       "name": "Corners",
+      "desc": "The \"corners\" view groups cases based on the corner permutation; i.e. no swap, adjacent swap or diagonal swap.",
       "groups":
       [
         {
           "id": "noswap",
           "name": "No Corner Swap",
-		  "desc": "This group of cases is known as [EPLL].",
+          "desc": "This group of cases is known as [EPLL]. It includes the U-Perms, Z-Perm, H-Perm and skip.<br/><br/>U-Perms = 3 colours, Z-Perm = 2 or 4 colours, H-Perm = 4 colours.<br/><br/>The outer corners will always have adjacent sticker colours.",
           "cases": ["Ua.1", "Ua.2", "Ua.3", "Ua.4", "Ub.1", "Ub.2", "Ub.3", "Ub.4", "Z.1", "Z.2", "H.1", "Skip"]
         },
         {
           "id": "adjacent",
           "name": "Adjacent Corner Swap",
+          "desc": "This group of cases includes the A-Perms, F-Perm, G-Perms, J-Perms, R-Perms and T-Perm.<br/><br/>The outer corners will always have matching or opposite sticker colours.",
           "cases": ["Aa.1", "Aa.2", "Aa.3", "Aa.4", "Ab.1", "Ab.2", "Ab.3", "Ab.4", "F.1", "F.2", "F.3", "F.4",
 					"Ga.1", "Ga.2", "Ga.3", "Ga.4", "Gb.1", "Gb.2", "Gb.3", "Gb.4", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "Gd.1", "Gd.2", "Gd.3", "Gd.4",
 					"Ja.1", "Ja.2", "Ja.3", "Ja.4", "Jb.1", "Jb.2", "Jb.3", "Jb.4", "Ra.1", "Ra.2", "Ra.3", "Ra.4", "Rb.1", "Rb.2", "Rb.3", "Rb.4",
@@ -1528,6 +1534,7 @@ var algSet = {
         {
           "id": "diagonal",
           "name": "Diagonal Corner Swap",
+          "desc": "This group of cases includes the V-Perm, Y-Perm, E-Perm and N-Perms.<br/><br/>The outer corners will always have adjacent sticker colours.",
           "cases": ["V.1", "V.2", "V.3", "V.4", "Y.1", "Y.2", "Y.3", "Y.4", "E.1", "E.2", "Na.1", "Nb.1"]
         },
 	  ]
@@ -1535,17 +1542,19 @@ var algSet = {
     {
       "id": "edges",
       "name": "Edges",
+      "desc": "The \"edges\" view groups cases based on the edge permutation; i.e. no swap, adjacent swap or opposite swap.",
       "groups":
       [
         {
           "id": "noswap",
           "name": "No Edge Swap",
-		  "desc": "This group of cases is known as [CPLL].",
+          "desc": "This group of cases is known as [CPLL]. It includes the A-Perms, E-Perm, X-Perm and skip.",
           "cases": ["Aa.1", "Aa.2", "Aa.3", "Aa.4", "Ab.1", "Ab.2", "Ab.3", "Ab.4", "E.1", "E.2", "H.1", "Skip"]
         },
         {
           "id": "adjacent",
           "name": "Adjacent Edge Swap",
+          "desc": "This group of cases includes the G-Perms, J-Perms, R-Perms, U-Perms, V-Perm and Y-Perm.",
           "cases": ["Ga.1", "Ga.2", "Ga.3", "Ga.4", "Gb.1", "Gb.2", "Gb.3", "Gb.4", "Gc.1", "Gc.2", "Gc.3", "Gc.4", "Gd.1", "Gd.2", "Gd.3", "Gd.4",
 					"Ja.1", "Ja.2", "Ja.3", "Ja.4", "Jb.1", "Jb.2", "Jb.3", "Jb.4", "Ra.1", "Ra.2", "Ra.3", "Ra.4", "Rb.1", "Rb.2", "Rb.3", "Rb.4",
 					"Ua.1", "Ua.2", "Ua.3", "Ua.4", "Ub.1", "Ub.2", "Ub.3", "Ub.4", "V.1", "V.2", "V.3", "V.4", "Y.1", "Y.2", "Y.3", "Y.4"]
@@ -1553,6 +1562,7 @@ var algSet = {
         {
           "id": "opposite",
           "name": "Opposite Edge Swap",
+          "desc": "This group of cases includes the F-Perm, T-Perm, Z-Perm and N-Perms.",
           "cases": ["F.1", "F.2", "F.3", "F.4", "T.1", "T.2", "T.3", "T.4", "Z.1", "Z.2", "Na.1", "Nb.1"]
         },
 	  ]
@@ -1560,6 +1570,7 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
+      "desc": "The \"grid\" view arranges all of the cases by corner permutation (columns) and edge permutation (rows).<br/><br/><strong>Note:</strong> Applying an H-Perm to any case in the grid below will move you up / down exactly one line. Cool eh?",
       "headers": ["Corners<br/>Solved<br/>(EPLL)", "Adjacent<br/>Corner<br/>Swap (BR)", "Adjacent<br/>Corner<br/>Swap (FR)", "Adjacent<br/>Corner<br/>Swap (FL)", "Adjacent<br/>Corner<br/>Swap (BL)", "Diagonal<br/>Corner<br/>Swap"],
       "rows":
       [
