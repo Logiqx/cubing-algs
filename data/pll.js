@@ -910,7 +910,7 @@ var algSet = {
     {
       "id": "letters",
       "name": "Letters",
-      "desc": "The \"letters\" view simply lists all of the cases according to their name.",
+      "desc": "The \"letters\" view simply lists all of the cases sorted alphabetically.",
       "groups":
       [
         {

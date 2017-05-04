@@ -1533,7 +1533,7 @@ var algSet = {
     {
       "id": "orientation",
       "name": "Orientation",
-      "desc": "The \"orientation\" view groups cases based on the [OCLL]; S / Sune, L / Bowtie, U / Headlights, etc.",
+      "desc": "The \"orientation\" view groups cases based on the corner orientation ([OCLL]); S / Sune, L / Bowtie, U / Headlights, etc.",
       "groups":
       [
         {
@@ -1615,7 +1615,7 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
-      "desc": "The \"grid\" view arranges all of the cases by corner permutation (columns) and [OCLL] (rows).",
+      "desc": "The \"grid\" view arranges all of the cases by corner permutation (columns) and corner orientation / [OCLL] (rows).",
       "headers": ["2-Gen", "Swap-B", "Swap-R", "Swap-F", "Swap-L", "Diag"],
       "rows":
       [
