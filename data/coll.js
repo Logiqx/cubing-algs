@@ -1533,24 +1533,25 @@ var algSet = {
     {
       "id": "orientation",
       "name": "Orientation",
+      "desc": "The \"orientation\" view groups cases based on the [OCLL]; i.e. no swap, adjacent swap or diagonal swap.",
       "groups":
       [
         {
           "id": "oriented",
           "name": "O / Oriented",
-		  "desc": "I use a standard [PLL] algorithm when I encounter these [COLL] cases, instead of using [COLL] + [EPLL].",
+          "desc": "I use a standard [PLL] algorithm when I encounter these [COLL] cases, instead of using [COLL] + [EPLL].",
           "cases": ["A1", null, "A3", null, null, "A6"]
         },
         {
           "id": "antisune",
           "name": "AS / Anti-Sune",
-		  "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
+          "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
           "cases": ["B1", "B2", "B3", "B4", "B5", "B6"]
         },
         {
           "id": "sune",
           "name": "S / Sune",
-		  "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
+          "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
           "cases": ["C1", "C2", "C3", "C4", "C5", "C6"]
         },
         {
@@ -1583,12 +1584,13 @@ var algSet = {
     {
       "id": "permutation",
       "name": "Permutation",
+      "desc": "The \"permutation\" view groups cases based on the corner permutation; i.e. no swap, adjacent swap or diagonal swap.",
       "groups":
       [
         {
           "id": "noswap",
           "name": "No Swap",
-		  "desc": "The \"no swap\" cases can be solved using the easiest / fastest [RU] algorithms from [2GLL].",
+          "desc": "The \"no swap\" cases can be solved using the easiest / fastest [RU] algorithms from [2GLL].",
           "cases": ["A1", "B1", "C1", "D1", "E1", "F1", "G1", "H1"]
         },
         {
@@ -1613,25 +1615,26 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
+      "desc": "The \"grid\" view arranges all of the cases by corner permutation (columns) and [OCLL] (rows).",
       "headers": ["2-Gen", "Swap-B", "Swap-R", "Swap-F", "Swap-L", "Diag"],
       "rows":
       [
         {
           "id": "oriented",
           "name": "O / Oriented",
-		  "desc": "I use a standard [PLL] algorithm when I encounter these [COLL] cases, instead of using [COLL] + [EPLL].",
+          "desc": "I use a standard [PLL] algorithm when I encounter these [COLL] cases, instead of using [COLL] + [EPLL].",
           "cases": ["A1", null, "A3", null, null, "A6"]
         },
         {
           "id": "antisune",
           "name": "AS / Anti-Sune",
-		  "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
+          "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
           "cases": ["B1", "B2", "B3", "B4", "B5", "B6"]
         },
         {
           "id": "sune",
           "name": "S / Sune",
-		  "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
+          "desc": "I use a standard [OCLL] algorithm when I encounter these [COLL] cases, followed by a standard [PLL] algorithm.",
           "cases": ["C1", "C2", "C3", "C4", "C5", "C6"]
         },
         {
