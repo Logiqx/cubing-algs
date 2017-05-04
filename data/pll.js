@@ -910,6 +910,7 @@ var algSet = {
     {
       "id": "letters",
       "name": "Letters",
+      "desc": "The \"letters\" view simply lists all of the cases according to their name.",
       "groups":
       [
         {
@@ -987,19 +988,20 @@ var algSet = {
     {
       "id": "pieces",
       "name": "Pieces",
+      "desc": "The \"pieces\" view groups cases based on the type of pieces that they permute; i.e. edges and / or corners.",
       "groups":
       [
         {
           "id": "edges",
           "name": "Edges Only",
-		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP]. All of these cases can be solved using [RU] or [MU] algorithms.",
+          "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP]. All of these cases can be solved using [RU] or [MU] algorithms.",
           "wiki": "#Permutations_of_Edges_Only",
           "cases": ["Ua", "Ub", "Z", "H"]
         },
         {
           "id": "corners",
           "name": "Corners Only",
-		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [commutator]s and [conjugate]s.",
+          "desc": "This group of cases is known as [CPLL]. They are generally solved using [commutator]s and [conjugate]s.",
           "wiki": "#Permutations_of_Corners_Only",
           "cases": ["Aa", "Ab", "E"]
         },
@@ -1019,12 +1021,13 @@ var algSet = {
     {
       "id": "corners",
       "name": "Corners",
+      "desc": "The \"corners\" view groups cases based on the corner permutation; i.e. no swap, adjacent swap or diagonal swap.",
       "groups":
       [
         {
           "id": "noswap",
           "name": "No Corner Swap",
-		  "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP]. All of these cases can be solved using [RU] or [MU] algorithms.",
+          "desc": "This group of cases is known as [EPLL]. Advanced [CFOP] users may try to force these cases using [COLL] or [OLLCP]. All of these cases can be solved using [RU] or [MU] algorithms.",
           "cases": ["Ua", "Ub", "Z", "H", "Skip"]
         },
         {
@@ -1035,7 +1038,7 @@ var algSet = {
         {
           "id": "diagonal",
           "name": "Diagonal Corner Swap",
-		  "desc": "Advanced [CFOP] users may try to avoid theses cases using [COLL] or [OLLCP].",
+          "desc": "Advanced [CFOP] users may try to avoid theses cases using [COLL] or [OLLCP].",
           "cases": ["V", "Y", "E", "Na", "Nb"]
         },
 	  ]
@@ -1043,12 +1046,13 @@ var algSet = {
     {
       "id": "edges",
       "name": "Edges",
+      "desc": "The \"edges\" view groups cases based on the edge permutation; i.e. no swap, adjacent swap or opposite swap.",
       "groups":
       [
         {
           "id": "noswap",
           "name": "No Edge Swap",
-		  "desc": "This group of cases is known as [CPLL]. They are generally solved using [commutator]s and [conjugate]s.",
+          "desc": "This group of cases is known as [CPLL]. They are generally solved using [commutator]s and [conjugate]s.",
           "cases": ["Aa", "Ab", "E", "H", "Skip"]
         },
         {
@@ -1066,6 +1070,7 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
+      "desc": "The \"grid\" view arranges all of the cases by corner permutation (columns) and edge permutation (rows).<br/><br/><strong>Note:</strong> This grid is not quite so interesting as the grids for 2-sided [PLL] recognition, [COLL] or [OLL] as this one is quite sparse.",
       "headers": ["Corners<br/>Solved<br/>(EPLL)", "Adjacent<br/>Corner<br/>Swap", "Adjacent<br/>Corner<br/>Swap", "Adjacent<br/>Corner<br/>Swap", "Adjacent<br/>Corner<br/>Swap", "Diagonal<br/>Corner<br/>Swap"],
       "rows":
       [
