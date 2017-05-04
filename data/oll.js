@@ -2319,7 +2319,7 @@ var algSet = {
     {
       "id": "corners",
       "name": "Corners",
-      "desc": "The \"corners\" view groups cases based on the [OCLL]; e.g. S / Sune, L / Bowtie, U / Headlights, etc.",
+      "desc": "The \"corners\" view groups cases based on the [OCLL]; S / Sune, L / Bowtie, U / Headlights, etc.",
       "groups":
       [
         {
@@ -2372,6 +2372,7 @@ var algSet = {
     },
     {
       "id": "edges",
+      "desc": "The \"edges\" view groups cases based on the edges; cross cases, dot cases, line cases, etc.",
       "name": "Edges",
       "groups":
       [
@@ -2411,6 +2412,7 @@ var algSet = {
     {
       "id": "numeric",
       "name": "Numeric",
+      "desc": "The \"numeric\" view simply lists all of the cases sorted numerically.",
       "groups":
       [
         {
@@ -2428,6 +2430,7 @@ var algSet = {
     {
       "id": "grid",
       "name": "Grid",
+      "desc": "The \"grid\" view arranges all of the cases by edge orientation (columns) and [OCLL] (rows).",
       "headers": ["OCLL", "Flip-LB", "Flip-LF", "Flip-RB", "Flip-RF", "Flip-FB", "Flip-LR", "Flip-All"],
       "rows":
       [

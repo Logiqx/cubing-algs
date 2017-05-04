@@ -1533,7 +1533,7 @@ var algSet = {
     {
       "id": "orientation",
       "name": "Orientation",
-      "desc": "The \"orientation\" view groups cases based on the [OCLL]; e.g. S / Sune, L / Bowtie, U / Headlights, etc.",
+      "desc": "The \"orientation\" view groups cases based on the [OCLL]; S / Sune, L / Bowtie, U / Headlights, etc.",
       "groups":
       [
         {
