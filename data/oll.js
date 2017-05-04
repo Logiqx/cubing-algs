@@ -2201,110 +2201,111 @@ var algSet = {
     {
       "id": "shapes",
       "name": "Shapes",
+      "desc": "The \"shapes\" view groups cases based on the shape on top.",
       "groups":
       [
         {
           "id": "alledges",
           "name": "All Edges Oriented",
-		  "desc": "These are the 7 [OCLL] cases, offering the chance to use [COLL]. Advanced [CFOP] users may try to force these cases using [VHLS].",
+          "desc": "These are the 7 [OCLL] cases, offering the chance to use [COLL]. Advanced [CFOP] users may try to force these cases using [VHLS].",
           "wiki": "#All_edges_flipped_correctly",
           "cases": ["26", "27", "25", "23", "24", "22", "21"]
         },
         {
           "id": "noedges",
           "name": "No Edges Oriented",
-		  "desc": "These are known as the \"dot\" cases. Competent [CFOP] users will often avoid them using partial edge control - e.g. [sledgehammer].",
+          "desc": "These are known as the \"dot\" cases. Competent [CFOP] users will often avoid them using partial edge control - e.g. [sledgehammer].",
           "wiki": "#No_edges_flipped_correctly",
           "cases": ["4", "3", "17", "18", "19", "2", "1"]
         },
         {
           "id": "allcorners",
           "name": "All Corners Oriented",
-		  "desc": "These are the 3 [EOLL] cases, offering the chance to use [OLLCP-A]. Most of the algorithms below also preserve the corner permutation.",
+          "desc": "These are the 3 [EOLL] cases, offering the chance to use [OLLCP-A]. Most of the algorithms below also preserve the corner permutation.",
           "wiki": "#All_Corners_Oriented",
           "cases": ["28", "57", "20"]
         },
         {
           "id": "pshapes",
           "name": "\"P\" Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#.22P.22_shapes",
           "cases": ["43", "44", "31", "32"]
         },
         {
           "id": "wshapes",
           "name": "\"W\" Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#.22W.22_shapes",
           "cases": ["38", "36"]
         },
         {
           "id": "lshapes",
           "name": "\"L\" Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#.22L.22_shapes",
           "cases": ["50", "49", "47", "48", "53", "54"]
         },
         {
           "id": "cshapes",
           "name": "\"C\" Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#.22C.22_shapes",
           "cases": ["46", "34"]
         },
         {
           "id": "tshapes",
           "name": "\"T\" Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#.22T.22_shapes",
           "cases": ["45", "33"]
         },
         {
           "id": "ishapes",
           "name": "\"I\" Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#.22I.22_shapes",
           "cases": ["51", "52", "56", "55"]
         },
         {
           "id": "squares",
           "name": "Square Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#Square_shapes",
           "cases": ["6", "5"]
         },
         {
           "id": "bigbolts",
           "name": "Big Lightning Bolt Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#Big_lightning_bolt_shapes",
           "cases": ["39", "40"]
         },
         {
           "id": "smallbolts",
           "name": "Small Lightning Bolt Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#Small_lightning_bolt_shapes",
           "cases": ["12", "8", "11", "7"]
         },
         {
           "id": "fishes",
           "name": "Fish Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#Fish_shapes",
           "cases": ["9", "10", "37", "35"]
         },
         {
           "id": "knightmoves",
           "name": "Knight Move Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#Knight_move_shapes",
           "cases": ["14", "16", "13", "15"]
         },
         {
           "id": "awkwards",
           "name": "Awkward Shapes",
-		  "desc": "",
+          "desc": "",
           "wiki": "#Awkward_shapes",
           "cases": ["42", "41", "29", "30"]
         },
@@ -2318,12 +2319,13 @@ var algSet = {
     {
       "id": "corners",
       "name": "Corners",
+      "desc": "The \"corners\" view groups cases based on the [OCLL]; e.g. S / Sune, L / Bowtie, U / Headlights, etc.",
       "groups":
       [
         {
           "id": "oriented",
           "name": "All Corners Oriented",
-		  "desc": "These are the 3 [EOLL] cases, offering the chance to use [OLLCP-A]. Most of the algorithms below also preserve the corner permutation.",
+          "desc": "These are the 3 [EOLL] cases, offering the chance to use [OLLCP-A]. Most of the algorithms below also preserve the corner permutation.",
           "cases": ["28", "57", "20"]
         },
         {
@@ -2376,13 +2378,13 @@ var algSet = {
         {
           "id": "crosses",
           "name": "Cross Cases",
-		  "desc": "These are the 7 [OCLL] cases, offering the chance to use [COLL]. Advanced [CFOP] users may try to force these cases using [VHLS].",
+          "desc": "These are the 7 [OCLL] cases, offering the chance to use [COLL]. Advanced [CFOP] users may try to force these cases using [VHLS].",
           "cases": ["26", "27", "25", "23", "24", "22", "21"]
         },
         {
           "id": "dots",
           "name": "Dot Cases",
-		  "desc": "These are known as the \"dot\" cases. Competent [CFOP] users will often avoid them using partial edge control - e.g. [sledgehammer].",
+          "desc": "These are known as the \"dot\" cases. Competent [CFOP] users will often avoid them using partial edge control - e.g. [sledgehammer].",
           "cases": ["4", "3", "17", "18", "19", "2", "1", "20"]
         },
         {
