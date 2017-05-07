@@ -13,7 +13,7 @@ function getDisplayName(caseObj)
 		id = id.substr(0, dotIdx);
 	}
 	// No need to prefix with the id if it appears in the description
-	if (!caseObj.name.includes(id))
+	if (!caseObj.name.indexOf(id) >= 0)
 	{
 		dispName += id + " - ";
 	}
