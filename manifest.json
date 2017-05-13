@@ -1,5 +1,8 @@
 {
     "name": "Mike's Cube Algs",
+    "short_name": "Cube Algs",
+    "start_url": "/algs",
+    "display": "standalone",
     "icons": [
         {
             "src": "/android-chrome-36x36.png",
@@ -51,7 +54,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "start_url": "/algs",
-    "display": "standalone"
+    ]
 }
