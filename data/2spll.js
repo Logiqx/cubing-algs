@@ -37,6 +37,7 @@ var algSet = {
     {
       "id": "Aa.2",
       "name": "Aa-Perm",
+      "desc": "Clearly an A-Perm because of the 2x2 block at the front and the opposite corner sticker.<br/><br/>Easily recognisable as Ab-Perm because the opposite corner sticker is on the right.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-2",
@@ -44,7 +45,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Right corner is the opposite of the block",
           "desc": "Aa = 3 colours, V = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -54,6 +55,7 @@ var algSet = {
     {
       "id": "Aa.3",
       "name": "Aa-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Aa-Perm because of the \"corner + edge\" pair at the back-left and the opposite stickers at the front-right.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-3",
@@ -61,7 +63,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Opposite stickers at the front-right",
           "desc": "Aa = 4 colours, Gd = 3 colours",
           "status": 1,
           "uses": ["2H"]
@@ -107,6 +109,7 @@ var algSet = {
     {
       "id": "Ab.2",
       "name": "Ab-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ab-Perm because of the \"corner + edge\" pair at the back-right and the opposite stickers at the front-left.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-2",
@@ -114,7 +117,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Opposite stickers at the front-left",
           "desc": "Ab = 4 colours, Gb = 3 colours",
           "status": 1,
           "uses": ["2H"]
@@ -124,6 +127,7 @@ var algSet = {
     {
       "id": "Ab.3",
       "name": "Ab-Perm",
+      "desc": "Clearly an A-Perm because of the 2x2 block at the front and the opposite corner sticker.<br/><br/>Easily recognisable as Ab-Perm because the opposite corner sticker is on the left.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-3",
@@ -131,7 +135,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Left corner is the opposite of the block",
           "desc": "Ab = 3 colours, V = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -167,7 +171,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Y or V",
+          "alg": "Malformed pair at front-left",
           "desc": "Learn the features of E, Y and V",
           "status": 1,
           "uses": ["2H"]
@@ -185,7 +189,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Y or V",
+          "alg": "Malformed pair at front-right",
           "desc": "Learn the features of E, Y and V",
           "status": 1,
           "uses": ["2H"]
@@ -353,6 +357,7 @@ var algSet = {
     {
       "id": "Gb.2",
       "name": "Gb-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gb-Perm because of the \"corner + edge\" pair at the back-right and the opposite stickers at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-2",
@@ -360,7 +365,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Opposite stickers at the back-left / malformed pair at front-left",
           "desc": "Gb = 3 colours, Ab / V = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -510,6 +515,7 @@ var algSet = {
     {
       "id": "Gd.3",
       "name": "Gd-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gd-Perm because of the \"corner + edge\" pair at the back-left and the opposite stickers at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-3",
@@ -517,7 +523,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Opposite stickers at the back-right / malformed pair at front-right",
           "desc": "Gd = 3 colours, Aa / V = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -581,6 +587,7 @@ var algSet = {
     {
       "id": "Ja.2",
       "name": "Ja-Perm",
+      "desc": "Clearly a J-Perm because of the inside and outside 2-bars, one of which is connected to an opposite corner.<br/><br/>Easily recognisable as Ja-Perm because the 2-bars are on the left.",
       "wiki": "#J_Permutation_:_a",
       "algdb": "Ja",
       "image": "PLL-Ja-2",
@@ -588,7 +595,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Opposite corner sticker on the right",
           "desc": "Ja = 3 colours, Nb = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -598,6 +605,7 @@ var algSet = {
     {
       "id": "Ja.3",
       "name": "Ja-Perm",
+      "desc": "Clearly a J-Perm because of the inside and outside 2-bars, one of which is connected to an opposite corner.<br/><br/>Easily recognisable as Ja-Perm because the 2-bars are on the left.",
       "wiki": "#J_Permutation_:_a",
       "algdb": "Ja",
       "image": "PLL-Ja-3",
@@ -605,7 +613,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Opposite corner sticker on the front-left",
           "desc": "Ja = 3 colours, Nb = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -651,6 +659,7 @@ var algSet = {
     {
       "id": "Jb.2",
       "name": "Jb-Perm",
+      "desc": "Clearly a J-Perm because of the inside and outside 2-bars, one of which is connected to an opposite corner.<br/><br/>Easily recognisable as Jb-Perm because the 2-bars are on the right.",
       "wiki": "#J_Permutation_:_b",
       "algdb": "Jb",
       "image": "PLL-Jb-2",
@@ -658,7 +667,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Opposite corner sticker on the front-right",
           "desc": "Jb = 3 colours, Na = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -668,6 +677,7 @@ var algSet = {
     {
       "id": "Jb.3",
       "name": "Jb-Perm",
+      "desc": "Clearly a J-Perm because of the inside and outside 2-bars, one of which is connected to an opposite corner.<br/><br/>Easily recognisable as Jb-Perm because the 2-bars are on the right.",
       "wiki": "#J_Permutation_:_b",
       "algdb": "Jb",
       "image": "PLL-Jb-3",
@@ -675,7 +685,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Opposite corner sticker on the left",
           "desc": "Jb = 3 colours, Na = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -711,7 +721,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Opposite corner sticker on the front-right and back-left",
           "desc": "Na = 4 colours, Jb = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -729,7 +739,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Opposite corner sticker on the front-left and back-right",
           "desc": "Nb = 4 colours, Ja = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -1101,7 +1111,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Outer corners are the opposites of the block",
           "desc": "V = 4 colours, Aa / Ab = 3 colours",
           "status": 1,
           "uses": ["2H"]
@@ -1119,7 +1129,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Almost checker pattern on right (4 stickers)",
           "desc": "V = 4 colours, Gd = 3 colours",
           "status": 1,
           "uses": ["2H"]
@@ -1137,7 +1147,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for E",
+          "alg": "Malformed 2x2 block (checker pattern)",
           "desc": "Learn the features of E and V",
           "status": 1,
           "uses": ["2H"]
@@ -1155,7 +1165,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Almost checker pattern on left (4 stickers)",
           "desc": "V = 4 colours, Gb = 3 colours",
           "status": 1,
           "uses": ["2H"]
@@ -1173,7 +1183,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Easy",
+          "alg": "Outside 2-bars on left and right",
           "desc": "Y = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -1209,7 +1219,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for E",
+          "alg": "\"Outer\" checker pattern (4 stickers)",
           "desc": "Learn the features of E and Y",
           "status": 1,
           "uses": ["2H"]
@@ -1354,43 +1364,43 @@ var algSet = {
         {
           "id": "sym_pairs",
           "name": "Double 2-Bar (Symmetrical)",
-          "desc": "Symmetrical 2-bars and 2x2 blocks can only be a Y-Perm, A-Perm or V-Perm.<br/><br/>The outer corners are considered when distinguishing between cases. The Y-Perm and V-Perm are most distinctive.",
+          "desc": "Symmetrical 2-bars and 2x2 blocks can only be a Y-Perm, A-Perm or V-Perm.<br/><br/>The outer corners are considered when distinguishing between cases. The Y-Perm and V-Perm are most distinctive.<br/><br/>A-Perms = 3 colours, Y-Perm / V-Perm = 4 colours.",
           "cases": ["Y.1", "Ab.3", "V.1", "Aa.2"]
         },
         {
           "id": "asy_pairs",
           "name": "Double 2-Bar (Asymmetrical)",
-          "desc": "Asymmetrical 2-bars can only be a J-Perm or N-Perm.<br/><br/>The relationships of the corner stickers are considered when distinguishing between cases.",
+          "desc": "Asymmetrical 2-bars can only be a J-Perm or N-Perm.<br/><br/>The relationships of the corner stickers are considered when distinguishing between cases.<br/><br/>J-Perms = 3 colours, N-Perms = 4 colours.",
           "cases": ["Ja.3", "Nb.1", "Ja.2", "Jb.3", "Na.1", "Jb.2"]
         },
         {
           "id": "outpair+opp",
           "name": "Outside 2-Bar (Opposite Corner)",
-          "desc": "Outside 2-bars connected to an opposite corner can only be a V-Perm, G-Perm or A-Perm.<br/><br/>The side adjacent to the bar / pair is considered when distinguishing between cases.",
+          "desc": "Outside 2-bars connected to an opposite corner can only be a V-Perm, G-Perm or A-Perm.<br/><br/>The side adjacent to the 2-bar / pair is considered when distinguishing between cases.<br/><br/>G-Perms = 3 colours, V-Perms / A-Perms = 4 colours.",
           "cases": ["V.2", "Gd.3", "Aa.3", "V.4", "Gb.2", "Ab.2"]
         },
         {
           "id": "outpair+adj",
           "name": "Outside 2-Bar (Adjacent Corner)",
-          "desc": "Outside 2-bars connected to an adjacent corner can only be an R-Perm or T-Perm.<br/><br/>The edge adjacent to the bar / pair is considered when distinguishing between cases.",
+          "desc": "Outside 2-bars connected to an adjacent corner can only be an R-Perm or T-Perm.<br/><br/>The edge adjacent to the 2-bar / pair is considered when distinguishing between cases.<br/><br/>R-Perms = 3 colours, T-Perm = 4 colours.",
           "cases": ["Rb.3", "T.3", "Ra.2", "T.2"]
         },
         {
           "id": "inpair",
           "name": "Inside 2-Bar",
-          "desc": "Inside 2-bars can only be a G-Perm or Y-Perm.<br/><br/>The relationships of the corner stickers are considered when distinguishing between cases.",
+          "desc": "Inside 2-bars can only be a G-Perm or Y-Perm.<br/><br/>The relationships of the corner stickers are considered when distinguishing between cases.<br/><br/>G-Perms / Y-Perm = 4 colours.",
           "cases": ["Gb.3", "Y.2", "Ga.2", "Gd.2", "Y.4", "Gc.3"]
         },
         {
           "id": "misc+ends",
           "name": "Miscellaneous with Bookends",
-          "desc": "The miscellaneous cases with matching bookends can only be an F-Perm, R-Perm or G-Perm.<br/><br/>The checker pattern in the F-Perm (malformed 2x2) distinguishes it from the R-Perms and G-Perms (malformed pairs).",
+          "desc": "The miscellaneous cases with matching bookends can only be an F-Perm, R-Perm or G-Perm.<br/><br/>The checker pattern in the F-Perm (malformed 2x2) distinguishes it from the R-Perms and G-Perms (malformed pairs).<br/><br/>F-Perm = 3 colours, R-Perms / G-Perms = 4 colours.",
           "cases": ["Ra.3", "F.3", "Ga.3", "Rb.2", "F.2", "Gc.2"]
         },
         {
           "id": "misc-ends",
           "name": "Miscellaneous without Bookends",
-          "desc": "The miscellaneous cases without matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm.",
+          "desc": "The miscellaneous cases without matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm.<br/><br/>E-Perm / V-Perm / Y-Perm = 4 colours.",
           "cases": ["E.1", "V.3", "E.2", "Y.3"]
         }
     ]
