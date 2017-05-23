@@ -55,7 +55,7 @@ var algSet = {
     {
       "id": "Aa.3",
       "name": "Aa-Perm",
-      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Aa-Perm because of the \"corner + edge\" pair at the back-left and the opposite stickers at the front-right.",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Aa-Perm because of the 2-bar at the back-left and the opposite stickers at the front-right.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "Aa",
       "image": "PLL-Aa-3",
@@ -109,7 +109,7 @@ var algSet = {
     {
       "id": "Ab.2",
       "name": "Ab-Perm",
-      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ab-Perm because of the \"corner + edge\" pair at the back-right and the opposite stickers at the front-left.",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ab-Perm because of the 2-bar at the back-right and the opposite stickers at the front-left.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "Ab",
       "image": "PLL-Ab-2",
@@ -287,6 +287,7 @@ var algSet = {
     {
       "id": "Ga.2",
       "name": "Ga-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ga-Perm because of the 2-bar at the front-left and the edge on the right being an adjacent of the back-left corner.",
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-2",
@@ -294,7 +295,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Edge on the right is an adjacent of the back-left corner",
           "desc": "Y / Ga = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -357,7 +358,7 @@ var algSet = {
     {
       "id": "Gb.2",
       "name": "Gb-Perm",
-      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gb-Perm because of the \"corner + edge\" pair at the back-right and the opposite stickers at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gb-Perm because of the 2-bar at the back-right and the opposite stickers at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-2",
@@ -365,7 +366,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opposite stickers at the back-left / malformed pair at front-left",
+          "alg": "Opposite stickers at the back-left",
           "desc": "Gb = 3 colours, Ab / V = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -375,6 +376,7 @@ var algSet = {
     {
       "id": "Gb.3",
       "name": "Gb-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gb-Perm because of the 2-bar at the front-left and the edge on the right being the opposite of the front corner.<br/><br/>You might find the corner on the left useful during recognition.",
       "wiki": "#G_Permutation_:_b",
       "algdb": "Gb",
       "image": "PLL-Gb-3",
@@ -382,7 +384,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Edge on the right is the opposite of the front-right corner",
           "desc": "Y / Gb = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -445,6 +447,7 @@ var algSet = {
     {
       "id": "Gc.3",
       "name": "Gc-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gc-Perm because of the 2-bar at the front-right and the edge on the left being an adjacent of the back-right corner.",
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-3",
@@ -452,7 +455,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Edge on the left is an adjacent of the back-right corner",
           "desc": "Y / Gc = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -498,6 +501,7 @@ var algSet = {
     {
       "id": "Gd.2",
       "name": "Gd-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gd-Perm because of the 2-bar at the front-right and the edge on the left being the opposite of the front corner.<br/><br/>You might find the corner on the right useful during recognition.",
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-2",
@@ -505,7 +509,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Edge on the left is the opposite of the front-left corner",
           "desc": "Y / Gd = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -515,7 +519,7 @@ var algSet = {
     {
       "id": "Gd.3",
       "name": "Gd-Perm",
-      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gd-Perm because of the \"corner + edge\" pair at the back-left and the opposite stickers at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gd-Perm because of the 2-bar at the back-left and the opposite stickers at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#G_Permutation_:_d",
       "algdb": "Gd",
       "image": "PLL-Gd-3",
@@ -523,7 +527,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opposite stickers at the back-right / malformed pair at front-right",
+          "alg": "Opposite stickers at the back-right",
           "desc": "Gd = 3 colours, Aa / V = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -713,7 +717,7 @@ var algSet = {
     {
       "id": "Na.1",
       "name": "Na-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Na-Perm because of the \"corner + edge\" pairs on the right and opposite corner colours.<br/><br/>Na-perm looks the same from all four possible angles.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Na-Perm because of the 2-bars on the right and opposite corner colours.<br/><br/>Na-perm looks the same from all four possible angles.",
       "wiki": "#N_Permutation_:_a",
       "algdb": "Na",
       "image": "PLL-Na-1",
@@ -731,7 +735,7 @@ var algSet = {
     {
       "id": "Nb.1",
       "name": "Nb-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Nb-Perm because of the \"corner + edge\" pairs on the left and opposite corner colours.<br/><br/>Nb-perm looks the same from all four possible angles.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Nb-Perm because of the 2-bars on the left and opposite corner colours.<br/><br/>Nb-perm looks the same from all four possible angles.",
       "wiki": "#N_Permutation_:_b",
       "algdb": "Nb",
       "image": "PLL-Nb-1",
@@ -767,6 +771,7 @@ var algSet = {
     {
       "id": "Ra.2",
       "name": "Ra-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ra-Perm because of the 2-bar at the back-left and the edge on the right matching the front-left corner.<br/><br/>You might find the \"malformed\" pair at the front-right   is useful during recognition.",
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-2",
@@ -774,7 +779,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for T",
+          "alg": "Edge on the right matches the front-left corner",
           "desc": "Ra = 3 colours, T = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -854,6 +859,7 @@ var algSet = {
     {
       "id": "Rb.3",
       "name": "Rb-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Rb-Perm because of the 2-bar at the back-right and the edge on the left matching the front-right corner.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-3",
@@ -861,7 +867,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for T",
+          "alg": "Edge on the left matches the front-right corner",
           "desc": "Rb = 3 colours, T = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -907,6 +913,7 @@ var algSet = {
     {
       "id": "T.2",
       "name": "T-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as T-Perm because of the 2-bar at the back-left and the edge on the right being the opposite of the front-left corner.",
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-2",
@@ -914,7 +921,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ra",
+          "alg": "Edge on the right is the opposite of the front-left corner",
           "desc": "T = 4 colours, Ra = 3 colours",
           "status": 1,
           "uses": ["2H"],
@@ -924,6 +931,7 @@ var algSet = {
     {
       "id": "T.3",
       "name": "T-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as T-Perm because of the 2-bar at the back-right and the edge on the left being the opposite of the front-right corner.",
       "wiki": "#T_Permutation",
       "algdb": "T",
       "image": "PLL-T-3",
@@ -931,7 +939,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Rb",
+          "alg": "Edge on the left is the opposite of the front-right corner",
           "desc": "T = 4 colours, Rb = 3 colours",
           "status": 1,
           "uses": ["2H"],
@@ -1121,7 +1129,7 @@ var algSet = {
     {
       "id": "V.2",
       "name": "V-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"corner + edge\" pair at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the 2-bar at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-2",
@@ -1157,7 +1165,7 @@ var algSet = {
     {
       "id": "V.4",
       "name": "V-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"corner + edge\" pair at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the 2-bar at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#V_Permutation",
       "algdb": "V",
       "image": "PLL-V-4",
@@ -1183,7 +1191,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Outside 2-bars on left and right",
+          "alg": "Outside 2-bars on the left and right",
           "desc": "Y = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -1193,7 +1201,7 @@ var algSet = {
     {
       "id": "Y.2",
       "name": "Y-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as Y-Perm because of the \"corner + edge\" pair at the front-left.<br/><br/>The back-left corner makes this case slightly more distinctive due to the opposite colour.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as Y-Perm because of the 2-bar at the front-left and the edge on the right matching the back-left corner.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-2",
@@ -1201,7 +1209,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Edge on the right matches the back-left corner",
           "desc": "Y / Ga / Gb = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -1229,7 +1237,7 @@ var algSet = {
     {
       "id": "Y.4",
       "name": "Y-Perm",
-      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as Y-Perm because of the \"corner + edge\" pair at the front-right.<br/><br/>The back-right corner makes this case slightly more distinctive due to the opposite colour.",
+      "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as Y-Perm because of the 2-bar at the front-right and the edge on the left matching the back-right corner.",
       "wiki": "#Y_Permutation",
       "algdb": "Y",
       "image": "PLL-Y-4",
@@ -1237,7 +1245,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Edge on the left matches the back-right corner",
           "desc": "Y / Gc / Gd = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -1376,19 +1384,19 @@ var algSet = {
         {
           "id": "outpair+opp",
           "name": "Outside 2-Bar (Opposite Corner)",
-          "desc": "Outside 2-bars connected to an opposite corner can only be a V-Perm, G-Perm or A-Perm.<br/><br/>The side adjacent to the 2-bar / pair is considered when distinguishing between cases.<br/><br/>G-Perms = 3 colours, V-Perms / A-Perms = 4 colours.",
+          "desc": "Outside 2-bars connected to an opposite corner can only be a V-Perm, G-Perm or A-Perm.<br/><br/>The side adjacent to the 2-bar is considered when distinguishing between cases.<br/><br/>G-Perms = 3 colours, V-Perms / A-Perms = 4 colours.",
           "cases": ["V.2", "Gd.3", "Aa.3", "V.4", "Gb.2", "Ab.2"]
         },
         {
           "id": "outpair+adj",
           "name": "Outside 2-Bar (Adjacent Corner)",
-          "desc": "Outside 2-bars connected to an adjacent corner can only be an R-Perm or T-Perm.<br/><br/>The edge adjacent to the 2-bar / pair is considered when distinguishing between cases.<br/><br/>R-Perms = 3 colours, T-Perm = 4 colours.",
+          "desc": "Outside 2-bars connected to an adjacent corner can only be an R-Perm or T-Perm.<br/><br/>The edge adjacent to the 2-bar is considered when distinguishing between cases.<br/><br/>R-Perms = 3 colours, T-Perm = 4 colours.",
           "cases": ["Rb.3", "T.3", "Ra.2", "T.2"]
         },
         {
           "id": "inpair",
           "name": "Inside 2-Bar",
-          "desc": "Inside 2-bars can only be a G-Perm or Y-Perm.<br/><br/>The relationships of the corner stickers are considered when distinguishing between cases.<br/><br/>G-Perms / Y-Perm = 4 colours.",
+          "desc": "Inside 2-bars can only be a G-Perm or Y-Perm.<br/><br/>The edge adjacent to the 2-bar is considered when distinguishing between cases.<br/><br/>G-Perms / Y-Perm = 4 colours.",
           "cases": ["Gb.3", "Y.2", "Ga.2", "Gd.2", "Y.4", "Gc.3"]
         },
         {
