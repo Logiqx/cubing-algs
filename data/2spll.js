@@ -217,6 +217,7 @@ var algSet = {
     {
       "id": "F.2",
       "name": "F-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as F-Perm because of the \"malformed\" 2x2 block at the front, resulting in a checker pattern (4 stickers).",
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-2",
@@ -224,7 +225,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Gc",
+          "alg": "Malformed 2x2 block (checker pattern)",
           "desc": "F = 3 colours, Gc / Rb = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -234,6 +235,7 @@ var algSet = {
     {
       "id": "F.3",
       "name": "F-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as F-Perm because of the \"malformed\" 2x2 block at the front, resulting in a checker pattern (4 stickers).",
       "wiki": "#F_Permutation",
       "algdb": "F",
       "image": "PLL-F-3",
@@ -241,7 +243,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for Ga",
+          "alg": "Malformed 2x2 block (checker pattern)",
           "desc": "F = 3 colours, Ga / Ra = 4 colours",
           "status": 1,
           "uses": ["2H"]
@@ -305,6 +307,7 @@ var algSet = {
     {
       "id": "Ga.3",
       "name": "Ga-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ga-Perm because the edge on the left is the opposite of the front-right corner and the edge on the right matches the front-left corner.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#G_Permutation_:_a",
       "algdb": "Ga",
       "image": "PLL-Ga-3",
@@ -312,7 +315,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for F",
+          "alg": "Almost malformed 2x2 block",
           "desc": "Ga = 4 colours, F = 3 colours",
           "status": 1,
           "uses": ["2H"]
@@ -430,6 +433,7 @@ var algSet = {
     {
       "id": "Gc.2",
       "name": "Gc-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gc-Perm because the edge on the right is the opposite of the front-left corner and the edge on the left matches the front-right corner.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#G_Permutation_:_c",
       "algdb": "Gc",
       "image": "PLL-Gc-2",
@@ -437,7 +441,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Do not mistake for F",
+          "alg": "Almost malformed 2x2 block",
           "desc": "Gc = 4 colours, F = 3 colours",
           "status": 1,
           "uses": ["2H"]
@@ -789,6 +793,7 @@ var algSet = {
     {
       "id": "Ra.3",
       "name": "Ra-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ra-Perm because the edge on the right is the opposite of the front corner and the edge on the left matches the front-right corner.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#R_Permutation_:_a",
       "algdb": "Ra",
       "image": "PLL-Ra-3",
@@ -796,7 +801,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Malformed pair at front-left",
           "desc": "Ra = 4 colours, F = 3 colours",
           "status": 1,
           "uses": ["2H"]
@@ -842,6 +847,7 @@ var algSet = {
     {
       "id": "Rb.2",
       "name": "Rb-Perm",
+      "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Rb-Perm because the edge on the left is the opposite of the front corner and the edge on the right matches the front-left corner.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#R_Permutation_:_b",
       "algdb": "Rb",
       "image": "PLL-Rb-2",
@@ -849,7 +855,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Relatively easy",
+          "alg": "Malformed pair at front-right",
           "desc": "Rb = 4 colours, F = 3 colours",
           "status": 1,
           "uses": ["2H"]
@@ -1402,13 +1408,13 @@ var algSet = {
         {
           "id": "misc+ends",
           "name": "Miscellaneous with Bookends",
-          "desc": "The miscellaneous cases with matching bookends can only be an F-Perm, R-Perm or G-Perm.<br/><br/>The checker pattern in the F-Perm (malformed 2x2) distinguishes it from the R-Perms and G-Perms (malformed pairs).<br/><br/>F-Perm = 3 colours, R-Perms / G-Perms = 4 colours.",
+          "desc": "The miscellaneous cases with matching bookends can only be an F-Perm, R-Perm or G-Perm.<br/><br/>The checker pattern in the F-Perm (malformed 2x2 block) distinguishes it from the R-Perms and G-Perms (malformed pairs).<br/><br/>F-Perm = 3 colours, R-Perms / G-Perms = 4 colours.",
           "cases": ["Ra.3", "F.3", "Ga.3", "Rb.2", "F.2", "Gc.2"]
         },
         {
           "id": "misc-ends",
           "name": "Miscellaneous without Bookends",
-          "desc": "The miscellaneous cases without matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2) distinguishes it from the E-Perm (malformed pair) and Y-Perm.<br/><br/>E-Perm / V-Perm / Y-Perm = 4 colours.",
+          "desc": "The miscellaneous cases without matching bookends can only be an E-Perm, V-Perm or Y-Perm.<br/><br/>The checker pattern in the V-Perm (malformed 2x2 block) distinguishes it from the E-Perm (malformed pair) and Y-Perm.<br/><br/>E-Perm / V-Perm / Y-Perm = 4 colours.",
           "cases": ["E.1", "V.3", "E.2", "Y.3"]
         }
     ]
