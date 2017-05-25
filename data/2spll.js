@@ -973,7 +973,7 @@ var algSet = {
     {
       "id": "Ua.1",
       "name": "Ua-Perm",
-      "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights contain an adjacent edge colour.",
+      "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights contain an adjacent edge colour.<br/><br/>You may also notice that the edge on the right is the opposite of the bar on the left.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-1",
@@ -991,7 +991,7 @@ var algSet = {
     {
       "id": "Ua.2",
       "name": "Ua-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the edge on the left matches the headlights on the right.<br/></br>You might find the checker pattern (4 stickers) on the left is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the edge on the left matches the headlights on the right.<br/><br/>Alternatively, recognisable because the edge on the right is the opposite of the headlights on the left.<br/></br>You might find the checker pattern (4 stickers) on the left is useful during recognition.",
       "wiki": "#U_Permutation_:_a",
       "algdb": "Ua",
       "image": "PLL-Ua-2",
@@ -1081,7 +1081,7 @@ var algSet = {
     {
       "id": "Ub.3",
       "name": "Ub-Perm",
-      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the edge on the right matches the headlights on the left.<br/></br>You might find the checker pattern (4 stickers) on the right is useful during recognition.",
+      "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the edge on the right matches the headlights on the left.<br/><br/>Alternatively, recognisable because the edge on the left is the opposite of the headlights on the right.<br/></br>You might find the checker pattern (4 stickers) on the right is useful during recognition.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-3",
@@ -1099,7 +1099,7 @@ var algSet = {
     {
       "id": "Ub.4",
       "name": "Ub-Perm",
-      "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights contain an adjacent edge colour.",
+      "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights contain an adjacent edge colour.<br/><br/>You may also notice that the edge on the left is the opposite of the bar on the right.",
       "wiki": "#U_Permutation_:_b",
       "algdb": "Ub",
       "image": "PLL-Ub-4",
