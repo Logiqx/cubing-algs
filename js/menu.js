@@ -78,6 +78,11 @@ menuItems =
 				"type": "link",
 				"desc": "PLL",
 				"href": "pll.html"
+			},
+			{
+				"type": "link",
+				"desc": "PLL Recognition",
+				"href": "2spll.html"
 			}
 		]
 	},
