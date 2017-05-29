@@ -1045,10 +1045,19 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "R' U R U2' R' L' U R U' L",
-          "desc": "&quot;This is  really good&quot; - Antoine Cantin",
+          "alg": "(R' U R U2') L' (R' U R U') L",
+          "desc": "Playing with [F2L] pairs - track BR + FL",
           "status": 1,
-          "uses": ["OH"]
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "R' U R U2' L' R' U R U' L",
+              "desc": "&quot;This is  really good&quot; - Antoine Cantin",
+              "status": 1,
+              "uses": ["OH"]
+            }
+          ]
         }
       ]
     },

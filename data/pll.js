@@ -186,16 +186,31 @@ var algSet = {
           ]
         },
         {
+          "alg": "U' (R U R' U') (R' U R U2') L' (R' U R U') L U2' (U R U' R')",
+          "desc": "Playing with [F2L] pairs - track FR + BR + FL",
+          "status": 1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "U' (R U R' U') (R' U R U2' L' R' U R U' L) (U' R U' R')",
+              "desc": "Note the [COLL] algorithm in the middle - case F2",
+              "status": 1,
+              "uses": ["OH"]
+            }
+          ]
+        },
+        {
           "alg": "L R2 U R U R2 U' R' U' R2 U' R U2' L' U R'",
           "desc": "[RUL] algorithm",
-          "status": 1,
+          "status": -1,
           "uses": [],
           "vars" :
           [
             {
               "alg": "L R2 U R U R2 U' R' U' R2 U' R U2' z U' R u'",
               "desc": "One-handed execution",
-              "status": 1,
+              "status": -1,
               "uses": ["OH"]
             },
           ]
