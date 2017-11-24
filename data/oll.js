@@ -1266,13 +1266,7 @@ var algSet = {
               "alg": "U2 r' R U (R U R' U') (R' F R F') M'",
               "desc": "Two-handed execution",
               "status": -1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U2 r' R U (R U R' U') (x R' U R U' x') r R'",
-              "desc": "One-handed execution",
-              "status": -1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -1426,16 +1420,7 @@ var algSet = {
           "alg": "U' (R U R' U') (R' F R F')",
           "desc": "Trigger combination known as \"[sexy-sledge]\"",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "U' (R U R' U') (x R' U R U' x')",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         }
       ]
     },
@@ -1593,13 +1578,7 @@ var algSet = {
               "alg": "U2 (R U R' U) (R U' R' U') (R' F R F')",
               "desc": "Two-handed execution applies cancellations",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U2 (R U R' U) (R U' R' U') (x R' U R U' x')",
-              "desc": "One-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         }
@@ -1836,16 +1815,7 @@ var algSet = {
           "alg": "U R' U' (R' F R F') U R",
           "desc": "[Conjugate] of [sledgehammer] - [R' U': R' F R F']",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "U R' U' (x R' U R U' x') U R",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         }
       ]
     },

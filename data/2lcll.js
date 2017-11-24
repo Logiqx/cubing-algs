@@ -167,16 +167,7 @@ var algSet = {
           "alg": "U' (R U R' U') (R' F R F')",
           "desc": "Trigger combination known as \"[sexy-sledge]\"",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "U' (R U R' U') (x R' U R U' x')",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         }
       ]
     },
