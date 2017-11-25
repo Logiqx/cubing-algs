@@ -761,7 +761,7 @@ var algSet = {
               "uses": ["2H"]
             },
             {
-              "alg": "U' r U2' (R2 x U R U') R x U2' r'",
+              "alg": "U' r U2' (R2 F R F') R U2' r'",
               "desc": "One-handed execution applies a cancellation",
               "status": 1,
               "uses": ["OH"]
