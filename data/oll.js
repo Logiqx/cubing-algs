@@ -1395,16 +1395,7 @@ var algSet = {
           "alg": "U' R U B' (U' R' U R) B R'",
           "desc": "Includes mirror of F [reverse-sexy] F'",
           "status": -1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "U' R U z f' (U' R' U R) z' f R'",
-              "desc": "One-handed execution",
-              "status": -1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H"]
         },
       ]
     },
@@ -1623,16 +1614,7 @@ var algSet = {
           "alg": "R B' (R' U' R U) B U' R'",
           "desc": "Includes mirror of F [sexy] F'",
           "status": -1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "R z f' (R' U' R U) z' f U' R'",
-              "desc": "One-handed execution",
-              "status": -1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H"]
         }
       ]
     },
@@ -1717,25 +1699,13 @@ var algSet = {
               "alg": "U' F' (U' L' U L) F",
               "desc": "Executed from a different angle",
               "status": -1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U' F' z (R' U' R U) F [z']",
-              "desc": "One-handed execution",
-              "status": -1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             },
             {
               "alg": "U f' (L' U' L U) f",
               "desc": "Executed from a different angle",
               "status": -1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U f' z (U' R' U R) f [z']",
-              "desc": "One-handed execution",
-              "status": -1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             },
             {
               "alg": "U B' (U' R' U R) B",
@@ -1743,12 +1713,6 @@ var algSet = {
               "status": -1,
               "uses": ["2H"]
             },
-            {
-              "alg": "U' F' z (R' U' R U) F [z']",
-              "desc": "One-handed execution",
-              "status": -1,
-              "uses": ["OH"]
-            }
           ]
         },
       ]
@@ -1843,26 +1807,14 @@ var algSet = {
           "alg": "U2 F' (L' U' L U) (L' U' L U) F",
           "desc": "[Conjugate] of double [sexy] - [F': [L' U' L U]*2]]",
           "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H", "OH"],
           "vars" :
           [
-            {
-              "alg": "U2 F' z (U' R' U R) (U' R' U R) F [z']",
-              "desc": "Executed from a different angle",
-              "status": 1,
-              "uses": ["OH"]
-            },
             {
               "alg": "f' (U' L' U L) (U' L' U L) f",
               "desc": "Executed from a different angle",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "f' z (R' U' R U) (R' U' R U) f [z']",
-              "desc": "Executed from a different angle",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             },
             {
               "alg": "B' (R' U' R U) (R' U' R U) B",
