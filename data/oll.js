@@ -146,7 +146,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "f (R U R' U') f' U' F (R U R' U') F'",
+          "alg": "U' f (R U R' U') f' U' F (R U R' U') F'",
           "desc": "[OLL] combination - f [sexy] f', [AUF], F [sexy] F'",
           "status": -1,
           "uses": ["2H"]
@@ -184,7 +184,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "f (R U R' U') f' U F (R U R' U') F'",
+          "alg": "U f (R U R' U') f' U F (R U R' U') F'",
           "desc": "[OLL] combination - f [sexy] f', [AUF], F [sexy] F'",
           "status": -1,
           "uses": ["2H"]
@@ -1369,6 +1369,7 @@ var algSet = {
     {
       "id": "32",
       "name": "P Shape - Little \"d\"",
+      "desc": "Very few people list the algorithm that I use but it is just the inverse of a \"Big Bolt\" case; OLL 39.",
       "wiki": "",
       "algdb": "OLL 32",
       "image": "OLL-32",
@@ -1434,29 +1435,15 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U R' U') B' (R' F R F') B",
-          "desc": "Triggers - [sexy], B', [sledgehammer], B",
+          "alg": "R U R2' U' R' F R U R U' F'",
+          "desc": "Playing with [F2L] pairs - track FR + BR + FL",
           "status": 1,
-          "uses": [],
+          "uses": ["2H"]
+,
           "vars" :
           [
             {
-              "alg": "(R U R' U') x D' (R' U R U') D x'",
-              "desc": "Two-handed execution",
-              "status": 1,
-              "uses": ["2H"]
-            }
-          ]
-        },
-        {
-          "alg": "(R U R' U') y' (r' U' R U M')",
-          "desc": "Triggers - [sexy] then Roux-style insert to back",
-          "status": 1,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "(R U R' U') y' (r' U' R U r R')",
+              "alg": "R U R2 U' R' F R U R U' F'",
               "desc": "One-handed execution",
               "status": 1,
               "uses": ["OH"]
@@ -1464,10 +1451,34 @@ var algSet = {
           ]
         },
         {
-          "alg": "R U R2 U' R' F R U R U' F'",
-          "desc": "Playing with [F2L] pairs - track FR + BR + FL",
-          "status": 0,
-          "uses": ["2H"]
+          "alg": "(R U R' U') B' (R' F R F') B",
+          "desc": "Triggers - [sexy], B', [sledgehammer], B",
+          "status": -1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "(R U R' U') x D' (R' U R U') D x'",
+              "desc": "Two-handed execution",
+              "status": -1,
+              "uses": ["2H"]
+            }
+          ]
+        },
+        {
+          "alg": "(R U R' U') y' (r' U' R U M')",
+          "desc": "Triggers - [sexy] then Roux-style insert to back",
+          "status": -1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "(R U R' U') y' (r' U' R U r R')",
+              "desc": "One-handed execution",
+              "status": -1,
+              "uses": ["OH"]
+            }
+          ]
         }
       ]
     },
@@ -1989,25 +2000,40 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U2 (R U R' U) (R U' B U' B' R')",
-          "desc": "Extract [F2L] pair, re-insert (oddly)",
+          "alg": "U2 (R U R' U R U2' R') y F (U R U' R') F'",
+          "desc": "[OLL] combination - [RFS], rotate, F [sexy] F'",
           "status": 1,
           "uses": [],
           "vars" :
           [
             {
-              "alg": "U2 (R U R' U) (R U' y R U' R' F')",
-              "desc": "Execution avoids B moves",
+              "alg": "U2 (R U R' U R U') y (R U' R' F')",
+              "desc": "Execution includes cancellations, without B moves",
               "status": 1,
+              "uses": ["2H", "OH"]
+            },
+            {
+              "alg": "U2 (R U R' U R U') (B U' B' R')",
+              "desc": "Execution includes cancellations, without y rotation",
+              "status": 0,
               "uses": ["2H", "OH"]
             }
           ]
         },
         {
-          "alg": "U2 (R' U' R U') (R' U F' U F R)",
-          "desc": "Extract [F2L] pair, re-insert (oddly)",
+          "alg": "U2 (R' U' R U' R' U2 R) R' (U' F' U F) R",
+          "desc": "[OLL] combination - [RBS], OLL 43",
           "status": -1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars" :
+          [
+            {
+              "alg": "U2 (R' U' R U' R' U) (F' U F R)",
+              "desc": "Execution includes cancellations",
+              "status": 0,
+              "uses": ["2H", "OH"]
+            }
+          ]
         }
       ]
     },
