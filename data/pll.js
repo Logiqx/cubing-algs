@@ -118,7 +118,7 @@ var algSet = {
             {
               "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u')",
               "desc": "One-handed execution ends with a wide turn",
-              "status": 0,
+              "status": 1,
               "uses": ["OH"]
             },
           ]
@@ -139,7 +139,7 @@ var algSet = {
             {
               "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2)",
               "desc": "One-handed execution incorporates cancellations",
-              "status": 1,
+              "status": 0,
               "uses": ["OH"]
             },
           ]
