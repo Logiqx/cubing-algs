@@ -197,6 +197,22 @@ menuItems =
 	},
 	{
 		"type": "h1",
+		"desc": "2x2x2"
+	},
+	{
+		"type": "submenu",
+		"desc": "Intermediate",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "OLL",
+				"href": "poll.html"
+			}
+		]
+	},
+	{
+		"type": "h1",
 		"desc": "Big Cubes"
 	},
 	{
@@ -211,7 +227,7 @@ menuItems =
 			}
 		]
 	},
-		{
+	{
 		"type": "h1",
 		"desc": "Pyraminx"
 	},

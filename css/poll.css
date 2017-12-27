@@ -1,0 +1,119 @@
+.s64-poll {
+    background-image: url(../img/poll-s64-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+.s64-oll {
+    background-position: 0 0;
+}
+
+.s64-oll-as {
+    background-position: -64px 0;
+}
+
+.s64-oll-h {
+    background-position: 0 -64px;
+}
+
+.s64-oll-l {
+    background-position: -64px -64px;
+}
+
+.s64-oll-pi {
+    background-position: -128px 0;
+}
+
+.s64-oll-s {
+    background-position: -128px -64px;
+}
+
+.s64-oll-t {
+    background-position: 0 -128px;
+}
+
+.s64-oll-u {
+    background-position: -64px -128px;
+}
+
+.s96-poll {
+    background-image: url(../img/poll-s96-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 96px;
+    height: 96px;
+}
+
+.s96-oll {
+    background-position: 0 0;
+}
+
+.s96-oll-as {
+    background-position: -96px 0;
+}
+
+.s96-oll-h {
+    background-position: 0 -96px;
+}
+
+.s96-oll-l {
+    background-position: -96px -96px;
+}
+
+.s96-oll-pi {
+    background-position: -192px 0;
+}
+
+.s96-oll-s {
+    background-position: -192px -96px;
+}
+
+.s96-oll-t {
+    background-position: 0 -192px;
+}
+
+.s96-oll-u {
+    background-position: -96px -192px;
+}
+
+.s128-poll {
+    background-image: url(../img/poll-s128-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 128px;
+    height: 128px;
+}
+
+.s128-oll {
+    background-position: 0 0;
+}
+
+.s128-oll-as {
+    background-position: -128px 0;
+}
+
+.s128-oll-h {
+    background-position: 0 -128px;
+}
+
+.s128-oll-l {
+    background-position: -128px -128px;
+}
+
+.s128-oll-pi {
+    background-position: -256px 0;
+}
+
+.s128-oll-s {
+    background-position: -256px -128px;
+}
+
+.s128-oll-t {
+    background-position: 0 -256px;
+}
+
+.s128-oll-u {
+    background-position: -128px -256px;
+}

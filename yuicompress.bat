@@ -16,6 +16,7 @@ java -jar yuicompressor-2.4.8.jar css/l3e.css -o css/l3e-min.css
 java -jar yuicompressor-2.4.8.jar css/l4e.css -o css/l4e-min.css
 java -jar yuicompressor-2.4.8.jar css/oll.css -o css/oll-min.css
 java -jar yuicompressor-2.4.8.jar css/pll.css -o css/pll-min.css
+java -jar yuicompressor-2.4.8.jar css/poll.css -o css/poll-min.css
 
 COPY /b css\normalize-min.css+css\pushy-min.css+css\main-min.css css\common-min.css
 
@@ -49,6 +50,7 @@ java -jar yuicompressor-2.4.8.jar data/l3e.js -o data/l3e-min.js
 java -jar yuicompressor-2.4.8.jar data/l4e.js -o data/l4e-min.js
 java -jar yuicompressor-2.4.8.jar data/oll.js -o data/oll-min.js
 java -jar yuicompressor-2.4.8.jar data/pll.js -o data/pll-min.js
+java -jar yuicompressor-2.4.8.jar data/poll.js -o data/poll-min.js
 
 java -jar yuicompressor-2.4.8.jar data/index.js -o data/index-min.js
 
