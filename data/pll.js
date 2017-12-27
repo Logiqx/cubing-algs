@@ -145,14 +145,14 @@ var algSet = {
           ]
         },
         {
-          "alg": "z U2 R2' F (R U R' U') (R U R' U') (R U R' U') F' R2 U2'",
-          "desc": "Long algorithm but decent for big cubes",
+          "alg": "U z U2 R2' F (R U R' U') (R U R' U') (R U R' U') F' R2 U2'",
+          "desc": "Long algorithm but decent for [OH] and big cubes",
           "status": 1,
           "uses": [],
           "vars" :
           [
             {
-              "alg": "z U2' R2 F (R U R' U') (R U R' U') (R U R' U') F' R2 U2'",
+              "alg": "U z U2' R2 F (R U R' U') (R U R' U') (R U R' U') F' R2 U2'",
               "desc": "One-handed execution",
               "status": 0,
               "uses": ["OH"]
