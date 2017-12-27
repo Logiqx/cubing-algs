@@ -210,6 +210,38 @@ menuItems =
 				"href": "l2e.html"
 			}
 		]
+	},
+		{
+		"type": "h1",
+		"desc": "Pyraminx"
+	},
+	{
+		"type": "h2",
+		"desc": "V-First"
+	},
+	{
+		"type": "submenu",
+		"desc": "Intermediate",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "L3E",
+				"href": "l3e.html"
+			}
+		]
+	},
+	{
+		"type": "submenu",
+		"desc": "Advanced",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "L4E",
+				"href": "l4e.html"
+			}
+		]
 	}
 ];
 

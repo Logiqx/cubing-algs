@@ -129,6 +129,10 @@ var abbrs =
     "desc": "Left-Back Anti-Sune"
   },
   {
+    "name": "LBL",
+    "desc": "Layer-by-Layer"
+  },
+  {
     "name": "LBN",
     "desc": "Left-Back Niklas"
   },
