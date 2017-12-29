@@ -5,7 +5,7 @@ var algSet = {
     "name": "2-Look 2-Generator Last Layer",
     "desc": "This page lists [2GLL] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/Set/",
+    "algdb": "http://algdb.net/puzzle/333/",
     "uses":
     [
       {
@@ -24,7 +24,7 @@ var algSet = {
       "id": "AS",
       "name": "AS / Anti-Sune",
       "wiki": "",
-      "algdb": "COLL AS/B1",
+      "algdb": "coll/b1",
       "image": "OCLL-AS",
       "prob": "4/27",
       "algs" :
@@ -65,7 +65,7 @@ var algSet = {
       "id": "S",
       "name": "S / Sune",
       "wiki": "",
-      "algdb": "COLL S/C1",
+      "algdb": "coll/c1",
       "image": "OCLL-S",
       "prob": "4/27",
       "algs" :
@@ -88,7 +88,7 @@ var algSet = {
       "id": "L",
       "name": "L / Bowtie",
       "wiki": "",
-      "algdb": "COLL L/D1",
+      "algdb": "coll/d1",
       "image": "OCLL-L",
       "prob": "4/27",
       "algs" :
@@ -141,7 +141,7 @@ var algSet = {
       "id": "U",
       "name": "U / Headlights",
       "wiki": "",
-      "algdb": "COLL U/E1",
+      "algdb": "coll/e1",
       "image": "OCLL-U",
       "prob": "4/27",
       "algs" :
@@ -194,7 +194,7 @@ var algSet = {
       "id": "T",
       "name": "T / Chameleon",
       "wiki": "",
-      "algdb": "COLL T/F1",
+      "algdb": "coll/f1",
       "image": "OCLL-T",
       "prob": "4/27",
       "algs" :
@@ -247,7 +247,7 @@ var algSet = {
       "id": "Pi",
       "name": "Pi / Bruno",
       "wiki": "",
-      "algdb": "COLL PI/G1",
+      "algdb": "coll/g1",
       "image": "OCLL-Pi",
       "prob": "4/27",
       "algs" :
@@ -300,7 +300,7 @@ var algSet = {
       "id": "H",
       "name": "H / Double Sune",
       "wiki": "",
-      "algdb": "COLL H/H1",
+      "algdb": "coll/h1",
       "image": "OCLL-H",
       "prob": "2/27",
       "algs" :
@@ -353,7 +353,7 @@ var algSet = {
       "id": "OCLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": "..",
+      "algdb": "coll",
       "image": "OCLL",
       "prob": "1/27",
       "algs" :
@@ -371,7 +371,7 @@ var algSet = {
       "name": "Ua-Perm",
       "desc": "Inverse and reflection of Ub.",
       "wiki": "",
-      "algdb": "PLL/Ua",
+      "algdb": "pll/ua",
       "image": "EPLL-Ua",
       "prob": "4/12",
       "algs" :
@@ -443,7 +443,7 @@ var algSet = {
       "name": "Ub-Perm",
       "desc": "Inverse and reflection of Ua.",
       "wiki": "",
-      "algdb": "PLL/Ub",
+      "algdb": "pll/ub",
       "image": "EPLL-Ub",
       "prob": "4/12",
       "algs" :
@@ -526,7 +526,7 @@ var algSet = {
       "id": "Z",
       "name": "Z-Perm",
       "wiki": "",
-      "algdb": "PLL/Z",
+      "algdb": "pll/z",
       "image": "EPLL-Z",
       "prob": "2/12",
       "algs" :
@@ -574,7 +574,7 @@ var algSet = {
       "name": "H-Perm / X-Perm",
       "desc": "Best known as H-Perm (i.e. swapping opposite edge pairs) this case is also known as X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "",
-      "algdb": "PLL/H",
+      "algdb": "pll/h",
       "image": "EPLL-H",
       "prob": "1/12",
       "algs" :
@@ -606,7 +606,7 @@ var algSet = {
       "id": "EPLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": "PLL",
+      "algdb": "pll",
       "image": "EPLL",
       "prob": "1/12",
       "algs" :

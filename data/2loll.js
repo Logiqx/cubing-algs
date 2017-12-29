@@ -5,7 +5,7 @@ var algSet = {
     "name": "2-Look Orientation of the Last Layer",
     "desc": "This page lists [OLL] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/Set/OLL/",
+    "algdb": "http://algdb.net/puzzle/333/oll/",
     "uses":
     [
       {
@@ -25,7 +25,7 @@ var algSet = {
       "name": "Adjacent Edge Flip",
       "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] 44.",
       "wiki": "",
-      "algdb": "OLL 44",
+      "algdb": "oll44",
       "image": "EOLL-L",
       "prob": "4/8",
       "algs" :
@@ -69,7 +69,7 @@ var algSet = {
       "name": "Opposite Edge Flip",
       "desc": "This case is typically solved using the algorithm for [OLL] 45.",
       "wiki": "",
-      "algdb": "OLL 45",
+      "algdb": "oll45",
       "image": "EOLL-I",
       "prob": "2/8",
       "algs" :
@@ -88,7 +88,7 @@ var algSet = {
       "name": "Four Edge Flip",
       "desc": "This case is typically solved using the algorithm(s) for [OLL] 2.",
       "wiki": "",
-      "algdb": "OLL 2",
+      "algdb": "oll2",
       "image": "EOLL-D",
       "prob": "1/8",
       "algs" :
@@ -131,7 +131,7 @@ var algSet = {
       "id": "EOLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "EOLL",
       "prob": "1/8",
       "algs" :
@@ -148,7 +148,7 @@ var algSet = {
       "id": "AS",
       "name": "AS / Anti-Sune",
       "wiki": "",
-      "algdb": "OLL 26",
+      "algdb": "oll26",
       "image": "OCLL-AS",
       "prob": "4/27",
       "algs" :
@@ -189,7 +189,7 @@ var algSet = {
       "id": "S",
       "name": "S / Sune",
       "wiki": "",
-      "algdb": "OLL 27",
+      "algdb": "oll27",
       "image": "OCLL-S",
       "prob": "4/27",
       "algs" :
@@ -212,7 +212,7 @@ var algSet = {
       "id": "L",
       "name": "L / Bowtie",
       "wiki": "",
-      "algdb": "OLL 25",
+      "algdb": "oll25",
       "image": "OCLL-L",
       "prob": "4/27",
       "algs" :
@@ -349,7 +349,7 @@ var algSet = {
       "id": "U",
       "name": "U / Headlights",
       "wiki": "",
-      "algdb": "OLL 23",
+      "algdb": "oll23",
       "image": "OCLL-U",
       "prob": "4/27",
       "algs" :
@@ -444,7 +444,7 @@ var algSet = {
       "id": "T",
       "name": "T / Chameleon",
       "wiki": "",
-      "algdb": "OLL 24",
+      "algdb": "oll24",
       "image": "OCLL-T",
       "prob": "4/27",
       "algs" :
@@ -539,7 +539,7 @@ var algSet = {
       "id": "Pi",
       "name": "Pi / Bruno",
       "wiki": "",
-      "algdb": "OLL 22",
+      "algdb": "oll22",
       "image": "OCLL-Pi",
       "prob": "4/27",
       "algs" :
@@ -622,7 +622,7 @@ var algSet = {
       "id": "H",
       "name": "H / Double Sune",
       "wiki": "",
-      "algdb": "OLL 21",
+      "algdb": "oll21",
       "image": "OCLL-H",
       "prob": "2/27",
       "algs" :
@@ -681,7 +681,7 @@ var algSet = {
       "id": "OCLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OCLL",
       "prob": "1/27",
       "algs" :

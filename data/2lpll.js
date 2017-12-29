@@ -5,7 +5,7 @@ var algSet = {
     "name": "2-Look Permutation of the Last Layer",
     "desc": "This page lists [PLL] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/Set/PLL/",
+    "algdb": "http://algdb.net/puzzle/333/pll/",
     "uses":
     [
       {
@@ -25,7 +25,7 @@ var algSet = {
       "name": "Adjacent Corner Swap",
       "desc": "This case is typically solved using the [PLL] algorithms for T-Perm ([RUF]), Jb-Perm ([RUL]) or Aa-Perm ([RUD]).",
       "wiki": "",
-      "algdb": "T",
+      "algdb": "t",
       "image": "CPLL-A",
       "prob": "4/6",
       "algs" :
@@ -97,7 +97,7 @@ var algSet = {
       "name": "Diagonal Corner Swap",
       "desc": "This case is typically solved using the [PLL] algorithms for Y-Perm ([RUF]), Na-Perm ([RUL]) or E-Perm ([RUD]).",
       "wiki": "",
-      "algdb": "Y",
+      "algdb": "y",
       "image": "CPLL-O",
       "prob": "1/6",
       "algs" :
@@ -170,7 +170,7 @@ var algSet = {
       "id": "CPLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "CPLL",
       "prob": "1/6",
       "algs" :
@@ -188,7 +188,7 @@ var algSet = {
       "name": "Ua-Perm",
       "desc": "Inverse and reflection of Ub.",
       "wiki": "",
-      "algdb": "Ua",
+      "algdb": "ua",
       "image": "EPLL-Ua",
       "prob": "4/12",
       "algs" :
@@ -272,7 +272,7 @@ var algSet = {
       "name": "Ub-Perm",
       "desc": "Inverse and reflection of Ua.",
       "wiki": "",
-      "algdb": "Ub",
+      "algdb": "ub",
       "image": "EPLL-Ub",
       "prob": "4/12",
       "algs" :
@@ -355,7 +355,7 @@ var algSet = {
       "id": "Z",
       "name": "Z-Perm",
       "wiki": "",
-      "algdb": "Z",
+      "algdb": "z",
       "image": "EPLL-Z",
       "prob": "2/12",
       "algs" :
@@ -403,7 +403,7 @@ var algSet = {
       "name": "H-Perm / X-Perm",
       "desc": "Best known as H-Perm (i.e. swapping opposite edge pairs) this case is also known as X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "",
-      "algdb": "H",
+      "algdb": "h",
       "image": "EPLL-H",
       "prob": "1/12",
       "algs" :
@@ -435,7 +435,7 @@ var algSet = {
       "id": "EPLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": "PLL",
+      "algdb": "",
       "image": "EPLL",
       "prob": "1/12",
       "algs" :

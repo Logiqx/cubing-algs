@@ -5,7 +5,7 @@ var algSet = {
     "name": "Last Two Edges",
     "desc": "This page lists all of the L2E edges that can be useful for 5x5x5 upwards.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/Set/",
+    "algdb": "http://algdb.net/",
     "uses":
     [
       {
@@ -20,7 +20,7 @@ var algSet = {
       "id": "A1",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "L2E-A1",
       "prob": "1/24",
       "algs" :
@@ -113,7 +113,7 @@ var algSet = {
       "name": "Double Parity",
       "desc": "This case is the equivalent of OLL parity + PLL parity on a 4x4x4.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "L2E-A4",
       "prob": "1/12",
       "algs" :
@@ -371,7 +371,7 @@ var algSet = {
       "name": "Quite Simple Case",
       "desc": "Mirror of B3. This case is often omitted from L2E cheat sheets (e.g. Big Cubes, Andy Klise, Sir Waffle, Meep, Sarah Strong). It is solved using the \"flip-slice-flip-slice\" approach.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "L2E-B4",
       "prob": "1/12",
       "algs" :
@@ -443,7 +443,7 @@ var algSet = {
       "name": "Backslash Chequers",
       "desc": "Mirror of B6.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "L2E-B1",
       "prob": "1/24",
       "algs" :
@@ -479,7 +479,7 @@ var algSet = {
       "name": "Mirrored Pairs",
       "desc": "",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "L2E-C1",
       "prob": "1/12",
       "algs" :
@@ -593,7 +593,7 @@ var algSet = {
       "name": "Simple Case",
       "desc": "Mirror of C3. It is solved using the \"slice-flip-slice\" approach.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "L2E-C4",
       "prob": "1/12",
       "algs" :

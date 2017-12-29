@@ -5,7 +5,7 @@ var algSet = {
     "name": "2-Look Last Four Corners",
     "desc": "This page lists [L4C] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/",
+    "algdb": "http://algdb.net/puzzle/333/",
     "uses":
     [
       {
@@ -25,7 +25,7 @@ var algSet = {
       "name": "AS / Anti-Sune",
       "desc": "This case can be solved with the [Niklas] algorithm.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OCLL-AS",
       "prob": "4/27",
       "algs" :
@@ -67,7 +67,7 @@ var algSet = {
       "name": "S / Sune",
       "desc": "This case can be solved with the [Niklas] algorithm.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OCLL-S",
       "prob": "4/27",
       "algs" :
@@ -109,7 +109,7 @@ var algSet = {
       "name": "L / Bowtie",
       "desc": "This case has lots of options as it can be solved using the standard [OCLL] algorithms.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OCLL-L",
       "prob": "4/27",
       "algs" :
@@ -247,7 +247,7 @@ var algSet = {
       "name": "U / Headlights",
       "desc": "This case can be solved with the commutators or [Anti-Sune] combinations.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OCLL-U",
       "prob": "4/27",
       "algs" :
@@ -331,7 +331,7 @@ var algSet = {
       "name": "T / Chameleon",
       "desc": "This case can be solved with commutators or [Sune] combinations.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OCLL-T",
       "prob": "4/27",
       "algs" :
@@ -415,7 +415,7 @@ var algSet = {
       "name": "Pi / Bruno",
       "desc": "This case can be solved using [Niklas] combinations.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OCLL-Pi",
       "prob": "4/27",
       "algs" :
@@ -462,7 +462,7 @@ var algSet = {
       "id": "H",
       "name": "H / Double Sune",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OCLL-H",
       "prob": "2/27",
       "algs" :
@@ -485,7 +485,7 @@ var algSet = {
       "id": "OCLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OCLL",
       "prob": "1/27",
       "algs" :
@@ -503,7 +503,7 @@ var algSet = {
       "name": "Aa-Perm",
       "desc": "Inverse and reflection of Ab.",
       "wiki": "",
-      "algdb": "Set/PLL/Aa",
+      "algdb": "pll/aa",
       "image": "CPLL-Aa",
       "prob": "4/12",
       "algs" :
@@ -536,7 +536,7 @@ var algSet = {
       "name": "Ab-Perm",
       "desc": "Inverse and reflection of Aa.",
       "wiki": "",
-      "algdb": "Set/PLL/Ab",
+      "algdb": "pll/ab",
       "image": "CPLL-Ab",
       "prob": "4/12",
       "algs" :
@@ -569,7 +569,7 @@ var algSet = {
       "name": "E-Perm",
       "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] / [COLL] algorithms for L / Bowtie and T / Chameleon.",
       "wiki": "",
-      "algdb": "Set/PLL/E",
+      "algdb": "pll/e",
       "image": "CPLL-E",
       "prob": "2/12",
       "algs" :
@@ -638,7 +638,7 @@ var algSet = {
       "name": "H-Perm / X-Perm",
       "desc": "Best known as H-Perm (i.e. swapping opposite edge pairs) this case is also known as X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "",
-      "algdb": "Set/PLL/H",
+      "algdb": "pll/h",
       "image": "CPLL-X",
       "prob": "1/12",
       "algs" :
@@ -670,7 +670,7 @@ var algSet = {
       "id": "CPLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "pll",
       "image": "CPLL",
       "prob": "1/12",
       "algs" :

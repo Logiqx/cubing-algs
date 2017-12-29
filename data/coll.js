@@ -5,7 +5,7 @@ var algSet = {
     "name": "Corners of the Last Layer",
     "desc": "This page lists the [COLL] algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.<br/><br/>I do not use [COLL] algorithms for the [Sune] and [Anti-Sune] cases but I have included them for the sake of completeness.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/COLL",
-    "algdb": "http://algdb.net/Set/",
+    "algdb": "http://algdb.net/puzzle/333/",
     "uses":
     [
       {
@@ -25,7 +25,7 @@ var algSet = {
       "name": "O / Oriented #1",
       "desc": "This is the solved case.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "COLL-A-1",
       "prob": "1/162",
       "algs" :
@@ -43,7 +43,7 @@ var algSet = {
       "name": "O / Oriented #3",
       "desc": "This case is typically solved using the [PLL] algorithms for T-Perm ([RUF]), Jb-Perm ([RUL]) or Aa-Perm ([RUD]).",
       "wiki": "",
-      "algdb": "PLL/T",
+      "algdb": "pll/t",
       "image": "COLL-A-3",
       "prob": "2/81",
       "algs" :
@@ -115,7 +115,7 @@ var algSet = {
       "name": "O / Oriented #6",
       "desc": "This case is typically solved using the [PLL] algorithms for Y-Perm ([RUF]), Na-Perm ([RUL]) or E-Perm ([RUD]).",
       "wiki": "",
-      "algdb": "PLL/Y",
+      "algdb": "pll/y",
       "image": "COLL-A-6",
       "prob": "1/162",
       "algs" :
@@ -189,7 +189,7 @@ var algSet = {
       "name": "AS / Anti-Sune #1",
       "desc": "Inverse of Sune / C1. Reflection of Sune / C1.",
       "wiki": "",
-      "algdb": "COLL AS/B1",
+      "algdb": "coll/b1",
       "image": "COLL-B-1",
       "prob": "2/81",
       "algs" :
@@ -231,7 +231,7 @@ var algSet = {
       "name": "AS / Anti-Sune #2",
       "desc": "Inverse of Sune / C4. Reflection of Sune / C4.",
       "wiki": "",
-      "algdb": "COLL AS/B2",
+      "algdb": "coll/b2",
       "image": "COLL-B-2",
       "prob": "2/81",
       "algs" :
@@ -249,7 +249,7 @@ var algSet = {
       "name": "AS / Anti-Sune #3",
       "desc": "Inverse of Sune / C2. Reflection of Sune / C3.",
       "wiki": "",
-      "algdb": "COLL AS/B3",
+      "algdb": "coll/b3",
       "image": "COLL-B-3",
       "prob": "2/81",
       "algs" :
@@ -276,7 +276,7 @@ var algSet = {
       "name": "AS / Anti-Sune #4",
       "desc": "Inverse of Sune / C3. Reflection of Sune / C2.",
       "wiki": "",
-      "algdb": "COLL AS/B4",
+      "algdb": "coll/b4",
       "image": "COLL-B-4",
       "prob": "2/81",
       "algs" :
@@ -303,7 +303,7 @@ var algSet = {
       "name": "AS / Anti-Sune #5",
       "desc": "Inverse of Sune / C5. Reflection of Sune / C5.",
       "wiki": "",
-      "algdb": "COLL AS/B5",
+      "algdb": "coll/b5",
       "image": "COLL-B-5",
       "prob": "2/81",
       "algs" :
@@ -345,7 +345,7 @@ var algSet = {
       "name": "AS / Anti-Sune #6",
       "desc": "Inverse of Sune / C6. Reflection of Sune / C6.",
       "wiki": "",
-      "algdb": "COLL AS/B6",
+      "algdb": "coll/b6",
       "image": "COLL-B-6",
       "prob": "2/81",
       "algs" :
@@ -378,7 +378,7 @@ var algSet = {
       "name": "S / Sune #1",
       "desc": "Inverse of Anti-Sune / B1. Reflection of Anti-Sune / B1.",
       "wiki": "",
-      "algdb": "COLL S/C1",
+      "algdb": "coll/c1",
       "image": "COLL-C-1",
       "prob": "2/81",
       "algs" :
@@ -402,7 +402,7 @@ var algSet = {
       "name": "S / Sune #2",
       "desc": "Inverse of Anti-Sune / B3. Reflection of Anti-Sune / B4.",
       "wiki": "",
-      "algdb": "COLL S/C2",
+      "algdb": "coll/c2",
       "image": "COLL-C-2",
       "prob": "2/81",
       "algs" :
@@ -429,7 +429,7 @@ var algSet = {
       "name": "S / Sune #3",
       "desc": "Inverse of Anti-Sune / B4. Reflection of Anti-Sune / B3.",
       "wiki": "",
-      "algdb": "COLL S/C3",
+      "algdb": "coll/c3",
       "image": "COLL-C-3",
       "prob": "2/81",
       "algs" :
@@ -456,7 +456,7 @@ var algSet = {
       "name": "S / Sune #4",
       "desc": "Inverse of Anti-Sune / B2. Reflection of Anti-Sune / B2.",
       "wiki": "",
-      "algdb": "COLL S/C4",
+      "algdb": "coll/c4",
       "image": "COLL-C-4",
       "prob": "2/81",
       "algs" :
@@ -483,7 +483,7 @@ var algSet = {
       "name": "S / Sune #5",
       "desc": "Inverse of Anti-Sune / B5. Reflection of Anti-Sune / B5.",
       "wiki": "",
-      "algdb": "COLL S/C5",
+      "algdb": "coll/c5",
       "image": "COLL-C-5",
       "prob": "2/81",
       "algs" :
@@ -525,7 +525,7 @@ var algSet = {
       "name": "S / Sune #6",
       "desc": "Inverse of Anti-Sune / B6. Reflection of Anti-Sune / B6.",
       "wiki": "",
-      "algdb": "COLL S/C6",
+      "algdb": "coll/c6",
       "image": "COLL-C-6",
       "prob": "2/81",
       "algs" :
@@ -557,7 +557,7 @@ var algSet = {
       "id": "D1",
       "name": "L / Bowtie #1",
       "wiki": "",
-      "algdb": "COLL L/D1",
+      "algdb": "coll/d1",
       "image": "COLL-D-1",
       "prob": "2/81",
       "algs" :
@@ -611,7 +611,7 @@ var algSet = {
       "name": "L / Bowtie #2",
       "desc": "Inverse of Headlights / E5. Reflection of Bowtie / D3.",
       "wiki": "",
-      "algdb": "COLL L/D2",
+      "algdb": "coll/d2",
       "image": "COLL-D-2",
       "prob": "2/81",
       "algs" :
@@ -644,7 +644,7 @@ var algSet = {
       "name": "L / Bowtie #3",
       "desc": "Inverse of Headlights / E3. Reflection of Bowtie / D2.",
       "wiki": "",
-      "algdb": "COLL L/D3",
+      "algdb": "coll/d3",
       "image": "COLL-D-3",
       "prob": "2/81",
       "algs" :
@@ -677,7 +677,7 @@ var algSet = {
       "name": "L / Bowtie #4",
       "desc": "Inverse of Chameleon / F5. Reflection of Bowtie / D5.",
       "wiki": "",
-      "algdb": "COLL L/D4",
+      "algdb": "coll/d4",
       "image": "COLL-D-4",
       "prob": "2/81",
       "algs" :
@@ -710,7 +710,7 @@ var algSet = {
       "name": "L / Bowtie #5",
       "desc": "Inverse of Chameleon / F3. Reflection of Bowtie / D4.",
       "wiki": "",
-      "algdb": "COLL L/D5",
+      "algdb": "coll/d5",
       "image": "COLL-D-5",
       "prob": "2/81",
       "algs" :
@@ -742,7 +742,7 @@ var algSet = {
       "id": "D6",
       "name": "L / Bowtie #6",
       "wiki": "",
-      "algdb": "COLL L/D6",
+      "algdb": "coll/d6",
       "image": "COLL-D-6",
       "prob": "2/81",
       "algs" :
@@ -775,7 +775,7 @@ var algSet = {
       "name": "U / Headlights #1",
       "desc": "Inverse of Chameleon / F1.",
       "wiki": "",
-      "algdb": "COLL U/E1",
+      "algdb": "coll/e1",
       "image": "COLL-E-1",
       "prob": "2/81",
       "algs" :
@@ -828,7 +828,7 @@ var algSet = {
       "id": "E2",
       "name": "U / Headlights #2",
       "wiki": "",
-      "algdb": "COLL U/E2",
+      "algdb": "coll/e2",
       "image": "COLL-E-2",
       "prob": "2/81",
       "algs" :
@@ -861,7 +861,7 @@ var algSet = {
       "name": "U / Headlights #3",
       "desc": "Inverse of Bowtie / D3. Reflection of Headlights / E5.",
       "wiki": "",
-      "algdb": "COLL U/E3",
+      "algdb": "coll/e3",
       "image": "COLL-E-3",
       "prob": "2/81",
       "algs" :
@@ -894,7 +894,7 @@ var algSet = {
       "name": "U / Headlights #4",
       "desc": "Inverse of Chameleon / F4.",
       "wiki": "",
-      "algdb": "COLL U/E4",
+      "algdb": "coll/e4",
       "image": "COLL-E-4",
       "prob": "2/81",
       "algs" :
@@ -921,7 +921,7 @@ var algSet = {
       "name": "U / Headlights #5",
       "desc": "Inverse of Bowtie / D2. Reflection of Headlights / E3.",
       "wiki": "",
-      "algdb": "COLL U/E5",
+      "algdb": "coll/e5",
       "image": "COLL-E-5",
       "prob": "2/81",
       "algs" :
@@ -953,7 +953,7 @@ var algSet = {
       "id": "E6",
       "name": "U / Headlights #6",
       "wiki": "",
-      "algdb": "COLL U/E6",
+      "algdb": "coll/e6",
       "image": "COLL-E-6",
       "prob": "2/81",
       "algs" :
@@ -980,7 +980,7 @@ var algSet = {
       "name": "T / Chameleon #1",
       "desc": "Inverse of Headlights / E1.",
       "wiki": "",
-      "algdb": "COLL T/F1",
+      "algdb": "coll/f1",
       "image": "COLL-F-1",
       "prob": "2/81",
       "algs" :
@@ -1033,7 +1033,7 @@ var algSet = {
       "id": "F2",
       "name": "T / Chameleon #2",
       "wiki": "",
-      "algdb": "COLL T/F2",
+      "algdb": "coll/f2",
       "image": "COLL-F-2",
       "prob": "2/81",
       "algs" :
@@ -1066,7 +1066,7 @@ var algSet = {
       "name": "T / Chameleon #3",
       "desc": "Inverse of Bowtie / D5. Reflection of Chameleon / F5.",
       "wiki": "",
-      "algdb": "COLL T/F3",
+      "algdb": "coll/f3",
       "image": "COLL-F-3",
       "prob": "2/81",
       "algs" :
@@ -1099,7 +1099,7 @@ var algSet = {
       "name": "T / Chameleon #4",
       "desc": "Inverse of Headlights / E4.",
       "wiki": "",
-      "algdb": "COLL T/F4",
+      "algdb": "coll/f4",
       "image": "COLL-F-4",
       "prob": "2/81",
       "algs" :
@@ -1126,7 +1126,7 @@ var algSet = {
       "name": "T / Chameleon #5",
       "desc": "Inverse of Bowtie / D4. Reflection of Chameleon / F3.",
       "wiki": "",
-      "algdb": "COLL T/F5",
+      "algdb": "coll/f5",
       "image": "COLL-F-5",
       "prob": "2/81",
       "algs" :
@@ -1158,7 +1158,7 @@ var algSet = {
       "id": "F6",
       "name": "T / Chameleon #6",
       "wiki": "",
-      "algdb": "COLL T/F6",
+      "algdb": "coll/f6",
       "image": "COLL-F-6",
       "prob": "2/81",
       "algs" :
@@ -1184,7 +1184,7 @@ var algSet = {
       "id": "G1",
       "name": "Pi / Bruno #1",
       "wiki": "",
-      "algdb": "COLL PI/G1",
+      "algdb": "coll/g1",
       "image": "COLL-G-1",
       "prob": "2/81",
       "algs" :
@@ -1238,7 +1238,7 @@ var algSet = {
       "name": "Pi / Bruno #2",
       "desc": "Inverse and reflection of Bruno / G4.",
       "wiki": "",
-      "algdb": "COLL PI/G2",
+      "algdb": "coll/g2",
       "image": "COLL-G-2",
       "prob": "2/81",
       "algs" :
@@ -1286,7 +1286,7 @@ var algSet = {
       "name": "Pi / Bruno #3",
       "desc": "Inverse of Double Sune / H2.",
       "wiki": "",
-      "algdb": "COLL PI/G3",
+      "algdb": "coll/g3",
       "image": "COLL-G-3",
       "prob": "2/81",
       "algs" :
@@ -1313,7 +1313,7 @@ var algSet = {
       "name": "Pi / Bruno #4",
       "desc": "Inverse and reflection of Bruno / G2.",
       "wiki": "",
-      "algdb": "COLL PI/G4",
+      "algdb": "coll/g4",
       "image": "COLL-G-4",
       "prob": "2/81",
       "algs" :
@@ -1355,7 +1355,7 @@ var algSet = {
       "name": "Pi / Bruno #5",
       "desc": "Inverse of Double Sune / H3.",
       "wiki": "",
-      "algdb": "COLL PI/G5",
+      "algdb": "coll/g5",
       "image": "COLL-G-5",
       "prob": "2/81",
       "algs" :
@@ -1387,7 +1387,7 @@ var algSet = {
       "id": "G6",
       "name": "Pi / Bruno #6",
       "wiki": "",
-      "algdb": "COLL PI/G6",
+      "algdb": "coll/g6",
       "image": "COLL-G-6",
       "prob": "2/81",
       "algs" :
@@ -1410,7 +1410,7 @@ var algSet = {
       "id": "H1",
       "name": "H / Double Sune #1",
       "wiki": "",
-      "algdb": "COLL H/H1",
+      "algdb": "coll/h1",
       "image": "COLL-H-1",
       "prob": "1/81",
       "algs" :
@@ -1464,7 +1464,7 @@ var algSet = {
       "name": "H / Double Sune #2",
       "desc": "Inverse of Bruno / G3.",
       "wiki": "",
-      "algdb": "COLL H/H2",
+      "algdb": "coll/h2",
       "image": "COLL-H-2",
       "prob": "2/81",
       "algs" :
@@ -1491,7 +1491,7 @@ var algSet = {
       "name": "H / Double Sune #5",
       "desc": "Inverse of Bruno / G5.",
       "wiki": "",
-      "algdb": "COLL H/H3",
+      "algdb": "coll/h3",
       "image": "COLL-H-5",
       "prob": "2/81",
       "algs" :
@@ -1523,7 +1523,7 @@ var algSet = {
       "id": "H6",
       "name": "H / Double Sune #6",
       "wiki": "",
-      "algdb": "COLL H/H4",
+      "algdb": "coll/h4",
       "image": "COLL-H-6",
       "prob": "1/81",
       "algs" :

@@ -5,7 +5,7 @@ var algSet = {
     "name": "2-Sided PLL Recognition",
     "desc": "This page shows the 72 patterns / features which can appear during PLL recognition.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/PLL",
-    "algdb": "http://algdb.net/Set/PLL/",
+    "algdb": "http://algdb.net/puzzle/333/pll/",
     "uses":
     [
       {
@@ -21,7 +21,7 @@ var algSet = {
       "name": "Aa-Perm",
       "desc": "Clearly an A-Perm because of the checker pattern (4 stickers) and the outside 2-bar.<br/><br/>Easily recognisable as Aa-Perm because the checker pattern is on the left and the outside 2-bar on the right.",
       "wiki": "#A_Permutation_:_a",
-      "algdb": "Aa",
+      "algdb": "aa",
       "image": "PLL-Aa-1",
       "prob": "1/72",
       "algs" :
@@ -39,7 +39,7 @@ var algSet = {
       "name": "Aa-Perm",
       "desc": "Clearly an A-Perm because of the 2x2 block at the front and the opposite corner sticker.<br/><br/>Easily recognisable as Ab-Perm because the opposite corner sticker is on the right.",
       "wiki": "#A_Permutation_:_a",
-      "algdb": "Aa",
+      "algdb": "aa",
       "image": "PLL-Aa-2",
       "prob": "1/72",
       "algs" :
@@ -57,7 +57,7 @@ var algSet = {
       "name": "Aa-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Aa-Perm because of the 2-bar at the back-left and the opposite stickers at the front-right.",
       "wiki": "#A_Permutation_:_a",
-      "algdb": "Aa",
+      "algdb": "aa",
       "image": "PLL-Aa-3",
       "prob": "1/72",
       "algs" :
@@ -75,7 +75,7 @@ var algSet = {
       "name": "Aa-Perm",
       "desc": "Clearly an A-Perm because the sticker between the headlights is the opposite of a checker pattern (5 stickers).<br/><br/>Easily recognisable as Aa-Perm because the \"almost\" checker pattern is on the right.<br/><br/>The edge on the left is also the opposite of the rear corner.",
       "wiki": "#A_Permutation_:_a",
-      "algdb": "Aa",
+      "algdb": "aa",
       "image": "PLL-Aa-4",
       "prob": "1/72",
       "algs" :
@@ -93,7 +93,7 @@ var algSet = {
       "name": "Ab-Perm",
       "desc": "Clearly an A-Perm because the sticker between the headlights is the opposite of a checker pattern (5 stickers).<br/><br/>Easily recognisable as Ab-Perm because the \"almost\" checker pattern is on the left.<br/><br/>The edge on the right is also the opposite of the rear corner.",
       "wiki": "#A_Permutation_:_b",
-      "algdb": "Ab",
+      "algdb": "ab",
       "image": "PLL-Ab-1",
       "prob": "1/72",
       "algs" :
@@ -111,7 +111,7 @@ var algSet = {
       "name": "Ab-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ab-Perm because of the 2-bar at the back-right and the opposite stickers at the front-left.",
       "wiki": "#A_Permutation_:_b",
-      "algdb": "Ab",
+      "algdb": "ab",
       "image": "PLL-Ab-2",
       "prob": "1/72",
       "algs" :
@@ -129,7 +129,7 @@ var algSet = {
       "name": "Ab-Perm",
       "desc": "Clearly an A-Perm because of the 2x2 block at the front and the opposite corner sticker.<br/><br/>Easily recognisable as Ab-Perm because the opposite corner sticker is on the left.",
       "wiki": "#A_Permutation_:_b",
-      "algdb": "Ab",
+      "algdb": "ab",
       "image": "PLL-Ab-3",
       "prob": "1/72",
       "algs" :
@@ -147,7 +147,7 @@ var algSet = {
       "name": "Ab-Perm",
       "desc": "Clearly an A-Perm because of the checker pattern (4 stickers) and the outside 2-bar.<br/><br/>Easily recognisable as Ab-Perm because the checker pattern is on the right and the outside 2-bar on the left.",
       "wiki": "#A_Permutation_:_b",
-      "algdb": "Ab",
+      "algdb": "ab",
       "image": "PLL-Ab-4",
       "prob": "1/72",
       "algs" :
@@ -165,7 +165,7 @@ var algSet = {
       "name": "E-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-left, resulting in a partial checker pattern (3 stickers).<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
       "wiki": "#E_Permutation",
-      "algdb": "E",
+      "algdb": "e",
       "image": "PLL-E-1",
       "prob": "1/72",
       "algs" :
@@ -183,7 +183,7 @@ var algSet = {
       "name": "E-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as E-Perm because of the \"malformed\" pair in the front-right, resulting in a partial checker pattern (3 stickers).<br/><br/>The E-Perm has two appearances and looks the same after a U2.",
       "wiki": "#E_Permutation",
-      "algdb": "E",
+      "algdb": "e",
       "image": "PLL-E-2",
       "prob": "1/72",
       "algs" :
@@ -201,7 +201,7 @@ var algSet = {
       "name": "F-Perm",
       "desc": "Clearly an F-Perm because of the lonesome 3-bar.<br/><br/>It is also worth knowing that the edge on the right is the opposite of the front corner.",
       "wiki": "#F_Permutation",
-      "algdb": "F",
+      "algdb": "f",
       "image": "PLL-F-1",
       "prob": "1/72",
       "algs" :
@@ -219,7 +219,7 @@ var algSet = {
       "name": "F-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as F-Perm because of the \"malformed\" 2x2 block at the front, resulting in a checker pattern (4 stickers).",
       "wiki": "#F_Permutation",
-      "algdb": "F",
+      "algdb": "f",
       "image": "PLL-F-2",
       "prob": "1/72",
       "algs" :
@@ -237,7 +237,7 @@ var algSet = {
       "name": "F-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as F-Perm because of the \"malformed\" 2x2 block at the front, resulting in a checker pattern (4 stickers).",
       "wiki": "#F_Permutation",
-      "algdb": "F",
+      "algdb": "f",
       "image": "PLL-F-3",
       "prob": "1/72",
       "algs" :
@@ -255,7 +255,7 @@ var algSet = {
       "name": "F-Perm",
       "desc": "Clearly an F-Perm because of the lonesome 3-bar.<br/><br/>It is also worth knowing that the edge on the left is the opposite of the front corner.",
       "wiki": "#F_Permutation",
-      "algdb": "F",
+      "algdb": "f",
       "image": "PLL-F-4",
       "prob": "1/72",
       "algs" :
@@ -273,7 +273,7 @@ var algSet = {
       "name": "Ga-Perm",
       "desc": "Clearly a Ga-Perm / Gc-Perm because the sticker between the headlights is the opposite of a checker pattern (4 stickers).<br/><br/>Easily recognisable as Ga-Perm because the \"almost\" checker pattern is on the left and the outside 2-bar on the right.",
       "wiki": "#G_Permutation_:_a",
-      "algdb": "Ga",
+      "algdb": "ga",
       "image": "PLL-Ga-1",
       "prob": "1/72",
       "algs" :
@@ -291,7 +291,7 @@ var algSet = {
       "name": "Ga-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ga-Perm because of the 2-bar at the front-left and the edge on the right being an adjacent of the back-left corner.",
       "wiki": "#G_Permutation_:_a",
-      "algdb": "Ga",
+      "algdb": "ga",
       "image": "PLL-Ga-2",
       "prob": "1/72",
       "algs" :
@@ -309,7 +309,7 @@ var algSet = {
       "name": "Ga-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ga-Perm because the edge on the left is the opposite of the front-right corner and the edge on the right matches the front-left corner.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#G_Permutation_:_a",
-      "algdb": "Ga",
+      "algdb": "ga",
       "image": "PLL-Ga-3",
       "prob": "1/72",
       "algs" :
@@ -327,7 +327,7 @@ var algSet = {
       "name": "Ga-Perm",
       "desc": "Clearly a Ga-Perm / Gc-Perm because of the checker pattern (4 stickers) and the absence of an outside 2-bar.<br/><br/>Easily recognisable as Ga-Perm because the checker pattern is on the right.<br/><br/>The edge on the left is also the opposite of the front corner.",
       "wiki": "#G_Permutation_:_a",
-      "algdb": "Ga",
+      "algdb": "ga",
       "image": "PLL-Ga-4",
       "prob": "1/72",
       "algs" :
@@ -345,7 +345,7 @@ var algSet = {
       "name": "Gb-Perm",
       "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gb-Perm because the headlights are on the left and the adjacent edge is the opposite of the front corner.",
       "wiki": "#G_Permutation_:_b",
-      "algdb": "Gb",
+      "algdb": "gb",
       "image": "PLL-Gb-1",
       "prob": "1/72",
       "algs" :
@@ -363,7 +363,7 @@ var algSet = {
       "name": "Gb-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gb-Perm because of the 2-bar at the back-right and the opposite stickers at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#G_Permutation_:_b",
-      "algdb": "Gb",
+      "algdb": "gb",
       "image": "PLL-Gb-2",
       "prob": "1/72",
       "algs" :
@@ -381,7 +381,7 @@ var algSet = {
       "name": "Gb-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gb-Perm because of the 2-bar at the front-left and the edge on the right being the opposite of the front corner.<br/><br/>You might find the corner on the left useful during recognition.",
       "wiki": "#G_Permutation_:_b",
-      "algdb": "Gb",
+      "algdb": "gb",
       "image": "PLL-Gb-3",
       "prob": "1/72",
       "algs" :
@@ -399,7 +399,7 @@ var algSet = {
       "name": "Gb-Perm",
       "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gb-Perm because the edge on the left matches the headlights.<br/><br/>The edge on the left is also the opposite of the back corner.",
       "wiki": "#G_Permutation_:_b",
-      "algdb": "Gb",
+      "algdb": "gb",
       "image": "PLL-Gb-4",
       "prob": "1/72",
       "algs" :
@@ -417,7 +417,7 @@ var algSet = {
       "name": "Gc-Perm",
       "desc": "Clearly a Ga-Perm / Gc-Perm because of the checker pattern (4 stickers) and the absence of an outside 2-bar.<br/><br/>Easily recognisable as Gc-Perm because the checker pattern is on the left.<br/><br/>The edge on the right is also the opposite of the front corner.",
       "wiki": "#G_Permutation_:_c",
-      "algdb": "Gc",
+      "algdb": "gc",
       "image": "PLL-Gc-1",
       "prob": "1/72",
       "algs" :
@@ -435,7 +435,7 @@ var algSet = {
       "name": "Gc-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gc-Perm because the edge on the right is the opposite of the front-left corner and the edge on the left matches the front-right corner.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#G_Permutation_:_c",
-      "algdb": "Gc",
+      "algdb": "gc",
       "image": "PLL-Gc-2",
       "prob": "1/72",
       "algs" :
@@ -453,7 +453,7 @@ var algSet = {
       "name": "Gc-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gc-Perm because of the 2-bar at the front-right and the edge on the left being an adjacent of the back-right corner.",
       "wiki": "#G_Permutation_:_c",
-      "algdb": "Gc",
+      "algdb": "gc",
       "image": "PLL-Gc-3",
       "prob": "1/72",
       "algs" :
@@ -471,7 +471,7 @@ var algSet = {
       "name": "Gc-Perm",
       "desc": "Clearly a Ga-Perm / Gc-Perm because the sticker between the headlights is the opposite of a checker pattern (4 stickers).<br/><br/>Easily recognisable as Gc-Perm because the \"almost\" checker pattern is on the right and the outside 2-bar on the left.",
       "wiki": "#G_Permutation_:_c",
-      "algdb": "Gc",
+      "algdb": "gc",
       "image": "PLL-Gc-4",
       "prob": "1/72",
       "algs" :
@@ -489,7 +489,7 @@ var algSet = {
       "name": "Gd-Perm",
       "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gd-Perm because the edge on the right matches the headlights.<br/><br/>The edge on the right is also the opposite of the back corner.",
       "wiki": "#G_Permutation_:_d",
-      "algdb": "Gd",
+      "algdb": "gd",
       "image": "PLL-Gd-1",
       "prob": "1/72",
       "algs" :
@@ -507,7 +507,7 @@ var algSet = {
       "name": "Gd-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gd-Perm because of the 2-bar at the front-right and the edge on the left being the opposite of the front corner.<br/><br/>You might find the corner on the right useful during recognition.",
       "wiki": "#G_Permutation_:_d",
-      "algdb": "Gd",
+      "algdb": "gd",
       "image": "PLL-Gd-2",
       "prob": "1/72",
       "algs" :
@@ -525,7 +525,7 @@ var algSet = {
       "name": "Gd-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Gd-Perm because of the 2-bar at the back-left and the opposite stickers at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#G_Permutation_:_d",
-      "algdb": "Gd",
+      "algdb": "gd",
       "image": "PLL-Gd-3",
       "prob": "1/72",
       "algs" :
@@ -543,7 +543,7 @@ var algSet = {
       "name": "Gd-Perm",
       "desc": "Clearly a Gb-Perm / Gd-Perm because the headlights contain the opposite edge colour.<br/><br/>Recognisable as Gd-Perm because the headlights are on the right and the adjacent edge is the opposite of the front corner.",
       "wiki": "#G_Permutation_:_d",
-      "algdb": "Gd",
+      "algdb": "gd",
       "image": "PLL-Gd-4",
       "prob": "1/72",
       "algs" :
@@ -561,7 +561,7 @@ var algSet = {
       "name": "H-Perm / X-Perm",
       "desc": "Clearly an [EPLL] because of the headlights on both sides.<br/><br/>Easily recognisable as H-Perm because both sets of headlights contain the opposite edge colour.<br/><br/>H-perm looks the same from all four possible angles.",
       "wiki": "#H_Permutation",
-      "algdb": "H",
+      "algdb": "h",
       "image": "PLL-H-1",
       "prob": "1/72",
       "algs" :
@@ -579,7 +579,7 @@ var algSet = {
       "name": "Ja-Perm",
       "desc": "Clearly a J-Perm because of the 3-bar and inside 2-bar which look like a 3x2 block.<br/><br/>Easily recognisable as Ja-Perm because the 3-bar is on the left and the inside 2-bar on the right.",
       "wiki": "#J_Permutation_:_a",
-      "algdb": "Ja",
+      "algdb": "ja",
       "image": "PLL-Ja-1",
       "prob": "1/72",
       "algs" :
@@ -597,7 +597,7 @@ var algSet = {
       "name": "Ja-Perm",
       "desc": "Clearly a J-Perm because of the inside and outside 2-bars, one of which is connected to an opposite corner.<br/><br/>Easily recognisable as Ja-Perm because the 2-bars are on the left.",
       "wiki": "#J_Permutation_:_a",
-      "algdb": "Ja",
+      "algdb": "ja",
       "image": "PLL-Ja-2",
       "prob": "1/72",
       "algs" :
@@ -615,7 +615,7 @@ var algSet = {
       "name": "Ja-Perm",
       "desc": "Clearly a J-Perm because of the inside and outside 2-bars, one of which is connected to an opposite corner.<br/><br/>Easily recognisable as Ja-Perm because the 2-bars are on the left.",
       "wiki": "#J_Permutation_:_a",
-      "algdb": "Ja",
+      "algdb": "ja",
       "image": "PLL-Ja-3",
       "prob": "1/72",
       "algs" :
@@ -633,7 +633,7 @@ var algSet = {
       "name": "Ja-Perm",
       "desc": "Clearly a J-Perm because of the 3-bar and the outside 2-bar, separated by an adjacent corner sticker.<br/><br/>Easily recognisable as Ja-Perm because the outside 2-bar is on the left, disconnected from the 3-bar on the right.",
       "wiki": "#J_Permutation_:_a",
-      "algdb": "Ja",
+      "algdb": "ja",
       "image": "PLL-Ja-4",
       "prob": "1/72",
       "algs" :
@@ -651,7 +651,7 @@ var algSet = {
       "name": "Jb-Perm",
       "desc": "Clearly a J-Perm because of the 3-bar and the outside 2-bar, separated by an adjacent corner sticker.<br/><br/>Easily recognisable as Jb-Perm because the outside 2-bar is on the right, disconnected from the 3-bar on the left.",
       "wiki": "#J_Permutation_:_b",
-      "algdb": "Jb",
+      "algdb": "jb",
       "image": "PLL-Jb-1",
       "prob": "1/72",
       "algs" :
@@ -669,7 +669,7 @@ var algSet = {
       "name": "Jb-Perm",
       "desc": "Clearly a J-Perm because of the inside and outside 2-bars, one of which is connected to an opposite corner.<br/><br/>Easily recognisable as Jb-Perm because the 2-bars are on the right.",
       "wiki": "#J_Permutation_:_b",
-      "algdb": "Jb",
+      "algdb": "jb",
       "image": "PLL-Jb-2",
       "prob": "1/72",
       "algs" :
@@ -687,7 +687,7 @@ var algSet = {
       "name": "Jb-Perm",
       "desc": "Clearly a J-Perm because of the inside and outside 2-bars, one of which is connected to an opposite corner.<br/><br/>Easily recognisable as Jb-Perm because the 2-bars are on the right.",
       "wiki": "#J_Permutation_:_b",
-      "algdb": "Jb",
+      "algdb": "jb",
       "image": "PLL-Jb-3",
       "prob": "1/72",
       "algs" :
@@ -705,7 +705,7 @@ var algSet = {
       "name": "Jb-Perm",
       "desc": "Clearly a J-Perm because of the 3-bar and inside 2-bar which look like a 3x2 block.<br/><br/>Easily recognisable as Jb-Perm because the 3-bar is on the right and the inside 2-bar on the left.",
       "wiki": "#J_Permutation_:_b",
-      "algdb": "Jb",
+      "algdb": "jb",
       "image": "PLL-Jb-4",
       "prob": "1/72",
       "algs" :
@@ -723,7 +723,7 @@ var algSet = {
       "name": "Na-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Na-Perm because of the 2-bars on the right and opposite corner colours.<br/><br/>Na-perm looks the same from all four possible angles.",
       "wiki": "#N_Permutation_:_a",
-      "algdb": "Na",
+      "algdb": "na",
       "image": "PLL-Na-1",
       "prob": "1/72",
       "algs" :
@@ -741,7 +741,7 @@ var algSet = {
       "name": "Nb-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Nb-Perm because of the 2-bars on the left and opposite corner colours.<br/><br/>Nb-perm looks the same from all four possible angles.",
       "wiki": "#N_Permutation_:_b",
-      "algdb": "Nb",
+      "algdb": "nb",
       "image": "PLL-Nb-1",
       "prob": "1/72",
       "algs" :
@@ -759,7 +759,7 @@ var algSet = {
       "name": "Ra-Perm",
       "desc": "Clearly an R-Perm because the headlights contain an adjacent edge colour.<br/><br/>Easily recognisable as Ra-Perm because the headlights are on the left and inside 2-bar on the right.",
       "wiki": "#R_Permutation_:_a",
-      "algdb": "Ra",
+      "algdb": "ra",
       "image": "PLL-Ra-1",
       "prob": "1/72",
       "algs" :
@@ -777,7 +777,7 @@ var algSet = {
       "name": "Ra-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ra-Perm because of the 2-bar at the back-left and the edge on the right matching the front-left corner.<br/><br/>You might find the \"malformed\" pair at the front-right   is useful during recognition.",
       "wiki": "#R_Permutation_:_a",
-      "algdb": "Ra",
+      "algdb": "ra",
       "image": "PLL-Ra-2",
       "prob": "1/72",
       "algs" :
@@ -795,7 +795,7 @@ var algSet = {
       "name": "Ra-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Ra-Perm because the edge on the right is the opposite of the front corner and the edge on the left matches the front-right corner.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#R_Permutation_:_a",
-      "algdb": "Ra",
+      "algdb": "ra",
       "image": "PLL-Ra-3",
       "prob": "1/72",
       "algs" :
@@ -813,7 +813,7 @@ var algSet = {
       "name": "Ra-Perm",
       "desc": "Clearly an R-Perm because of the long checker pattern (5 stickers).<br/><br/>Easily recognisable as Ra-Perm because the checker pattern is on the right.<br/><br/>The edge on the left is also the opposite of the rear corner.",
       "wiki": "#R_Permutation_:_a",
-      "algdb": "Ra",
+      "algdb": "ra",
       "image": "PLL-Ra-4",
       "prob": "1/72",
       "algs" :
@@ -831,7 +831,7 @@ var algSet = {
       "name": "Rb-Perm",
       "desc": "Clearly an R-Perm because of the long checker pattern (5 stickers).<br/><br/>Easily recognisable as Rb-Perm because the checker pattern is on the left.<br/><br/>The edge on the right is also the opposite of the rear corner.",
       "wiki": "#R_Permutation_:_b",
-      "algdb": "Rb",
+      "algdb": "rb",
       "image": "PLL-Rb-1",
       "prob": "1/72",
       "algs" :
@@ -849,7 +849,7 @@ var algSet = {
       "name": "Rb-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Rb-Perm because the edge on the left is the opposite of the front corner and the edge on the right matches the front-left corner.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#R_Permutation_:_b",
-      "algdb": "Rb",
+      "algdb": "rb",
       "image": "PLL-Rb-2",
       "prob": "1/72",
       "algs" :
@@ -867,7 +867,7 @@ var algSet = {
       "name": "Rb-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as Rb-Perm because of the 2-bar at the back-right and the edge on the left matching the front-right corner.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#R_Permutation_:_b",
-      "algdb": "Rb",
+      "algdb": "rb",
       "image": "PLL-Rb-3",
       "prob": "1/72",
       "algs" :
@@ -885,7 +885,7 @@ var algSet = {
       "name": "Rb-Perm",
       "desc": "Clearly an R-Perm because the headlights contain an adjacent edge colour.<br/><br/>Easily recognisable as Rb-Perm because the headlights are on the right and inside 2-bar on the left.",
       "wiki": "#R_Permutation_:_b",
-      "algdb": "Rb",
+      "algdb": "rb",
       "image": "PLL-Rb-4",
       "prob": "1/72",
       "algs" :
@@ -903,7 +903,7 @@ var algSet = {
       "name": "T-Perm",
       "desc": "Clearly a T-Perm because the headlights contain the opposite edge colour.",
       "wiki": "#T_Permutation",
-      "algdb": "T",
+      "algdb": "t",
       "image": "PLL-T-1",
       "prob": "1/72",
       "algs" :
@@ -921,7 +921,7 @@ var algSet = {
       "name": "T-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as T-Perm because of the 2-bar at the back-left and the edge on the right being the opposite of the front-left corner.",
       "wiki": "#T_Permutation",
-      "algdb": "T",
+      "algdb": "t",
       "image": "PLL-T-2",
       "prob": "1/72",
       "algs" :
@@ -939,7 +939,7 @@ var algSet = {
       "name": "T-Perm",
       "desc": "Definitely an adjacent corner swap because the outermost corner stickers are identical.<br/><br/>Recognisable as T-Perm because of the 2-bar at the back-right and the edge on the left being the opposite of the front-right corner.",
       "wiki": "#T_Permutation",
-      "algdb": "T",
+      "algdb": "t",
       "image": "PLL-T-3",
       "prob": "1/72",
       "algs" :
@@ -957,7 +957,7 @@ var algSet = {
       "name": "T-Perm",
       "desc": "Clearly a T-Perm because the headlights contain the opposite edge colour.",
       "wiki": "#T_Permutation",
-      "algdb": "T",
+      "algdb": "t",
       "image": "PLL-T-4",
       "prob": "1/72",
       "algs" :
@@ -975,7 +975,7 @@ var algSet = {
       "name": "Ua-Perm",
       "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights contain an adjacent edge colour.<br/><br/>You may also notice that the edge on the right is the opposite of the bar on the left.",
       "wiki": "#U_Permutation_:_a",
-      "algdb": "Ua",
+      "algdb": "ua",
       "image": "PLL-Ua-1",
       "prob": "1/72",
       "algs" :
@@ -993,7 +993,7 @@ var algSet = {
       "name": "Ua-Perm",
       "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the edge on the left matches the headlights on the right.<br/><br/>Alternatively, recognisable because the edge on the right is the opposite of the headlights on the left.<br/></br>You might find the checker pattern (4 stickers) on the left is useful during recognition.",
       "wiki": "#U_Permutation_:_a",
-      "algdb": "Ua",
+      "algdb": "ua",
       "image": "PLL-Ua-2",
       "prob": "1/72",
       "algs" :
@@ -1011,7 +1011,7 @@ var algSet = {
       "name": "Ua-Perm",
       "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ua-Perm (CCW) because the headlights on the right contain the opposite edge colour.<br/><br/>Another way to recognise as Ua-Perm (CCW) is because the edge on the left matches the headlights on the right.<br/><br/>You might find the checker pattern (4 stickers) on the left useful during recognition.",
       "wiki": "#U_Permutation_:_a",
-      "algdb": "Ua",
+      "algdb": "ua",
       "image": "PLL-Ua-3",
       "prob": "1/72",
       "algs" :
@@ -1029,7 +1029,7 @@ var algSet = {
       "name": "Ua-Perm",
       "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ua-Perm (CCW) because the headlights contain the opposite edge colour.",
       "wiki": "#U_Permutation_:_a",
-      "algdb": "Ua",
+      "algdb": "ua",
       "image": "PLL-Ua-4",
       "prob": "1/72",
       "algs" :
@@ -1047,7 +1047,7 @@ var algSet = {
       "name": "Ub-Perm",
       "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Easily recognisable as Ub-Perm (CW) because the headlights contain the opposite edge colour.",
       "wiki": "#U_Permutation_:_b",
-      "algdb": "Ub",
+      "algdb": "ub",
       "image": "PLL-Ub-1",
       "prob": "1/72",
       "algs" :
@@ -1065,7 +1065,7 @@ var algSet = {
       "name": "Ub-Perm",
       "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights on the left contain the opposite edge colour.<br/><br/>Another way to recognise as Ub-Perm (CW) is because the edge on the right matches the headlights on the left.<br/><br/>You might find the checker pattern (4 stickers) on the right useful during recognition.",
       "wiki": "#U_Permutation_:_b",
-      "algdb": "Ub",
+      "algdb": "ub",
       "image": "PLL-Ub-2",
       "prob": "1/72",
       "algs" :
@@ -1083,7 +1083,7 @@ var algSet = {
       "name": "Ub-Perm",
       "desc": "Clearly an [EPLL] because of the headlights on both sides. Definitely a U-Perm because there are exactly 3 colours.<br/><br/>Recognisable as Ub-Perm (CW) because the edge on the right matches the headlights on the left.<br/><br/>Alternatively, recognisable because the edge on the left is the opposite of the headlights on the right.<br/></br>You might find the checker pattern (4 stickers) on the right is useful during recognition.",
       "wiki": "#U_Permutation_:_b",
-      "algdb": "Ub",
+      "algdb": "ub",
       "image": "PLL-Ub-3",
       "prob": "1/72",
       "algs" :
@@ -1101,7 +1101,7 @@ var algSet = {
       "name": "Ub-Perm",
       "desc": "Definitely a U-Perm because of the bar and headlights.<br/><br/>Recognisable as Ub-Perm (CW) because the headlights contain an adjacent edge colour.<br/><br/>You may also notice that the edge on the left is the opposite of the bar on the right.",
       "wiki": "#U_Permutation_:_b",
-      "algdb": "Ub",
+      "algdb": "ub",
       "image": "PLL-Ub-4",
       "prob": "1/72",
       "algs" :
@@ -1119,7 +1119,7 @@ var algSet = {
       "name": "V-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as V-Perm because of the 2x2 block at the front, bookended by opposite corner colours.",
       "wiki": "#V_Permutation",
-      "algdb": "V",
+      "algdb": "v",
       "image": "PLL-V-1",
       "prob": "1/72",
       "algs" :
@@ -1137,7 +1137,7 @@ var algSet = {
       "name": "V-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the 2-bar at the back-left.<br/><br/>You might find the \"malformed\" pair at the front-right is useful during recognition.",
       "wiki": "#V_Permutation",
-      "algdb": "V",
+      "algdb": "v",
       "image": "PLL-V-2",
       "prob": "1/72",
       "algs" :
@@ -1155,7 +1155,7 @@ var algSet = {
       "name": "V-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the \"malformed\" 2x2 block at the front, resulting in a checker pattern (4 stickers).",
       "wiki": "#V_Permutation",
-      "algdb": "V",
+      "algdb": "v",
       "image": "PLL-V-3",
       "prob": "1/72",
       "algs" :
@@ -1173,7 +1173,7 @@ var algSet = {
       "name": "V-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as V-Perm because of the 2-bar at the back-right.<br/><br/>You might find the \"malformed\" pair at the front-left is useful during recognition.",
       "wiki": "#V_Permutation",
-      "algdb": "V",
+      "algdb": "v",
       "image": "PLL-V-4",
       "prob": "1/72",
       "algs" :
@@ -1191,7 +1191,7 @@ var algSet = {
       "name": "Y-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Easily recognisable as Y-Perm because the outside 2-bars are a unique feature.<br/><br/>The corner at the front makes this case very distinctive due to the opposite colours.",
       "wiki": "#Y_Permutation",
-      "algdb": "Y",
+      "algdb": "y",
       "image": "PLL-Y-1",
       "prob": "1/72",
       "algs" :
@@ -1209,7 +1209,7 @@ var algSet = {
       "name": "Y-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as Y-Perm because of the 2-bar at the front-left and the edge on the right matching the back-left corner.",
       "wiki": "#Y_Permutation",
-      "algdb": "Y",
+      "algdb": "y",
       "image": "PLL-Y-2",
       "prob": "1/72",
       "algs" :
@@ -1227,7 +1227,7 @@ var algSet = {
       "name": "Y-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>This is the only angle for a diagonal corner swap without a visible pair, 2x2 block, \"malformed\" pair or \"malformed\" 2x2 block.<br/><br/>Most people find the \"outer\" checker pattern (4 stickers) is useful during recognition.",
       "wiki": "#Y_Permutation",
-      "algdb": "Y",
+      "algdb": "y",
       "image": "PLL-Y-3",
       "prob": "1/72",
       "algs" :
@@ -1245,7 +1245,7 @@ var algSet = {
       "name": "Y-Perm",
       "desc": "Definitely a diagonal corner swap because the outermost corner stickers are adjacent colours.<br/><br/>Recognisable as Y-Perm because of the 2-bar at the front-right and the edge on the left matching the back-right corner.",
       "wiki": "#Y_Permutation",
-      "algdb": "Y",
+      "algdb": "y",
       "image": "PLL-Y-4",
       "prob": "1/72",
       "algs" :
@@ -1263,7 +1263,7 @@ var algSet = {
       "name": "Z-Perm",
       "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 2 colours, unlike U-Perms which have 3 colours.<br/><br/>The edge on the left matches the headlights on the right and the edge on the right matches the headlights on the left.<br/><br/>Easily recognisable as Z-Perm because of the distinctive checker pattern (6 stickers).<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
-      "algdb": "Z",
+      "algdb": "z",
       "image": "PLL-Z-1",
       "prob": "1/72",
       "algs" :
@@ -1281,7 +1281,7 @@ var algSet = {
       "name": "Z-Perm",
       "desc": "Clearly an [EPLL] because of the headlights on both sides. Exactly 4 colours, unlike U-Perms which have 3 colours.<br/><br/>The edge on the left is the opposite of the headlights on the right. The edge on the right is the opposite of the headlights on the left.<br/><br/>Recognisable as Z-Perm because both sets of headlights contain an adjacent edge colour.<br/><br/>The Z-Perm has two appearances and looks the same after a U2.",
       "wiki": "#Z_Permutation",
-      "algdb": "Z",
+      "algdb": "z",
       "image": "PLL-Z-2",
       "prob": "1/72",
       "algs" :

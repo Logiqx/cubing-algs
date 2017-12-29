@@ -5,7 +5,7 @@ var algSet = {
     "name": "Orientation of the Last Layer",
     "desc": "This page lists the [OLL] algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/OLL",
-    "algdb": "http://algdb.net/Set/OLL/",
+    "algdb": "http://algdb.net/puzzle/333/oll/",
     "uses":
     [
       {
@@ -24,7 +24,7 @@ var algSet = {
       "id": "1",
       "name": "No Edges - Runway",
       "wiki": "",
-      "algdb": "OLL 1",
+      "algdb": "oll1",
       "image": "OLL-01",
       "prob": "1/108",
       "algs" :
@@ -57,7 +57,7 @@ var algSet = {
       "name": "No Edges - Zamboni",
       "desc": "This case is named after the Zamboni Machine which is an ice resurfacer; check some images on Google. The algorithm(s) for this [OLL] case are good choices for the 4-flip during [EOLL].",
       "wiki": "",
-      "algdb": "OLL 2",
+      "algdb": "oll2",
       "image": "OLL-02",
       "prob": "1/54",
       "algs" :
@@ -119,7 +119,7 @@ var algSet = {
       "id": "3",
       "name": "No Edges - Anti-Mouse",
       "wiki": "",
-      "algdb": "OLL 3",
+      "algdb": "oll3",
       "image": "OLL-03",
       "prob": "1/54",
       "algs" :
@@ -157,7 +157,7 @@ var algSet = {
       "id": "4",
       "name": "No Edges - Mouse",
       "wiki": "",
-      "algdb": "OLL 4",
+      "algdb": "oll4",
       "image": "OLL-04",
       "prob": "1/54",
       "algs" :
@@ -195,7 +195,7 @@ var algSet = {
       "id": "5",
       "name": "Square Shape - RBWAS",
       "wiki": "",
-      "algdb": "OLL 5",
+      "algdb": "oll5",
       "image": "OLL-05",
       "prob": "1/54",
       "algs" :
@@ -212,7 +212,7 @@ var algSet = {
       "id": "6",
       "name": "Square Shape - RFWAS",
       "wiki": "",
-      "algdb": "OLL 6",
+      "algdb": "oll6",
       "image": "OLL-06",
       "prob": "1/54",
       "algs" :
@@ -238,7 +238,7 @@ var algSet = {
       "id": "7",
       "name": "Small Lightning Bolt - RFWS",
       "wiki": "",
-      "algdb": "OLL 7",
+      "algdb": "oll7",
       "image": "OLL-07",
       "prob": "1/54",
       "algs" :
@@ -255,7 +255,7 @@ var algSet = {
       "id": "8",
       "name": "Small Lightning Bolt - RBWS",
       "wiki": "",
-      "algdb": "OLL 8",
+      "algdb": "oll8",
       "image": "OLL-08",
       "prob": "1/54",
       "algs" :
@@ -281,7 +281,7 @@ var algSet = {
       "id": "9",
       "name": "Fish Shape - Kite",
       "wiki": "",
-      "algdb": "OLL 9",
+      "algdb": "oll9",
       "image": "OLL-09",
       "prob": "1/54",
       "algs" :
@@ -322,7 +322,7 @@ var algSet = {
       "id": "10",
       "name": "Fish Shape - Anti-Kite",
       "wiki": "",
-      "algdb": "OLL 10",
+      "algdb": "oll10",
       "image": "OLL-10",
       "prob": "1/54",
       "algs" :
@@ -354,7 +354,7 @@ var algSet = {
       "id": "11",
       "name": "Small Lightning Bolt",
       "wiki": "",
-      "algdb": "OLL 11",
+      "algdb": "oll11",
       "image": "OLL-11",
       "prob": "1/54",
       "algs" :
@@ -386,7 +386,7 @@ var algSet = {
       "id": "12",
       "name": "Small Lightning Bolt",
       "wiki": "",
-      "algdb": "OLL 12",
+      "algdb": "oll12",
       "image": "OLL-12",
       "prob": "1/54",
       "algs" :
@@ -418,7 +418,7 @@ var algSet = {
       "id": "13",
       "name": "Knight Move - Gun",
       "wiki": "",
-      "algdb": "OLL 13",
+      "algdb": "oll13",
       "image": "OLL-13",
       "prob": "1/54",
       "algs" :
@@ -456,7 +456,7 @@ var algSet = {
       "id": "14",
       "name": "Knight Move - Anti-Gun",
       "wiki": "",
-      "algdb": "OLL 14",
+      "algdb": "oll14",
       "image": "OLL-14",
       "prob": "1/54",
       "algs" :
@@ -488,7 +488,7 @@ var algSet = {
       "id": "15",
       "name": "Knight Move - Squeegee",
       "wiki": "",
-      "algdb": "OLL 15",
+      "algdb": "oll15",
       "image": "OLL-15",
       "prob": "1/54",
       "algs" :
@@ -505,7 +505,7 @@ var algSet = {
       "id": "16",
       "name": "Knight Move - Anti-Squeegee",
       "wiki": "",
-      "algdb": "OLL 16",
+      "algdb": "oll16",
       "image": "OLL-16",
       "prob": "1/54",
       "algs" :
@@ -522,7 +522,7 @@ var algSet = {
       "id": "17",
       "name": "No Edges - Slash",
       "wiki": "",
-      "algdb": "OLL 17",
+      "algdb": "oll17",
       "image": "OLL-17",
       "prob": "1/54",
       "algs" :
@@ -554,7 +554,7 @@ var algSet = {
       "id": "18",
       "name": "No Edges - Crown",
       "wiki": "",
-      "algdb": "OLL 18",
+      "algdb": "oll18",
       "image": "OLL-18",
       "prob": "1/54",
       "algs" :
@@ -610,7 +610,7 @@ var algSet = {
       "id": "19",
       "name": "No Edges - Bunny / Mickey",
       "wiki": "",
-      "algdb": "OLL 19",
+      "algdb": "oll19",
       "image": "OLL-19",
       "prob": "1/54",
       "algs" :
@@ -667,7 +667,7 @@ var algSet = {
       "name": "No Edges - X / Checkers",
       "desc": "Advanced solvers might use [OLLCP-A] algorithms for this case. The second algorithm is simply the inverse of the first algorithm.",
       "wiki": "",
-      "algdb": "OLL 20",
+      "algdb": "oll20",
       "image": "OLL-20",
       "prob": "1/216",
       "algs" :
@@ -720,7 +720,7 @@ var algSet = {
       "id": "21",
       "name": "H / Double Sune",
       "wiki": "",
-      "algdb": "OLL 21",
+      "algdb": "oll21",
       "image": "OLL-21",
       "prob": "1/108",
       "algs" :
@@ -779,7 +779,7 @@ var algSet = {
       "id": "22",
       "name": "Pi / Bruno",
       "wiki": "",
-      "algdb": "OLL 22",
+      "algdb": "oll22",
       "image": "OLL-22",
       "prob": "1/54",
       "algs" :
@@ -862,7 +862,7 @@ var algSet = {
       "id": "23",
       "name": "U / Headlights",
       "wiki": "",
-      "algdb": "OLL 23",
+      "algdb": "oll23",
       "image": "OLL-23",
       "prob": "1/54",
       "algs" :
@@ -957,7 +957,7 @@ var algSet = {
       "id": "24",
       "name": "T / Chameleon",
       "wiki": "",
-      "algdb": "OLL 24",
+      "algdb": "oll24",
       "image": "OLL-24",
       "prob": "1/54",
       "algs" :
@@ -1052,7 +1052,7 @@ var algSet = {
       "id": "25",
       "name": "L / Bowtie",
       "wiki": "",
-      "algdb": "OLL 25",
+      "algdb": "oll25",
       "image": "OLL-25",
       "prob": "1/54",
       "algs" :
@@ -1189,7 +1189,7 @@ var algSet = {
       "id": "26",
       "name": "AS / Anti-Sune",
       "wiki": "",
-      "algdb": "OLL 26",
+      "algdb": "oll26",
       "image": "OLL-26",
       "prob": "1/54",
       "algs" :
@@ -1230,7 +1230,7 @@ var algSet = {
       "id": "27",
       "name": "S / Sune",
       "wiki": "",
-      "algdb": "OLL 27",
+      "algdb": "oll27",
       "image": "OLL-27",
       "prob": "1/54",
       "algs" :
@@ -1254,7 +1254,7 @@ var algSet = {
       "name": "Stealth / Angel Fish",
       "desc": "Advanced solvers might use [OLLCP-A] algorithms for this case.",
       "wiki": "",
-      "algdb": "OLL 28",
+      "algdb": "oll28",
       "image": "OLL-28",
       "prob": "1/54",
       "algs" :
@@ -1286,7 +1286,7 @@ var algSet = {
       "id": "29",
       "name": "Awkward Shape",
       "wiki": "",
-      "algdb": "OLL 29",
+      "algdb": "oll29",
       "image": "OLL-29",
       "prob": "1/54",
       "algs" :
@@ -1348,7 +1348,7 @@ var algSet = {
       "id": "30",
       "name": "Awkward Shape",
       "wiki": "",
-      "algdb": "OLL 30",
+      "algdb": "oll30",
       "image": "OLL-30",
       "prob": "1/54",
       "algs" :
@@ -1410,7 +1410,7 @@ var algSet = {
       "id": "31",
       "name": "P Shape - Little \"q\"",
       "wiki": "",
-      "algdb": "OLL 31",
+      "algdb": "oll31",
       "image": "OLL-31",
       "prob": "1/54",
       "algs" :
@@ -1428,7 +1428,7 @@ var algSet = {
       "name": "P Shape - Little \"d\"",
       "desc": "Very few people list the algorithm that I use but it is just the inverse of a \"Big Bolt\" case; OLL 39.",
       "wiki": "",
-      "algdb": "OLL 32",
+      "algdb": "oll32",
       "image": "OLL-32",
       "prob": "1/54",
       "algs" :
@@ -1460,7 +1460,7 @@ var algSet = {
       "id": "33",
       "name": "T Shape - Key",
       "wiki": "",
-      "algdb": "OLL 33",
+      "algdb": "oll33",
       "image": "OLL-33",
       "prob": "1/54",
       "algs" :
@@ -1477,7 +1477,7 @@ var algSet = {
       "id": "34",
       "name": "C Shape - City (C and T)",
       "wiki": "",
-      "algdb": "OLL 34",
+      "algdb": "oll34",
       "image": "OLL-34",
       "prob": "1/54",
       "algs" :
@@ -1534,7 +1534,7 @@ var algSet = {
       "id": "35",
       "name": "Fish Shape - Fish Salad",
       "wiki": "",
-      "algdb": "OLL 35",
+      "algdb": "oll35",
       "image": "OLL-35",
       "prob": "1/54",
       "algs" :
@@ -1566,7 +1566,7 @@ var algSet = {
       "id": "36",
       "name": "W Shape - Wario",
       "wiki": "",
-      "algdb": "OLL 36",
+      "algdb": "oll36",
       "image": "OLL-36",
       "prob": "1/54",
       "algs" :
@@ -1598,7 +1598,7 @@ var algSet = {
       "id": "37",
       "name": "Fish Shape - Mounted Fish",
       "wiki": "",
-      "algdb": "OLL 37",
+      "algdb": "oll37",
       "image": "OLL-37",
       "prob": "1/54",
       "algs" :
@@ -1621,7 +1621,7 @@ var algSet = {
       "id": "38",
       "name": "W Shape - Mario",
       "wiki": "",
-      "algdb": "OLL 38",
+      "algdb": "oll38",
       "image": "OLL-38",
       "prob": "1/54",
       "algs" :
@@ -1647,7 +1647,7 @@ var algSet = {
       "id": "39",
       "name": "Big Lightning Bolt",
       "wiki": "",
-      "algdb": "OLL 39",
+      "algdb": "oll39",
       "image": "OLL-39",
       "prob": "1/54",
       "algs" :
@@ -1694,7 +1694,7 @@ var algSet = {
       "id": "40",
       "name": "Big Lightning Bolt",
       "wiki": "",
-      "algdb": "OLL 40",
+      "algdb": "oll40",
       "image": "OLL-40",
       "prob": "1/54",
       "algs" :
@@ -1711,7 +1711,7 @@ var algSet = {
       "id": "41",
       "name": "Awkward Shape",
       "wiki": "",
-      "algdb": "OLL 41",
+      "algdb": "oll41",
       "image": "OLL-41",
       "prob": "1/54",
       "algs" :
@@ -1728,7 +1728,7 @@ var algSet = {
       "id": "42",
       "name": "Awkward Shape",
       "wiki": "",
-      "algdb": "OLL 42",
+      "algdb": "oll42",
       "image": "OLL-42",
       "prob": "1/54",
       "algs" :
@@ -1755,7 +1755,7 @@ var algSet = {
       "name": "P Shape - Little \"b\"",
       "desc": "This is one of the three [OLL] cases (43, 44, 45) with a 6 move solution.",
       "wiki": "",
-      "algdb": "OLL 43",
+      "algdb": "oll43",
       "image": "OLL-43",
       "prob": "1/54",
       "algs" :
@@ -1794,7 +1794,7 @@ var algSet = {
       "name": "P Shape - Little \"p\"",
       "desc": "This is one of the three [OLL] cases (43, 44, 45) with a 6 move solution. The algorithm(s) for this [OLL] case are good choices for the adjacent edge flip during [EOLL].",
       "wiki": "",
-      "algdb": "OLL 44",
+      "algdb": "oll44",
       "image": "OLL-44",
       "prob": "1/54",
       "algs" :
@@ -1821,7 +1821,7 @@ var algSet = {
       "name": "T Shape - Suit Up",
       "desc": "This is one of the three [OLL] cases (43, 44, 45) with a 6 move solution. The algorithm(s) for this [OLL] case are good choices for the opposite edge flip during [EOLL].",
       "wiki": "",
-      "algdb": "OLL 45",
+      "algdb": "oll45",
       "image": "OLL-45",
       "prob": "1/54",
       "algs" :
@@ -1853,7 +1853,7 @@ var algSet = {
       "id": "46",
       "name": "C Shape - Seein' Headlights",
       "wiki": "",
-      "algdb": "OLL 46",
+      "algdb": "oll46",
       "image": "OLL-46",
       "prob": "1/54",
       "algs" :
@@ -1870,7 +1870,7 @@ var algSet = {
       "id": "47",
       "name": "L Shape - Anti-Breakneck",
       "wiki": "",
-      "algdb": "OLL 47",
+      "algdb": "oll47",
       "image": "OLL-47",
       "prob": "1/54",
       "algs" :
@@ -1902,7 +1902,7 @@ var algSet = {
       "id": "48",
       "name": "L Shape - Breakneck",
       "wiki": "",
-      "algdb": "OLL 48",
+      "algdb": "oll48",
       "image": "OLL-48",
       "prob": "1/54",
       "algs" :
@@ -1928,7 +1928,7 @@ var algSet = {
       "id": "49",
       "name": "L Shape - RB Squeezy",
       "wiki": "",
-      "algdb": "OLL 49",
+      "algdb": "oll49",
       "image": "OLL-49",
       "prob": "1/54",
       "algs" :
@@ -1960,7 +1960,7 @@ var algSet = {
       "id": "50",
       "name": "L Shape - RF Squeezy",
       "wiki": "",
-      "algdb": "OLL 50",
+      "algdb": "oll50",
       "image": "OLL-50",
       "prob": "1/54",
       "algs" :
@@ -2007,7 +2007,7 @@ var algSet = {
       "id": "51",
       "name": "I Shape - Ant / Bottle Cap",
       "wiki": "",
-      "algdb": "OLL 51",
+      "algdb": "oll51",
       "image": "OLL-51",
       "prob": "1/54",
       "algs" :
@@ -2033,7 +2033,7 @@ var algSet = {
       "id": "52",
       "name": "I Shape - Rice Cooker",
       "wiki": "",
-      "algdb": "OLL 52",
+      "algdb": "oll52",
       "image": "OLL-52",
       "prob": "1/54",
       "algs" :
@@ -2080,7 +2080,7 @@ var algSet = {
       "id": "53",
       "name": "L Shape - Frying Pan",
       "wiki": "",
-      "algdb": "OLL 53",
+      "algdb": "oll53",
       "image": "OLL-53",
       "prob": "1/54",
       "algs" :
@@ -2127,7 +2127,7 @@ var algSet = {
       "id": "54",
       "name": "L Shape - Anti-Frying Pan",
       "wiki": "",
-      "algdb": "OLL 54",
+      "algdb": "oll54",
       "image": "OLL-54",
       "prob": "1/54",
       "algs" :
@@ -2174,7 +2174,7 @@ var algSet = {
       "id": "55",
       "name": "I Shape - Highway",
       "wiki": "",
-      "algdb": "OLL 55",
+      "algdb": "oll55",
       "image": "OLL-55",
       "prob": "1/108",
       "algs" :
@@ -2218,7 +2218,7 @@ var algSet = {
       "id": "56",
       "name": "I Shape - Street Lights",
       "wiki": "",
-      "algdb": "OLL 56",
+      "algdb": "oll56",
       "image": "OLL-56",
       "prob": "1/108",
       "algs" :
@@ -2242,7 +2242,7 @@ var algSet = {
       "name": "H / I",
       "desc": "Advanced solvers might use [OLLCP-A] algorithms for this case.",
       "wiki": "",
-      "algdb": "OLL 57",
+      "algdb": "oll57",
       "image": "OLL-57",
       "prob": "1/108",
       "algs" :

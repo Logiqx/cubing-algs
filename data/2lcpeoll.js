@@ -5,7 +5,7 @@ var algSet = {
     "name": "2-Look Corner Permutation and Edge Orientation of the Last Layer",
     "desc": "This page lists [CPEOLL] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/",
+    "algdb": "http://algdb.net/puzzle/333/",
     "uses":
     [
       {
@@ -25,7 +25,7 @@ var algSet = {
       "name": "Adjacent Edge Flip",
       "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] 44.",
       "wiki": "",
-      "algdb": "Set/OLL/OLL 44",
+      "algdb": "oll/oll44",
       "image": "EOLL-L",
       "prob": "4/8",
       "algs" :
@@ -69,7 +69,7 @@ var algSet = {
       "name": "Opposite Edge Flip",
       "desc": "This case is typically solved using the algorithm for [OLL] 45.",
       "wiki": "",
-      "algdb": "Set/OLL/OLL 45",
+      "algdb": "oll/oll45",
       "image": "EOLL-I",
       "prob": "2/8",
       "algs" :
@@ -88,7 +88,7 @@ var algSet = {
       "name": "Four Edge Flip",
       "desc": "This case is typically solved using the algorithm(s) for [OLL] 2.",
       "wiki": "",
-      "algdb": "Set/OLL/OLL 2",
+      "algdb": "oll/oll2",
       "image": "EOLL-D",
       "prob": "1/8",
       "algs" :
@@ -131,7 +131,7 @@ var algSet = {
       "id": "EOLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "EOLL",
       "prob": "1/8",
       "algs" :
@@ -149,7 +149,7 @@ var algSet = {
       "name": "Adjacent Corner Swap",
       "desc": "This case can be solved with the [Niklas] algorithm.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "CPLL-A",
       "prob": "4/6",
       "algs" :
@@ -177,7 +177,7 @@ var algSet = {
       "name": "Diagonal Corner Swap",
       "desc": "Although shorter algorithms exist this case can easily be solved using F triple-[sexy] F' or a [Niklas] combination.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "CPLL-O",
       "prob": "1/6",
       "algs" :
@@ -209,7 +209,7 @@ var algSet = {
       "id": "CPLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "CPLL",
       "prob": "1/6",
       "algs" :
@@ -234,7 +234,7 @@ var algSet = {
           "id": "edges",
           "name": "Edge Orientation",
           "wiki": "EOLL",
-          "algdb": "Set/OLL",
+          "algdb": "oll",
           "desc": "The [EOLL] cases are solved using the fastest [OLL] algorithms having the desired effect. There is a 1/8 chance of skipping this step and going straight to [CPLL].",
           "cases": ["Clock", "Line", "Dot", "EOLL"]
         },

@@ -5,7 +5,7 @@ var algSet = {
     "name": "2-Look Last Layer Edges First",
     "desc": "This page lists [LLEF] algorithms that are suitable for intermediates. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/",
+    "algdb": "http://algdb.net/puzzle/333/",
     "uses":
     [
       {
@@ -25,7 +25,7 @@ var algSet = {
       "name": "Adjacent Edge Flip",
       "desc": "This case resembles an analog clock at 9 o'clock. It is typically solved using the algorithm(s) for [OLL] 44.",
       "wiki": "",
-      "algdb": "Set/OLL/OLL 44",
+      "algdb": "oll/oll44",
       "image": "EOLL-L",
       "prob": "4/8",
       "algs" :
@@ -69,7 +69,7 @@ var algSet = {
       "name": "Opposite Edge Flip",
       "desc": "This case is typically solved using the algorithm for [OLL] 45.",
       "wiki": "",
-      "algdb": "Set/OLL/OLL 45",
+      "algdb": "oll/oll45",
       "image": "EOLL-I",
       "prob": "2/8",
       "algs" :
@@ -88,7 +88,7 @@ var algSet = {
       "name": "Four Edge Flip",
       "desc": "This case is typically solved using the algorithm(s) for [OLL] 2.",
       "wiki": "",
-      "algdb": "Set/OLL/OLL 2",
+      "algdb": "oll/oll2",
       "image": "EOLL-D",
       "prob": "1/8",
       "algs" :
@@ -131,7 +131,7 @@ var algSet = {
       "id": "EOLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "EOLL",
       "prob": "1/8",
       "algs" :
@@ -149,7 +149,7 @@ var algSet = {
       "name": "Adjacent Edge Swap",
       "desc": "This fastest way to solve this case is using the [Anti-Sune] or [Sune] algorithms.",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "EPLL-A",
       "prob": "4/6",
       "algs" :
@@ -184,7 +184,7 @@ var algSet = {
       "name": "Opposite Edge Swap",
       "desc": "This case can be solved using an [Anti-Sune] or [Sune] combination. It can also be solved using a [PLL] algorithm such as T-Perm (2H) or Z-Perm (OH).",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "EPLL-O",
       "prob": "1/6",
       "algs" :
@@ -237,7 +237,7 @@ var algSet = {
       "id": "EPLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "EPLL",
       "prob": "1/6",
       "algs" :

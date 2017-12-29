@@ -5,7 +5,7 @@ var algSet = {
     "name": "Permutation of the Last Layer",
     "desc": "This page lists the [PLL] algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/PLL",
-    "algdb": "http://algdb.net/Set/PLL/",
+    "algdb": "http://algdb.net/puzzle/333/pll/",
     "uses":
     [
       {
@@ -25,7 +25,7 @@ var algSet = {
       "name": "Aa-Perm",
       "desc": "Inverse and reflection of Ab. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL]. It is a clockwise 3-cycle of corners.",
       "wiki": "#A_Permutation_:_a",
-      "algdb": "Aa",
+      "algdb": "aa",
       "image": "PLL-Aa",
       "prob": "1/18",
       "algs" :
@@ -64,7 +64,7 @@ var algSet = {
       "name": "Ab-Perm",
       "desc": "Inverse and reflection of Aa. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL]. It is a counter-clockwise 3-cycle of corners.",
       "wiki": "#A_Permutation_:_b",
-      "algdb": "Ab",
+      "algdb": "ab",
       "image": "PLL-Ab",
       "prob": "1/18",
       "algs" :
@@ -97,7 +97,7 @@ var algSet = {
       "name": "E-Perm",
       "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] / [COLL] algorithms for L / Bowtie and T / Chameleon. The algorithm(s) for this [PLL] case are good choices for a diagonal corner swap during [CPLL].",
       "wiki": "#E_Permutation",
-      "algdb": "E",
+      "algdb": "e",
       "image": "PLL-E",
       "prob": "1/36",
       "algs" :
@@ -165,7 +165,7 @@ var algSet = {
       "id": "F",
       "name": "F-Perm",
       "wiki": "#F_Permutation",
-      "algdb": "F",
+      "algdb": "f",
       "image": "PLL-F",
       "prob": "1/18",
       "algs" :
@@ -222,7 +222,7 @@ var algSet = {
       "name": "Ga-Perm",
       "desc": "Inverse of Gb. Reflection of Gc.",
       "wiki": "#G_Permutation_:_a",
-      "algdb": "Ga",
+      "algdb": "ga",
       "image": "PLL-Ga",
       "prob": "1/18",
       "algs" :
@@ -249,7 +249,7 @@ var algSet = {
       "name": "Gb-Perm",
       "desc": "Inverse of Ga. Reflection of Gd.",
       "wiki": "#G_Permutation_:_b",
-      "algdb": "Gb",
+      "algdb": "gb",
       "image": "PLL-Gb",
       "prob": "1/18",
       "algs" :
@@ -276,7 +276,7 @@ var algSet = {
       "name": "Gc-Perm",
       "desc": "Inverse of Gd. Reflection of Ga.",
       "wiki": "#G_Permutation_:_c",
-      "algdb": "Gc",
+      "algdb": "gc",
       "image": "PLL-Gc",
       "prob": "1/18",
       "algs" :
@@ -300,7 +300,7 @@ var algSet = {
       "name": "Gd-Perm",
       "desc": "Inverse of Gc. Reflection of Gb.<br/><br/>Check out the similarity between the Gd-Perm algorithm R2' F' (R U R U') (R' F' R U2' R' U2 R' F) F R2 and the Ra-Perm algorithm R U (R' F' R U2' R' U2 R' F) (R U R U') U' R'.",
       "wiki": "#G_Permutation_:_d",
-      "algdb": "Gd",
+      "algdb": "gd",
       "image": "PLL-Gd",
       "prob": "1/18",
       "algs" :
@@ -324,7 +324,7 @@ var algSet = {
       "name": "H-Perm / X-Perm",
       "desc": "Best known as H-Perm (i.e. swapping opposite edge pairs) this case is also known as X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "#H_Permutation",
-      "algdb": "H",
+      "algdb": "h",
       "image": "PLL-H",
       "prob": "1/72",
       "algs" :
@@ -357,7 +357,7 @@ var algSet = {
       "name": "Ja-Perm",
       "desc": "Reflection of Jb. This case is also known as the L-Perm.",
       "wiki": "#J_Permutation_:_a",
-      "algdb": "Ja",
+      "algdb": "ja",
       "image": "PLL-Ja",
       "prob": "1/18",
       "algs" :
@@ -405,7 +405,7 @@ var algSet = {
       "name": "Jb-Perm",
       "desc": "Reflection of Ja. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL].",
       "wiki": "#J_Permutation_:_b",
-      "algdb": "Jb",
+      "algdb": "jb",
       "image": "PLL-Jb",
       "prob": "1/18",
       "algs" :
@@ -453,7 +453,7 @@ var algSet = {
       "name": "Na-Perm",
       "desc": "Reflection of Nb.",
       "wiki": "#N_Permutation_:_a",
-      "algdb": "Na",
+      "algdb": "na",
       "image": "PLL-Na",
       "prob": "1/72",
       "algs" :
@@ -486,7 +486,7 @@ var algSet = {
       "name": "Nb-Perm",
       "desc": "Reflection of Na.",
       "wiki": "#N_Permutation_:_b",
-      "algdb": "Nb",
+      "algdb": "nb",
       "image": "PLL-Nb",
       "prob": "1/72",
       "algs" :
@@ -510,7 +510,7 @@ var algSet = {
       "name": "Ra-Perm",
       "desc": "Reflection of Rb.<br/><br/>Check out the similarity between the Ra-Perm algorithm R U (R' F' R U2' R' U2 R' F) (R U R U') U' R' and the Gd-Perm algorithm R2' F' (R U R U') (R' F' R U2' R' U2 R' F) F R2.",
       "wiki": "#R_Permutation_:_a",
-      "algdb": "Ra",
+      "algdb": "ra",
       "image": "PLL-Ra",
       "prob": "1/18",
       "algs" :
@@ -549,7 +549,7 @@ var algSet = {
       "name": "Rb-Perm",
       "desc": "Reflection of Ra.",
       "wiki": "#R_Permutation_:_b",
-      "algdb": "Rb",
+      "algdb": "rb",
       "image": "PLL-Rb",
       "prob": "1/18",
       "algs" :
@@ -597,7 +597,7 @@ var algSet = {
       "name": "T-Perm",
       "desc": "Check out the similarity between the T-Perm algorithm (R U R' U' R' F R F') (F R U' R' U' R U R' F') and the Y-Perm algorithm (F R U' R' U' R U R' F') (R U R' U' R' F R F').",
       "wiki": "#T_Permutation",
-      "algdb": "T",
+      "algdb": "t",
       "image": "PLL-T",
       "prob": "1/18",
       "algs" :
@@ -624,7 +624,7 @@ var algSet = {
       "name": "Ua-Perm",
       "desc": "Inverse and reflection of Ub. It is a counter-clockwise 3-cycle of edges.",
       "wiki": "#U_Permutation_:_a",
-      "algdb": "Ua",
+      "algdb": "ua",
       "image": "PLL-Ua",
       "prob": "1/18",
       "algs" :
@@ -708,7 +708,7 @@ var algSet = {
       "name": "Ub-Perm",
       "desc": "Inverse and reflection of Ua. It is a clockwise 3-cycle of edges.",
       "wiki": "#U_Permutation_:_b",
-      "algdb": "Ub",
+      "algdb": "ub",
       "image": "PLL-Ub",
       "prob": "1/18",
       "algs" :
@@ -797,7 +797,7 @@ var algSet = {
       "id": "V",
       "name": "V-Perm",
       "wiki": "#V_Permutation",
-      "algdb": "V",
+      "algdb": "v",
       "image": "PLL-V",
       "prob": "1/18",
       "algs" :
@@ -830,7 +830,7 @@ var algSet = {
       "name": "Y-Perm",
       "desc": "The algorithm(s) for this [PLL] case are good choices for a diagonal corner swap during [CPLL].<br/><br/>Check out the similarity between the Y-Perm algorithm (F R U' R' U' R U R' F') (R U R' U' R' F R F') and the T-Perm algorithm (R U R' U' R' F R F') (F R U' R' U' R U R' F').",
       "wiki": "#Y_Permutation",
-      "algdb": "Y",
+      "algdb": "y",
       "image": "PLL-Y",
       "prob": "1/18",
       "algs" :
@@ -853,7 +853,7 @@ var algSet = {
       "id": "Z",
       "name": "Z-Perm",
       "wiki": "#Z_Permutation",
-      "algdb": "Z",
+      "algdb": "z",
       "image": "PLL-Z",
       "prob": "1/36",
       "algs" :

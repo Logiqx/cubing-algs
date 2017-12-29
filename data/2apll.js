@@ -6,7 +6,7 @@ var algSet = {
     "desc": "This page lists the [PLL] algorithms that I teach to beginners. The algorithms have all been chosen for their simplicity and ease of learning.",
     "css": "2LPLL",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
-    "algdb": "http://algdb.net/Set/PLL/",
+    "algdb": "http://algdb.net/puzzle/333/pll/",
     "uses":
     [
       {
@@ -22,7 +22,7 @@ var algSet = {
       "name": "Adjacent Corner Swap",
       "desc": "This case is solved using Anti-[Sune] and [Niklas], essentially a [PLL] algorithm for Jb-Perm.",
       "wiki": "",
-      "algdb": "Jb",
+      "algdb": "jb",
       "image": "CPLL-A",
       "prob": "4/6",
       "algs" :
@@ -40,7 +40,7 @@ var algSet = {
       "name": "Diagonal Corner Swap",
       "desc": "This case is solved using the Jb-Perm algorithm (adjacent corner swap), executed twice.",
       "wiki": "",
-      "algdb": "Y",
+      "algdb": "y",
       "image": "CPLL-O",
       "prob": "1/6",
       "algs" :
@@ -75,7 +75,7 @@ var algSet = {
       "name": "Ua-Perm",
       "desc": "Inverse and reflection of Ub.",
       "wiki": "",
-      "algdb": "Ua",
+      "algdb": "ua",
       "image": "EPLL-Ua",
       "prob": "4/12",
       "algs" :
@@ -93,7 +93,7 @@ var algSet = {
       "name": "Ub-Perm",
       "desc": "Inverse and reflection of Ua.",
       "wiki": "",
-      "algdb": "Ub",
+      "algdb": "ub",
       "image": "EPLL-Ub",
       "prob": "4/12",
       "algs" :
@@ -110,7 +110,7 @@ var algSet = {
       "id": "Z",
       "name": "Z-Perm",
       "wiki": "",
-      "algdb": "Z",
+      "algdb": "z",
       "image": "EPLL-Z",
       "prob": "2/12",
       "algs" :
@@ -128,7 +128,7 @@ var algSet = {
       "name": "H-Perm / X-Perm",
       "desc": "Best known as H-Perm (i.e. swapping opposite edge pairs) this case is also known as X-Perm (i.e.  swapping diagonal corner pairs).",
       "wiki": "",
-      "algdb": "H",
+      "algdb": "h",
       "image": "EPLL-H",
       "prob": "1/12",
       "algs" :
@@ -145,7 +145,7 @@ var algSet = {
       "id": "EPLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": "PLL",
+      "algdb": ".",
       "image": "EPLL",
       "prob": "1/12",
       "algs" :

@@ -194,7 +194,7 @@ var algSet = {
       "id": "OLL",
       "name": "Solved",
       "wiki": "",
-      "algdb": ".",
+      "algdb": "",
       "image": "OLL",
       "prob": "1/27",
       "algs" :
