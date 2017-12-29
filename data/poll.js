@@ -142,6 +142,21 @@ var algSet = {
             }
           ]
         },
+        {
+          "alg": "U (R' F' L F) (R F' L' F)",
+          "desc": "Basic [commutator] - [R', F' L F]",
+          "status": 1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "U (L' U' L U) (L F' L' F)",
+              "desc": "Execution avoids R turns and reduces F turns",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
+        }
       ]
     },
     {
@@ -183,8 +198,8 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "U (R2' U2 R U2' R2)",
-          "desc": "[Conjugate]: [R2' U2: R]",
+          "alg": "U (R2' U2' R U2 R2)",
+          "desc": "[Conjugate]: [R2' U2': R]",
           "status": 1,
           "uses": ["2H"]
         }
@@ -218,7 +233,7 @@ var algSet = {
         {
           "id": "corners",
           "name": "Corner Orientation",
-          "desc": "The [OCLL] cases are solved using the standard [OLL] algorithms. There is a 1/27 chance of skipping this step and going straight to [PLL].",
+          "desc": "The [OLL] cases are solved using simple algorithms. There is a 1/27 chance of skipping this step and going straight to [PBL] or [PLL].",
           "cases": ["AS", "S", "L", "U", "T", "Pi", "H", "OLL"]
         },
       ]

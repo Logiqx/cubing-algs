@@ -121,6 +121,10 @@ var abbrs =
     "desc": "Orientation of the Last Layer and Corner Permutation"
   },
   {
+    "name": "PBL",
+    "desc": "Permutation of Both Layers"
+  },
+  {
     "name": "PLL",
     "desc": "Permutation of the Last Layer"
   },
