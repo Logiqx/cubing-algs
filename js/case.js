@@ -214,7 +214,7 @@ function renderCase(caseId, width)
 	var caseIds = getCaseIds();
 	
 	// Output the case name
-	out += "<h1><span class=\"menu-btn\">&#9776;</span> " + algSet.header.id + " - " + caseId + "</h1>";
+	out += "<h1><span class=\"menu-btn\">&#9776;</span> " + algSet.header.id + " - " + caseId + " <span class=\"twist-btn\" onclick=\"hashChangeHandler()\">&#8230;</span></h1>";
 	
 	// Output header message - looks fine on Galaxy S3 (portrait)
 	out += header(GALAXY_S3_PORTRAIT);

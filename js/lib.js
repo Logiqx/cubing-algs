@@ -318,6 +318,10 @@ function renderPage(hash)
 		{
 			renderRequired = true;
 		}
+		else if (newViewId == "random")
+		{
+			renderRequired = true;
+		}
 		else if (newViewId != oldViewId)
 		{
 			renderRequired = true;
@@ -337,7 +341,14 @@ function renderPage(hash)
 		if (renderRequired)
 		{
 			// Call the appropriate rendering function
-			if (newViewId == "case")
+			if (newViewId == "random")
+			{
+				rndCaseIdx = Math.floor(Math.random() * (algSet.cases.length + 1));
+				rndCaseIdx = rndCaseIdx < algSet.cases.length ? rndCaseIdx : algSet.cases.length - 1;
+				newCaseId = algSet.cases[rndCaseIdx].id;
+				renderCase(newCaseId, width);
+			}
+			else if (newViewId == "case")
 			{
 				renderCase(newCaseId, width);
 			}

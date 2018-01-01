@@ -31,6 +31,16 @@ ul {
   opacity: 0.5;
 }
 
+.twist-btn {
+  cursor: pointer;
+}
+
+.twist-btn:hover {
+  background: #000;
+  color: #FFF;
+  opacity: 0.5;
+}
+
 /* Default fonts */
 
 h1
