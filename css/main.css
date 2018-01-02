@@ -109,6 +109,13 @@ abbr.dotted
 	visibility: visible;
 }
 
+/* Contents page */
+
+img.contents {
+	max-width: 100%;
+    height: auto;
+}
+
 /* Grid view */
 
 th.name

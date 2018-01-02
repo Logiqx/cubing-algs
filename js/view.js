@@ -413,7 +413,7 @@ function renderContents()
 	var out = "";
 	
 	// Windsurfing
-	out += "<img width=\"750\" height=\"500\" src=\"img/mikegeorge.jpg\"/>";
+	out += "<a href=\"https://youtu.be/kETStPTH3tE\"><img class=\"contents\" src=\"img/mikegeorge.jpg\"/></a>";
 	
 	// Iterate through the menu items
 	for (var itemIdx = 0; itemIdx < menuItems.length; itemIdx++)

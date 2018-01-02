@@ -12,7 +12,6 @@ java -jar yuicompressor-2.4.8.jar css/2lpll.css -o css/2lpll-min.css
 java -jar yuicompressor-2.4.8.jar css/2spll.css -o css/2spll-min.css
 java -jar yuicompressor-2.4.8.jar css/coll.css -o css/coll-min.css
 java -jar yuicompressor-2.4.8.jar css/l2e.css -o css/l2e-min.css
-java -jar yuicompressor-2.4.8.jar css/l3e.css -o css/l3e-min.css
 java -jar yuicompressor-2.4.8.jar css/l4e.css -o css/l4e-min.css
 java -jar yuicompressor-2.4.8.jar css/oll.css -o css/oll-min.css
 java -jar yuicompressor-2.4.8.jar css/pll.css -o css/pll-min.css
