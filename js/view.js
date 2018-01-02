@@ -405,6 +405,56 @@ function renderViewLinks(viewObj, width)
 }
 
 //
+// Render the list of contents
+//
+function renderContents()
+{
+	// Initialisation
+	var out = "";
+	
+	// Windsurfing
+	out += "<img width=\"750\" height=\"500\" src=\"img/mikegeorge.jpg\"/>";
+	
+	// Iterate through the menu items
+	for (var itemIdx = 0; itemIdx < menuItems.length; itemIdx++)
+	{
+		var menuItem = menuItems[itemIdx];
+		
+		switch (menuItem.type)
+		{
+			case "h1":
+				out += "<hr/>"
+				out += "<h2>" + menuItem.desc + "</h2>";
+				break;
+			case "h2":
+				out += "<h3>" + menuItem.desc + "</h3>";
+				break;
+			case "submenu":
+				out += "<p>" + menuItem.desc + " - ";
+				for (var subIdx = 0; subIdx < menuItem.items.length; subIdx++)
+				{
+					var subItem = menuItem.items[subIdx];
+					
+					switch (subItem.type)
+					{
+						case "link":
+							if (subIdx > 0)
+							{
+								out += " + ";
+							}
+							out += "<a href=\"" + subItem.href + "\">" + subItem.desc + "</a>";
+							break;
+					}
+				}
+				out += "</p>";
+				break;
+		}
+	}
+
+	return out;
+}
+
+//
 // Render the selected view
 //
 function renderView(viewId, width)
@@ -570,6 +620,12 @@ function renderView(viewId, width)
 				found = true;
 			}
 		}
+	}
+	
+	// Contents page
+	if (viewId == "contents" && algSet.cases.length == 0)
+	{
+		out += renderContents();
 	}
 	
 	// Output footer message
