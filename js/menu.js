@@ -232,10 +232,6 @@ menuItems =
 		"desc": "Pyraminx"
 	},
 	{
-		"type": "h2",
-		"desc": "V-First"
-	},
-	{
 		"type": "submenu",
 		"desc": "Intermediate",
 		"items":

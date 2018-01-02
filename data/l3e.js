@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "L3E",
     "name": "Last 3 Edges",
-    "desc": "All of the L3E algorithms are combinations of simple triggers and largely intuitive. They typically start by solving one of the U-layer edges, setting up to a 3 or 4 move basic insertion.<br/><br/>With a little bit of experimentation, I'd expect most people to find exactly the same algorithms. Thanks go to Michael Gottlieb of MZRG.com for all of the Pyraminx images.",
+    "desc": "These are the [LL] algorithms for use during a [LBL] Pyraminx solve. [L3E] is a small subset of [L4E] which is an advanced Pyraminx method.<br/><br/>All of the [L3E] algorithms are combinations of simple triggers and largely intuitive. They typically start by solving one of the U-layer edges, setting up to a 3 or 4 move basic insertion.<br/><br/>With a little bit of experimentation, I'd expect most people to find exactly the same algorithms. Thanks go to Michael Gottlieb of MZRG.com for all of the Pyraminx images.",
     "css": "L4E",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/",

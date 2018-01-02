@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "L4E",
     "name": "Last 4 Edges",
-    "desc": "All of the L4E algorithms are combinations of simple triggers and largely intuitive. They typically start by solving one of the U-layer edges, setting up to a 3 or 4 move basic insertion.<br/><br/>With a little bit of experimentation, I'd expect most people to find exactly the same algorithms. Thanks go to Michael Gottlieb of MZRG.com for all of the Pyraminx images.",
+    "desc": "These are the [L4E] algorithms for use during a V-First Pyraminx solve. [LBL] is a beginner variation of the V-First method as it is just the \"down-edge solved\" subset.<br/><br/>All of the L4E algorithms are combinations of simple triggers and largely intuitive. They typically start by solving one of the U-layer edges, setting up to a 3 or 4 move basic insertion.<br/><br/>With a little bit of experimentation, I'd expect most people to find exactly the same algorithms. Thanks go to Michael Gottlieb of MZRG.com for all of the Pyraminx images.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/",
     "algdb": "http://algdb.net/",
     "uses":
