@@ -664,6 +664,28 @@ var algSet = {
   "views":
   [
     {
+      "id": "parity",
+      "name": "Parity",
+      "desc": "The two groups below are essentially the \"No OLL Parity\" cases and \"OLL Parity\" cases.<br/><br/><strong>Note:</strong> Applying \"PLL Parity\" (A2) to any case will stay within the same group and the cycles are listed.",
+      "groups":
+      [
+        {
+          "id": "even",
+          "name": "Even Parity",
+          "desc": "This group of cases can be solved intuitively using the \"slice-flip-slice\" approach.<br/><br/>Cycles via PLL parity: A1 &#8660; A2, A5 &#8660; A6, B3 &#8660; B4, C3 &#8660; C4.",
+          "wiki": "L2E",
+          "cases": ["A1", "A2", "A5", "A6", "B3", "B4", "C3", "C4"]
+        },
+        {
+          "id": "odd",
+          "name": "Odd Parity",
+          "desc": "This group of cases all contain the equivalent of OLL parity on a 4x4x4.<br/><br/>Cycles via PLL parity: A3 &#8660; A4, B1 &#8660; B2, B5 &#8660; B6, C1 &#8660; C2.",
+          "wiki": "L2E",
+          "cases": ["A3", "A4", "B1", "B2", "B5", "B6", "C1", "C2"]
+        },
+      ]
+    },
+    {
       "id": "groups",
       "name": "Groups",
       "desc": "All of the cases in the \"groups\" listed below are closely related, although it may not be immediately obvious.<br/><br/><strong>Note:</strong> Applying \"PLL Parity\" (A2) or \"OLL Parity\" (A3) to any case will stay within the same group and the cycles are listed.",
@@ -692,26 +714,5 @@ var algSet = {
         },
       ]
     },
-    {
-      "id": "parity",
-      "name": "Parity",
-      "desc": "The two groups below are essentially the \"No OLL Parity\" cases and \"OLL Parity\" cases.<br/><br/><strong>Note:</strong> Applying \"PLL Parity\" (A2) to any case will stay within the same group and the cycles are listed.",
-      "groups":
-      [
-        {
-          "id": "even",
-          "name": "Even Parity",
-          "desc": "This group of cases can be solved intuitively using the \"slice-flip-slice\" approach.<br/><br/>Cycles via PLL parity: A1 &#8660; A2, A5 &#8660; A6, B3 &#8660; B4, C3 &#8660; C4.",
-          "wiki": "L2E",
-          "cases": ["A1", "A2", "A5", "A6", "B3", "B4", "C3", "C4"]
-        },
-        {
-          "id": "odd",
-          "name": "Odd Parity",
-          "desc": "This group of cases all contain the equivalent of OLL parity on a 4x4x4.<br/><br/>Cycles via PLL parity: A3 &#8660; A4, B1 &#8660; B2, B5 &#8660; B6, C1 &#8660; C2.",
-          "wiki": "L2E",
-          "cases": ["A3", "A4", "B1", "B2", "B5", "B6", "C1", "C2"]
-        },
-      ]
-    },  ]
+  ]
 }
