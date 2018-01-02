@@ -413,7 +413,7 @@ function renderContents()
 	var out = "";
 	
 	// Windsurfing
-	out += "<a href=\"https://youtu.be/kETStPTH3tE\"><img class=\"contents\" src=\"img/mikegeorge.jpg\"/></a>";
+	out += "<a class=\"clicky\" href=\"https://youtu.be/kETStPTH3tE\"><img class=\"contents\" src=\"img/mikegeorge.jpg\"/></a>";
 	
 	// Iterate through the menu items
 	for (var itemIdx = 0; itemIdx < menuItems.length; itemIdx++)
@@ -442,7 +442,7 @@ function renderContents()
 							{
 								out += " + ";
 							}
-							out += "<a href=\"" + subItem.href + "\">" + subItem.desc + "</a>";
+							out += "<a class=\"clicky\" href=\"" + subItem.href + "\">" + subItem.desc + "</a>";
 							break;
 					}
 				}
