@@ -133,6 +133,18 @@ var abbrs =
     "desc": "Left-Back Anti-Sune"
   },
   {
+    "name": "L2E",
+    "desc": "Last 2 Edges"
+  },
+  {
+    "name": "L3E",
+    "desc": "Last 3 Edges"
+  },
+  {
+    "name": "L4E",
+    "desc": "Last 4 Edges"
+  },
+  {
     "name": "LBL",
     "desc": "Layer-by-Layer"
   },
