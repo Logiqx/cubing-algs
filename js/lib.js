@@ -343,9 +343,7 @@ function renderPage(hash)
 			// Call the appropriate rendering function
 			if (newViewId == "random")
 			{
-				rndCaseIdx = Math.floor(Math.random() * (algSet.cases.length + 1));
-				rndCaseIdx = rndCaseIdx < algSet.cases.length ? rndCaseIdx : algSet.cases.length - 1;
-				newCaseId = algSet.cases[rndCaseIdx].id;
+				newCaseId = algSet.cases[Math.floor(Math.random() * algSet.cases.length)].id;
 				renderCase(newCaseId, width);
 			}
 			else if (newViewId == "case")
@@ -431,7 +429,7 @@ function resizeHandler()
 }
 
 //
-// This runs when the browser is resized (i.e. "onresize" event handler)
+// This runs when the browser "back" button is pressed
 //
 function popStateHandler(e)
 {
