@@ -1361,7 +1361,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' R U R' U F' R U2 R' U2 R' F R",
+          "alg": "U' R U R' U F' R U2' R' U2 R' F R",
           "desc": "Fast two-handed algorithm",
           "status": 1,
           "uses": ["2H"]
@@ -1497,7 +1497,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U2 R' F' R U2 R U2 R' F U' R U' R'",
+          "alg": "U2 R' F' R U2 R U2' R' F U' R U' R'",
           "desc": "Fast two-handed algorithm",
           "status": 1,
           "uses": ["2H"]
