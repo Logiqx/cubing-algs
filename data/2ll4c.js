@@ -128,7 +128,7 @@ var algSet = {
               "uses": ["2H"]
             },
             {
-              "alg": "F' (r U R' U') z U' R u",
+              "alg": "F' (r U R' U') z U' R u [z']",
               "desc": "One-handed execution incorporates wide turns",
               "status": 0,
               "uses": ["OH"]

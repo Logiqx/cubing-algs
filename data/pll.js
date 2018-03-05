@@ -235,7 +235,7 @@ var algSet = {
           "vars" :
           [
             {
-              "alg": "R2 u R' U R' U' R u' R2 y z U' R U",
+              "alg": "R2 u R' U R' U' R u' R2 y L' U L",
               "desc": "One-handed execution",
               "status": 1,
               "uses": ["OH"]
@@ -812,16 +812,7 @@ var algSet = {
           "alg": "R' U2' R U2' L U' R' U L' U L U' R U L'",
           "desc": "Playing with [F2L] pairs - track BR + BL",
           "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "R' U2' R U2' L U' R' U z U' R U R' z' R U L'",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            },
-          ]
+          "uses": ["OH"]
         },
       ]
     },
@@ -842,8 +833,8 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "R2 U' R' U R U' x' U' z' U' R U' R' U' z U R",
-          "desc": "One-handed algorithm is fast despite the rotations",
+          "alg": "R2 U' R' U R U' x' U' R' D R' D' R' U R",
+          "desc": "One-handed algorithm is fast despite the re-grips",
           "status": 1,
           "uses": ["OH"]
         },

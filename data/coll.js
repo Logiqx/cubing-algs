@@ -128,9 +128,9 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "R2 U' R' U R U' x' U' z' U' R U' R' U' z U R",
+          "alg": "R2 U' R' U R U' x' U' R' D R' D' R' U R",
           "name": "Y-Perm",
-          "desc": "One-handed algorithm is fast despite the rotations",
+          "desc": "One-handed algorithm is fast despite the re-grips",
           "status": 1,
           "uses": ["OH"]
         },
@@ -729,7 +729,7 @@ var algSet = {
               "uses": ["2H"]
             },
             {
-              "alg": "F' (r U R' U') z U' R u",
+              "alg": "F' (r U R' U') z U' R u [z']",
               "desc": "One-handed execution incorporates wide turns",
               "status": 1,
               "uses": ["OH"]
@@ -840,14 +840,14 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "R' (R2 U' R' U R U' x' U' z' U' R U' R' U' z U R x) R",
+          "alg": "R' (R2 U' R' U R U' x' U' R' D R' D' R' U R x) R",
           "desc": "[Conjugate] - [R': Y-Perm]",
           "status": 1,
           "uses": [],
           "vars" :
           [
             {
-              "alg": "R U' R' U R U' x' U' z' U' R U' R' U' z U R2 x",
+              "alg": "R U' R' U R U' x' U' R' D R' D' R' U R2 x",
               "desc": "One-handed execution applies cancellations",
               "status": 1,
               "uses": ["OH"]
