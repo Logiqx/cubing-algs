@@ -424,12 +424,6 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(r U' r' U' r U r') y' R' U R",
-          "desc": "Extract [F2L] pair using wide turns, re-insert normally",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
-        {
           "alg": "F (U R U' R') F' F R U' (R' U' R U) R' F'",
           "desc": "[OLL] combination - F [reverse-sexy] F', OLL 37",
           "status": 1,
@@ -449,6 +443,12 @@ var algSet = {
               "uses": ["OH"]
             }
           ]
+        },
+        {
+          "alg": "(r U' r' U' r U r') y' R' U R",
+          "desc": "Extract [F2L] pair using wide turns, re-insert normally",
+          "status": -1,
+          "uses": ["2H", "OH"]
         }
       ]
     },
@@ -462,25 +462,25 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(r' U r U r' U' r) y R U' R'",
-          "desc": "Extract [F2L] pair using wide turns, re-insert normally",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
-        {
-          "alg": "U2 (R' F R) U (R' F' R) U' (U F U' F')",
+          "alg": "U2 (R' F R U) (R' F' R U') (U F U' F')",
           "desc": "Basic [commutator] combination - [R' F R, U] [U, F]",
-          "status": 0,
+          "status": 1,
           "uses": [],
           "vars" :
           [
             {
-              "alg": "U2 (R' F R) U (R' F' R) (F U' F')",
+              "alg": "U2 (R' F R U R' F' R) (F U' F')",
               "desc": "Two-handed execution applies a cancellation",
-              "status": 0,
+              "status": 1,
               "uses": ["2H"]
             }
           ]
+        },
+        {
+          "alg": "(r' U r U r' U' r) y R U' R'",
+          "desc": "Extract [F2L] pair using wide turns, re-insert normally",
+          "status": 1,
+          "uses": ["OH"]
         }
       ]
     },
@@ -2039,37 +2039,37 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U2 (R U R' U R U2' R') y F (U R U' R') F'",
-          "desc": "[OLL] combination - [RFS], rotate, F [sexy] F'",
-          "status": 1,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "U2 (R U R' U R U') y (R U' R' F')",
-              "desc": "Execution applies cancellations, without B moves",
-              "status": 1,
-              "uses": ["2H", "OH"]
-            },
-            {
-              "alg": "U2 (R U R' U R U') (B U' B' R')",
-              "desc": "Execution applies cancellations, without y rotation",
-              "status": 0,
-              "uses": ["2H", "OH"]
-            }
-          ]
-        },
-        {
           "alg": "U2 (R' U' R U' R' U2 R) R' (U' F' U F) R",
           "desc": "[OLL] combination - [RBS], OLL 43",
-          "status": -1,
-          "uses": ["2H", "OH"],
+          "status": 0,
+          "uses": [],
           "vars" :
           [
             {
               "alg": "U2 (R' U' R U' R' U) (F' U F R)",
               "desc": "Execution applies cancellations",
-              "status": 0,
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        },
+        {
+          "alg": "U2 (R U R' U R U2' R') y F (U R U' R') F'",
+          "desc": "[OLL] combination - [RFS], rotate, F [sexy] F'",
+          "status": -1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "U2 (R U R' U R U') y (R U' R' F')",
+              "desc": "Execution applies cancellations",
+              "status": -1,
+              "uses": ["2H", "OH"]
+            },
+            {
+              "alg": "U2 (R U R' U R U') (B U' B' R')",
+              "desc": "Execution applies cancellations, without y rotation",
+              "status": -1,
               "uses": ["2H", "OH"]
             }
           ]
@@ -2186,31 +2186,31 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "U (R U2' R' U' R U' R') U' (r' U' R U' R' U2' r)",
-          "desc": "[SuneOLL]: [RFAS], [AUF], [RBWS]",
-          "status": 1,
-          "uses": ["OH"]
-        },
-        {
           "alg": "(r U2' R' U' R U' r') (r U r' R U R' U' r U' r')",
           "desc": "[OLL] combination - [RFAS], OLL 16",
-          "status": 0,
+          "status": 1,
           "uses": [],
           "vars" :
           [
             {
               "alg": "r U2' R' U' R2 r' U R' U' r U' r'",
               "desc": "One-handed execution applies cancellations",
-              "status": 0,
+              "status": 1,
               "uses": ["OH"]
             }
           ]
         },
         {
           "alg": "U (R U2' R2' U' R) U' (R' U2' F R F')",
-          "desc": "I used this before finding the Collin Burns algorithm",
+          "desc": "I used this before finding the Collin Burns algorithm for 2H",
           "status": -1,
           "uses": ["2H"]
+        },
+        {
+          "alg": "U (R U2' R' U' R U' R') U' (r' U' R U' R' U2' r)",
+          "desc": "[SuneOLL]: [RFAS], [AUF], [RBWS]",
+          "status": -1,
+          "uses": ["OH"]
         }
       ]
     },
