@@ -2039,36 +2039,36 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U2 (R' U' R U' R' U2 R) R' (U' F' U F) R",
-          "desc": "[OLL] combination - [RBS], OLL 43",
-          "status": 0,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "U2 (R' U' R U' R' U) (F' U F R)",
-              "desc": "Execution applies cancellations",
-              "status": 1,
-              "uses": ["2H", "OH"]
-            }
-          ]
-        },
-        {
           "alg": "U2 (R U R' U R U2' R') y F (U R U' R') F'",
           "desc": "[OLL] combination - [RFS], rotate, F [sexy] F'",
-          "status": -1,
+          "status": 1,
           "uses": [],
           "vars" :
           [
             {
               "alg": "U2 (R U R' U R U') y (R U' R' F')",
               "desc": "Execution applies cancellations",
-              "status": -1,
+              "status": 1,
               "uses": ["2H", "OH"]
             },
             {
               "alg": "U2 (R U R' U R U') (B U' B' R')",
               "desc": "Execution applies cancellations, without y rotation",
+              "status": -1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        },
+        {
+          "alg": "U2 (R' U' R U' R' U2 R) R' (U' F' U F) R",
+          "desc": "[OLL] combination - [RBS], OLL 43",
+          "status": 1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "U2 (R' U' R U' R' U) (F' U F R)",
+              "desc": "Execution applies cancellations",
               "status": -1,
               "uses": ["2H", "OH"]
             }
