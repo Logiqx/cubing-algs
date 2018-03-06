@@ -698,10 +698,16 @@ var algSet = {
             {
               "alg": "U2 x' (R U' R' D) (R U R' u') [z']",
               "desc": "One-handed execution ends with a wide turn",
-              "status": 1,
+              "status": 0,
               "uses": ["OH"]
             },
           ]
+        },
+		{
+          "alg": "U' L' (R U R' U') L (U R U' R')",
+          "desc": "Basic [commutator] - [L', R U R' U']",
+          "status": 1,
+          "uses": ["OH"]
         }
       ]
     },
@@ -731,11 +737,18 @@ var algSet = {
             {
               "alg": "F' (r U R' U') z U' R u [z']",
               "desc": "One-handed execution incorporates wide turns",
-              "status": 1,
+              "status": 0,
               "uses": ["OH"]
             },
           ]
         },
+		{
+          "alg": "R (L' U' L U) R' (U' L' U L)",
+          "desc": "Basic [commutator] - [R, L' U' L U]",
+          "status": 1,
+          "uses": ["OH"]
+        },
+
       ]
     },
     {
@@ -1087,11 +1100,17 @@ var algSet = {
             {
               "alg": "U2 x' (R U R' D) (R U' R' u') [z']",
               "desc": "One-handed execution ends with a wide turn",
-              "status": 1,
+              "status": 0,
               "uses": ["OH"]
             }
           ]
         },
+        {
+          "alg": "U (L' U' L U) R (U' L' U L) R'",
+          "desc": "Basic [commutator] - [L' U' L U, R]",
+          "status": 1,
+          "uses": ["OH"]
+        }
       ]
     },
     {
@@ -1147,11 +1166,17 @@ var algSet = {
             {
               "alg": "U' (r U R' U') z (U' R u F') [z']",
               "desc": "One-handed execution incorporates wide turns",
-              "status": 1,
+              "status": 0,
               "uses": ["OH"]
             }
           ]
         },
+        {
+          "alg": "U' (R U R' U') L' (U R U' R') L",
+          "desc": "Basic [commutator] - [R U R' U', L']",
+          "status": 1,
+          "uses": ["OH"]
+        }
       ]
     },
     {

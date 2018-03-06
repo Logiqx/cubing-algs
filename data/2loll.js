@@ -259,6 +259,18 @@ var algSet = {
             },
           ]
         },
+		{
+          "alg": "U' L' (R U R' U') L (U R U' R')",
+          "desc": "Basic [commutator] - [L', R U R' U']",
+          "status": 1,
+          "uses": ["OH"]
+        },
+		{
+          "alg": "R (L' U' L U) R' (U' L' U L)",
+          "desc": "Basic [commutator] - [R, L' U' L U]",
+          "status": 1,
+          "uses": ["OH"]
+        },
         {
           "alg": "U (R U2 R' U' R U' R') * 3",
           "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
@@ -275,7 +287,7 @@ var algSet = {
             {
               "alg": "U R U2' R' U' (R U R' U') (R U R' U') R U' R'",
               "desc": "One-handed execution applies cancellations",
-              "status": 1,
+              "status": 0,
               "uses": ["OH"]
             }
           ]
@@ -296,7 +308,7 @@ var algSet = {
             {
               "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
               "desc": "One-handed execution applies cancellations",
-              "status": 1,
+              "status": 0,
               "uses": ["OH"]
             }
           ]
@@ -492,6 +504,18 @@ var algSet = {
           ]
         },
         {
+          "alg": "U' (R U R' U') L' (U R U' R') L",
+          "desc": "Basic [commutator] - [R U R' U', L']",
+          "status": 1,
+          "uses": ["OH"]
+        },
+        {
+          "alg": "U (L' U' L U) R (U' L' U L) R'",
+          "desc": "Basic [commutator] - [L' U' L U, R]",
+          "status": 1,
+          "uses": ["OH"]
+        },
+        {
           "alg": "(R U2 R' U' R U' R') (R' U2' R U R' U R)",
           "desc": "[SuneOLL]/[2GLL]: [RFAS], [RBAS]",
           "status": 1,
@@ -507,7 +531,7 @@ var algSet = {
             {
               "alg": "R U2' R' U' R U' R2 U2' R U R' U R",
               "desc": "One-handed execution applies a cancellation",
-              "status": 1,
+              "status": 0,
               "uses": ["OH"]
             }
           ]
@@ -528,7 +552,7 @@ var algSet = {
             {
               "alg": "U2 R' U2' R U R' U R2 U2' R' U' R U' R'",
               "desc": "One-handed execution applies a cancellation",
-              "status": 1,
+              "status": 0,
               "uses": ["OH"]
             }
           ]
