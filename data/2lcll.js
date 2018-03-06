@@ -101,27 +101,6 @@ var algSet = {
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "(F' L F R') (F' L' F R)",
-          "desc": "Basic [commutator] - [F' L F, R']",
-          "status": 1,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "F' (r U R' U') r' F R",
-              "desc": "Two-handed execution incorporates wide turns",
-              "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "F' (r U R' U') z U' R u [z']",
-              "desc": "One-handed execution incorporates wide turns",
-              "status": 1,
-              "uses": ["OH"]
-            },
-          ]
-        },
-        {
           "alg": "U' (F R' F' R) (U R U' R')",
           "desc": "Triggers - [hedgeslammer], [reverse-sexy]",
           "status": -1,
