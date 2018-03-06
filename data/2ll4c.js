@@ -307,14 +307,14 @@ var algSet = {
           ]
         },
         {
-          "alg": "U (R U2 R' U' R U' R') U2 (R' U2' R U R' U R)",
-          "desc": "[Anti-Sune] combination - [RFAS], U2, [RBAS]",
+          "alg": "U (R U2 R' U' R U' R') (L' U2' L U L' U L)",
+          "desc": "[Anti-Sune] combination - [RFAS], U2, [LFAS]",
           "status": 1,
           "uses": [],
           "vars" :
           [
             {
-              "alg": "U (R U2' R' U' R U' R') U2' (R' U2' R U R' U R)",
+              "alg": "U (R U2' R' U' R U' R') (L' U2' L U L' U L)",
               "desc": "One-handed execution",
               "status": 1,
               "uses": ["OH"]
@@ -322,14 +322,14 @@ var algSet = {
           ]
         },
         {
-          "alg": "U (R' U2' R U R' U R) U2 (R U2 R' U' R U' R')",
-          "desc": "[Anti-Sune] combination - [RBAS], U2, [RFAS]",
+          "alg": "U' (L' U2' L U L' U L) (R U2 R' U' R U' R')",
+          "desc": "[Anti-Sune] combination - [LFAS], U2, [RFAS]",
           "status": 1,
           "uses": [],
           "vars" :
           [
             {
-              "alg": "U (R' U2' R U R' U R) U2' (R U2' R' U' R U' R')",
+              "alg": "U' (L' U2' L U L' U L) (R U2' R' U' R U' R')",
               "desc": "One-handed execution",
               "status": 1,
               "uses": ["OH"]
@@ -403,14 +403,14 @@ var algSet = {
           "uses": ["OH"]
         },
         {
-          "alg": "U' (R U R' U R U2' R') U2 (R' U' R U' R' U2 R)",
-          "desc": "[Sune] combination - [RFS], U2, [RBS]",
+          "alg": "U' (R U R' U R U2' R') (L' U' L U' L' U2 L)",
+          "desc": "[Sune] combination - [RFS], U2, [LFS]",
           "status": 1,
           "uses": [],
           "vars" :
           [
             {
-              "alg": "U' (R U R' U R U2' R') U2' (R' U' R U' R' U2' R)",
+              "alg": "U' (R U R' U R U2' R') (L' U' L U' L' U2' L)",
               "desc": "One-handed execution",
               "status": 0,
               "uses": ["OH"]
@@ -418,14 +418,14 @@ var algSet = {
           ]
         },
         {
-          "alg": "U' (R' U' R U' R' U2 R) U2 (R U R' U R U2' R')",
-          "desc": "[Sune] combination - [RBS], U2, [RFS]",
+          "alg": "U (L' U' L U' L' U2 L) (R U R' U R U2' R')",
+          "desc": "[Sune] combination - [LFS], U2, [RFS]",
           "status": 1,
           "uses": [],
           "vars" :
           [
             {
-              "alg": "U' (R' U' R U' R' U2' R) U2' (R U R' U R U2' R')",
+              "alg": "U (L' U' L U' L' U2 L) (R U R' U R U2' R')",
               "desc": "One-handed execution",
               "status": 0,
               "uses": ["OH"]
