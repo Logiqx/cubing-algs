@@ -331,7 +331,7 @@ var algSet = {
         {
           "alg": "U (M2 U' M2 U') (M' U2' M2 U2' M')",
           "desc": "Intuitive - Solve UL + UR then solve remaining edges",
-          "status": -1,
+          "status": 1,
           "uses": [],
           "vars":
           [
@@ -348,6 +348,12 @@ var algSet = {
           "desc": "Playing with [F2L] pairs - track BR + FR",
           "status": 1,
           "uses": ["OH"]
+        },
+        {
+          "alg": "R U R' U R' U' R' U R U' R' U' R2 U R",
+          "desc": "Playing with [F2L] pairs - track FR + BR",
+          "status": 1,
+          "uses": []
         },
       ]
     },

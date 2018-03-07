@@ -696,8 +696,8 @@ var algSet = {
         {
           "alg": "U F (R U R' U') (R U R' U') (R U R' U') F'",
           "desc": "[Conjugate] of triple [sexy]: [F: [R U R' U']*3]",
-          "status": -1,
-          "uses": ["2H", "OH"]
+          "status": 1,
+          "uses": []
         },
       ]
     },

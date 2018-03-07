@@ -164,19 +164,9 @@ var algSet = {
               "status": 0,
               "uses": ["2H"]
             },
-          ]
-        },
-        {
-          "alg": "R (R U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R') R'",
-          "name": "E-Perm",
-          "desc": "Long algorithm but decent for [OH] and big cubes",
-          "status": 1,
-          "uses": [],
-          "vars" :
-          [
             {
-              "alg": "(R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2)",
-              "desc": "One-handed execution incorporates cancellations",
+              "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u')",
+              "desc": "One-handed execution ends with a wide turn",
               "status": 0,
               "uses": ["OH"]
             },

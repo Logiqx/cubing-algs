@@ -770,8 +770,8 @@ var algSet = {
         {
           "alg": "U F (R U R' U') (R U R' U') (R U R' U') F'",
           "desc": "[Conjugate] of triple [sexy]: [F: [R U R' U']*3]",
-          "status": -1,
-          "uses": ["2H", "OH"]
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -1636,8 +1636,8 @@ var algSet = {
         {
           "alg": "U' (F R' F' R) (U R U' R')",
           "desc": "Triggers - [hedgeslammer], [reverse-sexy]",
-          "status": -1,
-          "uses": ["2H", "OH"]
+          "status": 1,
+          "uses": []
         }
       ]
     },
@@ -2133,7 +2133,7 @@ var algSet = {
         {
           "alg": "U (r' U2' R U R' U r) (r' U2' R U R' U r)",
           "desc": "[SuneOLL]: Double [RBWAS]",
-          "status": 0,
+          "status": 1,
           "uses": [],
           "vars" :
           [
@@ -2180,7 +2180,7 @@ var algSet = {
         {
           "alg": "(r U R' U R U2' r') (r U R' U R U2' r')",
           "desc": "[SuneOLL]: Double [RFWS]",
-          "status": -1,
+          "status": 1,
           "uses": [],
           "vars" :
           [
@@ -2210,14 +2210,14 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "(r U2' R' U' R U' r') (r U r' R U R' U' r U' r')",
+          "alg": "U (r U2' R' U' R U' r') (r U r' R U R' U' r U' r')",
           "desc": "[OLL] combination - [RFAS], OLL 16",
           "status": 1,
           "uses": [],
           "vars" :
           [
             {
-              "alg": "r U2' R' U' R2 r' U R' U' r U' r'",
+              "alg": "U r U2' R' U' R2 r' U R' U' r U' r'",
               "desc": "One-handed execution applies cancellations",
               "status": 1,
               "uses": ["OH"]

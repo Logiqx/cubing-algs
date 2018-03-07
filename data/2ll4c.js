@@ -425,7 +425,7 @@ var algSet = {
           "vars" :
           [
             {
-              "alg": "U (L' U' L U' L' U2 L) (R U R' U R U2' R')",
+              "alg": "U (L' U' L U' L' U2' L) (R U R' U R U2' R')",
               "desc": "One-handed execution",
               "status": 0,
               "uses": ["OH"]
@@ -496,13 +496,7 @@ var algSet = {
           "desc": "[Conjugate] of triple [sexy]: [F: [R U R' U']*3]",
           "status": 1,
           "uses": ["2H", "OH"]
-        },
-        {
-          "alg": "U F (U R U' R') (U R U' R') (U R U' R') F'",
-          "desc": "[Conjugate] of triple [reverse-sexy]: [F: [U R U' R']*3]",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
+        }
       ]
     },
     {
@@ -621,7 +615,7 @@ var algSet = {
         },
         {
           "alg": "U R (R U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R') R'",
-          "desc": "Long algorithm but decent for [OH]",
+          "desc": "Long algorithm but decent for [OH] and big cubes",
           "status": 1,
           "uses": [],
           "vars" :
