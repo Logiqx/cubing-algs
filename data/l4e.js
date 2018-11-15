@@ -79,7 +79,7 @@ var algSet = {
     {
       "id": "DS4",
       "name": "Down-Edge Solved #4",
-      "desc": "2-Flip.",
+      "desc": "2-Flip. Solved in a similar way to DF4.",
       "wiki": "",
       "algdb": "",
       "image": "L4E-DS4",
@@ -87,9 +87,27 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R' L R L') (U L' U' L)",
-          "desc": "Simple trigger combo",
+          "alg": "(R' L R L') U (L' U' L)",
+          "desc": "Simple trigger combo - mirror of alg 2",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "(L R' L' R) U' (R U R')",
+          "desc": "Simple trigger combo - mirror of alg 1",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "(L' U L) U' (L R' L' R)",
+          "desc": "Simple trigger combo - inverse of alg 1",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "(R U' R') U (R' L R L')",
+          "desc": "Simple trigger combo - inverse of alg 2",
+          "status": -1,
           "uses": ["2H"]
         }
       ]
@@ -153,15 +171,27 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(L R' L' R) U' (L R' L' R) U' (L R' L' R)",
-          "desc": "Simple triple-trigger combo",
+          "alg": "(R' L R L') U (R' L R L') U (R' L R L')",
+          "desc": "Simple triple-trigger combo - mirror of alg 2",
           "status": 1,
           "uses": ["2H"]
         },
         {
+          "alg": "(L R' L' R) U' (L R' L' R) U' (L R' L' R)",
+          "desc": "Simple triple-trigger combo - mirror of alg 1",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "(R U' R') (L' U L) (R U' R') (L' U L')",
+          "desc": "Simple double-trigger combo x 2 - mirror of alg 4",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
           "alg": "(L' U L) (R U' R') (L' U L) (R U' R')",
-          "desc": "Simple double-trigger combo x 2",
-          "status": 1,
+          "desc": "Simple double-trigger combo x 2 - mirror of alg 3",
+          "status": -1,
           "uses": ["2H"]
         }
       ]
@@ -205,7 +235,7 @@ var algSet = {
     {
       "id": "DF4",
       "name": "Down-Edge Flipped #4",
-      "desc": "2-Flip. I use the same algorithm as DS4 after the triggers swapped around.",
+      "desc": "2-Flip. Solved in a similar way to DS4.",
       "wiki": "",
       "algdb": "",
       "image": "L4E-DF4",
@@ -213,9 +243,27 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U (U L' U' L) (R' L R L')",
-          "desc": "Simple trigger combo",
+          "alg": "U' (R' L R L') (R U' R')",
+          "desc": "Simple trigger combo - mirror of alg 2",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U (L R' L' R) (L' U L)",
+          "desc": "Simple trigger combo - mirror of alg 1",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U (R U R') (L R' L' R)",
+          "desc": "Simple trigger combo - inverse of alg 1",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' (L' U' L) (R' L R L')",
+          "desc": "Simple trigger combo - inverse of alg 2",
+          "status": -1,
           "uses": ["2H"]
         }
       ]
