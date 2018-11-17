@@ -1284,12 +1284,6 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U (M' U' M) U2' (M' U' M)",
-          "desc": "Moo!",
-          "status": 1,
-          "uses": ["2H"]
-        },
-        {
           "alg": "U2 M' (R U R' U') M (U R U' R')",
           "desc": "Triggers - M-slice, [sexy], M-slice, [reverse-sexy]",
           "status": 1,
@@ -1300,9 +1294,15 @@ var algSet = {
               "alg": "U2 (r U R' U') r' R (U R U' R')",
               "desc": "One-handed execution avoids the M move",
               "status": 1,
-              "uses": ["OH"]
+              "uses": ["OH", "2H"]
             }
           ]
+        },
+        {
+          "alg": "U (M' U' M) U2' (M' U' M)",
+          "desc": "Moo!",
+          "status": 0,
+          "uses": ["2H"]
         },
       ]
     },
@@ -2140,7 +2140,7 @@ var algSet = {
             {
               "alg": "U r' U2' R U (R' U' R U) R' U r",
               "desc": "Execution applies cancellations",
-              "status": 0,
+              "status": 1,
               "uses": ["2H", "OH"]
             }
           ]
@@ -2156,6 +2156,21 @@ var algSet = {
       "prob": "1/54",
       "algs" :
       [
+        {
+          "alg": "(r U R' U R U2' r') (r U R' U R U2' r')",
+          "desc": "[SuneOLL]: Double [RFWS]",
+          "status": 1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "r U R' (U R U' R') U R U2' r'",
+              "desc": "Execution applies cancellations",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            },
+          ]
+        },
         {
           "alg": "U' (r U2 R' U' R U' r') (r U2 R' U' R U' r')",
           "desc": "[SuneOLL]: Double [RFWAS]",
@@ -2175,21 +2190,6 @@ var algSet = {
               "status": 1,
               "uses": ["OH"]
             }
-          ]
-        },
-        {
-          "alg": "(r U R' U R U2' r') (r U R' U R U2' r')",
-          "desc": "[SuneOLL]: Double [RFWS]",
-          "status": 1,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "r U R' (U R U' R') U R U2' r'",
-              "desc": "Execution applies cancellations",
-              "status": -1,
-              "uses": ["2H", "OH"]
-            },
           ]
         }
       ]
@@ -2226,7 +2226,7 @@ var algSet = {
         },
         {
           "alg": "U (R U2' R2' U' R) U' (R' U2' F R F')",
-          "desc": "I used this before finding the Collin Burns algorithm for 2H",
+          "desc": "I used this before finding the Collin Burns algorithm",
           "status": -1,
           "uses": ["2H"]
         },
