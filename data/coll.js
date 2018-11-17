@@ -1307,15 +1307,21 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U F (U R U' R' U R U2 R' U' R U R') F'",
-          "desc": "Two-handed execution",
+          "alg": "U F (U R U' R') F' F (U R U2 R' U' R U R') F'",
+          "desc": "[OLL] combination - OLL 44 + OLL 13",
           "status": 1,
-          "uses": ["2H"],
+          "uses": [],
           "vars" :
           [
             {
+              "alg": "U F (U R U' R' U R U2 R' U' R U R') F'",
+              "desc": "Two-handed execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
               "alg": "U F (U R U' R' U R U2' R' U' R U R') F'",
-              "desc": "One-handed execution",
+              "desc": "One-handed execution applies a cancellation",
               "status": 1,
               "uses": ["OH"]
             }
@@ -1368,7 +1374,7 @@ var algSet = {
     {
       "id": "G5",
       "name": "Pi / Bruno #5",
-      "desc": "Inverse of Double Sune / H3.",
+      "desc": "Inverse of Double Sune / H5.",
       "wiki": "",
       "algdb": "coll/g5",
       "image": "COLL-G-5",
@@ -1376,8 +1382,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' R U R' U F' R U2' R' U2 R' F R",
-          "desc": "Fast two-handed algorithm",
+          "alg": "U' (R U R' U) (F' R U2' R' U2 R' F R)",
+          "desc": "Extract pair then solve using Winter Variation",
           "status": 1,
           "uses": ["2H"]
         },
@@ -1485,15 +1491,21 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "F (R U' R' U R U2 R' U' R U R' U') F'",
-          "desc": "Two-handed execution",
+          "alg": "F (R U' R' U R U2 R' U') F' F (R U R' U') F'",
+          "desc": "[OLL] combination - OLL 13' + OLL 45",
           "status": 1,
-          "uses": ["2H"],
+          "uses": [],
           "vars" :
           [
             {
+              "alg": "F (R U' R' U R U2 R' U' R U R' U') F'",
+              "desc": "Two-handed execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H"]
+            },
+            {
               "alg": "F (R U' R' U R U2' R' U' R U R' U') F'",
-              "desc": "One-handed execution",
+              "desc": "One-handed execution applies a cancellation",
               "status": 1,
               "uses": ["OH"]
             }
@@ -1512,8 +1524,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U2 R' F' R U2 R U2' R' F U' R U' R'",
-          "desc": "Fast two-handed algorithm",
+          "alg": "U2 (R' F' R U2 R U2' R' F) (U' R U' R')",
+          "desc": "Winter Variation inverse followed by basic insertion",
           "status": 1,
           "uses": ["2H"]
         },
