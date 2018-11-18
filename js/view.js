@@ -198,7 +198,7 @@ function renderTableDataCell(caseObj, useId, width)
 					if (useId == null || algObj.uses[useIdx] == useId)
 					{
 						// width < IPHONE_LANDSCAPE can only show one alg for each "use"
-						if (width >= IPHONE_LANDSCAPE || uses.indexOf(algObj.uses[useIdx]) < 0)
+						if (width >= IPHONE_LANDSCAPE || algSet.header.uses.length == 1 || uses.indexOf(algObj.uses[useIdx]) < 0)
 						{
 							out += renderViewAlg(algObj, width);
 							uses = uses.concat(algObj.uses)
@@ -231,7 +231,7 @@ function renderTableDataCell(caseObj, useId, width)
 								if (useId == null || varObj.uses[useIdx] == useId)
 								{
 									// width < IPHONE_LANDSCAPE can only show one alg for each "use"
-									if (width >= IPHONE_LANDSCAPE || uses.indexOf(varObj.uses[useIdx]) < 0)
+									if (width >= IPHONE_LANDSCAPE || algSet.header.uses.length == 1 || uses.indexOf(varObj.uses[useIdx]) < 0)
 									{
 										out += renderViewAlg(varObj, width);
 										uses = uses.concat(varObj.uses)
