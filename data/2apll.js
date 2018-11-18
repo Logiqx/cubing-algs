@@ -66,7 +66,7 @@ var algSet = {
           "alg": "-",
           "desc": "",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H"]
         },
       ]
     },
@@ -154,7 +154,7 @@ var algSet = {
           "alg": "-",
           "desc": "",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H"]
         },
       ]
     },
