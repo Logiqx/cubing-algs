@@ -1,0 +1,47 @@
+.s64-pbl {
+    background-image: url(../img/pbl-s64-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+.s64-pbl-a {
+    background-position: -64px 0;
+}
+
+.s64-pbl-o {
+    background-position: -128px 0;
+}
+
+.s96-pbl {
+    background-image: url(../img/pbl-s96-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 96px;
+    height: 96px;
+}
+
+.s96-pbl-a {
+    background-position: -96px 0;
+}
+
+.s96-pbl-o {
+    background-position: -192px 0;
+}
+
+.s128-pbl {
+    background-image: url(../img/pbl-s128-01.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 128px;
+    height: 128px;
+}
+
+.s128-pbl-a {
+    background-position: -128px 0;
+}
+
+.s128-pbl-o {
+    background-position: -256px 0;
+}
