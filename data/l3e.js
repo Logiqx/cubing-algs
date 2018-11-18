@@ -88,9 +88,27 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R' L R L') (U L' U' L)",
-          "desc": "Simple trigger combo",
+          "alg": "(R' L R L') U (L' U' L)",
+          "desc": "Simple trigger combo - mirror of alg 2",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "(L R' L' R) U' (R U R')",
+          "desc": "Simple trigger combo - mirror of alg 1",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "(L' U L) U' (L R' L' R)",
+          "desc": "Simple trigger combo - inverse of alg 1",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "(R U' R') U (R' L R L')",
+          "desc": "Simple trigger combo - inverse of alg 2",
+          "status": -1,
           "uses": ["2H"]
         }
       ]
