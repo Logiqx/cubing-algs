@@ -27,6 +27,8 @@ It’s by no means a replacement for AlgDB but it's probably useful to other cub
 - Responsive web design
   - Mobile first – works well on smart phones and installable as a web app on Android
   - Layout will change to the best possible view when rotating your mobile device
+- Random case feature
+  - When viewing any specific case, click the ellipsis "..." to switch to a random case
 
 <u>Known bugs</u>
 
