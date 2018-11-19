@@ -1,7 +1,7 @@
 {
     "name": "Mike's Cube Algs",
     "short_name": "Cube Algs",
-    "start_url": "/cubing-algs",
+    "start_url": "/cubing-algs/html/",
     "display": "standalone",
     "icons": [
         {
