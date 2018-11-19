@@ -1,6 +1,4 @@
 ref/
 .DS_Store
 Thumbs.db
-*.xlsx
-*.jar
-*.exe
+
