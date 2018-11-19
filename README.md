@@ -35,7 +35,7 @@ It’s by no means a replacement for AlgDB but it's probably useful to other cub
 <u>Links</u>
 
 - Personal Page - https://cubing.mikeg.me.uk/cubing-algs/
-- GitHub Page - https://logiqx.github.io/cubing-algs/
+- GitHub Page - https://logiqx.github.io/cubing-algs/html/
 - GitHub Project - https://github.com/Logiqx/cubing-algs
 - Thread on Speedsolving.com - [Reactive website for my cubing algs](https://www.speedsolving.com/forum/threads/reactive-website-for-my-cubing-algs.68446/)
 
