@@ -17,8 +17,8 @@ var algSet = {
   "cases":
   [
     {
-      "id": "Adj/Diag",
-      "name": "Adj/Diag Corner Swap",
+      "id": "Adjacent/Diagonal",
+      "name": "Adjacent/Diagonal",
       "desc": "These algorithms are the nucleus of several other PBL algorithms. They are often combined with the algorithm R2' F2 R2.",
       "wiki": "",
       "algdb": "pbl5",
@@ -41,8 +41,8 @@ var algSet = {
       ]
     },
     {
-      "id": "Diag/Diag",
-      "name": "Diag/Diag Corner Swap",
+      "id": "Diagonal/Diagonal",
+      "name": "Diagonal/Diagonal",
       "desc": "This is the simplest [PBL] case. The algorithm is often incorporated into other [PBL] algorithms.",
       "wiki": "",
       "algdb": "pbl3",
@@ -59,9 +59,9 @@ var algSet = {
       ]
     },
     {
-      "id": "Solved/Diag",
-      "name": "Solved/Diag Corner Swap",
-      "desc": "This is probably the worst PBL case and is typically solved using a diag/solved algorithm cancelled into R2' F2 R2.",
+      "id": "Solved/Diagonal",
+      "name": "Solved/Diagonal",
+      "desc": "This is probably the worst PBL case and is typically solved using a diagonal/solved algorithm cancelled into R2' F2 R2.",
       "wiki": "",
       "algdb": "pbl2",
       "image": "PBL",
@@ -70,7 +70,7 @@ var algSet = {
       [
         {
           "alg": "(R' F R' F2 R U' F R' F2 R U' R) (R2' F2 R2)",
-          "desc": "Combination of diag/solved and diag/diag",
+          "desc": "Combination of diagonal/solved and diagonal/diagonal",
           "status": 1,
           "uses": [],
           "vars" :
@@ -85,7 +85,7 @@ var algSet = {
         },
         {
           "alg": "(R U' R' U' F2 U' R U R' D R2) (R2' F2 R2)",
-          "desc": "Combination of diag/solved and diag/diag",
+          "desc": "Combination of diagonal/solved and diagonal/diagonal",
           "status": -1,
           "uses": [],
           "vars" :
@@ -101,9 +101,9 @@ var algSet = {
       ]
     },
     {
-      "id": "Adj/Solved",
-      "name": "Adj/Solved Corner Swap",
-      "desc": "This case can be solved using the adj/diag algorithms cancelled into R2' F2 R2.",
+      "id": "Adjacent/Solved",
+      "name": "Adjacent/Solved",
+      "desc": "This case can be solved using the adjacent/diagonal algorithms cancelled into R2' F2 R2.",
       "wiki": "",
       "algdb": "pbl1",
       "image": "PBL-A",
@@ -112,7 +112,7 @@ var algSet = {
       [
         {
           "alg": "(R' F R' F2 R U' R) (R2' F2 R2)",
-          "desc": "Combination of adj/diag and diag/diag",
+          "desc": "Combination of adjacent/diagonal and diagonal/diagonal",
           "status": 1,
           "uses": [],
           "vars" :
@@ -127,7 +127,7 @@ var algSet = {
         },
         {
           "alg": "U2 (R' U R' F2 R F' R) (R2' F2 R2)",
-          "desc": "Combination of adj/diag and diag/diag",
+          "desc": "Combination of adjacent/diagonal and diagonal/diagonal",
           "status": 1,
           "uses": [],
           "vars" :
@@ -143,9 +143,9 @@ var algSet = {
       ]
     },
     {
-      "id": "Diag/Solved",
-      "name": "Diag/Solved Corner Swap",
-      "desc": "The diagonal/solved case can be solved by repeating an adj/diag algorithm.",
+      "id": "Diagonal/Solved",
+      "name": "Diagonal/Solved",
+      "desc": "The diagonal/solved case can be solved by repeating an adjacent/diagonal algorithm.",
       "wiki": "",
       "algdb": "pbl2",
       "image": "PBL-O",
@@ -154,7 +154,7 @@ var algSet = {
       [
         {
           "alg": "(R' F R' F2 R U' R) (R' F R' F2 R U' R)",
-          "desc": "Combination of adj/diag * 2",
+          "desc": "Combination of adjacent/diagonal * 2",
           "status": 1,
           "uses": [],
           "vars" :
@@ -169,7 +169,7 @@ var algSet = {
         },
         {
           "alg": "(R' U R' F2 R F' R) (R' U R' F2 R F' R)",
-          "desc": "Combination of adj/diag * 2",
+          "desc": "Combination of adjacent/diagonal * 2",
           "status": -1,
           "uses": [],
           "vars" :
@@ -217,8 +217,8 @@ var algSet = {
       ]
     },
     {
-      "id": "Adj/Adj",
-      "name": "Adj/Adj Corner Swap",
+      "id": "Adjacent/Adjacent",
+      "name": "Adjacent/Adjacent",
       "desc": "This is the most common case to encounter during [PBL]. The algorithms allow for both bars to be at the back or the front.",
       "wiki": "",
       "algdb": "pbl4",
@@ -243,15 +243,15 @@ var algSet = {
         },
         {
           "alg": "y2 R2 U' B2 U2' R2' U' R2",
-          "desc": "Alternative angle - bars at the front",
+          "desc": "Alternative algorithm for bars at the front",
           "status": 1,
           "uses": ["2H"]
         }
       ]
     },
     {
-      "id": "Diag/Adj",
-      "name": "Diag/Adj Corner Swap",
+      "id": "Diagonal/Adjacent",
+      "name": "Diagonal/Adjacent",
       "desc": "The algorithms allow for the bar to be on the left or the right.",
       "wiki": "",
       "algdb": "pbl5",
@@ -267,21 +267,21 @@ var algSet = {
         },
         {
           "alg": "y R2 U' (R' U R' F2 R F' R) F2",
-          "desc": "Incorporates an adj/diag algorithm",
+          "desc": "Incorporates an adjacent/diagonal algorithm",
           "status": 1,
           "uses": ["2H"]
         },
         {
           "alg": "R U' R' U' R' F2 U' R U R",
-          "desc": "Alternative angle - bar at the back",
+          "desc": "Alternative algorithm for bar at the back",
           "status": -1,
           "uses": []
         },
       ]
     },
     {
-      "id": "Solved/Adj",
-      "name": "Solved/Adj Corner Swap",
+      "id": "Solved/Adjacent",
+      "name": "Solved/Adjacent",
       "desc": "The algorithms allow for the bar to be on the left or the right.",
       "wiki": "",
       "algdb": "pbl1",
@@ -291,7 +291,7 @@ var algSet = {
       [
         {
           "alg": "y' R2 U' (R' U R' F2 R F' R) R2 F2",
-          "desc": "Incorporates an adj/diag algorithm",
+          "desc": "Incorporates an adjacent/diagonal algorithm",
           "status": 1,
           "uses": [],
           "vars" :
@@ -306,7 +306,7 @@ var algSet = {
         },
         {
           "alg": "y (R2 U R2' U' R2 U R2' U' R2) (R2' F2 R2)",
-          "desc": "Combination of diag/adj and diag/diag",
+          "desc": "Combination of diagonal/adjacent and diagonal/diagonal",
           "status": 1,
           "uses": [],
           "vars" :
@@ -321,7 +321,7 @@ var algSet = {
         },
         {
           "alg": "(R U' R' U' R' F2 U' R U R) (R2' F2 R2)",
-          "desc": "Combination of diag/adj and diag/diag",
+          "desc": "Combination of diagonal/adjacent and diagonal/diagonal",
           "status": -1,
           "uses": [],
           "vars" :
@@ -347,23 +347,23 @@ var algSet = {
         {
           "id": "EG2",
           "name": "Diagonal Swap on Bottom",
-          "desc": "The algorithms for these cases have become the nucleus of algorithms for the remaining cases.",
+          "desc": "The algorithms for adjacent/diagonal and diagonal/diagonal have become the nucleus of the remaining cases.",
           "wiki": "PBL",
-          "cases": ["Adj/Diag", "Diag/Diag", "Solved/Diag"]
+          "cases": ["Adjacent/Diagonal", "Diagonal/Diagonal", "Solved/Diagonal"]
         },
         {
           "id": "CLL",
           "name": "No Swap on Bottom",
-          "desc": "The algorithms for these cases are all derived from algorithms for a diagonal swap on bottom.",
+          "desc": "The algorithms for these cases are all derived from algorithms for a diagonal swap on bottom - see above.",
           "wiki": "PBL",
-          "cases": ["Adj/Solved", "Diag/Solved", "Solved/Solved"]
+          "cases": ["Adjacent/Solved", "Diagonal/Solved", "Solved/Solved"]
         },
         {
           "id": "EG1",
           "name": "Adjacent Swap on Bottom",
-          "desc": "It is more likely than not that one of these cases will occur during an Ortega/Varasano solve. Ensure that you know where the bar will be during inspection.",
+          "desc": "It is more likely than not that one of these cases will occur during an Ortega/Varasano solve. Ensure that you know where the bar will end up during inspection.",
           "wiki": "PBL",
-          "cases": ["Adj/Adj", "Diag/Adj", "Solved/Adj"]
+          "cases": ["Adjacent/Adjacent", "Diagonal/Adjacent", "Solved/Adjacent"]
         },
       ]
     },
