@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "F2L",
     "name": "First Two Layers",
-    "desc": "This page lists the [F2L] algorithms that I use during actual solves.",
+    "desc": "This page lists the 42 basic [F2L] cases with intuitive algorithms that can be used during solves.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/F2L",
     "algdb": "http://algdb.net/puzzle/333/f2l/",
     "uses":
@@ -22,7 +22,8 @@ var algSet = {
   [
     {
       "id": "1",
-      "name": "Easy Case",
+      "name": "Same Colour on Top",
+      "desc": "Cases 1 and 2 are simply [F2L] insertions.",
       "wiki": "",
       "algdb": "f2l1",
       "image": "F2L-01",
@@ -30,8 +31,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U R U' R'",
-          "desc": "BLAH",
+          "alg": "U (R U' R')",
+          "desc": "Simple trigger",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U (L U' L')",
+          "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -39,7 +46,8 @@ var algSet = {
     },
     {
       "id": "2",
-      "name": "Easy Case",
+      "name": "Same Colour on Top",
+      "desc": "Cases 1 and 2 are simply [F2L] insertions.",
       "wiki": "",
       "algdb": "f2l2",
       "image": "F2L-02",
@@ -47,8 +55,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "y' U' R' U R",
-          "desc": "BLAH",
+          "alg": "y' U' (R' U R)",
+          "desc": "Simple trigger",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U' (L' U L)",
+          "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -56,7 +70,8 @@ var algSet = {
     },
     {
       "id": "3",
-      "name": "Flip Corner",
+      "name": "Different Colours on Top",
+      "desc": "Cases 3 and 4 are simply [F2L] insertions.",
       "wiki": "",
       "algdb": "f2l3",
       "image": "F2L-03",
@@ -64,8 +79,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "y' R' U' R",
-          "desc": "BLAH",
+          "alg": "y' (R' U' R)",
+          "desc": "Simple trigger",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y (L' U' L)",
+          "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -73,7 +94,8 @@ var algSet = {
     },
     {
       "id": "4",
-      "name": "Flip Corner",
+      "name": "Different Colours on Top",
+      "desc": "Cases 3 and 4 are simply [F2L] insertions.",
       "wiki": "",
       "algdb": "f2l4",
       "image": "F2L-04",
@@ -81,8 +103,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R U R'",
-          "desc": "BLAH",
+          "alg": "(R U R')",
+          "desc": "Simple trigger",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U L')",
+          "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -90,7 +118,8 @@ var algSet = {
     },
     {
       "id": "5",
-      "name": "Reposition Edge",
+      "name": "Same Colour on Top",
+      "desc": "Cases 5 and 6 are solved by hiding the corner and repositioning the edge to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l5",
       "image": "F2L-05",
@@ -99,15 +128,40 @@ var algSet = {
       [
         {
           "alg": "U' (R U R') U2 (R U' R')",
-          "desc": "BLAH",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "U' (R U R') U2' (R U' R')",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
+        },
+        {
+          "alg": "y2 U' (L U L') U2 (L U' L')",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y2 U' (L U L') U2' (L U' L')",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "6",
-      "name": "Reposition Edge",
+      "name": "Same Colour on Top",
+      "desc": "Cases 5 and 6 are solved by hiding the corner and repositioning the edge to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l6",
       "image": "F2L-06",
@@ -115,16 +169,41 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "y' U (R' U' R) U2' (R' U R)",
-          "desc": "BLAH",
+          "alg": "y' U (R' U' R) U2 (R' U R)",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y' U (R' U' R) U2' (R' U R)",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
+        },
+        {
+          "alg": "y U (L' U' L) U2 (L' U L)",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y U (L' U' L) U2' (L' U L)",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "7",
-      "name": "Reposition Edge",
+      "name": "Same Colour on Top",
+      "desc": "Cases 7 and 8 are solved by hiding the corner and repositioning the edge to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l7",
       "image": "F2L-07",
@@ -133,15 +212,40 @@ var algSet = {
       [
         {
           "alg": "U' (R U2' R') U2 (R U' R')",
-          "desc": "BLAH",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "U' (R U2' R') U2' (R U' R')",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
+        },
+        {
+          "alg": "y2 U' (L U2 L') U2 (L U' L')",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y2 U' (L U2' L') U2' (L U' L')",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "8",
-      "name": "Reposition Edge",
+      "name": "Same Colour on Top",
+      "desc": "Cases 7 and 8 are solved by hiding the corner and repositioning the edge to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l8",
       "image": "F2L-08",
@@ -149,8 +253,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "y' U (R' U2 R) U2' (R' U R)",
-          "desc": "BLAH",
+          "alg": "y' U (R' U2' R) U2 (R' U R)",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U (L' U2 L) U2' (L' U L)",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -158,7 +268,8 @@ var algSet = {
     },
     {
       "id": "9",
-      "name": "Reposition Edge and Flip Corner",
+      "name": "Different Colours on Top",
+      "desc": "Cases 9 and 10 are solved by hiding the corner (or edge) and repositioning the other piece to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l9",
       "image": "F2L-09",
@@ -167,7 +278,25 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U' R) U' (R' U' R)",
-          "desc": "BLAH",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U (L' U' L) U' (L' U' L)",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y' U2' (R' U R) U (R' U' R)",
+          "desc": "Hide edge, reposition corner",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U2' (L' U L) U (L' U' L)",
+          "desc": "Hide edge, reposition corner",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -175,7 +304,8 @@ var algSet = {
     },
     {
       "id": "10",
-      "name": "Reposition Edge and Flip Corner",
+      "name": "Different Colours on Top",
+      "desc": "Cases 9 and 10 are solved by hiding the corner (or edge) and repositioning the other piece to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l10",
       "image": "F2L-10",
@@ -184,7 +314,25 @@ var algSet = {
       [
         {
           "alg": "U' (R U R') U (R U R')",
-          "desc": "BLAH",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U' (L U L') U (L U L')",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "U2' (R U' R') U' (R U R')",
+          "desc": "Hide edge, reposition corner",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U (L U' L') U' (L U L')",
+          "desc": "Hide edge, reposition corner",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -192,7 +340,8 @@ var algSet = {
     },
     {
       "id": "11",
-      "name": "Reposition Edge and Flip Corner",
+      "name": "Different Colours on Top",
+      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a basic insertion. Empty slots can often be used to avoid unnecessary cube rotations.",
       "wiki": "",
       "algdb": "f2l11",
       "image": "F2L-11",
@@ -200,16 +349,32 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' (R U2' R') d (R' U' R)",
-          "desc": "BLAH",
+          "alg": "U' (R U2' R') U y' (R' U' R)",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U' (L U2 L') U y' (L' U' L)",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y2 U' (L U2' L') U y' (L' U' L)",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "12",
-      "name": "Reposition Edge and Flip Corner",
+      "name": "Different Colours on Top",
+      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a basic insertion. Empty slots can often be used to avoid unnecessary cube rotations.",
       "wiki": "",
       "algdb": "f2l12",
       "image": "F2L-12",
@@ -217,16 +382,32 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "y' U (R' U2 R) d' (R U R')",
-          "desc": "BLAH",
+          "alg": "y' U (R' U2' R) U' y (R U R')",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U (L' U2 L) U' y (L U L')",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y U (L' U2' L) U' y (L U L')",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "13",
-      "name": "Reposition Edge and Flip Corner",
+      "name": "Different Colours on Top",
+      "desc": "Cases 13 and 14 are solved by splitting the pieces apart to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l13",
       "image": "F2L-13",
@@ -235,7 +416,13 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U R) U' (R' U' R)",
-          "desc": "BLAH",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U (L' U L) U' (L' U' L)",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -243,7 +430,8 @@ var algSet = {
     },
     {
       "id": "14",
-      "name": "Reposition Edge and Flip Corner",
+      "name": "Different Colours on Top",
+      "desc": "Cases 13 and 14 are solved by splitting the pieces apart to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l14",
       "image": "F2L-14",
@@ -252,7 +440,13 @@ var algSet = {
       [
         {
           "alg": "U' (R U' R') U (R U R')",
-          "desc": "BLAH",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "U (L U' L') U (L U L')",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -260,7 +454,8 @@ var algSet = {
     },
     {
       "id": "15",
-      "name": "Split Pair by Going Over",
+      "name": "Same Colour on Top",
+      "desc": "Cases 15 and 16 can be solved by splitting the pieces apart to set up a basic insertion. Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
       "wiki": "",
       "algdb": "f2l15",
       "image": "F2L-15",
@@ -268,8 +463,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "y' (R' U R) U' d' (R U R')",
-          "desc": "BLAH",
+          "alg": "y' (R' U R) y U2' (R U R')",
+          "desc": "Split pair by going over",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y (L' U L) y U2' (L U L')",
+          "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -277,7 +478,8 @@ var algSet = {
     },
     {
       "id": "16",
-      "name": "Split Pair by Going Over",
+      "name": "Same Colour on Top",
+      "desc": "Cases 15 and 16 can be solved by splitting the pieces apart to set up a basic insertion. Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
       "wiki": "",
       "algdb": "f2l16",
       "image": "F2L-16",
@@ -285,8 +487,14 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U' R') U d (R' U' R)",
-          "desc": "BLAH",
+          "alg": "(R U' R') y' U2 (R' U' R)",
+          "desc": "Split pair by going over",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') y' U2 (L' U' L)",
+          "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -294,7 +502,8 @@ var algSet = {
     },
     {
       "id": "17",
-      "name": "Split Pair by Going Over",
+      "name": "Cross Colour on Top",
+      "desc": "Cases 17 and 18 are solved by splitting the pieces apart to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l17",
       "image": "F2L-17",
@@ -302,16 +511,32 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U2 R') U' (R U R')",
-          "desc": "BLAH",
+          "alg": "(R U2' R') U' (R U R')",
+          "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U2 L') U' (L U L')",
+          "desc": "Split pair by going over",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y2 (L U2' L') U' (L U L')",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "18",
-      "name": "Split Pair by Going Over",
+      "name": "Cross Colour on Top",
+      "desc": "Cases 17 and 18 are solved by splitting the pieces apart to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l18",
       "image": "F2L-18",
@@ -320,15 +545,31 @@ var algSet = {
       [
         {
           "alg": "y' (R' U2' R) U (R' U' R)",
-          "desc": "BLAH",
+          "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y (L' U2 L) U (L' U' L)",
+          "desc": "Split pair by going over",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y (L' U2' L) U (L' U' L)",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "19",
-      "name": "Make Pair on Side",
+      "name": "Cross Colour on Top",
+      "desc": "Cases 19 and 20 are solved by hiding the edge and making the pair on the side.",
       "wiki": "",
       "algdb": "f2l19",
       "image": "F2L-19",
@@ -337,15 +578,31 @@ var algSet = {
       [
         {
           "alg": "U (R U2' R') U (R U' R')",
-          "desc": "BLAH",
+          "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U (L U2 L') U (L U' L')",
+          "desc": "Hide edge to make pair on side",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y2 U (L U2' L') U (L U' L')",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "20",
-      "name": "Make Pair on Side",
+      "name": "Cross Colour on Top",
+      "desc": "Cases 19 and 20 are solved by hiding the edge and making the pair on the side.",
       "wiki": "",
       "algdb": "f2l20",
       "image": "F2L-20",
@@ -353,16 +610,32 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "y' U' (R' U2 R) U' (R' U R)",
-          "desc": "BLAH",
+          "alg": "y' U' (R' U2' R) U' (R' U R)",
+          "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U' (L' U2 L) U' (L' U L)",
+          "desc": "Hide edge to make pair on side",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "y U' (L' U2' L) U' (L' U L)",
+              "desc": "",
+              "status": 1,
+              "uses": ["OH"]
+            },
+          ]
         },
       ]
     },
     {
       "id": "21",
-      "name": "Make Pair on Side",
+      "name": "Cross Colour on Top",
+      "desc": "Cases 21 and 22 are solved by hiding the edge and making the pair on the side.",
       "wiki": "",
       "algdb": "f2l21",
       "image": "F2L-21",
@@ -371,7 +644,13 @@ var algSet = {
       [
         {
           "alg": "U2 (R U R') U (R U' R')",
-          "desc": "BLAH",
+          "desc": "Hide edge to make pair on side",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U2 (L U L') U (L U' L')",
+          "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -379,7 +658,8 @@ var algSet = {
     },
     {
       "id": "22",
-      "name": "Make Pair on Side",
+      "name": "Cross Colour on Top",
+      "desc": "Cases 21 and 22 are solved by hiding the edge and making the pair on the side.",
       "wiki": "",
       "algdb": "f2l22",
       "image": "F2L-22",
@@ -388,7 +668,13 @@ var algSet = {
       [
         {
           "alg": "y' U2 (R' U' R) U' (R' U R)",
-          "desc": "BLAH",
+          "desc": "Hide edge to make pair on side",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U2 (L' U' L) U' (L' U L)",
+          "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -396,7 +682,8 @@ var algSet = {
     },
     {
       "id": "23",
-      "name": "Split and Make Pair on Side ",
+      "name": "Same Colour on Side",
+      "desc": "Cases 23 and 24 cannot be solved with only two simple triggers, despite both pieces being in the U-layer. Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
       "wiki": "",
       "algdb": "f2l23",
       "image": "F2L-23",
@@ -405,7 +692,13 @@ var algSet = {
       [
         {
           "alg": "U (R U' R') U' (R U' R') U (R U' R')",
-          "desc": "BLAH",
+          "desc": "Split pieces then make pair on side",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U (L U' L') U' (L U' L') U (L U' L')",
+          "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -413,7 +706,8 @@ var algSet = {
     },
     {
       "id": "24",
-      "name": "Split and Make Pair on Side ",
+      "name": "Same Colour on Side",
+      "desc": "Cases 23 and 24 cannot be solved with only two simple triggers, despite both pieces being in the U-layer. Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
       "wiki": "",
       "algdb": "f2l24",
       "image": "F2L-24",
@@ -422,7 +716,13 @@ var algSet = {
       [
         {
           "alg": "y' U' (R' U R) U (R' U R) U' (R' U R)",
-          "desc": "BLAH",
+          "desc": "Split pieces then make pair on side",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U' (L' U L) U (L' U L) U' (L' U L)",
+          "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -540,7 +840,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U' R') d (R' U R)",
+          "alg": "(R U' R') U y' (R' U R)",
           "desc": "BLAH",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -614,7 +914,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' (R U R') d (R' U' R)",
+          "alg": "U' (R U R') U y' (R' U' R)",
           "desc": "BLAH",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -637,7 +937,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "y' U (R' U' R) d' (R U R')",
+          "alg": "y' U (R' U' R) U' y (R U R')",
           "desc": "BLAH",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -671,7 +971,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U' R') d (R' U2 R) U2' (R' U R)",
+          "alg": "(R U' R') U y' (R' U2 R) U2' (R' U R)",
           "desc": "BLAH",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -722,7 +1022,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U' R') d (R' U' R) U' (R' U' R)",
+          "alg": "(R U' R') U y' (R' U' R) U' (R' U' R)",
           "desc": "BLAH",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -739,7 +1039,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "(R U' R') d U (R' U' R) U' (R' U R)",
+          "alg": "(R U' R') y' U2 (R' U' R) U' (R' U R)",
           "desc": "BLAH",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -757,20 +1057,20 @@ var algSet = {
       [
         {
           "id": "scfu",
-          "name": "Same Colour Facing Upwards",
-          "desc": "BLAH.",
+          "name": "Same Colour on Top",
+          "desc": "These cases are typically solved by hiding the corner and repositioning the edge.",
           "cases": ["1", "2", "5", "6", "7", "8", "15", "16"]
         },
         {
           "id": "dcfu",
-          "name": "Different Colours Facing Upwards",
-          "desc": "BLAH.",
+          "name": "Different Colours on Top",
+          "desc": "These cases are typically solved by hiding the corner and repositioning the edge.",
           "cases": ["4", "3", "10", "9", "14", "13", "12", "11"]
         },
         {
           "id": "ccfu",
-          "name": "Cross Colour Facing Upwards",
-          "desc": "BLAH.",
+          "name": "Cross Colour on Top",
+          "desc": "These cases are typically solved by hiding the edge and repositioning the corner.",
           "cases": ["19", "20", "21", "22", "17", "18", "23", "24"]
         },
         {
@@ -796,48 +1096,48 @@ var algSet = {
     {
       "id": "wiki",
       "name": "Wiki",
-      "desc": "BLAH.",
+      "desc": "The groups below match the Speedsolving.com Wiki and are often based on how the cases are typically solved.",
       "groups":
       [
         {
           "id": "wiki1",
           "name": "Easy Cases",
-          "desc": "BLAH.",
+          "desc": "These cases are the basic [F2L] insertions - i.e. 3 move triggers.",
           "wiki": "#Easy_Cases",
           "cases": ["1", "2", "3", "4"]
         },
         {
           "id": "wiki2",
           "name": "Reposition Edge",
-          "desc": "BLAH.",
+          "desc": "These cases are all solved by hiding the corner and repositioning the edge.",
           "wiki": "#Reposition_Edge",
           "cases": ["5", "6", "7", "8"]
         },
         {
           "id": "wiki3",
           "name": "Reposition Edge and Flip Corner",
-          "desc": "BLAH.",
+          "desc": "These cases are typically solved by hiding the corner and repositioning the edge.",
           "wiki": "#Reposition_Edge_and_Flip_Corner",
           "cases": ["9", "10", "11", "12", "13", "14"]
         },
         {
           "id": "wiki4",
           "name": "Split Pair by Going Over",
-          "desc": "BLAH.",
+          "desc": "These cases are solved by splitting up the pieces to set up a basic insertion.",
           "wiki": "#Split_Pair_by_Going_Over",
           "cases": ["15", "16", "17", "18"]
         },
         {
           "id": "wiki5",
           "name": "Pair Made on Side",
-          "desc": "BLAH.",
+          "desc": "These cases are solved by hiding the edge and making the pair on the side.",
           "wiki": "#Pair_Made_on_Side",
           "cases": ["19", "20", "21", "22"]
         },
         {
           "id": "wiki6",
           "name": "Weird",
-          "desc": "BLAH.",
+          "desc": "These cases have been called \"weird\" because they cannot be solved with two simple triggers, despite both pieces being in the U-layer.",
           "wiki": "#Weird",
           "cases": ["23", "24"]
         },
@@ -861,6 +1161,32 @@ var algSet = {
           "desc": "BLAH.",
           "wiki": "#Edge_and_Corner_in_Place",
           "cases": ["37", "38", "39", "40", "41", "42"]
+        },
+      ]
+    },
+    {
+      "id": "edge",
+      "name": "Edge Orientation",
+      "desc": "BLAH.",
+      "groups":
+      [
+        {
+          "id": "good",
+          "name": "Good Edge",
+          "desc": "An edge is considered \"good\" (AKA \"oriented\") if it can be solved with an [RU]-style algorithm without rotations.",
+          "cases": ["1", "4", "5", "7", "10",
+                    "12", "14", "15", "17", "19",
+                    "21", "23", "25", "27", "30",
+                    "32", "33", "34", "37", "39", "40"]
+        },
+        {
+          "id": "bad",
+          "name": "Bad Edge",
+          "desc": "An edge is considered \"bad\" (AKA \"unoriented\") if it cannot be solved with an [RU]-style algorithm without rotations.",
+          "cases": ["2", "3", "6", "8", "9",
+                    "11", "13", "16", "18", "20",
+                    "22", "24", "26", "28", "29",
+                    "31", "35", "36", "38", "41", "42"]
         },
       ]
     },
