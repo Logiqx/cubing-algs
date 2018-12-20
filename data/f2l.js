@@ -23,7 +23,7 @@ var algSet = {
     {
       "id": "1",
       "name": "Same Colour on Top",
-      "desc": "Cases 1 and 2 are simply [F2L] insertions.",
+      "desc": "Cases 1 and 2 are simple [F2L] insertions.",
       "wiki": "",
       "algdb": "f2l1",
       "image": "F2L-01",
@@ -47,7 +47,7 @@ var algSet = {
     {
       "id": "2",
       "name": "Same Colour on Top",
-      "desc": "Cases 1 and 2 are simply [F2L] insertions.",
+      "desc": "Cases 1 and 2 are simple [F2L] insertions.",
       "wiki": "",
       "algdb": "f2l2",
       "image": "F2L-02",
@@ -71,7 +71,7 @@ var algSet = {
     {
       "id": "3",
       "name": "Different Colours on Top",
-      "desc": "Cases 3 and 4 are simply [F2L] insertions.",
+      "desc": "Cases 3 and 4 are simple [F2L] insertions.",
       "wiki": "",
       "algdb": "f2l3",
       "image": "F2L-03",
@@ -95,7 +95,7 @@ var algSet = {
     {
       "id": "4",
       "name": "Different Colours on Top",
-      "desc": "Cases 3 and 4 are simply [F2L] insertions.",
+      "desc": "Cases 3 and 4 are simple [F2L] insertions.",
       "wiki": "",
       "algdb": "f2l4",
       "image": "F2L-04",
@@ -119,7 +119,7 @@ var algSet = {
     {
       "id": "5",
       "name": "Same Colour on Top",
-      "desc": "Cases 5 and 6 are solved by hiding the corner and repositioning the edge to set up a basic insertion.",
+      "desc": "Cases 5 and 6 are solved by hiding the corner and repositioning the edge to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l5",
       "image": "F2L-05",
@@ -161,7 +161,7 @@ var algSet = {
     {
       "id": "6",
       "name": "Same Colour on Top",
-      "desc": "Cases 5 and 6 are solved by hiding the corner and repositioning the edge to set up a basic insertion.",
+      "desc": "Cases 5 and 6 are solved by hiding the corner and repositioning the edge to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l6",
       "image": "F2L-06",
@@ -203,7 +203,7 @@ var algSet = {
     {
       "id": "7",
       "name": "Same Colour on Top",
-      "desc": "Cases 7 and 8 are solved by hiding the corner and repositioning the edge to set up a basic insertion.",
+      "desc": "Cases 7 and 8 are solved by hiding the corner and repositioning the edge to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l7",
       "image": "F2L-07",
@@ -245,7 +245,7 @@ var algSet = {
     {
       "id": "8",
       "name": "Same Colour on Top",
-      "desc": "Cases 7 and 8 are solved by hiding the corner and repositioning the edge to set up a basic insertion.",
+      "desc": "Cases 7 and 8 are solved by hiding the corner and repositioning the edge to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l8",
       "image": "F2L-08",
@@ -269,7 +269,7 @@ var algSet = {
     {
       "id": "9",
       "name": "Different Colours on Top",
-      "desc": "Cases 9 and 10 are solved by hiding the corner (or edge) and repositioning the other piece to set up a basic insertion.",
+      "desc": "Cases 9 and 10 are solved by hiding the corner (or edge) and repositioning the other piece to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l9",
       "image": "F2L-09",
@@ -305,7 +305,7 @@ var algSet = {
     {
       "id": "10",
       "name": "Different Colours on Top",
-      "desc": "Cases 9 and 10 are solved by hiding the corner (or edge) and repositioning the other piece to set up a basic insertion.",
+      "desc": "Cases 9 and 10 are solved by hiding the corner (or edge) and repositioning the other piece to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l10",
       "image": "F2L-10",
@@ -341,7 +341,7 @@ var algSet = {
     {
       "id": "11",
       "name": "Different Colours on Top",
-      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a basic insertion. Empty slots can often be used to avoid unnecessary cube rotations.",
+      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a regular insertion. Empty slots can often be used to avoid unnecessary cube rotations.",
       "wiki": "",
       "algdb": "f2l11",
       "image": "F2L-11",
@@ -374,7 +374,7 @@ var algSet = {
     {
       "id": "12",
       "name": "Different Colours on Top",
-      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a basic insertion. Empty slots can often be used to avoid unnecessary cube rotations.",
+      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a regular insertion. Empty slots can often be used to avoid unnecessary cube rotations.",
       "wiki": "",
       "algdb": "f2l12",
       "image": "F2L-12",
@@ -407,7 +407,7 @@ var algSet = {
     {
       "id": "13",
       "name": "Different Colours on Top",
-      "desc": "Cases 13 and 14 are solved by splitting the pieces apart to set up a basic insertion.",
+      "desc": "Cases 13 and 14 are solved by splitting the pieces apart to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l13",
       "image": "F2L-13",
@@ -431,7 +431,7 @@ var algSet = {
     {
       "id": "14",
       "name": "Different Colours on Top",
-      "desc": "Cases 13 and 14 are solved by splitting the pieces apart to set up a basic insertion.",
+      "desc": "Cases 13 and 14 are solved by splitting the pieces apart to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l14",
       "image": "F2L-14",
@@ -455,7 +455,7 @@ var algSet = {
     {
       "id": "15",
       "name": "Same Colour on Top",
-      "desc": "Cases 15 and 16 can be solved by hiding the edge and splitting the pieces apart to set up a basic insertion. Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
+      "desc": "Cases 15 and 16 can be solved by hiding the edge and splitting the pieces apart to set up a regular insertion.<br/><br/>Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
       "wiki": "",
       "algdb": "f2l15",
       "image": "F2L-15",
@@ -479,7 +479,7 @@ var algSet = {
     {
       "id": "16",
       "name": "Same Colour on Top",
-      "desc": "Cases 15 and 16 can be solved by hiding the edge and splitting the pieces apart to set up a basic insertion. Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
+      "desc": "Cases 15 and 16 can be solved by hiding the edge and splitting the pieces apart to set up a regular insertion.<br/><br/>Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
       "wiki": "",
       "algdb": "f2l16",
       "image": "F2L-16",
@@ -503,7 +503,7 @@ var algSet = {
     {
       "id": "17",
       "name": "Cross Colour on Top",
-      "desc": "Cases 17 and 18 are solved by hiding the edge and splitting the pieces apart to set up a basic insertion.",
+      "desc": "Cases 17 and 18 are solved by hiding the edge and splitting the pieces apart to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l17",
       "image": "F2L-17",
@@ -536,7 +536,7 @@ var algSet = {
     {
       "id": "18",
       "name": "Cross Colour on Top",
-      "desc": "Cases 17 and 18 are solved by hiding the edge and splitting the pieces apart to set up a basic insertion.",
+      "desc": "Cases 17 and 18 are solved by hiding the edge and splitting the pieces apart to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l18",
       "image": "F2L-18",
@@ -683,7 +683,7 @@ var algSet = {
     {
       "id": "23",
       "name": "Same Colour on Side",
-      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer. Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
+      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer.<br/><br/>Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
       "wiki": "",
       "algdb": "f2l23",
       "image": "F2L-23",
@@ -707,7 +707,7 @@ var algSet = {
     {
       "id": "24",
       "name": "Same Colour on Side",
-      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer. Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
+      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer.<br/><br/>Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
       "wiki": "",
       "algdb": "f2l24",
       "image": "F2L-24",
@@ -1058,13 +1058,13 @@ var algSet = {
         {
           "id": "scfu",
           "name": "Same Colour on Top",
-          "desc": "These cases are typically solved by hiding the corner and repositioning the edge.",
+          "desc": "These cases are typically solved by hiding the corner and repositioning the edge, typically setting up case 1 or 2.",
           "cases": ["1", "2", "5", "6", "7", "8", "15", "16"]
         },
         {
           "id": "dcfu",
           "name": "Different Colours on Top",
-          "desc": "These cases are typically solved by hiding the corner and repositioning the edge.",
+          "desc": "These cases are typically solved by hiding the corner and repositioning the edge, setting up case 3 or 4.",
           "cases": ["4", "3", "10", "9", "14", "13", "12", "11"]
         },
         {
@@ -1102,35 +1102,35 @@ var algSet = {
         {
           "id": "wiki1",
           "name": "Easy Cases",
-          "desc": "These cases are the basic [F2L] insertions - i.e. 3 move triggers.",
+          "desc": "These cases are the four simplest [F2L] insertions - i.e. 3 move triggers.",
           "wiki": "#Easy_Cases",
           "cases": ["1", "2", "3", "4"]
         },
         {
           "id": "wiki2",
           "name": "Reposition Edge",
-          "desc": "These cases are all solved by hiding the corner and repositioning the edge.",
+          "desc": "These cases are all solved by hiding the corner and repositioning the edge to set up a regular insertion.",
           "wiki": "#Reposition_Edge",
           "cases": ["5", "6", "7", "8"]
         },
         {
           "id": "wiki3",
           "name": "Reposition Edge and Flip Corner",
-          "desc": "These cases are typically solved by hiding the corner and repositioning the edge.",
+          "desc": "These cases are typically solved by hiding the corner and repositioning the edge to set up a regular insertion.",
           "wiki": "#Reposition_Edge_and_Flip_Corner",
           "cases": ["9", "10", "11", "12", "13", "14"]
         },
         {
           "id": "wiki4",
           "name": "Split Pair by Going Over",
-          "desc": "These cases are solved by hiding the edge and splitting up the pieces to set up a basic insertion.",
+          "desc": "These cases are all solved by hiding the edge and splitting up the pieces to set up a regular insertion.",
           "wiki": "#Split_Pair_by_Going_Over",
           "cases": ["15", "16", "17", "18"]
         },
         {
           "id": "wiki5",
           "name": "Pair Made on Side",
-          "desc": "These cases are solved by hiding the edge and making the pair on the side.",
+          "desc": "These cases are all solved by hiding the edge and making the pair on the side, leading to a regular insertion.",
           "wiki": "#Pair_Made_on_Side",
           "cases": ["19", "20", "21", "22"]
         },
