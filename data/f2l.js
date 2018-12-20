@@ -455,7 +455,7 @@ var algSet = {
     {
       "id": "15",
       "name": "Same Colour on Top",
-      "desc": "Cases 15 and 16 can be solved by splitting the pieces apart to set up a basic insertion. Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
+      "desc": "Cases 15 and 16 can be solved by hiding the edge and splitting the pieces apart to set up a basic insertion. Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
       "wiki": "",
       "algdb": "f2l15",
       "image": "F2L-15",
@@ -479,7 +479,7 @@ var algSet = {
     {
       "id": "16",
       "name": "Same Colour on Top",
-      "desc": "Cases 15 and 16 can be solved by splitting the pieces apart to set up a basic insertion. Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
+      "desc": "Cases 15 and 16 can be solved by hiding the edge and splitting the pieces apart to set up a basic insertion. Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
       "wiki": "",
       "algdb": "f2l16",
       "image": "F2L-16",
@@ -503,7 +503,7 @@ var algSet = {
     {
       "id": "17",
       "name": "Cross Colour on Top",
-      "desc": "Cases 17 and 18 are solved by splitting the pieces apart to set up a basic insertion.",
+      "desc": "Cases 17 and 18 are solved by hiding the edge and splitting the pieces apart to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l17",
       "image": "F2L-17",
@@ -536,7 +536,7 @@ var algSet = {
     {
       "id": "18",
       "name": "Cross Colour on Top",
-      "desc": "Cases 17 and 18 are solved by splitting the pieces apart to set up a basic insertion.",
+      "desc": "Cases 17 and 18 are solved by hiding the edge and splitting the pieces apart to set up a basic insertion.",
       "wiki": "",
       "algdb": "f2l18",
       "image": "F2L-18",
@@ -683,7 +683,7 @@ var algSet = {
     {
       "id": "23",
       "name": "Same Colour on Side",
-      "desc": "Cases 23 and 24 cannot be solved with only two simple triggers, despite both pieces being in the U-layer. Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
+      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer. Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
       "wiki": "",
       "algdb": "f2l23",
       "image": "F2L-23",
@@ -707,7 +707,7 @@ var algSet = {
     {
       "id": "24",
       "name": "Same Colour on Side",
-      "desc": "Cases 23 and 24 cannot be solved with only two simple triggers, despite both pieces being in the U-layer. Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
+      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer. Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
       "wiki": "",
       "algdb": "f2l24",
       "image": "F2L-24",
@@ -1050,8 +1050,8 @@ var algSet = {
   "views":
   [
     {
-      "id": "category",
-      "name": "Category",
+      "id": "simple",
+      "name": "Simple Groups",
       "desc": "BLAH.",
       "groups":
       [
@@ -1095,7 +1095,7 @@ var algSet = {
     },
     {
       "id": "wiki",
-      "name": "Wiki",
+      "name": "Wiki Groups",
       "desc": "The groups below match the Speedsolving.com Wiki and are often based on how the cases are typically solved.",
       "groups":
       [
@@ -1123,7 +1123,7 @@ var algSet = {
         {
           "id": "wiki4",
           "name": "Split Pair by Going Over",
-          "desc": "These cases are solved by splitting up the pieces to set up a basic insertion.",
+          "desc": "These cases are solved by hiding the edge and splitting up the pieces to set up a basic insertion.",
           "wiki": "#Split_Pair_by_Going_Over",
           "cases": ["15", "16", "17", "18"]
         },
@@ -1137,7 +1137,7 @@ var algSet = {
         {
           "id": "wiki6",
           "name": "Weird",
-          "desc": "These cases have been called \"weird\" because they cannot be solved with two simple triggers, despite both pieces being in the U-layer.",
+          "desc": "These cases have are \"weird\" because they cannot be solved with two simple triggers, despite both pieces being in the U-layer.",
           "wiki": "#Weird",
           "cases": ["23", "24"]
         },
@@ -1173,7 +1173,7 @@ var algSet = {
         {
           "id": "good",
           "name": "Good Edge",
-          "desc": "An edge is considered \"good\" (AKA \"oriented\") if it can be solved with an [RU]-style algorithm without rotations.",
+          "desc": "An edge is considered \"good\" (AKA \"oriented\") if it can be solved with an [RU] algorithm (or left-handed mirror) without rotations.",
           "cases": ["1", "4", "5", "7", "10",
                     "12", "14", "15", "17", "19",
                     "21", "23", "25", "27", "30",
@@ -1182,7 +1182,7 @@ var algSet = {
         {
           "id": "bad",
           "name": "Bad Edge",
-          "desc": "An edge is considered \"bad\" (AKA \"unoriented\") if it cannot be solved with an [RU]-style algorithm without rotations.",
+          "desc": "An edge is considered \"bad\" (AKA \"unoriented\") if it cannot be solved with an [RU] algorithm (or left-handed mirror) without rotations.",
           "cases": ["2", "3", "6", "8", "9",
                     "11", "13", "16", "18", "20",
                     "22", "24", "26", "28", "29",
