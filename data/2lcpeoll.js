@@ -35,14 +35,14 @@ var algSet = {
           "name": "OLL 44",
           "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
           "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H", "OH"],
           "vars" :
           [
             {
               "alg": "U2 f (R U R' U') f'",
               "desc": "Executed from a different angle",
               "status": 1,
-              "uses": ["2H"]
+              "uses": ["2H", "OH"]
             },
           ]
         },
@@ -51,16 +51,7 @@ var algSet = {
           "name": "OLL 6",
           "desc": "[RFWAS] - Extract 2x2x1 block, [AUF], re-insert block",
           "status": 1,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "U r U2' R' U' R U' r'",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["OH"]
         }
       ]
     },
@@ -114,16 +105,7 @@ var algSet = {
           "name": "OLL 2",
           "desc": "[SuneOLL]: [RFWAS], [AUF], [RFWAS]",
           "status": 1,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "(r U2' R' U' R U' r') U' (r U2' R' U' R U' r')",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["OH"]
         },
       ]
     },
@@ -164,7 +146,7 @@ var algSet = {
           [
             {
               "alg": "L' U R U' L U R'",
-              "desc": "Two-handed execution",
+              "desc": "Actual execution removes the redundant U'",
               "status": 1,
               "uses": ["2H", "OH"]
             }

@@ -35,14 +35,14 @@ var algSet = {
           "name": "OLL 44",
           "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
           "status": 1,
-          "uses": ["2H"],
+          "uses": ["2H", "OH"],
           "vars" :
           [
             {
               "alg": "U2 f (R U R' U') f'",
               "desc": "Executed from a different angle",
               "status": 1,
-              "uses": ["2H"]
+              "uses": ["2H", "OH"]
             },
           ]
         },
@@ -51,16 +51,7 @@ var algSet = {
           "name": "OLL 6",
           "desc": "[RFWAS] - Extract 2x2x1 block, [AUF], re-insert block",
           "status": 1,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "U r U2' R' U' R U' r'",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["OH"]
         }
       ]
     },
@@ -114,16 +105,7 @@ var algSet = {
           "name": "OLL 2",
           "desc": "[SuneOLL]: [RFWAS], [AUF], [RFWAS]",
           "status": 1,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "(r U2' R' U' R U' r') U' (r U2' R' U' R U' r')",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["OH"]
         },
       ]
     },
@@ -159,16 +141,7 @@ var algSet = {
           "name": "AS / Anti-Sune",
           "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert pair",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "R U2' R' U' R U' R'",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         },
         {
           "alg": "U R U R' U R U2' R'",
@@ -198,15 +171,9 @@ var algSet = {
           [
             {
               "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R U2' R' U' R U' R2 U2' R U R' U R",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -219,15 +186,9 @@ var algSet = {
           [
             {
               "alg": "R U R' U R U2' R2' U' R U' R' U2 R",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R U R' U R U2' R2 U' R U' R' U2' R",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },

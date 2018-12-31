@@ -6,8 +6,8 @@ function validateAlg(algObj)
 	// Output HTML
     var out = "";
 	
-	// Is this a one handed algorithm?
-	if (algObj.uses.indexOf("OH") >= 0)
+	// Is this a dedicated one handed algorithm?
+	if (algObj.uses.length == 1 && algObj.uses.indexOf("OH") >= 0)
 	{
 		// Check that U2' is never U2 but allow it for the initial AUF
 		if (algObj.alg.indexOf("U2 ") >= 1)

@@ -60,13 +60,29 @@ var algSet = {
               "alg": "R U R' U' R' F R2 U' R' U' R U R' F'",
               "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
+            },
+          ]
+        },
+        {
+          "alg": "R U R' F' (R U R' U' R' F R2 U' R' U' R U R' F') F R U' R'",
+          "name": "Jb-Perm (2H)",
+          "desc": "[Conjugate] of T-Perm - [R U R' F': T-Perm]",
+          "status": 1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "R U R' F' R U R' U' R' F R2 U' R'",
+              "desc": "Execution applies cancellations",
+              "status": 1,
+              "uses": ["2H"]
             },
           ]
         },
         {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
-          "name": "Jb-Perm",
+          "name": "Jb-Perm (OH)",
           "desc": "[COLL] combination - [RFAS], [RFN]",
           "status": 1,
           "uses": [],
@@ -74,13 +90,7 @@ var algSet = {
           [
             {
               "alg": "R U2 R' U' R U2 L' U R' U' L",
-              "desc": "Two-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R U2' R' U' R U2' L' U R' U' L",
-              "desc": "One-handed execution applies cancellations",
+              "desc": "Execution applies cancellations",
               "status": 1,
               "uses": ["OH"]
             },
@@ -88,7 +98,6 @@ var algSet = {
         },
         {
           "alg": "U x R2 (R U R' D2) (R U' R' D2) R2' x'",
-          "name": "Aa-Perm",
           "desc": "A9 [commutator] / [conjugate] - [x R2: [R U R', D2]]",
           "status": 1,
           "uses": [],
@@ -122,33 +131,24 @@ var algSet = {
       [
         {
           "alg": "(F R U' R' U' R U R' F') (R U R' U' R' F R F')",
-          "name": "Y-Perm",
+          "name": "Y-Perm (2H)",
           "desc": "[OLL] combination - [mounted-fish], [sexy-sledge]",
           "status": 1,
           "uses": ["2H"]
         },
         {
           "alg": "R2 U' R' U R U' x' U' R' D R' D' R' U R",
-          "name": "Y-Perm",
+          "name": "Y-Perm (OH)",
           "desc": "One-handed algorithm is fast despite the re-grips",
           "status": 1,
           "uses": ["OH"]
         },
         {
           "alg": "(R U' L U2 R' U L') (R U' L U2 R' U L')",
-          "name": "Na-Perm",
+          "name": "Na-Perm (OH)",
           "desc": "Playing with [F2L] pairs - track FR + BL",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "(R U' L U2' R' U L') (R U' L U2' R' U L')",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            },
-          ]
+          "uses": ["OH"]
         },
         {
           "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' D') x",
@@ -188,31 +188,13 @@ var algSet = {
           "alg": "U R U2 R' U' R U' R'",
           "desc": "[RFAS] - Extract [F2L] pair, [AUF], re-insert pair",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "U R U2' R' U' R U' R'",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         },
         {
           "alg": "R' U' R U' R' U2 R",
           "desc": "[RBS] - Extract [F2L] pair, [AUF], re-insert pair",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "R' U' R U' R' U2' R",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         },
       ]
     },
@@ -248,16 +230,7 @@ var algSet = {
           "alg": "U2 R (L' U' L U) R' (U2 L' U2 L)",
           "desc": "Playing with [F2L] pairs - track FR + FL",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "U2 R (L' U' L U) R' (U2' L' U2' L)",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         }
       ]
     },
@@ -275,16 +248,7 @@ var algSet = {
           "alg": "U2 (R U2 R' U2) L' (U R U' R') L",
           "desc": "Playing with [F2L] pairs - track FR + FL",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "U2 (R U2' R' U2') L' (U R U' R') L",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         },
       ]
     },
@@ -349,15 +313,9 @@ var algSet = {
           [
             {
               "alg": "U2 R' U' R U' L U' R' U L' U2 R",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U2 R' U' R U' L U' R' U L' U2' R",
-              "desc": "One-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             },
           ]
         },
@@ -401,17 +359,8 @@ var algSet = {
           "alg": "(L' U2 L U2) R (U' L' U L) R'",
           "desc": "Playing with [F2L] pairs - track FL + FR",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "(L' U2' L U2') R (U' L' U L) R'",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
-        }
+          "uses": ["2H", "OH"]
+		}
       ]
     },
     {
@@ -428,16 +377,7 @@ var algSet = {
           "alg": "L' (R U R' U') L (U2 R U2 R')",
           "desc": "Playing with [F2L] pairs - track FL + FR",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "L' (R U R' U') L (U2' R U2' R')",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         },
       ]
     },
@@ -455,16 +395,7 @@ var algSet = {
           "alg": "U' (R U R' U) (R U' R D) (R' U' R D') R2'",
           "desc": "Playing with [F2L] pair - track FR",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "U' (R U R' U) (R U' R D) (R' U' R D') R2",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         }
       ]
     },
@@ -529,15 +460,9 @@ var algSet = {
           [
             {
               "alg": "R' U2 L U' R U L' U R' U R",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R' U2' L U' R U L' U R' U R",
-              "desc": "One-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             },
           ]
         },
@@ -561,15 +486,9 @@ var algSet = {
           [
             {
               "alg": "U R U2 R' U' (R U R' U') (R U R' U') R U' R'",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U R U2' R' U' (R U R' U') (R U R' U') R U' R'",
-              "desc": "One-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -582,15 +501,9 @@ var algSet = {
           [
             {
               "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2' R",
-              "desc": "One-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -615,15 +528,9 @@ var algSet = {
           [
             {
               "alg": "U2 R' U2 R' D' R U2 R' D R2",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U2 R' U2' R' D' R U2' R' D R2",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         }
@@ -648,15 +555,9 @@ var algSet = {
           [
             {
               "alg": "U' R U2 R D R' U2 R D' R2'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U' R U2' R D R' U2' R D' R2",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         }
@@ -759,15 +660,9 @@ var algSet = {
           [
             {
               "alg": "U' r U2' (R2' F R F') R U2' r'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U' r U2' (R2 F R F') R U2' r'",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             },
           ]
         },
@@ -792,15 +687,9 @@ var algSet = {
           [
             {
               "alg": "U2 R U R' U R U2' R2' U' R U' R' U2 R",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U2 R U R' U R U2' R2 U' R U' R' U2' R",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -813,15 +702,9 @@ var algSet = {
           [
             {
               "alg": "R' U' R U' R' U2 R2 U R' U R U2' R'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R' U' R U' R' U2' R2 U R' U R U2' R'",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -878,15 +761,9 @@ var algSet = {
           [
             {
               "alg": "U2 R2 D R' U2 R D' R' U2 R'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U2 R2 D R' U2' R D' R' U2' R'",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         }
@@ -938,15 +815,9 @@ var algSet = {
           [
             {
               "alg": "R2' D' R U2 R' D R U2 R",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R2 D' R U2' R' D R U2' R",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         }
@@ -963,18 +834,9 @@ var algSet = {
       [
         {
           "alg": "R' U2 R F U' R' U' R U F'",
-          "desc": "Two-handed execution",
+          "desc": "Playing with [F2L] pairs - track BR + FL",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "R' U2' R F U' R' U' R U F'",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            },
-          ]
+          "uses": ["2H", "OH"]
         }
       ]
     },
@@ -997,15 +859,9 @@ var algSet = {
           [
             {
               "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R U2' R' U' R U' R2 U2' R U R' U R",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -1018,15 +874,9 @@ var algSet = {
           [
             {
               "alg": "U2 R' U2' R U R' U R2 U2 R' U' R U' R'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U2 R' U2' R U R' U R2 U2' R' U' R U' R'",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         }
@@ -1182,16 +1032,7 @@ var algSet = {
           "alg": "U2 R U' R2' D' r U2 r' D R2 U R'",
           "desc": "Mirror of a common algorithm for this case",
           "status": 1,
-          "uses": ["2H"],
-          "vars" :
-          [
-            {
-              "alg": "U2 R U' R2 D' r U2' r' D R2 U R'",
-              "desc": "One-handed execution",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         },
       ]
     },
@@ -1213,15 +1054,9 @@ var algSet = {
           [
             {
               "alg": "R U2' R2' U' R2 U' R2' U2' R",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R U2' R2 U' R2 U' R2 U2' R",
-              "desc": "One-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -1234,15 +1069,9 @@ var algSet = {
           [
             {
               "alg": "R' U2 R2 U R2' U R2 U2 R'",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R' U2' R2 U R2 U R2 U2' R'",
-              "desc": "One-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -1315,15 +1144,9 @@ var algSet = {
           [
             {
               "alg": "U F (U R U' R' U R U2 R' U' R U R') F'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U F (U R U' R' U R U2' R' U' R U R') F'",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         }
@@ -1445,15 +1268,9 @@ var algSet = {
           [
             {
               "alg": "U R U2 R' U' (R U R' U') R U' R'",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U R U2' R' U' (R U R' U') R U' R'",
-              "desc": "One-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -1466,15 +1283,9 @@ var algSet = {
           [
             {
               "alg": "R' U' R (U' R' U R) U' R' U2 R",
-              "desc": "Two-handed execution applies cancellations",
+              "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "R' U' R (U' R' U R) U' R' U2' R",
-              "desc": "One-handed execution applies cancellations",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         },
@@ -1499,15 +1310,9 @@ var algSet = {
           [
             {
               "alg": "F (R U' R' U R U2 R' U' R U R' U') F'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "F (R U' R' U R U2' R' U' R U R' U') F'",
-              "desc": "One-handed execution applies a cancellation",
-              "status": 1,
-              "uses": ["OH"]
+              "uses": ["2H", "OH"]
             }
           ]
         }
