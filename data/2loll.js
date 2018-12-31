@@ -94,7 +94,7 @@ var algSet = {
           [
             {
               "alg": "F (R U R' U') S (R U R' U') f'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
               "uses": ["2H"]
             }
@@ -190,13 +190,13 @@ var algSet = {
           [
             {
               "alg": "F' (r U R' U') r' F R",
-              "desc": "Two-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 1,
               "uses": ["2H"]
             },
             {
               "alg": "F' (r U R' U') z U' R u [z']",
-              "desc": "One-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 0,
               "uses": ["OH"]
             },
@@ -211,13 +211,13 @@ var algSet = {
           [
             {
               "alg": "U2 (l U' R' D) (R U R' D') x",
-              "desc": "Two-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 1,
               "uses": ["2H"]
             },
             {
               "alg": "U2 x' (R U' R' D) (R U R' u') [z']",
-              "desc": "One-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 0,
               "uses": ["OH"]
             },
@@ -392,7 +392,7 @@ var algSet = {
             },
             {
               "alg": "U' (r U R' U') z (U' R u F') [z']",
-              "desc": "One-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 0,
               "uses": ["OH"]
             }
@@ -407,13 +407,13 @@ var algSet = {
           [
             {
               "alg": "U2 (l U R' D) (R U' R' D') x",
-              "desc": "Two-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 1,
               "uses": ["2H"]
             },
             {
               "alg": "U2 x' (R U R' D) (R U' R' u') [z']",
-              "desc": "One-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 0,
               "uses": ["OH"]
             }

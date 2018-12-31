@@ -123,13 +123,13 @@ var algSet = {
           [
             {
               "alg": "F' (r U R' U') r' F R",
-              "desc": "Two-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 1,
               "uses": ["2H"]
             },
             {
               "alg": "F' (r U R' U') z U' R u [z']",
-              "desc": "One-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 0,
               "uses": ["OH"]
             },
@@ -144,13 +144,13 @@ var algSet = {
           [
             {
               "alg": "U2 (l U' R' D) (R U R' D') x",
-              "desc": "Two-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 1,
               "uses": ["2H"]
             },
             {
               "alg": "U2 x' (R U' R' D) (R U R' u') [z']",
-              "desc": "One-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 0,
               "uses": ["OH"]
             },
@@ -309,7 +309,7 @@ var algSet = {
             },
             {
               "alg": "U' (r U R' U') z (U' R u F') [z']",
-              "desc": "One-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 0,
               "uses": ["OH"]
             }
@@ -324,13 +324,13 @@ var algSet = {
           [
             {
               "alg": "U2 (l U R' D) (R U' R' D') x",
-              "desc": "Two-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 1,
               "uses": ["2H"]
             },
             {
               "alg": "U2 x' (R U R' D) (R U' R' u') [z']",
-              "desc": "One-handed execution incorporates wide turns",
+              "desc": "Execution incorporates wide turns",
               "status": 0,
               "uses": ["OH"]
             }
@@ -457,13 +457,13 @@ var algSet = {
           [
             {
               "alg": "U l' U R' D2 R U' R' D2 R2 x'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
               "uses": ["2H"]
             },
             {
               "alg": "U x R' U R' D2 R U' R' D2 R2 x'",
-              "desc": "One-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
               "uses": ["OH"]
             },
@@ -490,13 +490,13 @@ var algSet = {
           [
             {
               "alg": "U2 l' R' D2 R U R' D2 R U' R x'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
               "uses": ["2H"]
             },
             {
               "alg": "U2 x R2 D2 R U R' D2 R U' R x'",
-              "desc": "One-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
               "uses": ["OH"]
             },
@@ -523,13 +523,13 @@ var algSet = {
           [
             {
               "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
-              "desc": "Two-handed execution starts with a wide turn",
+              "desc": "Execution starts with a wide turn",
               "status": 1,
               "uses": ["2H"]
             },
             {
               "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' u')",
-              "desc": "One-handed execution ends with a wide turn",
+              "desc": "Execution ends with a wide turn",
               "status": 1,
               "uses": ["OH"]
             },
@@ -544,13 +544,13 @@ var algSet = {
           [
             {
               "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2')",
-              "desc": "Two-handed execution incorporates cancellations",
+              "desc": "Execution incorporates cancellations",
               "status": 0,
               "uses": ["2H"]
             },
             {
               "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2)",
-              "desc": "One-handed execution incorporates cancellations",
+              "desc": "Execution incorporates cancellations",
               "status": 0,
               "uses": ["OH"]
             },
@@ -592,7 +592,7 @@ var algSet = {
           [
             {
               "alg": "M2' U' M2' U2' M2' U' M2'",
-              "desc": "Two-handed execution applies a cancellation",
+              "desc": "Execution applies a cancellation",
               "status": 1,
               "uses": ["2H"]
             },
