@@ -162,22 +162,25 @@ function renderViewAlg(algObj, width)
 //
 // Render algs for a table data cell
 //
-function renderTableDataCell(caseObj, useId, width)
+function renderTableDataCell(caseObj, width)
 {
 	var out = "";
-	var uses = [];
+	var useCount = {};
 	var algCount = 0;
 	var maxCount = width >= IPHONE_LANDSCAPE ? 4 : 2;
 		
 	// Show the title
 	out += "<span class=\"clicky\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + ">" + getDisplayName(caseObj);
-	if (useId != null && algSet.header.uses.length > 1)
-	{
-		out += " (" + useId + ")";
-	}
 	out += "</span>";
 	out += " - " + caseObj.prob;
 	out += "<br/>";
+	
+	// Initialise use counters
+	for (var useIdx = 0; useIdx < algSet.header.uses.length; useIdx++)
+	{
+		useId = algSet.header.uses[useIdx].id;
+		useCount[useId] = 0;
+	}
 	
 	// Iterate through the algorithms
 	for (var algIdx = 0; algIdx < caseObj.algs.length && algCount < maxCount; algIdx++)
@@ -191,21 +194,23 @@ function renderTableDataCell(caseObj, useId, width)
 			// Consider rendering the algorithm
 			if (algObj.status == 1)
 			{
-				// Algorithm needs to have at least one "use"
+				var renderAlg = false;
+				
+				// Determine whether the alg should be rendered and update counters
 				for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
 				{
-					// Algorithm needs to have the desired "use"
-					if (useId == null || algObj.uses[useIdx] == useId)
+					if (useCount[algObj.uses[useIdx]] < maxCount)
 					{
-						// width < IPHONE_LANDSCAPE can only show one alg for each "use"
-						if (width >= IPHONE_LANDSCAPE || algSet.header.uses.length == 1 || uses.indexOf(algObj.uses[useIdx]) < 0)
-						{
-							out += renderViewAlg(algObj, width);
-							uses = uses.concat(algObj.uses)
-							algCount++;
-							break;
-						}
+						renderAlg = true;
+						useCount[algObj.uses[useIdx]] += algSet.header.uses.length / algObj.uses.length;
 					}
+				}
+				
+				// Render the alg if necessary
+				if (renderAlg == true)
+				{
+					out += renderViewAlg(algObj, width);
+					algCount++;
 				}
 			}
 			
@@ -224,21 +229,23 @@ function renderTableDataCell(caseObj, useId, width)
 						// Consider rendering the algorithm
 						if (varObj.status == 1)
 						{
-							// Variation needs to have at least one "use"
+							var renderAlg = false;
+				
+							// Determine whether the alg should be rendered and update counters
 							for (var useIdx = 0; useIdx < varObj.uses.length; useIdx++)
 							{
-								// Variation needs to have the desired "use"
-								if (useId == null || varObj.uses[useIdx] == useId)
+								if (useCount[varObj.uses[useIdx]] < maxCount)
 								{
-									// width < IPHONE_LANDSCAPE can only show one alg for each "use"
-									if (width >= IPHONE_LANDSCAPE || algSet.header.uses.length == 1 || uses.indexOf(varObj.uses[useIdx]) < 0)
-									{
-										out += renderViewAlg(varObj, width);
-										uses = uses.concat(varObj.uses)
-										algCount++;
-										break;
-									}
+									renderAlg = true;
+									useCount[varObj.uses[useIdx]] += algSet.header.uses.length / varObj.uses.length;
 								}
+							}
+				
+							// Render the alg if necessary
+							if (renderAlg == true)
+							{
+								out += renderViewAlg(varObj, width);
+								algCount++;
 							}
 						}
 					}
@@ -250,7 +257,7 @@ function renderTableDataCell(caseObj, useId, width)
 	// Ensure something is returned if no algorithms were found
 	if (out == "")
 	{
-		out += "Missing case " + caseObj.id + " for " + useId; 
+		out += "Missing case " + caseObj.id; 
 	}
 	
 	return out;
@@ -266,6 +273,10 @@ function renderTableDataRows(viewObj, groupObj, width)
 	
 	// Determine the image size - Phones should use small icons when in portrait mode
 	var imgSize = width >= IPHONE_LANDSCAPE ? "96" : "64";
+	
+	// Column width is assumed to be 96 (image) + 18 (space) + 440 (td.alg) = 552
+	var numCols = width >= 554 ? Math.floor(width / 554) : 1;
+	var colIdx = 0;
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
@@ -285,8 +296,11 @@ function renderTableDataRows(viewObj, groupObj, width)
 
 			if (caseObj != null)
 			{
-				// Render the table row
-				out += "<tr>";
+				// Possibly the start of a table row
+				if (colIdx == 0)
+				{
+					out += "<tr>";
+				}
 				
 				// Render the image
 				var css = algSet.header.hasOwnProperty("css") ? algSet.header.css : algSet.header.id;
@@ -294,29 +308,27 @@ function renderTableDataRows(viewObj, groupObj, width)
 				out += "<td><abbr title=\"" + getTooltip(caseObj) + "\"><i class=\"clicky " + style + " s" + imgSize + "-" + css.toLowerCase() + " s" + imgSize + "-" + caseObj.image.toLowerCase() +
 						"\" onclick=\"switchCase(\'" + caseObj.id + "\')\"" + "><br/></i></abbr></td>";
 
-				// Iterate through the uses - 2 columns are perfect on the iPad (landscape)
-				// Constant of 1000 allows 1024 pixel displays with a scroll bar (clientWidth ~1008 pixels)
-				if (width >= 1000)
+				// Render the algs
+				out += "<td class=\"alg\">";
+				out += renderTableDataCell(caseObj, width);
+				out += "</td>";
+				
+				colIdx++;
+				
+				// Possibly the end of the table row
+				if (colIdx == numCols)
 				{
-					for (var useIdx in algSet.header.uses)
-					{
-						// Render the algs (specific use)
-						out += "<td class=\"alg\">";
-						out += renderTableDataCell(caseObj, algSet.header.uses[useIdx].id, width);
-						out += "</td>";
-					}
+					out += "</tr>";
+					colIdx = 0;
 				}
-				else
-				{
-					// Render the algs (any use)
-					out += "<td class=\"alg\">";
-					out += renderTableDataCell(caseObj, null, width);
-					out += "</td>";
-				}
-					
-				out += "</tr>";
 			}
 		}
+	}
+
+	// Possibly the end of the table row
+	if (colIdx > 0)
+	{
+		out += "</tr>";
 	}
 	
 	out += "</tbody>";

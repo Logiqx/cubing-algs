@@ -148,33 +148,19 @@ function getUses(algObj)
 	// Avoid stating the obvious such as "2H, OH"
 	if (algObj.uses.length < algSet.header.uses.length)
 	{
-		// Copy the "uses" array prior to removing "2H"
-		var uses = algObj.uses.slice();
-		
-		// Remove "2H" from the copied array
-		var index = uses.indexOf("2H");
-		if (index >= 0)
+		// Output the uses in superscript
+		for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
 		{
-			uses.splice(index, 1);
-		}
-		
-		// List the remaining "uses"
-		if (uses.length > 0)
-		{
-			// Output the uses in superscript
-			for (var useIdx = 0; useIdx < algObj.uses.length; useIdx++)
+			var useId = algObj.uses[useIdx];
+			
+			// IE8 gets confused by a comma at the end of a list
+			if (useId != null)
 			{
-				var useId = algObj.uses[useIdx];
-				
-				// IE8 gets confused by a comma at the end of a list
-				if (useId != null)
+				if (useIdx > 0)
 				{
-					if (useIdx > 0)
-					{
-						out += ", ";
-					}
-					out += useId;
+					out += ", ";
 				}
+				out += useId;
 			}
 		}
 	}
