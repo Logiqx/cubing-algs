@@ -178,8 +178,8 @@ var algSet = {
             {
               "alg": "U2 R' U2 R' D' R U2 R' D R2",
               "desc": "Execution applies a cancellation",
-              "status": 0,
-              "uses": ["2H", "OH"]
+              "status": 1,
+              "uses": ["2H"]
             }
           ]
         },
@@ -193,8 +193,8 @@ var algSet = {
             {
               "alg": "U' R U2 R D R' U2 R D' R2'",
               "desc": "Execution applies a cancellation",
-              "status": 0,
-              "uses": ["2H", "OH"]
+              "status": 1,
+              "uses": ["2H"]
             }
           ]
         },
@@ -208,8 +208,8 @@ var algSet = {
             {
               "alg": "U R U2 R' U' (R U R' U') (R U R' U') R U' R'",
               "desc": "Execution applies cancellations",
-              "status": 0,
-              "uses": ["2H", "OH"]
+              "status": 1,
+              "uses": ["OH"]
             }
           ]
         },
@@ -223,8 +223,8 @@ var algSet = {
             {
               "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
               "desc": "Execution applies cancellations",
-              "status": 0,
-              "uses": ["2H", "OH"]
+              "status": 1,
+              "uses": ["OH"]
             }
           ]
         }
@@ -351,14 +351,14 @@ var algSet = {
         {
           "alg": "U' (R U R' U R U2' R') (L' U' L U' L' U2 L)",
           "desc": "[Sune] combination - [RFS], U2, [LFS]",
-          "status": 1,
-          "uses": []
+          "status": -1,
+          "uses": ["OH"]
         },
         {
           "alg": "U (L' U' L U' L' U2 L) (R U R' U R U2' R')",
           "desc": "[Sune] combination - [LFS], U2, [RFS]",
-          "status": 1,
-          "uses": []
+          "status": -1,
+          "uses": ["OH"]
         },
       ]
     },

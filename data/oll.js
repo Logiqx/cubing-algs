@@ -768,7 +768,7 @@ var algSet = {
         },
         {
           "alg": "f (R U R' U') f' F (R U R' U') F'",
-          "desc": "[OLL] combination - f [sexy] f', F [sexy] F'",
+          "desc": "[EOLL] combination - f [sexy] f', F [sexy] F'",
           "status": -1,
           "uses": [],
           "vars" :
@@ -927,8 +927,8 @@ var algSet = {
             {
               "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
               "desc": "Execution applies a cancellation",
-              "status": 0,
-              "uses": ["2H", "OH"]
+              "status": 1,
+              "uses": ["OH"]
             }
           ]
         },
@@ -942,8 +942,8 @@ var algSet = {
             {
               "alg": "U2 R' U2' R U R' U R2 U2 R' U' R U' R'",
               "desc": "Execution applies a cancellation",
-              "status": 0,
-              "uses": ["2H", "OH"]
+              "status": 1,
+              "uses": ["OH"]
             }
           ]
         }
@@ -1023,7 +1023,7 @@ var algSet = {
               "alg": "U2 R' U2 R' D' R U2 R' D R2",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         },
@@ -1038,7 +1038,7 @@ var algSet = {
               "alg": "U' R U2 R D R' U2 R D' R2'",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         },
@@ -1053,7 +1053,7 @@ var algSet = {
               "alg": "U R U2 R' U' (R U R' U') (R U R' U') R U' R'",
               "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["OH"]
             }
           ]
         },
@@ -1068,7 +1068,7 @@ var algSet = {
               "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
               "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["OH"]
             }
           ]
         }
