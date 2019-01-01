@@ -116,6 +116,27 @@ var algSet = {
               "uses": ["OH"]
             }
           ]
+        },
+        {
+          "alg": "M U (R U R' U') M2' (U R U' R') M",
+          "desc": "M-slice, [AUF], [sexy], M-slice, [reverse-sexy], M-slice",
+          "status": -1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "r' R U (R U R' U') M2' (U R U' r')",
+              "desc": "Two-handed execution",
+              "status": -1,
+              "uses": ["2H"]
+            },
+            {
+              "alg": "r' R U (R U R' U') r2 R2 (U R U' r')",
+              "desc": "One-handed execution",
+              "status": -1,
+              "uses": ["OH"]
+            }
+          ]
         }
       ]
     },

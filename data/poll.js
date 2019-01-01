@@ -200,7 +200,7 @@ var algSet = {
         {
           "alg": "U (R2' U2' R U2 R2)",
           "desc": "[Conjugate]: [R2' U2': R]",
-          "status": 1,
+          "status": 0,
           "uses": ["2H"]
         }
       ]

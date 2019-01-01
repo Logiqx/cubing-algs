@@ -157,14 +157,14 @@ var algSet = {
           ]
         },
 		{
-          "alg": "U' L' (R U R' U') L (U R U' R')",
-          "desc": "Basic [commutator] - [L', R U R' U']",
+          "alg": "R (L' U' L U) R' (U' L' U L)",
+          "desc": "Basic [commutator] - [R, L' U' L U]",
           "status": 1,
           "uses": ["OH"]
         },
 		{
-          "alg": "R (L' U' L U) R' (U' L' U L)",
-          "desc": "Basic [commutator] - [R, L' U' L U]",
+          "alg": "U' L' (R U R' U') L (U R U' R')",
+          "desc": "Basic [commutator] - [L', R U R' U']",
           "status": 1,
           "uses": ["OH"]
         },
@@ -545,14 +545,8 @@ var algSet = {
             {
               "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2')",
               "desc": "Execution incorporates cancellations",
-              "status": 0,
-              "uses": ["2H"]
-            },
-            {
-              "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2)",
-              "desc": "Execution incorporates cancellations",
-              "status": 0,
-              "uses": ["OH"]
+              "status": 1,
+              "uses": []
             },
           ]
         },
@@ -560,16 +554,7 @@ var algSet = {
           "alg": "U z U2 R2' F (R U R' U') (R U R' U') (R U R' U') F' R2 U2'",
           "desc": "Long algorithm but decent for [OH] and big cubes",
           "status": 1,
-          "uses": [],
-          "vars" :
-          [
-            {
-              "alg": "U z U2' R2 F (R U R' U') (R U R' U') (R U R' U') F' R2 U2'",
-              "desc": "One-handed execution",
-              "status": 0,
-              "uses": ["OH"]
-            },
-          ]
+          "uses": []
         },
       ]
     },

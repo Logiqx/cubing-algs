@@ -1001,14 +1001,14 @@ var algSet = {
           ]
         },
 		{
-          "alg": "U' L' (R U R' U') L (U R U' R')",
-          "desc": "Basic [commutator] - [L', R U R' U']",
+          "alg": "R (L' U' L U) R' (U' L' U L)",
+          "desc": "Basic [commutator] - [R, L' U' L U]",
           "status": 1,
           "uses": ["OH"]
         },
 		{
-          "alg": "R (L' U' L U) R' (U' L' U L)",
-          "desc": "Basic [commutator] - [R, L' U' L U]",
+          "alg": "U' L' (R U R' U') L (U R U' R')",
+          "desc": "Basic [commutator] - [L', R U R' U']",
           "status": 1,
           "uses": ["OH"]
         },

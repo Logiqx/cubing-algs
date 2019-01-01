@@ -23,7 +23,7 @@ var algSet = {
     {
       "id": "Aa",
       "name": "Aa-Perm",
-      "desc": "Inverse and reflection of Ab. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL]. It is a clockwise 3-cycle of corners.",
+      "desc": "Inverse and reflection of Ab. It is a clockwise 3-cycle of corners.",
       "wiki": "#A_Permutation_:_a",
       "algdb": "aa",
       "image": "PLL-Aa",
@@ -62,7 +62,7 @@ var algSet = {
     {
       "id": "Ab",
       "name": "Ab-Perm",
-      "desc": "Inverse and reflection of Aa. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL]. It is a counter-clockwise 3-cycle of corners.",
+      "desc": "Inverse and reflection of Aa. It is a counter-clockwise 3-cycle of corners.",
       "wiki": "#A_Permutation_:_b",
       "algdb": "ab",
       "image": "PLL-Ab",
@@ -95,7 +95,7 @@ var algSet = {
     {
       "id": "E",
       "name": "E-Perm",
-      "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] / [COLL] algorithms for L / Bowtie and T / Chameleon. The algorithm(s) for this [PLL] case are good choices for a diagonal corner swap during [CPLL].",
+      "desc": "The algorithm below was popularised by Rowe Hessler. It utilises [OCLL] / [COLL] algorithms for L / Bowtie and T / Chameleon.",
       "wiki": "#E_Permutation",
       "algdb": "e",
       "image": "PLL-E",
@@ -126,14 +126,23 @@ var algSet = {
         {
           "alg": "U R (R U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R') R'",
           "desc": "Long algorithm but decent for [OH] and big cubes",
-          "status": 0,
-          "uses": ["2H", "OH"]
+          "status": 1,
+          "uses": [],
+          "vars" :
+          [
+            {
+              "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2')",
+              "desc": "Execution incorporates cancellations",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "U z U2 R2' F (R U R' U') (R U R' U') (R U R' U') F' R2 U2'",
           "desc": "Long algorithm but decent for [OH] and big cubes",
-          "status": 0,
-          "uses": ["2H", "OH"]
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -373,7 +382,7 @@ var algSet = {
     {
       "id": "Jb",
       "name": "Jb-Perm",
-      "desc": "Reflection of Ja. The algorithm(s) for this [PLL] case are good choices for an adjacent corner swap during [CPLL].",
+      "desc": "Reflection of Ja.",
       "wiki": "#J_Permutation_:_b",
       "algdb": "jb",
       "image": "PLL-Jb",
@@ -726,7 +735,7 @@ var algSet = {
     {
       "id": "Y",
       "name": "Y-Perm",
-      "desc": "The algorithm(s) for this [PLL] case are good choices for a diagonal corner swap during [CPLL].<br/><br/>Check out the similarity between the Y-Perm algorithm (F R U' R' U' R U R' F') (R U R' U' R' F R F') and the T-Perm algorithm (R U R' U' R' F R F') (F R U' R' U' R U R' F').",
+      "desc": "Check out the similarity between the Y-Perm algorithm (F R U' R' U' R U R' F') (R U R' U' R' F R F') and the T-Perm algorithm (R U R' U' R' F R F') (F R U' R' U' R U R' F').",
       "wiki": "#Y_Permutation",
       "algdb": "y",
       "image": "PLL-Y",
