@@ -208,7 +208,7 @@ function renderCase(caseId, width)
 	var out = "";
 	
 	// Determine the image size
-	var imgSize = width >= IPHONE_LANDSCAPE ? "128" : "96";
+	var imgSize = "128";
 	
 	// Array is used instead of Map() which doesn't work on my iPad
 	var caseIds = getCaseIds();
