@@ -4,8 +4,8 @@ var algSet = {
     "id": "PPLL",
     "name": "Parity Permutation of the Last Layer",
     "desc": "TODO.",
-    "wiki": "https://www.speedsolving.com/wiki/index.php/4x4x4_parity_algorithms#PLL_Parity",
-    "algdb": "",
+    "wiki": "https://www.speedsolving.com/wiki/index.php/4x4x4_parity_algorithms",
+    "algdb": "http://algdb.net/",
     "uses":
     [
       {
@@ -19,396 +19,396 @@ var algSet = {
     {
       "id": "Opp",
       "name": "Opp-Parity",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "This is just an opposite dedge swap.",
+      "wiki": "#Opposite",
       "algdb": "",
       "image": "PPLL-Opp",
       "prob": "1/36",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Uw2 Rw2 U2 r2 U2 Rw2 Uw2",
+          "desc": "Opposite dedge swap",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Adj",
       "name": "Adj-Parity",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "This is just an adjacent dedge swap.",
+      "wiki": "#Adjacent",
       "algdb": "",
       "image": "PPLL-Adj",
       "prob": "1/18",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "R U R' U' + Opp-Parity + U' R U' R'",
+          "desc": "[Conjugate] of opposite swap - [R U R' U': Opp]",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Ac",
       "name": "Ac-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Inverse and reflection of Ad.<br/><br/>Applying the opposite edge swap will result in an A-Perm.",
+      "wiki": "#Ca",
       "algdb": "",
       "image": "PPLL-Ac",
       "prob": "1/18",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Opp-Parity + U + Aa-Perm",
+          "desc": "Parity followed by PLL",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Ad",
       "name": "Ad-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Inverse and reflection of Ac.<br/><br/>Applying the opposite edge swap will result in an A-Perm.",
+      "wiki": "#Cb",
       "algdb": "",
       "image": "PPLL-Ad",
       "prob": "1/18",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Opp-Parity + U2 + Ab-Perm",
+          "desc": "Parity followed by PLL",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Ea",
       "name": "Ea-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Applying the opposite edge swap will result in an E-Perm.",
+      "wiki": "#Xi_.28.CE.9E.29_permutation",
       "algdb": "",
       "image": "PPLL-Ea",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Opp-Parity + E-Perm",
+          "desc": "Parity followed by PLL",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Eb",
       "name": "Eb-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Applying the opposite edge swap will result in an E-Perm.",
+      "wiki": "#Theta_.28.CE.B8.29_permutation",
       "algdb": "",
       "image": "PPLL-Eb",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "F R U' R U' R U R' F' + Opp-Parity + R U R' U' R' F R F'",
+          "desc": "Parity within Y-Perm - [mounted-fish] + [sexy-sledge]",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Jc",
       "name": "Jc-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Inverse and reflection of Jd.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm or Ga-Perm.",
+      "wiki": "",
       "algdb": "",
       "image": "PPLL-Jc",
       "prob": "1/18",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Jb-Perm + U' + Opp-Parity",
+          "desc": "PLL followed by parity",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Jd",
       "name": "Jd-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Inverse and reflection of Jc.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm or Gc-Perm.",
+      "wiki": "",
       "algdb": "",
       "image": "PPLL-Jd",
       "prob": "1/18",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Opp-Parity + Jb-Perm",
+          "desc": "Parity followed by PLL",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Je",
       "name": "Je-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Inverse of Re. Reflection of Jf.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm or Ga-Perm.",
+      "wiki": "",
       "algdb": "",
       "image": "PPLL-Je",
       "prob": "1/18",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "U' + Opp-Parity + Ja-Perm",
+          "desc": "Parity followed by PLL",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Jf",
       "name": "Jf-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Inverse of Rf. Reflection of Je.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm or Gc-Perm.",
+      "wiki": "",
       "algdb": "",
       "image": "PPLL-Jf",
       "prob": "1/18",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "U' + Opp-Parity + U + Jb-Perm",
+          "desc": "Parity followed by PLL",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "N",
       "name": "N-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Applying the opposite edge swap will result in an N-Perm.",
+      "wiki": "",
       "algdb": "",
       "image": "PPLL-N",
       "prob": "1/36",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "F R U' R U' R U R' F' U' + Opp-Parity + U R U R' U' R' F R F'",
+          "desc": "Parity within Y-Perm - [mounted-fish] + [sexy-sledge]",
           "status": 1,
-          "uses": []
-        },
-      ]
-    },
-    {
-      "id": "Rc",
-      "name": "Rc-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
-      "algdb": "",
-      "image": "PPLL-Rc",
-      "prob": "1/18",
-      "algs" :
-      [
-        {
-          "alg": "TODO",
-          "desc": "TODO",
-          "status": 1,
-          "uses": []
-        },
-      ]
-    },
-    {
-      "id": "Rd",
-      "name": "Rd-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
-      "algdb": "",
-      "image": "PPLL-Rd",
-      "prob": "1/18",
-      "algs" :
-      [
-        {
-          "alg": "TODO",
-          "desc": "TODO",
-          "status": 1,
-          "uses": []
-        },
-      ]
-    },
-    {
-      "id": "Re",
-      "name": "Re-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
-      "algdb": "",
-      "image": "PPLL-Re",
-      "prob": "1/18",
-      "algs" :
-      [
-        {
-          "alg": "TODO",
-          "desc": "TODO",
-          "status": 1,
-          "uses": []
-        },
-      ]
-    },
-    {
-      "id": "Rf",
-      "name": "Rf-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
-      "algdb": "",
-      "image": "PPLL-Rf",
-      "prob": "1/18",
-      "algs" :
-      [
-        {
-          "alg": "TODO",
-          "desc": "TODO",
-          "status": 1,
-          "uses": []
-        },
-      ]
-    },
-    {
-      "id": "Ta",
-      "name": "Ta-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
-      "algdb": "",
-      "image": "PPLL-Ta",
-      "prob": "1/18",
-      "algs" :
-      [
-        {
-          "alg": "TODO",
-          "desc": "TODO",
-          "status": 1,
-          "uses": []
-        },
-      ]
-    },
-    {
-      "id": "Tb",
-      "name": "Tb-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
-      "algdb": "",
-      "image": "PPLL-Tb",
-      "prob": "1/18",
-      "algs" :
-      [
-        {
-          "alg": "TODO",
-          "desc": "TODO",
-          "status": 1,
-          "uses": []
-        },
-      ]
-    },
-    {
-      "id": "W",
-      "name": "W-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
-      "algdb": "",
-      "image": "PPLL-W",
-      "prob": "1/18",
-      "algs" :
-      [
-        {
-          "alg": "TODO",
-          "desc": "TODO",
-          "status": 1,
-          "uses": []
-        },
-      ]
-    },
-    {
-      "id": "Ya",
-      "name": "Ya-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
-      "algdb": "",
-      "image": "PPLL-Ya",
-      "prob": "1/18",
-      "algs" :
-      [
-        {
-          "alg": "TODO",
-          "desc": "TODO",
-          "status": 1,
-          "uses": []
-        },
-      ]
-    },
-    {
-      "id": "Yb",
-      "name": "Yb-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
-      "algdb": "",
-      "image": "PPLL-Yb",
-      "prob": "1/18",
-      "algs" :
-      [
-        {
-          "alg": "TODO",
-          "desc": "TODO",
-          "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Oa",
       "name": "Oa-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Inverse and reflection of Ob.<br/><br/>Applying the opposite edge swap will result in a Z-Perm.",
+      "wiki": "",
       "algdb": "",
       "image": "PPLL-Oa",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Z-Perm + AUF + Opp-Parity",
+          "desc": "PLL followed by parity",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
       ]
     },
     {
       "id": "Ob",
       "name": "Ob-Perm",
-      "desc": "TODO.",
-      "wiki": "TODO",
+      "desc": "Inverse and reflection of Oa.<br/><br/>Applying the opposite edge swap will result in a Z-Perm.",
+      "wiki": "",
       "algdb": "",
       "image": "PPLL-Ob",
       "prob": "1/72",
       "algs" :
       [
         {
-          "alg": "TODO",
-          "desc": "TODO",
+          "alg": "Z-Perm + AUF + Opp-Parity",
+          "desc": "PLL followed by parity",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
+      "id": "Rc",
+      "name": "Rc-Perm",
+      "desc": "Inverse and reflection of Rd.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm or Gd-Perm.",
+      "wiki": "",
+      "algdb": "",
+      "image": "PPLL-Rc",
+      "prob": "1/18",
+      "algs" :
+      [
+        {
+          "alg": "Opp-Parity + Ra-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
+      "id": "Rd",
+      "name": "Rd-Perm",
+      "desc": "Inverse and reflection of Rc.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm or Gb-Perm.",
+      "wiki": "",
+      "algdb": "",
+      "image": "PPLL-Rd",
+      "prob": "1/18",
+      "algs" :
+      [
+        {
+          "alg": "Opp-Parity + U' + Rb-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
+      "id": "Re",
+      "name": "Re-Perm",
+      "desc": "Inverse of Je. Reflection of Rf.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm or Gd-Perm.",
+      "wiki": "",
+      "algdb": "",
+      "image": "PPLL-Re",
+      "prob": "1/18",
+      "algs" :
+      [
+        {
+          "alg": "U' + Opp-Parity + U + Ra-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
+      "id": "Rf",
+      "name": "Rf-Perm",
+      "desc": "Inverse of Jf. Reflection of Re.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm or Gb-Perm.",
+      "wiki": "",
+      "algdb": "",
+      "image": "PPLL-Rf",
+      "prob": "1/18",
+      "algs" :
+      [
+        {
+          "alg": "U' + Opp-Parity + Rb-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
+      "id": "Ta",
+      "name": "Ta-Perm",
+      "desc": "Applying the opposite edge swap will result in a T-Perm or F-Perm.",
+      "wiki": "",
+      "algdb": "",
+      "image": "PPLL-Ta",
+      "prob": "1/18",
+      "algs" :
+      [
+        {
+          "alg": "Opp-Parity + T-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
+      "id": "Tb",
+      "name": "Tb-Perm",
+      "desc": "Applying the opposite edge swap will result in a T-Perm or F-Perm.",
+      "wiki": "",
+      "algdb": "",
+      "image": "PPLL-Tb",
+      "prob": "1/18",
+      "algs" :
+      [
+        {
+          "alg": "U' + Opp-Parity + U + T-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
+      "id": "W",
+      "name": "W-Perm",
+      "desc": "Applying the opposite edge swap will result in a U-Perm.",
+      "wiki": "",
+      "algdb": "",
+      "image": "PPLL-W",
+      "prob": "1/18",
+      "algs" :
+      [
+        {
+          "alg": "Opp-Parity + AUF + U-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
+      "id": "Ya",
+      "name": "Ya-Perm",
+      "desc": "Reflection of Yb.<br/><br/>Applying the opposite edge swap will result in a Y-Perm or V-Perm.",
+      "wiki": "",
+      "algdb": "",
+      "image": "PPLL-Ya",
+      "prob": "1/18",
+      "algs" :
+      [
+        {
+          "alg": "U + Y-Perm + Opp-Parity",
+          "desc": "PLL followed by parity",
+          "status": 1,
+          "uses": ["2H"]
+        },
+      ]
+    },
+    {
+      "id": "Yb",
+      "name": "Yb-Perm",
+      "desc": "Reflection of Ya.<br/><br/>Applying the opposite edge swap will result in a Y-Perm or V-Perm.",
+      "wiki": "",
+      "algdb": "",
+      "image": "PPLL-Yb",
+      "prob": "1/18",
+      "algs" :
+      [
+        {
+          "alg": "U' + Y-Perm + U' + Opp-Parity",
+          "desc": "PLL followed by parity",
+          "status": 1,
+          "uses": ["2H"]
         },
       ]
     },
