@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "PPLL",
     "name": "Parity Permutation of the Last Layer",
-    "desc": "BLAH.",
+    "desc": "TODO.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/4x4x4_parity_algorithms#PLL_Parity",
     "algdb": "",
     "uses":
@@ -17,13 +17,13 @@ var algSet = {
   "cases":
   [
     {
-      "id": "Adj",
-      "name": "Adj-Parity",
+      "id": "Opp",
+      "name": "Opp-Parity",
       "desc": "TODO.",
       "wiki": "TODO",
       "algdb": "",
-      "image": "PPLL-Adj",
-      "prob": "1/18",
+      "image": "PPLL-Opp",
+      "prob": "1/36",
       "algs" :
       [
         {
@@ -35,13 +35,13 @@ var algSet = {
       ]
     },
     {
-      "id": "Opp",
-      "name": "Opp-Parity",
+      "id": "Adj",
+      "name": "Adj-Parity",
       "desc": "TODO.",
       "wiki": "TODO",
       "algdb": "",
-      "image": "PPLL-Opp",
-      "prob": "1/36",
+      "image": "PPLL-Adj",
+      "prob": "1/18",
       "algs" :
       [
         {
@@ -482,24 +482,28 @@ var algSet = {
         {
           "id": "2edges",
           "name": "Two Edges",
+          "desc": "TODO.",
           "wiki": "#Two_dedges_.28oriented.29",
           "cases": ["Opp", "Adj"]
         },
         {
           "id": "4edges",
           "name": "Four Edges",
+          "desc": "TODO.",
           "wiki": "#Four_dedges_.28oriented.29",
           "cases": ["Oa", "Ob", "W"]
         },
         {
           "id": "2corners",
           "name": "Two Corners",
+          "desc": "TODO.",
           "wiki": "#Two_corner_swaps",
           "cases": ["Tb", "N"]
         },
         {
           "id": "both",
           "name": "Edges + Corners",
+          "desc": "TODO.",
           "wiki": "#Two_corner_swap_and_a_dedge_3-cycle",
           "cases": ["Ac", "Ad", "Ea", "Eb", "Jc", "Jd", "Je", "Jf", "Rc", "Rd", "Re", "Rf", "Ta", "Ya", "Yb"]
         },
