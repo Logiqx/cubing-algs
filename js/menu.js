@@ -222,6 +222,18 @@ menuItems =
 	},
 	{
 		"type": "submenu",
+		"desc": "4x4x4",
+		"items":
+		[
+			{
+				"type": "link",
+				"desc": "PPLL",
+				"href": "ppll.html"
+			}
+		]
+	},
+	{
+		"type": "submenu",
 		"desc": "5x5x5",
 		"items":
 		[
