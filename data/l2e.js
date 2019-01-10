@@ -45,14 +45,14 @@ var algSet = {
       [
         {
           "alg": "Rw2 F2 U2 r2 U2 F2 Rw2",
-          "desc": "Pure PLL parity algorithm",
+          "desc": "[Conjugate] - [Rw2 F2 U2: r2]",
           "status": 1,
           "uses": [],
           "vars":
           [
             {
-              "alg": "Rw2 F2 U2 Rw2 U2 F2 Rw2",
-              "desc": "Speed variation works for L2E",
+              "alg": "Rw2' F2 U2' Rw2 R2' U2' F2 Rw2",
+              "desc": "Finger-trick friendly",
               "status": 1,
               "uses": ["2H"]
             }
