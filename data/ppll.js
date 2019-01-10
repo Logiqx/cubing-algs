@@ -107,6 +107,12 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "U' + Parity + U' + Ab-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -120,9 +126,15 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "Parity + U2 + Ab-Perm",
+          "alg": "U2 + Parity + Ab-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U + Parity + Aa-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -138,9 +150,15 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "E-Perm + Parity",
+          "desc": "PLL followed by parity",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
           "alg": "Parity + E-Perm",
           "desc": "Parity followed by PLL",
-          "status": 1,
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -161,6 +179,12 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "Parity + U' + E-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -177,6 +201,18 @@ var algSet = {
           "alg": "Jb-Perm + U' + Parity",
           "desc": "PLL followed by parity",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "Parity + Ja-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' + Parity + U + Ga-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -197,6 +233,12 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "U' + Parity + U' + Gc-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -213,6 +255,12 @@ var algSet = {
           "alg": "U' + Parity + Ja-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "Parity + Ga-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -233,6 +281,12 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "U2 + Parity + Gc-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -249,6 +303,18 @@ var algSet = {
           "alg": "F R U' R U' R U R' F' U' + Parity + U R U R' U' R' F R F'",
           "desc": "Parity within Y-Perm - [mounted-fish] + [sexy-sledge]",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "Parity + Na-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' + Parity + Nb-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -269,6 +335,12 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "Parity + AUF + Z-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -287,6 +359,12 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "Parity + AUF + Z-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -301,6 +379,12 @@ var algSet = {
       [
         {
           "alg": "Parity + Ra-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U + Parity + Gd-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -323,6 +407,12 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "U + Parity + Gb-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -337,6 +427,12 @@ var algSet = {
       [
         {
           "alg": "U' + Parity + U + Ra-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "Parity + U + Gd-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -359,6 +455,12 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "Parity + U + Gb-Perm",
+          "desc": "Parity followed by PLL",
+          "status": 1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -375,6 +477,12 @@ var algSet = {
           "alg": "Parity + T-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' + Parity + U + F-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -395,6 +503,12 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "Parity + F-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -408,9 +522,27 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U + U-Perm + Parity",
+          "alg": "U + Ua-Perm + Parity",
           "desc": "PLL followed by parity",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U2 + Parity + Ua-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "Ub-Perm + Parity",
+          "desc": "PLL followed by parity",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' + Parity + Ub-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
           "uses": ["2H"]
         },
       ]
@@ -431,6 +563,18 @@ var algSet = {
           "status": 1,
           "uses": ["2H"]
         },
+        {
+          "alg": "Parity + Y-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' + Parity + V-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
@@ -447,6 +591,18 @@ var algSet = {
           "alg": "U' + Y-Perm + U' + Parity",
           "desc": "PLL followed by parity",
           "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' + Parity + U + Y-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "Parity + U' + V-Perm",
+          "desc": "Parity followed by PLL",
+          "status": -1,
           "uses": ["2H"]
         },
       ]
