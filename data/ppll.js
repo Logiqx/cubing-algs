@@ -24,7 +24,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Opp",
       "prob": "1/36",
-      "algs" :
+      "algs":
       [
         {
           "alg": "r2 U2 r2 Uw2 r2 Uw2",
@@ -81,7 +81,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Adj",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R' U' + Parity + U' R U' R'",
@@ -99,7 +99,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Ac",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Parity + U + Aa-Perm",
@@ -117,7 +117,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Ad",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Parity + U2 + Ab-Perm",
@@ -135,7 +135,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Ea",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Parity + E-Perm",
@@ -153,7 +153,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Eb",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F R U' R U' R U R' F' + Parity + R U R' U' R' F R F'",
@@ -171,7 +171,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Jc",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Jb-Perm + U' + Parity",
@@ -189,7 +189,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Jd",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Parity + Jb-Perm",
@@ -207,7 +207,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Je",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' + Parity + Ja-Perm",
@@ -225,7 +225,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Jf",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' + Parity + U + Jb-Perm",
@@ -243,7 +243,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-N",
       "prob": "1/36",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F R U' R U' R U R' F' U' + Parity + U R U R' U' R' F R F'",
@@ -261,7 +261,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Oa",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Z-Perm + AUF + Parity",
@@ -279,7 +279,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Ob",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Z-Perm + AUF + Parity",
@@ -297,7 +297,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Rc",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Parity + Ra-Perm",
@@ -315,7 +315,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Rd",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Parity + U' + Rb-Perm",
@@ -333,7 +333,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Re",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' + Parity + U + Ra-Perm",
@@ -351,7 +351,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Rf",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' + Parity + Rb-Perm",
@@ -369,7 +369,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Ta",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Parity + T-Perm",
@@ -387,7 +387,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Tb",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' + Parity + U + T-Perm",
@@ -405,7 +405,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-W",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U + U-Perm + Parity",
@@ -423,7 +423,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Ya",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U + Y-Perm + Parity",
@@ -441,7 +441,7 @@ var algSet = {
       "algdb": "",
       "image": "PPLL-Yb",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' + Y-Perm + U' + Parity",

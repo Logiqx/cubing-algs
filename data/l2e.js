@@ -23,7 +23,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-A1",
       "prob": "1/24",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -41,7 +41,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-A2",
       "prob": "1/24",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Rw2 F2 U2 r2 U2 F2 Rw2",
@@ -98,7 +98,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-A3",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Rw U2 x Rw U2 Rw U2 3Rw’ U2 Lw U2 Rw’ U2 Rw U2 Rw’ U2 Rw’",
@@ -116,7 +116,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-A4",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Rw2 B2 Rw' U2 Rw' U2 x' U2 Rw' U2 Rw U2 Rw' U2 Rw2 [U2 x U2]",
@@ -134,7 +134,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-A5",
       "prob": "1/24",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M (U' R U R') (F R' F' R) M'",
@@ -206,7 +206,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-A6",
       "prob": "1/24",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F2 Rw D2 Rw' F2 U2 F2 Lw B2 Lw' [F2]",
@@ -254,7 +254,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-B5",
       "prob": "1/24",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Rw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Rw2 U2 F2 Rw [F2]",
@@ -278,7 +278,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-B6",
       "prob": "1/24",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Lw2 F2 U2 Rw U2 Rw2 F2 Rw U2 Lw2 U2 F2 Lw' [F2]",
@@ -302,7 +302,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-B3",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "B2 3Lw2 (U' R U R') (F R' F' R) 3Lw2 B2",
@@ -374,7 +374,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-B4",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "B2 Lw2 (U' R U R') (F R' F' R) Lw2 B2",
@@ -446,7 +446,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-B1",
       "prob": "1/24",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Rw U2 Rw2 U2 Rw' U2 Rw U2 Rw' U2 Rw2 U2 Rw",
@@ -464,7 +464,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-B2",
       "prob": "1/24",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Rw' U2 Rw2 U2 Rw U2 Rw' U2 Rw U2 Rw2 U2 Rw'",
@@ -482,7 +482,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-C1",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Rw U2 Rw U2 F2 Rw F2 Lw’ U2 Lw U2 Rw2",
@@ -506,7 +506,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-C2",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Rw' U2 Rw' U2 B2 Rw' B2 Rw' F2 Lw2 F2 Rw U2 Rw2",
@@ -524,7 +524,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-C3",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "3Lw (U' R U R') (F R' F' R) 3Lw'",
@@ -596,7 +596,7 @@ var algSet = {
       "algdb": "",
       "image": "L2E-C4",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "3Rw' (U' R U R') (F R' F' R) 3Rw",

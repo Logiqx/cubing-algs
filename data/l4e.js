@@ -24,7 +24,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS1",
       "prob": "1/96",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -42,7 +42,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS2",
       "prob": "1/96",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U' R') U' (R U' R')",
@@ -60,7 +60,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS3",
       "prob": "1/96",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(L' U L) U (L' U L)",
@@ -84,7 +84,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS4",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R' L R L') U (L' U' L)",
@@ -120,7 +120,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS5",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "L (U R U' R') L'",
@@ -144,7 +144,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS6",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R' (U' L' U L) R",
@@ -168,7 +168,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DF1",
       "prob": "1/96",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R' L R L') U (R' L R L') U (R' L R L')",
@@ -204,7 +204,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DF2",
       "prob": "1/96",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(L R' L' R) U (L R' L' R)",
@@ -222,7 +222,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DF3",
       "prob": "1/96",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R' L R L') U' (R' L R L')",
@@ -240,7 +240,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DF4",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R' L R L') (R U' R')",
@@ -276,7 +276,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DF5",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R U' R') (L' U' L)",
@@ -294,7 +294,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DF6",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (L' U L) (R U R')",
@@ -312,7 +312,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-US1",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U L' U' L",
@@ -330,7 +330,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-US2",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' R U R'",
@@ -348,7 +348,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-US3",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "L R' L' R",
@@ -366,7 +366,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-US4",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R' L R L'",
@@ -384,14 +384,14 @@ var algSet = {
       "algdb": "",
       "image": "L4E-US5",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R' L R L') (L' U L)",
           "desc": "Simple trigger combo",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' L R L2' U L",
@@ -411,14 +411,14 @@ var algSet = {
       "algdb": "",
       "image": "L4E-US6",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(L R' L' R) (R U' R')",
           "desc": "Simple trigger combo",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "L R' L' R2 U' R'",
@@ -438,7 +438,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-US7",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U' R'",
@@ -456,7 +456,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-US8",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "L' U L",
@@ -474,7 +474,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-UF1",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U R') U (R' L R L')",
@@ -492,7 +492,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-UF2",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(L' U' L) U' (L R' L' R)",
@@ -510,7 +510,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-UF3",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (L' U L) U' (R U R')",
@@ -528,7 +528,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-UF4",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R U' R') U (L' U' L)",
@@ -546,7 +546,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-UF5",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U R') U (L' U L)",
@@ -564,7 +564,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-UF6",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(L' U' L) U' (R U' R')",
@@ -582,7 +582,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-UF7",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R' L R L') U (L' U L)",
@@ -600,7 +600,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-UF8",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (L R' L' R) U' (R U' R')",
@@ -618,14 +618,14 @@ var algSet = {
       "algdb": "",
       "image": "L4E-NP1",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U' R') (R' L R L')",
           "desc": "Simple trigger combo",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U R U' R2' L R L'",
@@ -645,14 +645,14 @@ var algSet = {
       "algdb": "",
       "image": "L4E-NP2",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (L' U L) (L R' L' R)",
           "desc": "Simple trigger combo",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' L' U L2 R' L' R",
@@ -672,7 +672,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-NP3",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (L' U' L) U (R U R')",
@@ -690,7 +690,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-NP4",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U R') U' (L' U' L)",
@@ -708,7 +708,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-NP5",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U' R') U' (R U R')",
@@ -726,7 +726,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-NP6",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (L' U L) U (L' U' L)",
@@ -744,7 +744,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-NP7",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (L' U L) (R U' R')",
@@ -762,7 +762,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-NP8",
       "prob": "1/32",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U' R') (L' U L)",

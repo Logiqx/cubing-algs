@@ -25,7 +25,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS1",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -43,7 +43,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS2",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U' R') U' (R U' R')",
@@ -61,7 +61,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS3",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(L' U L) U (L' U L)",
@@ -85,7 +85,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS4",
       "prob": "1/4",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R' L R L') U (L' U' L)",
@@ -121,7 +121,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS5",
       "prob": "1/4",
-      "algs" :
+      "algs":
       [
         {
           "alg": "L (U R U' R') L'",
@@ -145,7 +145,7 @@ var algSet = {
       "algdb": "",
       "image": "L4E-DS6",
       "prob": "1/4",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R' (U' L' U L) R",

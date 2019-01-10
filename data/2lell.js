@@ -28,14 +28,14 @@ var algSet = {
       "algdb": "oll/oll28",
       "image": "EOLL-28",
       "prob": "4/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M' (R U R' U') M (U R U' R')",
           "desc": "Triggers - M-slice, [sexy], M-slice, [reverse-sexy]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(r U R' U') r' R (U R U' R')",
@@ -61,14 +61,14 @@ var algSet = {
       "algdb": "oll/oll57",
       "image": "EOLL-57",
       "prob": "2/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U R' U') M' (U R U' R') M",
           "desc": "Triggers - [sexy], M-slice, [reverse-sexy], M-slice",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(R U R' U') M' (U R U' r')",
@@ -94,14 +94,14 @@ var algSet = {
       "algdb": "oll/oll20",
       "image": "EOLL-20",
       "prob": "1/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M' (R U R' U') M2 (U R U' R') U' M'",
           "desc": "M-slice, [sexy], M-slice, [reverse-sexy], [AUF], M-slice",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(r U R' U') M2' (U R U' R') U' M'",
@@ -122,7 +122,7 @@ var algSet = {
           "desc": "M-slice, [AUF], [sexy], M-slice, [reverse-sexy], M-slice",
           "status": -1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r' R U (R U R' U') M2' (U R U' r')",
@@ -147,7 +147,7 @@ var algSet = {
       "algdb": "ell",
       "image": "EOLL",
       "prob": "1/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -165,7 +165,7 @@ var algSet = {
       "algdb": "pll/ua",
       "image": "EPLL-Ua",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U M2 U (M U2 M' U2') U' M2'",
@@ -237,7 +237,7 @@ var algSet = {
       "algdb": "pll/ub",
       "image": "EPLL-Ub",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U M2 U' (M U2 M' U2') U M2'",
@@ -320,7 +320,7 @@ var algSet = {
       "algdb": "pll/z",
       "image": "EPLL-Z",
       "prob": "2/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(M' U' M2' U' M2' U' M) (M2 U2' M2')",
@@ -374,7 +374,7 @@ var algSet = {
       "algdb": "pll/h",
       "image": "EPLL-H",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M2 U' (M2 U2 M2' U2') U M2'",
@@ -406,7 +406,7 @@ var algSet = {
       "algdb": "pll",
       "image": "EPLL",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

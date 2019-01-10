@@ -24,7 +24,7 @@ var algSet = {
       "algdb": "aa",
       "image": "PLL-Aa-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Checker pattern on left (4 stickers)",
@@ -42,7 +42,7 @@ var algSet = {
       "algdb": "aa",
       "image": "PLL-Aa-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Right corner is the opposite of the block",
@@ -60,7 +60,7 @@ var algSet = {
       "algdb": "aa",
       "image": "PLL-Aa-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite stickers at the front-right",
@@ -78,7 +78,7 @@ var algSet = {
       "algdb": "aa",
       "image": "PLL-Aa-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Almost checker pattern on right (5 stickers)",
@@ -96,7 +96,7 @@ var algSet = {
       "algdb": "ab",
       "image": "PLL-Ab-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Almost checker pattern on left (5 stickers)",
@@ -114,7 +114,7 @@ var algSet = {
       "algdb": "ab",
       "image": "PLL-Ab-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite stickers at the front-left",
@@ -132,7 +132,7 @@ var algSet = {
       "algdb": "ab",
       "image": "PLL-Ab-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Left corner is the opposite of the block",
@@ -150,7 +150,7 @@ var algSet = {
       "algdb": "ab",
       "image": "PLL-Ab-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Checker pattern on right (4 stickers)",
@@ -168,7 +168,7 @@ var algSet = {
       "algdb": "e",
       "image": "PLL-E-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Malformed pair at front-left",
@@ -186,7 +186,7 @@ var algSet = {
       "algdb": "e",
       "image": "PLL-E-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Malformed pair at front-right",
@@ -204,7 +204,7 @@ var algSet = {
       "algdb": "f",
       "image": "PLL-F-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Right edge is the opposite of front corner",
@@ -222,7 +222,7 @@ var algSet = {
       "algdb": "f",
       "image": "PLL-F-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Malformed 2x2 block (checker pattern)",
@@ -240,7 +240,7 @@ var algSet = {
       "algdb": "f",
       "image": "PLL-F-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Malformed 2x2 block (checker pattern)",
@@ -258,7 +258,7 @@ var algSet = {
       "algdb": "f",
       "image": "PLL-F-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Left edge is the opposite of front corner",
@@ -276,7 +276,7 @@ var algSet = {
       "algdb": "ga",
       "image": "PLL-Ga-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Almost checker pattern on left (4 stickers)",
@@ -294,7 +294,7 @@ var algSet = {
       "algdb": "ga",
       "image": "PLL-Ga-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the right is an adjacent of the back-left corner",
@@ -312,7 +312,7 @@ var algSet = {
       "algdb": "ga",
       "image": "PLL-Ga-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Almost malformed 2x2 block",
@@ -330,7 +330,7 @@ var algSet = {
       "algdb": "ga",
       "image": "PLL-Ga-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Checker pattern on right (4 stickers)",
@@ -348,7 +348,7 @@ var algSet = {
       "algdb": "gb",
       "image": "PLL-Gb-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Right edge is the opposite of front corner",
@@ -366,7 +366,7 @@ var algSet = {
       "algdb": "gb",
       "image": "PLL-Gb-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite stickers at the back-left",
@@ -384,7 +384,7 @@ var algSet = {
       "algdb": "gb",
       "image": "PLL-Gb-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the right is the opposite of the front-right corner",
@@ -402,7 +402,7 @@ var algSet = {
       "algdb": "gb",
       "image": "PLL-Gb-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Left edge matches right headlights",
@@ -420,7 +420,7 @@ var algSet = {
       "algdb": "gc",
       "image": "PLL-Gc-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Checker pattern on left (4 stickers)",
@@ -438,7 +438,7 @@ var algSet = {
       "algdb": "gc",
       "image": "PLL-Gc-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Almost malformed 2x2 block",
@@ -456,7 +456,7 @@ var algSet = {
       "algdb": "gc",
       "image": "PLL-Gc-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the left is an adjacent of the back-right corner",
@@ -474,7 +474,7 @@ var algSet = {
       "algdb": "gc",
       "image": "PLL-Gc-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Almost checker pattern on right (4 stickers)",
@@ -492,7 +492,7 @@ var algSet = {
       "algdb": "gd",
       "image": "PLL-Gd-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Right edge matches left headlights",
@@ -510,7 +510,7 @@ var algSet = {
       "algdb": "gd",
       "image": "PLL-Gd-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the left is the opposite of the front-left corner",
@@ -528,7 +528,7 @@ var algSet = {
       "algdb": "gd",
       "image": "PLL-Gd-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite stickers at the back-right",
@@ -546,7 +546,7 @@ var algSet = {
       "algdb": "gd",
       "image": "PLL-Gd-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Left edge is the opposite of front corner",
@@ -564,7 +564,7 @@ var algSet = {
       "algdb": "h",
       "image": "PLL-H-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Both headlights contain the opposite edge",
@@ -582,7 +582,7 @@ var algSet = {
       "algdb": "ja",
       "image": "PLL-Ja-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Inside 2-bar on the right",
@@ -600,7 +600,7 @@ var algSet = {
       "algdb": "ja",
       "image": "PLL-Ja-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite corner sticker on the right",
@@ -618,7 +618,7 @@ var algSet = {
       "algdb": "ja",
       "image": "PLL-Ja-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite corner sticker on the front-left",
@@ -636,7 +636,7 @@ var algSet = {
       "algdb": "ja",
       "image": "PLL-Ja-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Outside 2-bar on the left",
@@ -654,7 +654,7 @@ var algSet = {
       "algdb": "jb",
       "image": "PLL-Jb-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Outside 2-bar on the right",
@@ -672,7 +672,7 @@ var algSet = {
       "algdb": "jb",
       "image": "PLL-Jb-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite corner sticker on the front-right",
@@ -690,7 +690,7 @@ var algSet = {
       "algdb": "jb",
       "image": "PLL-Jb-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite corner sticker on the left",
@@ -708,7 +708,7 @@ var algSet = {
       "algdb": "jb",
       "image": "PLL-Jb-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Inside 2-bar on the left",
@@ -726,7 +726,7 @@ var algSet = {
       "algdb": "na",
       "image": "PLL-Na-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite corner sticker on the front-right and back-left",
@@ -744,7 +744,7 @@ var algSet = {
       "algdb": "nb",
       "image": "PLL-Nb-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Opposite corner sticker on the front-left and back-right",
@@ -762,7 +762,7 @@ var algSet = {
       "algdb": "ra",
       "image": "PLL-Ra-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Headlights contain an adjacent edge",
@@ -780,7 +780,7 @@ var algSet = {
       "algdb": "ra",
       "image": "PLL-Ra-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the right matches the front-left corner",
@@ -798,7 +798,7 @@ var algSet = {
       "algdb": "ra",
       "image": "PLL-Ra-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Malformed pair at front-left",
@@ -816,7 +816,7 @@ var algSet = {
       "algdb": "ra",
       "image": "PLL-Ra-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Checker pattern on right (5 stickers)",
@@ -834,7 +834,7 @@ var algSet = {
       "algdb": "rb",
       "image": "PLL-Rb-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Checker pattern on left (5 stickers)",
@@ -852,7 +852,7 @@ var algSet = {
       "algdb": "rb",
       "image": "PLL-Rb-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Malformed pair at front-right",
@@ -870,7 +870,7 @@ var algSet = {
       "algdb": "rb",
       "image": "PLL-Rb-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the left matches the front-right corner",
@@ -888,7 +888,7 @@ var algSet = {
       "algdb": "rb",
       "image": "PLL-Rb-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Headlights contain an adjacent edge",
@@ -906,7 +906,7 @@ var algSet = {
       "algdb": "t",
       "image": "PLL-T-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Headlights contain the opposite edge",
@@ -924,7 +924,7 @@ var algSet = {
       "algdb": "t",
       "image": "PLL-T-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the right is the opposite of the front-left corner",
@@ -942,7 +942,7 @@ var algSet = {
       "algdb": "t",
       "image": "PLL-T-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the left is the opposite of the front-right corner",
@@ -960,7 +960,7 @@ var algSet = {
       "algdb": "t",
       "image": "PLL-T-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Headlights contain the opposite edge",
@@ -978,7 +978,7 @@ var algSet = {
       "algdb": "ua",
       "image": "PLL-Ua-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Headlights contain an adjacent edge",
@@ -996,7 +996,7 @@ var algSet = {
       "algdb": "ua",
       "image": "PLL-Ua-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Left edge matches right headlights",
@@ -1014,7 +1014,7 @@ var algSet = {
       "algdb": "ua",
       "image": "PLL-Ua-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Right headlights contain the opposite edge",
@@ -1032,7 +1032,7 @@ var algSet = {
       "algdb": "ua",
       "image": "PLL-Ua-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Headlights contain the opposite edge",
@@ -1050,7 +1050,7 @@ var algSet = {
       "algdb": "ub",
       "image": "PLL-Ub-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Headlights contain the opposite edge",
@@ -1068,7 +1068,7 @@ var algSet = {
       "algdb": "ub",
       "image": "PLL-Ub-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Left headlights contain the opposite edge",
@@ -1086,7 +1086,7 @@ var algSet = {
       "algdb": "ub",
       "image": "PLL-Ub-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Right edge matches left headlights",
@@ -1104,7 +1104,7 @@ var algSet = {
       "algdb": "ub",
       "image": "PLL-Ub-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Headlights contain an adjacent edge",
@@ -1122,7 +1122,7 @@ var algSet = {
       "algdb": "v",
       "image": "PLL-V-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Outer corners are the opposites of the block",
@@ -1140,7 +1140,7 @@ var algSet = {
       "algdb": "v",
       "image": "PLL-V-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Almost checker pattern on right (4 stickers)",
@@ -1158,7 +1158,7 @@ var algSet = {
       "algdb": "v",
       "image": "PLL-V-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Malformed 2x2 block (checker pattern)",
@@ -1176,7 +1176,7 @@ var algSet = {
       "algdb": "v",
       "image": "PLL-V-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Almost checker pattern on left (4 stickers)",
@@ -1194,7 +1194,7 @@ var algSet = {
       "algdb": "y",
       "image": "PLL-Y-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Outside 2-bars on the left and right",
@@ -1212,7 +1212,7 @@ var algSet = {
       "algdb": "y",
       "image": "PLL-Y-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the right matches the back-left corner",
@@ -1230,7 +1230,7 @@ var algSet = {
       "algdb": "y",
       "image": "PLL-Y-3",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "\"Outer\" checker pattern (4 stickers)",
@@ -1248,7 +1248,7 @@ var algSet = {
       "algdb": "y",
       "image": "PLL-Y-4",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Edge on the left matches the back-right corner",
@@ -1266,7 +1266,7 @@ var algSet = {
       "algdb": "z",
       "image": "PLL-Z-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Distinctive checker pattern (6 stickers)",
@@ -1284,7 +1284,7 @@ var algSet = {
       "algdb": "z",
       "image": "PLL-Z-2",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Both headlights contain an adjacent edge",
@@ -1302,7 +1302,7 @@ var algSet = {
       "algdb": "",
       "image": "PLL-1",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "Solved",

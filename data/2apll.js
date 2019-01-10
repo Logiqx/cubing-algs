@@ -25,7 +25,7 @@ var algSet = {
       "algdb": "jb",
       "image": "CPLL-A",
       "prob": "4/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
@@ -43,7 +43,7 @@ var algSet = {
       "algdb": "y",
       "image": "CPLL-O",
       "prob": "1/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L) ...<br/>U2 (R U2 R' U' R U' R') (R U' L' U R' U' L)",
@@ -60,7 +60,7 @@ var algSet = {
       "algdb": ".",
       "image": "CPLL",
       "prob": "1/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -78,7 +78,7 @@ var algSet = {
       "algdb": "ua",
       "image": "EPLL-Ua",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') U (L' U2 L U L' U L) ...<br/>U' (R U2 R' U' R U' R') U (L' U2 L U L' U L)",
@@ -96,7 +96,7 @@ var algSet = {
       "algdb": "ub",
       "image": "EPLL-Ub",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') U (L' U2 L U L' U L)",
@@ -113,7 +113,7 @@ var algSet = {
       "algdb": "z",
       "image": "EPLL-Z",
       "prob": "2/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') U (L' U2 L U L' U L) ...<br/>(R U2 R' U' R U' R') U (L' U2 L U L' U L)",
@@ -131,7 +131,7 @@ var algSet = {
       "algdb": "h",
       "image": "EPLL-H",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') U (L' U2 L U L' U L) ...<br/>U2 (R U2 R' U' R U' R') U (L' U2 L U L' U L)",
@@ -148,7 +148,7 @@ var algSet = {
       "algdb": ".",
       "image": "EPLL",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

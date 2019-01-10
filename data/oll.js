@@ -27,14 +27,14 @@ var algSet = {
       "algdb": "oll1",
       "image": "OLL-01",
       "prob": "1/108",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U2 R' (R' F R F') U2 (R' F R F')",
           "desc": "Extract [F2L] pair, [sledgehammer], [AUF], [sledgehammer]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U2' (R2' F R F') U2 (R' F R F')",
@@ -60,7 +60,7 @@ var algSet = {
       "algdb": "oll2",
       "image": "OLL-02",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R' U2 (r U' r') U2 (r U r') U2 R",
@@ -85,7 +85,7 @@ var algSet = {
           "desc": "[OLL] combination - F [sexy] F', f [sexy] f'",
           "status": -1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "F (R U R' U') S (R U R' U') f'",
@@ -104,14 +104,14 @@ var algSet = {
       "algdb": "oll3",
       "image": "OLL-03",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M (R U R' U r U2' r') U M'",
           "desc": "Similar to OLL 11 but uses a hybrid of [RFS] and [RFWS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r' (R2 U R' U r U2' r') U M'",
@@ -142,14 +142,14 @@ var algSet = {
       "algdb": "oll4",
       "image": "OLL-04",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M' (R' U' R U' r' U2 r) U' M",
           "desc": "Similar to OLL 12 but uses a hybrid of [RBS] and [RBWS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "M' (R' U' R U' r' U2 r) U' r' R",
@@ -180,7 +180,7 @@ var algSet = {
       "algdb": "oll5",
       "image": "OLL-05",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' r' U2' R U R' U r",
@@ -197,7 +197,7 @@ var algSet = {
       "algdb": "oll6",
       "image": "OLL-06",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U r U2 R' U' R U' r'",
@@ -214,7 +214,7 @@ var algSet = {
       "algdb": "oll7",
       "image": "OLL-07",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "r U R' U R U2' r'",
@@ -231,7 +231,7 @@ var algSet = {
       "algdb": "oll8",
       "image": "OLL-08",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "r' U' R U' R' U2 r",
@@ -248,14 +248,14 @@ var algSet = {
       "algdb": "oll9",
       "image": "OLL-09",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 (R U R' U') (R' F R F') F (R U R' U') F'",
           "desc": "[OLL] combination - [sexy-sledge], F [sexy] F'",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (R U R' U') R' F R2 U R' U' F'",
@@ -270,7 +270,7 @@ var algSet = {
           "desc": "M-slice, [RFAS], [AUF], M-slice",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U r' (R2 U2' R' U' R U' R') U' r R'",
@@ -289,7 +289,7 @@ var algSet = {
       "algdb": "oll10",
       "image": "OLL-10",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 R U R' U (R' F R F') R U2' R'",
@@ -302,7 +302,7 @@ var algSet = {
           "desc": "M-slice, [RBAS], [AUF], M-slice",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' r (R2 U2' R U R' U R) U r' R",
@@ -321,14 +321,14 @@ var algSet = {
       "algdb": "oll11",
       "image": "OLL-11",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M (R U R' U R U2' R') U M'",
           "desc": "M-slice, [RFS], [AUF], M-slice",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r' (R2 U R' U R U2' R') U M'",
@@ -353,14 +353,14 @@ var algSet = {
       "algdb": "oll12",
       "image": "OLL-12",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M' (R' U' R U' R' U2 R) U' M",
           "desc": "M-slice, [RBS], [AUF], M-slice",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "M' (R' U' R U' R' U2 R) U' r' R",
@@ -385,14 +385,14 @@ var algSet = {
       "algdb": "oll13",
       "image": "OLL-13",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (U R U' R') F' F R U' (R' U' R U) R' F'",
           "desc": "[OLL] combination - F [reverse-sexy] F', OLL 37",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "F U R U2 R' U' R U R' F'",
@@ -417,14 +417,14 @@ var algSet = {
       "algdb": "oll14",
       "image": "OLL-14",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 (R' F R U) (R' F' R U') (U F U' F')",
           "desc": "Basic [commutator] combination - [R' F R, U] [U, F]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (R' F R U R' F' R) (F U' F')",
@@ -449,7 +449,7 @@ var algSet = {
       "algdb": "oll15",
       "image": "OLL-15",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' r' U' r (R' U' R U) r' U r",
@@ -466,7 +466,7 @@ var algSet = {
       "algdb": "oll16",
       "image": "OLL-16",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U r U r' (R U R' U') r U' r'",
@@ -483,14 +483,14 @@ var algSet = {
       "algdb": "oll17",
       "image": "OLL-17",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U R' U') U2 (R' F R F') U2 (R' F R F')",
           "desc": "[sexy], [AUF], [sledgehammer], [AUF], [sledgehammer]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U (R U R' U) (R' F R F') U2 (R' F R F')",
@@ -515,14 +515,14 @@ var algSet = {
       "algdb": "oll18",
       "image": "OLL-18",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' R U2' R' (R' F R F') U2 M' (U R U' r')",
           "desc": "Extract [F2L] pair, [sledgehammer], [AUF], re-insert pair",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' R U2' (R2' F R F') U2 M' (U R U' r')",
@@ -537,7 +537,7 @@ var algSet = {
           "desc": "[SuneOLL]: [RFWS], [RBWS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 r U R' U R U2' r2 U' R U' R' U2' r",
@@ -552,7 +552,7 @@ var algSet = {
           "desc": "[SuneOLL]: [RBWS], [RFWS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r' U' R U' R' U2' r2 U R' U R U2' r'",
@@ -571,14 +571,14 @@ var algSet = {
       "algdb": "oll19",
       "image": "OLL-19",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 M U (R U R' U') M' (R' F R F')",
           "desc": "Triggers - M U, [sexy], M', [sledgehammer]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 r' R U (R U R' U') M' (R' F R F')",
@@ -593,7 +593,7 @@ var algSet = {
           "desc": "[SuneOLL]: [RFWAS], [RBWAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r U2' R' U' R U' r2 U2' R U R' U r",
@@ -608,7 +608,7 @@ var algSet = {
           "desc": "[SuneOLL]: [RBWAS], [RFWAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 r' U2' R U R' U r2 U2' R' U' R U' r'",
@@ -628,14 +628,14 @@ var algSet = {
       "algdb": "oll20",
       "image": "OLL-20",
       "prob": "1/216",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M' (R U R' U') M2 (U R U' R') U' M'",
           "desc": "M-slice, [sexy], M-slice, [reverse-sexy], [AUF], M-slice",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(r U R' U') M2' (U R U' R') U' M'",
@@ -656,7 +656,7 @@ var algSet = {
           "desc": "M-slice, [AUF], [sexy], M-slice, [reverse-sexy], M-slice",
           "status": -1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r' R U (R U R' U') M2' (U R U' r')",
@@ -681,14 +681,14 @@ var algSet = {
       "algdb": "oll21",
       "image": "OLL-21",
       "prob": "1/108",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
           "desc": "[SuneOLL]/[2GLL]: Double [RFAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U R U2 R' U' (R U R' U') R U' R'",
@@ -703,7 +703,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: Double [RBS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U' R (U' R' U R) U' R' U2 R",
@@ -728,14 +728,14 @@ var algSet = {
       "algdb": "oll22",
       "image": "OLL-22",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2' R') (R' U' R) (R U' R') (R' U2' R)",
           "desc": "[Palindrome]. Essentially [RFAS] and [RBS] mixed together",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U2' R2' U' R2 U' R2' U2' R",
@@ -750,7 +750,7 @@ var algSet = {
           "desc": "[Palindrome]. Essentially [RBAS] and [RFS] mixed together",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U2 R2 U R2' U R2 U2 R'",
@@ -771,7 +771,7 @@ var algSet = {
           "desc": "[EOLL] combination - f [sexy] f', F [sexy] F'",
           "status": -1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "f (R U R' U') S' (R U R' U') F'",
@@ -790,14 +790,14 @@ var algSet = {
       "algdb": "oll23",
       "image": "OLL-23",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 R2 (D R' U2 R) (D' R' U2 R) R2'",
           "desc": "A9 [commutator] / [conjugate] - [R2: [D, R' U2 R]]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 R2 D R' U2 R D' R' U2 R'",
@@ -812,7 +812,7 @@ var algSet = {
           "desc": "A9 [commutator] / [conjugate] - [R2: [D', R U2 R']]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R2' D' R U2 R' D R U2 R",
@@ -827,7 +827,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: [RFS], [RBS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 R U R' U R U2' R2' U' R U' R' U2 R",
@@ -842,7 +842,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: [RBS], [RFS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U' R U' R' U2 R2 U R' U R U2' R'",
@@ -861,14 +861,14 @@ var algSet = {
       "algdb": "oll24",
       "image": "OLL-24",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (L F R' F') (L' F R F')",
           "desc": "Basic [commutator] - [L, F R' F']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' (r U R' U') (r' F R F')",
@@ -889,7 +889,7 @@ var algSet = {
           "desc": "Second half of E-Perm. Basic [commutator] - [R, U R' D]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (l U R' D) (R U' R' D') x",
@@ -922,7 +922,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: [RFAS], [RBAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
@@ -937,7 +937,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: [RBAS], [RFAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 R' U2' R U R' U R2 U2 R' U' R U' R'",
@@ -956,14 +956,14 @@ var algSet = {
       "algdb": "oll25",
       "image": "OLL-25",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(F' L F R') (F' L' F R)",
           "desc": "Basic [commutator] - [F' L F, R']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "F' (r U R' U') r' F R",
@@ -984,7 +984,7 @@ var algSet = {
           "desc": "First half of E-Perm. Basic [commutator] - [R U' R', D]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (l U' R' D) (R U R' D') x",
@@ -1017,7 +1017,7 @@ var algSet = {
           "desc": "A9 [commutator] / [conjugate] - [R2: [R U2 R', D']]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 R' U2 R' D' R U2 R' D R2",
@@ -1032,7 +1032,7 @@ var algSet = {
           "desc": "A9 [commutator] / [conjugate] - [R2: [R' U2 R, D]]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' R U2 R D R' U2 R D' R2'",
@@ -1047,7 +1047,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U R U2 R' U' (R U R' U') (R U R' U') R U' R'",
@@ -1062,7 +1062,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: Triple [RBS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
@@ -1081,7 +1081,7 @@ var algSet = {
       "algdb": "oll26",
       "image": "OLL-26",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R U2 R' U' R U' R'",
@@ -1104,7 +1104,7 @@ var algSet = {
       "algdb": "oll27",
       "image": "OLL-27",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R' U R U2' R'",
@@ -1128,14 +1128,14 @@ var algSet = {
       "algdb": "oll28",
       "image": "OLL-28",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 M' (R U R' U') M (U R U' R')",
           "desc": "Triggers - M-slice, [sexy], M-slice, [reverse-sexy]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (r U R' U') r' R (U R U' R')",
@@ -1160,7 +1160,7 @@ var algSet = {
       "algdb": "oll29",
       "image": "OLL-29",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R U R' U') (R U' R') (F' U' F) (R U R')",
@@ -1179,7 +1179,7 @@ var algSet = {
           "desc": "Includes [sexy-sledge]",
           "status": -1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 r' R U (R U R' U') (R' F R F') M'",
@@ -1204,7 +1204,7 @@ var algSet = {
       "algdb": "oll30",
       "image": "OLL-30",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F U (R U2 R') U' (R U2 R') U' F'",
@@ -1217,7 +1217,7 @@ var algSet = {
           "desc": "Includes mirror of [sexy-sledge]",
           "status": -1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "M' U' (R' U' R U) (R B' R' B) r' R",
@@ -1248,7 +1248,7 @@ var algSet = {
       "algdb": "oll31",
       "image": "OLL-31",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' R' U' F (U R U' R') F' R",
@@ -1266,7 +1266,7 @@ var algSet = {
       "algdb": "oll32",
       "image": "OLL-32",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' R U2 R' U' (F' U F) R U' R'",
@@ -1289,7 +1289,7 @@ var algSet = {
       "algdb": "oll33",
       "image": "OLL-33",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R U R' U') (R' F R F')",
@@ -1306,7 +1306,7 @@ var algSet = {
       "algdb": "oll34",
       "image": "OLL-34",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R2' U' R' F R U R U' F'",
@@ -1319,7 +1319,7 @@ var algSet = {
           "desc": "Triggers - [sexy], B', [sledgehammer], B",
           "status": -1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(R U R' U') x D' (R' U R U') D x'",
@@ -1334,7 +1334,7 @@ var algSet = {
           "desc": "Triggers - [sexy] then Roux-style insert to back",
           "status": -1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(R U R' U') y' (r' U' R U r R')",
@@ -1353,14 +1353,14 @@ var algSet = {
       "algdb": "oll35",
       "image": "OLL-35",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' R U2 R' (R' F R F') R U2 R'",
           "desc": "Extract [F2L] pair, [sledgehammer], re-insert pair",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' R U2' (R2' F R F') R U2' R'",
@@ -1379,14 +1379,14 @@ var algSet = {
       "algdb": "oll36",
       "image": "OLL-36",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R' U' R U' R' U2 R) (R' U' R U) (R B' R' B)",
           "desc": "[OLL] combination - [RBS], [sexy-sledge] from the back",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' (R' U' R U') (R' U R U) (l U' R' U x)",
@@ -1411,7 +1411,7 @@ var algSet = {
       "algdb": "oll37",
       "image": "OLL-37",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' F R U' (R' U' R U) R' F'",
@@ -1434,14 +1434,14 @@ var algSet = {
       "algdb": "oll38",
       "image": "OLL-38",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 (R U R' U R U2' R') (R U R' U') (R' F R F')",
           "desc": "[OLL] combination - [RFS], [sexy-sledge]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (R U R' U) (R U' R' U') (R' F R F')",
@@ -1460,7 +1460,7 @@ var algSet = {
       "algdb": "oll39",
       "image": "OLL-39",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R' (F' U' F) U R U2 R'",
@@ -1489,7 +1489,7 @@ var algSet = {
       "algdb": "oll40",
       "image": "OLL-40",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R' F (R U R' U') F' U R",
@@ -1506,7 +1506,7 @@ var algSet = {
       "algdb": "oll41",
       "image": "OLL-41",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U R' U R U2' R') F (R U R' U') F'",
@@ -1523,7 +1523,7 @@ var algSet = {
       "algdb": "oll42",
       "image": "OLL-42",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 (R' U' R U' R' U2 R) F (R U R' U') F'",
@@ -1541,14 +1541,14 @@ var algSet = {
       "algdb": "oll43",
       "image": "OLL-43",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 R' (U' F' U F) R",
           "desc": "[Conjugate] - [R': U' F' U F]",
           "status": 1,
           "uses": ["2H", "OH"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' F' (U' L' U L) F",
@@ -1580,14 +1580,14 @@ var algSet = {
       "algdb": "oll44",
       "image": "OLL-44",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U F (U R U' R') F'",
           "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
           "status": 1,
           "uses": ["2H", "OH"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' f (R U R' U') f'",
@@ -1607,14 +1607,14 @@ var algSet = {
       "algdb": "oll45",
       "image": "OLL-45",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' F (R U R' U') F'",
           "desc": "[Conjugate] of [sexy] - [F: R U R' U']",
           "status": 1,
           "uses": ["2H", "OH"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U f (U R U' R') f'",
@@ -1639,7 +1639,7 @@ var algSet = {
       "algdb": "oll46",
       "image": "OLL-46",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R' U' (R' F R F') U R",
@@ -1656,14 +1656,14 @@ var algSet = {
       "algdb": "oll47",
       "image": "OLL-47",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 F' (L' U' L U) (L' U' L U) F",
           "desc": "[Conjugate] of double [sexy] - [F': [L' U' L U]*2]]",
           "status": 1,
           "uses": ["2H", "OH"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "f' (U' L' U L) (U' L' U L) f",
@@ -1688,14 +1688,14 @@ var algSet = {
       "algdb": "oll48",
       "image": "OLL-48",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (R U R' U') (R U R' U') F'",
           "desc": "[Conjugate] of double [sexy] - [F: [R U R' U']*2]]",
           "status": 1,
           "uses": ["2H", "OH"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 f (U R U' R') (U R U' R') f'",
@@ -1714,14 +1714,14 @@ var algSet = {
       "algdb": "oll49",
       "image": "OLL-49",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(r U' r') (r' U r) (r U r') (r' U' r)",
           "desc": "[Palindrome] / [Commutator] - [r U' r', r' U r]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r U' r2' U r2 U r2' U' r",
@@ -1740,14 +1740,14 @@ var algSet = {
       "algdb": "oll50",
       "image": "OLL-50",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(r' U r) (r U' r') (r' U' r) (r U r')",
           "desc": "[Palindrome] / [Commutator] - [r' U r, r U' r']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r' U r2 U' r2' U' r2 U r'",
@@ -1762,7 +1762,7 @@ var algSet = {
           "desc": "[OLL] combination - [RFAS], F [sexy] F'",
           "status": 0,
           "uses": ["2H"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' (R U2' R' U' R U' R') F (R U R' U') F'",
@@ -1781,14 +1781,14 @@ var algSet = {
       "algdb": "oll51",
       "image": "OLL-51",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 F (U R U' R') (U R U' R') F'",
           "desc": "[Conjugate] of double [reverse-sexy] - [F: [U R U' R']*2]]",
           "status": 1,
           "uses": ["2H", "OH"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "f (R U R' U') (R U R' U') f'",
@@ -1807,14 +1807,14 @@ var algSet = {
       "algdb": "oll52",
       "image": "OLL-52",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 (R U R' U R U2' R') y F (U R U' R') F'",
           "desc": "[OLL] combination - [RFS], rotate, F [sexy] F'",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (R U R' U R U') y (R U' R' F')",
@@ -1835,7 +1835,7 @@ var algSet = {
           "desc": "[OLL] combination - [RBS], OLL 43",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (R' U' R U' R' U) (F' U F R)",
@@ -1854,14 +1854,14 @@ var algSet = {
       "algdb": "oll53",
       "image": "OLL-53",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(r' U' R U' R' U2 r) (r' U' R U' R' U2 r)",
           "desc": "[SuneOLL]: Double [RBWS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r' U' R (U' R' U R) U' R' U2 r",
@@ -1876,7 +1876,7 @@ var algSet = {
           "desc": "[SuneOLL]: Double [RBWAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U r' U2' R U (R' U' R U) R' U r",
@@ -1895,14 +1895,14 @@ var algSet = {
       "algdb": "oll54",
       "image": "OLL-54",
       "prob": "1/54",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(r U R' U R U2' r') (r U R' U R U2' r')",
           "desc": "[SuneOLL]: Double [RFWS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "r U R' (U R U' R') U R U2' r'",
@@ -1917,7 +1917,7 @@ var algSet = {
           "desc": "[SuneOLL]: Double [RFWAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' r U2 R' U' (R U R' U') R U' r'",
@@ -1936,7 +1936,7 @@ var algSet = {
       "algdb": "oll55",
       "image": "OLL-55",
       "prob": "1/108",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R' F R U R U' R2' F' R2 U' R' U R U R'",
@@ -1949,7 +1949,7 @@ var algSet = {
           "desc": "[OLL] combination - [RFAS], OLL 16",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U r U2' R' U' R2 r' U R' U' r U' r'",
@@ -1980,7 +1980,7 @@ var algSet = {
       "algdb": "oll56",
       "image": "OLL-56",
       "prob": "1/108",
-      "algs" :
+      "algs":
       [
         {
           "alg": "r U r' (U R U' R') (U R U' R') r U' r'",
@@ -2004,14 +2004,14 @@ var algSet = {
       "algdb": "oll57",
       "image": "OLL-57",
       "prob": "1/108",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U R' U') M' (U R U' R') M",
           "desc": "Triggers - [sexy], M-slice, [reverse-sexy], M-slice",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U (R U R' U') M' (U R U' r')",
@@ -2036,7 +2036,7 @@ var algSet = {
       "algdb": "",
       "image": "OLL",
       "prob": "1/216",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

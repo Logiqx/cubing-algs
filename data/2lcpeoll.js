@@ -28,7 +28,7 @@ var algSet = {
       "algdb": "oll/oll44",
       "image": "EOLL-L",
       "prob": "4/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (U R U' R') F'",
@@ -36,7 +36,7 @@ var algSet = {
           "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R']",
           "status": 1,
           "uses": ["2H", "OH"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 f (R U R' U') f'",
@@ -63,7 +63,7 @@ var algSet = {
       "algdb": "oll/oll45",
       "image": "EOLL-I",
       "prob": "2/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (R U R' U') F'",
@@ -82,7 +82,7 @@ var algSet = {
       "algdb": "oll/oll2",
       "image": "EOLL-D",
       "prob": "1/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (R U R' U') F' f (R U R' U') f'",
@@ -90,7 +90,7 @@ var algSet = {
           "desc": "[OLL] combination - F [sexy] F', f [sexy] f'",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "F (R U R' U') S (R U R' U') f'",
@@ -116,7 +116,7 @@ var algSet = {
       "algdb": "",
       "image": "EOLL",
       "prob": "1/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -134,7 +134,7 @@ var algSet = {
       "algdb": "",
       "image": "CPLL-A",
       "prob": "4/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(L' U R U') (L U R' U')",
@@ -142,7 +142,7 @@ var algSet = {
           "desc": "Basic commutator - [L', U R U']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "L' U R U' L U R'",
@@ -162,14 +162,14 @@ var algSet = {
       "algdb": "",
       "image": "CPLL-O",
       "prob": "1/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(L' U R U') (L U R' U') U (L' U R U') (L U R' U')",
           "desc": "[Niklas] combination - [LFN], U, [LFN]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(L' U R U' L U R') (L' U R U' L U R')",
@@ -194,7 +194,7 @@ var algSet = {
       "algdb": "",
       "image": "CPLL",
       "prob": "1/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

@@ -25,14 +25,14 @@ var algSet = {
       "algdb": "jb",
       "image": "CPLL-A",
       "prob": "4/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') (R U' L' U R' U' L)",
           "desc": "Jb-Perm - [RFAS], [RFN]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U2 R' U' R U2 L' U R' U' L",
@@ -52,7 +52,7 @@ var algSet = {
       "algdb": "na",
       "image": "CPLL-O",
       "prob": "1/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U' L U2 R' U L') (R U' L U2 R' U L')",
@@ -69,7 +69,7 @@ var algSet = {
       "algdb": "",
       "image": "CPLL",
       "prob": "1/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -87,7 +87,7 @@ var algSet = {
       "algdb": "ua",
       "image": "EPLL-Ua",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R U' (R U R U R U' R' U' R' U') U R'",
@@ -114,7 +114,7 @@ var algSet = {
       "algdb": "ub",
       "image": "EPLL-Ub",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R U' (U R U R U R' U' R' U' R') U R'",
@@ -140,7 +140,7 @@ var algSet = {
       "algdb": "z",
       "image": "EPLL-Z",
       "prob": "2/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U' R U R U R U' R' U' R2 ...<br/>U' R U' R U R U R U' R' U' R2",
@@ -158,7 +158,7 @@ var algSet = {
       "algdb": "h",
       "image": "EPLL-H",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U' R U R U R U' R' U' R2 ...<br/>U R U' R U R U R U' R' U' R2",
@@ -175,7 +175,7 @@ var algSet = {
       "algdb": "",
       "image": "EPLL",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

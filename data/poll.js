@@ -24,7 +24,7 @@ var algSet = {
       "algdb": "oll2",
       "image": "OLL-AS",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R U2 R' U' R U' R'",
@@ -47,7 +47,7 @@ var algSet = {
       "algdb": "oll1",
       "image": "OLL-S",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R' U R U2' R'",
@@ -70,7 +70,7 @@ var algSet = {
       "algdb": "oll5",
       "image": "OLL-L",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' F R U' (R' U' R U) R' F'",
@@ -83,7 +83,7 @@ var algSet = {
           "desc": "Basic [commutator] - [F' L F, R']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "F' (R U R' U') R' F R",
@@ -102,7 +102,7 @@ var algSet = {
       "algdb": "oll4",
       "image": "OLL-U",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' F (R U R' U') F'",
@@ -125,14 +125,14 @@ var algSet = {
       "algdb": "oll6",
       "image": "OLL-T",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (L F R' F') (L' F R F')",
           "desc": "Basic [commutator] - [L, F R' F']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' (R U R' U') (R' F R F')",
@@ -147,7 +147,7 @@ var algSet = {
           "desc": "Basic [commutator] - [R', F' L F]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U (L' U' L U) (L F' L' F)",
@@ -166,7 +166,7 @@ var algSet = {
       "algdb": "oll3",
       "image": "OLL-Pi",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (R U R' U') (R U R' U') F'",
@@ -189,7 +189,7 @@ var algSet = {
       "algdb": "oll7",
       "image": "OLL-H",
       "prob": "2/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R2 U2' R' U2 R2)",
@@ -212,7 +212,7 @@ var algSet = {
       "algdb": "",
       "image": "OLL",
       "prob": "1/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

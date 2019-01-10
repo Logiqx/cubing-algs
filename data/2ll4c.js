@@ -28,14 +28,14 @@ var algSet = {
       "algdb": "",
       "image": "OCLL-AS",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 (L' U R U') (L U R' U')",
           "desc": "[LFN] - [L', U R U']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 L' U R U' L U R'",
@@ -50,7 +50,7 @@ var algSet = {
           "desc": "[RBN] - [R', U L U']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U L U' R U L'",
@@ -70,14 +70,14 @@ var algSet = {
       "algdb": "",
       "image": "OCLL-S",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U' L' U) (R' U' L U)",
           "desc": "[RFN] - [R, U' L' U]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U' L' U R' U' L",
@@ -92,7 +92,7 @@ var algSet = {
           "desc": "[LFN] - [L, U' R' U]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 L U' R' U L' U' R",
@@ -112,14 +112,14 @@ var algSet = {
       "algdb": "",
       "image": "OCLL-L",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(F' L F R') (F' L' F R)",
           "desc": "Basic [commutator] - [F' L F, R']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "F' (r U R' U') r' F R",
@@ -140,7 +140,7 @@ var algSet = {
           "desc": "First half of E-Perm. Basic [commutator] - [R U' R', D]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (l U' R' D) (R U R' D') x",
@@ -173,7 +173,7 @@ var algSet = {
           "desc": "A9 [commutator] / [conjugate] - [R2: [R U2 R', D']]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 R' U2 R' D' R U2 R' D R2",
@@ -188,7 +188,7 @@ var algSet = {
           "desc": "A9 [commutator] / [conjugate] - [R2: [R' U2 R, D]]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' R U2 R D R' U2 R D' R2'",
@@ -203,7 +203,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U R U2 R' U' (R U R' U') (R U R' U') R U' R'",
@@ -218,7 +218,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: Triple [RBS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
@@ -238,14 +238,14 @@ var algSet = {
       "algdb": "",
       "image": "OCLL-U",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 R2 (D R' U2 R) (D' R' U2 R) R2'",
           "desc": "A9 [commutator] / [conjugate] - [R2: [D, R' U2 R]]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 R2 D R' U2 R D' R' U2 R'",
@@ -260,7 +260,7 @@ var algSet = {
           "desc": "A9 [commutator] / [conjugate] - [R2: [D', R U2 R']]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R2' D' R U2 R' D R U2 R",
@@ -292,14 +292,14 @@ var algSet = {
       "algdb": "",
       "image": "OCLL-T",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (L F R' F') (L' F R F')",
           "desc": "Basic [commutator] - [L, F R' F']",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' (r U R' U') (r' F R F')",
@@ -320,7 +320,7 @@ var algSet = {
           "desc": "Second half of E-Perm. Basic [commutator] - [R, U R' D]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 (l U R' D) (R U' R' D') x",
@@ -370,14 +370,14 @@ var algSet = {
       "algdb": "",
       "image": "OCLL-Pi",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U' L' U) (R' U' L U) U' (L U' R' U) (L' U' R U)",
           "desc": "[Niklas] combination - [RFN], U', [LBN]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U R U' L' U R' U' L2 U' R' U L' U' R",
@@ -392,7 +392,7 @@ var algSet = {
           "desc": "[Niklas] combination - [RBN], U', [LFN]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' R' U L U' R U L2' U R U' L U R'",
@@ -411,7 +411,7 @@ var algSet = {
       "algdb": "",
       "image": "OCLL-H",
       "prob": "2/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U F (R U R' U') (R U R' U') (R U R' U') F'",
@@ -428,7 +428,7 @@ var algSet = {
       "algdb": "",
       "image": "OCLL",
       "prob": "1/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -446,14 +446,14 @@ var algSet = {
       "algdb": "pll/aa",
       "image": "CPLL-Aa",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U x R2 (R U R' D2) (R U' R' D2) R2' x'",
           "desc": "A9 [commutator] / [conjugate] - [x R2: [R U R', D2]]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U l' U R' D2 R U' R' D2 R2 x'",
@@ -479,14 +479,14 @@ var algSet = {
       "algdb": "pll/ab",
       "image": "CPLL-Ab",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 x R2 (D2 R U R') (D2 R U' R') R2 x'",
           "desc": "A9 [commutator] / [conjugate] - [x R2: [D2, R U R']]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 l' R' D2 R U R' D2 R U' R x'",
@@ -512,14 +512,14 @@ var algSet = {
       "algdb": "pll/e",
       "image": "CPLL-E",
       "prob": "2/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' D') x",
           "desc": "[Commutator] combination - [R U' R', D] [R, U R' D]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
@@ -540,7 +540,7 @@ var algSet = {
           "desc": "Long algorithm but decent for [OH] and big cubes",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2')",
@@ -566,7 +566,7 @@ var algSet = {
       "algdb": "pll/h",
       "image": "CPLL-X",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M2 U' (M2 U2 M2' U2') U M2'",
@@ -598,7 +598,7 @@ var algSet = {
       "algdb": "pll",
       "image": "CPLL",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

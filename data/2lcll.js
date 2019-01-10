@@ -27,7 +27,7 @@ var algSet = {
       "algdb": "oll/oll26",
       "image": "OCLL-AS",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R U2 R' U' R U' R'",
@@ -50,7 +50,7 @@ var algSet = {
       "algdb": "oll/oll27",
       "image": "OCLL-S",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R' U R U2' R'",
@@ -74,7 +74,7 @@ var algSet = {
       "algdb": "oll/oll37",
       "image": "OCLL-L",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' F R U' (R' U' R U) R' F'",
@@ -98,7 +98,7 @@ var algSet = {
       "algdb": "oll/oll44",
       "image": "OCLL-U",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' F (R U R' U') F'",
@@ -122,7 +122,7 @@ var algSet = {
       "algdb": "oll/oll33",
       "image": "OCLL-T",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R U R' U') (R' F R F')",
@@ -140,7 +140,7 @@ var algSet = {
       "algdb": "oll/oll48",
       "image": "OCLL-Pi",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (R U R' U') (R U R' U') F'",
@@ -163,14 +163,14 @@ var algSet = {
       "algdb": "oll/oll21",
       "image": "OCLL-H",
       "prob": "2/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
           "desc": "[SuneOLL]/[2GLL]: Double [RFAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U R U2 R' U' (R U R' U') R U' R'",
@@ -185,7 +185,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: Double [RBS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U' R (U' R' U R) U' R' U2 R",
@@ -210,7 +210,7 @@ var algSet = {
       "algdb": "",
       "image": "OCLL",
       "prob": "1/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -228,7 +228,7 @@ var algSet = {
       "algdb": "pll/t",
       "image": "CPLL-A",
       "prob": "4/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U R' U' R' F R F') (F R U' R' U' R U R' F')",
@@ -252,7 +252,7 @@ var algSet = {
           "desc": "[Conjugate] of T-Perm - [R U R' F': T-Perm]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U R' F' R U R' U' R' F R2 U' R'",
@@ -268,7 +268,7 @@ var algSet = {
           "desc": "[COLL] combination - [RFAS], [RFN]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U2 R' U' R U2 L' U R' U' L",
@@ -284,7 +284,7 @@ var algSet = {
           "desc": "A9 [commutator] / [conjugate] - [x R2: [R U R', D2]]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U l' U R' D2 R U' R' D2 R2 x'",
@@ -310,7 +310,7 @@ var algSet = {
       "algdb": "pll/y",
       "image": "CPLL-O",
       "prob": "1/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(F R U' R' U' R U R' F') (R U R' U' R' F R F')",
@@ -339,7 +339,7 @@ var algSet = {
           "desc": "[Commutator] combination - [R U' R', D] [R, U R' D]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
@@ -364,7 +364,7 @@ var algSet = {
       "algdb": "",
       "image": "CPLL",
       "prob": "1/6",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

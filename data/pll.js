@@ -28,14 +28,14 @@ var algSet = {
       "algdb": "aa",
       "image": "PLL-Aa",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U x R2 (R U R' D2) (R U' R' D2) R2' x'",
           "desc": "A9 [commutator] / [conjugate] - [x R2: [R U R', D2]]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U l' U R' D2 R U' R' D2 R2 x'",
@@ -67,14 +67,14 @@ var algSet = {
       "algdb": "ab",
       "image": "PLL-Ab",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 x R2 (D2 R U R') (D2 R U' R') R2 x'",
           "desc": "A9 [commutator] / [conjugate] - [x R2: [D2, R U R']]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 l' R' D2 R U R' D2 R U' R x'",
@@ -100,14 +100,14 @@ var algSet = {
       "algdb": "e",
       "image": "PLL-E",
       "prob": "1/36",
-      "algs" :
+      "algs":
       [
         {
           "alg": "x' (R U' R' D R U R' D') (R U R' D R U' R' D') x",
           "desc": "[Commutator] combination - [R U' R', D] [R, U R' D]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "(l U' R' D R U R' D') (R U R' D R U' R' D') x",
@@ -128,7 +128,7 @@ var algSet = {
           "desc": "Long algorithm but decent for [OH] and big cubes",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U (R2 U R' U') y (R U R' U') (R U R' U') (R U R') y' (R U' R2')",
@@ -153,14 +153,14 @@ var algSet = {
       "algdb": "f",
       "image": "PLL-F",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R' U' F' (R U R' U' R' F R2 U' R' U' R U R' F') F U R",
           "desc": "[Conjugate] of T-Perm - [R' U' F': T-Perm]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
@@ -175,7 +175,7 @@ var algSet = {
           "desc": "Playing with [F2L] pairs - track FR + BR + FL",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' (R U R' U') (R' U R U2' L' R' U R U' L) (U' R U' R')",
@@ -190,7 +190,7 @@ var algSet = {
           "desc": "[RUL] algorithm",
           "status": -1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "L R2 U R U R2 U' R' U' R2 U' R U2' z U' R u'",
@@ -210,14 +210,14 @@ var algSet = {
       "algdb": "ga",
       "image": "PLL-Ga",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R2 u R' U R' U' R u' R2 y' R' U R",
           "desc": "Standard algorithm",
           "status": 1,
           "uses": ["2H"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R2 u R' U R' U' R u' R2 y L' U L",
@@ -237,14 +237,14 @@ var algSet = {
       "algdb": "gb",
       "image": "PLL-Gb",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R' U' R y R2 u R' U R U' R u' R2",
           "desc": "Standard algorithm",
           "status": 1,
           "uses": ["OH"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' F' U' F R2 u R' U R U' R u' R2",
@@ -264,7 +264,7 @@ var algSet = {
       "algdb": "gc",
       "image": "PLL-Gc",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 R2' F2 R U2 R U2' R' F R U R' U' R' F R2",
@@ -288,7 +288,7 @@ var algSet = {
       "algdb": "gd",
       "image": "PLL-Gd",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R2' F' R U R U' R' F' R U2' R' U2 R' F2 R2",
@@ -312,7 +312,7 @@ var algSet = {
       "algdb": "h",
       "image": "PLL-H",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "M2 U' (M2 U2 M2' U2') U M2'",
@@ -345,14 +345,14 @@ var algSet = {
       "algdb": "ja",
       "image": "PLL-Ja",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R' U L' U2' R U' L) (L' R' U2 R L)",
           "desc": "Playing with [F2L] pairs - track BR + FL. Similar to Na",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' R' U L' U2 R U' R' U2 R L",
@@ -367,7 +367,7 @@ var algSet = {
           "desc": "[COLL] combination - [RBAS], [RBN]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U2' R U R' U2' L U' R U L'",
@@ -387,14 +387,14 @@ var algSet = {
       "algdb": "jb",
       "image": "PLL-Jb",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R' F' (R U R' U' R' F R2 U' R' U' R U R' F') F R U' R'",
           "desc": "[Conjugate] of T-Perm - [R U R' F': T-Perm]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U R' F' R U R' U' R' F R2 U' R'",
@@ -409,7 +409,7 @@ var algSet = {
           "desc": "[COLL] combination - [RFAS], [RFN]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U2 R' U' R U2 L' U R' U' L",
@@ -429,14 +429,14 @@ var algSet = {
       "algdb": "na",
       "image": "PLL-Na",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R' U (R U R' F' R U R' U' R' F R2 U' R' U’) U’ R U’ R’",
           "desc": "[Conjugate] of Jb-Perm - [R U R' U: Jb-Perm]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U R' U (R U R' F' R U R' U' R' F R2 U' R') U2 R U' R'",
@@ -462,7 +462,7 @@ var algSet = {
       "algdb": "nb",
       "image": "PLL-Nb",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R' U R U' R' F' U' F R U R' F R' F' R U' R",
@@ -486,7 +486,7 @@ var algSet = {
       "algdb": "ra",
       "image": "PLL-Ra",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R' F' R U2' R' U2 R' F R U R U2' R'",
@@ -510,7 +510,7 @@ var algSet = {
       "algdb": "rb",
       "image": "PLL-Rb",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' R' U2 R U2' R' F R U R' U' R' F' R2",
@@ -534,7 +534,7 @@ var algSet = {
       "algdb": "t",
       "image": "PLL-T",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U R' U' R' F R F') (F R U' R' U' R U R' F')",
@@ -561,7 +561,7 @@ var algSet = {
       "algdb": "ua",
       "image": "PLL-Ua",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U M2 U (M U2 M' U2') U' M2'",
@@ -633,7 +633,7 @@ var algSet = {
       "algdb": "ub",
       "image": "PLL-Ub",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U M2 U' (M U2 M' U2') U M2'",
@@ -716,7 +716,7 @@ var algSet = {
       "algdb": "v",
       "image": "PLL-V",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R' U R' d' R' F' R2 U' R' U R' F R F",
@@ -740,7 +740,7 @@ var algSet = {
       "algdb": "y",
       "image": "PLL-Y",
       "prob": "1/18",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(F R U' R' U' R U R' F') (R U R' U' R' F R F')",
@@ -763,7 +763,7 @@ var algSet = {
       "algdb": "z",
       "image": "PLL-Z",
       "prob": "1/36",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(M' U' M2' U' M2' U' M) (M2 U2' M2')",
@@ -816,7 +816,7 @@ var algSet = {
       "algdb": "",
       "image": "PLL",
       "prob": "1/72",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

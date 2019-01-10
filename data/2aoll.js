@@ -25,7 +25,7 @@ var algSet = {
       "algdb": "oll44",
       "image": "EOLL-L",
       "prob": "4/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (U R U' R') F'",
@@ -43,14 +43,14 @@ var algSet = {
       "algdb": "oll45",
       "image": "EOLL-I",
       "prob": "2/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (U R U' R') F' F (U R U' R') F'",
           "desc": "[Conjugate] of [reverse-sexy] - [F: U R U' R'] * 2",
           "status": 1,
           "uses": ["2H"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "F (U R U' R') (U R U' R') F'",
@@ -70,14 +70,14 @@ var algSet = {
       "algdb": "oll2",
       "image": "EOLL-D",
       "prob": "1/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "F (U R U' R') F' ...<br/>U' F (U R U' R') F' F (U R U' R') F'",
           "desc": "[EOLL] combination - Clock, [AUF], Line",
           "status": 1,
           "uses": ["2H"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "F (U R U' R') F' ...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U' F (U R U' R') (U R U' R') F'",
@@ -96,7 +96,7 @@ var algSet = {
       "algdb": ".",
       "image": "EOLL",
       "prob": "1/8",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -113,7 +113,7 @@ var algSet = {
       "algdb": "oll26",
       "image": "OCLL-AS",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U2 R' U' R U' R')",
@@ -130,7 +130,7 @@ var algSet = {
       "algdb": "oll27",
       "image": "OCLL-S",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U2 (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
@@ -147,7 +147,7 @@ var algSet = {
       "algdb": "oll25",
       "image": "OCLL-L",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R U2 R' U' R U' R') ...<br/>(R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
@@ -164,7 +164,7 @@ var algSet = {
       "algdb": "oll23",
       "image": "OCLL-U",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U2 R' U' R U' R') ...<br/>U (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
@@ -181,7 +181,7 @@ var algSet = {
       "algdb": "oll24",
       "image": "OCLL-T",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') ...<br/>U' (R U2 R' U' R U' R') U2 (R U2 R' U' R U' R')",
@@ -198,7 +198,7 @@ var algSet = {
       "algdb": "oll22",
       "image": "OCLL-Pi",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') U' (R U2 R' U' R U' R')",
@@ -215,14 +215,14 @@ var algSet = {
       "algdb": "oll21",
       "image": "OCLL-H",
       "prob": "2/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U' (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
           "desc": "[OCLL] combination - Double Anti-Sune",
           "status": 1,
           "uses": ["2H"],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U' R U2 R' U' (R U R' U') R U' R'",
@@ -241,7 +241,7 @@ var algSet = {
       "algdb": ".",
       "image": "OCLL",
       "prob": "1/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",

@@ -27,7 +27,7 @@ var algSet = {
       "algdb": "coll/b1",
       "image": "OCLL-AS",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R U2 R' U' R U' R'",
@@ -50,7 +50,7 @@ var algSet = {
       "algdb": "coll/c1",
       "image": "OCLL-S",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "R U R' U R U2' R'",
@@ -73,14 +73,14 @@ var algSet = {
       "algdb": "coll/d1",
       "image": "OCLL-L",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U2 R' U' R U' R') * 3",
           "desc": "[SuneOLL]/[2GLL]: Triple [RFAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U R U2 R' U' (R U R' U') (R U R' U') R U' R'",
@@ -95,7 +95,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: Triple [RBS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U' R (U' R' U R) (U' R' U R) U' R' U2 R",
@@ -114,14 +114,14 @@ var algSet = {
       "algdb": "coll/e1",
       "image": "OCLL-U",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R' U' R U' R' U2 R) (R U R' U R U2' R')",
           "desc": "[SuneOLL]/[2GLL]: [RBS], [RFS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U' R U' R' U2 R2 U R' U R U2' R'",
@@ -136,7 +136,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: [RFS], [RBS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 R U R' U R U2' R2 U' R U' R' U2 R",
@@ -155,14 +155,14 @@ var algSet = {
       "algdb": "coll/f1",
       "image": "OCLL-T",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2 R' U' R U' R') (R' U2' R U R' U R)",
           "desc": "[SuneOLL]/[2GLL]: [RFAS], [RBAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
@@ -177,7 +177,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: [RBAS], [RFAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U2 R' U2' R U R' U R2 U2 R' U' R U' R'",
@@ -196,14 +196,14 @@ var algSet = {
       "algdb": "coll/g1",
       "image": "OCLL-Pi",
       "prob": "4/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R U2' R') (R' U' R) (R U' R') (R' U2' R)",
           "desc": "[Palindrome]. Essentially [RFAS] and [RBS] mixed together",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R U2' R2' U' R2 U' R2' U2' R",
@@ -218,7 +218,7 @@ var algSet = {
           "desc": "[Palindrome]. Essentially [RBAS] and [RFS] mixed together",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U2 R2 U R2' U R2 U2 R'",
@@ -237,14 +237,14 @@ var algSet = {
       "algdb": "coll/h1",
       "image": "OCLL-H",
       "prob": "2/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
           "desc": "[SuneOLL]/[2GLL]: Double [RFAS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "U R U2 R' U' (R U R' U') R U' R'",
@@ -259,7 +259,7 @@ var algSet = {
           "desc": "[SuneOLL]/[2GLL]: Double [RBS]",
           "status": 1,
           "uses": [],
-          "vars" :
+          "vars":
           [
             {
               "alg": "R' U' R (U' R' U R) U' R' U2 R",
@@ -278,7 +278,7 @@ var algSet = {
       "algdb": "coll",
       "image": "OCLL",
       "prob": "1/27",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
@@ -296,7 +296,7 @@ var algSet = {
       "algdb": "pll/ua",
       "image": "EPLL-Ua",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R U' (R U R U R U' R' U' R' U') U R'",
@@ -368,7 +368,7 @@ var algSet = {
       "algdb": "pll/ub",
       "image": "EPLL-Ub",
       "prob": "4/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R U' (U R U R U R' U' R' U' R') U R'",
@@ -451,7 +451,7 @@ var algSet = {
       "algdb": "pll/z",
       "image": "EPLL-Z",
       "prob": "2/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "U R' U' R U' R U R U' R' U R U R2 U' R'",
@@ -505,7 +505,7 @@ var algSet = {
       "algdb": "pll/h",
       "image": "EPLL-H",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "(R2 U2' R U2' R2) U2' (R2 U2' R U2' R2)",
@@ -537,7 +537,7 @@ var algSet = {
       "algdb": "pll",
       "image": "EPLL",
       "prob": "1/12",
-      "algs" :
+      "algs":
       [
         {
           "alg": "-",
