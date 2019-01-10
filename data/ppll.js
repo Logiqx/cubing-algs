@@ -18,8 +18,8 @@ var algSet = {
   [
     {
       "id": "Opp",
-      "name": "Opp-Parity",
-      "desc": "This is just an opposite dedge swap.",
+      "name": "Opp",
+      "desc": "This is just an opposite edge swap.",
       "wiki": "#Opposite",
       "algdb": "",
       "image": "PPLL-Opp",
@@ -28,7 +28,7 @@ var algSet = {
       [
         {
           "alg": "Uw2 Rw2 U2 r2 U2 Rw2 Uw2",
-          "desc": "Opposite dedge swap",
+          "desc": "Opposite edge swap",
           "status": 1,
           "uses": ["2H"]
         },
@@ -36,8 +36,8 @@ var algSet = {
     },
     {
       "id": "Adj",
-      "name": "Adj-Parity",
-      "desc": "This is just an adjacent dedge swap.",
+      "name": "Adj",
+      "desc": "This is just an adjacent edge swap.",
       "wiki": "#Adjacent",
       "algdb": "",
       "image": "PPLL-Adj",
@@ -45,7 +45,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "R U R' U' + Opp-Parity + U' R U' R'",
+          "alg": "R U R' U' + Parity + U' R U' R'",
           "desc": "[Conjugate] of opposite swap - [R U R' U': Opp]",
           "status": 1,
           "uses": ["2H"]
@@ -63,7 +63,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opp-Parity + U + Aa-Perm",
+          "alg": "Parity + U + Aa-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -81,7 +81,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opp-Parity + U2 + Ab-Perm",
+          "alg": "Parity + U2 + Ab-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -99,7 +99,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opp-Parity + E-Perm",
+          "alg": "Parity + E-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -117,7 +117,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "F R U' R U' R U R' F' + Opp-Parity + R U R' U' R' F R F'",
+          "alg": "F R U' R U' R U R' F' + Parity + R U R' U' R' F R F'",
           "desc": "Parity within Y-Perm - [mounted-fish] + [sexy-sledge]",
           "status": 1,
           "uses": ["2H"]
@@ -127,7 +127,7 @@ var algSet = {
     {
       "id": "Jc",
       "name": "Jc-Perm",
-      "desc": "Inverse and reflection of Jd.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm or Ga-Perm.",
+      "desc": "Inverse and reflection of Jd.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm (shown) or Ga-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Jc",
@@ -135,7 +135,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Jb-Perm + U' + Opp-Parity",
+          "alg": "Jb-Perm + U' + Parity",
           "desc": "PLL followed by parity",
           "status": 1,
           "uses": ["2H"]
@@ -145,7 +145,7 @@ var algSet = {
     {
       "id": "Jd",
       "name": "Jd-Perm",
-      "desc": "Inverse and reflection of Jc.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm or Gc-Perm.",
+      "desc": "Inverse and reflection of Jc.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm (shown) or Gc-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Jd",
@@ -153,7 +153,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opp-Parity + Jb-Perm",
+          "alg": "Parity + Jb-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -163,7 +163,7 @@ var algSet = {
     {
       "id": "Je",
       "name": "Je-Perm",
-      "desc": "Inverse of Re. Reflection of Jf.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm or Ga-Perm.",
+      "desc": "Inverse of Re. Reflection of Jf.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm (shown) or Ga-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Je",
@@ -171,7 +171,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' + Opp-Parity + Ja-Perm",
+          "alg": "U' + Parity + Ja-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -181,7 +181,7 @@ var algSet = {
     {
       "id": "Jf",
       "name": "Jf-Perm",
-      "desc": "Inverse of Rf. Reflection of Je.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm or Gc-Perm.",
+      "desc": "Inverse of Rf. Reflection of Je.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm (shown) or Gc-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Jf",
@@ -189,7 +189,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' + Opp-Parity + U + Jb-Perm",
+          "alg": "U' + Parity + U + Jb-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -207,7 +207,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "F R U' R U' R U R' F' U' + Opp-Parity + U R U R' U' R' F R F'",
+          "alg": "F R U' R U' R U R' F' U' + Parity + U R U R' U' R' F R F'",
           "desc": "Parity within Y-Perm - [mounted-fish] + [sexy-sledge]",
           "status": 1,
           "uses": ["2H"]
@@ -225,7 +225,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Z-Perm + AUF + Opp-Parity",
+          "alg": "Z-Perm + AUF + Parity",
           "desc": "PLL followed by parity",
           "status": 1,
           "uses": ["2H"]
@@ -243,7 +243,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Z-Perm + AUF + Opp-Parity",
+          "alg": "Z-Perm + AUF + Parity",
           "desc": "PLL followed by parity",
           "status": 1,
           "uses": ["2H"]
@@ -253,7 +253,7 @@ var algSet = {
     {
       "id": "Rc",
       "name": "Rc-Perm",
-      "desc": "Inverse and reflection of Rd.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm or Gd-Perm.",
+      "desc": "Inverse and reflection of Rd.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm (shown) or Gd-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Rc",
@@ -261,7 +261,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opp-Parity + Ra-Perm",
+          "alg": "Parity + Ra-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -271,7 +271,7 @@ var algSet = {
     {
       "id": "Rd",
       "name": "Rd-Perm",
-      "desc": "Inverse and reflection of Rc.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm or Gb-Perm.",
+      "desc": "Inverse and reflection of Rc.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm (shown) or Gb-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Rd",
@@ -279,7 +279,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opp-Parity + U' + Rb-Perm",
+          "alg": "Parity + U' + Rb-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -289,7 +289,7 @@ var algSet = {
     {
       "id": "Re",
       "name": "Re-Perm",
-      "desc": "Inverse of Je. Reflection of Rf.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm or Gd-Perm.",
+      "desc": "Inverse of Je. Reflection of Rf.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm (shown) or Gd-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Re",
@@ -297,7 +297,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' + Opp-Parity + U + Ra-Perm",
+          "alg": "U' + Parity + U + Ra-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -307,7 +307,7 @@ var algSet = {
     {
       "id": "Rf",
       "name": "Rf-Perm",
-      "desc": "Inverse of Jf. Reflection of Re.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm or Gb-Perm.",
+      "desc": "Inverse of Jf. Reflection of Re.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm (shown) or Gb-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Rf",
@@ -315,7 +315,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' + Opp-Parity + Rb-Perm",
+          "alg": "U' + Parity + Rb-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -325,7 +325,7 @@ var algSet = {
     {
       "id": "Ta",
       "name": "Ta-Perm",
-      "desc": "Applying the opposite edge swap will result in a T-Perm or F-Perm.",
+      "desc": "Applying the opposite edge swap will result in a T-Perm (shown) or F-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Ta",
@@ -333,7 +333,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opp-Parity + T-Perm",
+          "alg": "Parity + T-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -343,7 +343,7 @@ var algSet = {
     {
       "id": "Tb",
       "name": "Tb-Perm",
-      "desc": "Applying the opposite edge swap will result in a T-Perm or F-Perm.",
+      "desc": "Applying the opposite edge swap will result in a T-Perm (shown) or F-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Tb",
@@ -351,7 +351,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' + Opp-Parity + U + T-Perm",
+          "alg": "U' + Parity + U + T-Perm",
           "desc": "Parity followed by PLL",
           "status": 1,
           "uses": ["2H"]
@@ -369,8 +369,8 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Opp-Parity + AUF + U-Perm",
-          "desc": "Parity followed by PLL",
+          "alg": "U + U-Perm + Parity",
+          "desc": "PLL followed by parity",
           "status": 1,
           "uses": ["2H"]
         },
@@ -379,7 +379,7 @@ var algSet = {
     {
       "id": "Ya",
       "name": "Ya-Perm",
-      "desc": "Reflection of Yb.<br/><br/>Applying the opposite edge swap will result in a Y-Perm or V-Perm.",
+      "desc": "Reflection of Yb.<br/><br/>Applying the opposite edge swap will result in a Y-Perm (shown) or V-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Ya",
@@ -387,7 +387,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U + Y-Perm + Opp-Parity",
+          "alg": "U + Y-Perm + Parity",
           "desc": "PLL followed by parity",
           "status": 1,
           "uses": ["2H"]
@@ -397,7 +397,7 @@ var algSet = {
     {
       "id": "Yb",
       "name": "Yb-Perm",
-      "desc": "Reflection of Ya.<br/><br/>Applying the opposite edge swap will result in a Y-Perm or V-Perm.",
+      "desc": "Reflection of Ya.<br/><br/>Applying the opposite edge swap will result in a Y-Perm (shown) or V-Perm.",
       "wiki": "",
       "algdb": "",
       "image": "PPLL-Yb",
@@ -405,7 +405,7 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "U' + Y-Perm + U' + Opp-Parity",
+          "alg": "U' + Y-Perm + U' + Parity",
           "desc": "PLL followed by parity",
           "status": 1,
           "uses": ["2H"]
