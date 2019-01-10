@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "PPLL",
     "name": "Parity Permutation of the Last Layer",
-    "desc": "TODO.",
+    "desc": "This pages shows the 22 cases where PLL parity also needs to be solved. There isn't a universally accepted naming convention but the most popular case names originate from the <a href=\"https://www.speedsolving.com/wiki/index.php/4x4x4_parity_algorithms#PLL_Parity\">Speedsolving Wiki</a> and <a href=\"http://hem.bredband.net/_zlv_/rubiks/4x4/444pllpar.html\">Stefan Lidström</a>. I've used the universally accepted case names where corners are already solved (Opp, Adj, Oa, Ob, W) but I've named the 16 remaining cases according to the best underlying [PLL].",
     "wiki": "https://www.speedsolving.com/wiki/index.php/4x4x4_parity_algorithms",
     "algdb": "http://algdb.net/",
     "uses":
@@ -27,10 +27,49 @@ var algSet = {
       "algs" :
       [
         {
-          "alg": "Uw2 Rw2 U2 r2 U2 Rw2 Uw2",
-          "desc": "Opposite edge swap",
+          "alg": "r2 U2 r2 Uw2 r2 Uw2",
+          "desc": "Traditional / popular algorithm",
           "status": 1,
-          "uses": ["2H"]
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "(Lw Rw 3Lw' R') U2 (Lw Rw 3Lw' R') Uw2 (Lw Rw 3Lw' R') Uw2",
+              "desc": "Execution from CubeSkills (Feliks Zemdegs)",
+              "status": 1,
+              "uses": []
+            }
+          ]
+        },
+        {
+          "alg": "Uw2 Rw2 U2 r2 U2 Rw2 Uw2",
+          "desc": "[Conjugate] - [Uw2 Rw2 U2: r2]",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "Uw2 (Lw' Rw') B2' (Lw Rw 3Lw' R') B2' (Lw Rw) Uw2",
+              "desc": "Inspiration from CubeSkills (Feliks Zemdegs)",
+              "status": 1,
+              "uses": []
+            }
+          ]
+        },
+        {
+          "alg": "Rw2 F2 U2 r2 U2 F2 Rw2",
+          "desc": "[Conjugate] - [Rw2 F2 U2: r2]",
+          "status": 1,
+          "uses": ["2H"],
+          "vars":
+          [
+            {
+              "alg": "Rw2' F2 U2' Rw2 R2' U2' F2 Rw2",
+              "desc": "This algorithm is also useful during [L2E] on 5x5x5",
+              "status": 1,
+              "uses": []
+            }
+          ]
         },
       ]
     },
@@ -128,7 +167,7 @@ var algSet = {
       "id": "Jc",
       "name": "Jc-Perm",
       "desc": "Inverse and reflection of Jd.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm (shown) or Ga-Perm.",
-      "wiki": "",
+      "wiki": "#Ka",
       "algdb": "",
       "image": "PPLL-Jc",
       "prob": "1/18",
@@ -146,7 +185,7 @@ var algSet = {
       "id": "Jd",
       "name": "Jd-Perm",
       "desc": "Inverse and reflection of Jc.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm (shown) or Gc-Perm.",
-      "wiki": "",
+      "wiki": "#Kb",
       "algdb": "",
       "image": "PPLL-Jd",
       "prob": "1/18",
@@ -164,7 +203,7 @@ var algSet = {
       "id": "Je",
       "name": "Je-Perm",
       "desc": "Inverse of Re. Reflection of Jf.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm (shown) or Ga-Perm.",
-      "wiki": "",
+      "wiki": "#Pd",
       "algdb": "",
       "image": "PPLL-Je",
       "prob": "1/18",
@@ -182,7 +221,7 @@ var algSet = {
       "id": "Jf",
       "name": "Jf-Perm",
       "desc": "Inverse of Rf. Reflection of Je.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm (shown) or Gc-Perm.",
-      "wiki": "",
+      "wiki": "#Pa",
       "algdb": "",
       "image": "PPLL-Jf",
       "prob": "1/18",
@@ -200,7 +239,7 @@ var algSet = {
       "id": "N",
       "name": "N-Perm",
       "desc": "Applying the opposite edge swap will result in an N-Perm.",
-      "wiki": "",
+      "wiki": "#Opposite.2Fdiagonal",
       "algdb": "",
       "image": "PPLL-N",
       "prob": "1/36",
@@ -217,8 +256,8 @@ var algSet = {
     {
       "id": "Oa",
       "name": "Oa-Perm",
-      "desc": "Inverse and reflection of Ob.<br/><br/>Applying the opposite edge swap will result in a Z-Perm.",
-      "wiki": "",
+      "desc": "Inverse and reflection of Ob. This case is a counter-clockwise 4-cycle of edges.<br/><br/>Applying the opposite edge swap will result in a Z-Perm.",
+      "wiki": "#Oa",
       "algdb": "",
       "image": "PPLL-Oa",
       "prob": "1/72",
@@ -235,8 +274,8 @@ var algSet = {
     {
       "id": "Ob",
       "name": "Ob-Perm",
-      "desc": "Inverse and reflection of Oa.<br/><br/>Applying the opposite edge swap will result in a Z-Perm.",
-      "wiki": "",
+      "desc": "Inverse and reflection of Oa. This case is a clockwise 4-cycle of edges.<br/><br/>Applying the opposite edge swap will result in a Z-Perm.",
+      "wiki": "#Ob",
       "algdb": "",
       "image": "PPLL-Ob",
       "prob": "1/72",
@@ -254,7 +293,7 @@ var algSet = {
       "id": "Rc",
       "name": "Rc-Perm",
       "desc": "Inverse and reflection of Rd.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm (shown) or Gd-Perm.",
-      "wiki": "",
+      "wiki": "#Db",
       "algdb": "",
       "image": "PPLL-Rc",
       "prob": "1/18",
@@ -272,7 +311,7 @@ var algSet = {
       "id": "Rd",
       "name": "Rd-Perm",
       "desc": "Inverse and reflection of Rc.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm (shown) or Gb-Perm.",
-      "wiki": "",
+      "wiki": "#Da",
       "algdb": "",
       "image": "PPLL-Rd",
       "prob": "1/18",
@@ -290,7 +329,7 @@ var algSet = {
       "id": "Re",
       "name": "Re-Perm",
       "desc": "Inverse of Je. Reflection of Rf.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm (shown) or Gd-Perm.",
-      "wiki": "",
+      "wiki": "#Pc",
       "algdb": "",
       "image": "PPLL-Re",
       "prob": "1/18",
@@ -308,7 +347,7 @@ var algSet = {
       "id": "Rf",
       "name": "Rf-Perm",
       "desc": "Inverse of Jf. Reflection of Re.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm (shown) or Gb-Perm.",
-      "wiki": "",
+      "wiki": "#Pb",
       "algdb": "",
       "image": "PPLL-Rf",
       "prob": "1/18",
@@ -326,7 +365,7 @@ var algSet = {
       "id": "Ta",
       "name": "Ta-Perm",
       "desc": "Applying the opposite edge swap will result in a T-Perm (shown) or F-Perm.",
-      "wiki": "",
+      "wiki": "#I_permutation",
       "algdb": "",
       "image": "PPLL-Ta",
       "prob": "1/18",
@@ -344,7 +383,7 @@ var algSet = {
       "id": "Tb",
       "name": "Tb-Perm",
       "desc": "Applying the opposite edge swap will result in a T-Perm (shown) or F-Perm.",
-      "wiki": "",
+      "wiki": "#Adjacent_3",
       "algdb": "",
       "image": "PPLL-Tb",
       "prob": "1/18",
@@ -362,7 +401,7 @@ var algSet = {
       "id": "W",
       "name": "W-Perm",
       "desc": "Applying the opposite edge swap will result in a U-Perm.",
-      "wiki": "",
+      "wiki": "#8_permutation",
       "algdb": "",
       "image": "PPLL-W",
       "prob": "1/18",
@@ -380,7 +419,7 @@ var algSet = {
       "id": "Ya",
       "name": "Ya-Perm",
       "desc": "Reflection of Yb.<br/><br/>Applying the opposite edge swap will result in a Y-Perm (shown) or V-Perm.",
-      "wiki": "",
+      "wiki": "#Qb",
       "algdb": "",
       "image": "PPLL-Ya",
       "prob": "1/18",
@@ -398,7 +437,7 @@ var algSet = {
       "id": "Yb",
       "name": "Yb-Perm",
       "desc": "Reflection of Ya.<br/><br/>Applying the opposite edge swap will result in a Y-Perm (shown) or V-Perm.",
-      "wiki": "",
+      "wiki": "#Qa",
       "algdb": "",
       "image": "PPLL-Yb",
       "prob": "1/18",
@@ -482,28 +521,28 @@ var algSet = {
         {
           "id": "2edges",
           "name": "Two Edges",
-          "desc": "TODO.",
+          "desc": "These are the two pure edge-parity cases. I've used universally recognised case names - i.e. Opp and Adj.",
           "wiki": "#Two_dedges_.28oriented.29",
           "cases": ["Opp", "Adj"]
         },
         {
           "id": "4edges",
           "name": "Four Edges",
-          "desc": "TODO.",
+          "desc": "These can be reduced to a U-Perm or Z-Perm. I've used universally recognised case names - i.e Oa, Ob, W.",
           "wiki": "#Four_dedges_.28oriented.29",
           "cases": ["Oa", "Ob", "W"]
         },
         {
           "id": "2corners",
           "name": "Two Corners",
-          "desc": "TODO.",
+          "desc": "These are the two pure corner-parity cases and are quite striking in appearance.",
           "wiki": "#Two_corner_swaps",
           "cases": ["Tb", "N"]
         },
         {
           "id": "both",
           "name": "Edges + Corners",
-          "desc": "TODO.",
+          "desc": "These are the bulk of the cases and the names indicate which PLL can be used during the solution.",
           "wiki": "#Two_corner_swap_and_a_dedge_3-cycle",
           "cases": ["Ac", "Ad", "Ea", "Eb", "Jc", "Jd", "Je", "Jf", "Rc", "Rd", "Re", "Rf", "Ta", "Ya", "Yb"]
         },
@@ -518,19 +557,19 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Corner Swap",
-          "desc": "TODO.",
+          "desc": "I've used universally recognised case names where corners are already solved - i.e. Opp, Adj, Oa, Ob, W.",
           "cases": ["Opp", "Adj", "Oa", "Ob", "W"]
         },
         {
           "id": "adjacent",
           "name": "Adjacent Corner Swap",
-          "desc": "TODO.",
+          "desc": "I've chosen to name the adjecent corner swaps according to the best underlying PLL - i.e. J-Perms / R-Perms preferred over G-Perms.",
           "cases": ["Ac", "Ad", "Jc", "Jd", "Je", "Jf", "Rc", "Rd", "Re", "Rf", "Ta", "Tb"]
         },
         {
           "id": "diagonal",
           "name": "Diagonal Corner Swap",
-          "desc": "TODO.",
+          "desc": "All but one of the diagonal corner swap cases can be solved using a modified Y-Perm.",
           "cases": ["Ya", "Yb", "Ea", "Eb", "N"]
         },
       ]
