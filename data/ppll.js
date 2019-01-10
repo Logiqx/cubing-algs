@@ -272,9 +272,9 @@ var algSet = {
       ]
     },
     {
-      "id": "Je",
-      "name": "Je-Perm",
-      "desc": "Inverse of Re. Reflection of Jf.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm (shown) or Ga-Perm. A dedicated algorithm exists (parity within T-Perm) but it has little / no benefit.",
+      "id": "Ge",
+      "name": "Ge-Perm",
+      "desc": "Inverse of Gf. Reflection of Gg.<br/><br/>Applying the opposite edge swap will result in a Ja-Perm (shown) or Ga-Perm. A dedicated algorithm exists (parity within T-Perm) but it has little / no benefit.",
       "wiki": "#Pd",
       "algdb": "",
       "image": "PPLL-Je",
@@ -308,9 +308,9 @@ var algSet = {
       ]
     },
     {
-      "id": "Jf",
-      "name": "Jf-Perm",
-      "desc": "Inverse of Rf. Reflection of Je.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm (shown) or Gc-Perm. A dedicated algorithm exists (parity within lefty T-Perm) but it has little / no benefit.",
+      "id": "Gg",
+      "name": "Gg-Perm",
+      "desc": "Inverse of Gh. Reflection of Ge.<br/><br/>Applying the opposite edge swap will result in a Jb-Perm (shown) or Gc-Perm. A dedicated algorithm exists (parity within lefty T-Perm) but it has little / no benefit.",
       "wiki": "#Pa",
       "algdb": "",
       "image": "PPLL-Jf",
@@ -482,9 +482,9 @@ var algSet = {
       ]
     },
     {
-      "id": "Re",
-      "name": "Re-Perm",
-      "desc": "Inverse of Je. Reflection of Rf.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm (shown) or Gd-Perm. It can however be solved using algorithms based on the Ja-Perm or lefty T-Perm.",
+      "id": "Gf",
+      "name": "Gf-Perm",
+      "desc": "Inverse of Ge. Reflection of Gh.<br/><br/>Applying the opposite edge swap will result in a Ra-Perm (shown) or Gd-Perm. It can however be solved using algorithms based on the Ja-Perm or lefty T-Perm.",
       "wiki": "#Pc",
       "algdb": "",
       "image": "PPLL-Re",
@@ -518,9 +518,9 @@ var algSet = {
       ]
     },
     {
-      "id": "Rf",
-      "name": "Rf-Perm",
-      "desc": "Inverse of Jf. Reflection of Re.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm (shown) or Gb-Perm. It can however be solved using algorithms based on the Jb-Perm or T-Perm.",
+      "id": "Gh",
+      "name": "Gh-Perm",
+      "desc": "Inverse of Gg. Reflection of Gf.<br/><br/>Applying the opposite edge swap will result in a Rb-Perm (shown) or Gb-Perm. It can however be solved using algorithms based on the Jb-Perm or T-Perm.",
       "wiki": "#Pb",
       "algdb": "",
       "image": "PPLL-Rf",
@@ -734,9 +734,14 @@ var algSet = {
           "cases": ["Ea", "Eb"]
         },
         {
+          "id": "g",
+          "name": "G-Perms",
+          "cases": ["Ge", "Gf", "Gg", "Gh"]
+        },
+        {
           "id": "j",
           "name": "J-Perms",
-          "cases": ["Jc", "Jd", "Je", "Jf"]
+          "cases": ["Jc", "Jd"]
         },
         {
           "id": "n",
@@ -751,7 +756,7 @@ var algSet = {
         {
           "id": "r",
           "name": "R-Perms",
-          "cases": ["Rc", "Rd", "Re", "Rf"]
+          "cases": ["Rc", "Rd"]
         },
         {
           "id": "t",
@@ -802,7 +807,7 @@ var algSet = {
           "name": "Edges + Corners",
           "desc": "These are the bulk of the cases and the names indicate which PLL can be used during the solution.",
           "wiki": "#Two_corner_swap_and_a_dedge_3-cycle",
-          "cases": ["Ac", "Ad", "Ea", "Eb", "Jc", "Jd", "Je", "Jf", "Rc", "Rd", "Re", "Rf", "Ta", "Ya", "Yb"]
+          "cases": ["Ac", "Ad", "Ea", "Eb", "Ge", "Gf", "Gg", "Gh", "Jc", "Jd", "Rc", "Rd", "Ta", "Ya", "Yb"]
         },
       ]
     },
@@ -822,7 +827,7 @@ var algSet = {
           "id": "adjacent",
           "name": "Adjacent Corner Swap",
           "desc": "I've chosen to name the adjecent corner swaps according to the best underlying PLL - i.e. J-Perms / R-Perms preferred over G-Perms.",
-          "cases": ["Ac", "Ad", "Jc", "Jd", "Je", "Jf", "Rc", "Rd", "Re", "Rf", "Ta", "Tb"]
+          "cases": ["Ac", "Ad", "Ge", "Gf", "Gg", "Gh", "Jc", "Jd", "Rc", "Rd", "Ta", "Tb"]
         },
         {
           "id": "diagonal",
