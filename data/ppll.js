@@ -161,6 +161,12 @@ var algSet = {
           "status": -1,
           "uses": ["2H"]
         },
+        {
+          "alg": "R' F R U R' U' R' F' R U R U' + Parity + U' 3Rw U R' U' 3Rw' F R F'",
+          "desc": "Interesting discovery but fairly useless!",
+          "status": -1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
