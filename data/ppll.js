@@ -658,7 +658,7 @@ var algSet = {
     {
       "id": "Ya",
       "name": "Ya-Perm",
-      "desc": "Reflection of Yb.<br/><br/>Applying the opposite edge swap will result in a Y-Perm or V-Perm.",
+      "desc": "Applying the opposite edge swap will result in a Y-Perm or V-Perm.",
       "wiki": "#Qb",
       "algdb": "",
       "image": "PPLL-Ya",
@@ -688,7 +688,7 @@ var algSet = {
     {
       "id": "Yb",
       "name": "Yb-Perm",
-      "desc": "Reflection of Ya.<br/><br/>Applying the opposite edge swap will result in a Y-Perm or V-Perm.",
+      "desc": "Applying the opposite edge swap will result in a Y-Perm or V-Perm.",
       "wiki": "#Qa",
       "algdb": "",
       "image": "PPLL-Yb",
