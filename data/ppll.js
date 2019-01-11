@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "PPLL",
     "name": "Parity Permutation of the Last Layer",
-    "desc": "This pages shows the 22 cases where PLL parity also needs to be solved. There isn't a universally accepted naming convention but the most popular case names originate from the <a href=\"https://www.speedsolving.com/wiki/index.php/4x4x4_parity_algorithms#PLL_Parity\">Speedsolving Wiki</a> and <a href=\"http://hem.bredband.net/_zlv_/rubiks/4x4/444pllpar.html\">Stefan Lidström</a>. I've used the universally accepted case names where corners are already solved (Opp, Adj, Oa, Ob, W) but I've named the 16 remaining cases according to the best underlying [PLL].",
+    "desc": "This pages shows the 22 cases where permutation and parity both need to be solved. There isn't a universally accepted naming convention but commonly used case names originate from the <a href=\"https://www.speedsolving.com/wiki/index.php/4x4x4_parity_algorithms#PLL_Parity\">Speedsolving Wiki</a> and <a href=\"http://hem.bredband.net/_zlv_/rubiks/4x4/444pllpar.html\">Stefan Lidström</a>. I've used the widely accepted [EPLL] names (Opp, Adj, Oa, Ob, W) but I've named the 16 remaining cases to correspond with an underlying [PLL].",
     "wiki": "https://www.speedsolving.com/wiki/index.php/4x4x4_parity_algorithms",
     "algdb": "http://algdb.net/",
     "uses":
@@ -826,13 +826,13 @@ var algSet = {
         {
           "id": "noswap",
           "name": "No Corner Swap",
-          "desc": "I've used universally recognised case names where corners are already solved - i.e. Opp, Adj, Oa, Ob, W.",
+          "desc": "I've used universally recognised [EPLL] names - i.e. Opp, Adj, Oa, Ob, W.",
           "cases": ["Opp", "Adj", "Oa", "Ob", "W"]
         },
         {
           "id": "adjacent",
           "name": "Adjacent Corner Swap",
-          "desc": "I've chosen to name the adjecent corner swaps according to the best underlying PLL - i.e. J-Perms / R-Perms preferred over G-Perms.",
+          "desc": "I've chosen to name the adjacent corner swaps according to the underlying PLL.",
           "cases": ["Ac", "Ad", "Ge", "Gf", "Gg", "Gh", "Jc", "Jd", "Rc", "Rd", "Ta", "Tb"]
         },
         {
