@@ -464,7 +464,7 @@ var algSet = {
     {
       "id": "15",
       "name": "Same Colour on Top",
-      "desc": "Cases 15 and 16 can be solved by hiding the edge and splitting the pieces apart to set up a regular insertion.<br/><br/>Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
+      "desc": "Cases 15 and 16 are solved by splitting the pieces apart to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l15",
       "image": "F2L-15",
@@ -488,7 +488,7 @@ var algSet = {
     {
       "id": "16",
       "name": "Same Colour on Top",
-      "desc": "Cases 15 and 16 can be solved by hiding the edge and splitting the pieces apart to set up a regular insertion.<br/><br/>Alternative techniques / algorithms may also be used such as \"2-Gen\" (longer but rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and clever use of the M-slice.",
+      "desc": "Cases 15 and 16 are solved by splitting the pieces apart to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l16",
       "image": "F2L-16",
@@ -665,7 +665,7 @@ var algSet = {
     {
       "id": "23",
       "name": "Cross Colour on Top",
-      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer.<br/><br/>Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
+      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer.",
       "wiki": "",
       "algdb": "f2l23",
       "image": "F2L-23",
@@ -689,7 +689,7 @@ var algSet = {
     {
       "id": "24",
       "name": "Cross Colour on Top",
-      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer.<br/><br/>Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
+      "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer.",
       "wiki": "",
       "algdb": "f2l24",
       "image": "F2L-24",
@@ -722,7 +722,7 @@ var algSet = {
     {
       "id": "25",
       "name": "Corner in Slot",
-      "desc": "Cases 25 and 26 can be solved in the same way as second layer edges in the [LBL] method.<br/><br/>Alternative techniques / algorithms may also be used such as \"2-Gen\" (rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and [RUF] algorithms.",
+      "desc": "Cases 25 and 26 can be solved in the same way as second layer edges in the [LBL] method.",
       "wiki": "",
       "algdb": "f2l25",
       "image": "F2L-25",
@@ -755,7 +755,7 @@ var algSet = {
     {
       "id": "26",
       "name": "Corner in Slot",
-      "desc": "Cases 25 and 26 can be solved in the same way as second layer edges in the [LBL] method.<br/><br/>Alternative techniques / algorithms may also be used such as \"2-Gen\" (rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and [RUF] algorithms.",
+      "desc": "Cases 25 and 26 can be solved in the same way as second layer edges in the [LBL] method.",
       "wiki": "",
       "algdb": "f2l26",
       "image": "F2L-26",
