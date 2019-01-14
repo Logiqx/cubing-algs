@@ -49,6 +49,11 @@ menuItems =
 		[
 			{
 				"type": "link",
+				"desc": "F2L",
+				"href": "f2l.html"
+			},
+			{
+				"type": "link",
 				"desc": "2LOLL",
 				"href": "2loll.html"
 			},
