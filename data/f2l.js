@@ -274,13 +274,13 @@ var algSet = {
           "alg": "y' U2' (R' U R) U (R' U' R)",
           "desc": "Hide edge, reposition corner",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
         {
           "alg": "y U2' (L' U L) U (L' U' L)",
           "desc": "Hide edge, reposition corner",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
       ]
     },
@@ -310,13 +310,13 @@ var algSet = {
           "alg": "U2' (R U' R') U' (R U R')",
           "desc": "Hide edge, reposition corner",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
         {
           "alg": "y2 U (L U' L') U' (L U L')",
           "desc": "Hide edge, reposition corner",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
       ]
     },
@@ -811,18 +811,6 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U R') U2 y' (R' U R)",
-          "desc": "Connect pieces with single trigger",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
-        {
-          "alg": "y2 (L U L') U2 y' (L' U L)",
-          "desc": "Connect pieces with single trigger",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
-        {
           "alg": "y' (R' U R) U' (R' U R)",
           "desc": "Hide edge to make pair on side",
           "status": 1,
@@ -833,6 +821,18 @@ var algSet = {
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "(R U R') U2 y' (R' U R)",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "y2 (L U L') U2 y' (L' U L)",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -1012,7 +1012,7 @@ var algSet = {
           "alg": "y' U (R' U R) U2' (R' U R)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": [],
           "vars":
           [
             {
@@ -1027,7 +1027,7 @@ var algSet = {
           "alg": "y U (L' U L) U2' (L' U L)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
       ]
     },
@@ -1041,18 +1041,6 @@ var algSet = {
       "prob": "2/75",
       "algs":
       [
-        {
-          "alg": "U2 (R U R') U' y' (R' U R)",
-          "desc": "Connect pieces with single trigger",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
-        {
-          "alg": "y2 U2 (L U L') U' y' (L' U L)",
-          "desc": "Connect pieces with single trigger",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
         {
           "alg": "U' (R U R') U y' (R' U' R)",
           "desc": "Hide corner, reposition edge",
@@ -1072,7 +1060,7 @@ var algSet = {
           "alg": "y2 U' (L U L') U y' (L' U' L)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": [],
           "vars":
           [
             {
@@ -1082,6 +1070,18 @@ var algSet = {
               "uses": []
             },
           ]
+        },
+        {
+          "alg": "U2 (R U R') U' y' (R' U R)",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U2 (L U L') U' y' (L' U L)",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": []
         },
       ]
     },
