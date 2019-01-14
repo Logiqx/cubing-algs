@@ -151,13 +151,13 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' U (R' U' R) U2 (R' U R)",
+          "alg": "y' U (R' U' R) U2' (R' U R)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y U (L' U' L) U2 (L' U L)",
+          "alg": "y U (L' U' L) U2' (L' U L)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -199,7 +199,7 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' U (R' U2' R) U2 (R' U R)",
+          "alg": "y' U (R' U2 R) U2' (R' U R)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -319,7 +319,7 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' U (R' U2' R) U' y (R U R')",
+          "alg": "y' U (R' U2 R) U' y (R U R')",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -391,13 +391,13 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' (R' U R) y U2' (R U R')",
+          "alg": "y' (R' U R) U2' y (R U R')",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y (L' U L) y U2' (L U L')",
+          "alg": "y (L' U L) U2' y (L U L')",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -415,13 +415,13 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U' R') y' U2 (R' U' R)",
+          "alg": "(R U' R') U2 y' (R' U' R)",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y2 (L U' L') y' U2 (L' U' L)",
+          "alg": "y2 (L U' L') U2 y' (L' U' L)",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -463,7 +463,7 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' (R' U2' R) U (R' U' R)",
+          "alg": "y' (R' U2 R) U (R' U' R)",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -511,7 +511,7 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' U' (R' U2' R) U' (R' U R)",
+          "alg": "y' U' (R' U2 R) U' (R' U R)",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -631,13 +631,13 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' U' (R' U R) y U (R U' R')",
+          "alg": "y' U' (R' U R) U y (R U' R')",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y U' (L' U L) y U (L U' L')",
+          "alg": "y U' (L' U L) U y (L U' L')",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -655,13 +655,13 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U (R U' R') y' U' (R' U R)",
+          "alg": "U (R U' R') U' y' (R' U R)",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y2 U (L U' L') y' U' (L' U L)",
+          "alg": "y2 U (L U' L') U' y' (L' U L)",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -703,13 +703,13 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U R') U2' (R' U R)",
+          "alg": "(R U R') U2 y' (R' U R)",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y2 (L U L') U2' (L' U L)",
+          "alg": "y2 (L U L') U2 y' (L' U L)",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -871,13 +871,13 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U (R U R') U2' (R U R')",
+          "alg": "U (R U R') U2 (R U R')",
           "desc": "Bring edge to top",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "U (L U L') U2' (L U L')",
+          "alg": "U (L U L') U2 (L U L')",
           "desc": "Bring edge to top",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -907,13 +907,13 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U2 (R U R') y' U' (R' U R)",
+          "alg": "U2 (R U R') U' y' (R' U R)",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y2 U2 (L U L') y' U' (L' U L)",
+          "alg": "y2 U2 (L U L') U' y' (L' U L)",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1075,13 +1075,13 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U' R') y' U2 (R' U' R) U' (R' U R)",
+          "alg": "(R U' R') U2 y' (R' U' R) U' (R' U R)",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y2 (L U' L') y' U2 (L' U' L) U' (L' U L)",
+          "alg": "y2 (L U' L') U2 y' (L' U' L) U' (L' U L)",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
