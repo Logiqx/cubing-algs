@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "F2L",
     "name": "First Two Layers",
-    "desc": "This page lists the 42 basic [F2L] cases with intuitive algorithms that can be used during solves.",
+    "desc": "This page lists the 42 basic [F2L] cases with intuitive solutions that can be used during [CFOP] solves. It is important to understand how the intuitive approach works and how it is all about setting up a basic pair (i.e. cases 1-4) which can then be inserted using a single trigger. To benefit from empty / unsolved slots you may be able to utilise an alternative setup to avoid one or more cube rotations but this skill will naturally develop with experience. You may also notice that almost half of the cases below are actually mirrors of each other and can therefore be solved using the same approach. All cases can also be solved in an identically manner for front-right / back-left and back-right / front-left slots, thus avoiding the need for a y2 rotation. These variations can be thought of as the same F2L case but executed from a different angle. Intuitive F2L is in contrast to advanced F2L which incorporates algorithmic solutions for the full range of scenarios that may be encountered during a CFOP solve.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/F2L",
     "algdb": "http://algdb.net/puzzle/333/f2l/",
     "uses":
@@ -574,7 +574,7 @@ var algSet = {
     },
     {
       "id": "23",
-      "name": "Same Colour on Side",
+      "name": "Cross Colour on Top",
       "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer.<br/><br/>Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
       "wiki": "",
       "algdb": "f2l23",
@@ -598,7 +598,7 @@ var algSet = {
     },
     {
       "id": "24",
-      "name": "Same Colour on Side",
+      "name": "Cross Colour on Top",
       "desc": "Cases 23 and 24 cannot be solved with two simple triggers, despite both pieces being in the U-layer.<br/><br/>Depending on the specific case or angle it may be beneficial to use an [RUF] algorithm to avoid a cube rotation.",
       "wiki": "",
       "algdb": "f2l24",
@@ -622,7 +622,8 @@ var algSet = {
     },
     {
       "id": "25",
-      "name": "Make Pair on Top",
+      "name": "Corner in Slot",
+      "desc": "Cases 25 and 26 can be solved in the same way as second layer edges in the [LBL] method.<br/><br/>Alternative techniques / algorithms may also be used such as \"2-Gen\" (rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and [RUF] algorithms.",
       "wiki": "",
       "algdb": "f2l25",
       "image": "F2L-25",
@@ -631,7 +632,13 @@ var algSet = {
       [
         {
           "alg": "y' U' (R' U R) y U (R U' R')",
-          "desc": "BLAH",
+          "desc": "[LBL] solution",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U' (L' U L) y U (L U' L')",
+          "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -639,7 +646,8 @@ var algSet = {
     },
     {
       "id": "26",
-      "name": "Make Pair on Top",
+      "name": "Corner in Slot",
+      "desc": "Cases 25 and 26 can be solved in the same way as second layer edges in the [LBL] method.<br/><br/>Alternative techniques / algorithms may also be used such as \"2-Gen\" (rotationless [RU]), \"Keyhole\" (rotationless [RUD]) and [RUF] algorithms.",
       "wiki": "",
       "algdb": "f2l26",
       "image": "F2L-26",
@@ -648,7 +656,13 @@ var algSet = {
       [
         {
           "alg": "U (R U' R') y' U' (R' U R)",
-          "desc": "BLAH",
+          "desc": "[LBL] solution",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U (L U' L') y' U' (L' U L)",
+          "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -656,7 +670,8 @@ var algSet = {
     },
     {
       "id": "27",
-      "name": "Make Pair on Side",
+      "name": "Corner in Slot",
+      "desc": "Cases 27 and 28 are solved by hiding the edge and making the pair on the side.",
       "wiki": "",
       "algdb": "f2l27",
       "image": "F2L-27",
@@ -665,7 +680,13 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U (R U' R')",
-          "desc": "BLAH",
+          "desc": "Hide edge to make pair on side",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U (L U' L')",
+          "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -673,7 +694,8 @@ var algSet = {
     },
     {
       "id": "28",
-      "name": "Make Pair on Side",
+      "name": "Corner in Slot",
+      "desc": "Cases 27 and 28 are solved by hiding the edge and making the pair on the side.",
       "wiki": "",
       "algdb": "f2l28",
       "image": "F2L-28",
@@ -681,8 +703,26 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "(R U R') U2' (R' U R)",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U L') U2' (L' U L)",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
           "alg": "y' (R' U R) U' (R' U R)",
-          "desc": "BLAH",
+          "desc": "Hide edge to make pair on side",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y (L' U L) U' (L' U L)",
+          "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -690,7 +730,8 @@ var algSet = {
     },
     {
       "id": "29",
-      "name": "Double Sexy",
+      "name": "Corner in Slot",
+      "desc": "Cases 29 and 30 can be solved by executing the [double-sexy] move.",
       "wiki": "",
       "algdb": "f2l29",
       "image": "F2L-29",
@@ -699,7 +740,13 @@ var algSet = {
       [
         {
           "alg": "y' (R' U' R) U (R' U' R)",
-          "desc": "BLAH",
+          "desc": "[double-sexy] move",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y (L' U' L) U (L' U' L)",
+          "desc": "[double-sexy] move (lefty)",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -707,7 +754,8 @@ var algSet = {
     },
     {
       "id": "30",
-      "name": "Double Sexy",
+      "name": "Corner in Slot",
+      "desc": "Cases 29 and 30 can be solved by executing the [double-sexy] move.",
       "wiki": "",
       "algdb": "f2l30",
       "image": "F2L-30",
@@ -716,7 +764,13 @@ var algSet = {
       [
         {
           "alg": "(R U R') U' (R U R')",
-          "desc": "BLAH",
+          "desc": "[double-sexy] move",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U L') U' (L U L')",
+          "desc": "[double-sexy] move (lefty)",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -724,7 +778,8 @@ var algSet = {
     },
     {
       "id": "31",
-      "name": "Reposition Pair",
+      "name": "Edge in Slot",
+      "desc": "Case 31 can be solved by extracting the pair and inserting it normally.",
       "wiki": "",
       "algdb": "f2l31",
       "image": "F2L-31",
@@ -733,7 +788,13 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U y' (R' U R)",
-          "desc": "BLAH",
+          "desc": "Extract pair then insert normally",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U y' (L' U L)",
+          "desc": "Extract pair then insert normally",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -741,7 +802,8 @@ var algSet = {
     },
     {
       "id": "32",
-      "name": "Triple Inverse Sexy",
+      "name": "Edge in Slot",
+      "desc": "Case 32 can be solved by executing the [sexy] move (or the inverse) three times.",
       "wiki": "",
       "algdb": "f2l32",
       "image": "F2L-32",
@@ -749,16 +811,35 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U (R U' R') U (R U' R') U (R U' R')",
-          "desc": "BLAH",
+          "alg": "(U R U' R') (U R U' R') (U R U' R')",
+          "desc": "Reverse [triple-sexy] move",
           "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (U L U' L') (U L U' L') (U L U' L')",
+          "desc": "Reverse [triple-sexy] move (lefty)",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "(R U R' U') (R U R' U') (R U R' U')",
+          "desc": "[triple-sexy] move",
+          "status": -1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U L' U') (L U L' U') (L U L' U')",
+          "desc": "[triple-sexy] move",
+          "status": -1,
           "uses": ["2H", "OH"]
         },
       ]
     },
     {
       "id": "33",
-      "name": "Reposition Edge",
+      "name": "Edge in Slot",
+      "desc": "Cases 33 and 34 can be solved by bringing the edge into the top layer to set up a simple pair.",
       "wiki": "",
       "algdb": "f2l33",
       "image": "F2L-33",
@@ -767,7 +848,13 @@ var algSet = {
       [
         {
           "alg": "U' (R U' R') U2 (R U' R')",
-          "desc": "BLAH",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U' (L U' L') U2 (L U' L')",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -775,7 +862,8 @@ var algSet = {
     },
     {
       "id": "34",
-      "name": "Reposition Edge",
+      "name": "Edge in Slot",
+      "desc": "Cases 33 and 34 can be solved by bringing the edge into the top layer to set up a simple pair.",
       "wiki": "",
       "algdb": "f2l34",
       "image": "F2L-34",
@@ -783,14 +871,26 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' U (R' U R) U2' (R' U R)",
-          "desc": "BLAH",
+          "alg": "U (R U R') U2' (R U R')",
+          "desc": "Bring edge to top",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "U (R U R') U2' (R U R')",
-          "desc": "BLAH",
+          "alg": "U (L U L') U2' (L U L')",
+          "desc": "Bring edge to top",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y' U (R' U R) U2' (R' U R)",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U (L' U L) U2' (L' U L)",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -798,7 +898,8 @@ var algSet = {
     },
     {
       "id": "35",
-      "name": "Reposition Edge and Flip Corner",
+      "name": "Edge in Slot",
+      "desc": "Cases 35 and 36 can be solved by bringing the edge into the top layer to set up a simple pair.",
       "wiki": "",
       "algdb": "f2l35",
       "image": "F2L-35",
@@ -806,14 +907,26 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U' (R U R') U y' (R' U' R)",
-          "desc": "BLAH",
+          "alg": "U2 (R U R') y' U' (R' U R)",
+          "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "U2 (R U R') y' U' (R' U R)",
-          "desc": "BLAH",
+          "alg": "y2 U2 (L U L') y' U' (L' U L)",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "U' (R U R') U y' (R' U' R)",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U' (L U L') U y' (L' U' L)",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -821,7 +934,8 @@ var algSet = {
     },
     {
       "id": "36",
-      "name": "Reposition Edge and Flip Corner",
+      "name": "Edge in Slot",
+      "desc": "Cases 35 and 36 can be solved by bringing the edge into the top layer to set up a simple pair.",
       "wiki": "",
       "algdb": "f2l36",
       "image": "F2L-36",
@@ -830,7 +944,13 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U' R) U' y (R U R')",
-          "desc": "BLAH",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y U (L' U' L) U' y (L U L')",
+          "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -838,24 +958,20 @@ var algSet = {
     },
     {
       "id": "37",
-      "name": "Solved",
+      "name": "Both Pieces in Slot",
+      "desc": "This is the solved case.",
       "wiki": "",
       "algdb": "f2l37",
       "image": "F2L-37",
       "prob": "1/150",
       "algs":
       [
-        {
-          "alg": "",
-          "desc": "BLAH",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
       ]
     },
     {
       "id": "38",
-      "name": "Split and Make Pair on Top",
+      "name": "Both Pieces in Slot",
+      "desc": "Case 38 can be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
       "wiki": "",
       "algdb": "f2l38",
       "image": "F2L-38",
@@ -864,7 +980,13 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U y' (R' U2 R) U2' (R' U R)",
-          "desc": "BLAH",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U y' (L' U2 L) U2' (L' U L)",
+          "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -872,7 +994,8 @@ var algSet = {
     },
     {
       "id": "39",
-      "name": "Split and Make Pair on Top",
+      "name": "Both Pieces in Slot",
+      "desc": "Cases 39 and 40 can both be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
       "wiki": "",
       "algdb": "f2l39",
       "image": "F2L-39",
@@ -881,7 +1004,13 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U' (R U R') U2 (R U' R')",
-          "desc": "BLAH",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U' (L U L') U2 (L U' L')",
+          "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -889,7 +1018,8 @@ var algSet = {
     },
     {
       "id": "40",
-      "name": "Split and Make Pair on Side",
+      "name": "Both Pieces in Slot",
+      "desc": "Cases 39 and 40 can both be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
       "wiki": "",
       "algdb": "f2l40",
       "image": "F2L-40",
@@ -898,7 +1028,13 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U (R U2' R') U (R U' R')",
-          "desc": "BLAH",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U (L U2' L') U (L U' L')",
+          "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -906,7 +1042,8 @@ var algSet = {
     },
     {
       "id": "41",
-      "name": "Split Pair and Flip Corner",
+      "name": "Both Pieces in Slot",
+      "desc": "Cases 41 and 42 can both be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
       "wiki": "",
       "algdb": "f2l41",
       "image": "F2L-41",
@@ -915,7 +1052,13 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U y' (R' U' R) U' (R' U' R)",
-          "desc": "BLAH",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U y' (L' U' L) U' (L' U' L)",
+          "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -923,7 +1066,8 @@ var algSet = {
     },
     {
       "id": "42",
-      "name": "Split and Make Pair on Side",
+      "name": "Both Pieces in Slot",
+      "desc": "Cases 41 and 42 can both be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
       "wiki": "",
       "algdb": "f2l42",
       "image": "F2L-42",
@@ -932,7 +1076,13 @@ var algSet = {
       [
         {
           "alg": "(R U' R') y' U2 (R' U' R) U' (R' U R)",
-          "desc": "BLAH",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') y' U2 (L' U' L) U' (L' U L)",
+          "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -944,7 +1094,7 @@ var algSet = {
     {
       "id": "simple",
       "name": "Simple Groups",
-      "desc": "BLAH.",
+      "desc": "The groups below are based on the location of the corner and the edge pieces.",
       "groups":
       [
         {
@@ -968,19 +1118,19 @@ var algSet = {
         {
           "id": "cset",
           "name": "Corner in Slot, Edge on Top",
-          "desc": "BLAH.",
+          "desc": "These cases may be solved using a number of approaches.",
           "cases": ["30", "29", "27", "28", "25", "26"]
         },
         {
           "id": "ctes",
           "name": "Corner on Top, Edge in Slot",
-          "desc": "BLAH.",
+          "desc": "These cases may be solved using a number of approaches.",
           "cases": ["32", "31", "33", "34", "35", "36"]
         },
         {
           "id": "bps",
           "name": "Both Pieces in Slot",
-          "desc": "BLAH.",
+          "desc": "These cases are typically solved by separating both pieces as they are moved into the top layer.",
           "cases": ["37", "38", "39", "40", "41", "42"]
         },
       ]
@@ -1036,21 +1186,21 @@ var algSet = {
         {
           "id": "wiki7",
           "name": "Corner in Place, Edge in U Face",
-          "desc": "BLAH.",
+          "desc": "These cases may be solved using a number of approaches.",
           "wiki": "#Corner_in_Place.2C_Edge_in_U_Face",
           "cases": ["25", "26", "27", "28", "29", "30"]
         },
         {
           "id": "wiki8",
           "name": "Edge in Place, Corner in U face",
-          "desc": "BLAH.",
+          "desc": "These cases may be solved using a number of approaches.",
           "wiki": "#Edge_in_Place.2C_Corner_in_U_face",
           "cases": ["31", "32", "33", "34", "35", "36"]
         },
         {
           "id": "wiki9",
           "name": "Edge and Corner in Place",
-          "desc": "BLAH.",
+          "desc": "These cases are typically solved by separating both pieces as they are moved into the top layer.",
           "wiki": "#Edge_and_Corner_in_Place",
           "cases": ["37", "38", "39", "40", "41", "42"]
         },
@@ -1059,7 +1209,7 @@ var algSet = {
     {
       "id": "edge",
       "name": "Edge Orientation",
-      "desc": "BLAH.",
+      "desc": "The groups below are based on the \"orientation\" of the edge piece. If the edge is in the top layer it's orientation can switched by a cube rotation (i.e. y or y')",
       "groups":
       [
         {
