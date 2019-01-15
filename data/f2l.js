@@ -69,7 +69,7 @@ var algSet = {
           [
             {
               "alg": "d' (L' U L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -91,7 +91,16 @@ var algSet = {
           "alg": "y' (R' U' R)",
           "desc": "Simple trigger",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "(F' U' F)",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y (L' U' L)",
@@ -168,7 +177,7 @@ var algSet = {
           [
             {
               "alg": "d (R' U' R) U2' (R' U R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -225,7 +234,7 @@ var algSet = {
           [
             {
               "alg": "d (R' U2 R) U2' (R' U R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -258,7 +267,7 @@ var algSet = {
           [
             {
               "alg": "d (R' U' R) U' (R' U' R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -279,7 +288,13 @@ var algSet = {
           [
             {
               "alg": "U' (R U' R') d (R' U' R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "U' (R U' R') U (F' U' F)",
+              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
@@ -294,7 +309,7 @@ var algSet = {
           [
             {
               "alg": "y2 U' (L U' L') d (L' U' L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -369,7 +384,13 @@ var algSet = {
           [
             {
               "alg": "U' (R U2' R') d (R' U' R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "U' (R U2' R') U (F' U' F)",
+              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
@@ -384,7 +405,7 @@ var algSet = {
           [
             {
               "alg": "y2 U' (L U2 L') d (L' U' L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -411,7 +432,13 @@ var algSet = {
           [
             {
               "alg": "d (R' U2 R) d' (R U R')",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "U (F' U2' F) U' (R U R')",
+              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
@@ -426,7 +453,7 @@ var algSet = {
           [
             {
               "alg": "y U (L' U2 L) d' (L U L')",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -453,7 +480,7 @@ var algSet = {
           [
             {
               "alg": "d (R' U R) U' (R' U' R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -505,7 +532,16 @@ var algSet = {
           "alg": "y' (R' U R) U2' y (R U R')",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "(F' U F) U2' (R U R')",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y (L' U L) U2' y (L U L')",
@@ -529,7 +565,16 @@ var algSet = {
           "alg": "(R U' R') U2 y' (R' U' R)",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "(R U' R') U2 (F' U' F)",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y2 (L U' L') U2 y' (L' U' L)",
@@ -636,7 +681,7 @@ var algSet = {
           [
             {
               "alg": "d' (L' U2 L) U' (L' U L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -741,7 +786,7 @@ var algSet = {
           [
             {
               "alg": "d' (L' U L) U (L' U L) U' (L' U L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -763,7 +808,16 @@ var algSet = {
           "alg": "y' U' (R' U R) U y (R U' R')",
           "desc": "[LBL] solution",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "U' (F' U F) U (R U' R')",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y U' (L' U L) U y (L U' L')",
@@ -774,7 +828,7 @@ var algSet = {
           [
             {
               "alg": "d' (L' U L) U y (L U' L')",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -796,7 +850,16 @@ var algSet = {
           "alg": "U (R U' R') U' y' (R' U R)",
           "desc": "[LBL] solution",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "U (R U' R') U' (F' U F)",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y2 U (L U' L') U' y' (L' U L)",
@@ -856,7 +919,16 @@ var algSet = {
           "alg": "(R U R') U2 y' (R' U R)",
           "desc": "Connect pieces with single trigger",
           "status": 1,
-          "uses": []
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "(R U R') U2 (F' U F)",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y2 (L U L') U2 y' (L' U L)",
@@ -933,7 +1005,13 @@ var algSet = {
           [
             {
               "alg": "(R U' R') d (R' U R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "(R U' R') U (F' U F)",
+              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
@@ -948,7 +1026,7 @@ var algSet = {
           [
             {
               "alg": "y2 (L U' L') d (L' U L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -1047,7 +1125,7 @@ var algSet = {
           [
             {
               "alg": "d (R' U R) U2' (R' U R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -1080,7 +1158,13 @@ var algSet = {
           [
             {
               "alg": "U' (R U R') d (R' U' R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "U' (R U R') U (F' U' F)",
+              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
@@ -1095,7 +1179,7 @@ var algSet = {
           [
             {
               "alg": "y2 U' (L U L') d (L' U' L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -1105,7 +1189,16 @@ var algSet = {
           "alg": "U2 (R U R') U' y' (R' U R)",
           "desc": "Connect pieces with single trigger",
           "status": 1,
-          "uses": []
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U2 (R U R') U' (F' U F)",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y2 U2 (L U L') U' y' (L' U L)",
@@ -1134,7 +1227,13 @@ var algSet = {
           [
             {
               "alg": "d (R' U' R) d' (R U R')",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "U (F' U' F) U' (R U R')",
+              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
@@ -1149,7 +1248,7 @@ var algSet = {
           [
             {
               "alg": "y U (L' U' L) d' (L U L')",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -1188,7 +1287,7 @@ var algSet = {
           [
             {
               "alg": "(R U' R') d (R' U2 R) U2' (R' U R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -1203,7 +1302,7 @@ var algSet = {
           [
             {
               "alg": "y2 (L U' L') d (L' U2 L) U2' (L' U L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -1278,7 +1377,13 @@ var algSet = {
           [
             {
               "alg": "(R U' R') U' (R U' R') d (R' U' R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "(R U' R') U' (R U' R') U (F' U' F)",
+              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
@@ -1293,7 +1398,7 @@ var algSet = {
           [
             {
               "alg": "y2 (L U' L') U' (L U' L') d (L' U' L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -1308,7 +1413,7 @@ var algSet = {
           [
             {
               "alg": "(R U' R') d (R' U' R) U' (R' U' R)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -1323,7 +1428,7 @@ var algSet = {
           [
             {
               "alg": "y2 (L U' L') d (L' U' L) U' (L' U' L)",
-              "desc": "Some people prefer \"d\" moves",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
@@ -1342,25 +1447,34 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U' R') U2 y' (R' U' R) U' (R' U R)",
-          "desc": "Separate pieces into the top layer",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
-        {
-          "alg": "y2 (L U' L') U2 y' (L' U' L) U' (L' U L)",
-          "desc": "Separate pieces into the top layer",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
-        {
           "alg": "(R U R') U' (R U' R') U2 y' (R' U' R)",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "(R U R') U' (R U' R') U2 (F' U' F)",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
+        },
+        {
+          "alg": "y2 (L U L') U' (L U' L') U2 y' (L' U' L)",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "(R U' R') U2 y' (R' U' R) U' (R' U R)",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": []
         },
         {
-          "alg": "y2 (L U L') U' (L U' L') U2 y' (L' U' L)",
+          "alg": "y2 (L U' L') U2 y' (L' U' L) U' (L' U L)",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": []
