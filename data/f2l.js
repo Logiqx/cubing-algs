@@ -1129,7 +1129,7 @@ var algSet = {
     },
     {
       "id": "37",
-      "name": "Both Pieces in Slot",
+      "name": "Solved Pair",
       "desc": "This is the solved case.",
       "wiki": "",
       "algdb": "f2l37",
@@ -1299,8 +1299,8 @@ var algSet = {
   "views":
   [
     {
-      "id": "simple",
-      "name": "Simple Groups",
+      "id": "default",
+      "name": "Default",
       "desc": "The groups below are based on the location of the corner and the edge pieces.",
       "groups":
       [
@@ -1344,7 +1344,7 @@ var algSet = {
     },
     {
       "id": "wiki",
-      "name": "Wiki Groups",
+      "name": "Wiki",
       "desc": "The groups below match the Speedsolving.com Wiki and are often based on how the cases are typically solved.",
       "groups":
       [
@@ -1414,8 +1414,64 @@ var algSet = {
       ]
     },
     {
-      "id": "edge",
-      "name": "Edge Orientation",
+      "id": "cubeskills",
+      "name": "CubeSkills",
+      "desc": "The groups below match CubeSkills.com and are based around the F2L lessons + Speedsolving.com Wiki.",
+      "groups":
+      [
+        {
+          "id": "basic",
+          "name": "Basic Inserts",
+          "desc": "These cases are the four simplest [F2L] insertions - i.e. 3 move triggers.",
+          "cases": ["1", "2", "3", "4"]
+        },
+        {
+          "id": "case1",
+          "name": "F2L Case 1",
+          "desc": "These cases are typically solved by hiding the corner and repositioning the edge to set up a regular insertion.",
+          "cases": ["9", "10", "11", "12", "13", "14"]
+        },
+        {
+          "id": "case2",
+          "name": "F2L Case 2",
+          "desc": "These cases are all solved by hiding the corner and repositioning the edge to set up a regular insertion.",
+          "cases": ["5", "6", "7", "8"]
+        },
+        {
+          "id": "case3",
+          "name": "F2L Case 3",
+          "desc": "These cases are all solved by hiding the edge and making the pair on the side, leading to a regular insertion.",
+          "cases": ["19", "20", "21", "22"]
+        },
+        {
+          "id": "icp",
+          "name": "Incorrectly Connected",
+          "desc": "These cases are all solved by hiding the edge (or corner) and splitting up the pieces to set up a regular insertion.",
+          "cases": ["15", "16", "17", "18", "23", "24"]
+        },
+        {
+          "id": "cpeu",
+          "name": "Corner in Place, Edge in U",
+          "desc": "These cases may be solved using a number of approaches.",
+          "cases": ["25", "26", "27", "28", "29", "30"]
+        },
+        {
+          "id": "epcu",
+          "name": "Edge in Place, Corner in U",
+          "desc": "These cases may be solved using a number of approaches.",
+          "cases": ["31", "32", "33", "34", "35", "36"]
+        },
+        {
+          "id": "ecp",
+          "name": "Edge and Corner in Place",
+          "desc": "These cases are typically solved by separating both pieces as they are moved into the top layer.",
+          "cases": ["37", "38", "39", "40", "41", "42"]
+        },
+      ]
+    },
+    {
+      "id": "eo",
+      "name": "Numeric (EO)",
       "desc": "The groups below are based on the \"orientation\" of the edge piece. If the edge is in the top layer it's orientation can switched by a cube rotation (i.e. y or y')",
       "groups":
       [
