@@ -322,6 +322,12 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "y2 U' (L U' L') U y (R' U' R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
         {
@@ -415,6 +421,12 @@ var algSet = {
             {
               "alg": "y2 U' (L U2 L') d (L' U' L)",
               "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "y2 U' (L U2 L') U y (R' U' R)",
+              "desc": "Some people like to use back slots",
               "status": 1,
               "uses": []
             },
@@ -604,7 +616,16 @@ var algSet = {
           "alg": "y2 (L U' L') U2 y' (L' U' L)",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y2 (L U' L') U2 y (R' U' R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -895,7 +916,16 @@ var algSet = {
           "alg": "y2 U (L U' L') U' y' (L' U L)",
           "desc": "[LBL] solution",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y2 U (L U' L') U' y (R' U R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -964,7 +994,16 @@ var algSet = {
           "alg": "y2 (L U L') U2 y' (L' U L)",
           "desc": "Connect pieces with single trigger",
           "status": 1,
-          "uses": []
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "y2 (L U L') U2 y (R' U R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -1057,6 +1096,12 @@ var algSet = {
             {
               "alg": "y2 (L U' L') d (L' U L)",
               "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "y2 (L U' L') U y (R' U R)",
+              "desc": "Some people like to use back slots",
               "status": 1,
               "uses": []
             },
@@ -1213,6 +1258,12 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "y2 U' (L U L') U y (R' U' R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
         {
@@ -1234,7 +1285,16 @@ var algSet = {
           "alg": "y2 U2 (L U L') U' y' (L' U L)",
           "desc": "Connect pieces with single trigger",
           "status": 1,
-          "uses": []
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "y2 U2 (L U L') U' y (R' U R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -1342,6 +1402,12 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "y2 (L U' L') U y (R' U2 R) U2' (R' U R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
       ]
@@ -1438,6 +1504,12 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "y2 (L U' L') U' (L U' L') U y (R' U' R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
         {
@@ -1465,6 +1537,12 @@ var algSet = {
             {
               "alg": "y2 (L U' L') d (L' U' L) U' (L' U' L)",
               "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "y2 (L U' L') U y (R' U' R) U' (R' U' R)",
+              "desc": "Some people like to use back slots",
               "status": 1,
               "uses": []
             },
@@ -1501,7 +1579,16 @@ var algSet = {
           "alg": "y2 (L U L') U' (L U' L') U2 y' (L' U' L)",
           "desc": "Separate pieces into the top layer",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y2 (L U L') U' (L U' L') U2 y (R' U' R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "(R U' R') U2 y' (R' U' R) U' (R' U R)",
@@ -1513,7 +1600,16 @@ var algSet = {
           "alg": "y2 (L U' L') U2 y' (L' U' L) U' (L' U L)",
           "desc": "Separate pieces into the top layer",
           "status": 1,
-          "uses": []
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "y2 (L U' L') U2 y (R' U' R) U' (R' U R)",
+              "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
