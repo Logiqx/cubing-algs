@@ -58,7 +58,16 @@ var algSet = {
           "alg": "y' U' (R' U R)",
           "desc": "Simple trigger",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "U' (F' U F)",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y U' (L' U L)",
@@ -457,6 +466,12 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "y U (L' U2 L) U' (F U F')",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
       ]
@@ -547,7 +562,16 @@ var algSet = {
           "alg": "y (L' U L) U2' y (L U L')",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y (L' U L) U2' (F U F')",
+              "desc": "Some people like to use \"F\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -829,6 +853,12 @@ var algSet = {
             {
               "alg": "d' (L' U L) U y (L U' L')",
               "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "y U' (L' U L) U (F U' F')",
+              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
@@ -1249,6 +1279,12 @@ var algSet = {
             {
               "alg": "y U (L' U' L) d' (L U L')",
               "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "y U (L' U' L) U' (F U F')",
+              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
