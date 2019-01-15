@@ -965,7 +965,7 @@ var algSet = {
     {
       "id": "33",
       "name": "Edge in Slot",
-      "desc": "Cases 33 and 34 can be solved by bringing the edge into the top layer to set up a simple pair.",
+      "desc": "Case 33 can be solved by bringing the edge into the top layer to set up a simple pair.",
       "wiki": "",
       "algdb": "f2l33",
       "image": "F2L-33",
@@ -989,7 +989,7 @@ var algSet = {
     {
       "id": "34",
       "name": "Edge in Slot",
-      "desc": "Cases 33 and 34 can be solved by bringing the edge into the top layer to set up a simple pair.",
+      "desc": "Case 34 can be solved by bringing the edge into the top layer to set up a simple pair.",
       "wiki": "",
       "algdb": "f2l34",
       "image": "F2L-34",
@@ -1034,7 +1034,7 @@ var algSet = {
     {
       "id": "35",
       "name": "Edge in Slot",
-      "desc": "Cases 35 and 36 can be solved by bringing the edge into the top layer to set up a simple pair.",
+      "desc": "Case 35 can be solved by bringing the edge into the top layer to set up a simple pair.",
       "wiki": "",
       "algdb": "f2l35",
       "image": "F2L-35",
@@ -1060,7 +1060,7 @@ var algSet = {
           "alg": "y2 U' (L U L') U y' (L' U' L)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": [],
+          "uses": ["2H", "OH"],
           "vars":
           [
             {
@@ -1075,7 +1075,7 @@ var algSet = {
           "alg": "U2 (R U R') U' y' (R' U R)",
           "desc": "Connect pieces with single trigger",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
         {
           "alg": "y2 U2 (L U L') U' y' (L' U L)",
@@ -1088,7 +1088,7 @@ var algSet = {
     {
       "id": "36",
       "name": "Edge in Slot",
-      "desc": "Cases 35 and 36 can be solved by bringing the edge into the top layer to set up a simple pair.",
+      "desc": "Case 36 can be solved by bringing the edge into the top layer to set up a simple pair.",
       "wiki": "",
       "algdb": "f2l36",
       "image": "F2L-36",
@@ -1184,7 +1184,7 @@ var algSet = {
     {
       "id": "39",
       "name": "Both Pieces in Slot",
-      "desc": "Cases 39 and 40 can both be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
+      "desc": "Case 39 can be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
       "wiki": "",
       "algdb": "f2l39",
       "image": "F2L-39",
@@ -1208,7 +1208,7 @@ var algSet = {
     {
       "id": "40",
       "name": "Both Pieces in Slot",
-      "desc": "Cases 39 and 40 can both be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
+      "desc": "Case 40 can be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
       "wiki": "",
       "algdb": "f2l40",
       "image": "F2L-40",
@@ -1232,7 +1232,7 @@ var algSet = {
     {
       "id": "41",
       "name": "Both Pieces in Slot",
-      "desc": "Cases 41 and 42 can both be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
+      "desc": "Case 41 can be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
       "wiki": "",
       "algdb": "f2l41",
       "image": "F2L-41",
@@ -1274,7 +1274,7 @@ var algSet = {
     {
       "id": "42",
       "name": "Both Pieces in Slot",
-      "desc": "Cases 41 and 42 can both be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
+      "desc": "Case 42 can be solved by bringing the pieces into the top layer (separated) to set up an easier [F2L] case.",
       "wiki": "",
       "algdb": "f2l42",
       "image": "F2L-42",
@@ -1332,13 +1332,13 @@ var algSet = {
           "id": "ctes",
           "name": "Corner on Top, Edge in Slot",
           "desc": "These cases may be solved using a number of approaches.",
-          "cases": ["32", "31", "33", "34", "35", "36"]
+          "cases": ["32", "31", "33", "35", "34", "36"]
         },
         {
           "id": "bps",
           "name": "Both Pieces in Slot",
           "desc": "These cases are typically solved by separating both pieces as they are moved into the top layer.",
-          "cases": ["37", "38", "39", "40", "41", "42"]
+          "cases": ["37", "38", "39", "41", "40", "42"]
         },
       ]
     },
