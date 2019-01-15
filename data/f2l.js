@@ -1439,7 +1439,7 @@ var algSet = {
     {
       "id": "42",
       "name": "Both Pieces in Slot",
-      "desc": "Case 42 can be solved by bringing the pieces into the top layer to set up case #22 or #16.",
+      "desc": "Case 42 can be solved by bringing the pieces into the top layer to set up case #16 or #22.",
       "wiki": "",
       "algdb": "f2l42",
       "image": "F2L-42",
@@ -1485,8 +1485,8 @@ var algSet = {
   "views":
   [
     {
-      "id": "default",
-      "name": "Default",
+      "id": "pieces",
+      "name": "Pieces",
       "desc": "The groups below are based on the location of the corner and the edge pieces.",
       "groups":
       [
@@ -1656,6 +1656,23 @@ var algSet = {
       ]
     },
     {
+      "id": "numeric",
+      "name": "Numeric",
+      "desc": "The \"numeric\" view simply lists all of the cases sorted numerically.",
+      "groups":
+      [
+        {
+          "id": "Numerical",
+          "name": "",
+          "cases": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                    "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+                    "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+                    "31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
+                    "41", "42"]
+        },
+      ]
+    },
+    {
       "id": "eo",
       "name": "Numeric (EO)",
       "desc": "The groups below are based on the \"orientation\" of the edge piece. If the edge is in the top layer it's orientation can switched by a cube rotation (i.e. y or y')",
@@ -1678,23 +1695,6 @@ var algSet = {
                     "11", "13", "16", "18", "20",
                     "22", "24", "26", "28", "29",
                     "31", "35", "36", "38", "41", "42"]
-        },
-      ]
-    },
-    {
-      "id": "numeric",
-      "name": "Numeric",
-      "desc": "The \"numeric\" view simply lists all of the cases sorted numerically.",
-      "groups":
-      [
-        {
-          "id": "Numerical",
-          "name": "",
-          "cases": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
-                    "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
-                    "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
-                    "31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
-                    "41", "42"]
         },
       ]
     },
