@@ -34,13 +34,31 @@ var algSet = {
           "alg": "U (R U' R')",
           "desc": "Simple trigger",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "U2 (R U2' R')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y2 U (L U' L')",
           "desc": "Simple trigger",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y2 U2 (L U2 L')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -67,6 +85,12 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "y' U2' (R' U2 R)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
         {
@@ -79,6 +103,12 @@ var algSet = {
             {
               "alg": "d' (L' U L)",
               "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "y U2 (L' U2 L)",
+              "desc": "Alternative insertion",
               "status": 1,
               "uses": []
             },
