@@ -157,13 +157,31 @@ var algSet = {
           "alg": "U' (R U R') U2 (R U' R')",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "U' (R U R') U' (R U2' R')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y2 U' (L U L') U2 (L U' L')",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y2 U' (L U L') U' (L U2 L')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -190,13 +208,34 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "y' U (R' U' R) U (R' U2 R)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "d (R' U' R) U (R' U2 R)",
+              "desc": "Alternative insertion with \"d\" move",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
         {
           "alg": "y U (L' U' L) U2' (L' U L)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y U (L' U' L) U (L' U2' L)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -214,13 +253,31 @@ var algSet = {
           "alg": "U' (R U2' R') U2 (R U' R')",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "U' (R U2' R') U' (R U2' R')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y2 U' (L U2 L') U2 (L U' L')",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y2 U' (L U2 L') U' (L U2 L')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -247,13 +304,34 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "y' U (R' U2 R) U (R' U2 R)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "d (R' U2 R) U (R' U2 R)",
+              "desc": "Alternative insertion with \"d\" move",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
         {
           "alg": "y U (L' U2 L) U2' (L' U L)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y U (L' U2 L) U (L' U2 L)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -268,31 +346,10 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' U (R' U' R) U' (R' U' R)",
-          "desc": "Hide corner, reposition edge",
-          "status": 1,
-          "uses": ["2H", "OH"],
-          "vars":
-          [
-            {
-              "alg": "d (R' U' R) U' (R' U' R)",
-              "desc": "Some people like to use \"d\" moves",
-              "status": 1,
-              "uses": []
-            },
-          ]
-        },
-        {
-          "alg": "y U (L' U' L) U' (L' U' L)",
-          "desc": "Hide corner, reposition edge",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
-        {
           "alg": "U' (R U' R') U y' (R' U' R)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": [],
+          "uses": ["2H", "OH"],
           "vars":
           [
             {
@@ -313,7 +370,7 @@ var algSet = {
           "alg": "y2 U' (L U' L') U y' (L' U' L)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": [],
+          "uses": ["2H", "OH"],
           "vars":
           [
             {
@@ -329,6 +386,27 @@ var algSet = {
               "uses": []
             },
           ]
+        },
+        {
+          "alg": "y' U (R' U' R) U' (R' U' R)",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "d (R' U' R) U' (R' U' R)",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
+        },
+        {
+          "alg": "y U (L' U' L) U' (L' U' L)",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
         },
         {
           "alg": "y' U2' (R' U R) U (R' U' R)",
@@ -1084,6 +1162,12 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "(R U' R') y' (R' U2 R)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
         {
@@ -1159,13 +1243,31 @@ var algSet = {
           "alg": "U' (R U' R') U2 (R U' R')",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "U' (R U' R') U' (R U2' R')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "y2 U' (L U' L') U2 (L U' L')",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y2 U' (L U' L') U' (L U2 L')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -1204,13 +1306,34 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "y' U (R' U R) U (R' U2 R)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "d (R' U R) U (R' U2 R)",
+              "desc": "Alternative insertion with \"d\" move",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
         {
           "alg": "y U (L' U L) U2' (L' U L)",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": []
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "y U (L' U L) U (L' U2 L)",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
       ]
     },
@@ -1387,6 +1510,18 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+            {
+              "alg": "(R U' R') U y' (R' U2 R) U (R' U2 R)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "(R U' R') d (R' U2 R) U (R' U2 R)",
+              "desc": "Alternative insertion with \"d\" move",
+              "status": 1,
+              "uses": []
+            },
           ]
         },
         {
@@ -1405,6 +1540,24 @@ var algSet = {
             {
               "alg": "y2 (L U' L') U y (R' U2 R) U2' (R' U R)",
               "desc": "Some people like to use back slots",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "y2 (L U' L') U y' (L' U2 L) U (L' U2 L)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "y2 (L U' L') d (L' U2 L) U (L' U2 L)",
+              "desc": "Alternative insertion with \"d\" move",
+              "status": 1,
+              "uses": []
+            },
+            {
+              "alg": "y2 (L U' L') U y (R' U2 R) U (R' U2 R)",
+              "desc": "Alternative insertion using back slot",
               "status": 1,
               "uses": []
             },
