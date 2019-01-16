@@ -208,12 +208,6 @@ var algSet = {
       "prob": "1/36",
       "algs" :
       [
-        {
-          "alg": "-",
-          "desc": "AUF to complete the solve",
-          "status": 1,
-          "uses": ["2H"]
-        },
       ]
     },
     {

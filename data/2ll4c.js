@@ -430,12 +430,6 @@ var algSet = {
       "prob": "1/27",
       "algs":
       [
-        {
-          "alg": "-",
-          "desc": "",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
       ]
     },
     {
@@ -600,12 +594,6 @@ var algSet = {
       "prob": "1/12",
       "algs":
       [
-        {
-          "alg": "-",
-          "desc": "",
-          "status": 1,
-          "uses": ["2H", "OH"]
-        },
       ]
     },
   ],
