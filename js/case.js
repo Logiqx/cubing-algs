@@ -65,7 +65,7 @@ function renderCaseAlgs(caseObj, width)
 			// Output case name as the title
 			if (algObj.hasOwnProperty("name"))
 			{
-				out += "<h3>Alg " + option + " - " + algObj.name + "</h3>";
+				out += "<h3>" + algObj.name + "</h3>";
 			}
 			else
 			{
