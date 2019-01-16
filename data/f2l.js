@@ -263,7 +263,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "y U (L' U' L) U2' (L' U L)",
+          "alg": "y U (L' U' L) U2 (L' U L)",
           "name": "Alg 1b - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
@@ -271,7 +271,7 @@ var algSet = {
           "vars":
           [
             {
-              "alg": "y U (L' U' L) U (L' U2' L)",
+              "alg": "y U (L' U' L) U (L' U2 L)",
               "desc": "Alternative insertion",
               "status": 1,
               "uses": []
@@ -363,7 +363,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "y U (L' U2 L) U2' (L' U L)",
+          "alg": "y U (L' U2 L) U2 (L' U L)",
           "name": "Alg 1b - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
@@ -690,14 +690,14 @@ var algSet = {
           ]
         },
         {
-          "alg": "y (L' U L) U2' y (L U L')",
+          "alg": "y (L' U L) U2 y (L U L')",
           "name": "Alg 1b - BL slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y (L' U L) U2' (F U F')",
+          "alg": "y (L' U L) U2 (F U F')",
           "name": "Alg 1c - FL slot",
           "desc": "Split pair by going over",
           "status": 1,
@@ -1236,7 +1236,16 @@ var algSet = {
           "name": "Alg 1a - FR slot",
           "desc": "Extract pair then insert normally",
           "status": 1,
-          "uses": []
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "(R U' R') (F' U2' F)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
         },
         {
           "alg": "(R U' R') U y' (R' U R)",
@@ -1437,7 +1446,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "y U (L' U L) U2' (L' U L)",
+          "alg": "y U (L' U L) U2 (L' U L)",
           "name": "Alg 2b - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
@@ -1664,7 +1673,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "y2 (L U' L') U y' (L' U2 L) U2' (L' U L)",
+          "alg": "y2 (L U' L') U y' (L' U2 L) U2 (L' U L)",
           "name": "Alg 2b - FL slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
@@ -1672,7 +1681,7 @@ var algSet = {
           "vars":
           [
             {
-              "alg": "y2 (L U' L') d (L' U2 L) U2' (L' U L)",
+              "alg": "y2 (L U' L') d (L' U2 L) U2 (L' U L)",
               "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
@@ -1772,7 +1781,7 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(F' U F) U2 (R U R' U) (R U' R')",
+          "alg": "(F' U F) U2' (R U R' U) (R U' R')",
           "name": "Alg 1 - FR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
@@ -1957,7 +1966,7 @@ var algSet = {
         {
           "id": "wiki6",
           "name": "Weird",
-          "desc": "These cases have are \"weird\" because they cannot be solved with two simple triggers, despite both pieces being in the U-layer.",
+          "desc": "These cases cannot be solved with two simple triggers, despite both pieces being in the U-layer.",
           "wiki": "#Weird",
           "cases": ["23", "24"]
         },
