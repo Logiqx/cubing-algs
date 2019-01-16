@@ -32,7 +32,7 @@ var algSet = {
       [
         {
           "alg": "U (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -48,7 +48,7 @@ var algSet = {
         },
         {
           "alg": "y2 U (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -76,14 +76,14 @@ var algSet = {
       [
         {
           "alg": "U' (F' U F)",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y' U' (R' U R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1b - BR slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -99,7 +99,7 @@ var algSet = {
         },
         {
           "alg": "y U' (L' U L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -133,21 +133,21 @@ var algSet = {
       [
         {
           "alg": "(F' U' F)",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y' (R' U' R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1b - BR slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y (L' U' L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -166,14 +166,14 @@ var algSet = {
       [
         {
           "alg": "(R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -192,7 +192,7 @@ var algSet = {
       [
         {
           "alg": "U' (R U R') U2 (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -208,7 +208,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U L') U2 (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -236,7 +236,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U' R) U2' (R' U R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1a - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -264,7 +264,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U' L) U2' (L' U L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1b - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -292,7 +292,7 @@ var algSet = {
       [
         {
           "alg": "U' (R U2' R') U2 (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -308,7 +308,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U2 L') U2 (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -336,7 +336,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U2 R) U2' (R' U R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1a - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -364,7 +364,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U2 L) U2' (L' U L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1b - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -392,14 +392,14 @@ var algSet = {
       [
         {
           "alg": "U' (R U' R') U (F' U' F)",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
         },
         {
           "alg": "U' (R U' R') U y' (R' U' R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1b - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -415,7 +415,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U' L') U y' (L' U' L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -431,14 +431,14 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U' L') U y (R' U' R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 1d - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y' U (R' U' R) U' (R' U' R)",
-          "name": "Solution 3 (BR)",
+          "name": "Alg 2a - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": [],
@@ -454,7 +454,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U' L) U' (L' U' L)",
-          "name": "Solution 3 (FL)",
+          "name": "Alg 2b - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
@@ -473,14 +473,14 @@ var algSet = {
       [
         {
           "alg": "U' (R U R') U (R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U' (L U L') U (L U L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -499,14 +499,14 @@ var algSet = {
       [
         {
           "alg": "U' (R U2' R') U (F' U' F)",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
         },
         {
           "alg": "U' (R U2' R') U y' (R' U' R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1b - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -522,7 +522,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U2 L') U y' (L' U' L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -538,7 +538,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U2 L') U y (R' U' R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 1d - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
@@ -557,7 +557,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U2 R) U' y (R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -579,7 +579,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U2 L) U' y (L U L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -595,7 +595,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U2 L) U' (F U F')",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
@@ -614,7 +614,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U R) U' (R' U' R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1a - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -630,7 +630,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U L) U' (L' U' L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1b - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -649,14 +649,14 @@ var algSet = {
       [
         {
           "alg": "U' (R U' R') U (R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "U (L U' L') U (L U L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -675,7 +675,7 @@ var algSet = {
       [
         {
           "alg": "y' (R' U R) U2' y (R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -691,14 +691,14 @@ var algSet = {
         },
         {
           "alg": "y (L' U L) U2' y (L U L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y (L' U L) U2' (F U F')",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": []
@@ -717,28 +717,28 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U2 (F' U' F)",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": []
         },
         {
           "alg": "(R U' R') U2 y' (R' U' R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1b - BR slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U2 y' (L' U' L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U2 y (R' U' R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 1d - BR slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": []
@@ -757,14 +757,14 @@ var algSet = {
       [
         {
           "alg": "(R U2' R') U' (R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U2 L') U' (L U L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -783,14 +783,14 @@ var algSet = {
       [
         {
           "alg": "y' (R' U2 R) U (R' U' R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1a - BR slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y (L' U2 L) U (L' U' L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1b - FL slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -809,14 +809,14 @@ var algSet = {
       [
         {
           "alg": "U (R U2' R') U (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U (L U2 L') U (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -835,14 +835,14 @@ var algSet = {
       [
         {
           "alg": "y' U' (R' U2 R) U' (R' U R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1a - BR slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y U' (L' U2 L) U' (L' U L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1b - FL slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -870,14 +870,14 @@ var algSet = {
       [
         {
           "alg": "U2 (R U R') U (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U2 (L U L') U (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -896,14 +896,14 @@ var algSet = {
       [
         {
           "alg": "y' U2 (R' U' R) U' (R' U R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1a - BR slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y U2 (L' U' L) U' (L' U L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1b - FL slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -922,14 +922,14 @@ var algSet = {
       [
         {
           "alg": "U (R U' R') U' (R U' R') U (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U (L U' L') U' (L U' L') U (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -948,14 +948,14 @@ var algSet = {
       [
         {
           "alg": "y' U' (R' U R) U (R' U R) U' (R' U R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1a - BR slot",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y U' (L' U L) U (L' U L) U' (L' U L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1b - FL slot",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -983,7 +983,7 @@ var algSet = {
       [
         {
           "alg": "y' U' (R' U R) U y (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -999,7 +999,7 @@ var algSet = {
         },
         {
           "alg": "y U' (L' U L) U y (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1015,7 +1015,7 @@ var algSet = {
         },
         {
           "alg": "y U' (L' U L) U (F U' F')",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": []
@@ -1034,28 +1034,28 @@ var algSet = {
       [
         {
           "alg": "U (R U' R') U' (F' U F)",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": []
         },
         {
           "alg": "U (R U' R') U' y' (R' U R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1b - BR slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U (L U' L') U' y' (L' U L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U (L U' L') U' y (R' U R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 1d - BR slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": []
@@ -1074,14 +1074,14 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1100,28 +1100,28 @@ var algSet = {
       [
         {
           "alg": "y' (R' U R) U' (R' U R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1a - BR slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y (L' U L) U' (L' U L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1b - FL slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "(R U R') U2 (F' U F)",
-          "name": "Solution 2 (FR)",
+          "name": "Alg 2a - FR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "(R U R') U2 y' (R' U R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 2b - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": [],
@@ -1137,7 +1137,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U L') U2 y' (L' U L)",
-          "name": "Solution 2 (FL)",
+          "name": "Alg 2c - FL slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": [],
@@ -1153,7 +1153,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U L') U2 y (R' U R)",
-          "name": "Solution 3 (BR)",
+          "name": "Alg 2d - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": [],
@@ -1181,14 +1181,14 @@ var algSet = {
       [
         {
           "alg": "y' (R' U' R) U (R' U' R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1a - BR slot",
           "desc": "[double-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y (L' U' L) U (L' U' L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1b - FL slot",
           "desc": "[double-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1207,14 +1207,14 @@ var algSet = {
       [
         {
           "alg": "(R U R') U' (R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "[double-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U L') U' (L U L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "[double-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1233,14 +1233,14 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U (F' U F)",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Extract pair then insert normally",
           "status": 1,
           "uses": []
         },
         {
           "alg": "(R U' R') U y' (R' U R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1b - BR slot",
           "desc": "Extract pair then insert normally",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1262,7 +1262,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U y' (L' U L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Extract pair then insert normally",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1284,7 +1284,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U y (R' U R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 1d - BR slot",
           "desc": "Extract pair then insert normally",
           "status": 1,
           "uses": [],
@@ -1312,28 +1312,28 @@ var algSet = {
       [
         {
           "alg": "(U R U' R') (U R U' R') (U R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Reverse [triple-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (U L U' L') (U L U' L') (U L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Reverse [triple-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "(R U R' U') (R U R' U') (R U R' U')",
-          "name": "Solution 2 (FR)",
+          "name": "Alg 2a - FR slot",
           "desc": "[triple-sexy] move",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y2 (L U L' U') (L U L' U') (L U L' U')",
-          "name": "Solution 2 (BL)",
+          "name": "Alg 2b - BL slot",
           "desc": "[triple-sexy] move",
           "status": 1,
           "uses": []
@@ -1352,7 +1352,7 @@ var algSet = {
       [
         {
           "alg": "U' (R U' R') U2 (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1368,7 +1368,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U' L') U2 (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1396,21 +1396,21 @@ var algSet = {
       [
         {
           "alg": "U (R U R') U2 (R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Bring edge to top",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "U (L U L') U2 (L U L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Bring edge to top",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y' U (R' U R) U2' (R' U R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 2a - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": [],
@@ -1438,7 +1438,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U L) U2' (L' U L)",
-          "name": "Solution 2 (FL)",
+          "name": "Alg 2b - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": [],
@@ -1466,14 +1466,14 @@ var algSet = {
       [
         {
           "alg": "U' (R U R') U (F' U' F)",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
         },
         {
           "alg": "U' (R U R') U y' (R' U' R)",
-          "name": "Solution 1 (BR)",
+          "name": "Alg 1b - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1489,7 +1489,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U L') U y' (L' U' L)",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1505,35 +1505,35 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U L') U y (R' U' R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 1d - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
         },
         {
           "alg": "U2 (R U R') U' (F' U F)",
-          "name": "Solution 3 (FR)",
+          "name": "Alg 2a - FR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "U2 (R U R') U' y' (R' U R)",
-          "name": "Solution 3 (BR)",
+          "name": "Alg 2b - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y2 U2 (L U L') U' y' (L' U L)",
-          "name": "Solution 3 (FL)",
+          "name": "Alg 2c - FL slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y2 U2 (L U L') U' y (R' U R)",
-          "name": "Solution 4 (BR)",
+          "name": "Alg 2d - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
@@ -1552,7 +1552,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U' R) U' y (R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1574,7 +1574,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U' L) U' y (L U L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1590,7 +1590,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U' L) U' (F U F')",
-          "name": "Solution 1 (FL)",
+          "name": "Alg 1c - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
@@ -1621,7 +1621,7 @@ var algSet = {
       [
         {
           "alg": "(F' U F) U' (R U2' R') U2 (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1 - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": [],
@@ -1637,7 +1637,7 @@ var algSet = {
         },
         {
           "alg": "(R U' R') U y' (R' U2 R) U2' (R' U R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 2a - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1665,7 +1665,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U y' (L' U2 L) U2' (L' U L)",
-          "name": "Solution 2 (FL)",
+          "name": "Alg 2b - FL slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1693,7 +1693,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U y (R' U2 R) U2' (R' U R)",
-          "name": "Solution 3 (BR)",
+          "name": "Alg 2c - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": [],
@@ -1721,14 +1721,14 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U' (R U R') U2 (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U' (L U L') U2 (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1747,14 +1747,14 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U (R U2' R') U (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1a - FR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U (L U2' L') U (L U' L')",
-          "name": "Solution 1 (BL)",
+          "name": "Alg 1b - BL slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1773,21 +1773,21 @@ var algSet = {
       [
         {
           "alg": "(F' U F) U2 (R U R' U) (R U' R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1 - FR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": []
         },
         {
           "alg": "(R U' R') U' (R U' R') U (F' U' F)",
-          "name": "Solution 2 (FR)",
+          "name": "Alg 2a - FR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": []
         },
         {
           "alg": "(R U' R') U' (R U' R') U y' (R' U' R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 2b - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1803,7 +1803,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U' (L U' L') U y' (L' U' L)",
-          "name": "Solution 2 (FL)",
+          "name": "Alg 2c - FL slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1819,7 +1819,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U' (L U' L') U y (R' U' R)",
-          "name": "Solution 3 (BR)",
+          "name": "Alg 2d - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": []
@@ -1838,28 +1838,28 @@ var algSet = {
       [
         {
           "alg": "(F' U F) U' (R U R') U (R U R')",
-          "name": "Solution 1 (FR)",
+          "name": "Alg 1 - FR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": []
         },
         {
           "alg": "(R U' R') U2 y' (R' U' R) U' (R' U R)",
-          "name": "Solution 2 (BR)",
+          "name": "Alg 2a - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U2 y' (L' U' L) U' (L' U L)",
-          "name": "Solution 2 (FL)",
+          "name": "Alg 2b - FL slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U2 y (R' U' R) U' (R' U R)",
-          "name": "Solution 3 (BR)",
+          "name": "Alg 2c - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": []
