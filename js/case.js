@@ -87,7 +87,7 @@ function renderCaseAlgs(caseObj, width)
 			out += "<table>";
 
 			// Render the alg
-			out += renderCaseAlg(algObj, "alg", false, width);
+			out += renderCaseAlg(algObj, "desc", false, width);
 			
 			// Do any variations of the algorithm exist?
 			if (algObj.hasOwnProperty("vars"))

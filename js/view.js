@@ -274,8 +274,8 @@ function renderTableDataRows(viewObj, groupObj, width)
 	// Determine the image size - Phones should use small icons when in portrait mode
 	var imgSize = width >= IPHONE_LANDSCAPE ? "96" : "64";
 	
-	// Column width is assumed to be 96 (image) + 18 (space) + 440 (td.alg) = 552
-	var numCols = width >= 554 ? Math.floor(width / 554) : 1;
+	// Column width is assumed to be 96 (image) + 16 (space) + 400 (td.alg) = 512
+	var numCols = width >= IPAD_LANDSCAPE ? Math.floor(width / 512) : 1;
 	var colIdx = 0;
 	
 	// Array is used instead of Map() which doesn't work on my iPad
