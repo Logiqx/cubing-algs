@@ -32,6 +32,7 @@ var algSet = {
       [
         {
           "alg": "U (R U' R')",
+          "name": "FR",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -47,6 +48,7 @@ var algSet = {
         },
         {
           "alg": "y2 U (L U' L')",
+          "name": "BL",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -73,18 +75,20 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U' (F' U F)",
+          "name": "FR",
+          "desc": "Simple trigger",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "y' U' (R' U R)",
+          "name": "BR",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"],
           "vars":
           [
-            {
-              "alg": "U' (F' U F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
             {
               "alg": "y' U2' (R' U2 R)",
               "desc": "Alternative insertion",
@@ -95,6 +99,7 @@ var algSet = {
         },
         {
           "alg": "y U' (L' U L)",
+          "name": "FL",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -127,22 +132,22 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "y' (R' U' R)",
+          "alg": "(F' U' F)",
+          "name": "FR",
           "desc": "Simple trigger",
           "status": 1,
-          "uses": ["2H", "OH"],
-          "vars":
-          [
-            {
-              "alg": "(F' U' F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": []
+        },
+        {
+          "alg": "y' (R' U' R)",
+          "name": "BR",
+          "desc": "Simple trigger",
+          "status": 1,
+          "uses": ["2H", "OH"]
         },
         {
           "alg": "y (L' U' L)",
+          "name": "FL",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -161,12 +166,14 @@ var algSet = {
       [
         {
           "alg": "(R U R')",
+          "name": "FR",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U L')",
+          "name": "BL",
           "desc": "Simple trigger",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -185,6 +192,7 @@ var algSet = {
       [
         {
           "alg": "U' (R U R') U2 (R U' R')",
+          "name": "FR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -200,6 +208,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U L') U2 (L U' L')",
+          "name": "BL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -227,6 +236,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U' R) U2' (R' U R)",
+          "name": "BR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -254,6 +264,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U' L) U2' (L' U L)",
+          "name": "FL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -281,6 +292,7 @@ var algSet = {
       [
         {
           "alg": "U' (R U2' R') U2 (R U' R')",
+          "name": "FR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -296,6 +308,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U2 L') U2 (L U' L')",
+          "name": "BL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -323,6 +336,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U2 R) U2' (R' U R)",
+          "name": "BR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -350,6 +364,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U2 L) U2' (L' U L)",
+          "name": "FL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -376,7 +391,15 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U' (R U' R') U (F' U' F)",
+          "name": "FR",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "U' (R U' R') U y' (R' U' R)",
+          "name": "BR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -387,17 +410,12 @@ var algSet = {
               "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
-            },
-            {
-              "alg": "U' (R U' R') U (F' U' F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
+            }
           ]
         },
         {
           "alg": "y2 U' (L U' L') U y' (L' U' L)",
+          "name": "FL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -409,16 +427,18 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "y2 U' (L U' L') U y (R' U' R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
           ]
         },
         {
+          "alg": "y2 U' (L U' L') U y (R' U' R)",
+          "name": "BR",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "y' U (R' U' R) U' (R' U' R)",
+          "name": "BR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": [],
@@ -434,19 +454,8 @@ var algSet = {
         },
         {
           "alg": "y U (L' U' L) U' (L' U' L)",
+          "name": "FL",
           "desc": "Hide corner, reposition edge",
-          "status": 1,
-          "uses": []
-        },
-        {
-          "alg": "y' U2' (R' U R) U (R' U' R)",
-          "desc": "Hide edge, reposition corner",
-          "status": 1,
-          "uses": []
-        },
-        {
-          "alg": "y U2' (L' U L) U (L' U' L)",
-          "desc": "Hide edge, reposition corner",
           "status": 1,
           "uses": []
         },
@@ -464,27 +473,17 @@ var algSet = {
       [
         {
           "alg": "U' (R U R') U (R U R')",
+          "name": "FR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U' (L U L') U (L U L')",
+          "name": "BL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
-        },
-        {
-          "alg": "U2' (R U' R') U' (R U R')",
-          "desc": "Hide edge, reposition corner",
-          "status": 1,
-          "uses": []
-        },
-        {
-          "alg": "y2 U (L U' L') U' (L U L')",
-          "desc": "Hide edge, reposition corner",
-          "status": 1,
-          "uses": []
         },
       ]
     },
@@ -499,7 +498,15 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U' (R U2' R') U (F' U' F)",
+          "name": "FR",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "U' (R U2' R') U y' (R' U' R)",
+          "name": "BR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -511,16 +518,11 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "U' (R U2' R') U (F' U' F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
           ]
         },
         {
           "alg": "y2 U' (L U2 L') U y' (L' U' L)",
+          "name": "FL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -532,13 +534,14 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "y2 U' (L U2 L') U y (R' U' R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
           ]
+        },
+        {
+          "alg": "y2 U' (L U2 L') U y (R' U' R)",
+          "name": "BR",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -554,6 +557,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U2 R) U' y (R U R')",
+          "name": "FR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -575,6 +579,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U2 L) U' y (L U L')",
+          "name": "BL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -586,13 +591,14 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "y U (L' U2 L) U' (F U F')",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
           ]
+        },
+        {
+          "alg": "y U (L' U2 L) U' (F U F')",
+          "name": "FL",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -608,6 +614,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U R) U' (R' U' R)",
+          "name": "BR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -623,6 +630,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U L) U' (L' U' L)",
+          "name": "FL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -641,12 +649,14 @@ var algSet = {
       [
         {
           "alg": "U' (R U' R') U (R U R')",
+          "name": "FR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "U (L U' L') U (L U L')",
+          "name": "BL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -665,6 +675,7 @@ var algSet = {
       [
         {
           "alg": "y' (R' U R) U2' y (R U R')",
+          "name": "FR",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -680,18 +691,17 @@ var algSet = {
         },
         {
           "alg": "y (L' U L) U2' y (L U L')",
+          "name": "BL",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": ["2H", "OH"],
-          "vars":
-          [
-            {
-              "alg": "y (L' U L) U2' (F U F')",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y (L' U L) U2' (F U F')",
+          "name": "FL",
+          "desc": "Split pair by going over",
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -706,34 +716,32 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U' R') U2 y' (R' U' R)",
+          "alg": "(R U' R') U2 (F' U' F)",
+          "name": "FR",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": ["2H", "OH"],
-          "vars":
-          [
-            {
-              "alg": "(R U' R') U2 (F' U' F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": []
+        },
+        {
+          "alg": "(R U' R') U2 y' (R' U' R)",
+          "name": "BR",
+          "desc": "Split pair by going over",
+          "status": 1,
+          "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U2 y' (L' U' L)",
+          "name": "FL",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": ["2H", "OH"],
-          "vars":
-          [
-            {
-              "alg": "y2 (L U' L') U2 y (R' U' R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U2 y (R' U' R)",
+          "name": "BR",
+          "desc": "Split pair by going over",
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -749,12 +757,14 @@ var algSet = {
       [
         {
           "alg": "(R U2' R') U' (R U R')",
+          "name": "FR",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U2 L') U' (L U L')",
+          "name": "BL",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -773,12 +783,14 @@ var algSet = {
       [
         {
           "alg": "y' (R' U2 R) U (R' U' R)",
+          "name": "BR",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y (L' U2 L) U (L' U' L)",
+          "name": "FL",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -797,12 +809,14 @@ var algSet = {
       [
         {
           "alg": "U (R U2' R') U (R U' R')",
+          "name": "FR",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U (L U2 L') U (L U' L')",
+          "name": "BL",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -821,12 +835,14 @@ var algSet = {
       [
         {
           "alg": "y' U' (R' U2 R) U' (R' U R)",
+          "name": "BR",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y U' (L' U2 L) U' (L' U L)",
+          "name": "FL",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -854,12 +870,14 @@ var algSet = {
       [
         {
           "alg": "U2 (R U R') U (R U' R')",
+          "name": "FR",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U2 (L U L') U (L U' L')",
+          "name": "BL",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -878,12 +896,14 @@ var algSet = {
       [
         {
           "alg": "y' U2 (R' U' R) U' (R' U R)",
+          "name": "BR",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y U2 (L' U' L) U' (L' U L)",
+          "name": "FL",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -902,12 +922,14 @@ var algSet = {
       [
         {
           "alg": "U (R U' R') U' (R U' R') U (R U' R')",
+          "name": "FR",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U (L U' L') U' (L U' L') U (L U' L')",
+          "name": "BL",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -926,12 +948,14 @@ var algSet = {
       [
         {
           "alg": "y' U' (R' U R) U (R' U R) U' (R' U R)",
+          "name": "BR",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y U' (L' U L) U (L' U L) U' (L' U L)",
+          "name": "FL",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -959,6 +983,7 @@ var algSet = {
       [
         {
           "alg": "y' U' (R' U R) U y (R U' R')",
+          "name": "FR",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -974,6 +999,7 @@ var algSet = {
         },
         {
           "alg": "y U' (L' U L) U y (L U' L')",
+          "name": "BL",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -985,13 +1011,14 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "y U' (L' U L) U (F U' F')",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
           ]
+        },
+        {
+          "alg": "y U' (L' U L) U (F U' F')",
+          "name": "FL",
+          "desc": "[LBL] solution",
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -1006,34 +1033,32 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U (R U' R') U' y' (R' U R)",
+          "alg": "U (R U' R') U' (F' U F)",
+          "name": "FR",
           "desc": "[LBL] solution",
           "status": 1,
-          "uses": ["2H", "OH"],
-          "vars":
-          [
-            {
-              "alg": "U (R U' R') U' (F' U F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": []
+        },
+        {
+          "alg": "U (R U' R') U' y' (R' U R)",
+          "name": "BR",
+          "desc": "[LBL] solution",
+          "status": 1,
+          "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U (L U' L') U' y' (L' U L)",
+          "name": "FL",
           "desc": "[LBL] solution",
           "status": 1,
-          "uses": ["2H", "OH"],
-          "vars":
-          [
-            {
-              "alg": "y2 U (L U' L') U' y (R' U R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 U (L U' L') U' y (R' U R)",
+          "name": "BR",
+          "desc": "[LBL] solution",
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -1049,12 +1074,14 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U (R U' R')",
+          "name": "FR",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U (L U' L')",
+          "name": "BL",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1073,26 +1100,36 @@ var algSet = {
       [
         {
           "alg": "y' (R' U R) U' (R' U R)",
+          "name": "BR",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y (L' U L) U' (L' U L)",
+          "name": "FL",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
+          "alg": "(R U R') U2 (F' U F)",
+          "name": "FR",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "(R U R') U2 y' (R' U R)",
+          "name": "BR",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": [],
           "vars":
           [
             {
-              "alg": "(R U R') U2 (F' U F)",
-              "desc": "Some people like to use \"F\" moves",
+              "alg": "(R U R') U y' (R' U2 R)",
+              "desc": "Alternative insertion",
               "status": 1,
               "uses": []
             },
@@ -1100,14 +1137,31 @@ var algSet = {
         },
         {
           "alg": "y2 (L U L') U2 y' (L' U L)",
+          "name": "FL",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": [],
           "vars":
           [
             {
-              "alg": "y2 (L U L') U2 y (R' U R)",
-              "desc": "Some people like to use back slots",
+              "alg": "y2 (L U L') U y' (L' U2 L)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
+        },
+        {
+          "alg": "y2 (L U L') U2 y (R' U R)",
+          "name": "BR",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "y2 (L U L') U y (R' U2 R)",
+              "desc": "Alternative insertion",
               "status": 1,
               "uses": []
             },
@@ -1127,13 +1181,15 @@ var algSet = {
       [
         {
           "alg": "y' (R' U' R) U (R' U' R)",
+          "name": "BR",
           "desc": "[double-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y (L' U' L) U (L' U' L)",
-          "desc": "[double-sexy] move (lefty)",
+          "name": "FL",
+          "desc": "[double-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -1151,13 +1207,15 @@ var algSet = {
       [
         {
           "alg": "(R U R') U' (R U R')",
+          "name": "FR",
           "desc": "[double-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U L') U' (L U L')",
-          "desc": "[double-sexy] move (lefty)",
+          "name": "BL",
+          "desc": "[double-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -1174,7 +1232,15 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "(R U' R') U (F' U F)",
+          "name": "FR",
+          "desc": "Extract pair then insert normally",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "(R U' R') U y' (R' U R)",
+          "name": "BR",
           "desc": "Extract pair then insert normally",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1183,12 +1249,6 @@ var algSet = {
             {
               "alg": "(R U' R') d (R' U R)",
               "desc": "Some people like to use \"d\" moves",
-              "status": 1,
-              "uses": []
-            },
-            {
-              "alg": "(R U' R') U (F' U F)",
-              "desc": "Some people like to use \"F\" moves",
               "status": 1,
               "uses": []
             },
@@ -1202,6 +1262,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U y' (L' U L)",
+          "name": "FL",
           "desc": "Extract pair then insert normally",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1214,8 +1275,24 @@ var algSet = {
               "uses": []
             },
             {
-              "alg": "y2 (L U' L') U y (R' U R)",
-              "desc": "Some people like to use back slots",
+              "alg": "y2 (L U' L') y' (L' U2 L)",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
+        },
+        {
+          "alg": "y2 (L U' L') U y (R' U R)",
+          "name": "BR",
+          "desc": "Extract pair then insert normally",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "y2 (L U' L') y (R' U2 R)",
+              "desc": "Alternative insertion",
               "status": 1,
               "uses": []
             },
@@ -1235,27 +1312,31 @@ var algSet = {
       [
         {
           "alg": "(U R U' R') (U R U' R') (U R U' R')",
+          "name": "FR",
           "desc": "Reverse [triple-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (U L U' L') (U L U' L') (U L U' L')",
-          "desc": "Reverse [triple-sexy] move (lefty)",
+          "name": "BL",
+          "desc": "Reverse [triple-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "(R U R' U') (R U R' U') (R U R' U')",
+          "name": "FR",
           "desc": "[triple-sexy] move",
-          "status": -1,
-          "uses": ["2H", "OH"]
+          "status": 1,
+          "uses": []
         },
         {
           "alg": "y2 (L U L' U') (L U L' U') (L U L' U')",
+          "name": "BL",
           "desc": "[triple-sexy] move",
-          "status": -1,
-          "uses": ["2H", "OH"]
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -1271,6 +1352,7 @@ var algSet = {
       [
         {
           "alg": "U' (R U' R') U2 (R U' R')",
+          "name": "FR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1286,6 +1368,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U' L') U2 (L U' L')",
+          "name": "BL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1313,18 +1396,21 @@ var algSet = {
       [
         {
           "alg": "U (R U R') U2 (R U R')",
+          "name": "FR",
           "desc": "Bring edge to top",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "U (L U L') U2 (L U L')",
+          "name": "BL",
           "desc": "Bring edge to top",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y' U (R' U R) U2' (R' U R)",
+          "name": "BR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": [],
@@ -1352,6 +1438,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U L) U2' (L' U L)",
+          "name": "FL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": [],
@@ -1359,7 +1446,7 @@ var algSet = {
           [
             {
               "alg": "y U (L' U L) U (L' U2 L)",
-              "desc": "Some people like to use \"d\" moves",
+              "desc": "Alternative insertion",
               "status": 1,
               "uses": []
             },
@@ -1378,7 +1465,15 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U' (R U R') U (F' U' F)",
+          "name": "FR",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "U' (R U R') U y' (R' U' R)",
+          "name": "BR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1390,16 +1485,11 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "U' (R U R') U (F' U' F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
           ]
         },
         {
           "alg": "y2 U' (L U L') U y' (L' U' L)",
+          "name": "FL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1411,43 +1501,42 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "y2 U' (L U L') U y (R' U' R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
           ]
+        },
+        {
+          "alg": "y2 U' (L U L') U y (R' U' R)",
+          "name": "BR",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "U2 (R U R') U' (F' U F)",
+          "name": "FR",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": []
         },
         {
           "alg": "U2 (R U R') U' y' (R' U R)",
+          "name": "BR",
           "desc": "Connect pieces with single trigger",
           "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "U2 (R U R') U' (F' U F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": []
         },
         {
           "alg": "y2 U2 (L U L') U' y' (L' U L)",
+          "name": "FL",
           "desc": "Connect pieces with single trigger",
           "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "y2 U2 (L U L') U' y (R' U R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": []
+        },
+        {
+          "alg": "y2 U2 (L U L') U' y (R' U R)",
+          "name": "BR",
+          "desc": "Connect pieces with single trigger",
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -1463,6 +1552,7 @@ var algSet = {
       [
         {
           "alg": "y' U (R' U' R) U' y (R U R')",
+          "name": "FR",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1484,6 +1574,7 @@ var algSet = {
         },
         {
           "alg": "y U (L' U' L) U' y (L U L')",
+          "name": "BL",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1495,13 +1586,14 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "y U (L' U' L) U' (F U F')",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
           ]
+        },
+        {
+          "alg": "y U (L' U' L) U' (F U F')",
+          "name": "FL",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
         },
       ]
     },
@@ -1520,7 +1612,7 @@ var algSet = {
     {
       "id": "38",
       "name": "Both Pieces in Slot",
-      "desc": "Case 38 can be solved by bringing the pieces into the top layer to set up case #8 or #12.",
+      "desc": "Case 38 can be solved by bringing the pieces into the top layer to set up case #7 or #8.",
       "wiki": "",
       "algdb": "f2l38",
       "image": "F2L-38",
@@ -1528,7 +1620,24 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "(F' U F) U' (R U2' R') U2 (R U' R')",
+          "name": "FR",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "(F' U F) U' (R U2' R') U' (R U2' R')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
+        },
+        {
           "alg": "(R U' R') U y' (R' U2 R) U2' (R' U R)",
+          "name": "BR",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1556,6 +1665,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U y' (L' U2 L) U2' (L' U L)",
+          "name": "FL",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1564,12 +1674,6 @@ var algSet = {
             {
               "alg": "y2 (L U' L') d (L' U2 L) U2' (L' U L)",
               "desc": "Some people like to use \"d\" moves",
-              "status": 1,
-              "uses": []
-            },
-            {
-              "alg": "y2 (L U' L') U y (R' U2 R) U2' (R' U R)",
-              "desc": "Some people like to use back slots",
               "status": 1,
               "uses": []
             },
@@ -1585,9 +1689,19 @@ var algSet = {
               "status": 1,
               "uses": []
             },
+          ]
+        },
+        {
+          "alg": "y2 (L U' L') U y (R' U2 R) U2' (R' U R)",
+          "name": "BR",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
             {
               "alg": "y2 (L U' L') U y (R' U2 R) U (R' U2 R)",
-              "desc": "Alternative insertion using back slot",
+              "desc": "Alternative insertion",
               "status": 1,
               "uses": []
             },
@@ -1607,12 +1721,14 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U' (R U R') U2 (R U' R')",
+          "name": "FR",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U' (L U L') U2 (L U' L')",
+          "name": "BL",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1631,12 +1747,14 @@ var algSet = {
       [
         {
           "alg": "(R U' R') U (R U2' R') U (R U' R')",
+          "name": "FR",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U (L U2' L') U (L U' L')",
+          "name": "BL",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1646,7 +1764,7 @@ var algSet = {
     {
       "id": "41",
       "name": "Both Pieces in Slot",
-      "desc": "Case 41 can be solved by bringing the pieces into the top layer to set up case #9.",
+      "desc": "Case 41 can be solved by bringing the pieces into the top layer to set up case #21 or #9.",
       "wiki": "",
       "algdb": "f2l41",
       "image": "F2L-41",
@@ -1654,7 +1772,22 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "(F' U F) U2 (R U R' U) (R U' R')",
+          "name": "FR",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "(R U' R') U' (R U' R') U (F' U' F)",
+          "name": "FR",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "(R U' R') U' (R U' R') U y' (R' U' R)",
+          "name": "BR",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1666,16 +1799,11 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "(R U' R') U' (R U' R') U (F' U' F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
           ]
         },
         {
           "alg": "y2 (L U' L') U' (L U' L') U y' (L' U' L)",
+          "name": "FL",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1687,56 +1815,21 @@ var algSet = {
               "status": 1,
               "uses": []
             },
-            {
-              "alg": "y2 (L U' L') U' (L U' L') U y (R' U' R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
           ]
         },
         {
-          "alg": "(R U' R') U y' (R' U' R) U' (R' U' R)",
+          "alg": "y2 (L U' L') U' (L U' L') U y (R' U' R)",
+          "name": "BR",
           "desc": "Separate pieces into the top layer",
           "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "(R U' R') d (R' U' R) U' (R' U' R)",
-              "desc": "Some people like to use \"d\" moves",
-              "status": 1,
-              "uses": []
-            },
-          ]
-        },
-        {
-          "alg": "y2 (L U' L') U y' (L' U' L) U' (L' U' L)",
-          "desc": "Separate pieces into the top layer",
-          "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "y2 (L U' L') d (L' U' L) U' (L' U' L)",
-              "desc": "Some people like to use \"d\" moves",
-              "status": 1,
-              "uses": []
-            },
-            {
-              "alg": "y2 (L U' L') U y (R' U' R) U' (R' U' R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": []
         },
       ]
     },
     {
       "id": "42",
       "name": "Both Pieces in Slot",
-      "desc": "Case 42 can be solved by bringing the pieces into the top layer to set up case #16 or #22.",
+      "desc": "Case 42 can be solved by bringing the pieces into the top layer to set up case #10 or #22.",
       "wiki": "",
       "algdb": "f2l42",
       "image": "F2L-42",
@@ -1744,55 +1837,32 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U R') U' (R U' R') U2 y' (R' U' R)",
-          "desc": "Separate pieces into the top layer",
-          "status": 1,
-          "uses": ["2H", "OH"],
-          "vars":
-          [
-            {
-              "alg": "(R U R') U' (R U' R') U2 (F' U' F)",
-              "desc": "Some people like to use \"F\" moves",
-              "status": 1,
-              "uses": []
-            },
-          ]
-        },
-        {
-          "alg": "y2 (L U L') U' (L U' L') U2 y' (L' U' L)",
-          "desc": "Separate pieces into the top layer",
-          "status": 1,
-          "uses": ["2H", "OH"],
-          "vars":
-          [
-            {
-              "alg": "y2 (L U L') U' (L U' L') U2 y (R' U' R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
-          ]
-        },
-        {
-          "alg": "(R U' R') U2 y' (R' U' R) U' (R' U R)",
+          "alg": "(F' U F) U' (R U R') U (R U R')",
+          "name": "FR",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": []
         },
         {
-          "alg": "y2 (L U' L') U2 y' (L' U' L) U' (L' U L)",
+          "alg": "(R U' R') U2 y' (R' U' R) U' (R' U R)",
+          "name": "BR",
           "desc": "Separate pieces into the top layer",
           "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "y2 (L U' L') U2 y (R' U' R) U' (R' U R)",
-              "desc": "Some people like to use back slots",
-              "status": 1,
-              "uses": []
-            },
-          ]
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U2 y' (L' U' L) U' (L' U L)",
+          "name": "FL",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U2 y (R' U' R) U' (R' U R)",
+          "name": "BR",
+          "desc": "Separate pieces into the top layer",
+          "status": 1,
+          "uses": []
         },
       ]
     },
