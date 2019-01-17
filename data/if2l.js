@@ -655,7 +655,7 @@ var algSet = {
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "U (L U' L') U (L U L')",
+          "alg": "y2 U (L U' L') U (L U L')",
           "name": "Alg 1b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
@@ -1411,7 +1411,7 @@ var algSet = {
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "U (L U L') U2 (L U L')",
+          "alg": "y2 U (L U L') U2 (L U L')",
           "name": "Alg 1b - BL slot",
           "desc": "Bring edge to top",
           "status": 1,
