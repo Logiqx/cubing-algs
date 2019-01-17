@@ -1471,9 +1471,23 @@ var algSet = {
           "uses": ["OH"]
         },
         {
-          "alg": "y2 L2 U L2 U L2 U2 L2",
+          "alg": "y U2 L2 U2' L2 U' L2 U' L2",
           "name": "Alg 3b - BL slot",
           "desc": "Block building",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "R2 U R2 U R2 U2 R2",
+          "name": "Alg 4a - FR slot",
+          "desc": "Block building (inverse)",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "y2 L2 U L2 U L2 U2 L2",
+          "name": "Alg 4b - BL slot",
+          "desc": "Block building (inverse)",
           "status": 1,
           "uses": ["OH"]
         },
