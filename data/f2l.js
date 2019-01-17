@@ -136,14 +136,14 @@ var algSet = {
           "name": "Alg 1a - FR slot",
           "desc": "Simple trigger",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
         {
           "alg": "y' (R' U' R)",
           "name": "Alg 1b - BR slot",
           "desc": "Simple trigger",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["OH"]
         },
         {
           "alg": "y (L' U' L)",
@@ -395,14 +395,14 @@ var algSet = {
           "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
         {
           "alg": "U' (R U' R') U y' (R' U' R)",
           "name": "Alg 1b - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": ["OH"],
           "vars":
           [
             {
@@ -502,14 +502,14 @@ var algSet = {
           "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
         {
           "alg": "U' (R U2' R') U y' (R' U' R)",
           "name": "Alg 1b - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": ["OH"],
           "vars":
           [
             {
@@ -720,14 +720,14 @@ var algSet = {
           "name": "Alg 1a - FR slot",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
         {
           "alg": "(R U' R') U2 y' (R' U' R)",
           "name": "Alg 1b - BR slot",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["OH"]
         },
         {
           "alg": "y2 (L U' L') U2 y' (L' U' L)",
@@ -1478,14 +1478,14 @@ var algSet = {
           "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
         {
           "alg": "U' (R U R') U y' (R' U' R)",
           "name": "Alg 1b - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": ["OH"],
           "vars":
           [
             {
@@ -1564,7 +1564,7 @@ var algSet = {
           "name": "Alg 1a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": [],
           "vars":
           [
             {
@@ -1577,7 +1577,7 @@ var algSet = {
               "alg": "U (F' U' F) U' (R U R')",
               "desc": "Some people like to use \"F\" moves",
               "status": 1,
-              "uses": []
+              "uses": ["2H", "OH"]
             },
           ]
         },
@@ -1633,7 +1633,7 @@ var algSet = {
           "name": "Alg 1 - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": [],
+          "uses": ["2H", "OH"],
           "vars":
           [
             {
@@ -1649,7 +1649,7 @@ var algSet = {
           "name": "Alg 2a - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": [],
           "vars":
           [
             {
@@ -1785,7 +1785,7 @@ var algSet = {
           "name": "Alg 1 - FR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
-          "uses": []
+          "uses": ["2H", "OH"]
         },
         {
           "alg": "(R U' R') U' (R U' R') U (F' U' F)",
@@ -1799,7 +1799,7 @@ var algSet = {
           "name": "Alg 2b - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": [],
           "vars":
           [
             {
@@ -1850,14 +1850,14 @@ var algSet = {
           "name": "Alg 1 - FR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
-          "uses": []
+          "uses": ["2H", "OH"]
         },
         {
           "alg": "(R U' R') U2 y' (R' U' R) U' (R' U R)",
           "name": "Alg 2a - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
         {
           "alg": "y2 (L U' L') U2 y' (L' U' L) U' (L' U L)",
