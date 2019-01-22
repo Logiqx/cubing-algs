@@ -2162,6 +2162,124 @@ var algSet = {
       ]
     },
     {
+      "id": "learning",
+      "name": "Learning",
+      "desc": "The \"learning\" view groups cases based on the shape formed on the top face. The groups order is a just suggestion for people wishing to learn full OLL.",
+      "groups":
+      [
+        {
+          "id": "alledges",
+          "name": "All Edges Oriented",
+          "desc": "These are the 7 [OCLL] cases. These are typically learnt by intermediates using 2-look OLL.",
+          "wiki": "#All_edges_flipped_correctly",
+          "cases": ["26", "27", "25", "23", "24", "22", "21"]
+        },
+        {
+          "id": "tshapes",
+          "name": "\"T\" Shapes",
+          "desc": "These are amongst the easiest cases to recognise and a perfect introduction to full OLL.",
+          "wiki": "#.22T.22_shapes",
+          "cases": ["45", "33"]
+        },
+        {
+          "id": "squares",
+          "name": "Square Shapes",
+          "desc": "These are easy cases to recognise and solved with \"fat\" [Anti-Sune] algorithms.",
+          "wiki": "#Square_shapes",
+          "cases": ["6", "5"]
+        },
+        {
+          "id": "noedges",
+          "name": "No Edges Oriented",
+          "desc": "These are known as the \"dot\" cases. It is advisable to learn these early because the alorithms save more moves than any other group.",
+          "wiki": "#No_edges_flipped_correctly",
+          "cases": ["4", "3", "17", "18", "19", "2", "1"]
+        },
+        {
+          "id": "pshapes",
+          "name": "\"P\" Shapes",
+          "desc": "These cases are easy to recognise and include two of the fastest OLL algorithms.",
+          "wiki": "#.22P.22_shapes",
+          "cases": ["43", "44", "31", "32"]
+        },
+        {
+          "id": "smallbolts",
+          "name": "Small Lightning Bolt Shapes",
+          "desc": "These cases can all be solved with simple [Sune] / [Anti-Sune] variations.",
+          "wiki": "#Small_lightning_bolt_shapes",
+          "cases": ["12", "8", "11", "7"]
+        },
+        {
+          "id": "bigbolts",
+          "name": "Big Lightning Bolt Shapes",
+          "desc": "These cases are what you might call \"average\" in terms of recognition and execution.",
+          "wiki": "#Big_lightning_bolt_shapes",
+          "cases": ["39", "40"]
+        },
+        {
+          "id": "cshapes",
+          "name": "\"C\" Shapes",
+          "desc": "These cases are what you might call \"average\" in terms of recognition and execution.",
+          "wiki": "#.22C.22_shapes",
+          "cases": ["46", "34"]
+        },
+        {
+          "id": "fishes",
+          "name": "Fish Shapes",
+          "desc": "These cases are what you might call \"average\" in terms of recognition and execution.",
+          "wiki": "#Fish_shapes",
+          "cases": ["9", "10", "37", "35"]
+        },
+        {
+          "id": "lshapes",
+          "name": "\"L\" Shapes",
+          "desc": "These cases form the largest group so quick recognition + recall will likely take some time and practice.",
+          "wiki": "#.22L.22_shapes",
+          "cases": ["50", "49", "47", "48", "53", "54"]
+        },
+        {
+          "id": "allcorners",
+          "name": "All Corners Oriented",
+          "desc": "These are the 3 [EOLL] cases and are very distinctive. Since two of the cases aren't very common the saving is actually quite small.",
+          "wiki": "#All_Corners_Oriented",
+          "cases": ["28", "57", "20"]
+        },
+        {
+          "id": "knightmoves",
+          "name": "Knight Move Shapes",
+          "desc": "These cases are what you might call \"below average\" when compared to the other groups.",
+          "wiki": "#Knight_move_shapes",
+          "cases": ["14", "16", "13", "15"]
+        },
+        {
+          "id": "ishapes",
+          "name": "\"I\" Shapes",
+          "desc": "These cases are what you might call \"below average\" when compared to the other groups, except for case 51.",
+          "wiki": "#.22I.22_shapes",
+          "cases": ["51", "52", "56", "55"]
+        },
+        {
+          "id": "awkwards",
+          "name": "Awkward Shapes",
+          "desc": "These cases are what you might call \"below average\" when compared to the other groups.",
+          "wiki": "#Awkward_shapes",
+          "cases": ["42", "41", "29", "30"]
+        },
+        {
+          "id": "wshapes",
+          "name": "\"W\" Shapes",
+          "desc": "These cases are what you might call \"below average\" when compared to the other groups.",
+          "wiki": "#.22W.22_shapes",
+          "cases": ["38", "36"]
+        },
+        {
+          "id": "lucky",
+          "name": "Lucky",
+          "cases": ["Skip"]
+        },
+      ]
+    },
+    {
       "id": "corners",
       "name": "Corners",
       "desc": "The \"corners\" view groups cases based on the corner orientation ([OCLL]); S / Sune, L / Bowtie, U / Headlights, etc.",
