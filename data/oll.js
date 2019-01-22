@@ -2075,7 +2075,7 @@ var algSet = {
           "name": "\"P\" Shapes",
           "desc": "",
           "wiki": "#.22P.22_shapes",
-          "cases": ["43", "44", "31", "32"]
+          "cases": ["44", "43", "32", "31"]
         },
         {
           "id": "wshapes",
@@ -2089,7 +2089,7 @@ var algSet = {
           "name": "\"L\" Shapes",
           "desc": "",
           "wiki": "#.22L.22_shapes",
-          "cases": ["50", "49", "47", "48", "53", "54"]
+          "cases": ["48", "47", "50", "49", "54", "53"]
         },
         {
           "id": "cshapes",
@@ -2124,28 +2124,28 @@ var algSet = {
           "name": "Big Lightning Bolt Shapes",
           "desc": "",
           "wiki": "#Big_lightning_bolt_shapes",
-          "cases": ["39", "40"]
+          "cases": ["40", "39"]
         },
         {
           "id": "smallbolts",
           "name": "Small Lightning Bolt Shapes",
           "desc": "",
           "wiki": "#Small_lightning_bolt_shapes",
-          "cases": ["12", "8", "11", "7"]
+          "cases": ["8", "7", "12", "11"]
         },
         {
           "id": "fishes",
           "name": "Fish Shapes",
           "desc": "",
           "wiki": "#Fish_shapes",
-          "cases": ["9", "10", "37", "35"]
+          "cases": ["37", "35", "9", "10"]
         },
         {
           "id": "knightmoves",
           "name": "Knight Move Shapes",
           "desc": "",
           "wiki": "#Knight_move_shapes",
-          "cases": ["14", "16", "13", "15"]
+          "cases": ["16", "15", "14", "13"]
         },
         {
           "id": "awkwards",
@@ -2162,9 +2162,9 @@ var algSet = {
       ]
     },
     {
-      "id": "learning",
-      "name": "Learning",
-      "desc": "The \"learning\" view groups cases based on the shape formed on the top face. The groups order is a just suggestion for people wishing to learn full OLL.",
+      "id": "learners",
+      "name": "Learners",
+      "desc": "The \"learners\" view groups cases based on the shape formed on the top face. The groups order is a just suggestion for people wishing to learn full OLL.",
       "groups":
       [
         {
@@ -2200,21 +2200,21 @@ var algSet = {
           "name": "\"P\" Shapes",
           "desc": "These cases are easy to recognise and include two of the fastest OLL algorithms.",
           "wiki": "#.22P.22_shapes",
-          "cases": ["43", "44", "31", "32"]
+          "cases": ["44", "43", "32", "31"]
         },
         {
           "id": "smallbolts",
           "name": "Small Lightning Bolt Shapes",
           "desc": "These cases can all be solved with simple [Sune] / [Anti-Sune] variations.",
           "wiki": "#Small_lightning_bolt_shapes",
-          "cases": ["12", "8", "11", "7"]
+          "cases": ["8", "7", "12", "11"]
         },
         {
           "id": "bigbolts",
           "name": "Big Lightning Bolt Shapes",
           "desc": "These cases are what you might call \"average\" in terms of recognition and execution.",
           "wiki": "#Big_lightning_bolt_shapes",
-          "cases": ["39", "40"]
+          "cases": ["40", "39"]
         },
         {
           "id": "cshapes",
@@ -2228,14 +2228,14 @@ var algSet = {
           "name": "Fish Shapes",
           "desc": "These cases are what you might call \"average\" in terms of recognition and execution.",
           "wiki": "#Fish_shapes",
-          "cases": ["9", "10", "37", "35"]
+          "cases": ["37", "35", "9", "10"]
         },
         {
           "id": "lshapes",
           "name": "\"L\" Shapes",
           "desc": "These cases form the largest group so quick recognition + recall will likely take some time and practice.",
           "wiki": "#.22L.22_shapes",
-          "cases": ["50", "49", "47", "48", "53", "54"]
+          "cases": ["48", "47", "50", "49", "54", "53"]
         },
         {
           "id": "allcorners",
@@ -2249,7 +2249,7 @@ var algSet = {
           "name": "Knight Move Shapes",
           "desc": "These cases are what you might call \"below average\" when compared to the other groups.",
           "wiki": "#Knight_move_shapes",
-          "cases": ["14", "16", "13", "15"]
+          "cases": ["16", "15", "14", "13"]
         },
         {
           "id": "ishapes",
