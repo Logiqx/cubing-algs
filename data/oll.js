@@ -589,21 +589,6 @@ var algSet = {
           ]
         },
         {
-          "alg": "(r U2 R' U' R U' r') (r' U2' R U R' U r)",
-          "desc": "[SuneOLL]: [RFWAS], [RBWAS]",
-          "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "r U2' R' U' R U' r2 U2' R U R' U r",
-              "desc": "Execution includes a cancellation",
-              "status": 1,
-              "uses": ["OH"]
-            }
-          ]
-        },
-        {
           "alg": "U2 (r' U2' R U R' U r) (r U2 R' U' R U' r')",
           "desc": "[SuneOLL]: [RBWAS], [RFWAS]",
           "status": 1,
@@ -612,6 +597,21 @@ var algSet = {
           [
             {
               "alg": "U2 r' U2' R U R' U r2 U2' R' U' R U' r'",
+              "desc": "Execution includes a cancellation",
+              "status": 1,
+              "uses": ["OH"]
+            }
+          ]
+        },
+        {
+          "alg": "(r U2 R' U' R U' r') (r' U2' R U R' U r)",
+          "desc": "[SuneOLL]: [RFWAS], [RBWAS]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "r U2' R' U' R U' r2 U2' R U R' U r",
               "desc": "Execution includes a cancellation",
               "status": 1,
               "uses": ["OH"]

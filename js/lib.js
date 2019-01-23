@@ -49,9 +49,12 @@ function header(idealWidth)
 {
 	var msg = "";
 	
-	if (getViewportWidth() < idealWidth && getViewportWidth() < getViewportHeight())
+	if (algSet.header.hasOwnProperty("rotate") && algSet.header.rotate == "true")
 	{
-		msg = "<p class=\"alert\">Best viewed in landscape (horizontal) orientation</p>";
+		if (getViewportWidth() < idealWidth && getViewportWidth() < getViewportHeight())
+		{
+			msg = "<p class=\"alert\">Best viewed in landscape (horizontal) orientation</p>";
+		}
 	}
 	
 	return msg;

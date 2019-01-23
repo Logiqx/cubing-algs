@@ -6,6 +6,7 @@ var algSet = {
     "desc": "This page lists the 42 basic [F2L] cases along with some intuitive solutions that can be used during [CFOP] solves.<br/><br/>It is important to understand the intuitive solutions and how they all set up a basic pair which is then inserted with a simple trigger. To benefit from empty / unsolved slots it may be possible to utilise an alternative setup to avoid one or more cube rotations but this skill will naturally develop with experience. You may notice that almost half of the cases below are actually mirrors of each other and can therefore be solved using the same general approach. All cases can be solved using an identical approach for front-right / back-left slots and back-right / front-left slots, thus avoiding the need for y2 rotations. These variations can be thought of as the same F2L case but executed from a different angle; 180 degrees.<br/><br/>Intuitive F2L contrasts with \"advanced\" F2L which often incorporates algorithmic solutions for the full range of cases that may be encountered during a CFOP solve. This page only contains intuitive solutions and another page on this website will list my \"advanced\" F2L algorithms.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/F2L",
     "algdb": "http://algdb.net/puzzle/333/f2l/",
+    "rotate": "true",
     "uses":
     [
       {
