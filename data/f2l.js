@@ -740,7 +740,7 @@ var algSet = {
           "name": "Alg 1 - FR slot",
           "desc": "[Sledgehammer] into basic insertion",
           "status": 1,
-          "uses": ["2H"]
+          "uses": []
         },
         {
           "alg": "(R U R') U2 (R U' R') U (R U' R')",
