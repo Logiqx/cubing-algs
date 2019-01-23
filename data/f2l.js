@@ -75,14 +75,14 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U' (F' U F)",
+          "alg": "U' (F' U F)", // TODO - Hedgeslammer
           "name": "Alg 1a - FR slot",
           "desc": "Simple trigger",
           "status": 1,
           "uses": []
         },
         {
-          "alg": "y' U' (R' U R)",
+          "alg": "y' U' (R' U R)", // TODO - Hedgeslammer
           "name": "Alg 1b - BR slot",
           "desc": "Simple trigger",
           "status": 1,
@@ -116,6 +116,22 @@ var algSet = {
               "desc": "Alternative insertion",
               "status": 1,
               "uses": []
+            },
+          ]
+        },
+        {
+          "alg": "y2 U2 L (L F' L' F) L'",
+          "name": "Alg 2 - BL slot",
+          "desc": "Use [sledgehammer] to re-orient the pair",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "y2 U2 L2 F' L' F L'",
+              "desc": "Execution incorporates a cancellation",
+              "status": 1,
+              "uses": ["2H"]
             },
           ]
         },
@@ -572,7 +588,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "y2 (L' U2' L) (L U L') (L' U L)",
+          "alg": "y2 (L' U2 L) (L U L') (L' U L)",
           "name": "Alg 1b - BL slot",
           "desc": "Ignore pair at FL then re-insert",
           "status": 1,
@@ -580,7 +596,7 @@ var algSet = {
           "vars":
           [
             {
-              "alg": "y2 L' U2' L2 U L2' U L",
+              "alg": "y2 L' U2 L2 U L2' U L",
               "desc": "Execution incorporates cancellations",
               "status": 1,
               "uses": ["2H", "OH"]
@@ -720,22 +736,29 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U (R' F R F') U (R U R')",
+          "name": "Alg 1 - FR slot",
+          "desc": "[Sledgehammer] into basic insertion",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
           "alg": "(R U R') U2 (R U' R') U (R U' R')",
-          "name": "Alg 1a - FR slot",
+          "name": "Alg 2a - FR slot",
           "desc": "Long but fast to execute",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U L') U2 (L U' L') U (L U' L')",
-          "name": "Alg 1b - BL slot",
+          "name": "Alg 2b - BL slot",
           "desc": "Long but fast to execute",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y' (R' U R) U2' y (R U R')",
-          "name": "Alg 2a - FR slot",
+          "name": "Alg 3a - FR slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": [],
@@ -751,14 +774,14 @@ var algSet = {
         },
         {
           "alg": "y (L' U L) U2 y (L U L')",
-          "name": "Alg 2b - BL slot",
+          "name": "Alg 3b - BL slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y (L' U L) U2 (F U F')",
-          "name": "Alg 2c - FL slot",
+          "name": "Alg 3c - FL slot",
           "desc": "Split pair by going over",
           "status": 1,
           "uses": []
@@ -1002,7 +1025,7 @@ var algSet = {
           "uses": ["OH"]
         },
         {
-          "alg": "y2 U2 L2 U2' L' U' L U' L2",
+          "alg": "y2 U2 L2' U2 L' U' L U' L2'",
           "name": "Alg 2b - BL slot",
           "desc": "Block building",
           "status": 1,
@@ -1021,18 +1044,41 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U' (R U R') (R' F R F') (R U' R')",
+          "name": "Alg 1 - FR slot",
+          "desc": "Set up to case #31",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U' R U R2' F R F' (R U' R')",
+              "desc": "Execution incorporates a cancellation",
+              "status": 1,
+              "uses": ["2H"]
+            },
+          ]
+        },
+        {
+          "alg": "y2 U' L F' L F L2' U (L U' L')",
+          "name": "Alg 2 - BL slot",
+          "desc": "[Sledgehammer] inspired trick",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
           "alg": "y' U' (R' U R) U (R' U R) U' (R' U R)",
-          "name": "Alg 1a - BR slot",
+          "name": "Alg 3a - BR slot",
           "desc": "Split pieces then make pair on side",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
         {
           "alg": "y U' (L' U L) U (L' U L) U' (L' U L)",
-          "name": "Alg 1b - FL slot",
+          "name": "Alg 3b - FL slot",
           "desc": "Split pieces then make pair on side",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": [],
           "vars":
           [
             {
@@ -1042,6 +1088,20 @@ var algSet = {
               "uses": []
             },
           ]
+        },
+        {
+          "alg": "y' U2 R2 U2' R U R' U R2",
+          "name": "Alg 4a - FR slot",
+          "desc": "Block building",
+          "status": 1,
+          "uses": ["OH"]
+        },
+        {
+          "alg": "y U2 L2' U2 L U L' U L2'",
+          "name": "Alg 4b - BL slot",
+          "desc": "Block building",
+          "status": 1,
+          "uses": ["OH"]
         },
       ]
     },
@@ -1060,14 +1120,14 @@ var algSet = {
           "name": "Alg 1a - FR slot",
           "desc": "Long but fast to execute",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H"]
         },
         {
           "alg": "y2 (L U L') U2 (L U L') U2 (L U' L')",
           "name": "Alg 1b - BL slot",
           "desc": "Long but fast to execute",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H"]
         },
         {
           "alg": "U' (R U' R') U' (R U R') U (R U R')",
@@ -1088,18 +1148,25 @@ var algSet = {
           "name": "Alg 3a - FR slot",
           "desc": "Block building",
           "status": 1,
-          "uses": []
+          "uses": ["OH"]
         },
         {
           "alg": "y2 L' U' L' U' L' U L U L",
           "name": "Alg 3b - BL slot",
           "desc": "Block building",
           "status": 1,
+          "uses": ["OH"]
+        },
+        {
+          "alg": "U' (R' F R F') (R U R')",
+          "name": "Alg 4 - FR slot",
+          "desc": "[Sledgehammer] into basic insertion",
+          "status": 1,
           "uses": []
         },
         {
           "alg": "y' U' (R' U R) U y (R U' R')",
-          "name": "Alg 4a - FR slot",
+          "name": "Alg 5a - FR slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": [],
@@ -1115,7 +1182,7 @@ var algSet = {
         },
         {
           "alg": "y U' (L' U L) U y (L U' L')",
-          "name": "Alg 4b - BL slot",
+          "name": "Alg 5b - BL slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": [],
@@ -1131,7 +1198,7 @@ var algSet = {
         },
         {
           "alg": "y U' (L' U L) U (F U' F')",
-          "name": "Alg 4c - FL slot",
+          "name": "Alg 5c - FL slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": []
@@ -1149,14 +1216,14 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U (R U' R') U' (F' U F)",
+          "alg": "U (R U' R') U' (F' U F)", // TODO - Hedgeslammer
           "name": "Alg 1a - FR slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": []
         },
         {
-          "alg": "U (R U' R') U' y' (R' U R)",
+          "alg": "U (R U' R') U' y' (R' U R)", // TODO - Hedgeslammer
           "name": "Alg 1b - BR slot",
           "desc": "[LBL] solution",
           "status": 1,
@@ -1170,7 +1237,7 @@ var algSet = {
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y2 U (L U' L') U' y (R' U R)",
+          "alg": "y2 U (L U' L') U' y (R' U R)", // TODO - Hedgeslammer
           "name": "Alg 1d - BR slot",
           "desc": "[LBL] solution",
           "status": 1,
@@ -1229,14 +1296,14 @@ var algSet = {
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "(R U R') U2 (F' U F)",
+          "alg": "(R U R') U2 (F' U F)", // TODO - Hedgeslammer
           "name": "Alg 2a - FR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
-          "alg": "(R U R') U2 y' (R' U R)",
+          "alg": "(R U R') U2 y' (R' U R)", // TODO - Hedgeslammer
           "name": "Alg 2b - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
@@ -1268,7 +1335,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "y2 (L U L') U2 y (R' U R)",
+          "alg": "y2 (L U L') U2 y (R' U R)", // TODO - Hedgeslammer
           "name": "Alg 2d - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
@@ -1296,15 +1363,22 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "(R' F R F') U (R U' R')",
+          "name": "Alg 1 - FR slot",
+          "desc": "[Sledgehammer] into basic insertion",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
           "alg": "y' (R' U' R) U (R' U' R)",
-          "name": "Alg 1a - BR slot",
+          "name": "Alg 2a - BR slot",
           "desc": "[double-sexy] move",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["OH"]
         },
         {
           "alg": "y (L' U' L) U (L' U' L)",
-          "name": "Alg 1b - FL slot",
+          "name": "Alg 2b - FL slot",
           "desc": "[double-sexy] move",
           "status": 1,
           "uses": ["2H", "OH"]
@@ -1340,7 +1414,7 @@ var algSet = {
     {
       "id": "31",
       "name": "Edge in Slot",
-      "desc": "Case 31 can be solved by extracting the pair and inserting it normally.",
+      "desc": "Case 31 can be solved by simply extracting the pair and inserting it normally.<br/><br/>Rotationless algorithms incorporating the [sledgehammer] are often preferable and can be used for all four slots - see algs 1 and 2.",
       "wiki": "",
       "algdb": "f2l31",
       "image": "F2L-31",
@@ -1348,8 +1422,22 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U' R') U (F' U F)",
-          "name": "Alg 1a - FR slot",
+          "alg": "U' (R' F R F') (R U' R')",
+          "name": "Alg 1 - FR slot",
+          "desc": "[Sledgehammer] to set up basic insertion",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "y2 L U' (L F' L' F) L'",
+          "name": "Alg 2 - BL slot",
+          "desc": "Use [Sledgehammer] to re-orient the pair",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "(R U' R') U (F' U F)", // TODO - Hedgeslammer
+          "name": "Alg 3a - FR slot",
           "desc": "Extract pair then insert normally",
           "status": 1,
           "uses": [],
@@ -1364,11 +1452,11 @@ var algSet = {
           ]
         },
         {
-          "alg": "(R U' R') U y' (R' U R)",
-          "name": "Alg 1b - BR slot",
+          "alg": "(R U' R') U y' (R' U R)", // TODO - Hedgeslammer
+          "name": "Alg 3b - BR slot",
           "desc": "Extract pair then insert normally",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": [],
           "vars":
           [
             {
@@ -1381,16 +1469,16 @@ var algSet = {
               "alg": "(R U' R') y' (R' U2 R)",
               "desc": "Alternative insertion",
               "status": 1,
-              "uses": []
+              "uses": ["OH"]
             },
           ]
         },
         {
           "alg": "y2 (L U' L') U y' (L' U L)",
-          "name": "Alg 1c - FL slot",
+          "name": "Alg 3c - FL slot",
           "desc": "Extract pair then insert normally",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": [],
           "vars":
           [
             {
@@ -1403,13 +1491,13 @@ var algSet = {
               "alg": "y2 (L U' L') y' (L' U2 L)",
               "desc": "Alternative insertion",
               "status": 1,
-              "uses": []
+              "uses": ["OH"]
             },
           ]
         },
         {
-          "alg": "y2 (L U' L') U y (R' U R)",
-          "name": "Alg 1d - BR slot",
+          "alg": "y2 (L U' L') U y (R' U R)", // TODO - Hedgeslammer
+          "name": "Alg 3d - BR slot",
           "desc": "Extract pair then insert normally",
           "status": 1,
           "uses": [],
@@ -1664,14 +1752,14 @@ var algSet = {
           "uses": []
         },
         {
-          "alg": "U2 (R U R') U' (F' U F)",
+          "alg": "U2 (R U R') U' (F' U F)", // TODO - Hedgeslammer
           "name": "Alg 2a - FR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
-          "alg": "U2 (R U R') U' y' (R' U R)",
+          "alg": "U2 (R U R') U' y' (R' U R)", // TODO - Hedgeslammer
           "name": "Alg 2b - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
@@ -1685,7 +1773,7 @@ var algSet = {
           "uses": []
         },
         {
-          "alg": "y2 U2 (L U L') U' y (R' U R)",
+          "alg": "y2 U2 (L U L') U' y (R' U R)", // TODO - Hedgeslammer
           "name": "Alg 2d - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
@@ -1704,8 +1792,15 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U2 (F' U' F) U (R U' R')",
+          "name": "Alg 1 - FR slot",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
           "alg": "y' U (R' U' R) U' y (R U R')",
-          "name": "Alg 1a - FR slot",
+          "name": "Alg 2a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": [],
@@ -1721,13 +1816,13 @@ var algSet = {
               "alg": "U (F' U' F) U' (R U R')",
               "desc": "Some people like to use \"F\" moves",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": []
             },
           ]
         },
         {
           "alg": "y U (L' U' L) U' y (L U L')",
-          "name": "Alg 1b - BL slot",
+          "name": "Alg 2b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1743,8 +1838,15 @@ var algSet = {
         },
         {
           "alg": "y U (L' U' L) U' (F U F')",
-          "name": "Alg 1c - FL slot",
+          "name": "Alg 2c - FL slot",
           "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "U2 (R' F R F') U2 (R U R')",
+          "name": "Alg 3 - FR slot",
+          "desc": "[Sledgehammer] into basic insertion",
           "status": 1,
           "uses": []
         },
@@ -1789,8 +1891,15 @@ var algSet = {
           ]
         },
         {
+          "alg": "(R' F R F') (R U' R') U (R U' R') U2 (R U' R')",
+          "name": "Alg 2 - FR slot",
+          "desc": "Sledge into basic case",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "(R U' R') U y' (R' U2 R) U2' (R' U R)",
-          "name": "Alg 2a - BR slot",
+          "name": "Alg 3a - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": [],
@@ -1818,7 +1927,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U y' (L' U2 L) U2 (L' U L)",
-          "name": "Alg 2b - FL slot",
+          "name": "Alg 3b - FL slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1846,7 +1955,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U y (R' U2 R) U2' (R' U R)",
-          "name": "Alg 2c - BR slot",
+          "name": "Alg 3c - BR slot",
           "desc": "Separate pieces into the top layer",
           "status": 1,
           "uses": [],
