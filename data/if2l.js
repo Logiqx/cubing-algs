@@ -1611,7 +1611,7 @@ var algSet = {
       "name": "Solved Pair",
       "desc": "This is the solved case.",
       "wiki": "",
-      "algdb": "f2l37",
+      "algdb": "",
       "image": "F2L-37",
       "prob": "1/150",
       "algs":
@@ -1623,7 +1623,7 @@ var algSet = {
       "name": "Both Pieces in Slot",
       "desc": "Case 38 can be solved by bringing the pieces into the top layer to set up a simple pair.",
       "wiki": "",
-      "algdb": "f2l38",
+      "algdb": "f2l37",
       "image": "F2L-38",
       "prob": "1/150",
       "algs":
@@ -1769,7 +1769,7 @@ var algSet = {
       "name": "Both Pieces in Slot",
       "desc": "Case 39 can be solved by bringing the pieces into the top layer to set up a simple pair. It can also be considered to be the inverse of case #40.",
       "wiki": "",
-      "algdb": "f2l39",
+      "algdb": "f2l38",
       "image": "F2L-39",
       "prob": "1/150",
       "algs":
@@ -1809,7 +1809,7 @@ var algSet = {
       "name": "Both Pieces in Slot",
       "desc": "Case 40 can be solved by bringing the pieces into the top layer to set up a simple pair. It can also be considered to be the inverse of case #39.",
       "wiki": "",
-      "algdb": "f2l40",
+      "algdb": "f2l39",
       "image": "F2L-40",
       "prob": "1/150",
       "algs":
@@ -1849,7 +1849,7 @@ var algSet = {
       "name": "Both Pieces in Slot",
       "desc": "Case 41 can be solved by bringing the pieces into the top layer to set up a simple pair. It can also be considered to be the inverse of case #42.",
       "wiki": "",
-      "algdb": "f2l41",
+      "algdb": "f2l40",
       "image": "F2L-41",
       "prob": "1/150",
       "algs":
@@ -1914,7 +1914,7 @@ var algSet = {
       "name": "Both Pieces in Slot",
       "desc": "Case 42 can be solved by bringing the pieces into the top layer to set up a simple pair. It can also be considered to be the inverse of case #41.",
       "wiki": "",
-      "algdb": "f2l42",
+      "algdb": "f2l41",
       "image": "F2L-42",
       "prob": "1/150",
       "algs":
