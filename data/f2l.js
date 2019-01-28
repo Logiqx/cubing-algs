@@ -1040,39 +1040,39 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U (F R' F' R) U (R U R')",
+          "name": "Alg 1 - FR slot",
+          "desc": "[Hedgeslammer] into basic insertion",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "U (R U' R') U' (R U' R') U (R U' R')",
-          "name": "Alg 1a - FR slot",
+          "name": "Alg 2a - FR slot",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H"]
         },
         {
           "alg": "y2 U (L U' L') U' (L U' L') U (L U' L')",
-          "name": "Alg 1b - BL slot",
+          "name": "Alg 2b - BL slot",
           "desc": "Split pieces then make pair on side",
           "status": 1,
           "uses": ["2H"]
         },
         {
           "alg": "U2 R2 U2' R' U' R U' R2",
-          "name": "Alg 2a - FR slot",
+          "name": "Alg 3a - FR slot",
           "desc": "Block building",
           "status": 1,
           "uses": ["OH"]
         },
         {
           "alg": "y2 U2 L2' U2 L' U' L U' L2'",
-          "name": "Alg 2b - BL slot",
+          "name": "Alg 3b - BL slot",
           "desc": "Block building",
           "status": 1,
           "uses": ["OH"]
-        },
-        {
-          "alg": "U (F R' F' R) U (R U R')",
-          "name": "Alg 3 - FR slot",
-          "desc": "[Hedgeslammer] into basic insertion",
-          "status": 1,
-          "uses": []
         },
       ]
     },
@@ -1266,39 +1266,39 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U (R U' R') (F R' F' R)",
+          "name": "Alg 1 - FR slot",
+          "desc": "Finish with [Hedgeslammer]",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
           "alg": "U (R U' R') U' (F' U F)",
-          "name": "Alg 1a - FR slot",
+          "name": "Alg 2a - FR slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": []
         },
         {
           "alg": "U (R U' R') U' y' (R' U R)",
-          "name": "Alg 1b - BR slot",
+          "name": "Alg 2b - BR slot",
           "desc": "[LBL] solution",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["OH"]
         },
         {
           "alg": "y2 U (L U' L') U' y' (L' U L)",
-          "name": "Alg 1c - FL slot",
+          "name": "Alg 2c - FL slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 U (L U' L') U' y (R' U R)",
-          "name": "Alg 1d - BR slot",
+          "name": "Alg 2d - BR slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": []
-        },
-        {
-          "alg": "U (R U' R') (F R' F' R)",
-          "name": "Alg 2 - FR slot",
-          "desc": "Finish with [Hedgeslammer]",
-          "status": 1,
-          "uses": ["2H"]
         },
       ]
     },
@@ -1339,29 +1339,36 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "(R U R') U' (F R' F' R)",
+          "name": "Alg 1 - FR slot",
+          "desc": "Finish with [Hedgeslammer]",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
           "alg": "y' (R' U R) U' (R' U R)",
-          "name": "Alg 1a - BR slot",
+          "name": "Alg 2a - BR slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["OH"]
         },
         {
           "alg": "y (L' U L) U' (L' U L)",
-          "name": "Alg 1b - FL slot",
+          "name": "Alg 2b - FL slot",
           "desc": "Hide edge to make pair on side",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "(R U R') U2 (F' U F)",
-          "name": "Alg 2a - FR slot",
+          "name": "Alg 3a - FR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "(R U R') U2 y' (R' U R)",
-          "name": "Alg 2b - BR slot",
+          "name": "Alg 3b - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": [],
@@ -1377,7 +1384,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U L') U2 y' (L' U L)",
-          "name": "Alg 2c - FL slot",
+          "name": "Alg 3c - FL slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": [],
@@ -1393,7 +1400,7 @@ var algSet = {
         },
         {
           "alg": "y2 (L U L') U2 y (R' U R)",
-          "name": "Alg 2d - BR slot",
+          "name": "Alg 3d - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": [],
@@ -1406,13 +1413,6 @@ var algSet = {
               "uses": []
             },
           ]
-        },
-        {
-          "alg": "(R U R' U') (F R' F' R)",
-          "name": "Alg 3 - FR slot",
-          "desc": "Finish with [Hedgeslammer]",
-          "status": 1,
-          "uses": ["2H"]
         },
       ]
     },
@@ -1770,15 +1770,22 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U' (R U R') U (F' U' F)",
-          "name": "Alg 1a - FR slot",
-          "desc": "Hide corner, reposition edge",
+          "alg": "U2 (R U R') (F R' F' R)",
+          "name": "Alg 1 - FR slot",
+          "desc": "Finish with [Hedgeslammer]",
           "status": 1,
           "uses": ["2H"]
         },
         {
+          "alg": "U' (R U R') U (F' U' F)",
+          "name": "Alg 2a - FR slot",
+          "desc": "Hide corner, reposition edge",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "U' (R U R') U y' (R' U' R)",
-          "name": "Alg 1b - BR slot",
+          "name": "Alg 2b - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["OH"],
@@ -1794,7 +1801,7 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U L') U y' (L' U' L)",
-          "name": "Alg 1c - FL slot",
+          "name": "Alg 2c - FL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": ["2H", "OH"],
@@ -1810,45 +1817,38 @@ var algSet = {
         },
         {
           "alg": "y2 U' (L U L') U y (R' U' R)",
-          "name": "Alg 1d - BR slot",
+          "name": "Alg 2d - BR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
           "uses": []
         },
         {
           "alg": "U2 (R U R') U' (F' U F)",
-          "name": "Alg 2a - FR slot",
+          "name": "Alg 3a - FR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "U2 (R U R') U' y' (R' U R)",
-          "name": "Alg 2b - BR slot",
+          "name": "Alg 3b - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y2 U2 (L U L') U' y' (L' U L)",
-          "name": "Alg 2c - FL slot",
+          "name": "Alg 3c - FL slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y2 U2 (L U L') U' y (R' U R)",
-          "name": "Alg 2d - BR slot",
+          "name": "Alg 3d - BR slot",
           "desc": "Connect pieces with single trigger",
           "status": 1,
           "uses": []
-        },
-        {
-          "alg": "U2 (R U R') (F R' F' R)",
-          "name": "Alg 3 - FR slot",
-          "desc": "Finish with [Hedgeslammer]",
-          "status": 1,
-          "uses": ["2H"]
         },
       ]
     },
