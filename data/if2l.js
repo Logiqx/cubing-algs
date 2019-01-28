@@ -655,7 +655,7 @@ var algSet = {
           "uses": ["2H", "OH"]
         },
         {
-          "alg": "y2 U (L U' L') U (L U L')",
+          "alg": "y2 U' (L U' L') U (L U L')",
           "name": "Alg 1b - BL slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
@@ -1621,7 +1621,7 @@ var algSet = {
     {
       "id": "38",
       "name": "Both Pieces in Slot",
-      "desc": "Case 38 can be solved by bringing the pieces into the top layer to set up case #7 or #8.",
+      "desc": "Case 38 can be solved by bringing the pieces into the top layer to set up a simple pair.",
       "wiki": "",
       "algdb": "f2l38",
       "image": "F2L-38",
@@ -1629,27 +1629,57 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(F' U F) U' (R U2' R') U2 (R U' R')",
-          "name": "Alg 1 - FR slot",
-          "desc": "Hide corner, reposition edge",
+          "alg": "(R U2' R') U (R U2' R') U (F' U' F)",
+          "name": "Alg 1a - FR slot",
+          "desc": "Set up into case #11",
           "status": 1,
-          "uses": [],
+          "uses": []
+        },
+        {
+          "alg": "(R U2' R') U (R U2' R') U y' (R' U' R)",
+          "name": "Alg 1b - BR slot",
+          "desc": "Set up into case #11",
+          "status": 1,
+          "uses": ["2H", "OH"],
           "vars":
           [
             {
-              "alg": "(F' U F) U' (R U2' R') U' (R U2' R')",
-              "desc": "Alternative insertion",
+              "alg": "(R U2' R') U (R U2' R') d (R' U' R)",
+              "desc": "Some people like to use \"d\" moves",
               "status": 1,
               "uses": []
             },
           ]
         },
         {
-          "alg": "(R U' R') U y' (R' U2 R) U2' (R' U R)",
-          "name": "Alg 2a - BR slot",
-          "desc": "Separate pieces into the top layer",
+          "alg": "y2 (L U2 L') U (L U2 L') U y' (L' U' L)",
+          "name": "Alg 1c - FL slot",
+          "desc": "Set up into case #11",
           "status": 1,
           "uses": ["2H", "OH"],
+          "vars":
+          [
+            {
+              "alg": "y2 (L U2 L') U (L U2 L') d (L' U' L)",
+              "desc": "Some people like to use \"d\" moves",
+              "status": 1,
+              "uses": []
+            },
+          ]
+        },
+        {
+          "alg": "y2 (L U2 L') U (L U2 L') U y (R' U' R)",
+          "name": "Alg 1d - BR slot",
+          "desc": "Set up into case #11",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "(R U' R') U y' (R' U2 R) U2' (R' U R)",
+          "name": "Alg 2a - BR slot",
+          "desc": "Set up into case #8",
+          "status": 1,
+          "uses": [],
           "vars":
           [
             {
@@ -1675,9 +1705,9 @@ var algSet = {
         {
           "alg": "y2 (L U' L') U y' (L' U2 L) U2 (L' U L)",
           "name": "Alg 2b - FL slot",
-          "desc": "Separate pieces into the top layer",
+          "desc": "Set up into case #8",
           "status": 1,
-          "uses": ["2H", "OH"],
+          "uses": [],
           "vars":
           [
             {
@@ -1703,7 +1733,7 @@ var algSet = {
         {
           "alg": "y2 (L U' L') U y (R' U2 R) U2' (R' U R)",
           "name": "Alg 2c - BR slot",
-          "desc": "Separate pieces into the top layer",
+          "desc": "Set up into case #8",
           "status": 1,
           "uses": [],
           "vars":
@@ -1716,12 +1746,28 @@ var algSet = {
             },
           ]
         },
+        {
+          "alg": "(F' U F) U' (R U2' R') U2 (R U' R')",
+          "name": "Alg 3 - FR slot",
+          "desc": "Set up into case #7",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "(F' U F) U' (R U2' R') U' (R U2' R')",
+              "desc": "Alternative insertion",
+              "status": 1,
+              "uses": []
+            },
+          ]
+        },
       ]
     },
     {
       "id": "39",
       "name": "Both Pieces in Slot",
-      "desc": "Case 39 can be solved by bringing the pieces into the top layer to set up case #5.",
+      "desc": "Case 39 can be solved by bringing the pieces into the top layer to set up a simple pair. It can also be considered to be the inverse of case #40.",
       "wiki": "",
       "algdb": "f2l39",
       "image": "F2L-39",
@@ -1729,16 +1775,30 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U' R') U' (R U R') U2 (R U' R')",
+          "alg": "(R U R') U' (R U2' R') U' (R U R')",
           "name": "Alg 1a - FR slot",
-          "desc": "Separate pieces into the top layer",
+          "desc": "Set up into case #17",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "y2 (L U L') U' (L U2 L') U' (L U L')",
+          "name": "Alg 1b - BL slot",
+          "desc": "Set up into case #17",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "(R U' R') U' (R U R') U2 (R U' R')",
+          "name": "Alg 2a - FR slot",
+          "desc": "Set up into case #5",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U' (L U L') U2 (L U' L')",
-          "name": "Alg 1b - BL slot",
-          "desc": "Separate pieces into the top layer",
+          "name": "Alg 2b - BL slot",
+          "desc": "Set up into case #5",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -1747,7 +1807,7 @@ var algSet = {
     {
       "id": "40",
       "name": "Both Pieces in Slot",
-      "desc": "Case 40 can be solved by bringing the pieces into the top layer to set up case #19.",
+      "desc": "Case 40 can be solved by bringing the pieces into the top layer to set up a simple pair. It can also be considered to be the inverse of case #39.",
       "wiki": "",
       "algdb": "f2l40",
       "image": "F2L-40",
@@ -1755,16 +1815,30 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(R U' R') U (R U2' R') U (R U' R')",
+          "alg": "(R U2' R') U (R U' R') U (R U R')",
           "name": "Alg 1a - FR slot",
-          "desc": "Separate pieces into the top layer",
+          "desc": "Set up into case #14",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "y2 (L U2' L') U (L U' L') U (L U L')",
+          "name": "Alg 1b - BL slot",
+          "desc": "Set up into case #14",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "(R U' R') U (R U2' R') U (R U' R')",
+          "name": "Alg 2a - FR slot",
+          "desc": "Set up into case #19",
           "status": 1,
           "uses": ["2H", "OH"]
         },
         {
           "alg": "y2 (L U' L') U (L U2' L') U (L U' L')",
-          "name": "Alg 1b - BL slot",
-          "desc": "Separate pieces into the top layer",
+          "name": "Alg 2b - BL slot",
+          "desc": "Set up into case #19",
           "status": 1,
           "uses": ["2H", "OH"]
         },
@@ -1773,7 +1847,7 @@ var algSet = {
     {
       "id": "41",
       "name": "Both Pieces in Slot",
-      "desc": "Case 41 can be solved by bringing the pieces into the top layer to set up case #21 or #9.",
+      "desc": "Case 41 can be solved by bringing the pieces into the top layer to set up a simple pair. It can also be considered to be the inverse of case #42.",
       "wiki": "",
       "algdb": "f2l41",
       "image": "F2L-41",
@@ -1781,23 +1855,16 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(F' U F) U2' (R U R' U) (R U' R')",
-          "name": "Alg 1 - FR slot",
-          "desc": "Separate pieces into the top layer",
-          "status": 1,
-          "uses": []
-        },
-        {
           "alg": "(R U' R') U' (R U' R') U (F' U' F)",
-          "name": "Alg 2a - FR slot",
-          "desc": "Separate pieces into the top layer",
+          "name": "Alg 1a - FR slot",
+          "desc": "Set up into case #9",
           "status": 1,
           "uses": []
         },
         {
           "alg": "(R U' R') U' (R U' R') U y' (R' U' R)",
-          "name": "Alg 2b - BR slot",
-          "desc": "Separate pieces into the top layer",
+          "name": "Alg 1b - BR slot",
+          "desc": "Set up into case #9",
           "status": 1,
           "uses": ["2H", "OH"],
           "vars":
@@ -1812,8 +1879,8 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U' (L U' L') U y' (L' U' L)",
-          "name": "Alg 2c - FL slot",
-          "desc": "Separate pieces into the top layer",
+          "name": "Alg 1c - FL slot",
+          "desc": "Set up into case #9",
           "status": 1,
           "uses": ["2H", "OH"],
           "vars":
@@ -1828,8 +1895,15 @@ var algSet = {
         },
         {
           "alg": "y2 (L U' L') U' (L U' L') U y (R' U' R)",
-          "name": "Alg 2d - BR slot",
-          "desc": "Separate pieces into the top layer",
+          "name": "Alg 1d - BR slot",
+          "desc": "Set up into case #9",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "(F' U F) U2' (R U R') U (R U' R')",
+          "name": "Alg 2 - FR slot",
+          "desc": "Set up into case #21",
           "status": 1,
           "uses": []
         },
@@ -1838,7 +1912,7 @@ var algSet = {
     {
       "id": "42",
       "name": "Both Pieces in Slot",
-      "desc": "Case 42 can be solved by bringing the pieces into the top layer to set up case #10 or #22.",
+      "desc": "Case 42 can be solved by bringing the pieces into the top layer to set up a simple pair. It can also be considered to be the inverse of case #41.",
       "wiki": "",
       "algdb": "f2l42",
       "image": "F2L-42",
@@ -1846,30 +1920,58 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "(F' U F) U' (R U R') U (R U R')",
-          "name": "Alg 1 - FR slot",
-          "desc": "Separate pieces into the top layer",
+          "alg": "(R U R') U' (R U' R') U2 (F' U' F)",
+          "name": "Alg 1a - FR slot",
+          "desc": "Set up into case #16",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "(R U R') U' (R U' R') U2 y' (R' U' R)",
+          "name": "Alg 1b - BR slot",
+          "desc": "Set up into case #16",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U L') U' (L U' L') U2 y' (L' U' L)",
+          "name": "Alg 1c - FL slot",
+          "desc": "Set up into case #16",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
+          "alg": "y2 (L U' L') U2 y (R' U' R)",
+          "name": "Alg 1d - BR slot",
+          "desc": "Set up into case #16",
           "status": 1,
           "uses": []
         },
         {
           "alg": "(R U' R') U2 y' (R' U' R) U' (R' U R)",
           "name": "Alg 2a - BR slot",
-          "desc": "Separate pieces into the top layer",
+          "desc": "Set up into case #22",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
         {
           "alg": "y2 (L U' L') U2 y' (L' U' L) U' (L' U L)",
           "name": "Alg 2b - FL slot",
-          "desc": "Separate pieces into the top layer",
+          "desc": "Set up into case #22",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": []
         },
         {
           "alg": "y2 (L U' L') U2 y (R' U' R) U' (R' U R)",
           "name": "Alg 2c - BR slot",
-          "desc": "Separate pieces into the top layer",
+          "desc": "Set up into case #22",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "(F' U F) U' (R U R') U (R U R')",
+          "name": "Alg 3 - FR slot",
+          "desc": "Set up into case #10",
           "status": 1,
           "uses": []
         },
@@ -1917,7 +2019,7 @@ var algSet = {
         {
           "id": "bps",
           "name": "Both Pieces in Slot",
-          "desc": "These cases are typically solved by separating both pieces as they are moved into the top layer.",
+          "desc": "These cases are all solved by moving both pieces into the top layer.",
           "cases": ["37", "38", "39", "41", "40", "42"]
         },
       ]
@@ -1987,7 +2089,7 @@ var algSet = {
         {
           "id": "wiki9",
           "name": "Edge and Corner in Place",
-          "desc": "These cases are typically solved by separating both pieces as they are moved into the top layer.",
+          "desc": "These cases are all solved by moving both pieces into the top layer.",
           "wiki": "#Edge_and_Corner_in_Place",
           "cases": ["37", "38", "39", "40", "41", "42"]
         },
@@ -2044,7 +2146,7 @@ var algSet = {
         {
           "id": "ecp",
           "name": "Edge and Corner in Place",
-          "desc": "These cases are typically solved by separating both pieces as they are moved into the top layer.",
+          "desc": "These cases are all solved by moving both pieces into the top layer.",
           "cases": ["37", "38", "39", "40", "41", "42"]
         },
       ]
