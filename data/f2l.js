@@ -1119,7 +1119,7 @@ var algSet = {
               "alg": "U' R U R2' F R F' (R U' R')",
               "desc": "Execution incorporates a cancellation",
               "status": 1,
-              "uses": ["2H"]
+              "uses": []
             },
           ]
         },
