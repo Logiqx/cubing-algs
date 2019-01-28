@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "F2L",
     "name": "First Two Layers",
-    "desc": "This page lists the 42 basic [F2L] cases along with some intuitive solutions that can be used during [CFOP] solves.<br/><br/>It is important to understand the intuitive solutions and how they all set up a basic pair which is then inserted with a simple trigger. To benefit from empty / unsolved slots it may be possible to utilise an alternative setup to avoid one or more cube rotations but this skill will naturally develop with experience. You may notice that almost half of the cases below are actually mirrors of each other and can therefore be solved using the same general approach. All cases can be solved using an identical approach for front-right / back-left slots and back-right / front-left slots, thus avoiding the need for y2 rotations. These variations can be thought of as the same F2L case but executed from a different angle; 180 degrees.<br/><br/>Intuitive F2L contrasts with \"advanced\" F2L which often incorporates algorithmic solutions for the full range of cases that may be encountered during a CFOP solve. This page only contains intuitive solutions and another page on this website will list my \"advanced\" F2L algorithms.",
+    "desc": "This page lists the 42 basic [F2L] cases along with speed-optimal solutions that can be used during [CFOP] solves. It is important to understand the basic solutions and concepts on my \"Intuitive F2L\" page before studying the solutions on this page. Practicing the intuitive solutions is highly desirable if you are to develop an understanding of the F2L cases and the concept of edge orientation.<br/><br/>The main difference between \"intuitive\" and \"advanced\" solutions is the inclusion of the following techniques:<br/><br/>- Entirely [RU] solutions which may well be long (e.g. 11 or 12 moves) but are fast to execute<br/>- Use of [Sledgehammer] and [Hedgeslammer] to flip edges and avoid rotations - i.e. R' F R F' and F R' F' R<br/>- Use of the 6-move [OLL] algorithms to flip edges and avoid rotations - i.e. F (R U R' U') F' and F (U R U' R') F'<br/><br/>Many of the techniques described above only lend themselves to the front of the cube so solutions are provided for the front and back slots. All of the algorithms on this page can be mirrored left-to-right so solutions are only provided relative to the front-right and back-left slots (i.e. different by 180 degrees / y2).<br/><br/>Some cases have different solutions for two-handed (2H) and one-handed (OH) solves so these are clearly labelled. The page does not show alternative insertions for partial edge control (e.g. [Sledgehammer] / [Hedgeslammer] rather than R U' R') since it is largely intuitive and can be improvised.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/F2L",
     "algdb": "http://algdb.net/puzzle/333/f2l/",
     "rotate": "true",
@@ -528,7 +528,7 @@ var algSet = {
     {
       "id": "11",
       "name": "Different Colours on Top",
-      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a regular insertion. Empty slots can often be used to avoid unnecessary cube rotations.",
+      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l11",
       "image": "F2L-11",
@@ -586,7 +586,7 @@ var algSet = {
     {
       "id": "12",
       "name": "Different Colours on Top",
-      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a regular insertion. Empty slots can often be used to avoid unnecessary cube rotations.",
+      "desc": "Cases 11 and 12 are solved by splitting the pieces apart to set up a regular insertion.",
       "wiki": "",
       "algdb": "f2l12",
       "image": "F2L-12",
@@ -2415,19 +2415,19 @@ var algSet = {
         {
           "id": "cset",
           "name": "Corner in Slot, Edge on Top",
-          "desc": "These cases may be solved using a number of approaches.",
+          "desc": "These cases may be solved using a number of different approaches - sledge hammer, hedge slammer, block building, etc.",
           "cases": ["30", "29", "27", "28", "25", "26"]
         },
         {
           "id": "ctes",
           "name": "Corner on Top, Edge in Slot",
-          "desc": "These cases may be solved using a number of approaches.",
+          "desc": "These cases may be solved using a number of different approaches - sledge hammer, hedge slammer, block building, etc.",
           "cases": ["32", "31", "33", "35", "34", "36"]
         },
         {
           "id": "bps",
           "name": "Both Pieces in Slot",
-          "desc": "These cases are all solved by moving both pieces into the top layer.",
+          "desc": "These cases are all solved by bringing the pieces into the top layer to set up a simple pair.",
           "cases": ["37", "38", "39", "41", "40", "42"]
         },
       ]
@@ -2441,7 +2441,7 @@ var algSet = {
         {
           "id": "wiki1",
           "name": "Easy Cases",
-          "desc": "These cases are the four simplest [F2L] insertions - i.e. 3 move triggers.",
+          "desc": "These cases are the four simplest [F2L] insertions - i.e. 3 or 4 move triggers.",
           "wiki": "#Easy_Cases",
           "cases": ["1", "2", "3", "4"]
         },
@@ -2462,7 +2462,7 @@ var algSet = {
         {
           "id": "wiki4",
           "name": "Split Pair by Going Over",
-          "desc": "These cases are all solved by hiding the edge and splitting up the pieces to set up a regular insertion.",
+          "desc": "These cases are typically solved by hiding the edge and splitting up the pieces to set up a regular insertion.",
           "wiki": "#Split_Pair_by_Going_Over",
           "cases": ["15", "16", "17", "18"]
         },
@@ -2483,21 +2483,21 @@ var algSet = {
         {
           "id": "wiki7",
           "name": "Corner in Place, Edge in U Face",
-          "desc": "These cases may be solved using a number of approaches.",
+          "desc": "These cases may be solved using a number of different approaches - sledge hammer, hedge slammer, block building, etc.",
           "wiki": "#Corner_in_Place.2C_Edge_in_U_Face",
           "cases": ["25", "26", "27", "28", "29", "30"]
         },
         {
           "id": "wiki8",
           "name": "Edge in Place, Corner in U face",
-          "desc": "These cases may be solved using a number of approaches.",
+          "desc": "These cases may be solved using a number of different approaches - sledge hammer, hedge slammer, block building, etc.",
           "wiki": "#Edge_in_Place.2C_Corner_in_U_face",
           "cases": ["31", "32", "33", "34", "35", "36"]
         },
         {
           "id": "wiki9",
           "name": "Edge and Corner in Place",
-          "desc": "These cases are all solved by moving both pieces into the top layer.",
+          "desc": "These cases are all solved by bringing the pieces into the top layer to set up a simple pair.",
           "wiki": "#Edge_and_Corner_in_Place",
           "cases": ["37", "38", "39", "40", "41", "42"]
         },
@@ -2512,7 +2512,7 @@ var algSet = {
         {
           "id": "basic",
           "name": "Basic Inserts",
-          "desc": "These cases are the four simplest [F2L] insertions - i.e. 3 move triggers.",
+          "desc": "These cases are the four simplest [F2L] insertions - i.e. 3 or 4 move triggers.",
           "cases": ["1", "2", "3", "4"]
         },
         {
@@ -2536,25 +2536,25 @@ var algSet = {
         {
           "id": "icp",
           "name": "Incorrectly Connected",
-          "desc": "These cases are all solved by hiding the edge (or corner) and splitting up the pieces to set up a regular insertion.",
+          "desc": "These cases are typically solved by hiding the edge (or corner) and splitting up the pieces to set up a regular insertion.",
           "cases": ["15", "16", "17", "18", "23", "24"]
         },
         {
           "id": "cpeu",
           "name": "Corner in Place, Edge in U",
-          "desc": "These cases may be solved using a number of approaches.",
+          "desc": "These cases may be solved using a number of different approaches - sledge hammer, hedge slammer, block building, etc.",
           "cases": ["25", "26", "27", "28", "29", "30"]
         },
         {
           "id": "epcu",
           "name": "Edge in Place, Corner in U",
-          "desc": "These cases may be solved using a number of approaches.",
+          "desc": "These cases may be solved using a number of different approaches - sledge hammer, hedge slammer, block building, etc.",
           "cases": ["31", "32", "33", "34", "35", "36"]
         },
         {
           "id": "ecp",
           "name": "Edge and Corner in Place",
-          "desc": "These cases are all solved by moving both pieces into the top layer.",
+          "desc": "These cases are all solved by bringing the pieces into the top layer to set up a simple pair.",
           "cases": ["37", "38", "39", "40", "41", "42"]
         },
       ]
