@@ -821,7 +821,7 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U F (R U R' U') F' (U R U' R')",
+          "alg": "U F (R U R' U') F' U (R U' R')",
           "name": "Alg 1 - FR slot",
           "desc": "OLL #45 into basic insertion",
           "status": 1,
@@ -1166,57 +1166,71 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U' (R' F R F') (R U R')",
+          "alg": "R' F' R (U R U' R') F",
           "name": "Alg 1 - FR slot",
-          "desc": "[Sledgehammer] into basic insertion",
+          "desc": "Block building",
           "status": 1,
           "uses": ["2H"]
         },
         {
+          "alg": "U' F' (R U R' U') R' F R",
+          "name": "Alg 2 - FR slot",
+          "desc": "Block building (inverse)",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' (R' F R F') (R U R')",
+          "name": "Alg 3 - FR slot",
+          "desc": "[Sledgehammer] into basic insertion",
+          "status": 1,
+          "uses": []
+        },
+        {
           "alg": "(R U R') U2 (R U R') U2 (R U' R')",
-          "name": "Alg 2a - FR slot",
+          "name": "Alg 4a - FR slot",
           "desc": "Long but fast to execute",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y2 (L U L') U2 (L U L') U2 (L U' L')",
-          "name": "Alg 2b - BL slot",
+          "name": "Alg 4b - BL slot",
           "desc": "Long but fast to execute",
           "status": 1,
-          "uses": ["2H"]
+          "uses": []
         },
         {
           "alg": "U' (R U' R') U' (R U R') U (R U R')",
-          "name": "Alg 3a - FR slot",
+          "name": "Alg 5a - FR slot",
           "desc": "Long but fast to execute",
           "status": 1,
           "uses": []
         },
         {
           "alg": "y2 U' (L U' L') U' (L U L') U (L U L')",
-          "name": "Alg 3b - BL slot",
+          "name": "Alg 5b - BL slot",
           "desc": "Long but fast to execute",
           "status": 1,
           "uses": []
         },
         {
           "alg": "R' U' R' U' R' U R U R",
-          "name": "Alg 4a - FR slot",
+          "name": "Alg 6a - FR slot",
           "desc": "Block building",
           "status": 1,
           "uses": ["OH"]
         },
         {
           "alg": "y2 L' U' L' U' L' U L U L",
-          "name": "Alg 4b - BL slot",
+          "name": "Alg 6b - BL slot",
           "desc": "Block building",
           "status": 1,
           "uses": ["OH"]
         },
         {
           "alg": "y' U' (R' U R) U y (R U' R')",
-          "name": "Alg 5a - FR slot",
+          "name": "Alg 7a - FR slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": [],
@@ -1232,7 +1246,7 @@ var algSet = {
         },
         {
           "alg": "y U' (L' U L) U y (L U' L')",
-          "name": "Alg 5b - BL slot",
+          "name": "Alg 7b - BL slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": [],
@@ -1248,7 +1262,7 @@ var algSet = {
         },
         {
           "alg": "y U' (L' U L) U (F U' F')",
-          "name": "Alg 5c - FL slot",
+          "name": "Alg 7c - FL slot",
           "desc": "[LBL] solution",
           "status": 1,
           "uses": []
