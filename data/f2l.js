@@ -1001,6 +1001,20 @@ var algSet = {
           "status": 1,
           "uses": ["2H", "OH"]
         },
+        {
+          "alg": "(R U' R') U2 (R U R')",
+          "name": "Alg 2a - FR slot",
+          "desc": "Hide edge to set up pair",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "y2 (L U' L') U2 (L U L')",
+          "name": "Alg 2b - BL slot",
+          "desc": "Hide edge to set up pair",
+          "status": 1,
+          "uses": []
+        },
       ]
     },
     {
@@ -1888,14 +1902,14 @@ var algSet = {
           "name": "Alg 2 - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["OH"]
+          "uses": []
         },
         {
           "alg": "y' U (R' U' R) U' y (R U R')",
           "name": "Alg 3a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": [],
+          "uses": ["OH"],
           "vars":
           [
             {

@@ -882,6 +882,20 @@ var algSet = {
           "status": 1,
           "uses": ["2H", "OH"]
         },
+        {
+          "alg": "(R U' R') U2 (R U R')",
+          "name": "Alg 2a - FR slot",
+          "desc": "Hide edge to set up pair",
+          "status": 1,
+          "uses": []
+        },
+        {
+          "alg": "y2 (L U' L') U2 (L U L')",
+          "name": "Alg 2b - BL slot",
+          "desc": "Hide edge to set up pair",
+          "status": 1,
+          "uses": []
+        },
       ]
     },
     {
