@@ -426,14 +426,14 @@ var algSet = {
           "name": "Alg 1 - FR slot",
           "desc": "OLL #45 into basic insertion",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
         {
           "alg": "U' (R U' R') U (F' U' F)",
           "name": "Alg 2a - FR slot",
           "desc": "Hide corner, reposition edge",
           "status": 1,
-          "uses": ["2H"]
+          "uses": []
         },
         {
           "alg": "U' (R U' R') U y' (R' U' R)",
@@ -825,7 +825,7 @@ var algSet = {
           "name": "Alg 1 - FR slot",
           "desc": "OLL #45 into basic insertion",
           "status": 1,
-          "uses": []
+          "uses": ["2H"]
         },
         {
           "alg": "U F (U R U' R') F' (R U R')",
@@ -839,7 +839,7 @@ var algSet = {
           "name": "Alg 3a - FR slot",
           "desc": "Split pair by going over",
           "status": 1,
-          "uses": ["2H"]
+          "uses": []
         },
         {
           "alg": "(R U' R') U2 y' (R' U' R)",
