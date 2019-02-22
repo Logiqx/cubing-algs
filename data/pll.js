@@ -938,16 +938,16 @@ var algSet = {
           "cases": ["Ja", "Jb"]
         },
         {
-          "id": "R",
-          "name": "R-Perms",
-          "desc": "R-Perms aren't as nice as J-Perms but they are still pretty good cases to encounter. Ra may be solved with an [RUF] or [RUD] algorithm.",
-          "cases": ["Ra", "Rb"]
-        },
-        {
           "id": "AE",
           "name": "A-Perms and E-Perm",
           "desc": "A-Perms and E-Perms are pure [CPLL] cases. They are typically solved by an [RUD] algorithm, incorporating a rotation on the x-axis.",
           "cases": ["Aa", "Ab", "E"]
+        },
+        {
+          "id": "R",
+          "name": "R-Perms",
+          "desc": "R-Perms aren't as nice as J-Perms but they are still pretty good cases to encounter. Ra may be solved with an [RUF] or [RUD] algorithm.",
+          "cases": ["Ra", "Rb"]
         },
         {
           "id": "G",
