@@ -725,9 +725,15 @@ var algSet = {
           "uses": ["2H"]
         },
         {
+          "alg": "R' U R U' x' U (R U2' R' U' R U' R') U2 (R U R' U')",
+          "desc": "Extract [F2L] pair (BR), rotate, [AUF], [RFAS], [AUF], [Sexy]",
+          "status": 1,
+          "uses": ["OH"]
+        },
+        {
           "alg": "R' U2' R U2' L U' R' U L' U L U' R U L'",
           "desc": "Playing with [F2L] pairs - track BR + BL",
-          "status": 1,
+          "status": -1,
           "uses": ["OH"]
         },
       ]
