@@ -1659,16 +1659,22 @@ var algSet = {
       "algs":
       [
         {
+          "alg": "U (F R' F' R) U2 (R U' R' U R U2' R')",
+          "desc": "[Hedgeslammer] into Winter Variation",
+          "status": 1,
+          "uses": ["2H", "OH"]
+        },
+        {
           "alg": "U2 F' (L' U' L U) (L' U' L U) F",
           "desc": "[Conjugate] of double [sexy] - [F': [L' U' L U]*2]]",
-          "status": 1,
+          "status": -1,
           "uses": ["2H", "OH"],
           "vars":
           [
             {
               "alg": "f' (U' L' U L) (U' L' U L) f",
               "desc": "Executed from a different angle",
-              "status": 1,
+              "status": -1,
               "uses": ["2H", "OH"]
             },
             {
