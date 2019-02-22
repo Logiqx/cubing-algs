@@ -902,6 +902,74 @@ var algSet = {
       ]
     },
     {
+      "id": "learners",
+      "name": "Learners",
+      "desc": "The \"learners\" view groups cases based largely on the way they are recognised or solved. The groups order is a just suggestion for people wishing to learn full PLL.",
+      "groups":
+      [
+        {
+          "id": "U",
+          "name": "U-Perms",
+          "desc": "U-Perms are the most common [EPLL] cases. Both cases can be solved with [MU] or [RU] algorithms.",
+          "cases": ["Ua", "Ub"]
+        },
+        {
+          "id": "ZH",
+          "name": "Z-Perm + H-Perm",
+          "desc": "Z-Perm and H-Perm are the least common [EPLL] cases. Both cases can be solved with [MU] or [RU] algorithms.",
+          "cases": ["Z", "H"]
+        },
+        {
+          "id": "TF",
+          "name": "T-Perm + F-Perm",
+          "desc": "T-Perm is an extremely versitile [PLL] and combines two simple [OLL] algorithms. A simple setup + T-Perm + undo setup will also solve the F-Perm.",
+          "cases": ["T", "F"]
+        },
+        {
+          "id": "YV",
+          "name": "Y-Perm + V-Perm",
+          "desc": "Y-Perm is an extremely versitile [PLL] and combines two simple [OLL] algorithms. The V-Perm looks very similar to the Y-Perm; both are diagonal corner swaps.",
+          "cases": ["Y", "V"]
+        },
+        {
+          "id": "J",
+          "name": "J-Perms",
+          "desc": "J-Perms are amongst the best [PLL] cases to crop up during [2H] and [OH] solves. They are easy to recognise from just two sides and have nice solutions.",
+          "cases": ["Ja", "Jb"]
+        },
+        {
+          "id": "R",
+          "name": "R-Perms",
+          "desc": "R-Perms aren't as nice as J-Perms but they are still pretty good cases to encounter. Ra may be solved with an [RUF] or [RUD] algorithm.",
+          "cases": ["Ra", "Rb"]
+        },
+        {
+          "id": "AE",
+          "name": "A-Perms and E-Perm",
+          "desc": "A-Perms and E-Perms are pure [CPLL] cases. They are typically solved by an [RUD] algorithm, incorporating a rotation on the x-axis.",
+          "cases": ["Aa", "Ab", "E"]
+        },
+        {
+          "id": "G",
+          "name": "G-Perms",
+          "desc": "G-Perms can be solved in many ways, typically with [RUD] or [RUF] algorithms. Most people seem to learn these after everything except the N-Perms.",
+          "cases": ["Ga", "Gb", "Gc", "Gd"]
+        },
+        {
+          "id": "N",
+          "name": "N-Perms",
+          "desc": "N-Perms are the rarest PLL cases to crop up during a solve. This is due to their four way symmetry which also makes them easy to recognise.",
+          "cases": ["Na", "Nb"]
+        },
+        {
+          "id": "lucky",
+          "name": "Lucky",
+          "desc": "Getting a PLL skip is as likely as getting an H-Perm.",
+          "cases": ["Skip"]
+        },
+      ]
+    },
+    {
       "id": "pieces",
       "name": "Pieces",
       "desc": "The \"pieces\" view groups cases based on the type of pieces that they permute; i.e. edges and / or corners.",
