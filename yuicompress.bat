@@ -13,6 +13,7 @@ java -jar yuicompressor-2.4.8.jar data/2lpll.js -o data/2lpll-min.js
 java -jar yuicompressor-2.4.8.jar data/2spll.js -o data/2spll-min.js
 java -jar yuicompressor-2.4.8.jar data/4aoll.js -o data/4aoll-min.js
 java -jar yuicompressor-2.4.8.jar data/4apll.js -o data/4apll-min.js
+java -jar yuicompressor-2.4.8.jar data/cmll.js -o data/cmll-min.js
 java -jar yuicompressor-2.4.8.jar data/coll.js -o data/coll-min.js
 java -jar yuicompressor-2.4.8.jar data/f2l.js -o data/f2l-min.js
 java -jar yuicompressor-2.4.8.jar data/if2l.js -o data/if2l-min.js
@@ -53,6 +54,7 @@ java -jar yuicompressor-2.4.8.jar css/2lllef.css -o css/2lllef-min.css
 java -jar yuicompressor-2.4.8.jar css/2loll.css -o css/2loll-min.css
 java -jar yuicompressor-2.4.8.jar css/2lpll.css -o css/2lpll-min.css
 java -jar yuicompressor-2.4.8.jar css/2spll.css -o css/2spll-min.css
+java -jar yuicompressor-2.4.8.jar css/cmll.css -o css/cmll-min.css
 java -jar yuicompressor-2.4.8.jar css/coll.css -o css/coll-min.css
 java -jar yuicompressor-2.4.8.jar css/f2l.css -o css/f2l-min.css
 java -jar yuicompressor-2.4.8.jar css/l2e.css -o css/l2e-min.css
