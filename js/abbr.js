@@ -41,6 +41,10 @@ var abbrs =
     "desc": "Corners of the Last Layer"
   },
   {
+    "name": "CMLL",
+    "desc": "Corners of the Last Layer - Ignoring M-slice"
+  },
+  {
     "name": "CPEOLL",
     "desc": "Corner Permutation and Edge Orientation of the Last Layer"
   },
