@@ -5,7 +5,7 @@ var algSet = {
     "name": "Corners of the Last Layer",
     "desc": "This page lists the [CMLL] algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.<br/><br/>I do not use [CMLL] algorithms for the [Sune] and [Anti-Sune] cases but I have included them for the sake of completeness.",
     "wiki": "https://www.speedsolving.com/wiki/index.php/CMLL",
-    "algdb": "http://algdb.net/puzzle/333/",
+    "algdb": "http://algdb.net/puzzle/333/cmll/",
     "uses":
     [
       {
@@ -33,7 +33,7 @@ var algSet = {
       "name": "O Adjacent",
       "desc": "This case is typically solved using the [PLL] algorithms for T-Perm ([RUF]), Jb-Perm ([RUL]) or Aa-Perm ([RUD]).",
       "wiki": "",
-      "algdb": "pll/t",
+      "algdb": "cmllo1",
       "image": "CMLL-A-3",
       "prob": "2/81",
       "algs":
@@ -77,7 +77,7 @@ var algSet = {
       "name": "O Diagonal",
       "desc": "This case is typically solved using the [PLL] algorithms for Y-Perm ([RUF]), Na-Perm ([RUL]) or E-Perm ([RUD]).",
       "wiki": "",
-      "algdb": "pll/y",
+      "algdb": "cmllo2",
       "image": "CMLL-A-6",
       "prob": "1/162",
       "algs":
@@ -96,7 +96,7 @@ var algSet = {
       "name": "AS / Anti-Sune #1",
       "desc": "Inverse of Sune / C1. Reflection of Sune / C1.",
       "wiki": "",
-      "algdb": "cmll/b1",
+      "algdb": "cmllas1",
       "image": "CMLL-B-1",
       "prob": "2/81",
       "algs":
@@ -108,7 +108,7 @@ var algSet = {
       "name": "AS / Anti-Sune #2",
       "desc": "Inverse of Sune / C4. Reflection of Sune / C4.",
       "wiki": "",
-      "algdb": "cmll/b2",
+      "algdb": "cmllas2",
       "image": "CMLL-B-2",
       "prob": "2/81",
       "algs":
@@ -120,7 +120,7 @@ var algSet = {
       "name": "AS / Anti-Sune #3",
       "desc": "Inverse of Sune / C2. Reflection of Sune / C3.",
       "wiki": "",
-      "algdb": "cmll/b3",
+      "algdb": "cmllas3",
       "image": "CMLL-B-3",
       "prob": "2/81",
       "algs":
@@ -132,7 +132,7 @@ var algSet = {
       "name": "AS / Anti-Sune #4",
       "desc": "Inverse of Sune / C3. Reflection of Sune / C2.",
       "wiki": "",
-      "algdb": "cmll/b4",
+      "algdb": "cmllas4",
       "image": "CMLL-B-4",
       "prob": "2/81",
       "algs":
@@ -144,7 +144,7 @@ var algSet = {
       "name": "AS / Anti-Sune #5",
       "desc": "Inverse of Sune / C5. Reflection of Sune / C5.",
       "wiki": "",
-      "algdb": "cmll/b5",
+      "algdb": "cmllas5",
       "image": "CMLL-B-5",
       "prob": "2/81",
       "algs":
@@ -156,7 +156,7 @@ var algSet = {
       "name": "AS / Anti-Sune #6",
       "desc": "Inverse of Sune / C6. Reflection of Sune / C6.",
       "wiki": "",
-      "algdb": "cmll/b6",
+      "algdb": "cmllas6",
       "image": "CMLL-B-6",
       "prob": "2/81",
       "algs":
@@ -168,7 +168,7 @@ var algSet = {
       "name": "S / Sune #1",
       "desc": "Inverse of Anti-Sune / B1. Reflection of Anti-Sune / B1.",
       "wiki": "",
-      "algdb": "cmll/c1",
+      "algdb": "cmlls1",
       "image": "CMLL-C-1",
       "prob": "2/81",
       "algs":
@@ -180,7 +180,7 @@ var algSet = {
       "name": "S / Sune #2",
       "desc": "Inverse of Anti-Sune / B3. Reflection of Anti-Sune / B4.",
       "wiki": "",
-      "algdb": "cmll/c2",
+      "algdb": "cmlls2",
       "image": "CMLL-C-2",
       "prob": "2/81",
       "algs":
@@ -192,7 +192,7 @@ var algSet = {
       "name": "S / Sune #3",
       "desc": "Inverse of Anti-Sune / B4. Reflection of Anti-Sune / B3.",
       "wiki": "",
-      "algdb": "cmll/c3",
+      "algdb": "cmlls3",
       "image": "CMLL-C-3",
       "prob": "2/81",
       "algs":
@@ -204,7 +204,7 @@ var algSet = {
       "name": "S / Sune #4",
       "desc": "Inverse of Anti-Sune / B2. Reflection of Anti-Sune / B2.",
       "wiki": "",
-      "algdb": "cmll/c4",
+      "algdb": "cmlls4",
       "image": "CMLL-C-4",
       "prob": "2/81",
       "algs":
@@ -216,7 +216,7 @@ var algSet = {
       "name": "S / Sune #5",
       "desc": "Inverse of Anti-Sune / B5. Reflection of Anti-Sune / B5.",
       "wiki": "",
-      "algdb": "cmll/c5",
+      "algdb": "cmlls5",
       "image": "CMLL-C-5",
       "prob": "2/81",
       "algs":
@@ -228,7 +228,7 @@ var algSet = {
       "name": "S / Sune #6",
       "desc": "Inverse of Anti-Sune / B6. Reflection of Anti-Sune / B6.",
       "wiki": "",
-      "algdb": "cmll/c6",
+      "algdb": "cmlls6",
       "image": "CMLL-C-6",
       "prob": "2/81",
       "algs":
@@ -239,7 +239,7 @@ var algSet = {
       "id": "D1",
       "name": "L / Bowtie #1",
       "wiki": "",
-      "algdb": "cmll/d1",
+      "algdb": "cmlll1",
       "image": "CMLL-D-1",
       "prob": "2/81",
       "algs":
@@ -251,7 +251,7 @@ var algSet = {
       "name": "L / Bowtie #2",
       "desc": "Inverse of Headlights / E5. Reflection of Bowtie / D3.",
       "wiki": "",
-      "algdb": "cmll/d2",
+      "algdb": "cmlll2",
       "image": "CMLL-D-2",
       "prob": "2/81",
       "algs":
@@ -263,7 +263,7 @@ var algSet = {
       "name": "L / Bowtie #3",
       "desc": "Inverse of Headlights / E3. Reflection of Bowtie / D2.",
       "wiki": "",
-      "algdb": "cmll/d3",
+      "algdb": "cmlll3",
       "image": "CMLL-D-3",
       "prob": "2/81",
       "algs":
@@ -275,7 +275,7 @@ var algSet = {
       "name": "L / Bowtie #4",
       "desc": "Inverse of Chameleon / F5. Reflection of Bowtie / D5.",
       "wiki": "",
-      "algdb": "cmll/d4",
+      "algdb": "cmlll4",
       "image": "CMLL-D-4",
       "prob": "2/81",
       "algs":
@@ -287,7 +287,7 @@ var algSet = {
       "name": "L / Bowtie #5",
       "desc": "Inverse of Chameleon / F3. Reflection of Bowtie / D4.",
       "wiki": "",
-      "algdb": "cmll/d5",
+      "algdb": "cmlll5",
       "image": "CMLL-D-5",
       "prob": "2/81",
       "algs":
@@ -298,7 +298,7 @@ var algSet = {
       "id": "D6",
       "name": "L / Bowtie #6",
       "wiki": "",
-      "algdb": "cmll/d6",
+      "algdb": "cmlll6",
       "image": "CMLL-D-6",
       "prob": "2/81",
       "algs":
@@ -310,7 +310,7 @@ var algSet = {
       "name": "U / Headlights #1",
       "desc": "Inverse of Chameleon / F1.",
       "wiki": "",
-      "algdb": "cmll/e1",
+      "algdb": "cmllu1",
       "image": "CMLL-E-1",
       "prob": "2/81",
       "algs":
@@ -321,7 +321,7 @@ var algSet = {
       "id": "E2",
       "name": "U / Headlights #2",
       "wiki": "",
-      "algdb": "cmll/e2",
+      "algdb": "cmllu2",
       "image": "CMLL-E-2",
       "prob": "2/81",
       "algs":
@@ -333,7 +333,7 @@ var algSet = {
       "name": "U / Headlights #3",
       "desc": "Inverse of Bowtie / D3. Reflection of Headlights / E5.",
       "wiki": "",
-      "algdb": "cmll/e3",
+      "algdb": "cmllu3",
       "image": "CMLL-E-3",
       "prob": "2/81",
       "algs":
@@ -345,7 +345,7 @@ var algSet = {
       "name": "U / Headlights #4",
       "desc": "Inverse of Chameleon / F4.",
       "wiki": "",
-      "algdb": "cmll/e4",
+      "algdb": "cmllu4",
       "image": "CMLL-E-4",
       "prob": "2/81",
       "algs":
@@ -357,7 +357,7 @@ var algSet = {
       "name": "U / Headlights #5",
       "desc": "Inverse of Bowtie / D2. Reflection of Headlights / E3.",
       "wiki": "",
-      "algdb": "cmll/e5",
+      "algdb": "cmllu5",
       "image": "CMLL-E-5",
       "prob": "2/81",
       "algs":
@@ -368,7 +368,7 @@ var algSet = {
       "id": "E6",
       "name": "U / Headlights #6",
       "wiki": "",
-      "algdb": "cmll/e6",
+      "algdb": "cmllu6",
       "image": "CMLL-E-6",
       "prob": "2/81",
       "algs":
@@ -380,7 +380,7 @@ var algSet = {
       "name": "T / Chameleon #1",
       "desc": "Inverse of Headlights / E1.",
       "wiki": "",
-      "algdb": "cmll/f1",
+      "algdb": "cmllt1",
       "image": "CMLL-F-1",
       "prob": "2/81",
       "algs":
@@ -391,7 +391,7 @@ var algSet = {
       "id": "F2",
       "name": "T / Chameleon #2",
       "wiki": "",
-      "algdb": "cmll/f2",
+      "algdb": "cmllt2",
       "image": "CMLL-F-2",
       "prob": "2/81",
       "algs":
@@ -403,7 +403,7 @@ var algSet = {
       "name": "T / Chameleon #3",
       "desc": "Inverse of Bowtie / D5. Reflection of Chameleon / F5.",
       "wiki": "",
-      "algdb": "cmll/f3",
+      "algdb": "cmllt3",
       "image": "CMLL-F-3",
       "prob": "2/81",
       "algs":
@@ -415,7 +415,7 @@ var algSet = {
       "name": "T / Chameleon #4",
       "desc": "Inverse of Headlights / E4.",
       "wiki": "",
-      "algdb": "cmll/f4",
+      "algdb": "cmllt4",
       "image": "CMLL-F-4",
       "prob": "2/81",
       "algs":
@@ -427,7 +427,7 @@ var algSet = {
       "name": "T / Chameleon #5",
       "desc": "Inverse of Bowtie / D4. Reflection of Chameleon / F3.",
       "wiki": "",
-      "algdb": "cmll/f5",
+      "algdb": "cmllt5",
       "image": "CMLL-F-5",
       "prob": "2/81",
       "algs":
@@ -438,7 +438,7 @@ var algSet = {
       "id": "F6",
       "name": "T / Chameleon #6",
       "wiki": "",
-      "algdb": "cmll/f6",
+      "algdb": "cmllt6",
       "image": "CMLL-F-6",
       "prob": "2/81",
       "algs":
@@ -447,91 +447,206 @@ var algSet = {
     },
     {
       "id": "G1",
-      "name": "Pi / Bruno #1",
+      "name": "Pi Right Bar",
       "wiki": "",
-      "algdb": "cmll/g1",
+      "algdb": "cmllpi1",
       "image": "CMLL-G-1",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "(R U2' R') (R' U' R) (R U' R') (R' U2' R)",
+          "name": "Preserve EO",
+          "desc": "[Palindrome]. Essentially [RFAS] and [RBS] mixed together",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "R U2' R2' U' R2 U' R2' U2' R",
+              "desc": "Execution applies cancellations",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        },
+        {
+          "alg": "F (R U R' U') (R U R' U') F'",
+          "name": "Faster - Flip Edges #1",
+          "desc": "[Conjugate] of double [sexy] - [F: [R U R' U']*2]]",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U2 F (U R U' R') (U R U' R') F'",
+          "name": "Faster - Flip Edges #2",
+          "desc": "Executed from a different angle",
+          "status": 1,
+          "uses": ["2H"]
+        }
       ]
     },
     {
       "id": "G2",
-      "name": "Pi / Bruno #2",
+      "name": "Pi Back Slash",
       "desc": "Inverse and reflection of Bruno / G4.",
       "wiki": "",
-      "algdb": "cmll/g2",
+      "algdb": "cmllpi2",
       "image": "CMLL-G-2",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "U F (U R U' R') (U R U' R') F' (F R' F' R) (U R U' R')",
+          "name": "Preserve EO",
+          "desc": "[OLL] combination - inverse of [sexy-sledge], F [double-sexy] F'",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U F (U R U' R') (U R U' R2') F' R (U R U' R')",
+              "desc": "Execution includes cancellations",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
+        },
+        {
+          "alg": "U (F R' F' R) U2 R U' R' U R U2' R'",
+          "name": "Faster - Flip Edges",
+          "desc": "Playing with corner/edge pair - track FR",
+          "status": 1,
+          "uses": ["2H"]
+        }
       ]
     },
     {
       "id": "G3",
-      "name": "Pi / Bruno #3",
+      "name": "Pi Checkerboard",
       "desc": "Inverse of Double Sune / H2.",
       "wiki": "",
-      "algdb": "cmll/g3",
+      "algdb": "cmllpi3",
       "image": "CMLL-G-3",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "U F (U R U' R') F' F (U R U2 R' U' R U R') F'",
+          "name": "Preserve EO",
+          "desc": "[OLL] combination - OLL 44 + OLL 13",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U F (U R U' R' U R U2 R' U' R U R') F'",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        },
+        {
+          "alg": "(U') R' F R U F U' R U R' U' F'",
+          "name": "Faster - Flip Edges",
+          "desc": "Playing with corner/edge pair - track FL",
+          "status": 1,
+          "uses": ["2H"]
+        }
       ]
     },
     {
       "id": "G4",
-      "name": "Pi / Bruno #4",
+      "name": "Pi Forward Slash",
       "desc": "Inverse and reflection of Bruno / G2.",
       "wiki": "",
-      "algdb": "cmll/g4",
+      "algdb": "cmllpi4",
       "image": "CMLL-G-4",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "(R U R' U') (R' F R F') F (R U R' U') (R U R' U') F'",
+          "name": "Preserve EO",
+          "desc": "[OLL] combination - [sexy-sledge], F [double-sexy] F'",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "(R U R' U') R' F (R2 U R' U') (R U R' U') F'",
+              "desc": "Execution is similar to [OLL] 9",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
+        },
+        {
+          "alg": "R U2 R' U' R U R' U2' (R' F R F')",
+          "name": "Faster - Flip Edges",
+          "desc": "Playing with corner/edge pair - track FR",
+          "status": 1,
+          "uses": ["2H"]
+        }
       ]
     },
     {
       "id": "G5",
-      "name": "Pi / Bruno #5",
+      "name": "Pi Columns",
       "desc": "Inverse of Double Sune / H5.",
       "wiki": "",
-      "algdb": "cmll/g5",
+      "algdb": "cmllpi5",
       "image": "CMLL-G-5",
       "prob": "2/81",
       "algs":
       [
-      ]
-    },
-    {
-      "id": "G6",
-      "name": "Pi Left Bar",
-      "wiki": "",
-      "algdb": "cmll/g6",
-      "image": "CMLL-G-6",
-      "prob": "2/81",
-      "algs":
-      [
         {
-          "alg": "R' U' (R' F R F') R U' R' U2 R",
-          "desc": "[RBS] with embedded [sledgehammer] - Track BR",
+          "alg": "U' (R U R' U) (F' R U2' R' U2 R' F R)",
+          "name": "Preserve EO",
+          "desc": "Extract pair then solve using Winter Variation",
           "status": 1,
           "uses": ["2H"]
         },
       ]
     },
     {
+      "id": "G6",
+      "name": "Pi Left Bar",
+      "wiki": "",
+      "algdb": "cmllpi6",
+      "image": "CMLL-G-6",
+      "prob": "2/81",
+      "algs":
+      [
+        {
+          "alg": "U R U2 R' U' F' (R U2 R' U' R U' R') F R U' R'",
+          "name": "Preserve EO",
+          "desc": "Algorithm is decent to execute and includes [RFAS]",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "R' U' (R' F R F') R U' R' U2 R",
+          "name": "Faster - Flip Edges",
+          "desc": "[RBS] with embedded [sledgehammer] - Track BR",
+          "status": 1,
+          "uses": ["2H"]
+        }
+      ]
+    },
+    {
       "id": "H1",
       "name": "H Columns",
       "wiki": "",
-      "algdb": "cmll/h1",
+      "algdb": "cmllh1",
       "image": "CMLL-H-1",
       "prob": "1/81",
       "algs":
       [
         {
           "alg": "U (R U2 R' U' R U' R') (R U2 R' U' R U' R')",
+          "name": "Preserve EO #1",
           "desc": "[SuneOLL]/[2GLL]: Double [RFAS]",
           "status": 1,
           "uses": [],
@@ -547,6 +662,7 @@ var algSet = {
         },
         {
           "alg": "(R' U' R U' R' U2 R) (R' U' R U' R' U2 R)",
+          "name": "Preserve EO #2",
           "desc": "[SuneOLL]/[2GLL]: Double [RBS]",
           "status": 1,
           "uses": [],
@@ -564,39 +680,79 @@ var algSet = {
     },
     {
       "id": "H2",
-      "name": "H / Double Sune #2",
+      "name": "H Column",
       "desc": "Inverse of Bruno / G3.",
       "wiki": "",
-      "algdb": "cmll/h2",
+      "algdb": "cmllh3",
       "image": "CMLL-H-2",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "F (R U' R' U R U2 R' U') F' F (R U R' U') F'",
+          "name": "Preserve EO",
+          "desc": "[OLL] combination - OLL 13' + OLL 45",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "F (R U' R' U R U2 R' U' R U R' U') F'",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        },
+        {
+          "alg": "R U2' R' (R' F R F') U2 (R' F R F')",
+          "name": "Faster - Flip Edges",
+          "desc": "Playing with corner/edge pair - track FR",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "R U2' R2' F R F' U2 R' F R F'",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": "H5",
-      "name": "H / Double Sune #5",
+      "name": "H Row",
       "desc": "Inverse of Bruno / G5.",
       "wiki": "",
-      "algdb": "cmll/h3",
+      "algdb": "cmllh2",
       "image": "CMLL-H-5",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "U2 (R' F' R U2 R U2' R' F) (U' R U' R')",
+          "name": "Preserve EO",
+          "desc": "Winter Variation inverse followed by basic insertion",
+          "status": 1,
+          "uses": ["2H"]
+        },
       ]
     },
     {
       "id": "H6",
       "name": "H Rows",
       "wiki": "",
-      "algdb": "cmll/h4",
+      "algdb": "cmllh4",
       "image": "CMLL-H-6",
       "prob": "1/81",
       "algs":
       [
         {
           "alg": "U F (R U R' U') (R U R' U') (R U R' U') F'",
+          "name": "Preserve EO",
           "desc": "[Conjugate] of triple [sexy] - [F: [R U R' U']*3]]",
           "status": 1,
           "uses": ["2H", "OH"]
