@@ -307,7 +307,7 @@ var algSet = {
     },
     {
       "id": "E1",
-      "name": "U / Headlights #1",
+      "name": "U Front Row",
       "desc": "Inverse of Chameleon / F1.",
       "wiki": "",
       "algdb": "cmllu1",
@@ -315,22 +315,68 @@ var algSet = {
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "U2 (R U R' U R U2' R') (R' U' R U' R' U2 R)",
+          "name": "Preserve EO #1",
+          "desc": "[SuneOLL]/[2GLL]: [RFS], [RBS]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U2 R U R' U R U2' R2' U' R U' R' U2 R",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        },
+        {
+          "alg": "(R' U' R U' R' U2 R) (R U R' U R U2' R')",
+          "name": "Preserve EO #2",
+          "desc": "[SuneOLL]/[2GLL]: [RBS], [RFS]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "R' U' R U' R' U2 R2 U R' U R U2' R'",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": "E2",
-      "name": "U / Headlights #2",
+      "name": "U Rows",
       "wiki": "",
       "algdb": "cmllu2",
       "image": "CMLL-E-2",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "R' (F R U' R' U' R U R' F' R U R' U' R' F R F') R",
+          "name": "Preserve EO",
+          "desc": "[Conjugate] - [R': Y-Perm]",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' F (R2 D R' U R D' R2' U') F'",
+          "name": "Faster - Flip Edges",
+          "desc": "[Commutator] / [conjugate] - [F: R2 D R', U]",
+          "status": 1,
+          "uses": ["2H"]
+        }
       ]
     },
     {
       "id": "E3",
-      "name": "U / Headlights #3",
+      "name": "U Forward Slash",
       "desc": "Inverse of Bowtie / D3. Reflection of Headlights / E5.",
       "wiki": "",
       "algdb": "cmllu3",
@@ -338,11 +384,27 @@ var algSet = {
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "U2 R2 (D R' U2 R) (D' R' U2 R) R2'",
+          "name": "Preserve EO",
+          "desc": "A9 [commutator] / [conjugate] - [R2: [D, R' U2 R]]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U2 R2 D R' U2 R D' R' U2 R'",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": "E4",
-      "name": "U / Headlights #4",
+      "name": "U Checkboard",
       "desc": "Inverse of Chameleon / F4.",
       "wiki": "",
       "algdb": "cmllu4",
@@ -350,11 +412,27 @@ var algSet = {
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "F (R U' R' U R U R') F' F (U R U' R') F'",
+          "name": "Preserve EO",
+          "desc": "Inverse [OLL] combination - (F [sexy] F, [mounted-fish])'",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "F (R U' R' U R U R' U R U' R') F'",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": "E5",
-      "name": "U / Headlights #5",
+      "name": "U Back Slash",
       "desc": "Inverse of Bowtie / D2. Reflection of Headlights / E3.",
       "wiki": "",
       "algdb": "cmllu5",
@@ -362,22 +440,59 @@ var algSet = {
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "R2 (D' R U2 R') (D R U2 R') R2'",
+          "name": "Preserve EO",
+          "desc": "A9 [commutator] / [conjugate] - [R2: [D', R U2 R']]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "R2' D' R U2 R' D R U2 R",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": "E6",
-      "name": "U / Headlights #6",
+      "name": "U Back Row",
       "wiki": "",
       "algdb": "cmllu6",
       "image": "CMLL-E-6",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "R' U2 R F U' R' U' R U F'",
+          "name": "Preserve EO",
+          "desc": "Playing with [F2L] pairs - track BR + FL",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U' F (R U R' U') F'",
+          "name": "Faster - Flip Edges #2",
+          "desc": "[Conjugate] of [sexy] - [F: R U R' U']",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "U F (U R U' R') F'",
+          "name": "Faster - Flip Edges #1",
+          "desc": "Executed from a different angle",
+          "status": 1,
+          "uses": ["2H"]
+        }
       ]
     },
     {
       "id": "F1",
-      "name": "T / Chameleon #1",
+      "name": "T Rows",
       "desc": "Inverse of Headlights / E1.",
       "wiki": "",
       "algdb": "cmllt1",
@@ -385,6 +500,38 @@ var algSet = {
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "(R U2 R' U' R U' R') (R' U2' R U R' U R)",
+          "name": "Preserve EO #1",
+          "desc": "[SuneOLL]/[2GLL]: [RFAS], [RBAS]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        },
+        {
+          "alg": "U2 (R' U2' R U R' U R) (R U2 R' U' R U' R')",
+          "name": "Preserve EO #2",
+          "desc": "[SuneOLL]/[2GLL]: [RBAS], [RFAS]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U2 R' U2' R U R' U R2 U2 R' U' R U' R'",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        }
       ]
     },
     {
@@ -412,7 +559,7 @@ var algSet = {
     },
     {
       "id": "F4",
-      "name": "T / Chameleon #4",
+      "name": "T Back Row",
       "desc": "Inverse of Headlights / E4.",
       "wiki": "",
       "algdb": "cmllt4",
@@ -420,11 +567,27 @@ var algSet = {
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "U2 F (R U R' U') F' F (R U' R' U' R U R') F'",
+          "name": "Preserve EO",
+          "desc": "[OLL] combination - F [sexy] F', [mounted-fish]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U2 F (R U R' U' R U' R' U' R U R') F'",
+              "desc": "Execution applies a cancellation",
+              "status": 1,
+              "uses": ["2H", "OH"]
+            }
+          ]
+        }
       ]
     },
     {
       "id": "F5",
-      "name": "T / Chameleon #5",
+      "name": "T Left Bar",
       "desc": "Inverse of Bowtie / D4. Reflection of Chameleon / F3.",
       "wiki": "",
       "algdb": "cmllt5",
@@ -432,6 +595,38 @@ var algSet = {
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "U' (L F R' F') (L' F R F')",
+          "name": "Preserve EO",
+          "desc": "Basic [commutator] - [L, F R' F']",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U' (r U R' U') (r' F R F')",
+              "desc": "Two-handed - wide [sexy], wide [sledgehammer]",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
+        },
+        {
+          "alg": "U' (L F R' F') (L' F R F')",
+          "name": "Faster - Flip Edges #1",
+          "desc": "Basic [commutator] - [L, F R' F']",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U' (R U R' U') (R' F R F')",
+              "desc": "Execution avoids L turns and reduces F turns",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
+        }
       ]
     },
     {
