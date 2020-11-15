@@ -327,7 +327,7 @@ var algSet = {
               "alg": "U2 R U R' U R U2' R2' U' R U' R' U2 R",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         },
@@ -343,7 +343,7 @@ var algSet = {
               "alg": "R' U' R U' R' U2 R2 U R' U R U2' R'",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         }
@@ -396,7 +396,7 @@ var algSet = {
               "alg": "U2 R2 D R' U2 R D' R' U2 R'",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         }
@@ -424,7 +424,7 @@ var algSet = {
               "alg": "F (R U' R' U R U R' U R U' R') F'",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         }
@@ -452,7 +452,7 @@ var algSet = {
               "alg": "R2' D' R U2 R' D R U2 R",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         }
@@ -512,7 +512,7 @@ var algSet = {
               "alg": "R U2 R' U' R U' R2' U2' R U R' U R",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         },
@@ -528,7 +528,7 @@ var algSet = {
               "alg": "U2 R' U2' R U R' U R2 U2 R' U' R U' R'",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         }
@@ -536,18 +536,32 @@ var algSet = {
     },
     {
       "id": "F2",
-      "name": "T / Chameleon #2",
+      "name": "T Front Row",
       "wiki": "",
       "algdb": "cmllt2",
       "image": "CMLL-F-2",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "R' U r U2’ R2’ F R F' r",
+          "name": "Preserve EO",
+          "desc": "Playing with [F2L] pair - track BR",
+          "status": 1,
+          "uses": ["2H"]
+        },
+        {
+          "alg": "r' U r U2’ R2’ F R F' R",
+          "name": "Faster - Flip Edges",
+          "desc": "Playing with [F2L] pair - track BR",
+          "status": 1,
+          "uses": ["2H"]
+        }
       ]
     },
     {
       "id": "F3",
-      "name": "T / Chameleon #3",
+      "name": "T Right Bar",
       "desc": "Inverse of Bowtie / D5. Reflection of Chameleon / F5.",
       "wiki": "",
       "algdb": "cmllt3",
@@ -555,6 +569,29 @@ var algSet = {
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "U2 x' (R U R' D) (R U' R' D') x",
+          "name": "Preserve EO",
+          "desc": "Second half of E-Perm. Basic [commutator] - [R, U R' D]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U2 (l U R' D) (R U' R' D') x",
+              "desc": "Execution incorporates wide turns",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
+        },
+        {
+          "alg": "F (R U' R' U R U R') F'",
+          "name": "Faster - Flip Edges",
+          "desc": "Inverse [OLL] - [mounted-fish]'",
+          "status": 1,
+          "uses": ["2H"]
+        }
       ]
     },
     {
@@ -579,7 +616,7 @@ var algSet = {
               "alg": "U2 F (R U R' U' R U' R' U' R U R') F'",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         }
@@ -631,13 +668,45 @@ var algSet = {
     },
     {
       "id": "F6",
-      "name": "T / Chameleon #6",
+      "name": "T Columns",
       "wiki": "",
       "algdb": "cmllt6",
       "image": "CMLL-F-6",
       "prob": "2/81",
       "algs":
       [
+        {
+          "alg": "U2 (R U' R2' D' r) U2 (r' D R2 U R')",
+          "name": "Preserve EO",
+          "desc": "[Commutator] - [U2, R U' R2' D' r]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U2 R U' R2' D' r U2 r' D R2 U R'",
+              "desc": "Execution applies cancellations",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
+        },
+        {
+          "alg": "U2 (r U' r2' D' r) U2 (r' D r2 U r')",
+          "name": "Faster - Flip Edges",
+          "desc": "[Commutator] - [U2, r U' r2' D' r]",
+          "status": 1,
+          "uses": [],
+          "vars":
+          [
+            {
+              "alg": "U2 r U' r2' D' r U2 r' D r2 U r'",
+              "desc": "Execution applies cancellations",
+              "status": 1,
+              "uses": ["2H"]
+            }
+          ]
+        },
       ]
     },
     {
@@ -661,7 +730,7 @@ var algSet = {
               "alg": "R U2' R2' U' R2 U' R2' U2' R",
               "desc": "Execution applies cancellations",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         },
@@ -738,7 +807,7 @@ var algSet = {
               "alg": "U F (U R U' R' U R U2 R' U' R U R') F'",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         },
@@ -895,7 +964,7 @@ var algSet = {
               "alg": "F (R U' R' U R U2 R' U' R U R' U') F'",
               "desc": "Execution applies a cancellation",
               "status": 1,
-              "uses": ["2H", "OH"]
+              "uses": ["2H"]
             }
           ]
         },
@@ -950,7 +1019,7 @@ var algSet = {
           "name": "Preserve EO",
           "desc": "[Conjugate] of triple [sexy] - [F: [R U R' U']*3]]",
           "status": 1,
-          "uses": ["2H", "OH"]
+          "uses": ["2H"]
         }
       ]
     },
