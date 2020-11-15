@@ -3,7 +3,7 @@ var algSet = {
   {
     "id": "CMLL",
     "name": "Corners of the Last Layer",
-    "desc": "This page lists the [CMLL] algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.<br/><br/>I do not use [CMLL] algorithms for the [Sune] and [Anti-Sune] cases but I have included them for the sake of completeness.",
+    "desc": "This page lists the [CMLL] algorithms that I use during actual solves. They are good algorithms and have been chosen for their execution speed.<br/><br/>I do not use [CMLL] algorithms for the [Sune] and [Anti-Sune] cases but I have included them for the sake of completeness. Some of these algorithms are from [COLL] which means that they do not affect edge orientation. I have highlighted the fastest algs using and asterisk (*).",
     "wiki": "https://www.speedsolving.com/wiki/index.php/CMLL",
     "algdb": "http://algdb.net/puzzle/333/cmll/",
     "uses":
@@ -366,7 +366,7 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "U' F (R2 D R' U R D' R2' U') F'",
+          "alg": "U' F (R2 D R' U R D' R2' U') F' *",
           "name": "Faster - Flip Edges",
           "desc": "[Commutator] / [conjugate] - [F: R2 D R', U]",
           "status": 1,
@@ -475,14 +475,14 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "U' F (R U R' U') F'",
+          "alg": "U' F (R U R' U') F' *",
           "name": "Faster - Flip Edges #2",
           "desc": "[Conjugate] of [sexy] - [F: R U R' U']",
           "status": 1,
           "uses": ["2H"]
         },
         {
-          "alg": "U F (U R U' R') F'",
+          "alg": "U F (U R U' R') F' *",
           "name": "Faster - Flip Edges #1",
           "desc": "Executed from a different angle",
           "status": 1,
@@ -544,14 +544,14 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "R' U r U2’ R2’ F R F' r",
+          "alg": "R' U r U2' R2' F R F' r",
           "name": "Preserve EO",
           "desc": "Playing with [F2L] pair - track BR",
           "status": 1,
           "uses": ["2H"]
         },
         {
-          "alg": "r' U r U2’ R2’ F R F' R",
+          "alg": "r' U r U2' R2' F R F' R *",
           "name": "Faster - Flip Edges",
           "desc": "Playing with [F2L] pair - track BR",
           "status": 1,
@@ -586,7 +586,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "F (R U' R' U R U R') F'",
+          "alg": "F (R U' R' U R U R') F' *",
           "name": "Faster - Flip Edges",
           "desc": "Inverse [OLL] - [mounted-fish]'",
           "status": 1,
@@ -650,14 +650,14 @@ var algSet = {
         },
         {
           "alg": "U' (L F R' F') (L' F R F')",
-          "name": "Faster - Flip Edges #1",
+          "name": "Faster - Flip Edges",
           "desc": "Basic [commutator] - [L, F R' F']",
           "status": 1,
           "uses": [],
           "vars":
           [
             {
-              "alg": "U' (R U R' U') (R' F R F')",
+              "alg": "U' (R U R' U') (R' F R F') *",
               "desc": "Execution avoids L turns and reduces F turns",
               "status": 1,
               "uses": ["2H"]
@@ -676,36 +676,18 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U2 (R U' R2' D' r) U2 (r' D R2 U R')",
+          "alg": "U2 R U' R2' D' r U2 r' D R2 U R'",
           "name": "Preserve EO",
           "desc": "[Commutator] - [U2, R U' R2' D' r]",
           "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "U2 R U' R2' D' r U2 r' D R2 U R'",
-              "desc": "Execution applies cancellations",
-              "status": 1,
-              "uses": ["2H"]
-            }
-          ]
+          "uses": ["2H"]
         },
         {
-          "alg": "U2 (r U' r2' D' r) U2 (r' D r2 U r')",
+          "alg": "U2 r U' r2' D' r U2 r' D r2 U r' *",
           "name": "Faster - Flip Edges",
           "desc": "[Commutator] - [U2, r U' r2' D' r]",
           "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "U2 r U' r2' D' r U2 r' D r2 U r'",
-              "desc": "Execution applies cancellations",
-              "status": 1,
-              "uses": ["2H"]
-            }
-          ]
+          "uses": ["2H"]
         },
       ]
     },
@@ -735,14 +717,14 @@ var algSet = {
           ]
         },
         {
-          "alg": "F (R U R' U') (R U R' U') F'",
+          "alg": "F (R U R' U') (R U R' U') F' *",
           "name": "Faster - Flip Edges #1",
           "desc": "[Conjugate] of double [sexy] - [F: [R U R' U']*2]]",
           "status": 1,
           "uses": ["2H"]
         },
         {
-          "alg": "U2 F (U R U' R') (U R U' R') F'",
+          "alg": "U2 F (U R U' R') (U R U' R') F' *",
           "name": "Faster - Flip Edges #2",
           "desc": "Executed from a different angle",
           "status": 1,
@@ -777,7 +759,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "U (F R' F' R) U2 R U' R' U R U2' R'",
+          "alg": "U (F R' F' R) U2 R U' R' U R U2' R' *",
           "name": "Faster - Flip Edges",
           "desc": "Playing with corner/edge pair - track FR",
           "status": 1,
@@ -812,7 +794,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "(U') R' F R U F U' R U R' U' F'",
+          "alg": "(U') R' F R U F U' R U R' U' F' *",
           "name": "Faster - Flip Edges",
           "desc": "Playing with corner/edge pair - track FL",
           "status": 1,
@@ -847,7 +829,7 @@ var algSet = {
           ]
         },
         {
-          "alg": "R U2 R' U' R U R' U2' (R' F R F')",
+          "alg": "R U2 R' U' R U R' U2' (R' F R F') *",
           "name": "Faster - Flip Edges",
           "desc": "Playing with corner/edge pair - track FR",
           "status": 1,
@@ -891,7 +873,7 @@ var algSet = {
           "uses": ["2H"]
         },
         {
-          "alg": "R' U' (R' F R F') R U' R' U2 R",
+          "alg": "R' U' (R' F R F') R U' R' U2 R *",
           "name": "Faster - Flip Edges",
           "desc": "[RBS] with embedded [sledgehammer] - Track BR",
           "status": 1,
@@ -977,7 +959,7 @@ var algSet = {
           "vars":
           [
             {
-              "alg": "R U2' R2' F R F' U2 R' F R F'",
+              "alg": "R U2' R2' F R F' U2 R' F R F' *",
               "desc": "Execution applies a cancellation",
               "status": 1,
               "uses": ["2H"]
