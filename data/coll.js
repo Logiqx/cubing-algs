@@ -1023,19 +1023,10 @@ var algSet = {
       "algs":
       [
         {
-          "alg": "U2 (R U' R2' D' r) U2 (r' D R2 U R')",
+          "alg": "U2 R U' R2' D' r U2 r' D R2 U R'",
           "desc": "[Commutator] - [U2, R U' R2' D' r]",
           "status": 1,
-          "uses": [],
-          "vars":
-          [
-            {
-              "alg": "U2 R U' R2' D' r U2 r' D R2 U R'",
-              "desc": "Execution applies cancellations",
-              "status": 1,
-              "uses": ["2H", "OH"]
-            }
-          ]
+          "uses": ["2H", "OH"]
         },
       ]
     },
